@@ -28,7 +28,7 @@ export default subject({
           ],
           t: ['Why do you think people like lights at festivals?', 'How can we be kind to friends who celebrate different festivals?'],
           k: ['Tell a grown-up about your favourite festival and how your family celebrates it.'],
-          m: ['Festival of Lights Window', 'coloured paper, glue, safety scissors (with an adult)', 'Cut out a diya, a menorah and a star | Glue them on a black paper "window" | Add yellow paper flames | Talk about each festival as you make it'],
+          m: ['Festival of Lights Window', 'coloured paper, glue, safety scissors (with an adult)', 'Cut out a diya, a menorah and a star | Glue them on a black paper "window" | Add yellow paper flames | Talk about each festival as you make it', "Use child-safe scissors with adult supervision and non-toxic glue. This is a paper craft; do not use real candles or flames."],
           q: [
             ch('A diya is…', '*a small clay lamp|a drum|a sweet'),
             tf('Christians celebrate Christmas.', true),
