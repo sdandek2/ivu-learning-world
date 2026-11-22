@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Which Marathi word is your favourite to say?', 'What does "Surya Namaskar" mean, using the words you know?'],
           k: ['Describe an animal using a Marathi colour and animal word, like "kaala kutra".'],
-          m: ['Marathi Animal Book', 'paper, crayons, stapler', 'Draw six animals | Colour them and write the Marathi colour word | Write the Marathi animal name | Read the book to your family'],
+          m: ['Marathi Animal Book', 'paper, crayons, stapler', 'Draw six animals | Colour them and write the Marathi colour word | Write the Marathi animal name | Read the book to your family', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('Moon in Sanskrit is…', '*chandra|surya|gajah'),
             tf('"Maasa" means fish in Marathi.', true),
