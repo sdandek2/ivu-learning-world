@@ -8,6 +8,7 @@ const STOP_WORDS = new Set([
 
 function tokens(value: string): string[] {
   return (value.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [])
+    .map((word) => word.endsWith('ies') && word.length > 4 ? \`\${word.slice(0, -3)}y\` : word.endsWith('s') && !word.endsWith('ss') && word.length > 3 ? word.slice(0, -1) : word)
     .filter((word) => word.length > 1 && !STOP_WORDS.has(word));
 }
 
