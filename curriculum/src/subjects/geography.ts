@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why do you think a flat map can\'t show Earth perfectly?', 'If you dug straight through the Earth from India, where might you come out?'],
           k: ['Find India on a globe and show a grown-up.'],
-          m: ['Balloon Globe', 'a blue balloon, green paper, glue, marker', 'Blow up a blue balloon (oceans) | Cut out rough continent shapes in green paper | Stick them on | Mark India with a star'],
+          m: ['Balloon Globe', 'a blue balloon, green paper, glue, marker', 'Blow up a blue balloon (oceans) | Cut out rough continent shapes in green paper | Stick them on | Mark India with a star', "Use child-safe scissors with adult supervision. Keep balloons away from children who may chew them and discard broken balloon pieces immediately."],
           q: [
             ch('Large areas of salty water are…', '*oceans|deserts|forests'),
             tf('A globe is a model of the Earth.', true),
@@ -306,7 +306,7 @@ export default subject({
           ],
           t: ['Should India have two time zones? What are the arguments?', 'What problems do time zones cause for international teams?'],
           k: ['Calculate the time in three world cities when it is 9 am in India and explain your working.'],
-          m: ['World Clock Display', 'paper plates as clocks, a world time zone map', 'Make 5 clocks for different cities | Set them for a chosen IST time | Mark day or night for each | Explain the differences using a globe and torch'],
+          m: ['World Clock Display', 'paper plates as clocks, a world time zone map', 'Make 5 clocks for different cities | Set them for a chosen IST time | Mark day or night for each | Explain the differences using a globe and torch', "Keep the torch pointed at the globe, never into anyone's eyes. Use a cool-running torch and keep the area clear."],
           q: [
             ch('Time zones are roughly every…', '*15° of longitude|1° of latitude|1,000 km of latitude'),
             ch('Deserts are in the ___ climate zone.', '*dry|polar|tropical rainforest'),
