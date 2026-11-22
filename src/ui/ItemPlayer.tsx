@@ -59,7 +59,8 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
         {item.kind === 'truefalse' && <TrueFalse item={item} disabled={finished !== null} onRight={succeed} onWrong={() => { setWrong(1); setFinished(false); play(sounds.tryAgain); say(pick(BUDDY_LINES.showAnswer)); }} />}
         {item.kind === 'order' && <Order item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} seed={seed} />}
         {item.kind === 'match' && <Match item={item} disabled={finished !== null} onComplete={(mistakes) => { setWrong(mistakes); setFinished(mistakes <= 1); play(mistakes <= 1 ? sounds.correct : sounds.tryAgain); say(pick(mistakes === 0 ? BUDDY_LINES.praise : mistakes <= 1 ? BUDDY_LINES.gotIt : BUDDY_LINES.showAnswer)); }} seed={seed} />}
-        {item.kind === 'count' && <Count item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} />}\n        {item.kind === 'classify' && <Classify item={item} disabled={finished !== null} onRight={succeed} onWrong={fail} seed={seed} />}
+        {item.kind === 'count' && <Count item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} />}
+        {item.kind === 'classify' && <Classify item={item} disabled={finished !== null} onRight={succeed} onWrong={fail} seed={seed} />}
       </div>
 
       {finished === null && wrong > 0 && <p className="item__nudge" role="status">Not quite — try again! {allowHints && !usedHint && item.kind !== 'truefalse' && item.kind !== 'match' ? 'You can ask for a hint.' : ''}</p>}
@@ -86,7 +87,8 @@ export function answerText(item: Item): string {
     case 'truefalse': return item.answer ? 'True' : 'False';
     case 'order': return item.items.join(' → ');
     case 'match': return item.pairs.map(([a, b]) => `${a} = ${b}`).join(', ');
-    case 'count': return String(item.answer);\n    case 'classify': return item.categories.map((category, i) => `${category}: ${item.items.filter((entry) => entry.category === i).map((entry) => entry.label).join(', ')}`).join('; ');
+    case 'count': return String(item.answer);
+    case 'classify': return item.categories.map((category, i) => `${category}: ${item.items.filter((entry) => entry.category === i).map((entry) => entry.label).join(', ')}`).join('; ');
   }
 }
 
@@ -130,32 +132,54 @@ function TrueFalse({ item, disabled, onRight, onWrong }: { item: Extract<Item, {
 function Order({ item, hinted, disabled, onRight, onWrong, seed }: { item: Extract<Item, { kind: 'order' }>; hinted: boolean; disabled: boolean; onRight: () => void; onWrong: () => void; seed?: number }) {
   const pool = useMemo(() => shuffleNotIdentity(item.items, seed), [item, seed]);
   const [seq, setSeq] = useState<string[]>([]);
+  const [dragIndex, setDragIndex] = useState<number | null>(null);
   const fixed = hinted ? 1 : 0;
   const current = hinted && seq[0] !== item.items[0] ? [item.items[0], ...seq.filter((s) => s !== item.items[0])] : seq;
   const remaining = pool.filter((p) => !current.includes(p));
   const complete = current.length === item.items.length;
+  const move = (from: number, to: number) => {
+    if (from < fixed || to < fixed || from === to || from >= current.length || to >= current.length) return;
+    const next = [...current];
+    const [entry] = next.splice(from, 1);
+    next.splice(to, 0, entry);
+    setSeq(next);
+  };
+  const check = () => {
+    if (current.every((x, i) => x === item.items[i])) onRight();
+    else { onWrong(); setSeq(hinted ? [item.items[0]] : []); }
+  };
   return (
     <div className="order">
+      <p className="order__instruction">Add the steps, then drag them into place — or use the arrow buttons.</p>
       <ol className="order__slots" aria-label="Your order">
         {item.items.map((_, i) => (
-          <li key={i} className={cx('order__slot', current[i] && 'is-filled', i < fixed && 'is-fixed')}>
-            {current[i] ? <button disabled={disabled || i < fixed} onClick={() => setSeq(current.filter((_, j) => j !== i))} aria-label={`Remove ${current[i]}`}>{current[i]}</button> : <span className="order__num">{i + 1}</span>}
+          <li key={i}
+            className={cx('order__slot', current[i] && 'is-filled', i < fixed && 'is-fixed', dragIndex === i && 'is-dragging')}
+            onDragOver={(event) => { if (!disabled && dragIndex !== null) event.preventDefault(); }}
+            onDrop={(event) => { event.preventDefault(); if (dragIndex !== null) move(dragIndex, i); setDragIndex(null); }}>
+            {current[i] ? (
+              <div className="order__placed" draggable={!disabled && i >= fixed}
+                onDragStart={(event) => { setDragIndex(i); event.dataTransfer.effectAllowed = 'move'; event.dataTransfer.setData('text/plain', String(i)); }}
+                onDragEnd={() => setDragIndex(null)}>
+                <span className="order__num">{i + 1}</span>
+                <span className="order__value">{current[i]}</span>
+                <span className="order__reorder">
+                  <button type="button" disabled={disabled || i <= fixed} onClick={() => move(i, i - 1)} aria-label={`Move ${current[i]} earlier`}>↑</button>
+                  <button type="button" disabled={disabled || i >= current.length - 1} onClick={() => move(i, i + 1)} aria-label={`Move ${current[i]} later`}>↓</button>
+                </span>
+                <button type="button" className="order__remove" disabled={disabled || i < fixed} onClick={() => setSeq(current.filter((_, j) => j !== i))} aria-label={`Remove ${current[i]}`}>×</button>
+              </div>
+            ) : <span className="order__num">{i + 1}</span>}
           </li>
         ))}
       </ol>
-      <div className="order__pool">
+      <div className="order__pool" aria-label="Steps to add">
         {remaining.map((p) => <button key={p} className="tile" disabled={disabled} onClick={() => setSeq([...current, p])}>{p}</button>)}
       </div>
-      {complete && !disabled && (
-        <button className="btn btn--primary" onClick={() => {
-          if (current.every((x, i) => x === item.items[i])) onRight();
-          else { onWrong(); setSeq(hinted ? [item.items[0]] : []); }
-        }}>Check my order ✓</button>
-      )}
+      {complete && !disabled && <button className="btn btn--primary" onClick={check}>Check my order ✓</button>}
     </div>
   );
 }
-
 function Match({ item, disabled, onComplete, seed }: { item: Extract<Item, { kind: 'match' }>; disabled: boolean; onComplete: (mistakes: number) => void; seed?: number }) {
   const left = useMemo(() => shuffle(item.pairs.map((p) => p[0]), seed), [item, seed]);
   const right = useMemo(() => shuffle(item.pairs.map((p) => p[1]), (seed ?? 7) + 3), [item, seed]);
