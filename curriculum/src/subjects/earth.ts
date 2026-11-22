@@ -182,7 +182,7 @@ export default subject({
           ],
           t: ['What might happen if the monsoon is very late or very weak?', 'Why do hills get more rain than flat land nearby?'],
           k: ['Explain to someone why the monsoon matters for the food we eat.'],
-          m: ['🧪 Make a Rain Gauge', 'a clear plastic bottle, scissors (adult help), ruler, tape, pebbles', 'Cut the top off a bottle and turn it upside down into the base as a funnel | Put pebbles at the bottom and tape a ruler to the side | Place it in an open area | Record rainfall every day for two weeks and make a bar chart'],
+          m: ['🧪 Make a Rain Gauge', 'a clear plastic bottle, scissors (adult help), ruler, tape, pebbles', 'Cut the top off a bottle and turn it upside down into the base as a funnel | Put pebbles at the bottom and tape a ruler to the side | Place it in an open area | Record rainfall every day for two weeks and make a bar chart', "An adult must cut and prepare the plastic bottle; cover any sharp edges. Place it in a safe outdoor spot and do not climb or lean over railings to position it."],
           q: [
             ch('Land heats up ___ than the sea in summer.', '*faster|slower'),
             ch('Monsoon rain is important for…', '*farming and refilling water supplies|making deserts|melting snow'),
@@ -215,7 +215,7 @@ export default subject({
           ],
           t: ['Why do so many volcanoes and earthquakes happen in a "Ring of Fire" around the Pacific?', 'Why do some people live near volcanoes despite the danger?'],
           k: ['Teach your family the earthquake safety drill and explain why each step matters.'],
-          m: ['🧪 Baking Soda Volcano', 'a small bottle, clay or sand to build a cone, baking soda, vinegar, washing-up liquid, red food colouring, a tray', 'Build a volcano cone around the bottle on a tray | Put baking soda, a drop of washing-up liquid and colouring inside | Pour in vinegar and watch the "eruption" | Explain how this model differs from a real volcano'],
+          m: ['🧪 Baking Soda Volcano', 'a small bottle, clay or sand to build a cone, baking soda, vinegar, washing-up liquid, red food colouring, a tray', 'Build a volcano cone around the bottle on a tray | Put baking soda, a drop of washing-up liquid and colouring inside | Pour in vinegar and watch the "eruption" | Explain how this model differs from a real volcano', "Use small amounts on a tray with adult supervision. Do not seal the bottle, taste the mixture or point it toward anyone; wash hands after the activity."],
           q: [
             ch('We live on the Earth\'s…', '*crust|core|mantle'),
             ch('Earthquakes often happen…', '*where plates meet|only in deserts|only at night'),
@@ -245,7 +245,7 @@ export default subject({
           ],
           t: ['How can a rock be part of a "cycle"?', 'How long do you think it takes to make a sedimentary rock?'],
           k: ['Explain the rock cycle to someone using three rocks or pictures.'],
-          m: ['🧪 Crayon Rock Cycle', 'old crayons, a grater (adult help), foil, warm water or sunlight', 'Grate crayons into shavings ("weathering") | Layer and press them in foil ("sedimentary") | Warm and press harder ("metamorphic") | Melt fully and let cool ("igneous") | Label each stage'],
+          m: ['🧪 Crayon Rock Cycle', 'old crayons, a grater (adult help), foil, warm water or sunlight', 'Grate crayons into shavings ("weathering") | Layer and press them in foil ("sedimentary") | Warm and press harder ("metamorphic") | Melt fully and let cool ("igneous") | Label each stage', "An adult must handle the grater and any heating. Children should not touch hot wax, foil or tools; let materials cool fully before handling."],
           q: [
             ch('Basalt forms from…', '*cooled lava|pressed sand|shells'),
             ch('Wind carrying sand away is…', 'melting|*erosion|condensation'),
@@ -372,7 +372,7 @@ export default subject({
           ],
           t: ['Who should do the most to reduce emissions — countries with high past emissions or high current emissions?', 'How can individuals and governments each contribute?'],
           k: ['Give a 3-minute explanation of the greenhouse effect with a diagram, then answer questions.'],
-          m: ['🧪 Mini Greenhouse Experiment', 'two jars, two thermometers, a lamp or sunlight, cling film', 'Place a thermometer in each jar | Cover one with cling film | Put both under the same light for 30 minutes | Record temperatures every 5 minutes and explain the model\'s strengths and limits'],
+          m: ['🧪 Mini Greenhouse Experiment', 'two jars, two thermometers, a lamp or sunlight, cling film', 'Place a thermometer in each jar | Cover one with cling film | Put both under the same light for 30 minutes | Record temperatures every 5 minutes and explain the model\'s strengths and limits', "Use a cool-running lamp or indirect sunlight, keep water away from electrical cords, and have an adult supervise the setup. Do not touch a hot bulb."],
           q: [
             ch('Which is a greenhouse gas?', '*methane|nitrogen|argon'),
             ch('Reducing emissions is called…', '*mitigation|adaptation|erosion'),
