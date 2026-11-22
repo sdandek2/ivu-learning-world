@@ -119,7 +119,7 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
       {locked && step === 'learn' && <p className="notice">🔒 This lesson builds on “{lesson.prerequisites[0]}”. You can look around, but it's best to finish the earlier lesson first.</p>}
 
       <main className="lesson-body">
-        {step === 'learn' && <LearnStep ctx={ctx} onNext={next} />}
+        {step === 'learn' && <LearnStep ctx={ctx} ageBand={ageBand} onNext={next} />}
         {step === 'story' && <StoryStep title={lesson.story.title} text={lesson.story.text} ageBand={ageBand} onNext={next} />}
         {step === 'play' && <ItemsRun key="play" items={lesson.activities} mode="practice" ageBand={ageBand} teachingContext={lesson.explanation} onFinish={async (r) => { await store.practice(lesson.id, r); next(); }} />}
         {step === 'think' && <ThinkStep lessonId={lesson.id} thinking={lesson.thinking} speaking={lesson.speaking} onNext={next} />}
@@ -210,7 +210,7 @@ export function PhonicsWordPractice({ vocabulary, ageBand }: { vocabulary: Lesso
 }
 
 
-function LearnStep({ ctx, onNext }: { ctx: LessonContext; onNext: () => void }) {
+function LearnStep({ ctx, ageBand, onNext }: { ctx: LessonContext; ageBand: AgeBand; onNext: () => void }) {
   const { lesson } = ctx;
   const [page, setPage] = useState(0);
   const pages = lesson.explanation;
