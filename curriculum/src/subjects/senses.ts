@@ -181,7 +181,7 @@ export default subject({
           ],
           t: ['Why might people who listen to loud music often have hearing problems later?', 'How do hearing aids help?'],
           k: ['Explain to someone how a sound gets from a bell to their brain.'],
-          m: ['🧪 Tin-Can Telephone', 'two paper cups or tins, a long string, a pin (adult help)', 'Make a hole in each cup and tie the string between them | Pull the string tight and talk | Try with a loose string | Explain how vibrations carry the sound'],
+          m: ['🧪 Tin-Can Telephone', 'two paper cups or tins, a long string, a pin (adult help)', 'Make a hole in each cup and tie the string between them | Pull the string tight and talk | Try with a loose string | Explain how vibrations carry the sound', "An adult must make the holes and handle the pin. Use paper cups rather than sharp-edged tins, and check that the string is secure."],
           q: [
             ch('Which vibrates when sound enters the ear?', '*eardrum|tongue|eyelid'),
             ch('The cochlea is shaped like a…', '*snail shell|star|square'),
