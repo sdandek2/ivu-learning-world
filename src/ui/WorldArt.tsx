@@ -2,6 +2,7 @@
  * Illustrated world scenes — hand-built SVG so every world is visually distinct,
  * crisp at any size, tiny to ship, and fully offline.
  */
+import { useId } from 'react';
 import type { World } from '../curriculum/schema.ts';
 
 type C = World['colors'];
@@ -113,10 +114,39 @@ const scenes: Record<string, (c: C) => React.ReactNode> = {
 
 export function WorldArt({ world, className, title }: { world: Pick<World, 'motif' | 'colors' | 'title'>; className?: string; title?: string }) {
   const c = world.colors;
+  const uid = useId().replace(/:/g, '');
   return (
     <svg viewBox="0 0 240 160" className={className} role="img" aria-label={title ?? `${world.title} illustration`} preserveAspectRatio="xMidYMid slice">
-      <rect width="240" height="160" fill={c.sky} />
-      {scenes[world.motif]?.(c)}
+      <defs>
+        <linearGradient id={`${uid}-sky`} x1="0" y1="0" x2="0.9" y2="1">
+          <stop offset="0%" stopColor="#fff" stopOpacity=".46" />
+          <stop offset="48%" stopColor={c.sky} />
+          <stop offset="100%" stopColor={c.ink} stopOpacity=".34" />
+        </linearGradient>
+        <radialGradient id={`${uid}-glow`} cx="50%" cy="34%" r="70%">
+          <stop offset="0%" stopColor="#fff" stopOpacity=".34" />
+          <stop offset="100%" stopColor="#fff" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id={`${uid}-shade`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#142b3b" stopOpacity="0" />
+          <stop offset="100%" stopColor="#142b3b" stopOpacity=".22" />
+        </linearGradient>
+        <pattern id={`${uid}-grain`} width="13" height="13" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="3" r=".65" fill="#fff" opacity=".32" />
+          <circle cx="10" cy="9" r=".45" fill={c.ink} opacity=".18" />
+        </pattern>
+        <filter id={`${uid}-soft-shadow`} x="-20%" y="-20%" width="140%" height="150%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="1.4" result="blur" />
+          <feOffset dy="1.5" result="offset" />
+          <feComponentTransfer in="offset"><feFuncA type="linear" slope=".2" /></feComponentTransfer>
+          <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+      </defs>
+      <rect width="240" height="160" fill={`url(#${uid}-sky)`} />
+      <rect width="240" height="160" fill={`url(#${uid}-glow)`} />
+      <g filter={`url(#${uid}-soft-shadow)`}>{scenes[world.motif]?.(c)}</g>
+      <rect width="240" height="160" fill={`url(#${uid}-grain)`} opacity=".3" pointerEvents="none" />
+      <rect width="240" height="160" fill={`url(#${uid}-shade)`} pointerEvents="none" />
     </svg>
   );
 }
