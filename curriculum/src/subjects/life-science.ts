@@ -29,7 +29,7 @@ export default subject({
           k: ['Find three living and three non-living things at home and explain how you decided.'],
           m: ['Living and Non-Living Sorting Hunt', 'two baskets or boxes, labels, toys and real objects, a plant pot', 'Label one basket "living" and one "non-living" | Collect objects (use a photo or drawing for animals) | Sort them | Explain your trickiest choice'],
           q: [
-            ch('Which is living?', '🪑 chair|*🐞 ladybird|🔑 key'),
+            ch('Which one can grow and needs water?', '🪑 chair|*🌻 sunflower|🔑 key', 'A sunflower is a living plant. It grows and takes in water through its roots.'),
             tf('A rock grows if you water it.', false),
             ch('All living things need…', '*water|toys|television'),
           ],
