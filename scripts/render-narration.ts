@@ -84,7 +84,7 @@ const JOBS = Number(opt('jobs', opt('engine') === 'elevenlabs' ? '2' : '4'));
 const FORCE = argv.includes('--force');
 
 if (ENGINE === 'piper' && !MODEL) { console.error('--engine piper needs --model path/to/voice.onnx'); process.exit(2); }
-const voiceId = ENGINE === 'elevenlabs' ? `elevenlabs:${VOICE}:${MODEL}/mp3_22050_32`
+const voiceId = ENGINE === 'elevenlabs' ? `elevenlabs:${VOICE}:${MODEL}/mp3_44100_64`
   : (ENGINE === 'say' ? `say:${VOICE}@${RATE}` : `piper:${MODEL!.split('/').pop()}`) + '/aac24';
 
 // The voice service and the free local engines keep separate catalogues, so partial service
@@ -126,10 +126,10 @@ const encode = (src: string, file: string) =>
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-/** ElevenLabs text-to-speech, MP3 22.05 kHz 32 kbit/s, retrying politely when rate-limited. */
+/** ElevenLabs text-to-speech, MP3 44.1 kHz 64 kbit/s (same as IVU Reads requests), retrying politely when rate-limited. */
 async function renderElevenLabs(text: string, file: string) {
   for (let attempt = 0; ; attempt++) {
-    const r = await fetch(`${XI}/text-to-speech/${encodeURIComponent(VOICE)}?output_format=mp3_22050_32`, {
+    const r = await fetch(`${XI}/text-to-speech/${encodeURIComponent(VOICE)}?output_format=mp3_44100_64`, {
       method: 'POST',
       headers: { 'xi-api-key': env.ELEVENLABS_API_KEY, 'content-type': 'application/json', accept: 'audio/mpeg' },
       body: JSON.stringify({ text: forEngine(text), model_id: MODEL }),
