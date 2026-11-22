@@ -42,68 +42,86 @@ export function Universe() {
   const recs = useMemo(() => (outline && index ? recommend(outline, settings, skills, { worldOrder: index.worlds.map((w) => w.id) }) : []), [outline, index, settings, skills]);
   if (!index) return <Loading />;
   const hello = `${greeting()}, ${settings.learnerName}!`;
+  const next = recs[0];
+  const nextWorld = next ? worldOfSubject(index.worlds, next.subjectId) : undefined;
+  const nextSubject = nextWorld?.subjects.find((s) => s.id === next?.subjectId);
+  const action = next ? (next.kind === 'revise' ? 'Remember together' : next.kind === 'continue' ? 'Continue your adventure' : 'Start a new adventure') : 'Explore the worlds';
+  const nextHref = next ? (next.kind === 'revise' ? `/revise/${next.lessonId}` : `/lesson/${next.lessonId}`) : '/explore';
   return (
-    <div className="universe">
-      <header className="universe__hero">
-        <Buddy size={84} color="#5B4FCF" accent="#FFD166" className="bob" />
-        <div>
-          <h1 className="universe__title">{hello}</h1>
-          <p className="universe__sub">Where shall we explore today?</p>
+    <div className="universe universe--owl">
+      <header className="owl-hero">
+        <div className="owl-hero__sky" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>☁</span></div>
+        <div className="owl-hero__copy">
+          <span className="owl-hero__eyebrow">YOUR LITTLE WORLD OF BIG DISCOVERIES</span>
+          <h1 className="owl-hero__title">{hello}</h1>
+          <p className="owl-hero__sub">Ready for a wonderful adventure?</p>
+          <button className="owl-hero__speak" onClick={() => navigate('/explore')} aria-label="Explore learning worlds">Let's explore <span aria-hidden="true">↗</span></button>
         </div>
-        <SpeakButton text={`${hello} Where shall we explore today?`} />
+        <div className="owl-hero__buddy" aria-label="Buddy the owl, your learning guide">
+          <span className="owl-hero__halo" />
+          <Buddy size={176} color="#5145B8" accent="#FFD66B" className="bob" />
+          <span className="owl-hero__speech">Hi, explorer!</span>
+        </div>
+        <div className="owl-hero__ground" aria-hidden="true" />
       </header>
 
-      {recs.length > 0 && (
-        <section className="path" aria-labelledby="path-h">
-          <h2 id="path-h" className="section-title">✨ {t('todayPath')}</h2>
-          <div className="path__row">
-            {recs.map((r, i) => {
-              const w = worldOfSubject(index.worlds, r.subjectId)!;
-              const s = w.subjects.find((x) => x.id === r.subjectId)!;
-              return (
-                <button key={r.lessonId} className="pathcard" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky }}
-                  onClick={() => navigate(r.kind === 'revise' ? `/revise/${r.lessonId}` : `/lesson/${r.lessonId}`)}>
-                  <span className="pathcard__step">{i + 1}</span>
-                  <span className="pathcard__icon" aria-hidden="true">{r.kind === 'revise' ? '🧠' : s.icon}</span>
-                  <span className="pathcard__kind">{r.kind === 'revise' ? t('revise') : r.kind === 'continue' ? 'Keep going' : 'Something new'}</span>
-                  <span className="pathcard__title">{r.title}</span>
-                  <span className="pathcard__subject">{s.title}</span>
-                </button>
-              );
-            })}
-          </div>
-        </section>
-      )}
-
-      <section className="home-discover" aria-label="Explore the learning worlds">
-        <div><span className="home-discover__eyebrow">A universe of discovery</span><h2>12 wonderful worlds are waiting</h2><p>Follow a trail, meet new friends and discover something amazing.</p></div>
-        <button className="btn btn--primary btn--big" onClick={() => navigate('/explore')}>Explore the worlds <span aria-hidden="true">→</span></button>
+      <section className="owl-next" aria-labelledby="owl-next-title">
+        <div className="owl-next__heading">
+          <div><span className="owl-kicker">BUDDY'S PICK FOR YOU</span><h2 id="owl-next-title">Your next adventure</h2></div>
+          <span className="owl-next__sparkle" aria-hidden="true">✦</span>
+        </div>
+        {next ? (
+          <button className="owl-adventure" onClick={() => navigate(nextHref)} style={{ ['--adventure-world' as string]: nextWorld?.colors.land ?? '#6658C9', ['--adventure-sky' as string]: nextWorld?.colors.sky ?? '#EEEAFE' }}>
+            <span className="owl-adventure__art">{nextWorld && <WorldArt world={nextWorld} />}</span>
+            <span className="owl-adventure__content">
+              <span className="owl-adventure__tag">{next.kind === 'revise' ? '🧠 A little reminder' : next.kind === 'continue' ? '🌟 Pick up where you left off' : '🗺️ A new discovery'}</span>
+              <strong>{next.title}</strong>
+              <span className="owl-adventure__subject">{nextSubject?.icon} {nextSubject?.title} · {nextWorld?.title}</span>
+              <span className="owl-adventure__cta">{action} <span aria-hidden="true">→</span></span>
+            </span>
+          </button>
+        ) : (
+          <button className="owl-adventure owl-adventure--empty" onClick={() => navigate('/explore')}>
+            <span className="owl-adventure__content"><strong>12 wonderful worlds are waiting</strong><span>Choose a world and discover something new.</span><span className="owl-adventure__cta">Explore the worlds →</span></span>
+          </button>
+        )}
       </section>
-      <footer className="home-grownups"><span>Made for curious minds, guided by grown-ups.</span><button className="home-grownups__link" onClick={() => navigate('/parent/dashboard')}>Grown-ups <span aria-hidden="true">↗</span></button></footer>
+
+      <section className="owl-worlds" aria-labelledby="owl-worlds-title">
+        <div className="owl-section-head"><div><span className="owl-kicker">PICK A PLACE TO WANDER</span><h2 id="owl-worlds-title">Explore the worlds</h2></div><button onClick={() => navigate('/explore')} className="owl-text-link">See all 12 <span aria-hidden="true">→</span></button></div>
+        <div className="owl-world-strip">
+          {index.worlds.slice(0, 4).map((w, i) => (
+            <button key={w.id} className="owl-world-chip" onClick={() => navigate(`/world/${w.id}`)} style={{ ['--chip-world' as string]: w.colors.land, ['--chip-sky' as string]: w.colors.sky }}>
+              <span className="owl-world-chip__art"><WorldArt world={w} /></span><span className="owl-world-chip__name">{w.title}</span><span className="owl-world-chip__domain">{w.domain}</span><span className="owl-world-chip__number">{String(i + 1).padStart(2, '0')}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+      <footer className="owl-footer"><Buddy size={38} color="#5145B8" accent="#FFD66B" /><span>Keep wondering. Keep discovering.</span><button onClick={() => navigate('/parent/dashboard')}>Grown-ups <span aria-hidden="true">↗</span></button></footer>
     </div>
   );
 }
 
-
-/** Dedicated discovery map keeps the home screen focused on the next adventure. */
+/** An illustrated atlas of all twelve worlds, with a clear, repeatable destination action. */
 export function ExploreMap() {
   const { index, skills } = useStore();
   if (!index) return <Loading />;
   return (
-    <div className="explore-page">
-      <TopBar title="Explore the worlds" back="/" color="#263B55" />
-      <header className="explore-page__intro">
-        <Buddy size={76} color="#4C5C8A" accent="#F7C96B" mood="wow" />
-        <div><p className="explore-page__eyebrow">Choose your next destination</p><h1>Where shall we go?</h1><p>Every world is a new adventure. Pick one to begin exploring.</p></div>
+    <div className="explore-page explore-page--atlas">
+      <TopBar title="Explore the worlds" back="/" color="#5145B8" />
+      <header className="atlas-hero">
+        <Buddy size={92} color="#5145B8" accent="#FFD66B" mood="wow" />
+        <div><span className="owl-kicker">BUDDY'S WORLD ATLAS</span><h1>Where shall we go?</h1><p>Every island has something wonderful to discover.</p></div>
       </header>
-      <div className="map map--cinematic">
+      <div className="atlas-map">
+        <div className="atlas-map__path" aria-hidden="true" />
         {index.worlds.map((w, i) => {
           const started = w.subjects.reduce((n, sub) => n + Object.values(skills).filter((k) => k.subjectId === sub.id && k.stage > 0).length, 0);
           return (
-            <button key={w.id} className="island" style={{ ['--world' as string]: w.colors.land, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink, animationDelay: `${(i % 4) * 0.4}s` }} onClick={() => navigate(`/world/${w.id}`)}>
-              <WorldArt world={w} className="island__art" />
-              <span className="island__label"><span className="island__name">{w.title}</span><span className="island__domain">{w.domain}</span><span className="island__explore">Enter world <span aria-hidden="true">↗</span></span></span>
-              {started > 0 && <span className="island__badge" aria-label={`${started} learning skills started`}>⭐ {started}</span>}
+            <button key={w.id} className={`atlas-island atlas-island--${i % 6}`} style={{ ['--island-world' as string]: w.colors.land, ['--island-sky' as string]: w.colors.sky, ['--island-accent' as string]: w.colors.accent }} onClick={() => navigate(`/world/${w.id}`)}>
+              <span className="atlas-island__scene"><WorldArt world={w} /></span>
+              <span className="atlas-island__meta"><strong>{w.title}</strong><small>{w.domain}</small><span className="atlas-island__enter">Visit this world <b aria-hidden="true">→</b></span></span>
+              {started > 0 && <span className="atlas-island__progress" aria-label={`${started} learning skills started`}>⭐ {started}</span>}
             </button>
           );
         })}
