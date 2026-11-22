@@ -215,7 +215,7 @@ export default subject({
           k: ['Explain to someone how to use a protractor, then measure an angle in front of them.'],
           m: ['Angle Hunt', 'protractor, paper, ruler', 'Find 10 angles at home (scissors, laptop screen, roof, book) | Estimate each angle | Measure with a protractor or a paper right-angle tester | Record estimate, measurement and type in a table', "Use scissors only as an example of an angle; keep blades closed when measuring and handle them carefully with adult supervision."],
           q: [
-            ch('An angle of 175° is…', 'acute|right|*obtuse'),
+            tf('175° is an obtuse angle.', true, 'An obtuse angle is greater than 90° and less than 180°.'),
             ch('Angles around a point add up to…', '180°|*360°|90°'),
             ch('A full turn is…', '180°|*360°|100°'),
           ],
@@ -246,7 +246,7 @@ export default subject({
           q: [
             ch('Area of a 7 m × 4 m room?', '22 m²|*28 m²|11 m²'),
             ch('Perimeter of a square with side 5 cm?', '*20 cm|25 cm|10 cm'),
-            ch('Area is measured in…', 'cm|*cm²|kg'),
+            tf('Area is measured in square units.', true, 'Area measures a surface, so its units are squared, such as cm².'),
           ],
           ms: ['Calculates perimeter and area of rectangles and composite rectilinear shapes', 'Distinguishes perimeter and area in context', 'Explores relationships between them'],
         }),
@@ -371,7 +371,7 @@ export default subject({
           k: ['Explain to someone how to find a tree\'s height using trigonometry.'],
           m: ['🧪 Build a Clinometer', 'protractor, straw, string, small weight, tape measure', 'Tape a straw along a protractor and hang a weighted string from the centre | Sight the top of a tall object and read the angle | Measure your distance from its base | Calculate the height with tan and compare with another method'],
           q: [
-            ch('cos θ = adjacent ÷ ___', 'opposite|*hypotenuse|tangent'),
+            tf('cos θ = adjacent ÷ hypotenuse.', true, 'In a right triangle, cosine is adjacent divided by hypotenuse.'),
             ch('Hypotenuse 10, angle 30°, opposite side = ?', '*5|8.66|10'),
             ch('To find an angle from a ratio, use the…', '*inverse function|square root|distributive law'),
           ],
