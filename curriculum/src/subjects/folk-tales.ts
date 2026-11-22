@@ -348,7 +348,7 @@ export default subject({
           ],
           t: ['Is a structural model like Propp\'s more useful for some tales than others?', 'Should collectors edit tales to suit their readers?'],
           k: ['Present a Proppian analysis of an Indian folk tale.'],
-          m: ['Field Collection Project', 'a recording device, consent from interviewees, notebook', 'Ask an older relative or neighbour (with permission) to tell a traditional tale | Transcribe it faithfully | Analyse it using Propp\'s functions and motifs | Write a 1500-word report reflecting on what changed in transcription'],
+          m: ['Field Collection Project', 'a recording device, consent from interviewees, notebook', 'Ask an older relative or neighbour (with permission) to tell a traditional tale | Transcribe it faithfully | Analyse it using Propp\'s functions and motifs | Write a 1500-word report reflecting on what changed in transcription', "Obtain informed consent before recording or transcribing a story. Explain how it will be used, ask how the storyteller wishes to be credited, and do not publish identifying details without permission."],
           q: [
             ch('Propp found how many functions?', '*31|7|100'),
             tf('Structural models have been criticised for ignoring context.', true),
