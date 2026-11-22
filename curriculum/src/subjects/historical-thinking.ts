@@ -1,0 +1,392 @@
+import { subject, S, U, L, ch, tf, od, mt } from '../dsl.ts';
+
+export default subject({
+  id: 'historical-thinking',
+  description: 'How we know about the past: then and now, timelines, sources and evidence, archaeology, primary and secondary sources, bias and perspective, causation and change, and historiography. The skills that make all other history trustworthy.',
+  stages: [
+    S('s4', 'Then and now, old and new.', [
+      'Talk about past and present', 'Compare old and new objects', 'Sequence events in their own life',
+    ], [
+      U('then-now', 'Then and Now', 'Things change over time.', 'Old and new toys, phones, transport; Past, present, future; Grandparents\' memories', [
+        L('old-new', 'Old Things, New Things', {
+          o: ['Sort objects into old and new', 'Use the words past, present and future'],
+          p: ['Can talk about yesterday and today'],
+          e: [
+            'The past is everything that has already happened. The present is now. The future is what hasn\'t happened yet.',
+            'Things change over time. Long ago, people listened to music on radios and record players; now we use phones. Grandparents wrote letters; now we send messages.',
+            'Old things are clues about the past. When we look at them, we learn how people used to live.',
+          ],
+          c: [['evidence', 'Objects from the past, such as old photographs and tools, are a kind of evidence that helps us learn about how people lived.']],
+          v: 'past = what has already happened; present = now; future = what will happen; old = made a long time ago',
+          x: ['An old rotary telephone and a new smartphone.', 'A bullock cart and a car.'],
+          s: ['Grandpa\'s Treasure Box', 'Grandpa opened a dusty box: a black-and-white photo, a heavy old radio, coins with holes in them. "These are from when I was young," he said. Ivaan held up his tablet. "And this is from now!" Grandpa laughed. "One day, your tablet will be in someone\'s treasure box."'],
+          a: [
+            mt('Old or new?', '📻 old radio=long ago|📱 smartphone=now|🐂 bullock cart=long ago, still used in some villages'),
+            ch('Yesterday is in the…', '*past|present|future'),
+            ch('Tomorrow is in the…', 'past|present|*future'),
+            tf('Old objects can teach us about the past.', true),
+          ],
+          t: ['What do you think will look old-fashioned in 50 years?', 'What would you put in a box to show children of the future?'],
+          k: ['Ask a grandparent or older person about one toy they had and tell a grown-up about it.'],
+          m: ['Then-and-Now Display', 'old and new objects from home (with permission), labels', 'Collect pairs of old and new objects (or photos) | Label each "then" or "now" | Ask an elder about the old ones | Show your display to the family'],
+          q: [
+            ch('Now is the…', 'past|*present|future'),
+            tf('Things change over time.', true),
+            ch('Which is older?', '*a letter in an envelope|a video call'),
+          ],
+          ms: ['Uses past/present/future', 'Compares old and new', 'Asks elders about the past'],
+        }),
+      ]),
+      U('my-story', 'My Own History', 'Everyone has a history.', 'Baby to now; Photos as clues; Ordering events in my life', [
+        L('my-timeline', 'My Timeline', {
+          o: ['Order events from their own life', 'Use photos as clues about the past'],
+          p: ['Knows past and present'],
+          e: [
+            'You have a history too! It started when you were born. Things happened in order: you were a baby, you learned to walk, you started school.',
+            'Photos are clues. A baby photo shows what you looked like long ago.',
+            'A timeline is a line that shows events in the order they happened, from earliest to latest.',
+          ],
+          c: [['evidence', 'Photos, birth certificates and family memories are evidence of a person\'s own history.']],
+          v: 'history = the story of the past; timeline = a line showing events in order; event = something that happens; clue = something that helps us find out',
+          x: ['Born → first steps → first word → started school.', 'A photo of your first birthday cake.'],
+          s: ['Momo\'s Photo Line', 'Momo laid out photos on the floor: a tiny baby bear, a bear taking first wobbly steps, a bear on a tricycle, a bear in a school uniform. "That\'s my whole history!" said Momo. "And there\'s lots more still to come."'],
+          a: [
+            od('Put your life in order', 'born 👶|learned to walk|started school 🎒|now'),
+            ch('A timeline shows events…', '*in order|in a jumble|in colours only'),
+            tf('Photos are clues about the past.', true),
+            ch('Which happened first in your life?', '*being a baby|going to school'),
+          ],
+          t: ['How do you know what happened when you were a baby if you can\'t remember?', 'What would you like to add to your timeline next year?'],
+          k: ['Tell a grown-up about three events on your timeline in order.'],
+          m: ['My Life Timeline', 'a long paper strip, photos or drawings, glue', 'Collect 4–5 photos or draw pictures of your life | Put them in order on a strip | Ask a grown-up about events you don\'t remember | Add labels and share'],
+          q: [
+            ch('Things that happened are…', '*events|colours|toys'),
+            tf('A timeline goes from earliest to latest.', true),
+            ch('We can learn about when we were babies from…', '*photos and family stories|dreams only|nothing'),
+          ],
+          ms: ['Sequences personal events', 'Uses evidence like photos', 'Understands a timeline'],
+        }),
+      ]),
+    ]),
+    S('s5', 'Timelines and how we find out about the past.', [
+      'Use a simple timeline with years', 'Know that we learn about the past from evidence', 'Ask questions about old objects',
+    ], [
+      U('timelines', 'Timelines', 'Putting events in order with years.', 'Years and decades; Long ago, not so long ago; Family timeline', [
+        L('family-timeline', 'Family Timeline', {
+          o: ['Place family events on a timeline with years', 'Use words like decade and long ago'],
+          p: ['Makes a personal timeline'],
+          e: [
+            'We measure time in years. Ten years is a decade. A hundred years is a century.',
+            'A family timeline can show when grandparents were born, when parents married, when you were born.',
+            'Things far to the left of a timeline happened long ago; things on the right happened recently.',
+          ],
+          c: [['evidence', 'Family records, documents and the memories of relatives help us place events on a family timeline.']],
+          v: 'year = 12 months; decade = 10 years; century = 100 years; long ago = a long time in the past',
+          x: ['Grandma born 1960 → Mama born 1990 → Ivaan born 2022.', '2020 to 2030 is a decade.'],
+          s: ['Zuri\'s Family Line', 'Zuri asked everyone their birth years and drew a long line on the wall. Great-Grandpa: 1935. Grandma: 1962. Mama: 1991. Zuri: 2021. "Great-Grandpa was born almost 90 years before me!" she gasped. "He\'s seen so much history."'],
+          a: [
+            ch('A decade is…', '*10 years|100 years|1 year'),
+            od('Order these years', '1935|1962|1991|2021'),
+            ch('A century is…', '10 years|*100 years|1,000 years'),
+            tf('The left side of a timeline usually shows older events.', true),
+          ],
+          t: ['What big changes might your grandparents have seen?', 'Why do historians use timelines?'],
+          k: ['Show your family timeline to someone and explain it.'],
+          m: ['Family Timeline Wall', 'a long paper strip, family photos or drawings, markers', 'Ask family members for important dates | Mark years along a strip | Add events and photos | Note one world event near each family event'],
+          q: [
+            ch('Which year is earliest?', '*1950|2000|2024'),
+            tf('A century is 100 years.', true),
+            ch('Ten years is a…', '*decade|week|century'),
+          ],
+          ms: ['Uses years and periods', 'Constructs family timelines', 'Interprets chronology'],
+        }),
+      ]),
+      U('evidence', 'How Do We Know?', 'Evidence about the past.', 'Objects, buildings, photos, writing, memories; Asking questions', [
+        L('detective', 'History Detectives', {
+          o: ['Name kinds of evidence about the past', 'Ask questions about an old object'],
+          p: ['Knows old objects are clues'],
+          e: [
+            'Historians are like detectives. They look for evidence: old objects, buildings, photos, letters, diaries, coins and people\'s memories.',
+            'When you find an old object, ask questions: What is it made of? What was it for? Who used it? How old is it?',
+            'The more evidence we have, the more confident we can be about what happened.',
+          ],
+          c: [['evidence', 'Historians use many kinds of sources together; where evidence is limited, they say so rather than guessing.']],
+          v: 'evidence = information that shows what happened; historian = a person who studies the past; source = where information comes from; artefact = an object made by people long ago',
+          x: ['An old coin showing a king\'s face.', 'A grandparent\'s memory of their school days.'],
+          s: ['The Mystery Object', 'Professor Hoot showed the class a strange brass object with a long handle and holes. "What is it?" The children asked questions: "Is it for cooking? For light?" They examined it and asked an elder, who smiled: "It\'s an old oil lamp holder from my grandmother\'s house!"'],
+          a: [
+            ch('Which is evidence about the past?', '*an old coin|a dream|a cartoon'),
+            ch('A historian is like a…', '*detective|chef|pilot'),
+            tf('More evidence makes us more confident.', true),
+            mt('Match the evidence', 'letter=writing|coin=object|grandparent\'s story=memory'),
+          ],
+          t: ['Can memories ever be wrong?', 'What evidence of your life might historians find in 100 years?'],
+          k: ['Ask four questions about an old object to a grown-up.'],
+          m: ['Mystery Object Investigation', 'an old object from home or a museum photo, a question sheet', 'Look closely at the object | Write or draw answers to: what, who, when, why | Ask an elder or check a book | Present your findings'],
+          q: [
+            ch('An object made by people long ago is an…', '*artefact|astronaut|animal'),
+            tf('Historians use evidence.', true),
+            ch('Where information comes from is a…', '*source|toy|road'),
+          ],
+          ms: ['Identifies evidence types', 'Asks investigative questions', 'Links evidence to confidence'],
+        }),
+      ]),
+    ]),
+    S('s6', 'Primary and secondary sources, and archaeology.', [
+      'Distinguish primary and secondary sources', 'Explain what archaeologists do', 'Use dates BCE and CE',
+    ], [
+      U('sources', 'Primary and Secondary Sources', 'Sources from the time and sources about the time.', 'Primary: diaries, photos, inscriptions; Secondary: textbooks, documentaries; Using both', [
+        L('primary-secondary', 'From the Time or About the Time?', {
+          o: ['Classify sources as primary or secondary', 'Explain why historians use both'],
+          p: ['Knows kinds of evidence'],
+          e: [
+            'A primary source was made at the time being studied: a diary, a photograph, a letter, an inscription, a coin.',
+            'A secondary source was made later by someone studying the past: a textbook, an encyclopedia, a documentary.',
+            'Historians use primary sources as evidence and secondary sources to learn what others have found. Both have strengths and limits.',
+          ],
+          c: [['evidence', 'Ashoka\'s rock edicts (3rd century BCE) are primary sources; modern history books about Ashoka are secondary sources.']],
+          v: 'primary source = a source from the time being studied; secondary source = a source made later about the past; inscription = writing carved on stone or metal; edict = an official order',
+          x: ['Gandhi\'s letters: primary. A biography of Gandhi: secondary.', 'A photo of the 1947 Independence Day: primary.'],
+          s: ['The Emperor\'s Rock', 'Over 2,200 years ago, Emperor Ashoka had his messages carved into rocks and pillars across his empire. Centuries later, people could no longer read the script. In 1837, James Prinsep deciphered the Brahmi script, and Ashoka\'s own words could be read again — a primary source speaking across time.'],
+          a: [
+            mt('Primary or secondary?', 'Ashoka\'s rock edict=primary|a history textbook=secondary|a soldier\'s diary from 1857=primary, from the time'),
+            ch('A documentary made today about the Mughals is…', 'primary|*secondary'),
+            tf('Historians use both primary and secondary sources.', true),
+            ch('Writing carved on stone is an…', '*inscription|email|poster'),
+          ],
+          t: ['Why might a diary not tell the whole story?', 'Can a secondary source become a primary source for later historians?'],
+          k: ['Show someone one primary and one secondary source about your family and explain the difference.'],
+          m: ['Source Sorting Activity', 'a mix of items: old letters, photos, a textbook, a newspaper, a printed web article', 'Sort items into primary and secondary for a chosen topic | Explain each choice | Note one strength and one limit of each | Present to family'],
+          q: [
+            ch('A photograph taken in 1947 of a 1947 event is…', '*primary|secondary'),
+            tf('Ashoka\'s edicts were deciphered after the Brahmi script was decoded.', true),
+            ch('A biography written today is…', 'primary|*secondary'),
+          ],
+          ms: ['Classifies sources correctly', 'Explains uses of each', 'Recognises limits of sources'],
+        }),
+      ]),
+      U('archaeology', 'Archaeology', 'Digging up the past.', 'Excavation; Layers (stratigraphy); Dating: BCE and CE; Archaeological sites in India', [
+        L('dig', 'The Archaeologist\'s Dig', {
+          o: ['Explain how archaeologists excavate and record finds', 'Use BCE and CE dates correctly'],
+          p: ['Knows primary sources'],
+          e: [
+            'Archaeologists study the past through objects and remains left behind. They excavate carefully, layer by layer, recording exactly where each find is.',
+            'Usually, deeper layers are older — like a pile of newspapers where the oldest are at the bottom. This is called stratigraphy.',
+            'Dates are written BCE (Before Common Era) and CE (Common Era). 2500 BCE is earlier than 500 BCE. Counting goes backwards in BCE: the bigger the number, the older.',
+          ],
+          c: [['evidence', 'Excavations at sites like Harappa and Mohenjo-daro in the 1920s revealed the Indus (Harappan) Civilisation, flourishing around 2600–1900 BCE.']],
+          v: 'archaeologist = a person who studies the past from objects and remains; excavate = dig carefully; stratigraphy = the study of layers in the ground; BCE = Before Common Era',
+          x: ['Pottery shards found in a deep layer are usually older than those above.', '326 BCE is earlier than 26 CE.'],
+          s: ['The Buried City', 'In the 1920s, archaeologists digging at Mohenjo-daro uncovered brick streets, drains and houses — a planned city more than 4,000 years old. No one had known it was there. Layer by layer, they revealed a whole civilisation that had been forgotten.'],
+          a: [
+            ch('Deeper layers are usually…', '*older|newer|the same age'),
+            od('Order from earliest to latest', '2500 BCE|1000 BCE|100 CE|1947 CE'),
+            ch('Archaeologists dig…', '*carefully, recording where things are found|as fast as possible|without notes'),
+            tf('Mohenjo-daro was excavated in the 1920s.', true),
+          ],
+          t: ['Why must archaeologists record exactly where things are found?', 'Why is it wrong to dig up sites without permission?'],
+          k: ['Explain BCE and CE to someone with an example.'],
+          m: ['🧪 Layer Cake Dig', 'a clear container, layers of sand, soil and gravel, small "artefacts" (buttons, coins), a spoon and brush', 'A grown-up builds layers with hidden objects | Dig carefully, one layer at a time | Record each find\'s layer | Decide which objects are "oldest" and explain why'],
+          q: [
+            ch('Which is earlier?', '*500 BCE|500 CE'),
+            tf('Stratigraphy studies layers.', true),
+            ch('Archaeologists study…', '*objects and remains from the past|future weather|space'),
+          ],
+          ms: ['Explains excavation methods', 'Applies stratigraphy', 'Uses BCE/CE correctly'],
+        }),
+      ]),
+    ]),
+    S('s7', 'Perspectives, bias and reliability.', [
+      'Compare different accounts of the same event', 'Identify bias and perspective', 'Evaluate the reliability of sources',
+    ], [
+      U('perspective', 'Different Perspectives', 'The same event seen differently.', 'Eyewitness accounts; Perspective; Whose voices are missing?', [
+        L('two-accounts', 'Two Accounts of One Event', {
+          o: ['Compare two accounts of the same event', 'Identify whose voices may be missing'],
+          p: ['Distinguishes primary and secondary sources'],
+          e: [
+            'People experience events differently depending on who they are and where they stand. A battle looks different to a soldier, a general, a farmer whose field was crossed, and a historian centuries later.',
+            'Comparing accounts helps us build a fuller picture. Where they agree, we can be more confident; where they differ, we ask why.',
+            'Many past records were written by rulers, officials or the wealthy. Historians ask: whose voices are missing — women, workers, children, enslaved people? They look for other sources like songs, oral histories and archaeology.',
+          ],
+          c: [['interpretation', 'Historians reconstruct the past by comparing perspectives; their accounts are interpretations based on evidence.']],
+          v: 'perspective = a point of view; account = a description of events; eyewitness = a person who saw something happen; oral history = history passed on by speaking',
+          x: ['British and Indian accounts of 1857 described it very differently.', 'Folk songs preserving memories of famines.'],
+          s: ['The School Sports Day', 'After sports day, the winning team wrote: "A brilliant day of fair competition!" The losing team wrote: "The track was uneven and the referee missed a foul." A parent wrote about the heat. Professor Hoot said, "Each account is true from where they stood. A historian uses all three."'],
+          a: [
+            ch('Why might two accounts of an event differ?', '*people see it from different perspectives|one must always be a lie|events never happen'),
+            ch('Whose voices are often missing from old official records?', '*ordinary people like workers and women|kings|officials'),
+            tf('Where accounts agree, historians can be more confident.', true),
+            ch('History passed on by speaking is…', '*oral history|archaeology|a coin'),
+          ],
+          t: ['Is any account completely neutral?', 'How can historians learn about people who didn\'t write records?'],
+          k: ['Retell a family event from two different family members\' perspectives.'],
+          m: ['Oral History Interview', 'questions, a recorder or notebook, consent', 'Interview an elder about an event they remember | Interview a second person about the same event | Compare accounts | Write what agrees, what differs and why'],
+          q: [
+            ch('A point of view is a…', '*perspective|source|date'),
+            tf('Comparing accounts helps build a fuller picture.', true),
+            ch('A person who saw an event is an…', '*eyewitness|archaeologist|artefact'),
+          ],
+          ms: ['Compares accounts systematically', 'Identifies perspectives', 'Seeks missing voices'],
+        }),
+      ]),
+      U('reliability', 'Can We Trust This Source?', 'Bias, purpose and reliability.', 'Bias; Purpose and audience; Corroboration; Propaganda', [
+        L('bias-check', 'Checking for Bias', {
+          o: ['Identify bias in a source', 'Use the 5 Ws to evaluate reliability'],
+          p: ['Compares perspectives'],
+          e: [
+            'Bias is a one-sided view that may leave out or twist information. Every source has some perspective; biased sources aren\'t useless, but we must read them carefully.',
+            'Ask: Who made it? When? Why (purpose)? For whom (audience)? What does it leave out? A king\'s inscription may exaggerate his victories to impress his subjects.',
+            'Corroboration means checking a claim against other independent sources. Propaganda is deliberately misleading information spread to influence people.',
+          ],
+          c: [['interpretation', 'Royal inscriptions in many cultures, such as prashastis (praise poems) in Indian history, praised rulers; historians read them as valuable but partial evidence.']],
+          v: 'bias = a one-sided view; purpose = why a source was made; corroboration = checking with other sources; propaganda = misleading information spread to influence people',
+          x: ['A victory inscription by a king, checked against coins and other records.', 'Wartime posters exaggerating the enemy\'s cruelty.'],
+          s: ['The Boastful Inscription', 'An ancient inscription claimed a king had conquered "the whole world". Historians compared it with coins found only in a small region and records from neighbouring kingdoms. "He was powerful," they concluded, "but the whole world? That\'s the poet praising his patron."'],
+          a: [
+            od('Questions to check a source', 'Who made it?|When?|Why?|For whom?|What is left out?'),
+            ch('Checking a claim against other sources is…', '*corroboration|bias|propaganda'),
+            tf('A biased source can still be useful evidence.', true),
+            ch('A praise poem written for a king may…', '*exaggerate his achievements|always be completely accurate|have no author'),
+          ],
+          t: ['How can a biased source still teach us something true?', 'Where do you see propaganda today?'],
+          k: ['Analyse an advertisement or old poster with someone, identifying its purpose and bias.'],
+          m: ['Source Reliability Report', 'two sources on the same historical event (e.g. a textbook and a contemporary account)', 'Apply the five questions to each source | Identify possible bias | Corroborate one claim with a third source | Write a short reliability report'],
+          q: [
+            ch('Misleading information spread to influence people is…', '*propaganda|corroboration|archaeology'),
+            tf('Every source has a perspective.', true),
+            ch('Why a source was made is its…', '*purpose|date|material'),
+          ],
+          ms: ['Identifies bias and purpose', 'Uses corroboration', 'Evaluates reliability'],
+        }),
+      ]),
+    ]),
+    S('s9', 'Causation, change and continuity, and significance.', [
+      'Analyse causes and consequences', 'Distinguish change and continuity', 'Judge historical significance',
+    ], [
+      U('causes', 'Cause and Consequence', 'Why things happened and what followed.', 'Long-term and short-term causes; Triggers; Intended and unintended consequences', [
+        L('why-it-happened', 'Why Did It Happen?', {
+          o: ['Distinguish long-term causes, short-term causes and triggers', 'Analyse intended and unintended consequences'],
+          p: ['Evaluates sources'],
+          e: [
+            'Historical events usually have many causes. Long-term causes build up over years (economic hardship, resentment); short-term causes appear close to the event; a trigger is the spark that sets it off.',
+            'The 1857 uprising had long-term causes (annexation of states, economic grievances, disrespect for traditions), and a trigger (rumours that new rifle cartridges were greased with animal fat offensive to Hindu and Muslim soldiers).',
+            'Consequences can be intended or unintended, short- or long-term. After 1857, the British Crown took direct control of India from the East India Company in 1858 — a major long-term consequence.',
+          ],
+          c: [['interpretation', 'Historians debate how to name 1857 — mutiny, revolt, uprising, or First War of Independence — and how to weigh its causes.'], ['evidence', 'The Government of India Act 1858 transferred rule from the East India Company to the British Crown.']],
+          v: 'cause = a reason something happened; consequence = a result; trigger = the immediate spark of an event; unintended = not planned',
+          x: ['Long-term: drought. Short-term: rising grain prices. Trigger: a new tax. Event: a protest.', 'Unintended consequence: a new road changing trade routes.'],
+          s: ['The Cartridge Rumour', 'In 1857, sepoys heard that the cartridges for their new Enfield rifles, which had to be bitten open, were greased with cow and pig fat. Whether or not every rumour was true, it combined with years of grievances. In Meerut, soldiers rose up — and the revolt spread across northern India.'],
+          a: [
+            mt('Match the type of cause', 'years of economic hardship=long-term cause|rising prices that month=short-term cause|a sudden new tax=trigger'),
+            ch('After 1857, India came under the direct rule of…', '*the British Crown|the Mughals|Portugal'),
+            tf('Historical events usually have several causes.', true),
+            ch('A result that was not planned is an…', '*unintended consequence|trigger|primary source'),
+          ],
+          t: ['Is one cause ever the "most important"? How would you decide?', 'Why do historians argue about what to call 1857?'],
+          k: ['Explain the causes of an event (historical or personal) using long-term, short-term and trigger.'],
+          m: ['Causation Diagram', 'large paper, research sources', 'Choose a historical event | Map long-term causes, short-term causes and the trigger | Add consequences (intended and unintended) | Write a paragraph judging the most significant cause'],
+          q: [
+            ch('The immediate spark of an event is the…', '*trigger|long-term cause|consequence'),
+            tf('Historians debate names for the events of 1857.', true),
+            ch('A consequence is a…', '*result|cause|source'),
+          ],
+          ms: ['Categorises causes', 'Analyses consequences', 'Weighs causes with evidence'],
+        }),
+      ]),
+      U('change-continuity', 'Change, Continuity and Significance', 'What changed, what stayed, and what mattered.', 'Change and continuity over time; Turning points; Criteria for significance', [
+        L('significance', 'What Makes Something Significant?', {
+          o: ['Identify change and continuity across a period', 'Apply criteria to judge historical significance'],
+          p: ['Analyses causation'],
+          e: [
+            'History isn\'t only change. Continuity means things that stayed the same. Village life, family structures or festivals may continue for centuries while governments change.',
+            'A turning point is a moment when the direction of change shifted significantly — like independence in 1947.',
+            'Historians judge significance using criteria: How many people did it affect? How deeply? For how long? Does it help explain the present? Different criteria can lead to different judgements.',
+          ],
+          c: [['interpretation', 'Judgements of significance are reasoned interpretations; historians may rank events differently using different criteria.']],
+          v: 'continuity = things staying the same over time; change = things becoming different; turning point = a moment of major change; significance = how important something is',
+          x: ['Railways in the 19th century: major change in travel.', 'Monsoon farming: strong continuity over centuries.'],
+          s: ['The Printing Press Debate', 'A class debated: which was more significant — the printing press or the internet? One group argued the press spread knowledge to millions over centuries; another argued the internet connected billions in decades. The teacher smiled: "You\'re both using criteria — scale, depth, duration. That\'s how historians think."'],
+          a: [
+            mt('Change or continuity?', 'railways replacing bullock carts for long journeys=change|families celebrating the same festival for centuries=continuity|independence in 1947=turning point'),
+            ch('A criterion for significance:', '*how many people it affected|its colour|its spelling'),
+            tf('Historians may disagree about significance.', true),
+            ch('Things staying the same over time is…', '*continuity|revolution|trigger'),
+          ],
+          t: ['What is the most significant event of the last 100 years? Justify with criteria.', 'Why is continuity often overlooked?'],
+          k: ['Present a significance ranking of three events, explaining your criteria.'],
+          m: ['Significance Ranking Debate', 'event cards, criteria list, a group', 'Choose 5 events from Indian or world history | Score each on scale, depth, duration and relevance today | Rank them | Debate rankings with others'],
+          q: [
+            ch('A moment of major change is a…', '*turning point|continuity|source'),
+            tf('Continuity is part of history too.', true),
+            ch('Judging significance uses…', '*criteria|guesswork only|coin tosses'),
+          ],
+          ms: ['Identifies change and continuity', 'Applies significance criteria', 'Defends judgements with evidence'],
+        }),
+      ]),
+    ]),
+    S('s12', 'Historiography and the uses of history.', [
+      'Compare historians\' interpretations', 'Analyse how history is used and misused', 'Conduct independent historical research',
+    ], [
+      U('historiography', 'Historiography', 'The history of history-writing.', 'Schools of interpretation: colonial, nationalist, Marxist, subaltern; Why interpretations change', [
+        L('schools', 'Schools of Historical Interpretation', {
+          o: ['Describe major schools of Indian historiography', 'Explain why interpretations change over time'],
+          p: ['Judges significance and causation'],
+          e: [
+            'Historiography is the study of how history has been written. Interpretations change as new evidence appears and as historians ask new questions.',
+            'Colonial historians (like James Mill, 1817) often portrayed India\'s past in ways that justified British rule. Nationalist historians emphasised India\'s achievements and resistance. Marxist historians focused on economic structures and class.',
+            'The Subaltern Studies group (from the 1980s) focused on ordinary people — peasants, workers, tribal communities — often absent from elite records. Today, historians also write gender, environmental and global histories. No school has the final word.',
+          ],
+          c: [['interpretation', 'Each school offers insights and has been criticised; this lesson presents them for comparison, not endorsement.'], ['evidence', 'James Mill\'s "The History of British India" (1817) divided Indian history into "Hindu", "Muslim" and "British" periods, a framework later historians have widely criticised.']],
+          v: 'historiography = the study of how history is written; interpretation = an explanation of the past based on evidence; subaltern = a person or group outside the ruling elite; framework = a structure for organising ideas',
+          x: ['Mill\'s religious periodisation versus "ancient, medieval, modern".', 'Environmental histories of forests and famines.'],
+          s: ['The Changing Textbook', 'A student compared history textbooks from the 1950s, 1980s and today about the same period. The emphasis, the heroes and even the names of events shifted. "Did the past change?" she asked. Her teacher replied, "No — but our questions, evidence and perspectives did."'],
+          a: [
+            mt('Match the school to its focus', 'colonial=often justified British rule|nationalist=India\'s achievements and resistance|Marxist=economic structures and class|subaltern=ordinary people outside the elite'),
+            ch('Historiography is…', '*the study of how history is written|the study of rocks|a type of map'),
+            tf('Interpretations of history change over time.', true),
+            ch('James Mill\'s periodisation has been…', '*widely criticised by later historians|universally accepted|never discussed'),
+          ],
+          t: ['Can history ever be completely objective?', 'How should we decide between competing interpretations?'],
+          k: ['Present two interpretations of the same event and evaluate them.'],
+          m: ['Historiographical Essay', 'secondary sources from different periods or schools', 'Choose a historical topic | Find two or three interpretations from different schools | Compare their evidence, questions and conclusions | Write a 1500-word historiographical essay'],
+          q: [
+            ch('Subaltern Studies focused on…', '*ordinary people outside the elite|kings only|space travel'),
+            tf('New evidence can change interpretations.', true),
+            ch('An explanation of the past based on evidence is an…', '*interpretation|artefact|inscription'),
+          ],
+          ms: ['Describes historiographical schools', 'Compares interpretations critically', 'Explains why history is rewritten'],
+        }),
+      ]),
+      U('uses-of-history', 'Uses and Misuses of History', 'History in public life.', 'Memory and monuments; Myth vs history in politics; Misinformation about the past; Ethical research', [
+        L('history-today', 'History in Public Life', {
+          o: ['Analyse how history is used in public life', 'Detect and respond to historical misinformation'],
+          p: ['Understands historiography'],
+          e: [
+            'History shapes identity: monuments, museums, festivals and textbooks tell stories about who we are. Choices about what to remember — and forget — matter.',
+            'History can be misused: selectively quoted, mixed with myth presented as fact, or used to spread hatred between groups. Viral posts often claim "hidden history" without evidence.',
+            'Responsible citizens check claims: Is there a primary source? What do professional historians say? Is a traditional story being presented as documented fact? Respecting both evidence and people\'s traditions requires care and honesty.',
+          ],
+          c: [['interpretation', 'Debates about monuments, names and textbooks involve values as well as evidence; reasonable people can disagree about commemoration while agreeing on facts.'], ['tradition', 'Traditional narratives are valuable cultural heritage; problems arise when they are presented as documented history without evidence or used to demean others.']],
+          v: 'commemoration = honouring the memory of events or people; misinformation = false or misleading information; myth (in this sense) = a widely believed but unsupported story; collective memory = how a group remembers its past',
+          x: ['A viral claim about an ancient invention with no source.', 'Debates over renaming streets and cities.'],
+          s: ['The Viral Message', 'Ivaan\'s uncle forwarded a message claiming an ancient king had invented aeroplanes, with a dramatic picture. Ivaan checked: the picture was a modern digital artwork, and historians found no evidence of the claim. He replied kindly with links to museum sources. His uncle wrote back, "Thank you — I\'ll check before forwarding next time."'],
+          a: [
+            ch('A responsible response to a viral history claim:', '*check primary sources and historians\' views|forward it immediately|believe it because it\'s exciting'),
+            mt('Match', 'commemoration=honouring memory|misinformation=false or misleading information|collective memory=how a group remembers'),
+            tf('Traditional stories should be distinguished from documented history.', true),
+            ch('History can be misused to…', '*spread hatred between groups|teach evidence-based thinking|preserve archives'),
+          ],
+          t: ['Who should decide what a country remembers?', 'How can we respect traditions while insisting on evidence?'],
+          k: ['Fact-check a historical claim with someone and explain your process respectfully.'],
+          m: ['Independent Research Project', 'archives, libraries, interviews (with consent)', 'Choose a local historical question | Gather primary and secondary sources | Evaluate reliability and interpretations | Present findings in a 2000-word report or exhibition with full citations'],
+          q: [
+            ch('Honouring the memory of events or people is…', '*commemoration|propaganda|stratigraphy'),
+            tf('Claims about the past should be checked against evidence.', true),
+            ch('A "hidden history" post with no sources is likely…', '*unreliable|automatically true|a primary source'),
+          ],
+          ms: ['Analyses uses of history', 'Fact-checks historical claims', 'Conducts independent research ethically'],
+        }),
+      ]),
+    ]),
+  ],
+});

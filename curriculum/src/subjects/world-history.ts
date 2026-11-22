@@ -1,0 +1,392 @@
+import { subject, S, U, L, ch, tf, od, mt } from '../dsl.ts';
+
+export default subject({
+  id: 'world-history',
+  description: 'Key peoples, places and turning points in world history: explorers and maps, medieval societies across continents, the age of encounters, revolutions, industrialisation, empires and resistance, the World Wars, decolonisation, the Cold War and globalisation — with attention to perspectives from Asia, Africa and the Americas, not only Europe.',
+  stages: [
+    S('s4', 'People long ago around the world: castles, pyramids and boats.', [
+      'Know that people lived in different ways in different places long ago', 'Name a few famous old buildings', 'Use simple time words',
+    ], [
+      U('wonders', 'Wonders of the Old World', 'Amazing buildings from long ago.', 'Pyramids of Egypt; Great Wall of China; Castles; Temples', [
+        L('famous-buildings', 'Big Buildings from Long Ago', {
+          o: ['Name famous old buildings from different countries', 'Know they were built by many people long ago'],
+          p: ['Knows past and present'],
+          e: [
+            'Long ago, people built amazing things without machines like cranes or trucks. The pyramids in Egypt were built over 4,500 years ago as tombs for kings called pharaohs.',
+            'The Great Wall of China is a very long wall built and rebuilt over many centuries to protect against invaders.',
+            'Thousands of workers moved heavy stones with ropes, ramps, sledges and lots of teamwork. These buildings help us learn about how people lived.',
+          ],
+          c: [['evidence', 'The Great Pyramid of Giza was built around 2560 BCE; archaeologists have found evidence of organised workers\' villages nearby.']],
+          v: 'pyramid = a building with a square base and triangle sides meeting at a point; pharaoh = a king of ancient Egypt; wall = a long barrier; tomb = a place where someone is buried',
+          x: ['The Great Pyramid in Egypt.', 'The Great Wall of China.'],
+          s: ['The Builders\' Song', 'Long ago in Egypt, hundreds of workers pulled a huge stone on a wooden sledge. "Heave! Heave!" they sang together to keep in time. Someone poured water on the sand to help it slide. Slowly, stone by stone, a giant pyramid rose into the sky.'],
+          a: [
+            mt('Match the building to the country', 'pyramids=Egypt|Great Wall=China|Taj Mahal=India'),
+            ch('The pyramids were built…', '*thousands of years ago|last year|on the Moon'),
+            tf('Many people worked together to build the pyramids.', true),
+            ch('A king of ancient Egypt was called a…', '*pharaoh|president|chef'),
+          ],
+          t: ['How do you think people moved giant stones without trucks?', 'What would you build to be remembered?'],
+          k: ['Tell a grown-up about a famous old building and where it is.'],
+          m: ['Sugar-Cube Pyramid', 'sugar cubes or blocks, a cardboard base', 'Build a square base of cubes | Add smaller layers on top | Finish with one cube at the top | Explain how ancient builders worked together'],
+          q: [
+            ch('The Great Wall is in…', '*China|Egypt|India'),
+            tf('Pyramids have a square base.', true),
+            ch('Workers moved heavy stones using…', '*ropes, ramps and teamwork|cranes and trucks|magic'),
+          ],
+          ms: ['Names famous ancient buildings', 'Locates them by country', 'Describes teamwork in construction'],
+        }),
+      ]),
+      U('boats-travel', 'Long Ago Journeys', 'How people travelled long ago.', 'Boats and ships; Camels and horses; Maps', [
+        L('sailing', 'Sailing Across the Sea', {
+          o: ['Describe how people travelled long ago', 'Know that sailors used the stars and winds'],
+          p: ['Knows transport'],
+          e: [
+            'Long ago, there were no aeroplanes or cars. People walked, rode horses or camels, and sailed boats with wind in their sails.',
+            'Sailors used the stars at night and the winds to find their way. In the Indian Ocean, sailors learned to use the monsoon winds to sail between India, Arabia and Africa.',
+            'Long journeys could take months! Travellers brought back spices, cloth and stories.',
+          ],
+          c: [['evidence', 'Ancient Greek and Roman texts and archaeological finds show sailors used monsoon winds to cross the Arabian Sea to India by around the 1st century BCE–1st century CE.']],
+          v: 'sail = a cloth that catches the wind to move a boat; sailor = a person who works on a ship; journey = a long trip; spice = dried plant parts used to flavour food',
+          x: ['Camel caravans crossing deserts.', 'Wooden ships carrying pepper from Kerala.'],
+          s: ['The Monsoon Ship', 'A trader in Kerala loaded his wooden ship with black pepper. "We wait for the right wind," the captain said. When the monsoon winds blew, the sails filled and the ship raced across the sea towards Arabia. Months later, it returned with dates, perfumes and wonderful stories.'],
+          a: [
+            ch('Long ago, sailors found their way using…', '*the stars and winds|GPS phones|street signs'),
+            ch('Camels were used to cross…', '*deserts|oceans|the sky'),
+            tf('Long journeys long ago could take months.', true),
+            mt('Match the transport', '⛵ sailing ship=sea|🐪 camel=desert|🐎 horse=land'),
+          ],
+          t: ['What would you pack for a journey that takes months?', 'Why do you think spices were so valuable?'],
+          k: ['Tell a grown-up how a ship moved before engines.'],
+          m: ['🧪 Paper Sailboat Race', 'paper or foil boats, a tub of water, a fan or your breath', 'Make two small boats, one with a big sail and one with a small sail | Blow or fan to make "wind" | Race them | Explain which went faster and why'],
+          q: [
+            ch('A sail catches the…', '*wind|rain|sunlight only'),
+            tf('Monsoon winds helped sailors cross the sea.', true),
+            ch('Valuable goods from India included…', '*spices like pepper|computers|cars'),
+          ],
+          ms: ['Describes old forms of travel', 'Explains navigation by stars and winds', 'Connects India to ancient trade'],
+        }),
+      ]),
+    ]),
+    S('s5', 'Explorers, kingdoms and people around the world.', [
+      'Name famous travellers and explorers', 'Describe a medieval kingdom outside India', 'Use a world map with history',
+    ], [
+      U('travellers', 'Famous Travellers', 'People who journeyed far and wrote about it.', 'Ibn Battuta; Marco Polo; Zheng He; Travel accounts as sources', [
+        L('ibn-battuta', 'The Great Travellers', {
+          o: ['Describe famous travellers and their journeys', 'Explain why their writings are useful to historians'],
+          p: ['Knows maps and continents'],
+          e: [
+            'Ibn Battuta, from Morocco, travelled for about 30 years in the 1300s across Africa, the Middle East, India (where he served the Sultan of Delhi) and China. He described everything he saw.',
+            'Marco Polo, from Venice, travelled to China in the 1200s. Zheng He, a Chinese admiral, led huge fleets across the Indian Ocean in the early 1400s, visiting India, Arabia and East Africa.',
+            'Travellers\' accounts help historians learn about places and times — though they sometimes misunderstood what they saw or exaggerated.',
+          ],
+          c: [['evidence', 'Ibn Battuta\'s Rihla and Marco Polo\'s Travels survive as written accounts; historians compare them with other sources to check accuracy.']],
+          v: 'traveller = a person who journeys to far places; explorer = a person who travels to discover new places; account = a written description; admiral = a commander of a navy',
+          x: ['Ibn Battuta described Delhi and the Malabar coast.', 'Zheng He\'s ships visited Calicut (Kozhikode).'],
+          s: ['The Man Who Couldn\'t Stop Travelling', 'In 1325, a young man named Ibn Battuta left Tangier in Morocco to go on pilgrimage to Mecca. He kept going — to Persia, India, the Maldives, China and back across Africa — for nearly 30 years. When he finally returned, he told his stories to a writer, and his book still tells us about the 14th-century world.'],
+          a: [
+            mt('Match the traveller to their home', 'Ibn Battuta=Morocco|Marco Polo=Venice|Zheng He=China'),
+            ch('Zheng He\'s fleets visited…', '*India and East Africa|Antarctica|America'),
+            tf('Travellers\' accounts can contain mistakes.', true),
+            ch('A written description of a journey is an…', '*account|anthem|atlas'),
+          ],
+          t: ['Why might a traveller misunderstand a new culture?', 'If you travelled for 30 years, where would you go?'],
+          k: ['Describe one traveller\'s route to someone using a world map.'],
+          m: ['Traveller\'s Journey Map', 'world map, coloured string or pens', 'Trace Ibn Battuta\'s route | Mark places he visited in India | Write a short "diary entry" as if you were him | Share it'],
+          q: [
+            ch('Ibn Battuta served the Sultan of…', '*Delhi|Rome|Tokyo'),
+            tf('Marco Polo travelled to China.', true),
+            ch('A commander of a navy is an…', '*admiral|artist|astronaut'),
+          ],
+          ms: ['Describes famous travellers', 'Uses accounts as sources critically', 'Maps historical journeys'],
+        }),
+      ]),
+      U('world-kingdoms', 'Kingdoms Around the World', 'Great medieval kingdoms beyond Europe.', 'Mali Empire and Mansa Musa; Khmer Empire and Angkor Wat; Aztec and Inca', [
+        L('mansa-musa', 'Gold of Mali and Temples of Angkor', {
+          o: ['Describe medieval kingdoms in Africa, Asia and the Americas', 'Know history is not only about Europe'],
+          p: ['Knows travellers'],
+          e: [
+            'The Mali Empire in West Africa was rich from gold and salt trade. Its ruler Mansa Musa made a famous pilgrimage to Mecca in 1324, giving away so much gold in Cairo that its value there fell. Timbuktu became a centre of learning.',
+            'The Khmer Empire in Cambodia built Angkor Wat in the 12th century, originally as a Hindu temple dedicated to Vishnu, later becoming Buddhist.',
+            'In the Americas, the Aztecs built Tenochtitlan on a lake, and the Inca built roads across the Andes and the mountain city of Machu Picchu.',
+          ],
+          c: [['evidence', 'Arab chroniclers recorded Mansa Musa\'s pilgrimage; Angkor Wat\'s inscriptions and architecture show its Hindu and later Buddhist use.']],
+          v: 'empire = many lands ruled by one power; pilgrimage = a religious journey; Timbuktu = a city in Mali famous for learning; Andes = a mountain range in South America',
+          x: ['Angkor Wat appears on Cambodia\'s flag.', 'Inca messengers ran along stone roads.'],
+          s: ['The Golden Caravan', 'In 1324, a huge caravan crossed the Sahara: thousands of people and camels carrying gold. It was Mansa Musa, emperor of Mali, on his way to Mecca. In Cairo, he gave away so much gold that people talked about it for years. Mapmakers in Europe later drew him holding a golden nugget.'],
+          a: [
+            mt('Match the kingdom to the region', 'Mali=West Africa|Khmer=Cambodia|Inca=South America'),
+            ch('Angkor Wat was first dedicated to…', '*Vishnu|Zeus|Thor'),
+            tf('Timbuktu was a centre of learning.', true),
+            ch('Mansa Musa was famous for his…', '*gold|ships to the Moon|robots'),
+          ],
+          t: ['Why do many history books focus on Europe? What gets missed?', 'How did Indian culture influence Southeast Asia?'],
+          k: ['Tell someone about one kingdom from Africa, Asia or the Americas.'],
+          m: ['World Kingdoms Fact Cards', 'card, pens, research books', 'Make cards for Mali, Khmer, Aztec, Inca and one Indian kingdom | Add dates, places and achievements | Mark them on a world map | Play a matching quiz with family'],
+          q: [
+            ch('Machu Picchu was built by the…', '*Inca|Mughals|Romans'),
+            tf('Mali\'s wealth came from gold and salt trade.', true),
+            ch('A religious journey is a…', '*pilgrimage|parade|picnic'),
+          ],
+          ms: ['Describes non-European kingdoms', 'Locates them accurately', 'Recognises a global perspective'],
+        }),
+      ]),
+    ]),
+    S('s6', 'The age of encounters and the Columbian exchange.', [
+      'Describe European voyages and their impact', 'Explain the Columbian exchange', 'Consider effects on Indigenous peoples',
+    ], [
+      U('voyages', 'Ocean Voyages', 'Vasco da Gama, Columbus and their consequences.', 'Vasco da Gama reaches Calicut (1498); Columbus (1492); Consequences for Indigenous peoples', [
+        L('da-gama', 'A New Sea Route to India', {
+          o: ['Describe major European voyages of the late 1400s', 'Explain their consequences from multiple perspectives'],
+          p: ['Knows ancient sea trade'],
+          e: [
+            'In the 1400s, European rulers wanted direct access to Asian spices. In 1492, Christopher Columbus sailed west hoping to reach Asia, but reached the Caribbean instead. In 1498, Vasco da Gama sailed around Africa and reached Calicut (Kozhikode) in Kerala.',
+            'For Europeans these were "discoveries", but the lands were already home to many peoples, and Indian Ocean trade routes were already busy with Arab, Indian, Chinese and African sailors.',
+            'The voyages led to European colonies, enormous wealth for Europe, and devastating consequences for Indigenous peoples of the Americas, including disease, violence and enslavement, as well as the transatlantic slave trade from Africa.',
+          ],
+          c: [['evidence', 'Vasco da Gama reached Calicut in May 1498; diseases such as smallpox caused catastrophic population decline among Indigenous Americans after 1492.'], ['interpretation', 'Historians now avoid describing these voyages simply as "discovery", recognising Indigenous peoples\' perspectives.']],
+          v: 'voyage = a long sea journey; Indigenous = original inhabitants of a land; colony = land controlled by a distant country; enslavement = forcing people into slavery',
+          x: ['Kappad beach near Kozhikode, where da Gama landed.', 'Columbus landing in the Bahamas in 1492.'],
+          s: ['Two Views from the Shore', 'When Vasco da Gama\'s ships arrived at Calicut, local merchants were used to ships from Arabia, East Africa and China. The Zamorin (ruler) received the Portuguese, but was unimpressed by their gifts. To the Portuguese, it was a historic arrival; to Calicut\'s traders, it was one more group of foreign ships — at first.'],
+          a: [
+            od('Order the voyages', 'Columbus reaches the Caribbean (1492)|da Gama reaches Calicut (1498)|Magellan\'s expedition completes a voyage around the world (1522)'),
+            ch('Vasco da Gama reached…', '*Calicut in Kerala|London|Japan'),
+            tf('The Americas were already home to many peoples before 1492.', true),
+            ch('Indigenous means…', '*original inhabitants of a land|newly arrived|foreign traders'),
+          ],
+          t: ['Why is "discovery" a problematic word for these voyages?', 'Who gained and who lost from the new sea routes?'],
+          k: ['Retell da Gama\'s arrival from the perspective of a Calicut merchant.'],
+          m: ['Two-Perspective Newspaper', 'paper, research', 'Write a front page about 1498 from a Portuguese newspaper\'s view | Write another from a Calicut merchant\'s view | Compare the language used | Present both'],
+          q: [
+            ch('Columbus was trying to reach…', '*Asia|Antarctica|Australia'),
+            tf('European voyages had devastating effects on Indigenous Americans.', true),
+            ch('Calicut is now called…', '*Kozhikode|Kolkata|Kochi'),
+          ],
+          ms: ['Describes voyages accurately', 'Considers multiple perspectives', 'Explains consequences'],
+        }),
+      ]),
+      U('columbian-exchange', 'The Columbian Exchange', 'Plants, animals and diseases crossing oceans.', 'From the Americas: maize, potato, tomato, chilli; To the Americas: horses, wheat, cattle, diseases', [
+        L('exchange', 'What Crossed the Ocean?', {
+          o: ['Explain the Columbian exchange', 'Evaluate its effects on different regions'],
+          p: ['Knows the voyages of 1492 and 1498'],
+          e: [
+            'After 1492, plants, animals, people and diseases moved between the Americas and Afro-Eurasia. Historian Alfred Crosby called this the "Columbian exchange".',
+            'From the Americas came maize, potatoes, tomatoes, chillies, cacao and tobacco. To the Americas went wheat, rice, sugarcane, horses, cattle and pigs — and diseases like smallpox, to which Indigenous people had no immunity.',
+            'The exchange transformed diets worldwide (imagine Indian food without chilli or potato!) but also caused terrible loss of life and reshaped economies through plantations and slavery.',
+          ],
+          c: [['evidence', 'Alfred Crosby\'s 1972 book "The Columbian Exchange" introduced the term; crop origins are established by botanical and archaeological evidence.']],
+          v: 'Columbian exchange = transfer of plants, animals and diseases between the Americas and the rest of the world after 1492; immunity = the body\'s ability to resist a disease; plantation = a large farm growing one crop, often with forced labour; crop = a plant grown for food or use',
+          x: ['Potatoes in Indian sabzis.', 'Horses transforming life on the American plains.'],
+          s: ['The Travelling Tomato', 'A tomato grew in the Andes. Sailors carried its seeds to Spain, then traders took them to Italy and onward. Centuries later, tomatoes reached Indian kitchens and became part of curries and chutneys. "This little fruit travelled half the world to reach my plate," Ivaan marvelled.'],
+          a: [
+            mt('From the Americas or to the Americas?', 'potato=from the Americas|horse=to the Americas|chilli=from the Americas, now in Indian food'),
+            ch('Diseases like smallpox devastated…', '*Indigenous Americans|Europeans only|nobody'),
+            tf('Chillies came to India from the Americas.', true),
+            ch('A large farm growing one crop is a…', '*plantation|palace|port'),
+          ],
+          t: ['Was the Columbian exchange good or bad? Can it be both?', 'What would Indian food be like without American crops?'],
+          k: ['Explain the Columbian exchange to someone using foods from your kitchen.'],
+          m: ['Columbian Exchange Map', 'a world map, food and animal pictures, arrows', 'Draw arrows showing what moved each way | Stick pictures of crops, animals and diseases | Add one positive and one negative effect | Present it'],
+          q: [
+            ch('Which came from the Americas?', '*maize|wheat|rice'),
+            tf('The exchange reshaped diets around the world.', true),
+            ch('Immunity is the body\'s ability to…', '*resist disease|grow taller|fly'),
+          ],
+          ms: ['Explains the Columbian exchange', 'Classifies exchanges', 'Evaluates mixed consequences'],
+        }),
+      ]),
+    ]),
+    S('s7', 'Revolutions: scientific, political and industrial.', [
+      'Explain the Industrial Revolution', 'Describe the American and French Revolutions', 'Connect revolutions to India',
+    ], [
+      U('industrial', 'The Industrial Revolution', 'Machines change the world.', 'Steam engines; Factories; Cities and workers; Links to colonies and cotton', [
+        L('steam-factories', 'Steam, Factories and Cities', {
+          o: ['Explain the Industrial Revolution and its effects', 'Connect industrialisation in Britain to colonial India'],
+          p: ['Knows colonial trade'],
+          e: [
+            'From the late 1700s, Britain began to industrialise. New machines like spinning frames and power looms, driven by water and then steam engines (improved by James Watt), made cloth much faster in factories.',
+            'People moved from farms to crowded cities to work long hours in factories, including children. Over time, workers organised for better conditions.',
+            'Industrial Britain needed raw materials and markets. Raw cotton from India and the American South (grown by enslaved people) fed British mills, while British machine-made cloth was sold back to India, hurting Indian handloom weavers.',
+          ],
+          c: [['evidence', 'Historical records show child labour in British factories led to reforms such as the Factory Acts in the 1830s–40s.'], ['interpretation', 'Historians debate why industrialisation began first in Britain, citing factors such as coal, capital from trade and empire, and institutions.']],
+          v: 'Industrial Revolution = the shift to machine production from the late 1700s; factory = a building where goods are made by machines; steam engine = an engine powered by steam; urbanisation = growth of cities',
+          x: ['Manchester\'s cotton mills.', 'Railways carrying coal and goods.'],
+          s: ['The Child in the Mill', 'In 1830s England, ten-year-old Sarah worked 12 hours a day in a cotton mill, crawling under machines to tie broken threads. The cotton she touched had been grown far away. Reformers collected stories like hers, and laws slowly began to limit children\'s working hours.'],
+          a: [
+            ch('The Industrial Revolution began in…', '*Britain|Brazil|Japan'),
+            ch('Steam engines were improved by…', '*James Watt|Akbar|Columbus'),
+            tf('Child labour was common in early factories.', true),
+            mt('Match', 'factory=goods made by machines|urbanisation=growth of cities|raw material=material used to make products'),
+          ],
+          t: ['Did the Industrial Revolution make life better or worse? For whom?', 'How was India affected by Britain\'s industrialisation?'],
+          k: ['Explain the link between British factories and Indian weavers.'],
+          m: ['Industrial Revolution Timeline and Debate', 'timeline paper, research', 'Build a timeline of key inventions | Note effects on workers and colonies | Hold a debate: "The Industrial Revolution was progress for everyone" | Write your conclusion'],
+          q: [
+            ch('Early factories mostly made…', '*cloth|smartphones|rockets'),
+            tf('Industrialisation led to growth of cities.', true),
+            ch('A building where goods are made by machines is a…', '*factory|farm|forest'),
+          ],
+          ms: ['Explains industrialisation', 'Analyses social effects', 'Connects global and Indian history'],
+        }),
+      ]),
+      U('political-revolutions', 'Revolutions for Rights', 'American, French and Haitian Revolutions.', 'Ideas of liberty and equality; American Revolution (1776); French Revolution (1789); Haitian Revolution (1791–1804)', [
+        L('liberty-equality', 'Liberty, Equality, Fraternity', {
+          o: ['Describe the American, French and Haitian Revolutions', 'Explain how revolutionary ideas spread and their limits'],
+          p: ['Knows democracy basics'],
+          e: [
+            'In 1776, thirteen American colonies declared independence from Britain, stating that "all men are created equal" — though slavery continued and women could not vote.',
+            'In 1789, the French Revolution overthrew the monarchy\'s absolute power, proclaiming "liberty, equality, fraternity" and the Declaration of the Rights of Man. It also led to terror and war.',
+            'In Haiti, enslaved Africans led by Toussaint Louverture rose up and in 1804 created the first independent Black republic, abolishing slavery. These ideas later inspired Indian thinkers; "liberty, equality, fraternity" appear in India\'s Preamble.',
+          ],
+          c: [['evidence', 'Haiti declared independence on 1 January 1804; the phrase "liberty, equality and fraternity" appears in the Preamble of India\'s Constitution.'], ['interpretation', 'Historians debate the legacies of these revolutions, including the gap between ideals and practice.']],
+          v: 'revolution = a major, often sudden change in government or society; monarchy = rule by a king or queen; declaration = a formal statement; abolish = officially end',
+          x: ['The storming of the Bastille, 14 July 1789.', 'Haitian independence in 1804.'],
+          s: ['The Words in Our Preamble', 'Ivaan read India\'s Preamble: "liberty… equality… fraternity." His teacher explained these words echoed the French Revolution, while Indian leaders gave them new meaning for a diverse nation. "Ideas travel," she said, "and each people makes them their own."'],
+          a: [
+            mt('Match the revolution to its year', 'American=1776|French=1789|Haitian independence=1804'),
+            ch('The Haitian Revolution created…', '*the first independent Black republic|a new monarchy in France|the USA'),
+            tf('The American Declaration said "all men are equal" while slavery continued.', true),
+            ch('"Liberty, equality, fraternity" is linked to the…', '*French Revolution|Industrial Revolution|Stone Age'),
+          ],
+          t: ['Why is there often a gap between a revolution\'s ideals and practice?', 'Why might the Haitian Revolution be less known than the French?'],
+          k: ['Explain how revolutionary ideas reached India\'s Constitution.'],
+          m: ['Revolutions Comparison Chart', 'poster paper, research', 'Compare causes, leaders, ideals and outcomes of three revolutions | Note who was included and excluded | Link one idea to modern India | Present your chart'],
+          q: [
+            ch('Toussaint Louverture led the…', '*Haitian Revolution|American Revolution|Industrial Revolution'),
+            tf('India\'s Preamble includes liberty, equality and fraternity.', true),
+            ch('To officially end something is to…', '*abolish|declare|elect'),
+          ],
+          ms: ['Describes revolutions accurately', 'Evaluates ideals vs practice', 'Connects to Indian constitutional values'],
+        }),
+      ]),
+    ]),
+    S('s9', 'Empires, World Wars and decolonisation.', [
+      'Explain causes and consequences of the World Wars', 'Describe India\'s role in the wars', 'Explain decolonisation across Asia and Africa',
+    ], [
+      U('world-wars', 'The World Wars', 'Two global conflicts of the 20th century.', 'Causes of World War I; Indian soldiers; World War II and the Holocaust; Effects', [
+        L('two-wars', 'The World at War', {
+          o: ['Explain main causes and consequences of the two World Wars', 'Describe India\'s involvement'],
+          p: ['Understands empires'],
+          e: [
+            'World War I (1914–1918) grew from rivalries between European powers, alliances, militarism and imperial competition; the assassination of Archduke Franz Ferdinand was the trigger. Over a million Indian soldiers served, many in France, the Middle East and East Africa.',
+            'World War II (1939–1945) began with Nazi Germany\'s invasion of Poland. It involved most of the world. The Holocaust — the Nazi genocide of six million Jews and millions of others — is one of history\'s greatest crimes. About 2.5 million Indians served in the British Indian Army, the largest volunteer army in history.',
+            'The wars ended with atomic bombs on Hiroshima and Nagasaki (1945), the founding of the United Nations, and weakened European empires, which helped speed decolonisation.',
+          ],
+          c: [['evidence', 'Indian soldiers\' service is commemorated at India Gate in New Delhi and war memorials abroad; Holocaust documentation includes Nazi records, survivor testimony and physical evidence from camps.'], ['interpretation', 'Historians weigh multiple causes of the wars differently.']],
+          v: 'alliance = an agreement between countries to support each other; genocide = deliberate killing of a people; Holocaust = the Nazi genocide of Jews and others; decolonisation = colonies gaining independence',
+          x: ['India Gate commemorates Indian soldiers of WWI.', 'The 1943 Bengal famine during WWII.'],
+          s: ['Letters from the Front', 'During World War I, Indian soldiers in France wrote letters home describing cold trenches, snow they had never seen, and kindness from French villagers. Censors kept copies, and today historians read them to understand the soldiers\' experiences — far from home, fighting in a war that was not their own.'],
+          a: [
+            ch('World War I lasted from…', '*1914 to 1918|1939 to 1945|1857 to 1858'),
+            ch('The Holocaust was…', '*the Nazi genocide of Jews and others|a peace treaty|an invention'),
+            tf('Millions of Indian soldiers served in the World Wars.', true),
+            mt('Match', 'alliance=agreement to support each other|genocide=deliberate killing of a people|decolonisation=colonies gaining independence'),
+          ],
+          t: ['Why did soldiers from colonies fight for empires?', 'How can we prevent genocide in the future?'],
+          k: ['Present the experiences of Indian soldiers in one World War using sources.'],
+          m: ['War Memorial Study', 'information about a war memorial (India Gate or a local memorial)', 'Research the memorial and who it commemorates | Find a primary source (letter, photo) related to it | Write a reflection on remembrance | Present your research'],
+          q: [
+            ch('World War II began with the invasion of…', '*Poland|India|Brazil'),
+            tf('The United Nations was founded after World War II.', true),
+            ch('India Gate commemorates…', '*Indian soldiers|a king\'s birthday|a cricket match'),
+          ],
+          ms: ['Explains causes and consequences', 'Describes India\'s role', 'Treats atrocities with seriousness and accuracy'],
+        }),
+      ]),
+      U('decolonisation', 'The End of Empires', 'Independence movements across Asia and Africa.', 'India and Pakistan (1947); Indonesia, Ghana, Kenya, Algeria; Non-Aligned Movement; Apartheid and Mandela', [
+        L('new-nations', 'A Wave of New Nations', {
+          o: ['Describe decolonisation in Asia and Africa', 'Explain the Non-Aligned Movement and the anti-apartheid struggle'],
+          p: ['Knows the Indian freedom struggle'],
+          e: [
+            'After 1945, dozens of colonies became independent. India and Pakistan (1947) were among the first; Indonesia, Ghana (1957, led by Kwame Nkrumah), Kenya, Algeria and many others followed, some through negotiation and some through long wars.',
+            'Many new nations, led by figures including Nehru, Egypt\'s Nasser, Indonesia\'s Sukarno and Yugoslavia\'s Tito, formed the Non-Aligned Movement (1961), refusing to join either Cold War bloc.',
+            'In South Africa, apartheid — legal racial segregation — was resisted for decades. Nelson Mandela, imprisoned for 27 years, became president in 1994. Gandhi\'s early activism in South Africa inspired later movements.',
+          ],
+          c: [['evidence', 'Gandhi lived in South Africa from 1893 to 1914, developing satyagraha there; Mandela was released in 1990 and elected president in 1994.']],
+          v: 'apartheid = a system of legal racial segregation in South Africa; Non-Aligned Movement = nations not formally aligned with either Cold War bloc; independence = freedom from outside control; segregation = separating people by group',
+          x: ['Ghana: first sub-Saharan African colony to gain independence from Britain (1957).', 'Mandela\'s release in 1990.'],
+          s: ['From Prisoner to President', 'For 27 years, Nelson Mandela was held in prison for fighting apartheid. When he walked free in 1990, crowds cheered. Four years later, South Africans of all races voted together for the first time and elected him president. He chose reconciliation over revenge.'],
+          a: [
+            mt('Match the country to its independence leader', 'India=Gandhi and Nehru|Ghana=Kwame Nkrumah|South Africa (end of apartheid)=Nelson Mandela'),
+            ch('Apartheid was…', '*legal racial segregation|a festival|a trade agreement'),
+            tf('Gandhi developed satyagraha in South Africa.', true),
+            ch('The Non-Aligned Movement refused to join…', '*either Cold War bloc|any sports team|the United Nations'),
+          ],
+          t: ['Why did some colonies gain independence peacefully and others through war?', 'What does reconciliation mean after injustice?'],
+          k: ['Compare India\'s independence with one African country\'s independence.'],
+          m: ['Decolonisation Map', 'world map, colours, dates', 'Colour countries by decade of independence (1940s–1970s) | Label key leaders | Identify patterns | Write a short analysis'],
+          q: [
+            ch('Mandela became president of South Africa in…', '*1994|1947|1857'),
+            tf('Many colonies became independent after 1945.', true),
+            ch('Separating people by group is…', '*segregation|integration|celebration'),
+          ],
+          ms: ['Describes decolonisation globally', 'Explains NAM and apartheid', 'Draws connections to India'],
+        }),
+      ]),
+    ]),
+    S('s12', 'The Cold War, globalisation and the contemporary world.', [
+      'Explain the Cold War and its end', 'Analyse globalisation', 'Evaluate contemporary global challenges historically',
+    ], [
+      U('cold-war', 'The Cold War', 'Superpower rivalry 1947–1991.', 'USA vs USSR; Nuclear arms race; Proxy wars; Space race; Fall of the Berlin Wall', [
+        L('superpowers', 'Two Superpowers', {
+          o: ['Explain the causes and character of the Cold War', 'Evaluate how it ended and its legacy'],
+          p: ['Understands World War II'],
+          e: [
+            'After 1945, the United States (capitalist democracy) and the Soviet Union (communist state) became rival superpowers. They never fought each other directly — hence "Cold War" — but competed through alliances (NATO, Warsaw Pact), a nuclear arms race, proxy wars (Korea, Vietnam, Afghanistan) and the space race.',
+            'Crises like the Cuban Missile Crisis (1962) brought the world close to nuclear war.',
+            'The Berlin Wall fell in 1989 and the Soviet Union dissolved in 1991, ending the Cold War. India, a founding Non-Aligned nation, maintained relations with both sides, signing a friendship treaty with the USSR in 1971.',
+          ],
+          c: [['interpretation', 'Historians debate the causes of the Cold War and the reasons for its end, including economic, political and individual factors.'], ['evidence', 'The Berlin Wall stood from 1961 to 1989; the USSR formally dissolved in December 1991.']],
+          v: 'superpower = an extremely powerful country; Cold War = rivalry without direct full-scale war between superpowers; proxy war = a war fought through other countries\' conflicts; arms race = competition to build more weapons',
+          x: ['Sputnik (1957) launching the space race.', 'The Cuban Missile Crisis of 1962.'],
+          s: ['Thirteen Days', 'In October 1962, the world held its breath. The Soviet Union had placed nuclear missiles in Cuba, close to the USA. For thirteen days, leaders negotiated while warships faced each other. Finally, both sides stepped back. Many historians consider it the closest the world has come to nuclear war.'],
+          a: [
+            mt('Match', 'USA=capitalist superpower|USSR=communist superpower|NATO=Western military alliance'),
+            ch('The Berlin Wall fell in…', '*1989|1945|2001'),
+            tf('The superpowers fought proxy wars.', true),
+            ch('India in the Cold War was…', '*a founding Non-Aligned nation|a NATO member|part of the USSR'),
+          ],
+          t: ['Why didn\'t the Cold War become a "hot" war between the superpowers?', 'How did the Cold War affect countries like India?'],
+          k: ['Explain the Cuban Missile Crisis and why it mattered.'],
+          m: ['Cold War Source Analysis', 'primary sources (speeches, posters, cartoons) from both sides', 'Analyse four sources for purpose and bias | Compare US and Soviet perspectives | Consider a Non-Aligned perspective | Write a 1200-word analysis'],
+          q: [
+            ch('The Soviet Union dissolved in…', '*1991|1961|1947'),
+            tf('The space race was part of Cold War competition.', true),
+            ch('A war fought through other countries\' conflicts is a…', '*proxy war|world war|civil peace'),
+          ],
+          ms: ['Explains Cold War dynamics', 'Uses multiple perspectives', 'Evaluates its end and legacy'],
+        }),
+      ]),
+      U('globalisation', 'Globalisation and Today\'s World', 'A connected and contested world.', 'Trade and technology; Migration; Inequality; Climate and pandemics as global history', [
+        L('connected-world', 'Our Connected World', {
+          o: ['Analyse globalisation\'s historical roots and effects', 'Evaluate global challenges through historical thinking'],
+          p: ['Understands Cold War and decolonisation'],
+          e: [
+            'Globalisation — the growing interconnection of economies, cultures and people — has deep roots in ancient trade, empires and the Columbian exchange, but accelerated after the Cold War with containerised shipping, the internet and trade agreements.',
+            'It brought growth and reduced poverty in many countries, including India and China, but also job losses in some industries, rising inequality within countries, and cultural tensions.',
+            'Global challenges — climate change, pandemics like COVID-19, migration and digital technology — cross borders. History helps us see patterns (past pandemics, earlier waves of globalisation) and avoid simplistic answers.',
+          ],
+          c: [['interpretation', 'Economists and historians debate globalisation\'s benefits and costs; views differ across countries and groups.'], ['evidence', 'World Bank data show a large decline in the global share of people in extreme poverty since 1990, concentrated in Asia.']],
+          v: 'globalisation = growing worldwide interconnection; containerisation = shipping goods in standard containers; inequality = unequal distribution of resources; pandemic = a disease spreading across many countries',
+          x: ['Indian IT services exported worldwide.', 'COVID-19 spreading through global travel in 2020.'],
+          s: ['The Influenza of 1918 and 2020', 'In 1918, an influenza pandemic killed tens of millions worldwide, including many in India. A century later, COVID-19 spread around the globe within weeks. Historians compared the two: masks, quarantines and misinformation appeared in both. "History doesn\'t repeat exactly," one said, "but it rhymes."'],
+          a: [
+            ch('Globalisation means…', '*growing worldwide interconnection|living in one village only|ending all trade'),
+            mt('Match', 'containerisation=standard shipping containers|pandemic=disease across many countries|inequality=unequal distribution'),
+            tf('Globalisation has roots in ancient trade.', true),
+            ch('The 1918 pandemic was caused by…', '*influenza|smallpox|COVID-19'),
+          ],
+          t: ['Has globalisation been good for India? For whom?', 'What lessons from history help us face pandemics or climate change?'],
+          k: ['Debate a globalisation question, presenting evidence from at least two countries.'],
+          m: ['Global Issue Historical Investigation', 'reliable sources, notebook', 'Choose a global challenge (pandemics, migration, climate) | Trace its history over at least 100 years | Compare past and present responses | Write a 1500-word essay with recommendations'],
+          q: [
+            ch('A disease spreading across many countries is a…', '*pandemic|treaty|revolution'),
+            tf('Views on globalisation differ across groups.', true),
+            ch('Globalisation accelerated after…', '*the Cold War|the Stone Age|the Vedic period'),
+          ],
+          ms: ['Analyses globalisation historically', 'Evaluates benefits and costs', 'Applies history to contemporary issues'],
+        }),
+      ]),
+    ]),
+  ],
+});

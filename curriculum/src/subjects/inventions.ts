@@ -1,0 +1,392 @@
+import { subject, S, U, L, ch, tf, od, mt } from '../dsl.ts';
+
+export default subject({
+  id: 'inventions',
+  description: 'How ideas change lives: everyday inventions, inventors from around the world (including India), how inventions build on each other, medicine and communication breakthroughs, the scientific method, and the ethics and economics of innovation. Credits are given carefully, noting where invention was collaborative or disputed.',
+  stages: [
+    S('s4', 'Everyday inventions that help us.', [
+      'Name everyday inventions', 'Say how inventions help us', 'Imagine their own invention',
+    ], [
+      U('everyday', 'Things People Invented', 'Many things around us were invented.', 'Wheel, light bulb, telephone, bicycle; Before and after an invention', [
+        L('what-is-invention', 'What Is an Invention?', {
+          o: ['Explain that an invention is something new people made', 'Name everyday inventions and how they help'],
+          p: ['Knows old and new things'],
+          e: [
+            'An invention is something new that someone thought of and made to solve a problem. Spoons, wheels, bicycles, light bulbs and telephones were all invented.',
+            'Before light bulbs, people used candles and oil lamps at night. Before telephones, people sent letters that took days.',
+            'Inventors are curious. They notice problems and try ideas again and again until something works.',
+          ],
+          c: [['evidence', 'Historians use patents, notebooks, letters and surviving objects to learn who invented things and when.']],
+          v: 'invention = something new made to solve a problem; inventor = a person who invents; idea = a thought about how to do something; problem = something that needs fixing',
+          x: ['An umbrella keeps us dry.', 'A bicycle helps us travel faster than walking.'],
+          s: ['Bolt\'s Big Idea', 'Bolt kept dropping crayons all over the floor. "I need something to hold them!" Bolt tried a box — too big. A cup — it tipped over. Then Bolt cut a tube, stuck it on a heavy base and decorated it. "My invention: the Crayon Tower!" Everyone wanted one.'],
+          a: [
+            ch('An invention is…', '*something new made to solve a problem|a type of tree|a song'),
+            mt('Match the invention to its job', '💡 light bulb=gives light|🚲 bicycle=helps us travel|☂️ umbrella=keeps us dry'),
+            tf('Inventors try ideas again and again.', true),
+            ch('Before light bulbs, people used…', '*candles and oil lamps|torches with batteries|phones'),
+          ],
+          t: ['What problem at home would you like to invent something for?', 'Which invention could you not live without?'],
+          k: ['Tell a grown-up about an invention you use every day and how it helps.'],
+          m: ['Invent a Helper', 'recycled boxes, tubes, tape, crayons', 'Think of a small problem at home | Draw an invention to fix it | Build a model from recycled materials | Explain how it works to your family'],
+          q: [
+            ch('A person who invents is an…', '*inventor|astronaut|athlete'),
+            tf('The wheel is an invention.', true),
+            ch('Inventions help us…', '*solve problems|make problems worse|nothing'),
+          ],
+          ms: ['Explains invention', 'Names everyday inventions and uses', 'Generates own invention ideas'],
+        }),
+      ]),
+      U('before-after', 'Before and After', 'How inventions changed life.', 'Washing clothes; Cooking; Getting water; Lighting', [
+        L('life-changes', 'Life Before Washing Machines', {
+          o: ['Compare life before and after an invention', 'Ask elders about inventions in their lifetime'],
+          p: ['Knows what an invention is'],
+          e: [
+            'Inventions change how we live. Before washing machines, clothes were washed by hand, scrubbing and beating them on stones — hard work that took many hours.',
+            'Before gas stoves, food was cooked on wood or coal fires; before taps, water was carried from wells.',
+            'Your grandparents may remember life before some inventions. Asking them helps us learn how much things have changed.',
+          ],
+          c: [['evidence', 'Elders\' memories (oral history) are a source of evidence about how everyday life has changed.']],
+          v: 'before = earlier in time; after = later in time; change = become different; chore = a regular job at home',
+          x: ['Grinding spices on a stone vs using a mixer.', 'Carrying water from a well vs turning on a tap.'],
+          s: ['Grandma\'s Washing Stone', 'Grandma showed Ivaan a smooth flat stone in the garden. "When I was young, I washed clothes on this, by the river," she said. "It took all morning!" Ivaan looked at the washing machine humming in the house. "Inventions saved you a lot of time," he said. Grandma laughed, "Yes — but I miss chatting by the river."'],
+          a: [
+            mt('Match before and after', 'washing on a stone=washing machine|carrying water from a well=tap|cooking on wood fire=gas stove'),
+            ch('Inventions often save…', '*time and effort|nothing|only money'),
+            tf('Grandparents can tell us how life has changed.', true),
+            ch('Before mixers, spices were ground…', '*on a stone|by robots|in a computer'),
+          ],
+          t: ['Is everything better after an invention? What might be lost?', 'Which invention do you think saved the most time?'],
+          k: ['Interview a grandparent about one invention that changed their life and tell someone.'],
+          m: ['Before-and-After Picture Book', 'paper, crayons, an interview with an elder', 'Ask an elder about three chores long ago | Draw "before" and "after" pictures for each | Write or say one sentence for each | Share the book with the elder'],
+          q: [
+            ch('Which replaced carrying water from wells?', '*taps|bicycles|radios'),
+            tf('Inventions change how people live.', true),
+            ch('A regular job at home is a…', '*chore|holiday|game'),
+          ],
+          ms: ['Compares life before/after inventions', 'Gathers oral history', 'Considers gains and losses'],
+        }),
+      ]),
+    ]),
+    S('s5', 'Inventors and their stories.', [
+      'Retell stories of inventors', 'Know that failure is part of inventing', 'Name inventions from India',
+    ], [
+      U('inventor-stories', 'Inventor Stories', 'Curiosity and persistence.', 'Thomas Edison and the light bulb; The Wright brothers; Failure and trying again', [
+        L('try-again', 'Inventors Never Give Up', {
+          o: ['Retell a story of an inventor', 'Explain why failure helps inventors learn'],
+          p: ['Knows everyday inventions'],
+          e: [
+            'Inventing is hard. Thomas Edison\'s team tested thousands of materials to make a long-lasting light bulb filament in 1879. Others, like Joseph Swan, worked on light bulbs too.',
+            'The Wright brothers, Orville and Wilbur, built gliders and tested them many times before their first powered flight in 1903, which lasted 12 seconds.',
+            'Inventors learn from each "failure". Each try shows what doesn\'t work, getting them closer to what does.',
+          ],
+          c: [['evidence', 'The Wright brothers\' first powered flight took place on 17 December 1903 at Kitty Hawk, North Carolina; Edison\'s and Swan\'s work on incandescent bulbs overlapped in time.']],
+          v: 'experiment = a test to find something out; failure = when something doesn\'t work; persistence = keeping going; filament = the thin wire that glows in a bulb',
+          x: ['The first flight lasted only 12 seconds.', 'Edison\'s team tested many filament materials.'],
+          s: ['Twelve Seconds', 'On a cold, windy morning in 1903, Orville Wright lay on the wing of a wooden plane. Wilbur held the wing steady as the engine roared. The plane lifted off — and flew for 12 seconds! It wasn\'t far, but after years of crashes and repairs, it was the start of human flight.'],
+          a: [
+            ch('The Wright brothers\' first powered flight lasted…', '*12 seconds|12 hours|12 days'),
+            ch('When an experiment fails, inventors…', '*learn and try again|give up forever|get angry and stop'),
+            tf('Several people worked on light bulbs.', true),
+            ch('Keeping going is called…', '*persistence|laziness|luck'),
+          ],
+          t: ['Why might one invention have more than one inventor?', 'How do you feel when something you make doesn\'t work?'],
+          k: ['Tell a grown-up about a time you tried again after something didn\'t work.'],
+          m: ['🧪 Paper Plane Engineering', 'paper, a tape measure', 'Fold a paper plane and fly it | Measure the distance | Change one thing (wing size, nose weight) and test again | Keep a record and find your best design'],
+          q: [
+            ch('The Wright brothers flew in…', '*1903|1803|2003'),
+            tf('Failure helps inventors learn.', true),
+            ch('A test to find something out is an…', '*experiment|exam only|excuse'),
+          ],
+          ms: ['Retells inventor stories', 'Values persistence', 'Iterates designs'],
+        }),
+      ]),
+      U('indian-inventions', 'Inventions from India', 'Ideas that came from India.', 'Zero and the decimal system; Cotton cloth; Buttons; Chess (chaturanga); Ayurveda and surgery texts; Modern Indian inventors', [
+        L('from-india', 'Gifts from India', {
+          o: ['Name inventions and ideas that developed in India', 'Distinguish well-documented achievements from exaggerated claims'],
+          p: ['Knows inventors persist'],
+          e: [
+            'Many important ideas developed in India. The decimal place-value system with zero spread from India to the world. Cotton was grown and woven into fine cloth by the Harappans. The game chaturanga, an ancestor of chess, is first recorded in India around the 6th century CE.',
+            'Ancient Indian texts like the Sushruta Samhita describe surgical techniques, including early forms of reconstructive surgery of the nose.',
+            'Modern Indian inventors continue this tradition. When we learn about past achievements, we check evidence — real achievements are impressive enough without exaggeration.',
+          ],
+          c: [['evidence', 'Chaturanga is described in Indian sources from about the 6th century CE; the Sushruta Samhita is an ancient medical text whose surviving versions scholars date to several centuries BCE to CE.'], ['interpretation', 'Some popular claims about ancient Indian inventions (like aeroplanes or the internet) are not supported by evidence; historians distinguish documented achievements from myths.']],
+          v: 'chaturanga = an ancient Indian game, ancestor of chess; decimal system = counting in tens using place value; surgery = treating the body by operating; evidence = information that shows something is true',
+          x: ['Chess pieces once represented the four parts of an army: infantry, cavalry, elephants and chariots.', 'Indian numerals became the digits used worldwide.'],
+          s: ['The Game of Four Armies', 'In ancient India, a board game called chaturanga used pieces for infantry, horses, elephants and chariots. It travelled to Persia as shatranj, then across the Arab world to Europe, slowly changing into modern chess. Today, India has many chess grandmasters — the game has come home.'],
+          a: [
+            mt('Match the idea to its origin', 'zero and decimal place value=India|chaturanga=ancestor of chess|Sushruta Samhita=ancient surgery text'),
+            ch('Chess developed from…', '*chaturanga|cricket|kabaddi'),
+            tf('Claims about ancient inventions should be checked against evidence.', true),
+            ch('Harappans were among the earliest to grow and weave…', '*cotton|nylon|plastic'),
+          ],
+          t: ['Why is it important not to exaggerate past achievements?', 'What would you like to invent to help India today?'],
+          k: ['Tell someone about one invention or idea from India and how we know about it.'],
+          m: ['Chaturanga Board', 'cardboard 8×8 grid, paper pieces', 'Make an 8×8 board | Create pieces for infantry, horses, elephants and chariots | Learn simple chess moves with family | Explain how the game travelled from India'],
+          q: [
+            ch('The number system the world uses today came largely from…', '*India|Rome|Antarctica'),
+            tf('The Sushruta Samhita describes surgery.', true),
+            ch('Chaturanga pieces represented an…', '*army|orchestra|kitchen'),
+          ],
+          ms: ['Names documented Indian contributions', 'Distinguishes evidence from myth', 'Traces diffusion of ideas'],
+        }),
+      ]),
+    ]),
+    S('s6', 'Communication and transport inventions.', [
+      'Trace the history of communication', 'Trace the history of transport', 'Explain how inventions build on earlier ones',
+    ], [
+      U('communication', 'From Drums to Smartphones', 'How messages travel.', 'Writing and printing; Telegraph and telephone; Radio and TV; Internet', [
+        L('message-history', 'The Journey of a Message', {
+          o: ['Sequence major communication inventions', 'Explain how each built on earlier ones'],
+          p: ['Knows communication methods'],
+          e: [
+            'People first sent messages by voice, drums, smoke signals and runners. Writing let messages last. Printing with movable type spread books widely: in China (Bi Sheng, 11th century) and in Europe (Gutenberg, around 1450).',
+            'The electric telegraph (1830s–40s) sent coded messages along wires. The telephone (patented by Alexander Graham Bell in 1876) carried voices; radio sent signals without wires. Indian scientist Jagadish Chandra Bose did pioneering work on radio waves in the 1890s.',
+            'The internet grew from networks in the 1960s–80s; the World Wide Web was invented by Tim Berners-Lee in 1989. Each invention built on earlier ones.',
+          ],
+          c: [['evidence', 'J. C. Bose demonstrated millimetre-wave radio transmission in Kolkata in 1895; credit for radio is shared among several scientists, including Marconi.'], ['interpretation', 'Who "invented" the telephone and radio is debated because several people worked on similar ideas at the same time.']],
+          v: 'printing press = a machine for printing text; telegraph = a system for sending coded messages by wire; radio wave = an invisible wave that carries signals; internet = a global network of computers',
+          x: ['Morse code: dots and dashes.', 'Video calls today.'],
+          s: ['Bose\'s Invisible Waves', 'In 1895, in Kolkata, Jagadish Chandra Bose sent invisible radio waves across a room and through walls to ring a bell and set off a small explosion of gunpowder at a distance. He chose not to patent much of his work, believing knowledge should be shared freely.'],
+          a: [
+            od('Order these inventions', 'writing|printing with movable type|telegraph|telephone|internet'),
+            ch('J. C. Bose worked on…', '*radio waves|steam engines|chess'),
+            tf('Several people worked on radio around the same time.', true),
+            ch('The World Wide Web was invented in…', '1876|*1989|1450'),
+          ],
+          t: ['Which communication invention changed the world most?', 'Why might inventors choose not to patent their work?'],
+          k: ['Explain to someone how one communication invention built on an earlier one.'],
+          m: ['🧪 Morse Code Messages', 'a torch or a bell, a Morse code chart', 'Learn Morse code for a few letters | Send a short message with torch flashes or taps | Have a partner decode it | Compare with sending a text message'],
+          q: [
+            ch('Gutenberg\'s printing press was around…', '*1450|1950|50 BCE'),
+            tf('Movable type printing existed in China before Europe.', true),
+            ch('The telegraph sent messages using…', '*coded signals along wires|carrier pigeons only|smoke'),
+          ],
+          ms: ['Sequences communication inventions', 'Explains building on earlier work', 'Recognises shared credit'],
+        }),
+      ]),
+      U('transport', 'From Carts to Rockets', 'How people move.', 'Wheel and cart; Steam trains; Cars; Aeroplanes; Rockets', [
+        L('moving-faster', 'Moving Faster and Farther', {
+          o: ['Sequence key transport inventions', 'Explain the effects of railways in India'],
+          p: ['Knows the wheel'],
+          e: [
+            'From wheels and carts to sailing ships, transport slowly improved for thousands of years. Steam engines (1800s) powered the first trains and steamships.',
+            'The first passenger train in India ran from Bombay (Mumbai) to Thane on 16 April 1853. Railways connected India, though they were built mainly to serve colonial trade.',
+            'Cars with petrol engines arrived in the late 1800s; aeroplanes in 1903; jet engines in the 1930s–40s; and rockets took humans to space in 1961.',
+          ],
+          c: [['evidence', 'India\'s first passenger train ran between Bori Bunder (Bombay) and Thane on 16 April 1853, covering about 34 km.']],
+          v: 'locomotive = an engine that pulls a train; steamship = a ship powered by steam; jet engine = an engine that pushes air out fast to move forward; rocket = a vehicle that can travel to space',
+          x: ['Mumbai\'s local trains carrying millions daily.', 'Vande Bharat trains today.'],
+          s: ['Thane, 1853', 'On 16 April 1853, crowds gathered at Bori Bunder in Bombay. A steam locomotive, decorated with flags, pulled 14 carriages towards Thane. Some people had never seen anything move so fast without animals. The journey of about 34 km took around 75 minutes — and India\'s railway story began.'],
+          a: [
+            od('Order these transport inventions', 'wheel and cart|steam train|aeroplane|rocket to space'),
+            ch('India\'s first passenger train ran from Bombay to…', '*Thane|Delhi|Chennai'),
+            tf('India\'s first passenger train ran in 1853.', true),
+            ch('A train engine is a…', '*locomotive|rocket|submarine'),
+          ],
+          t: ['How did railways change India — for good and bad?', 'What will transport look like in 50 years?'],
+          k: ['Tell the story of India\'s first train to someone.'],
+          m: ['Transport Timeline Model', 'paper, toy vehicles or drawings, a long strip', 'Arrange transport inventions in order on a strip | Add dates | Mark when each reached India | Present the timeline'],
+          q: [
+            ch('Humans first went to space in…', '*1961|1853|1903'),
+            tf('Steam engines powered early trains.', true),
+            ch('Jet engines move vehicles by…', '*pushing air out fast|pedalling|sails'),
+          ],
+          ms: ['Sequences transport inventions', 'Explains railways\' impact in India', 'Uses dates accurately'],
+        }),
+      ]),
+    ]),
+    S('s7', 'Medicine, science and scientists who changed the world.', [
+      'Describe major medical breakthroughs', 'Explain the scientific method', 'Recognise scientists from many countries, including women',
+    ], [
+      U('medicine', 'Medical Breakthroughs', 'Discoveries that saved millions of lives.', 'Vaccines: Jenner; Germ theory: Pasteur, Koch; Antibiotics: Fleming; Anaesthesia; X-rays', [
+        L('saving-lives', 'Discoveries That Saved Lives', {
+          o: ['Describe major medical discoveries', 'Explain how discoveries build on evidence'],
+          p: ['Knows germs cause disease'],
+          e: [
+            'In 1796, Edward Jenner developed the smallpox vaccine, based on the observation that milkmaids who caught cowpox didn\'t get smallpox. Smallpox was eradicated in 1980.',
+            'In the 1860s–80s, Louis Pasteur and Robert Koch showed that germs cause many diseases — germ theory. This led to better hygiene, sterilising instruments and new vaccines.',
+            'In 1928, Alexander Fleming noticed mould killing bacteria and discovered penicillin; Howard Florey and Ernst Chain later developed it into a mass-produced medicine in the 1940s. X-rays (Röntgen, 1895) and anaesthesia also transformed medicine.',
+          ],
+          c: [['evidence', 'Fleming published his penicillin observation in 1929; Fleming, Florey and Chain shared the 1945 Nobel Prize. Ronald Ross, working in India, showed in 1897 that mosquitoes transmit malaria.']],
+          v: 'vaccine = a substance that trains the immune system; germ theory = the idea that microorganisms cause many diseases; antibiotic = a medicine that kills bacteria; anaesthesia = medicine that prevents pain during surgery',
+          x: ['Ronald Ross\'s malaria discovery in Secunderabad, 1897.', 'Polio vaccines eliminating polio from India.'],
+          s: ['The Mouldy Dish', 'In 1928, Alexander Fleming returned from holiday to find mould growing in a dish of bacteria. Around the mould, the bacteria had died. Instead of throwing it away, he investigated. Years later, other scientists turned his discovery into penicillin, saving millions of lives in World War II and after.'],
+          a: [
+            mt('Match the discovery to the scientist', 'smallpox vaccine=Jenner|penicillin=Fleming|germ theory=Pasteur and Koch|mosquitoes spread malaria=Ronald Ross'),
+            ch('Antibiotics kill…', '*bacteria|viruses|all diseases'),
+            tf('Several scientists helped turn penicillin into a medicine.', true),
+            ch('Smallpox was eradicated in…', '*1980|1796|1928'),
+          ],
+          t: ['Why was Fleming\'s curiosity important?', 'Why do discoveries need many people to become useful?'],
+          k: ['Tell the story of one medical breakthrough and its impact.'],
+          m: ['Medical Timeline and Hall of Fame', 'poster paper, research', 'Create a timeline of 8 medical breakthroughs | Add the scientists, including at least two women and two from Asia or Africa | Note how each discovery built on earlier ones | Present your poster'],
+          q: [
+            ch('Medicine that prevents pain in surgery is…', '*anaesthesia|an antibiotic|a vaccine'),
+            tf('Ronald Ross worked on malaria in India.', true),
+            ch('X-rays were discovered by…', '*Röntgen|Fleming|Jenner'),
+          ],
+          ms: ['Describes medical breakthroughs accurately', 'Explains collaborative discovery', 'Links to Indian contexts'],
+        }),
+      ]),
+      U('scientists', 'Scientists Who Changed the World', 'Diverse minds and the scientific method.', 'The scientific method; Marie Curie; C. V. Raman; Srinivasa Ramanujan; Anandi Gopal Joshi; Janaki Ammal', [
+        L('scientific-method', 'Thinking Like a Scientist', {
+          o: ['Describe the steps of the scientific method', 'Describe the work of diverse scientists'],
+          p: ['Knows inventors and discoverers'],
+          e: [
+            'Scientists follow the scientific method: observe, ask a question, form a hypothesis (a testable idea), experiment, analyse results, and share conclusions so others can check them.',
+            'Marie Curie discovered radioactive elements and won Nobel Prizes in both Physics (1903) and Chemistry (1911). C. V. Raman discovered the Raman effect (how light scatters) and won the Nobel Prize in Physics in 1930; India celebrates National Science Day on 28 February.',
+            'Srinivasa Ramanujan made extraordinary contributions to mathematics. Anandi Gopal Joshi was among the first Indian women to qualify as a doctor in Western medicine (1886). E. K. Janaki Ammal was a pioneering botanist who developed improved sugarcane varieties.',
+          ],
+          c: [['evidence', 'National Science Day (28 February) marks Raman\'s 1928 announcement of the Raman effect.']],
+          v: 'scientific method = a process of testing ideas with evidence; hypothesis = a testable idea; Nobel Prize = an international award for great achievements; peer review = experts checking each other\'s work',
+          x: ['Raman studying why the sea looks blue.', 'Janaki Ammal\'s sugarcane research at Coimbatore.'],
+          s: ['The Blue Sea', 'In 1921, on a ship back from Europe, C. V. Raman stared at the deep blue Mediterranean and wondered: is it just reflecting the sky? He tested his hunch with simple instruments on board. Back in Kolkata, years of experiments revealed a new way light scatters — and won India\'s first Nobel Prize in science.'],
+          a: [
+            od('Steps of the scientific method', 'observe|ask a question|form a hypothesis|experiment|analyse and share'),
+            mt('Match the scientist', 'Marie Curie=radioactivity|C. V. Raman=scattering of light|Ramanujan=mathematics|Janaki Ammal=botany and sugarcane'),
+            tf('National Science Day in India is on 28 February.', true),
+            ch('A testable idea is a…', '*hypothesis|conclusion|prize'),
+          ],
+          t: ['Why should scientists share results so others can check them?', 'Why have women scientists often been less famous?'],
+          k: ['Present the story of a scientist you admire.'],
+          m: ['🧪 Hypothesis Test', 'materials for a simple test (e.g. which paper towel absorbs most water), notebook', 'Write a question and hypothesis | Plan a fair test | Run it and record results | Write a conclusion and share it'],
+          q: [
+            ch('Marie Curie won Nobel Prizes in…', '*Physics and Chemistry|Music and Art|Peace only'),
+            tf('Raman won the Nobel Prize in Physics in 1930.', true),
+            ch('Experts checking each other\'s work is…', '*peer review|guessing|advertising'),
+          ],
+          ms: ['Applies the scientific method', 'Describes diverse scientists accurately', 'Values evidence sharing'],
+        }),
+      ]),
+    ]),
+    S('s9', 'How innovation works: patents, teams and technology revolutions.', [
+      'Explain patents and intellectual property', 'Describe how modern innovation is collaborative', 'Analyse the digital revolution',
+    ], [
+      U('innovation-process', 'How Innovation Happens', 'From idea to impact.', 'Invention vs innovation; Patents; Collaboration and labs; Frugal innovation in India', [
+        L('patents-frugal', 'Patents and Frugal Innovation', {
+          o: ['Distinguish invention from innovation and explain patents', 'Describe frugal innovation with Indian examples'],
+          p: ['Knows the scientific method'],
+          e: [
+            'An invention is a new idea or device; innovation is turning it into something people actually use. Many inventions never become innovations.',
+            'A patent gives an inventor the right to stop others from making or selling their invention for a limited time (usually 20 years), in exchange for publishing how it works. Patents reward inventors but can also limit access, for example to medicines.',
+            'Frugal innovation means creating low-cost, effective solutions with limited resources. Indian examples include affordable cataract surgery models (Aravind Eye Care), low-cost satellites and missions like Mangalyaan, and the Mitticool clay refrigerator.',
+          ],
+          c: [['evidence', 'Mangalyaan (2013–14) cost far less than most interplanetary missions; Aravind Eye Care System has performed millions of low-cost eye surgeries.']],
+          v: 'innovation = turning an idea into something widely used; patent = a legal right protecting an invention for a time; intellectual property = creations of the mind protected by law; frugal innovation = effective low-cost solutions',
+          x: ['A clay fridge cooling food without electricity.', 'Generic medicines making treatment affordable.'],
+          s: ['The Clay Fridge', 'After the 2001 Gujarat earthquake, potter Mansukhbhai Prajapati heard people lamenting their broken clay pots called "the poor man\'s fridge". He experimented for years and created Mitticool: a clay refrigerator that keeps food cool by evaporation, needing no electricity.'],
+          a: [
+            mt('Match', 'invention=new idea or device|innovation=idea put into wide use|patent=legal protection for a time|frugal innovation=effective low-cost solution'),
+            ch('A patent usually lasts about…', '2 years|*20 years|200 years'),
+            tf('Patents can make some medicines harder to afford.', true),
+            ch('Mitticool cools food by…', '*evaporation|electricity|ice from the mountains'),
+          ],
+          t: ['Should life-saving medicines be patented?', 'What problem in your area needs a frugal innovation?'],
+          k: ['Pitch a frugal innovation idea for a local problem.'],
+          m: ['🧪 Evaporative Cooler', 'two clay pots (one smaller), sand, water, thermometer', 'Place the small pot inside the large pot with wet sand between | Cover with a damp cloth | Measure temperature inside vs outside over a day | Explain the science and the frugal design'],
+          q: [
+            ch('Turning an idea into a widely used product is…', '*innovation|imitation|invention only'),
+            tf('Mangalyaan is an example of low-cost space engineering.', true),
+            ch('Creations of the mind protected by law are…', '*intellectual property|public parks|minerals'),
+          ],
+          ms: ['Distinguishes invention and innovation', 'Explains patents and trade-offs', 'Describes frugal innovation examples accurately'],
+        }),
+      ]),
+      U('digital-revolution', 'The Digital Revolution', 'Computers, the internet and India\'s digital public infrastructure.', 'Early computers; Transistors and microchips; Personal computers and smartphones; UPI and Aadhaar', [
+        L('chips-to-upi', 'From Room-Sized Computers to UPI', {
+          o: ['Trace key steps in the digital revolution', 'Evaluate India\'s digital public infrastructure'],
+          p: ['Knows communication history'],
+          e: [
+            'Early electronic computers in the 1940s filled whole rooms. The transistor (1947) and the integrated circuit (late 1950s) made computers smaller and faster; today a phone has billions of transistors.',
+            'Personal computers (1970s–80s), the World Wide Web (1989) and smartphones (2000s) put computing in billions of hands.',
+            'India built digital public infrastructure such as Aadhaar (digital identity) and UPI (instant payments), used by hundreds of millions of people. These bring convenience and inclusion but raise questions about privacy, security and exclusion of those without access.',
+          ],
+          c: [['evidence', 'UPI was launched in 2016 by NPCI; it handles billions of transactions monthly according to NPCI data.'], ['interpretation', 'Debates about digital identity systems include privacy concerns, addressed in part by the Supreme Court\'s 2017 recognition of privacy as a fundamental right.']],
+          v: 'transistor = a tiny electronic switch; microchip = a small chip containing many transistors; digital public infrastructure = shared digital systems for public use; privacy = control over personal information',
+          x: ['Paying a vegetable seller by UPI.', 'ENIAC, an early computer weighing about 27 tonnes.'],
+          s: ['The Vegetable Seller\'s QR Code', 'A vegetable seller in a small town hung a QR code on her cart. "I used to worry about change and fake notes," she said. "Now customers just scan." But her elderly neighbour without a smartphone still paid in cash. "Technology helps many people," Ivaan noticed, "but we must not forget those it leaves out."'],
+          a: [
+            od('Order these', 'room-sized computers (1940s)|transistor (1947)|personal computers (1970s–80s)|smartphones (2000s)'),
+            ch('UPI was launched in…', '*2016|1947|1989'),
+            tf('Digital systems raise questions about privacy.', true),
+            ch('A tiny electronic switch is a…', '*transistor|telescope|turbine'),
+          ],
+          t: ['Who benefits from digital payments, and who might be left out?', 'How should privacy be protected in digital systems?'],
+          k: ['Debate the benefits and risks of digital public infrastructure.'],
+          m: ['Digital Inclusion Survey', 'questionnaire, notebook, consent', 'Survey 10 people of different ages about digital payments and phone use | Analyse who uses them and who doesn\'t | Identify barriers | Propose solutions'],
+          q: [
+            ch('Microchips contain many…', '*transistors|engines|batteries the size of cars'),
+            tf('The Supreme Court recognised privacy as a fundamental right in 2017.', true),
+            ch('Aadhaar is a…', '*digital identity system|payment card only|satellite'),
+          ],
+          ms: ['Traces digital history', 'Evaluates digital infrastructure', 'Considers inclusion and privacy'],
+        }),
+      ]),
+    ]),
+    S('s12', 'The ethics and future of innovation.', [
+      'Evaluate ethical issues in technology', 'Analyse how societies shape innovation', 'Design a responsible innovation',
+    ], [
+      U('tech-ethics', 'Responsible Innovation', 'Who decides what we invent?', 'Dual-use technology; Unintended consequences; Precautionary principle; AI and biotechnology', [
+        L('dual-use', 'Double-Edged Inventions', {
+          o: ['Analyse dual-use technologies and unintended consequences', 'Apply principles of responsible innovation'],
+          p: ['Understands innovation processes'],
+          e: [
+            'Many inventions are "dual-use": they can help or harm. Nuclear physics gave power plants and medical imaging, but also atomic bombs. Chemistry gave fertilisers that fed billions and chemical weapons.',
+            'Inventions also have unintended consequences: plastics made life easier but created pollution; the internal combustion engine transformed transport but contributed to climate change and air pollution.',
+            'Responsible innovation asks early: Who benefits and who bears risks? Can harms be prevented? Should we apply the precautionary principle (caution when risks are uncertain and serious)? Inclusive public debate and regulation help societies decide.',
+          ],
+          c: [['evidence', 'Fritz Haber\'s ammonia synthesis enabled fertilisers supporting global food production, and Haber also led Germany\'s chemical weapons programme in World War I.'], ['interpretation', 'How much caution is appropriate for new technologies is debated; the precautionary principle is interpreted differently in different contexts.']],
+          v: 'dual-use = useful for both beneficial and harmful purposes; unintended consequence = an unplanned result; precautionary principle = taking care when risks are uncertain but serious; regulation = rules governing an activity',
+          x: ['Drones delivering medicines and also used in warfare.', 'Social media connecting people and spreading misinformation.'],
+          s: ['The Scientist\'s Two Legacies', 'Fritz Haber found a way to make ammonia from air, allowing fertilisers that have helped feed billions. During World War I, he also directed the development of poison gas. His life raises a hard question for every inventor: how much responsibility do we bear for how our discoveries are used?'],
+          a: [
+            mt('Match the invention to a benefit and a harm', 'nuclear physics=power and bombs|plastics=convenience and pollution|social media=connection and misinformation'),
+            ch('The precautionary principle means…', '*caution when risks are uncertain and serious|never inventing anything|ignoring risks'),
+            tf('Inventors may bear some responsibility for how their work is used.', true),
+            ch('A result nobody planned is an…', '*unintended consequence|intended outcome|patent'),
+          ],
+          t: ['Should some research be banned? Who decides?', 'How can ordinary citizens influence technology decisions?'],
+          k: ['Present a responsible innovation assessment of an emerging technology.'],
+          m: ['Responsible Innovation Assessment', 'research on an emerging technology (AI, gene editing, drones)', 'Map benefits, risks and who is affected | Apply responsible innovation questions | Propose safeguards or regulations | Write a 1500-word assessment'],
+          q: [
+            ch('A technology that can help or harm is…', '*dual-use|single-use only|obsolete'),
+            tf('Plastics have had unintended environmental consequences.', true),
+            ch('Rules governing an activity are…', '*regulation|innovation|invention'),
+          ],
+          ms: ['Analyses dual-use and consequences', 'Applies responsible innovation principles', 'Proposes balanced safeguards'],
+        }),
+      ]),
+      U('future', 'Inventing the Future', 'Challenges that need innovators.', 'Clean energy; Water; Health; Inclusive design; Your innovation project', [
+        L('design-future', 'Designing for Tomorrow', {
+          o: ['Identify major problems needing innovation', 'Design and test a prototype using design thinking'],
+          p: ['Understands responsible innovation'],
+          e: [
+            'Many of the world\'s biggest challenges need new ideas: clean and affordable energy, safe water, affordable healthcare, climate adaptation and inclusive technology for people with disabilities.',
+            'Design thinking is a process: empathise (understand users), define the problem, ideate (generate ideas), prototype (build a simple model) and test, then improve.',
+            'Great innovation often comes from people close to a problem. Young innovators in India and worldwide have designed water filters, assistive devices and farm tools. The best inventions are useful, affordable, safe and fair.',
+          ],
+          c: [['interpretation', 'Design thinking is one of several innovation frameworks; its steps are guidelines rather than fixed rules.']],
+          v: 'design thinking = a user-centred process for solving problems; prototype = an early model to test an idea; empathise = understand others\' experiences; iterate = repeat and improve',
+          x: ['A low-cost hearing aid designed with users.', 'Solar-powered irrigation pumps for small farmers.'],
+          s: ['The Farmer\'s Feedback', 'A student team designed a smartphone app to warn farmers of pests. When they tested it in a village, farmers said, "Our phones have little data, and we prefer voice messages in our language." The team redesigned it as a simple voice-call alert. Testing with real users changed everything.'],
+          a: [
+            od('Design thinking steps', 'empathise|define|ideate|prototype|test'),
+            ch('A simple early model to test an idea is a…', '*prototype|patent|product launch'),
+            tf('Testing with real users can change a design.', true),
+            ch('The best inventions are…', '*useful, affordable, safe and fair|expensive and complicated|secret'),
+          ],
+          t: ['Which global challenge would you most like to solve?', 'Why do designs fail when users aren\'t involved?'],
+          k: ['Pitch your prototype to a panel of family members and respond to feedback.'],
+          m: ['Design Thinking Innovation Project', 'notebook, materials for a prototype, potential users to interview', 'Interview at least three people about a real problem | Define the problem and brainstorm 10 ideas | Build and test a prototype | Iterate and present your final design with evidence from testing'],
+          q: [
+            ch('The first step of design thinking is to…', '*empathise with users|build immediately|sell the product'),
+            tf('Iteration means repeating and improving.', true),
+            ch('Inclusive technology serves…', '*people of all abilities|only experts|only robots'),
+          ],
+          ms: ['Applies design thinking', 'Builds and tests prototypes', 'Designs with inclusion and responsibility'],
+        }),
+      ]),
+    ]),
+  ],
+});

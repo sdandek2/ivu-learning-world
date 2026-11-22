@@ -1,0 +1,392 @@
+import { subject, S, U, L, ch, tf, od, mt } from '../dsl.ts';
+
+export default subject({
+  id: 'early-humans',
+  description: 'From the first humans to the great ancient civilisations: hunter-gatherers, fire and tools, cave art, farming, the first villages and cities, the Indus Valley, Mesopotamia, Egypt, China, Greece and Rome — always showing how archaeology and evidence tell us what we know, and where uncertainty remains.',
+  stages: [
+    S('s4', 'Long, long ago: cave people, fire and the first tools.', [
+      'Know people lived very differently long ago', 'Describe hunting, gathering and cave homes', 'Know cave paintings are clues',
+    ], [
+      U('cave-life', 'Long, Long Ago', 'How the first people lived.', 'Hunting and gathering; Caves and shelters; Fire; Stone tools', [
+        L('first-people', 'The First People', {
+          o: ['Describe how early people found food and shelter', 'Name early tools and fire as important discoveries'],
+          p: ['Knows past and present'],
+          e: [
+            'Long, long ago — many thousands of years before cities, cars or books — people lived in small groups. They hunted animals and gathered fruits, nuts and roots. We call them hunter-gatherers.',
+            'They made tools from stone, bone and wood to cut and dig. They sheltered in caves and simple huts.',
+            'Learning to control fire was a huge step: fire kept people warm, cooked food, gave light and scared away animals.',
+          ],
+          c: [['evidence', 'Archaeologists know about early people from stone tools, bones, remains of fires and cave paintings found at sites around the world, including India.']],
+          v: 'hunter-gatherer = a person who hunts animals and gathers wild plants for food; tool = something used to do a job; cave = a hollow space in rock; fire = flames that give heat and light',
+          x: ['A sharp stone used to cut meat.', 'People sitting around a fire at night.'],
+          s: ['The Family by the Fire', 'Long, long ago, a family sheltered in a rocky cave. The children gathered berries while the grown-ups tracked deer. At night, they sat around a crackling fire, roasting food and telling stories. The fire kept them warm and kept the wild animals away.'],
+          a: [
+            ch('Long ago, people got food by…', '*hunting and gathering|going to shops|ordering online'),
+            ch('Early tools were made of…', '*stone, bone and wood|plastic|steel'),
+            tf('Fire helped people stay warm and cook food.', true),
+            mt('Match', '🔥 fire=warmth and cooking|🪨 stone tool=cutting|🏞️ cave=shelter'),
+          ],
+          t: ['What would be hardest about living without shops?', 'How do you think people discovered fire?'],
+          k: ['Tell a grown-up three things early people did every day.'],
+          m: ['Make a Clay "Stone Tool"', 'clay or playdough, a stick, leaves', 'Shape a cutting tool from clay | Attach it to a stick with string | Use it to "cut" leaves | Explain how early people used similar tools'],
+          q: [
+            ch('Hunter-gatherers…', '*hunted animals and gathered plants|grew food on farms|bought food'),
+            tf('Early people sheltered in caves.', true),
+            ch('Fire gave early people…', '*warmth, light and cooked food|electricity|internet'),
+          ],
+          ms: ['Describes hunter-gatherer life', 'Names early tools and fire', 'Knows evidence comes from archaeology'],
+        }),
+      ]),
+      U('cave-art', 'Pictures on Rocks', 'Cave paintings are messages from the past.', 'Bhimbetka rock shelters; What paintings show; Colours from nature', [
+        L('bhimbetka', 'The Painted Rocks of Bhimbetka', {
+          o: ['Describe what early cave paintings show', 'Know paintings are evidence of how people lived'],
+          p: ['Knows early people lived in caves'],
+          e: [
+            'Early people painted on rock walls. In India, the rock shelters of Bhimbetka in Madhya Pradesh have thousands of paintings made over a very long time.',
+            'The paintings show animals like deer, bison and elephants, people hunting, dancing and riding animals.',
+            'Paints were made from natural colours: red and yellow from earth and minerals, white from chalky stone. These paintings are clues about how people lived.',
+          ],
+          c: [['evidence', 'Bhimbetka is a UNESCO World Heritage Site; its paintings span many periods, with some among the oldest rock art in India.']],
+          v: 'rock art = paintings or carvings on rock; shelter = a place to stay safe; mineral = a natural substance from the earth; Bhimbetka = rock shelters with ancient paintings in Madhya Pradesh',
+          x: ['A painting of a group of people dancing in a line.', 'Red colour made from crushed red stone.'],
+          s: ['The Message on the Wall', 'Ivaan visited Bhimbetka with his parents. On the rock walls, he saw red deer leaping and tiny people dancing. "Who painted these?" he whispered. "People who lived here long, long ago," said Mama. "They couldn\'t write, so they left pictures. And we can still read them today."'],
+          a: [
+            ch('Bhimbetka is in…', '*Madhya Pradesh|Kerala|Ladakh'),
+            ch('Cave paintings show…', '*animals and people|cars|computers'),
+            tf('Early paints came from natural colours.', true),
+            ch('Cave paintings are…', '*clues about the past|modern posters|maps of cities'),
+          ],
+          t: ['Why do you think people painted animals?', 'What would you paint to tell people about your life?'],
+          k: ['Describe a cave painting to a grown-up and say what it tells us.'],
+          m: ['Rock Art Painting', 'a flat stone or brown paper, earth-coloured paints (or mud and turmeric water), a twig brush', 'Make "natural" paints with soil, turmeric and chalk (with an adult) | Paint animals and people on a stone or paper | Tell the story of your painting | Compare it with Bhimbetka pictures'],
+          q: [
+            ch('Red paint long ago came from…', '*red earth and minerals|plastic|ink pens'),
+            tf('Bhimbetka has very old rock paintings.', true),
+            ch('Rock art is…', '*paintings or carvings on rock|a type of music|a sport'),
+          ],
+          ms: ['Describes cave art', 'Locates Bhimbetka', 'Uses art as evidence'],
+        }),
+      ]),
+    ]),
+    S('s5', 'From hunting to farming: the first villages.', [
+      'Explain how farming changed life', 'Describe early villages', 'Know animals were tamed',
+    ], [
+      U('first-farmers', 'The First Farmers', 'Growing food changed everything.', 'Planting seeds; Taming animals; Settling in villages; Pottery', [
+        L('farming-begins', 'When People Started Farming', {
+          o: ['Explain how farming began', 'Describe how farming changed the way people lived'],
+          p: ['Knows hunter-gatherer life'],
+          e: [
+            'About 10,000 to 12,000 years ago, people in some places began to plant seeds and grow crops like wheat and barley. They also tamed animals like goats, sheep and cattle. This is called domestication.',
+            'Farmers needed to stay near their fields, so they built permanent homes and lived in villages.',
+            'Farming meant more food, so villages grew. People made clay pots to store grain and water. One of the earliest farming villages in South Asia is Mehrgarh, in present-day Pakistan.',
+          ],
+          c: [['evidence', 'Archaeological evidence from Mehrgarh shows farming and herding from around 7000 BCE.']],
+          v: 'farming = growing crops and raising animals; domestication = taming animals and plants for human use; village = a small group of homes; pottery = objects made of baked clay',
+          x: ['Grinding stones used to make flour.', 'Clay pots used to store grain.'],
+          s: ['The Seed That Stayed', 'A hunter-gatherer girl noticed that seeds dropped near the camp grew into the same plants the next year. Her family tried planting more. The harvest was good, so they stayed instead of moving on. They built mud houses, tamed a few goats, and soon their camp became a village.'],
+          a: [
+            od('From hunting to farming', 'people hunt and gather|people plant seeds|people settle in villages|villages grow'),
+            ch('Taming animals is called…', '*domestication|hibernation|migration'),
+            tf('Farming let people stay in one place.', true),
+            ch('Clay pots were used to…', '*store grain and water|fly|write emails'),
+          ],
+          t: ['What new problems might farming have created?', 'Why did villages grow bigger?'],
+          k: ['Explain to someone why farmers built permanent homes.'],
+          m: ['Clay Storage Pot', 'clay or playdough, a few grains', 'Roll clay into coils | Stack coils to build a small pot | Smooth the sides and decorate with patterns | Store a few grains inside and explain its use'],
+          q: [
+            ch('Mehrgarh is an early…', '*farming village|space station|city of skyscrapers'),
+            tf('Farming started about 10,000–12,000 years ago.', true),
+            ch('Goats and sheep were…', '*tamed by early farmers|always wild|machines'),
+          ],
+          ms: ['Explains the farming revolution', 'Describes village life', 'Uses archaeological examples'],
+        }),
+      ]),
+      U('inventions-early', 'Early Inventions', 'Wheels, weaving and more.', 'The wheel; Weaving cloth; Metal tools: copper and bronze', [
+        L('the-wheel', 'The Wonderful Wheel', {
+          o: ['Describe important early inventions', 'Explain how inventions made life easier'],
+          p: ['Knows early villages'],
+          e: [
+            'Early people invented many things that changed life. The wheel, invented over 5,000 years ago, was used first for making pots and then for carts.',
+            'People learned to spin thread and weave cloth from cotton, wool and flax. The Indus Valley people are among the earliest known to grow cotton.',
+            'People learned to get metals from rocks. Copper came first; mixing copper with tin made bronze, which was harder — so we call this time the Bronze Age.',
+          ],
+          c: [['evidence', 'Archaeologists have found evidence of cotton textiles at Indus sites and early wheels and carts from Mesopotamia and other regions dating to around the 4th millennium BCE.']],
+          v: 'invention = something new that people create; wheel = a round object that turns on an axle; weave = make cloth by crossing threads; bronze = a metal made from copper and tin',
+          x: ['A potter\'s wheel for shaping clay.', 'Toy carts with wheels found at Indus sites.'],
+          s: ['The Rolling Log', 'Long ago, people moved heavy stones on rolling logs. One clever builder cut a slice from a log, made a hole in the middle and put a stick through. It rolled! Soon there were carts, and a potter put a wheel on its side to spin clay. One idea changed the world.'],
+          a: [
+            ch('The wheel was first used for…', '*making pots and later carts|flying|swimming'),
+            ch('Bronze is made from copper and…', '*tin|gold|wood'),
+            tf('Indus Valley people grew cotton.', true),
+            mt('Match the invention to its use', 'wheel=moving loads|weaving=making cloth|bronze tools=stronger cutting'),
+          ],
+          t: ['Which invention do you think changed life the most?', 'How would you move a heavy object without wheels?'],
+          k: ['Show someone how a wheel and axle make moving things easier.'],
+          m: ['🧪 Wheel Experiment', 'a shoebox, four bottle caps, two straws or pencils, a book', 'Drag a book in a box across the floor | Make wheels with caps and axles from straws | Move the box again | Compare which was easier and explain why'],
+          q: [
+            ch('Which came first?', '*copper tools|computers'),
+            tf('The wheel is over 5,000 years old.', true),
+            ch('Weaving makes…', '*cloth|metal|stone'),
+          ],
+          ms: ['Describes early inventions', 'Explains their impact', 'Investigates the wheel'],
+        }),
+      ]),
+    ]),
+    S('s6', 'The Indus Valley Civilisation.', [
+      'Describe Harappan cities', 'Explain what archaeologists have learned and what remains unknown', 'Compare Harappan life with today',
+    ], [
+      U('harappa', 'Cities of the Indus', 'One of the world\'s first great urban civilisations.', 'Harappa, Mohenjo-daro, Dholavira, Lothal; Planned streets and drains; Great Bath; Trade', [
+        L('planned-cities', 'Amazing Planned Cities', {
+          o: ['Describe features of Harappan cities', 'Explain how we know about them'],
+          p: ['Knows archaeology basics'],
+          e: [
+            'The Indus Valley (Harappan) Civilisation flourished around 2600–1900 BCE in what is now Pakistan and north-western India. Its major cities included Harappa, Mohenjo-daro, Dholavira and Lothal.',
+            'The cities were carefully planned: straight streets in a grid, houses of baked bricks of standard sizes, and covered drains — a sanitation system remarkable for its time. Mohenjo-daro had a large public "Great Bath".',
+            'Lothal in Gujarat had a dockyard-like structure, suggesting trade by sea. Harappan seals and beads have been found as far away as Mesopotamia.',
+          ],
+          c: [['evidence', 'Our knowledge comes from excavations since the 1920s at Harappa, Mohenjo-daro and many other sites; Dholavira was inscribed as a UNESCO World Heritage Site in 2021.']],
+          v: 'civilisation = a complex society with cities, government and culture; drain = a channel that carries away waste water; seal = a carved stamp used to mark goods; dockyard = a place for loading and repairing boats',
+          x: ['Standard brick sizes across many cities.', 'Covered drains running along streets.'],
+          s: ['The City Under the Mound', 'Local people near Mohenjo-daro called it the "Mound of the Dead". When archaeologists dug there, they found not tombs but a city: wide streets, bathrooms in houses, wells, and drains covered with bricks. "Four and a half thousand years ago," said the archaeologist, "this city had better drains than many towns a century ago."'],
+          a: [
+            mt('Match the site to its feature', 'Mohenjo-daro=Great Bath|Lothal=dockyard-like structure|Dholavira=UNESCO site in Gujarat'),
+            ch('Harappan cities had…', '*planned streets and covered drains|skyscrapers|railways'),
+            tf('Harappan seals have been found in Mesopotamia.', true),
+            ch('The civilisation flourished around…', '*2600–1900 BCE|1947 CE|1000 CE'),
+          ],
+          t: ['Why would a city need good drains?', 'What does trade with Mesopotamia tell us about the Harappans?'],
+          k: ['Describe a Harappan city to someone as if you were walking through it.'],
+          m: ['Harappan City Model', 'cardboard, clay, small bricks of clay or sugar cubes, paint', 'Plan a grid of streets | Build houses with "standard bricks" | Add covered drains and a bath | Present how the city worked'],
+          q: [
+            ch('Harappan houses were built of…', '*baked bricks|glass|steel'),
+            tf('Harappan cities had a planned grid of streets.', true),
+            ch('Lothal is in…', '*Gujarat|Kerala|Assam'),
+          ],
+          ms: ['Describes Harappan urban features', 'Locates major sites', 'Links findings to archaeological evidence'],
+        }),
+      ]),
+      U('indus-mysteries', 'Mysteries of the Indus', 'What we still don\'t know.', 'The undeciphered script; Seals and the "unicorn"; Why the cities declined: theories', [
+        L('undeciphered', 'A Script No One Can Read', {
+          o: ['Explain that the Indus script is undeciphered', 'Evaluate different theories about the decline of Harappan cities'],
+          p: ['Describes Harappan cities'],
+          e: [
+            'The Harappans used signs on seals and pottery — the Indus script. Despite many attempts, no one has deciphered it. The inscriptions are very short, and no bilingual text (like the Rosetta Stone for Egyptian) has been found.',
+            'Seals often show animals, such as a one-horned animal sometimes called a "unicorn", bulls and elephants, with a few signs.',
+            'Around 1900 BCE, the large cities declined. Possible reasons include changes in rivers, drying climate and weakened monsoons, and shifts in trade. Most scholars think several factors combined; older ideas of a sudden invasion are not well supported by evidence. People did not vanish — they moved and lived in smaller settlements.',
+          ],
+          c: [['interpretation', 'Theories about the script and the decline are debated by scholars; claims to have deciphered the script have not been widely accepted.'], ['evidence', 'Studies of ancient climate and river courses provide evidence for environmental change around the time of decline.']],
+          v: 'decipher = work out the meaning of a code or script; seal = a carved stamp; theory = a possible explanation based on evidence; decline = become weaker or smaller',
+          x: ['A seal showing a "unicorn" above a short line of signs.', 'The Ghaggar-Hakra river system drying over time.'],
+          s: ['The Puzzle with Missing Pieces', 'Professor Hoot gave the class a puzzle: short strings of symbols, no translation. "Try to read it," he said. They tried for an hour and couldn\'t. "Now you know how scholars feel about the Indus script," he smiled. "Sometimes the honest answer in history is: we don\'t know yet."'],
+          a: [
+            ch('The Indus script is…', '*not yet deciphered|fully translated|written in English'),
+            ch('Why is the script hard to decipher?', '*inscriptions are short and no bilingual text is known|it is too long|it is in colour'),
+            tf('Most scholars think several factors caused the decline of Harappan cities.', true),
+            mt('Match', 'seal=carved stamp|decipher=work out meaning|theory=possible explanation'),
+          ],
+          t: ['Why is "we don\'t know yet" an important answer in history?', 'What evidence might help decipher the script?'],
+          k: ['Explain two theories about the Harappan decline and the evidence for each.'],
+          m: ['Design Your Own Seal and Script', 'clay or soap, a toothpick, paper', 'Invent 10 symbols for a secret script | Carve a "seal" with an animal and 3 symbols | Ask a family member to try to decipher it without a key | Discuss why decipherment is hard'],
+          q: [
+            ch('An animal often seen on Indus seals:', '*a one-horned animal|a penguin|a kangaroo'),
+            tf('Harappan people vanished completely.', false, 'They moved to smaller settlements; cultural continuities remained.'),
+            ch('A possible cause of decline:', '*changes in rivers and climate|aeroplanes|volcano on the Moon'),
+          ],
+          ms: ['Explains the undeciphered script', 'Evaluates decline theories', 'Distinguishes evidence from speculation'],
+        }),
+      ]),
+    ]),
+    S('s7', 'Ancient civilisations of the world.', [
+      'Compare Mesopotamia, Egypt and China with the Indus', 'Explain the importance of rivers', 'Describe the invention of writing',
+    ], [
+      U('river-civs', 'River Civilisations', 'Great civilisations grew beside rivers.', 'Mesopotamia: Tigris and Euphrates; Egypt: Nile; China: Yellow River; Indus', [
+        L('rivers-life', 'Gifts of the Rivers', {
+          o: ['Explain why early civilisations grew near rivers', 'Compare features of four river civilisations'],
+          p: ['Knows the Indus Valley Civilisation'],
+          e: [
+            'Early civilisations grew along great rivers, which provided water, fertile soil from floods, fish and routes for travel and trade.',
+            'Mesopotamia ("land between rivers") grew between the Tigris and Euphrates in present-day Iraq. Ancient Egypt grew along the Nile, whose yearly floods left rich soil. Early Chinese civilisation grew along the Yellow River (Huang He). The Indus civilisation grew along the Indus and nearby rivers.',
+            'All four developed cities, specialised jobs, trade and systems of writing or record-keeping, but each had its own culture, beliefs and government.',
+          ],
+          c: [['evidence', 'Archaeological and textual evidence shows urban societies in Mesopotamia and Egypt from around the late 4th millennium BCE, the Indus from around 2600 BCE, and Shang China from around 1600 BCE.']],
+          v: 'Mesopotamia = the land between the Tigris and Euphrates rivers; fertile = good for growing crops; flood plain = flat land beside a river that floods; specialised job = work done by people trained in one skill',
+          x: ['The Nile floods made Egyptian farming possible.', 'Mesopotamian scribes kept records on clay tablets.'],
+          s: ['Four Rivers, Four Peoples', 'Nova laid out a map with four blue lines: the Tigris–Euphrates, the Nile, the Indus and the Yellow River. "Why are the first cities all here?" she asked. The class answered together: "Water, good soil, fish and boats!" "Exactly," said Nova. "Rivers were the first highways and the first farms."'],
+          a: [
+            mt('Match the civilisation to its river', 'Mesopotamia=Tigris and Euphrates|Egypt=Nile|early China=Yellow River|Harappa=Indus'),
+            ch('Why did civilisations grow near rivers?', '*water, fertile soil and transport|rivers were cold|there were no rivers elsewhere'),
+            tf('Mesopotamia means "land between rivers".', true),
+            ch('The Nile\'s floods left…', '*rich soil|sand only|ice'),
+          ],
+          t: ['What dangers did rivers also bring?', 'Why are many modern cities still near rivers?'],
+          k: ['Compare two river civilisations for someone using a map.'],
+          m: ['Four Civilisations Comparison Chart', 'a large chart, research books', 'Make columns for Mesopotamia, Egypt, Indus and China | Fill in rivers, dates, writing, buildings and achievements | Add a picture for each | Identify two similarities and two differences'],
+          q: [
+            ch('The Yellow River is in…', '*China|Egypt|India'),
+            tf('Early civilisations had specialised jobs.', true),
+            ch('Fertile soil is good for…', '*growing crops|building rockets|making glass'),
+          ],
+          ms: ['Explains the role of rivers', 'Compares civilisations', 'Locates them on a map'],
+        }),
+      ]),
+      U('writing', 'The Invention of Writing', 'From pictures to scripts.', 'Cuneiform; Hieroglyphs; Chinese oracle bones; Brahmi script; Why writing mattered', [
+        L('first-writing', 'Marks That Speak', {
+          o: ['Describe early writing systems', 'Explain why writing was important'],
+          p: ['Knows river civilisations'],
+          e: [
+            'Writing began as a way to keep records: counting grain, animals and taxes. In Mesopotamia, around 3200 BCE, people pressed wedge-shaped marks into clay — cuneiform.',
+            'Egyptians developed hieroglyphs, picture-like signs, carved on monuments and written on papyrus. In China, early characters appear on oracle bones from the Shang dynasty. In India, after the Indus script, the Brahmi script (seen in Ashoka\'s edicts, 3rd century BCE) became the ancestor of many South and Southeast Asian scripts, including Devanagari.',
+            'Writing let people keep laws, stories, science and history — and let us hear voices from thousands of years ago.',
+          ],
+          c: [['evidence', 'The Rosetta Stone (196 BCE), with the same text in hieroglyphs, Demotic and Greek, helped Jean-François Champollion decipher hieroglyphs in 1822.']],
+          v: 'cuneiform = wedge-shaped writing from Mesopotamia; hieroglyph = a picture-like sign in Egyptian writing; papyrus = paper-like material made from a reed; Brahmi = an ancient Indian script, ancestor of many modern scripts',
+          x: ['A clay tablet recording barley rations.', 'Ashoka\'s edicts in Brahmi script.'],
+          s: ['The Stone with Three Scripts', 'In 1799, soldiers found a stone near the town of Rashid (Rosetta) in Egypt carved with the same message in three scripts. Because scholars could read the Greek, Jean-François Champollion eventually cracked the hieroglyphs in 1822. Suddenly, thousands of years of Egyptian writing could speak again.'],
+          a: [
+            mt('Match the script to its civilisation', 'cuneiform=Mesopotamia|hieroglyphs=Egypt|oracle bone script=Shang China|Brahmi=ancient India'),
+            ch('Writing first developed mainly for…', '*keeping records like grain and taxes|sending emails|writing novels'),
+            tf('Brahmi is an ancestor of Devanagari.', true),
+            ch('The Rosetta Stone helped decipher…', '*Egyptian hieroglyphs|the Indus script|cuneiform only'),
+          ],
+          t: ['How would life be different without writing?', 'Why might the Indus script still be undeciphered while hieroglyphs were cracked?'],
+          k: ['Show someone your name in a pretend cuneiform or hieroglyph style and explain the system.'],
+          m: ['Clay Tablet Writing', 'clay or playdough, a flat stick cut to a wedge', 'Flatten clay into a tablet | Press wedge marks to "write" a record (e.g. 5 sheep) | Make a key for your symbols | Explain how scribes used tablets'],
+          q: [
+            ch('Cuneiform was pressed into…', '*clay|paper|glass'),
+            ch('Ashoka\'s edicts used…', '*Brahmi script|cuneiform|hieroglyphs'),
+            tf('Writing lets us learn from people long ago.', true),
+          ],
+          ms: ['Describes early writing systems', 'Explains writing\'s significance', 'Connects Brahmi to modern scripts'],
+        }),
+      ]),
+    ]),
+    S('s9', 'Classical civilisations: Greece, Rome, Persia, China and India.', [
+      'Describe achievements of classical civilisations', 'Explain connections between them', 'Compare forms of government',
+    ], [
+      U('greece-rome', 'Greece and Rome', 'Ideas that still shape the world.', 'Athenian democracy; Philosophy and science; Roman Republic and Empire; Law, roads and engineering', [
+        L('athens-rome', 'Athens and Rome', {
+          o: ['Describe Athenian democracy and Roman government', 'Evaluate their legacies and limitations'],
+          p: ['Knows early civilisations'],
+          e: [
+            'In Athens (5th century BCE), male citizens took part directly in an assembly that made decisions — an early form of democracy. Women, enslaved people and foreigners were excluded, so it was far from democracy for all.',
+            'Greek thinkers like Socrates, Plato and Aristotle, and mathematicians like Euclid and Archimedes, shaped philosophy and science.',
+            'Rome began as a republic with elected officials and a Senate, then became an empire ruled by emperors. Romans built roads, aqueducts and a legal system whose ideas influenced later laws in many countries.',
+          ],
+          c: [['evidence', 'Athenian democracy is documented in ancient texts and inscriptions; historians estimate that adult male citizens were a minority of Athens\' total population.'], ['interpretation', 'Historians debate how "democratic" Athens was given the exclusion of most residents.']],
+          v: 'democracy (Athenian) = direct participation of male citizens in decisions; republic = a state where power is held by elected representatives; empire = many lands ruled by one power; aqueduct = a channel carrying water over long distances',
+          x: ['Roman roads, some still in use.', 'Greek geometry studied in schools today.'],
+          s: ['Who Could Vote in Athens?', 'In Athens, a potter named Nikias walked to the assembly to vote on a new law. His wife, the enslaved man who worked in his shop and his neighbour from another city could not. "Athens gave the world the word democracy," Professor Hoot said, "but it took more than two thousand years to include everyone."'],
+          a: [
+            mt('Match', 'Athens=early direct democracy for male citizens|Rome=republic, then empire|aqueduct=carried water'),
+            ch('Who was excluded from Athenian democracy?', '*women, enslaved people and foreigners|all men|no one'),
+            tf('Roman legal ideas influenced later laws.', true),
+            ch('Euclid is famous for…', '*geometry|astronomy only|cooking'),
+          ],
+          t: ['Was Athens really a democracy? Explain your view.', 'Which Roman achievement do you find most impressive?'],
+          k: ['Compare Athenian democracy with Indian democracy today.'],
+          m: ['Ancient vs Modern Democracy Chart', 'poster paper, sources', 'Compare who could vote, how decisions were made, and rights protected | Add Roman Republic features | Identify what changed over time | Present your analysis'],
+          q: [
+            ch('A state ruled by elected representatives is a…', '*republic|empire under a king|tribe'),
+            tf('Athenian democracy included women.', false),
+            ch('Romans built…', '*roads and aqueducts|smartphones|railways'),
+          ],
+          ms: ['Describes Greek and Roman government', 'Evaluates inclusiveness critically', 'Explains legacies'],
+        }),
+      ]),
+      U('connected-world', 'A Connected Ancient World', 'Persia, China, India and the routes between them.', 'Achaemenid Persia; Han China and the Silk Road; Mauryas and Guptas; Exchange of ideas: Buddhism, mathematics, trade', [
+        L('silk-road', 'Along the Silk Road', {
+          o: ['Describe major classical empires of Asia', 'Explain how trade routes connected civilisations'],
+          p: ['Knows Greece and Rome'],
+          e: [
+            'Classical Asia had great empires: the Achaemenid Persian Empire (6th–4th century BCE), Han China (206 BCE–220 CE), and in India the Mauryan Empire (c. 322–185 BCE) and later the Gupta Empire (c. 4th–6th century CE).',
+            'Trade routes, often called the Silk Road on land and maritime routes by sea, linked China, India, Persia, Central Asia, Arabia and the Mediterranean. Silk, spices, cotton, glass, horses and ideas travelled along them.',
+            'Ideas travelled too: Buddhism spread from India to Central Asia, China, Korea and Japan; Indian numerals and astronomy reached Persia and beyond; Roman coins have been found in southern India.',
+          ],
+          c: [['evidence', 'Hoards of Roman coins found in Tamil Nadu and Kerala, and Greek and Roman texts describing Indian ports, show trade between India and the Roman world.'], ['interpretation', 'The term "Silk Road" was coined in the 19th century; historians emphasise it was a network of many routes rather than one road.']],
+          v: 'Silk Road = a network of trade routes linking Asia and Europe; maritime = related to the sea; empire = many regions ruled by one power; exchange = giving and receiving',
+          x: ['Chinese pilgrims like Faxian and Xuanzang travelled to India to study Buddhism.', 'Pepper from Kerala shipped to Rome.'],
+          s: ['Xuanzang\'s Journey', 'In the 7th century CE, the Chinese monk Xuanzang crossed deserts and mountains to India to study Buddhist texts. He stayed for years, studied at Nalanda, and returned with hundreds of manuscripts. His travel account is still one of historians\' key sources about India at that time.'],
+          a: [
+            mt('Match the empire to its region', 'Mauryan=India|Han=China|Achaemenid=Persia'),
+            ch('What travelled along the Silk Road?', '*goods and ideas|only silk|nothing'),
+            tf('Roman coins have been found in southern India.', true),
+            ch('Xuanzang came to India to study…', '*Buddhism|cricket|steam engines'),
+          ],
+          t: ['Why do ideas often travel along trade routes?', 'What risks did ancient travellers face?'],
+          k: ['Tell the story of an object or idea travelling along the Silk Road.'],
+          m: ['Silk Road Map and Journal', 'a map of Asia and Europe, research sources', 'Mark major routes and cities | Choose a traveller (merchant, monk, envoy) | Write a journal of their journey with real places and goods | Present your map and journal'],
+          q: [
+            ch('Nalanda was a famous centre of…', '*learning|shipbuilding|horse racing'),
+            tf('The Silk Road was a network of routes.', true),
+            ch('Buddhism spread from India to…', '*China, Korea and Japan|nowhere|only Europe'),
+          ],
+          ms: ['Describes classical empires', 'Explains trade networks', 'Uses travellers\' accounts as sources'],
+        }),
+      ]),
+    ]),
+    S('s12', 'Human origins and the archaeology of complex societies.', [
+      'Explain the evidence for human origins and migration', 'Analyse how complex societies emerged', 'Evaluate archaeological methods and debates',
+    ], [
+      U('human-origins', 'Human Origins', 'Out of Africa and into the world.', 'Hominins; Homo sapiens; Migration out of Africa; Reaching South Asia; Genetic evidence', [
+        L('out-of-africa', 'Out of Africa', {
+          o: ['Summarise evidence for the origin and spread of Homo sapiens', 'Evaluate different types of evidence'],
+          p: ['Understands evolution and archaeology'],
+          e: [
+            'Fossils show that Homo sapiens (modern humans) evolved in Africa; some of the oldest known fossils, from Jebel Irhoud in Morocco, are about 300,000 years old.',
+            'Genetic and archaeological evidence suggests that groups of modern humans dispersed out of Africa, with a major expansion roughly 50,000–70,000 years ago, eventually reaching South Asia, Australia, Europe and the Americas. Earlier hominins such as Homo erectus had also left Africa much earlier.',
+            'Modern humans met and sometimes interbred with other human groups like Neanderthals and Denisovans; traces of their DNA exist in many people today. Exact routes and dates are still actively researched.',
+          ],
+          c: [['science', 'The broad "recent African origin" model is supported by fossil, archaeological and genetic evidence; details of timing and routes are debated.'], ['belief', 'Many religious traditions have their own accounts of human creation; scientific evidence addresses how humans evolved, while questions of meaning are explored in faith and philosophy.']],
+          v: 'hominin = humans and their close extinct relatives; Homo sapiens = modern humans; fossil = preserved remains of ancient life; ancient DNA = genetic material recovered from old remains',
+          x: ['Stone tools in India dated to hundreds of thousands of years ago, made by earlier hominins.', 'Neanderthal DNA traces in many living people outside Africa.'],
+          s: ['The Family Tree in Our Genes', 'Scientists compared DNA from people around the world and found that African populations hold the most genetic diversity — a sign that humans lived there longest. Every person alive today, they concluded, shares ancestors who once lived in Africa.'],
+          a: [
+            ch('Homo sapiens evolved in…', '*Africa|Antarctica|Australia'),
+            ch('Some of the oldest known Homo sapiens fossils are about…', '3,000 years old|*300,000 years old|3 billion years old'),
+            tf('Modern humans interbred with Neanderthals.', true),
+            mt('Match the evidence type', 'fossils=preserved bones|stone tools=archaeological evidence|DNA=genetic evidence'),
+          ],
+          t: ['Why does it matter that all humans share African ancestors?', 'Why do scientists keep revising dates and routes?'],
+          k: ['Explain the out-of-Africa model, including what remains uncertain.'],
+          m: ['Human Migration Map', 'a world map, recent reliable sources (museum websites, textbooks)', 'Mark key fossil and archaeological sites with dates | Draw likely migration routes with dotted lines where uncertain | Note genetic evidence | Write a summary of what is known and debated'],
+          q: [
+            ch('Our close extinct relatives include…', '*Neanderthals|dinosaurs|mammoths only'),
+            tf('Details of human migration routes are still debated.', true),
+            ch('Ancient DNA is recovered from…', '*old remains|new plastic|clouds'),
+          ],
+          ms: ['Summarises human origins evidence', 'Evaluates evidence types', 'Distinguishes scientific and religious accounts respectfully'],
+        }),
+      ]),
+      U('complex-societies', 'How Complex Societies Formed', 'From villages to states.', 'Surplus and specialisation; Social hierarchy; Religion, writing and states; Theories and evidence', [
+        L('rise-of-states', 'Why Did States Form?', {
+          o: ['Explain factors in the rise of complex societies', 'Evaluate competing theories with archaeological evidence'],
+          p: ['Knows early civilisations'],
+          e: [
+            'Farming produced surplus food, allowing some people to specialise as potters, priests, soldiers and rulers. Populations grew, villages became towns, and some towns became cities.',
+            'With cities came social hierarchy, monumental buildings, record-keeping and often centralised authority — states. Scholars propose different drivers: irrigation management, trade, warfare, religion, or combinations.',
+            'The Indus Valley is intriguing: its cities show planning and standardisation but little clear evidence of palaces or kings, leading to debate about how it was organised. Archaeology helps test theories against evidence.',
+          ],
+          c: [['interpretation', 'Theories of state formation (hydraulic, trade, conflict, ideological) each fit some cases better than others; scholars debate their relative importance.'], ['evidence', 'Indus sites show standardised weights and bricks across a large area, but excavations have not revealed obvious royal palaces or tombs.']],
+          v: 'surplus = more than is needed for immediate use; specialisation = people doing specific jobs; hierarchy = a ranking of people by status or power; state = a political organisation governing a territory',
+          x: ['Granaries suggesting stored surplus.', 'Monumental temples or ziggurats in Mesopotamia.'],
+          s: ['The City Without a King?', 'At Mohenjo-daro, archaeologists searched for a palace or royal tomb, as found in Egypt or Mesopotamia. Instead, they found public structures, standard bricks, drains and seals — but no grand palace. "Maybe power was shared, or organised differently," one suggested. "Or maybe we haven\'t found it yet."'],
+          a: [
+            od('A common path to complexity', 'farming|food surplus|specialised jobs|towns and cities|states'),
+            ch('Surplus food allowed people to…', '*specialise in other jobs|stop eating|leave all farms'),
+            tf('Scholars debate how the Indus cities were governed.', true),
+            mt('Match', 'surplus=more than needed|hierarchy=ranking by status|state=political organisation over territory'),
+          ],
+          t: ['Is complexity always "progress"? What was lost?', 'What evidence would show who ruled an ancient city?'],
+          k: ['Debate which theory of state formation best fits one civilisation.'],
+          m: ['Comparative Archaeology Report', 'reliable secondary sources on two civilisations', 'Choose two early civilisations | Compare evidence for surplus, hierarchy, writing and authority | Evaluate two theories of state formation | Write a 1500-word report'],
+          q: [
+            ch('People doing specific jobs is…', '*specialisation|surplus|migration'),
+            tf('Theories of state formation are debated.', true),
+            ch('Standardised Indus weights suggest…', '*coordinated systems across a wide area|no trade|no cities'),
+          ],
+          ms: ['Explains factors in social complexity', 'Evaluates theories with evidence', 'Recognises open questions'],
+        }),
+      ]),
+    ]),
+  ],
+});

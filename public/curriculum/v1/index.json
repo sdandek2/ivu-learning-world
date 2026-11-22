@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T11:48:20.842Z",
+ "generatedAt": "2026-11-22T11:59:52.256Z",
  "stages": [
   {
    "id": "s4",
@@ -493,45 +493,45 @@
      "title": "Thinking Like a Historian",
      "icon": "🔎",
      "tagline": "Clues from the past",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/historical-thinking.json"
     },
     {
      "id": "early-humans",
      "title": "Early Humans & Ancient Worlds",
      "icon": "🏺",
      "tagline": "Caves, rivers and first cities",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/early-humans.json"
     },
     {
      "id": "indian-history",
      "title": "History of India",
      "icon": "📜",
      "tagline": "From Harappa to the Republic",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/indian-history.json"
     },
     {
      "id": "world-history",
      "title": "World History",
      "icon": "🌍",
      "tagline": "Peoples and turning points",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/world-history.json"
     },
     {
      "id": "inventions",
      "title": "Inventions & Discoveries",
      "icon": "💡",
      "tagline": "Ideas that changed lives",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/inventions.json"
     }
    ]
   },

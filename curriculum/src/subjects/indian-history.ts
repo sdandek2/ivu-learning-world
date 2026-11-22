@@ -1,0 +1,392 @@
+import { subject, S, U, L, ch, tf, od, mt } from '../dsl.ts';
+
+export default subject({
+  id: 'indian-history',
+  description: 'India\'s history from the Harappan cities to the Republic: early kingdoms, the Mauryas and Guptas, southern dynasties, the Sultanates, Vijayanagara, the Mughals and Marathas, colonial rule, the freedom struggle, Partition and nation-building. Evidence-based, balanced across regions and communities, with interpretations and traditions clearly labelled.',
+  stages: [
+    S('s4', 'Independence Day, Republic Day and stories of brave people.', [
+      'Know why we celebrate Independence Day and Republic Day', 'Name a few people who helped India become free', 'Know India is our country',
+    ], [
+      U('our-country', 'Our Country, India', 'India became free in 1947.', 'Independence Day: 15 August; Republic Day: 26 January; Flag hoisting', [
+        L('free-india', 'Why We Celebrate 15 August', {
+          o: ['Explain that India became independent on 15 August 1947', 'Describe how we celebrate Independence Day'],
+          p: ['Knows the national flag'],
+          e: [
+            'A long time ago — before your grandparents were born — India was ruled by the British. Many Indians wanted India to be free to rule itself.',
+            'After many years of struggle, India became independent on 15 August 1947. We celebrate this day every year as Independence Day, by hoisting the flag, singing the national anthem and remembering those who worked for freedom.',
+            'On 26 January we celebrate Republic Day, when India\'s Constitution started in 1950. There is a big parade in New Delhi.',
+          ],
+          c: [['evidence', 'India gained independence from British rule on 15 August 1947; the Constitution came into force on 26 January 1950.']],
+          v: 'independence = freedom to rule yourself; freedom fighter = a person who worked for India\'s freedom; parade = a march to celebrate; flag hoisting = raising the flag',
+          x: ['Schools hoist the tricolour on 15 August.', 'The Republic Day parade on Kartavya Path in New Delhi.'],
+          s: ['Grandma\'s Story of Freedom', 'Ivaan\'s great-grandmother was a small girl in 1947. "On the night of freedom," she told the family, "everyone in our street stayed awake. At midnight we heard the news on the radio and people cried with joy. The next morning, flags were everywhere." Ivaan waved his little paper flag proudly.'],
+          a: [
+            ch('India became independent in…', '*1947|1857|2000'),
+            ch('Independence Day is on…', '*15 August|26 January|2 October'),
+            tf('On Republic Day there is a big parade in New Delhi.', true),
+            mt('Match the day to what it celebrates', '15 August=freedom from British rule|26 January=the Constitution began|2 October=Gandhi\'s birthday'),
+          ],
+          t: ['Why do you think freedom was so important to people?', 'How does your family celebrate Independence Day?'],
+          k: ['Tell a grown-up why we celebrate 15 August.'],
+          m: ['Paper Tricolour and Freedom Card', 'paper, crayons in saffron, green and blue, a straw', 'Make a small flag with the right colours and the chakra | Make a card saying thank you to freedom fighters | Ask an elder about their Independence Day memories | Display your flag on 15 August'],
+          q: [
+            ch('Before 1947, India was ruled by the…', '*British|Japanese|Chinese'),
+            tf('Republic Day is on 26 January.', true),
+            ch('A person who worked for India\'s freedom is a…', '*freedom fighter|astronaut|chef'),
+          ],
+          ms: ['Knows key national dates', 'Explains independence simply', 'Participates respectfully in celebrations'],
+        }),
+      ]),
+      U('heroes', 'People Who Helped', 'Some of the people who worked for freedom.', 'Mahatma Gandhi; Jawaharlal Nehru; Dr B. R. Ambedkar; Sarojini Naidu; Subhas Chandra Bose; Many ordinary people', [
+        L('gandhi-bapu', 'Bapu and Friends', {
+          o: ['Name some people who worked for India\'s freedom', 'Know that Gandhi used peaceful ways'],
+          p: ['Knows India became free in 1947'],
+          e: [
+            'Mahatma Gandhi, called Bapu, led millions of people in peaceful protests against British rule. He believed in truth and non-violence (ahimsa). His birthday, 2 October, is a national holiday.',
+            'Many others worked for freedom: Jawaharlal Nehru became India\'s first Prime Minister; Sarojini Naidu was a poet and leader; Subhas Chandra Bose led the Indian National Army; Dr B. R. Ambedkar led the writing of the Constitution.',
+            'Millions of ordinary people — farmers, workers, students, women — also joined. Freedom was won by many hands.',
+          ],
+          c: [['evidence', 'Gandhi led major movements such as the Salt March (1930); Nehru served as Prime Minister from 1947 to 1964.']],
+          v: 'Bapu = a loving name for Gandhi, meaning father; non-violence = not hurting others; leader = a person who guides others; Prime Minister = the head of the government',
+          x: ['Gandhi spinning thread on a charkha.', 'Children carrying flags in a peaceful march.'],
+          s: ['The Spinning Wheel', 'Gandhi asked people to spin their own thread on a charkha and wear homemade khadi cloth instead of buying British cloth. All over India, people sat at spinning wheels. "Even a child can help free the country," Gandhi said, "by spinning a little thread each day."'],
+          a: [
+            ch('Gandhi believed in…', '*non-violence|fighting|shouting'),
+            ch('India\'s first Prime Minister was…', '*Jawaharlal Nehru|Akbar|Ashoka'),
+            tf('Many ordinary people helped India become free.', true),
+            mt('Match the person', 'Gandhi=Bapu, non-violence|Nehru=first Prime Minister|Ambedkar=led writing the Constitution'),
+          ],
+          t: ['Why do you think peaceful protest can be powerful?', 'Who else would you like to learn about?'],
+          k: ['Tell a grown-up about one person who worked for India\'s freedom.'],
+          m: ['Freedom Heroes Gallery', 'paper, crayons, pictures (optional)', 'Draw four freedom fighters | Write or say one fact about each | Add a picture of "ordinary people" too | Display your gallery on Independence Day'],
+          q: [
+            ch('Gandhi\'s birthday, a national holiday, is on…', '*2 October|15 August|25 December'),
+            tf('Sarojini Naidu was a poet and leader.', true),
+            ch('Khadi cloth was spun on a…', '*charkha|computer|car'),
+          ],
+          ms: ['Names several freedom fighters', 'Describes non-violence simply', 'Recognises collective effort'],
+        }),
+      ]),
+    ]),
+    S('s5', 'Great kings and queens: Ashoka, Shivaji, Rani Lakshmibai and others.', [
+      'Retell stories of famous Indian rulers', 'Distinguish history from legend in simple ways', 'Know that history has many regions',
+    ], [
+      U('ashoka', 'Ashoka the Great', 'An emperor who chose peace.', 'Mauryan Empire; The Kalinga war; Dhamma; Pillars and the Lion Capital', [
+        L('kalinga', 'After the Battle of Kalinga', {
+          o: ['Retell the story of Ashoka after Kalinga', 'Know how we know about Ashoka (his edicts)'],
+          p: ['Knows the national emblem'],
+          e: [
+            'Ashoka was an emperor of the Mauryan Empire over 2,200 years ago. His empire covered most of the Indian subcontinent.',
+            'After conquering Kalinga (in present-day Odisha), Ashoka saw how many people had died or suffered. He felt deep regret and decided to rule by dhamma — kindness, honesty, respect for all people and care for animals.',
+            'We know this because Ashoka had his messages carved on rocks and pillars — the edicts. The Lion Capital from one of his pillars, at Sarnath, is India\'s national emblem today.',
+          ],
+          c: [['evidence', 'Ashoka\'s Rock Edict XIII describes his remorse after the Kalinga war; his edicts are primary sources from the 3rd century BCE.'], ['interpretation', 'Historians discuss how fully Ashoka\'s ideals were put into practice across his empire.']],
+          v: 'emperor = a ruler of an empire; edict = an official message from a ruler; dhamma = Ashoka\'s idea of good conduct; regret = feeling sorry about something you did',
+          x: ['Ashoka\'s Lion Capital on Indian currency notes.', 'Edicts asking people to be kind to animals.'],
+          s: ['The Emperor Who Changed', 'After the great battle of Kalinga, Ashoka walked across the battlefield. He saw families crying and fields ruined. "What have I done?" he thought. From then on, he sent messages carved on rocks across his empire: be kind, respect all beliefs, care for animals, plant trees by the roads.'],
+          a: [
+            ch('After Kalinga, Ashoka chose…', '*peace and kindness|more wars|to hide'),
+            ch('We know Ashoka\'s words from his…', '*edicts on rocks and pillars|videos|newspapers'),
+            tf('India\'s national emblem comes from Ashoka\'s pillar at Sarnath.', true),
+            ch('Kalinga is in present-day…', '*Odisha|Punjab|Kashmir'),
+          ],
+          t: ['Is it possible for a person to change after a big mistake?', 'Why did Ashoka carve messages on rocks?'],
+          k: ['Retell Ashoka\'s story to a grown-up and say why he is called "the Great".'],
+          m: ['My Edict Stone', 'a smooth stone or card, paint or markers', 'Think of three kind rules for your home or school | Write them on a stone or card like an edict | Decorate it | Explain your edict to your family'],
+          q: [
+            ch('Ashoka ruled the…', '*Mauryan Empire|Mughal Empire|British Empire'),
+            tf('Ashoka asked people to care for animals.', true),
+            ch('An official message carved by a ruler is an…', '*edict|email|essay'),
+          ],
+          ms: ['Retells Ashoka\'s story accurately', 'Knows edicts as evidence', 'Discusses change and regret'],
+        }),
+      ]),
+      U('brave-rulers', 'Brave Rulers of India', 'Rulers from different regions and times.', 'Chhatrapati Shivaji Maharaj; Rani Lakshmibai of Jhansi; Raja Raja Chola; Akbar', [
+        L('shivaji', 'Shivaji and the Forts of Maharashtra', {
+          o: ['Describe Shivaji Maharaj\'s achievements', 'Recognise that India\'s history includes many regions and rulers'],
+          p: ['Knows stories of Ashoka'],
+          e: [
+            'Chhatrapati Shivaji Maharaj (1630–1680) founded the Maratha kingdom in the 17th century. He built and captured hill forts like Raigad and Pratapgad, created a strong navy along the Konkan coast, and was crowned in 1674.',
+            'He is remembered in Maharashtra and beyond for courage, clever strategy and administration.',
+            'India has many great rulers from different regions: Raja Raja Chola built the Brihadeeswarar Temple in Thanjavur; Akbar ruled the Mughal Empire; Rani Lakshmibai of Jhansi fought the British in 1857.',
+          ],
+          c: [['evidence', 'Shivaji\'s coronation took place at Raigad in 1674; contemporary documents, letters and later chronicles record his reign.'], ['tradition', 'Many popular stories about Shivaji are told in ballads (powadas); some details are traditional and historians compare them with documentary evidence.']],
+          v: 'Chhatrapati = a royal title meaning "lord of the umbrella", a sovereign ruler; fort = a strong building for defence; navy = a country\'s warships and sailors; coronation = the ceremony of crowning a ruler',
+          x: ['Raigad Fort, Shivaji\'s capital.', 'Sindhudurg sea fort on the Konkan coast.'],
+          s: ['The Fort on the Hill', 'Ivaan climbed the steep steps of a hill fort with his father. At the top, the wind whistled through stone walls. "Shivaji Maharaj used forts like this to protect his people," Papa said. "From up here, guards could see enemies coming from far away." Ivaan looked out at the Sahyadri hills and imagined the guards watching.'],
+          a: [
+            mt('Match the ruler to the region or achievement', 'Shivaji Maharaj=Maratha kingdom|Raja Raja Chola=Brihadeeswarar Temple|Rani Lakshmibai=Jhansi, 1857'),
+            ch('Shivaji was crowned in…', '*1674|1947|1857'),
+            tf('Shivaji built a navy on the Konkan coast.', true),
+            ch('Hill forts were useful because…', '*guards could see far and defend easily|they were near shops|they were easy to attack'),
+          ],
+          t: ['Why might people from different regions have different favourite heroes?', 'Why is it important to check traditional stories against evidence?'],
+          k: ['Tell someone about a ruler from your own state or region.'],
+          m: ['Fort Model', 'cardboard, clay or sand, stones', 'Research a hill fort (Raigad, Sinhagad, or one near you) | Build a model with walls and gates | Explain how its design helped defence | Visit a local fort with family if possible'],
+          q: [
+            ch('Raigad was Shivaji\'s…', '*capital fort|ship|temple'),
+            tf('India\'s history includes rulers from many regions.', true),
+            ch('A ceremony of crowning a ruler is a…', '*coronation|parade|marriage'),
+          ],
+          ms: ['Describes Shivaji\'s achievements accurately', 'Recognises regional diversity', 'Distinguishes ballad traditions from documentary evidence'],
+        }),
+      ]),
+    ]),
+    S('s6', 'Early India: Vedic times, kingdoms, Mauryas and Guptas.', [
+      'Describe life in early historic India', 'Explain the Mauryan and Gupta empires', 'Know India\'s contributions in mathematics and science',
+    ], [
+      U('vedic-kingdoms', 'Early Societies and Kingdoms', 'From the Vedic period to the mahajanapadas.', 'The Vedas as texts; Mahajanapadas; Buddha and Mahavira; Early cities on the Ganga plain', [
+        L('mahajanapadas', 'Kingdoms of the Ganga Plain', {
+          o: ['Describe the Vedic period and the rise of kingdoms', 'Explain how we know about this period'],
+          p: ['Knows the Indus Valley Civilisation'],
+          e: [
+            'After the Harappan cities declined, new societies developed in north India. The Vedas — collections of hymns in early Sanskrit — were composed and passed on orally for centuries; scholars date the earliest, the Rigveda, to roughly 1500–1200 BCE.',
+            'By around 600 BCE, sixteen large states called mahajanapadas arose, such as Magadha, Kosala and Avanti, with towns, coins and armies.',
+            'This was also the time of the Buddha and Mahavira, whose teachings founded Buddhism and shaped Jainism. Magadha grew into the most powerful kingdom, the base of later empires.',
+          ],
+          c: [['evidence', 'Dating of the Vedas relies on linguistic and textual analysis; archaeological evidence from sites on the Ganga plain shows the growth of towns and punch-marked coins around the 6th century BCE.'], ['belief', 'For many Hindus, the Vedas are sacred and regarded as eternal revelation (shruti); historians study them as ancient texts.'], ['interpretation', 'Scholars continue to debate many aspects of the Vedic period, including dates and the movement of peoples.']],
+          v: 'Veda = an ancient collection of Sanskrit hymns and texts; mahajanapada = a large state in early India; oral tradition = passing knowledge by speaking and memorising; punch-marked coin = an early Indian coin stamped with symbols',
+          x: ['Magadha, centred in present-day Bihar.', 'Rajgir and Pataliputra as early capitals.'],
+          s: ['The Memorising Students', 'For centuries, the Vedas were not written down. Students memorised every word, chanting with exact sounds and rhythms, checking each other in clever patterns. Scholars marvel that texts were passed on so accurately by memory alone — and UNESCO recognises Vedic chanting as intangible heritage.'],
+          a: [
+            ch('The Vedas were first passed on…', '*orally, by memorising|by email|on paper only'),
+            ch('Mahajanapadas were…', '*large states in early India|types of food|rivers'),
+            tf('The Buddha and Mahavira lived around this period.', true),
+            ch('Which mahajanapada became most powerful?', '*Magadha|Atlantis|Kosala only'),
+          ],
+          t: ['Why might people have preferred memorising to writing?', 'How do historians date texts that were not written down?'],
+          k: ['Explain to someone how we know about a period that left few written records.'],
+          m: ['Mahajanapada Map', 'an outline map of north India, research sources', 'Mark major mahajanapadas and rivers | Add capitals like Rajgir and Pataliputra | Note one fact about each | Present your map'],
+          q: [
+            ch('The Rigveda is one of the…', '*oldest Indian texts|newest novels|maps'),
+            tf('Scholars debate some details of the Vedic period.', true),
+            ch('Early Indian coins stamped with symbols are…', '*punch-marked coins|paper notes|credit cards'),
+          ],
+          ms: ['Describes early historic India', 'Explains sources and dating', 'Labels beliefs and evidence respectfully'],
+        }),
+      ]),
+      U('empires', 'Mauryas and Guptas', 'Two great empires.', 'Chandragupta Maurya and Kautilya; Ashoka; Gupta period: science, art, literature; Aryabhata, Kalidasa', [
+        L('golden-age', 'Science and Art in the Gupta Period', {
+          o: ['Describe the Mauryan and Gupta empires', 'Explain achievements in science, mathematics and art'],
+          p: ['Knows Ashoka'],
+          e: [
+            'Chandragupta Maurya founded the Mauryan Empire around 322 BCE; tradition links his adviser Kautilya (Chanakya) to the Arthashastra, a text on statecraft. Ashoka was his grandson.',
+            'The Gupta Empire (about 320–550 CE) saw remarkable achievements. Aryabhata (born 476 CE) wrote on astronomy and mathematics, proposing that the Earth rotates. Indian mathematicians developed the decimal place-value system with zero, later spread worldwide.',
+            'Kalidasa wrote famous Sanskrit plays and poems. Art flourished in temples and in the Ajanta caves, though Ajanta also includes earlier works. Some historians call this a "golden age", while others note it was golden mainly for elites.',
+          ],
+          c: [['evidence', 'Aryabhata\'s Aryabhatiya (499 CE) survives; the earliest clear use of zero as a number in a written rule appears in Brahmagupta\'s work (628 CE).'], ['interpretation', 'The label "golden age" is debated; historians point out that social inequalities persisted.']],
+          v: 'empire = a large state ruling many regions; Arthashastra = an ancient Indian text on politics and economics; place value = the value of a digit depending on its position; golden age = a period remembered as highly successful',
+          x: ['India\'s first satellite was named Aryabhata.', 'Kalidasa\'s Meghaduta: a cloud carries a message.'],
+          s: ['The Astronomer of Kusumapura', 'Over 1,500 years ago, a young scholar named Aryabhata studied the sky near Pataliputra. He calculated the length of a year with remarkable accuracy and suggested the Earth spins, making the stars seem to move. In 1975, India named its first satellite after him.'],
+          a: [
+            mt('Match the person to the achievement', 'Chandragupta Maurya=founded the Mauryan Empire|Aryabhata=astronomy and mathematics|Kalidasa=Sanskrit plays and poems'),
+            ch('Which number system developed in India spread worldwide?', '*the decimal place-value system with zero|Roman numerals|tally marks only'),
+            tf('Historians debate calling the Gupta period a "golden age".', true),
+            ch('India\'s first satellite was named after…', '*Aryabhata|Ashoka|Akbar'),
+          ],
+          t: ['Why is the idea of zero so important?', 'For whom might a "golden age" not have been golden?'],
+          k: ['Explain to someone why the place-value system with zero matters.'],
+          m: ['Then-and-Now Maths Poster', 'poster paper, research', 'Show how numbers were written in Brahmi numerals | Show the journey of numerals to the modern world | Explain zero\'s role with examples | Present it'],
+          q: [
+            ch('The Arthashastra is a text on…', '*statecraft and economics|cooking|music'),
+            tf('Aryabhata proposed that the Earth rotates.', true),
+            ch('The Gupta Empire flourished around…', '*320–550 CE|1600 CE|1947 CE'),
+          ],
+          ms: ['Describes Mauryan and Gupta empires', 'Explains scientific contributions accurately', 'Evaluates "golden age" labels'],
+        }),
+      ]),
+    ]),
+    S('s7', 'Medieval India: south Indian kingdoms, Sultanates, Vijayanagara, Mughals and Marathas.', [
+      'Describe major medieval kingdoms across regions', 'Explain cultural exchange and Bhakti–Sufi traditions', 'Analyse change in medieval India',
+    ], [
+      U('southern-kingdoms', 'Kingdoms of the South and the Sultanates', 'Cholas, Delhi Sultanate and Vijayanagara.', 'Chola navy and temples; Delhi Sultanate; Vijayanagara and Hampi', [
+        L('chola-vijayanagara', 'Cholas, Sultans and Hampi', {
+          o: ['Describe the Chola, Delhi Sultanate and Vijayanagara states', 'Explain their achievements using evidence'],
+          p: ['Knows early empires'],
+          e: [
+            'The Cholas of Tamil Nadu (strongest about 850–1250 CE) built magnificent temples like the Brihadeeswarar Temple at Thanjavur and had a powerful navy that sailed to Sri Lanka and Southeast Asia.',
+            'In north India, the Delhi Sultanate (from 1206) was ruled by several dynasties, including the Khaljis and Tughlaqs. It introduced new styles of architecture, like the Qutb Minar, and Persian became an important court language.',
+            'The Vijayanagara Empire (1336–1565) in the south had a grand capital at Hampi, admired by foreign travellers for its markets and temples. It declined after the battle of Talikota (1565).',
+          ],
+          c: [['evidence', 'Chola inscriptions, temple records and foreign travellers\' accounts (such as those of Domingo Paes and Abdur Razzaq for Vijayanagara) are key sources.'], ['interpretation', 'Historians debate the nature of religious and political relations in this period; sources reflect the perspectives of their authors.']],
+          v: 'dynasty = a line of rulers from the same family; sultanate = a state ruled by a sultan; navy = warships and sailors; inscription = writing carved on stone or metal',
+          x: ['Qutb Minar in Delhi.', 'The stone chariot at Hampi.'],
+          s: ['The Traveller\'s Description', 'In the 1520s, the Portuguese traveller Domingo Paes visited Vijayanagara. He wrote that the city was as large as Rome, with markets full of rubies, pearls and rice. Today, at the ruins of Hampi, visitors compare his words with the giant boulders and broken temples and imagine the busy city he saw.'],
+          a: [
+            mt('Match the state to its feature', 'Cholas=Brihadeeswarar Temple and navy|Delhi Sultanate=Qutb Minar|Vijayanagara=capital at Hampi'),
+            ch('The Delhi Sultanate began in…', '*1206|1947|500 BCE'),
+            tf('Foreign travellers\' accounts are sources for Vijayanagara.', true),
+            ch('A line of rulers from one family is a…', '*dynasty|desert|delta'),
+          ],
+          t: ['Why might a foreign traveller\'s account be both useful and biased?', 'Why did the Cholas need a navy?'],
+          k: ['Present one medieval kingdom using two kinds of evidence.'],
+          m: ['Medieval India Map and Timeline', 'outline map of India, timeline paper, research', 'Mark Chola, Sultanate and Vijayanagara territories | Add capitals and dates | Make a timeline | Note one building from each'],
+          q: [
+            ch('Hampi was the capital of…', '*Vijayanagara|the Cholas|the Mauryas'),
+            tf('The Cholas sailed to Southeast Asia.', true),
+            ch('Persian became important in the…', '*Delhi Sultanate court|Indus cities|Vedic villages'),
+          ],
+          ms: ['Describes medieval states accurately', 'Uses varied sources', 'Considers perspective in sources'],
+        }),
+      ]),
+      U('mughals-marathas', 'Mughals, Marathas and Bhakti–Sufi Traditions', 'Empires and the exchange of ideas.', 'Babur to Aurangzeb; Akbar\'s administration; Maratha expansion; Bhakti saints and Sufi saints', [
+        L('akbar-bhakti', 'Empires and Saints', {
+          o: ['Describe the Mughal and Maratha states', 'Explain the significance of Bhakti and Sufi movements'],
+          p: ['Knows medieval kingdoms'],
+          e: [
+            'The Mughal Empire was founded by Babur in 1526 after the first battle of Panipat. Akbar (r. 1556–1605) built a strong administration, encouraged debates between scholars of different faiths, and is known for a policy often described as sulh-i-kul ("peace with all"). Shah Jahan built the Taj Mahal; Aurangzeb expanded the empire to its largest extent, but his reign also saw conflict and revolts.',
+            'The Maratha state, founded by Shivaji, expanded in the 18th century under the Peshwas, becoming the most powerful force in much of India before the British rise.',
+            'Bhakti saints (like Kabir, Mirabai, Tukaram, Namdev and Guru Nanak, who founded Sikhism) and Sufi saints (like Nizamuddin Auliya) taught devotion and equality, often in local languages, attracting followers across communities.',
+          ],
+          c: [['evidence', 'The Ain-i-Akbari by Abul Fazl documents Akbar\'s administration; Mughal and Maratha records, travellers\' accounts and devotional poetry are key sources.'], ['interpretation', 'Assessments of rulers like Akbar and Aurangzeb differ among historians and are debated in public life; students should examine evidence and multiple views.'], ['belief', 'Sikhs revere Guru Nanak as the founder of their faith and the first of ten Gurus.']],
+          v: 'Mughal = the dynasty that ruled much of India from 1526; Peshwa = chief minister of the Maratha state; Bhakti = devotional movement emphasising personal devotion; Sufi = mystical tradition within Islam',
+          x: ['Tukaram\'s abhangas sung in Maharashtra today.', 'The Taj Mahal, built by Shah Jahan.'],
+          s: ['The Debate Hall', 'At Fatehpur Sikri, Akbar built a hall where scholars of different faiths — Hindu, Muslim, Jain, Zoroastrian and Christian — debated ideas. Historians still discuss what Akbar hoped to achieve. Centuries later, people still visit the red sandstone city and wonder at an emperor who liked to listen to many voices.'],
+          a: [
+            mt('Match', 'Babur=founded the Mughal Empire in 1526|Shah Jahan=built the Taj Mahal|Tukaram=Marathi Bhakti saint|Guru Nanak=founder of Sikhism'),
+            ch('Bhakti and Sufi saints often taught in…', '*local languages|only Latin|no language'),
+            tf('Historians hold different views about Mughal rulers.', true),
+            ch('The Ain-i-Akbari was written by…', '*Abul Fazl|Kalidasa|Ashoka'),
+          ],
+          t: ['Why might the same ruler be remembered very differently by different groups?', 'Why did Bhakti and Sufi ideas spread widely?'],
+          k: ['Present the life and message of one Bhakti or Sufi saint.'],
+          m: ['Saint-Poet Anthology', 'translated verses of Kabir, Mirabai, Tukaram, Guru Nanak or others, notebook', 'Collect five short verses with sources | Explain the message of each | Note the language and region | Present your anthology'],
+          q: [
+            ch('The first battle of Panipat was in…', '*1526|1857|1947'),
+            tf('The Marathas became a major power in the 18th century.', true),
+            ch('Sulh-i-kul is often translated as…', '*peace with all|war with all|tax on all'),
+          ],
+          ms: ['Describes Mughal and Maratha states', 'Explains Bhakti and Sufi movements', 'Weighs differing assessments with evidence'],
+        }),
+      ]),
+    ]),
+    S('s9', 'Colonial rule and the freedom struggle.', [
+      'Explain how the British came to rule India', 'Analyse the effects of colonial rule', 'Describe phases of the freedom struggle',
+    ], [
+      U('colonial', 'From Traders to Rulers', 'The East India Company and the British Raj.', 'Arrival of Europeans; Battle of Plassey (1757); Company rule; 1857; Crown rule; Economic effects', [
+        L('company-raj', 'How the British Took Control', {
+          o: ['Explain how the East India Company gained power', 'Evaluate economic and social effects of colonial rule'],
+          p: ['Knows the Mughals and Marathas'],
+          e: [
+            'European traders — Portuguese, Dutch, French and British — came for spices and textiles. The British East India Company, founded in 1600, built trading posts, then forts and armies.',
+            'After the Battle of Plassey (1757) and Buxar (1764), the Company controlled Bengal\'s revenues and expanded across India through wars and alliances. After the revolt of 1857, the British Crown took direct control in 1858.',
+            'Colonial rule brought railways, telegraphs and English education, but these served British interests. Indian handloom industries declined, wealth flowed to Britain ("drain of wealth", as Dadabhai Naoroji argued), and famines killed millions.',
+          ],
+          c: [['evidence', 'The Battle of Plassey (1757) and the 1858 Act transferring power to the Crown are well documented; major famines such as the Great Bengal Famine of 1770 and the 1943 Bengal famine caused millions of deaths.'], ['interpretation', 'Historians debate the economic impact of colonial rule in detail; Naoroji\'s "drain theory" was influential among nationalists and is still discussed.']],
+          v: 'colonialism = control of one country by another; East India Company = a British trading company that came to rule much of India; drain of wealth = the transfer of resources from India to Britain; revenue = income from taxes',
+          x: ['Railways built mainly to move raw materials to ports.', 'Indian cotton exported, British cloth imported.'],
+          s: ['The Weaver\'s Loom', 'For generations, a weaver family in Bengal made fine muslin famous across the world. In the 1800s, cheap machine-made British cloth flooded Indian markets, and taxes favoured British goods. The family\'s looms fell silent. Their story, repeated in thousands of homes, became part of the nationalist argument against colonial rule.'],
+          a: [
+            od('Order the events', 'East India Company founded (1600)|Battle of Plassey (1757)|Revolt of 1857|Crown rule begins (1858)'),
+            ch('Dadabhai Naoroji argued about the…', '*drain of wealth|invention of cricket|monsoon'),
+            tf('Colonial railways were built mainly to serve British interests.', true),
+            ch('Indian handloom industries…', '*declined under colonial rule|grew without change|never existed'),
+          ],
+          t: ['How could a trading company come to rule a country?', 'Did anyone in India benefit from colonial rule? Who suffered most?'],
+          k: ['Explain the main steps by which the British gained control of India.'],
+          m: ['Colonial Economy Investigation', 'reliable sources, graph paper', 'Research India\'s share of world manufacturing in 1750 and 1900 | Graph the change | Research one famine and its causes | Write an evidence-based analysis'],
+          q: [
+            ch('The Battle of Plassey was in…', '*1757|1857|1947'),
+            tf('The British Crown took direct control in 1858.', true),
+            ch('Control of one country by another is…', '*colonialism|democracy|federalism'),
+          ],
+          ms: ['Explains the rise of British power', 'Analyses colonial impacts with evidence', 'Considers historians\' debates'],
+        }),
+      ]),
+      U('freedom-struggle', 'The Freedom Struggle', 'Many paths to independence.', 'Indian National Congress (1885); Swadeshi; Gandhi\'s mass movements: Non-Cooperation, Salt March, Quit India; Revolutionaries; Ambedkar and social reform; INA', [
+        L('mass-movements', 'Many Roads to Freedom', {
+          o: ['Describe key phases and leaders of the freedom movement', 'Compare different strategies for freedom'],
+          p: ['Understands colonial rule'],
+          e: [
+            'The Indian National Congress was founded in 1885. Early leaders petitioned for reforms; later leaders like Bal Gangadhar Tilak demanded swaraj, and the Swadeshi movement (1905) boycotted British goods after the partition of Bengal.',
+            'Gandhi led mass non-violent movements: Non-Cooperation (1920–22), the Salt March and Civil Disobedience (1930), and Quit India (1942). Revolutionaries like Bhagat Singh chose different methods, and Subhas Chandra Bose led the Indian National Army.',
+            'Leaders like Dr B. R. Ambedkar fought for the rights of Dalits, insisting that freedom must include social equality. Women such as Sarojini Naidu, Aruna Asaf Ali and countless others played major roles. Independence came on 15 August 1947.',
+          ],
+          c: [['evidence', 'The Salt March from Sabarmati to Dandi (12 March–6 April 1930) and the Quit India resolution (8 August 1942) are well documented.'], ['interpretation', 'Historians debate the relative contribution of different movements, leaders and international factors to independence.']],
+          v: 'swaraj = self-rule; swadeshi = using goods made in one\'s own country; civil disobedience = peacefully refusing to obey unjust laws; Quit India = the 1942 movement demanding British withdrawal',
+          x: ['Making salt from seawater at Dandi.', 'Burning foreign cloth in Swadeshi protests.'],
+          s: ['The Pinch of Salt', 'In 1930, Gandhi and 78 companions walked about 385 km to the sea at Dandi. On 6 April he picked up a lump of natural salt, breaking the British salt law. Across India, people made salt and thousands were arrested. A simple act had shown that ordinary people could defy an empire peacefully.'],
+          a: [
+            mt('Match the movement to its year', 'Swadeshi=1905|Non-Cooperation=1920|Salt March=1930|Quit India=1942'),
+            ch('The Salt March ended at…', '*Dandi|Delhi|Kolkata'),
+            tf('Historians debate the relative roles of different movements.', true),
+            ch('Swadeshi means…', '*using goods made in one\'s own country|foreign travel|self-defence'),
+          ],
+          t: ['Which strategy for freedom do you find most persuasive, and why?', 'Why did Ambedkar insist that social equality mattered as much as political freedom?'],
+          k: ['Present one leader of the freedom struggle and their methods.'],
+          m: ['Freedom Struggle Documentary Storyboard', 'paper, research sources including primary sources (speeches, photos)', 'Choose a movement or leader | Plan a 10-scene storyboard with dates and quotes | Include at least two primary sources | Present your storyboard'],
+          q: [
+            ch('The Indian National Congress was founded in…', '*1885|1947|1757'),
+            tf('Women played major roles in the freedom movement.', true),
+            ch('Civil disobedience means…', '*peacefully refusing to obey unjust laws|violent rebellion only|obeying all laws'),
+          ],
+          ms: ['Sequences key movements', 'Compares strategies', 'Includes diverse participants and perspectives'],
+        }),
+      ]),
+    ]),
+    S('s12', 'Partition, nation-building and contemporary India.', [
+      'Analyse the causes and consequences of Partition', 'Describe nation-building after 1947', 'Evaluate major developments in independent India',
+    ], [
+      U('partition', 'Independence and Partition', 'Freedom and tragedy in 1947.', 'Causes of Partition; Violence and migration; Integration of princely states; Memory and oral history', [
+        L('partition-1947', 'The Partition of 1947', {
+          o: ['Analyse causes and consequences of Partition', 'Use oral histories respectfully'],
+          p: ['Knows the freedom struggle'],
+          e: [
+            'Independence in 1947 came with the partition of British India into India and Pakistan (then including East Pakistan, now Bangladesh). Causes included growing communal tensions, political demands such as the Muslim League\'s call for Pakistan, and British policies and the rushed timeline of withdrawal.',
+            'Partition led to one of the largest migrations in history: around 12–15 million people crossed borders, and hundreds of thousands — estimates range up to about a million or more — were killed in violence. Many families lost homes and loved ones.',
+            'After independence, over 560 princely states were integrated into India, a process led by Sardar Vallabhbhai Patel and V. P. Menon. Partition\'s memories live on in families, literature and oral history archives.',
+          ],
+          c: [['evidence', 'Estimates of displacement (about 12–15 million) and deaths (from several hundred thousand to around a million or more) come from historians\' analyses of census and other records; exact figures remain uncertain.'], ['interpretation', 'Historians in India, Pakistan, Bangladesh and Britain debate responsibility for Partition; students should study multiple perspectives with care and empathy.']],
+          v: 'Partition = the 1947 division of British India; communal = relating to religious communities, often in conflict; refugee = a person forced to leave their home; princely state = a state ruled by a prince under British paramountcy',
+          x: ['Refugee camps in Delhi and Lahore in 1947.', 'The 1947 Partition Archive collecting survivor testimonies.'],
+          s: ['Two Grandmothers', 'Two grandmothers met at a community event: one had left Lahore for Delhi in 1947, the other had travelled from Amritsar to Lahore. Both remembered the same smells of their old streets, the same fear on the trains, and neighbours who had saved lives. Their stories, recorded in oral history archives, help historians understand what numbers alone cannot.'],
+          a: [
+            ch('Partition divided British India into…', '*India and Pakistan|India and China|India and Nepal'),
+            ch('Princely states were integrated with leadership from…', '*Sardar Vallabhbhai Patel|Akbar|Ashoka'),
+            tf('Exact numbers of people killed in Partition remain uncertain.', true),
+            mt('Match', 'refugee=forced to leave home|princely state=ruled by a prince|oral history=memories recorded by speaking'),
+          ],
+          t: ['Why is it important to hear Partition stories from different communities?', 'How should a nation remember painful events?'],
+          k: ['Present a Partition oral history (from a family member or an archive) with care and context.'],
+          m: ['Oral History Project on 1947', 'recorder or notebook, informed consent, archive sources', 'Interview an elder (or use published testimonies) about 1947 | Place their story in historical context | Compare with other accounts | Write a respectful 1500-word essay'],
+          q: [
+            ch('About how many people were displaced by Partition?', '1,000|*12–15 million|1 billion'),
+            tf('Historians in different countries debate responsibility for Partition.', true),
+            ch('East Pakistan later became…', '*Bangladesh|Sri Lanka|Myanmar'),
+          ],
+          ms: ['Analyses Partition with multiple perspectives', 'Handles sources about trauma respectfully', 'Explains integration of princely states'],
+        }),
+      ]),
+      U('modern-india', 'Building a Nation', 'India since 1947.', 'Constitution and democracy; Linguistic states; Five-Year Plans; Green Revolution; Emergency (1975–77); Liberalisation (1991); Space and technology', [
+        L('nation-building', 'Seventy-Five Years of a Republic', {
+          o: ['Describe major developments in independent India', 'Evaluate challenges and achievements'],
+          p: ['Understands civics and economics'],
+          e: [
+            'India adopted its Constitution in 1950 and held its first general elections in 1951–52 with universal adult franchise — a bold experiment in a largely poor and newly independent country.',
+            'States were reorganised along linguistic lines from 1956. Five-Year Plans built industry, dams and institutions like the IITs. The Green Revolution raised food production. The Emergency (1975–77), when civil liberties were suspended, tested democracy; it ended with elections in 1977.',
+            'Economic liberalisation in 1991 brought faster growth; India built space capability, IT industries and digital public infrastructure. Challenges remain: poverty, inequality, jobs, environmental pressures and social divisions. How to evaluate these decades is a matter of ongoing debate.',
+          ],
+          c: [['evidence', 'Key dates: Constitution (1950), first general elections (1951–52), States Reorganisation Act (1956), Emergency (June 1975–March 1977), economic reforms (1991).'], ['interpretation', 'Assessments of post-independence governments and policies are contested; this lesson presents key events and encourages evidence-based, balanced evaluation.']],
+          v: 'republic = a state where power rests with the people and elected representatives; linguistic states = states organised by language; Emergency = the 1975–77 period when civil liberties were suspended; nation-building = creating national institutions and unity',
+          x: ['Andhra State formed in 1953 after Potti Sriramulu\'s fast.', 'Chandrayaan-3\'s landing in 2023.'],
+          s: ['The Great Experiment', 'In 1951, observers abroad doubted that a country with low literacy could run fair elections for 170 million voters. India printed symbols on ballots, trained hundreds of thousands of officials and set up polling stations in deserts and mountains. The election succeeded — and India has held regular elections ever since.'],
+          a: [
+            od('Order the events', 'Constitution comes into force (1950)|first general elections (1951–52)|Emergency (1975–77)|economic reforms (1991)'),
+            ch('States were reorganised along…', '*linguistic lines|rivers only|random lines'),
+            tf('The Emergency suspended civil liberties.', true),
+            ch('Universal adult franchise from the first election means…', '*all adults could vote|only the rich could vote|only men could vote'),
+          ],
+          t: ['What is independent India\'s greatest achievement? Its greatest challenge?', 'Why is the Emergency an important lesson for democracy?'],
+          k: ['Present a balanced evaluation of one major policy or event since 1947.'],
+          m: ['Independent India Research Portfolio', 'reliable sources (archives, books, official reports)', 'Choose a theme (democracy, economy, science, social change) | Build a timeline of key events | Evaluate achievements and shortcomings with evidence | Present a 2000-word portfolio with citations'],
+          q: [
+            ch('The Emergency ended with elections in…', '*1977|1947|2001'),
+            tf('Assessments of post-independence policies are debated.', true),
+            ch('Linguistic reorganisation of states began in…', '*1956|1858|2014'),
+          ],
+          ms: ['Describes post-1947 developments accurately', 'Evaluates achievements and challenges', 'Maintains balance and evidence'],
+        }),
+      ]),
+    ]),
+  ],
+});
