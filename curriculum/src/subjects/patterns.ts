@@ -1,4 +1,4 @@
-import { subject, S, U, L, ch, tf, od, mt } from '../dsl.ts';
+import { subject, S, U, L, ch, tf, od, mt, ct } from '../dsl.ts';
 
 export default subject({
   id: 'patterns',
@@ -93,7 +93,7 @@ export default subject({
           q: [
             ch('Next: 2, 4, 6, 8, ?', '9|*10|12'),
             ch('Rule for 50, 40, 30?', '*take away 10|add 10|take away 5'),
-            ch('Next: 1, 3, 5, 7, ?', '8|*9|10'),
+            ct('Next: 1, 3, 5, 7, ?', 9, 'Add 2 each time: 1, 3, 5, 7, 9.'),
           ],
           ms: ['Continues increasing and decreasing number sequences', 'States the rule of a sequence', 'Creates sequences from a given rule'],
         }),
@@ -153,7 +153,7 @@ export default subject({
           k: ['Explain to someone why 15 = 8 + 7 is a correct sentence.'],
           m: ['🧪 Coat Hanger Balance Equations', 'coat hanger balance, cups, identical small objects (coins, cubes)', 'Put 3 coins and 4 coins on one side | Find different ways to balance the other side | Write each as an equation | Hide some coins under a cup and challenge someone to find the missing number'],
           q: [
-            ch('5 + 5 = □ + 7', '*3|5|17'),
+            ct('5 + 5 = □ + 7', 3, 'The left side is 10, so the missing number is 3 because 3 + 7 = 10.'),
             ch('Which is true?', '*12 = 6 + 6|12 = 6 − 6|12 + 1 = 12'),
             ch('20 − □ = 15', '*5|15|35'),
           ],
@@ -215,7 +215,7 @@ export default subject({
           k: ['Explain to someone how to solve 3x = 21, using the idea of a balance.'],
           m: ['Algebra Mystery Bags', 'paper bags or envelopes, counters', 'Hide counters in a bag and put some loose counters next to it | Write an equation for the total | Swap with a partner and solve each other\'s equations | Check by opening the bags'],
           q: [
-            ch('5m = 30. m = ?', '25|*6|150'),
+            ct('5m = 30. m = ?', 6, 'Divide both sides by 5: m = 30 ÷ 5 = 6.'),
             ch('If p = 7, p + 8 = ?', '*15|78|56'),
             ch('k ÷ 3 = 4. k = ?', '1|7|*12'),
           ],
@@ -277,7 +277,7 @@ export default subject({
           k: ['Teach someone to solve 5x − 7 = 18 step by step, explaining each step.'],
           m: ['Think-of-a-Number Tricks', 'paper, pencil', 'Invent a "think of a number" trick (e.g. double, add 10, halve, subtract the original) | Use algebra to explain why it always gives the same answer | Perform it for your family | Write up the algebra proof'],
           q: [
-            ch('5x + 1 = 26. x = ?', '*5|4|27/5'),
+            ct('5x + 1 = 26. x = ?', 5, 'Subtract 1 to get 5x = 25, then divide by 5.'),
             ch('3(x + 2) = 21. x = ?', '7|*5|19/3'),
             ch('x/4 + 3 = 7. x = ?', '1|*16|40'),
           ],
@@ -308,7 +308,7 @@ export default subject({
           q: [
             ch('Line through (0, 3) with gradient 2:', '*y = 2x + 3|y = 3x + 2|y = 2x − 3'),
             ch('For y = −x + 4, as x increases, y…', 'increases|*decreases|stays the same'),
-            ch('y = 3x + 1 when x = 4:', '12|*13|15'),
+            ct('y = 3x + 1 when x = 4:', 13, 'Substitute x = 4: y = 3 × 4 + 1 = 13.'),
           ],
           ms: ['Plots linear graphs accurately', 'Interprets gradient and intercept in context', 'Finds intersections and compares models'],
         }),
@@ -371,7 +371,7 @@ export default subject({
           q: [
             ch('Factorise x² − 16', '(x − 4)²|*(x + 4)(x − 4)|(x − 8)(x + 2)'),
             ch('Roots of x² − 5x + 6 = 0', 'x = −2, −3|*x = 2, 3|x = 1, 6'),
-            ch('The graph of a quadratic is a…', 'straight line|*parabola|circle'),
+            tf('The graph of a quadratic function is a parabola.', true, 'A quadratic function has a U-shaped or inverted U-shaped parabolic graph.'),
           ],
           ms: ['Expands and factorises quadratics', 'Solves quadratic equations by factorising', 'Connects roots to graphs and context'],
         }),
