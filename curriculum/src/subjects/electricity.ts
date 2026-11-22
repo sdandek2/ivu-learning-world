@@ -213,7 +213,7 @@ export default subject({
           ],
           t: ['Why do longer, thinner wires have more resistance?', 'Where does the water analogy break down?'],
           k: ['Solve an Ohm\'s law problem aloud, explaining each step.'],
-          m: ['🧪 Measuring Ohm\'s Law', 'a multimeter, batteries, resistors (with an adult)', 'Build a circuit with one resistor | Measure voltage and current | Repeat with 1, 2 and 3 batteries | Graph V against I and find R from the slope'],
+          m: ['🧪 Measuring Ohm\'s Law', 'a multimeter, batteries, resistors (with an adult)', 'Build a circuit with one resistor | Measure voltage and current | Repeat with 1, 2 and 3 batteries | Graph V against I and find R from the slope', "An adult must set up and supervise a low-voltage battery circuit. Never use wall sockets or mains power; disconnect before changing components and stop if anything becomes warm."],
           q: [
             ch('Opposition to current is…', '*resistance|voltage|power'),
             tf('Current is measured with an ammeter.', true),
