@@ -186,7 +186,7 @@ export default subject({
           ],
           t: ['Why is "we don\'t know yet" an important answer in history?', 'What evidence might help decipher the script?'],
           k: ['Explain two theories about the Harappan decline and the evidence for each.'],
-          m: ['Design Your Own Seal and Script', 'clay or soap, a toothpick, paper', 'Invent 10 symbols for a secret script | Carve a "seal" with an animal and 3 symbols | Ask a family member to try to decipher it without a key | Discuss why decipherment is hard'],
+          m: ['Design Your Own Seal and Script', 'clay or soap, a toothpick, paper', 'Invent 10 symbols for a secret script | Carve a "seal" with an animal and 3 symbols | Ask a family member to try to decipher it without a key | Discuss why decipherment is hard', "Use a blunt toothpick and soft clay or soap; do not use knives or sharp tools. An adult should supervise carving and keep tools away from faces."],
           q: [
             ch('An animal often seen on Indus seals:', '*a one-horned animal|a penguin|a kangaroo'),
             tf('Harappan people vanished completely.', false, 'They moved to smaller settlements; cultural continuities remained.'),
