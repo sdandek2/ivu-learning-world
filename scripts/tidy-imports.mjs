@@ -7,7 +7,9 @@ for (const f of readdirSync(dir).filter((f) => f.endsWith('.ts'))) {
   const src = readFileSync(p, 'utf8');
   const body = src.replace(/^import .*?;\n/m, '');
   const used = helpers.filter((h) => new RegExp(`\\b${h}\\(`).test(body));
-  const fixed = src.replace(/'\], \[\n(\s+)L\(/g, "', [\n$1L(");
+  const fixed = src
+    .replace(/'\], \[\n(\s+)L\(/g, "', [\n$1L(")
+    .replace(/'\.concat\('\|((?:[^'\\]|\\.)*)'\)/g, "|$1'");
   const out = fixed.replace(/^import \{[^}]*\} from '\.\.\/dsl\.ts';/m, `import { ${used.join(', ')} } from '../dsl.ts';`);
   if (out !== src) { writeFileSync(p, out); console.log('tidied', f); }
 }

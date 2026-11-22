@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T09:56:43.517Z",
+ "generatedAt": "2026-11-22T10:07:27.244Z",
  "stages": [
   {
    "id": "s4",
@@ -371,45 +371,45 @@
      "title": "Feelings & Emotions",
      "icon": "💛",
      "tagline": "Name it to tame it",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/feelings.json"
     },
     {
      "id": "friendship",
      "title": "Friendship & Kindness",
      "icon": "🤝",
      "tagline": "Playing and caring together",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/friendship.json"
     },
     {
      "id": "values",
      "title": "Values & Character",
      "icon": "🌟",
      "tagline": "Honest, brave, fair",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/values.json"
     },
     {
      "id": "mindfulness",
      "title": "Calm & Mindfulness",
      "icon": "🧘",
      "tagline": "Breathe and notice",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/mindfulness.json"
     },
     {
      "id": "life-skills",
      "title": "Life Skills & Responsibility",
      "icon": "🧺",
      "tagline": "I can do it myself",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/life-skills.json"
     }
    ]
   },
