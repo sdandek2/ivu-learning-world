@@ -13,11 +13,12 @@ import { shuffle, shuffleNotIdentity, cx } from '../lib/util.ts';
 import { sounds } from '../lib/sound.ts';
 import { useStore } from '../state/store.tsx';
 import { SpeakButton } from './common.tsx';
+import { selectTeachingContext } from './item-feedback.ts';
 
 const EMOJI = /\p{Extended_Pictographic}(️|‍\p{Extended_Pictographic})*/gu;
 const MAX_WRONG = 2;
 
-export function ItemPlayer({ item, onDone, allowHints = true, seed }: { item: Item; onDone: (r: ItemResult) => void; allowHints?: boolean; seed?: number }) {
+export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingContext = [] }: { item: Item; onDone: (r: ItemResult) => void; allowHints?: boolean; seed?: number; teachingContext?: string[] }) {
   const { settings } = useStore();
   const [wrong, setWrong] = useState(0);
   const [usedHint, setUsedHint] = useState(false);
@@ -36,6 +37,7 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed }: { item: It
   const hint = () => { setUsedHint(true); play(sounds.tap); };
 
   const result: ItemResult = { itemId: item.id, correct: !!finished, wrongTries: wrong, usedHint };
+  const lessonFeedback = useMemo(() => selectTeachingContext(item, teachingContext), [item, teachingContext]);
 
   return (
     <div className="item" data-kind={item.kind}>
@@ -61,6 +63,7 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed }: { item: It
           <strong>{finished ? (wrong === 0 && !usedHint ? 'Brilliant! 🌟' : 'You got it! 👍') : "Let's look together 👀"}</strong>
           {!finished && <p>The answer is: <b>{answerText(item)}</b></p>}
           {item.why && <p>{item.why}</p>}
+          {!finished && !item.why && lessonFeedback && <p className="item__teaching"><strong>Remember:</strong> {lessonFeedback}</p>}
           <button className="btn btn--primary" autoFocus onClick={() => onDone(result)}>Next →</button>
         </div>
       )}
