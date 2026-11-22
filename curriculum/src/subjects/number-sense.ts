@@ -272,7 +272,7 @@ export default subject({
           ],
           t: ['Would you rather have ⅓ or ¼ of the same pizza? Why?', 'Can ½ of one thing be bigger than ½ of another? Give an example.'],
           k: ['Fold a paper strip into halves, quarters and eighths, and explain to someone why ⅛ is smaller than ¼.'],
-          m: ['Fraction Wall', 'paper strips of equal length, scissors, glue, coloured pencils', 'Keep one strip whole and label it 1 | Fold and cut strips into halves, thirds, quarters, sixths, eighths | Stack them under the whole strip | Use the wall to find which fractions are equal (like 2/4 and 1/2)'],
+          m: ['Fraction Wall', 'paper strips of equal length, scissors, glue, coloured pencils', 'Keep one strip whole and label it 1 | Fold and cut strips into halves, thirds, quarters, sixths, eighths | Stack them under the whole strip | Use the wall to find which fractions are equal (like 2/4 and 1/2)', "Use child-safe scissors with adult supervision. Adults should handle sharp cutting tools and keep small paper pieces away from younger children."],
           q: [
             ch('Which is bigger?', '⅕|*⅓'),
             ch('A bar is split into 6 equal parts; 5 are shaded. Fraction shaded?', '⅕|*⅚|⁶⁄₅'),
