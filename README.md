@@ -206,6 +206,12 @@ npm test
 ```
 
 ```bash
+npm run audit:curriculum
+```
+
+The curriculum audit reports interaction variety, project safety/privacy gaps, repeated prompts, and age-stage content metrics across all 60 subjects and 730 lessons. It is a deterministic screening tool, not an educator or factuality certification. Use [`docs/CURRICULUM_EDUCATOR_REVIEW_GUIDE.md`](docs/CURRICULUM_EDUCATOR_REVIEW_GUIDE.md) for human review and [`docs/CURRICULUM_FACT_CHECK_SOURCES.md`](docs/CURRICULUM_FACT_CHECK_SOURCES.md) for sources checked during targeted safety edits. CI publishes the audit report as a downloadable artifact.
+
+```bash
 npm run build && npm run e2e
 ```
 
