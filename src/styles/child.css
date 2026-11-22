@@ -1178,3 +1178,7 @@ html:not(.reduce-motion) .owl-hero__buddy:active > svg { transform:scale(.95); }
 .phonics-practice__actions .is-selected { background:color-mix(in srgb,var(--accent) 16%,white); }
 .phonics-practice__note { margin:14px 0 0;font-size:.88rem;opacity:.82; }
 @media(prefers-reduced-motion:reduce) { .phonics-practice * { scroll-behavior:auto;transition:none!important; } }
+
+.storycard__recall { padding:16px;border-radius:16px;background:color-mix(in srgb,var(--sky) 24%,white);border:1px solid color-mix(in srgb,var(--accent) 25%,white); }
+.storycard__recall h3 { margin:0 0 10px; }
+.storycard__recall > p:not(.storycard__listen-hint) { font-weight:700;margin:8px 0; }
