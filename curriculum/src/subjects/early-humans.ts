@@ -28,7 +28,7 @@ export default subject({
           ],
           t: ['What would be hardest about living without shops?', 'How do you think people discovered fire?'],
           k: ['Tell a grown-up three things early people did every day.'],
-          m: ['Make a Clay "Stone Tool"', 'clay or playdough, a stick, leaves', 'Shape a cutting tool from clay | Attach it to a stick with string | Use it to "cut" leaves | Explain how early people used similar tools'],
+          m: ['Make a Clay "Stone Tool"', 'clay or playdough, a stick, leaves', 'Shape a cutting tool from clay | Attach it to a stick with string | Use it to "cut" leaves | Explain how early people used similar tools', "This is a pretend tool only. Use a blunt stick and soft clay; never make a sharp point or use it to cut or poke anyone."],
           q: [
             ch('Hunter-gatherers…', '*hunted animals and gathered plants|grew food on farms|bought food'),
             tf('Early people sheltered in caves.', true),
@@ -250,7 +250,7 @@ export default subject({
           ],
           t: ['How would life be different without writing?', 'Why might the Indus script still be undeciphered while hieroglyphs were cracked?'],
           k: ['Show someone your name in a pretend cuneiform or hieroglyph style and explain the system.'],
-          m: ['Clay Tablet Writing', 'clay or playdough, a flat stick cut to a wedge', 'Flatten clay into a tablet | Press wedge marks to "write" a record (e.g. 5 sheep) | Make a key for your symbols | Explain how scribes used tablets'],
+          m: ['Clay Tablet Writing', 'clay or playdough, a flat stick cut to a wedge', 'Flatten clay into a tablet | Press wedge marks to "write" a record (e.g. 5 sheep) | Make a key for your symbols | Explain how scribes used tablets', "Use a blunt craft stick with a rounded end, not a sharpened wedge. An adult should prepare materials and supervise."],
           q: [
             ch('Cuneiform was pressed into…', '*clay|paper|glass'),
             ch('Ashoka\'s edicts used…', '*Brahmi script|cuneiform|hieroglyphs'),
