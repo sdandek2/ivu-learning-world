@@ -1,0 +1,639 @@
+{
+ "contentVersion": "1.0.0",
+ "generatedAt": "2026-11-22T08:44:39.107Z",
+ "totals": {
+  "units": 13,
+  "lessons": 13,
+  "items": 92,
+  "subjectsComplete": 1,
+  "subjectsInvalid": 0,
+  "subjectsRemaining": 59
+ },
+ "subjects": [
+  {
+   "subject": "phonics",
+   "world": "word-woods",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "writing",
+   "world": "word-woods",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "vocabulary",
+   "world": "word-woods",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "stories",
+   "world": "word-woods",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "speaking",
+   "world": "word-woods",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "number-sense",
+   "world": "number-mountains",
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 3,
+     "lessons": 3
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 13,
+   "lessons": 13,
+   "items": 92,
+   "problems": []
+  },
+  {
+   "subject": "operations",
+   "world": "number-mountains",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "shapes",
+   "world": "number-mountains",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "measurement",
+   "world": "number-mountains",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "patterns",
+   "world": "number-mountains",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "life-science",
+   "world": "discovery-lab",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "forces",
+   "world": "discovery-lab",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "materials",
+   "world": "discovery-lab",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "earth",
+   "world": "discovery-lab",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "space",
+   "world": "discovery-lab",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "plants",
+   "world": "green-valley",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "animals",
+   "world": "green-valley",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "ecosystems",
+   "world": "green-valley",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "water",
+   "world": "green-valley",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "conservation",
+   "world": "green-valley",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "body",
+   "world": "wellness-island",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "senses",
+   "world": "wellness-island",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "nutrition",
+   "world": "wellness-island",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "hygiene-safety",
+   "world": "wellness-island",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "fitness",
+   "world": "wellness-island",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "feelings",
+   "world": "heart-harbor",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "friendship",
+   "world": "heart-harbor",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "values",
+   "world": "heart-harbor",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "mindfulness",
+   "world": "heart-harbor",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "life-skills",
+   "world": "heart-harbor",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "geography",
+   "world": "globe-garden",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "communities",
+   "world": "globe-garden",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "cultures",
+   "world": "globe-garden",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "money",
+   "world": "globe-garden",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "civics",
+   "world": "globe-garden",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "historical-thinking",
+   "world": "time-tunnel",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "early-humans",
+   "world": "time-tunnel",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "indian-history",
+   "world": "time-tunnel",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "world-history",
+   "world": "time-tunnel",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "inventions",
+   "world": "time-tunnel",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "ramayana",
+   "world": "heritage-palace",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "mahabharata",
+   "world": "heritage-palace",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "gita",
+   "world": "heritage-palace",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "folk-tales",
+   "world": "heritage-palace",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "world-traditions",
+   "world": "heritage-palace",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "art",
+   "world": "rainbow-studio",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "music",
+   "world": "rainbow-studio",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "dance",
+   "world": "rainbow-studio",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "crafts",
+   "world": "rainbow-studio",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "drama",
+   "world": "rainbow-studio",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "coding",
+   "world": "tinker-town",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "engineering",
+   "world": "tinker-town",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "machines",
+   "world": "tinker-town",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "electricity",
+   "world": "tinker-town",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "digital",
+   "world": "tinker-town",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "logic",
+   "world": "mind-galaxy",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "puzzles",
+   "world": "mind-galaxy",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "philosophy",
+   "world": "mind-galaxy",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "study-skills",
+   "world": "mind-galaxy",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  },
+  {
+   "subject": "languages",
+   "world": "mind-galaxy",
+   "status": "not-started",
+   "stages": {},
+   "units": 0,
+   "lessons": 0,
+   "items": 0,
+   "problems": []
+  }
+ ]
+}

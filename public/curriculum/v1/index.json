@@ -1,0 +1,783 @@
+{
+ "schemaVersion": 1,
+ "contentVersion": "1.0.0",
+ "generatedAt": "2026-11-22T08:44:39.107Z",
+ "stages": [
+  {
+   "id": "s4",
+   "label": "Ages 4–5",
+   "minAge": 4,
+   "maxAge": 5,
+   "description": "Play, talk, notice. Concrete objects, pictures, songs and stories; short sessions with an adult nearby."
+  },
+  {
+   "id": "s5",
+   "label": "Ages 5–6",
+   "minAge": 5,
+   "maxAge": 6,
+   "description": "Early reading and number. Sorting, comparing and explaining simple \"why\" with support."
+  },
+  {
+   "id": "s6",
+   "label": "Ages 6–7",
+   "minAge": 6,
+   "maxAge": 7,
+   "description": "Independent reading of simple texts, place value, first experiments and first sustained projects."
+  },
+  {
+   "id": "s7",
+   "label": "Ages 7–9",
+   "minAge": 7,
+   "maxAge": 9,
+   "description": "Fluent reading, multi-step problems, fair tests, timelines and comparing points of view."
+  },
+  {
+   "id": "s9",
+   "label": "Ages 9–12",
+   "minAge": 9,
+   "maxAge": 12,
+   "description": "Abstraction and evidence: fractions to ratio, systems thinking, sources, structured argument."
+  },
+  {
+   "id": "s12",
+   "label": "Ages 12+",
+   "minAge": 12,
+   "maxAge": 18,
+   "description": "Formal reasoning, research, critique and independent extended projects."
+  }
+ ],
+ "worlds": [
+  {
+   "id": "word-woods",
+   "title": "Word Woods",
+   "domain": "Language & Literacy",
+   "tagline": "Where every tree whispers a story",
+   "guide": "Olu the Owl",
+   "motif": "woods",
+   "colors": {
+    "sky": "#DDF3E4",
+    "land": "#3E8E5E",
+    "accent": "#F2B134",
+    "ink": "#1F3B2C"
+   },
+   "subjects": [
+    {
+     "id": "phonics",
+     "title": "Phonics & Reading",
+     "icon": "🔤",
+     "tagline": "Sounds become words",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "writing",
+     "title": "Writing & Handwriting",
+     "icon": "✏️",
+     "tagline": "Make your marks",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "vocabulary",
+     "title": "Vocabulary & Grammar",
+     "icon": "📚",
+     "tagline": "Words and how they fit",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "stories",
+     "title": "Stories & Literature",
+     "icon": "📖",
+     "tagline": "Enter other worlds",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking & Listening",
+     "icon": "🗣️",
+     "tagline": "Say it, hear it, share it",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "number-mountains",
+   "title": "Number Mountains",
+   "domain": "Mathematics",
+   "tagline": "Climb higher one step at a time",
+   "guide": "Kiko the Mountain Goat",
+   "motif": "mountains",
+   "colors": {
+    "sky": "#E3ECFF",
+    "land": "#5867C9",
+    "accent": "#FF8A5B",
+    "ink": "#1E2557"
+   },
+   "subjects": [
+    {
+     "id": "number-sense",
+     "title": "Numbers & Counting",
+     "icon": "🔢",
+     "tagline": "How many? Which is more?",
+     "units": 13,
+     "lessons": 13,
+     "file": "subjects/number-sense.json"
+    },
+    {
+     "id": "operations",
+     "title": "Adding, Subtracting & Beyond",
+     "icon": "➕",
+     "tagline": "Put together, take apart",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "shapes",
+     "title": "Shapes & Geometry",
+     "icon": "🔺",
+     "tagline": "Corners, sides and space",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "measurement",
+     "title": "Measurement & Data",
+     "icon": "📏",
+     "tagline": "Long, heavy, full — and charts",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "patterns",
+     "title": "Patterns & Algebra",
+     "icon": "🔁",
+     "tagline": "What comes next, and why",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "discovery-lab",
+   "title": "Discovery Lab",
+   "domain": "Science",
+   "tagline": "Wonder, test, find out",
+   "guide": "Dr. Bubbles the Octopus",
+   "motif": "lab",
+   "colors": {
+    "sky": "#E6F7FA",
+    "land": "#1E9AAE",
+    "accent": "#B65CE0",
+    "ink": "#0F3540"
+   },
+   "subjects": [
+    {
+     "id": "life-science",
+     "title": "Living Things",
+     "icon": "🐛",
+     "tagline": "What makes something alive?",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "forces",
+     "title": "Forces, Motion & Energy",
+     "icon": "🧲",
+     "tagline": "Push, pull, go!",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "materials",
+     "title": "Matter & Materials",
+     "icon": "🧪",
+     "tagline": "What things are made of",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "earth",
+     "title": "Earth & Weather",
+     "icon": "🌦️",
+     "tagline": "Rocks, rain and sky",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "space",
+     "title": "Space & Astronomy",
+     "icon": "🪐",
+     "tagline": "Sun, Moon and stars",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "green-valley",
+   "title": "Green Valley",
+   "domain": "Nature & Environment",
+   "tagline": "Everything is connected",
+   "guide": "Tara the Tortoise",
+   "motif": "valley",
+   "colors": {
+    "sky": "#EEF8DC",
+    "land": "#6FA33A",
+    "accent": "#E8673C",
+    "ink": "#2C3D14"
+   },
+   "subjects": [
+    {
+     "id": "plants",
+     "title": "Plants & Gardening",
+     "icon": "🌱",
+     "tagline": "Seeds, roots and blooms",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "animals",
+     "title": "Animals & Habitats",
+     "icon": "🦁",
+     "tagline": "Who lives where, and how",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "ecosystems",
+     "title": "Ecosystems & Food Chains",
+     "icon": "🕸️",
+     "tagline": "Who eats whom",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "water",
+     "title": "Oceans, Rivers & Water",
+     "icon": "🌊",
+     "tagline": "Every drop travels",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "conservation",
+     "title": "Caring for the Earth",
+     "icon": "♻️",
+     "tagline": "Small actions, big change",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "wellness-island",
+   "title": "Wellness Island",
+   "domain": "Body & Health",
+   "tagline": "A strong body, a happy you",
+   "guide": "Pala the Dolphin",
+   "motif": "island",
+   "colors": {
+    "sky": "#FFF0E8",
+    "land": "#F07C5A",
+    "accent": "#2BB3A3",
+    "ink": "#4A1E12"
+   },
+   "subjects": [
+    {
+     "id": "body",
+     "title": "My Amazing Body",
+     "icon": "🫀",
+     "tagline": "Bones, muscles and more",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "senses",
+     "title": "The Five Senses",
+     "icon": "👂",
+     "tagline": "See, hear, smell, taste, touch",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "nutrition",
+     "title": "Food & Nutrition",
+     "icon": "🥕",
+     "tagline": "Fuel for growing",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "hygiene-safety",
+     "title": "Hygiene & Safety",
+     "icon": "🧼",
+     "tagline": "Clean, careful, confident",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "fitness",
+     "title": "Movement & Fitness",
+     "icon": "🤸",
+     "tagline": "Run, stretch, balance",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "heart-harbor",
+   "title": "Heart Harbor",
+   "domain": "Social-Emotional & Character",
+   "tagline": "Kind hearts, calm minds",
+   "guide": "Momo the Bear",
+   "motif": "harbor",
+   "colors": {
+    "sky": "#FFF2F5",
+    "land": "#E0607E",
+    "accent": "#5CA9E6",
+    "ink": "#4A1426"
+   },
+   "subjects": [
+    {
+     "id": "feelings",
+     "title": "Feelings & Emotions",
+     "icon": "💛",
+     "tagline": "Name it to tame it",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "friendship",
+     "title": "Friendship & Kindness",
+     "icon": "🤝",
+     "tagline": "Playing and caring together",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "values",
+     "title": "Values & Character",
+     "icon": "🌟",
+     "tagline": "Honest, brave, fair",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "mindfulness",
+     "title": "Calm & Mindfulness",
+     "icon": "🧘",
+     "tagline": "Breathe and notice",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "life-skills",
+     "title": "Life Skills & Responsibility",
+     "icon": "🧺",
+     "tagline": "I can do it myself",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "globe-garden",
+   "title": "Globe Garden",
+   "domain": "People, Places & Society",
+   "tagline": "One world, many homes",
+   "guide": "Zuri the Zebra",
+   "motif": "globe",
+   "colors": {
+    "sky": "#FFF8E1",
+    "land": "#D99A1E",
+    "accent": "#2D7DD2",
+    "ink": "#3D2B05"
+   },
+   "subjects": [
+    {
+     "id": "geography",
+     "title": "Maps & Geography",
+     "icon": "🗺️",
+     "tagline": "Where in the world?",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "communities",
+     "title": "Communities & Helpers",
+     "icon": "🏘️",
+     "tagline": "People who help us",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "cultures",
+     "title": "Cultures & Festivals",
+     "icon": "🎎",
+     "tagline": "Many ways to celebrate",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "money",
+     "title": "Money & Economics",
+     "icon": "🪙",
+     "tagline": "Needs, wants and choices",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "civics",
+     "title": "Rules, Rights & Citizenship",
+     "icon": "🏛️",
+     "tagline": "Fair rules for everyone",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "time-tunnel",
+   "title": "Time Tunnel",
+   "domain": "History",
+   "tagline": "Travel back and find out how we know",
+   "guide": "Professor Hoot",
+   "motif": "tunnel",
+   "colors": {
+    "sky": "#F3ECE2",
+    "land": "#9A6B3F",
+    "accent": "#3FA7A0",
+    "ink": "#3A2614"
+   },
+   "subjects": [
+    {
+     "id": "historical-thinking",
+     "title": "Thinking Like a Historian",
+     "icon": "🔎",
+     "tagline": "Clues from the past",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "early-humans",
+     "title": "Early Humans & Ancient Worlds",
+     "icon": "🏺",
+     "tagline": "Caves, rivers and first cities",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "indian-history",
+     "title": "History of India",
+     "icon": "📜",
+     "tagline": "From Harappa to the Republic",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "world-history",
+     "title": "World History",
+     "icon": "🌍",
+     "tagline": "Peoples and turning points",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "inventions",
+     "title": "Inventions & Discoveries",
+     "icon": "💡",
+     "tagline": "Ideas that changed lives",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "heritage-palace",
+   "title": "Heritage Palace",
+   "domain": "Epics, Stories & Wisdom Traditions",
+   "tagline": "Great stories and the wisdom people find in them",
+   "guide": "Mayur the Peacock",
+   "motif": "palace",
+   "colors": {
+    "sky": "#FBEFFF",
+    "land": "#8E44AD",
+    "accent": "#F4B400",
+    "ink": "#2E0F3D"
+   },
+   "subjects": [
+    {
+     "id": "ramayana",
+     "title": "The Ramayana",
+     "icon": "🏹",
+     "tagline": "Rama, Sita and the long journey",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "mahabharata",
+     "title": "The Mahabharata",
+     "icon": "🐚",
+     "tagline": "Families, choices and dharma",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "gita",
+     "title": "The Bhagavad Gita",
+     "icon": "🪷",
+     "tagline": "A conversation on a battlefield",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "folk-tales",
+     "title": "Panchatantra, Jataka & Folk Tales",
+     "icon": "🐒",
+     "tagline": "Clever animals, wise lessons",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "world-traditions",
+     "title": "World Religions & Wisdom",
+     "icon": "🕊️",
+     "tagline": "How people find meaning",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "rainbow-studio",
+   "title": "Rainbow Studio",
+   "domain": "Arts & Creativity",
+   "tagline": "Make something only you can make",
+   "guide": "Rangi the Chameleon",
+   "motif": "studio",
+   "colors": {
+    "sky": "#FFF4E0",
+    "land": "#E94F64",
+    "accent": "#3BB273",
+    "ink": "#45131B"
+   },
+   "subjects": [
+    {
+     "id": "art",
+     "title": "Drawing & Painting",
+     "icon": "🎨",
+     "tagline": "Lines, colours, pictures",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "music",
+     "title": "Music & Rhythm",
+     "icon": "🎵",
+     "tagline": "Beat, tune and song",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "dance",
+     "title": "Dance & Movement",
+     "icon": "💃",
+     "tagline": "Tell it with your body",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "crafts",
+     "title": "Crafts & Making",
+     "icon": "✂️",
+     "tagline": "Fold, cut, build",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "drama",
+     "title": "Drama & Puppetry",
+     "icon": "🎭",
+     "tagline": "Pretend and perform",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "tinker-town",
+   "title": "Tinker Town",
+   "domain": "Technology & Engineering",
+   "tagline": "Build it, test it, make it better",
+   "guide": "Bolt the Robot",
+   "motif": "town",
+   "colors": {
+    "sky": "#E9EEF2",
+    "land": "#4F6D7A",
+    "accent": "#F28C28",
+    "ink": "#17252D"
+   },
+   "subjects": [
+    {
+     "id": "coding",
+     "title": "Coding & Algorithms",
+     "icon": "🧩",
+     "tagline": "Step-by-step instructions",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "engineering",
+     "title": "Building & Engineering",
+     "icon": "🏗️",
+     "tagline": "Strong, tall, useful",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "machines",
+     "title": "Simple Machines",
+     "icon": "⚙️",
+     "tagline": "Levers, wheels and ramps",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "electricity",
+     "title": "Electricity & Circuits",
+     "icon": "🔋",
+     "tagline": "Making things light up",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "digital",
+     "title": "Digital Life & Online Safety",
+     "icon": "💻",
+     "tagline": "Smart and safe with screens",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  },
+  {
+   "id": "mind-galaxy",
+   "title": "Mind Galaxy",
+   "domain": "Thinking, Wonder & Languages",
+   "tagline": "Think about thinking",
+   "guide": "Nova the Star-Fox",
+   "motif": "galaxy",
+   "colors": {
+    "sky": "#1D1B4B",
+    "land": "#5B4FCF",
+    "accent": "#FFD166",
+    "ink": "#F4F1FF"
+   },
+   "subjects": [
+    {
+     "id": "logic",
+     "title": "Logic & Reasoning",
+     "icon": "🧠",
+     "tagline": "If this, then that",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "puzzles",
+     "title": "Puzzles & Problem Solving",
+     "icon": "🎲",
+     "tagline": "Stuck is where learning starts",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "philosophy",
+     "title": "Big Questions",
+     "icon": "🤔",
+     "tagline": "Wondering together",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "study-skills",
+     "title": "Memory & Learning Skills",
+     "icon": "🗂️",
+     "tagline": "Learn how to learn",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    },
+    {
+     "id": "languages",
+     "title": "Languages & Scripts",
+     "icon": "🌐",
+     "tagline": "Many ways to say hello",
+     "units": 0,
+     "lessons": 0,
+     "file": ""
+    }
+   ]
+  }
+ ]
+}
