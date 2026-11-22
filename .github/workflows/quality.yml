@@ -40,6 +40,16 @@ jobs:
       - name: Run curriculum quality audit (heuristic screen)
         run: npm run audit:curriculum
 
+      - name: Upload curriculum quality audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: curriculum-quality-audit
+          path: |
+            docs/CURRICULUM_QUALITY_AUDIT.md
+            curriculum/QUALITY_AUDIT.json
+          if-no-files-found: warn
+
       - name: Type-check
         run: npm run typecheck
 
