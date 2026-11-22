@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:16:03.500Z",
+ "generatedAt": "2026-11-22T12:20:25.302Z",
  "stages": [
   {
    "id": "s4",
@@ -615,18 +615,18 @@
      "title": "Drawing & Painting",
      "icon": "🎨",
      "tagline": "Lines, colours, pictures",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/art.json"
     },
     {
      "id": "music",
      "title": "Music & Rhythm",
      "icon": "🎵",
      "tagline": "Beat, tune and song",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/music.json"
     },
     {
      "id": "dance",
