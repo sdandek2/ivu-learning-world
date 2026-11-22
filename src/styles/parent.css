@@ -155,3 +155,14 @@
   .parent *,.parent *::before,.parent *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
+
+
+/* Explain the learning signals without turning the dashboard into a scorecard. */
+.parent-mastery-guide { border:1px solid var(--p-line);background:linear-gradient(145deg,#fff,#F8FAFF); }
+.parent-mastery-guide__grid { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:12px 0; }
+.parent-mastery-guide__grid > div { padding:12px;border:1px solid var(--p-line);border-radius:12px;background:#fff; }
+.parent-mastery-guide__grid strong { color:var(--p-accent); }
+.parent-mastery-guide__grid p { margin:5px 0 0;color:var(--p-soft);font-size:.88rem; }
+.parent-mastery-guide > .small { margin:12px 0 0; }
+@media(max-width:800px) { .parent-mastery-guide__grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:480px) { .parent-mastery-guide__grid { grid-template-columns:1fr; } }
