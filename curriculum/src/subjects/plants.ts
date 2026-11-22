@@ -306,7 +306,7 @@ export default subject({
           ],
           t: ['How can traditional knowledge and modern science work together?', 'Why is plant biodiversity important for medicine and food?'],
           k: ['Present one Indian forest type: where it is, what grows there and why it matters.'],
-          m: ['Local Tree Survey', 'a notebook, a phone camera or sketchbook, a tree field guide', 'Survey 10 trees in your neighbourhood | Identify and photograph or sketch each | Note uses and any traditional significance | Make a map and booklet of your local trees'],
+          m: ['Local Tree Survey', 'a notebook, a phone camera or sketchbook, a tree field guide', 'Survey 10 trees in your neighbourhood | Identify and photograph or sketch each | Note uses and any traditional significance | Make a map and booklet of your local trees', "Stay with an adult, do not enter private property or touch unknown plants, and avoid sharing precise home locations or identifiable photographs publicly."],
           q: [
             ch('Mangroves grow in…', '*salty coastal water|deserts|snow'),
             ch('Teak is mainly found in…', '*deciduous forests|alpine meadows|mangroves'),
