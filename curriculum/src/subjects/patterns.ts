@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['Why do you think some animals have stripes or spots?', 'Is every flower\'s petal pattern the same?'],
           k: ['Show a grown-up a pattern you found at home and explain what repeats.'],
-          m: ['Leaf and Vegetable Printing', 'paint, paper, leaves, a cut potato or okra (bhindi)', 'Dip a leaf or cut vegetable in paint | Print a repeating pattern along a strip of paper | Use two colours to make an AB pattern | Use your strip as a border for a card'],
+          m: ['Leaf and Vegetable Printing', 'paint, paper, leaves, a cut potato or okra (bhindi)', 'Dip a leaf or cut vegetable in paint | Print a repeating pattern along a strip of paper | Use two colours to make an AB pattern | Use your strip as a border for a card', "An adult must cut the potato or okra. Use non-toxic washable paint, do not taste the materials, and wash hands after printing."],
           q: [
             ch('A pattern along the edge of a saree is a…', '*border|spot|circle'),
             tf('Patterns only exist in art, never in nature.', false),
@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Could two different rules give the same output for one input? Find an example.', 'How many input–output pairs do you need to be sure of the rule?'],
           k: ['Be a "human function machine" and let someone guess your secret rule.'],
-          m: ['Cardboard Function Machine', 'a cardboard box, paper slips, pens', 'Cut an input slot and output slot in a box | Write a secret rule inside | A partner posts number slips in; you post answers out | They guess the rule after three tries'],
+          m: ['Cardboard Function Machine', 'a cardboard box, paper slips, pens', 'Cut an input slot and output slot in a box | Write a secret rule inside | A partner posts number slips in; you post answers out | They guess the rule after three tries', "An adult should cut the slots in the box before the child uses it. Cover rough edges and use only blunt paper slips."],
           q: [
             ch('Rule × 10. Input 6 → ?', '16|*60|610'),
             ch('In 8 → out 4, in 20 → out 16. Rule?', '÷ 2|*− 4|− 2'),
