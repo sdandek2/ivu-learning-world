@@ -168,7 +168,7 @@ curriculum/MANIFEST.json Generated progress manifest (also docs/CURRICULUM_MANIF
 public/curriculum/v1/    Generated, validated JSON: index.json, outline.json, subjects/<id>.json (lazy-loaded)
 public/sw.js             Service worker (precache list injected at build time)
 public/ivu-reads/        IVU Reads app (imported): index.html, 500 recordings in audio/, clips.json, levels.json, local fonts
-scripts/                 build-curriculum.ts, import-ivu-reads.mjs, tidy-imports.mjs, save-progress.sh, e2e-smoke.mjs
+scripts/                 build-curriculum.ts, audit-curriculum-quality.ts, import-ivu-reads.mjs, tidy-imports.mjs, save-progress.sh, e2e-smoke.mjs
 src/curriculum/          zod schema + semantic checks (shared by build, app and tests), loader
 src/engine/              Pure logic: mastery, revision scheduling, adaptive recommendations, achievements
 src/db/                  IndexedDB wrapper (stores: kv, skills, log, art)
@@ -178,7 +178,7 @@ src/ui/                  Shared components, world illustrations, item player
 src/pages/child/         Universe, worlds, subjects, Learning Studio, Arena, Studio, Journey, Badges
 src/pages/parent/        Parent gate, dashboard, curriculum guide, settings, backup (lazy-loaded chunk)
 tests/                   Vitest unit and integration tests
-docs/                    Authoring guide, curriculum manifest, implementation report
+docs/                    Authoring guide, curriculum manifest, educator review guide, fact-check source register, implementation report
 ```
 
 ## 6. Curriculum authoring
@@ -215,7 +215,7 @@ The curriculum audit reports interaction variety, project safety/privacy gaps, r
 npm run build && npm run e2e
 ```
 
-- `npm test` runs 279 tests: the mastery engine, revision and adaptive logic, achievements, storage and backup round-trip, the item player UI, the IVU Reads bridge (mastery rule, recorded-voice lookup, backup round-trip), and validation of every generated curriculum file against the schema and the manifest.
+- `npm test` runs 283 tests: the mastery engine, revision and adaptive logic, achievements, storage and backup round-trip, the item player UI, the IVU Reads bridge (mastery rule, recorded-voice lookup, backup round-trip), and validation of every generated curriculum file against the schema and the manifest.
 - `npm run e2e` drives a real browser (Playwright) through the universe, a world, a subject, a full lesson, the parent gate and dashboard, the curriculum guide, backup download, the Arena, the Studio, the Journey and badges, an offline reload (including IVU Reads and its recordings), opening IVU Reads from Word Woods, recorded-voice read-aloud and the mobile layout. Add `-- --shots <dir>` to save screenshots.
 
 ## Languages
