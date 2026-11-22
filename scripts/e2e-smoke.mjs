@@ -4,8 +4,8 @@
  *
  * Starts `vite preview`, then drives a real browser through the main learning flows:
  * universe → world → subject → full lesson (learn, story, play, think, make, check) →
- * mastery recorded → parent gate → dashboard → curriculum guide → backup export →
- * arena → creative studio → offline reload.
+ * mastery recorded → parent gate → overview/progress/recommendations → curriculum →
+ * backup export → Play hub → arena → creative studio → offline reload.
  */
 import { spawn } from 'node:child_process';
 import { mkdirSync } from 'node:fs';
@@ -132,6 +132,14 @@ try {
     await shot('07-parent-dashboard');
   });
 
+  await step('parent navigation separates progress and recommendations', async () => {
+    await page.getByRole('button', { name: 'Progress' }).click();
+    await page.locator('.dash h1').waitFor();
+    await page.getByRole('button', { name: 'Recommendations' }).click();
+    await page.getByRole('heading', { name: 'Recommended next steps' }).waitFor();
+    await shot('08-parent-recommendations');
+  });
+
   await step('curriculum guide shows full lesson detail', async () => {
     await page.getByRole('button', { name: 'Curriculum' }).click();
     await page.locator('.cbrowser__nav button', { hasText: firstSubject.title }).click();
@@ -141,12 +149,21 @@ try {
   });
 
   await step('backup export downloads a valid file', async () => {
-    await page.getByRole('button', { name: 'Backup & restore' }).click();
+    await page.getByRole('button', { name: 'Settings & Backup' }).click();
     const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download backup/ }).click()]);
     const path = await dl.path();
     const { readFileSync } = await import('node:fs');
     const json = JSON.parse(readFileSync(path, 'utf8'));
     if (json.format !== 'ivu-learning-world-backup' || json.data.skills.length < 1) throw new Error('backup content invalid');
+  });
+
+  await step('Play hub offers both challenge and creative paths', async () => {
+    await page.goto(BASE);
+    await page.getByRole('button', { name: /Play/ }).click();
+    await page.getByRole('heading', { name: 'What would you like to make today?' }).waitFor();
+    await page.getByRole('button', { name: /Choose a challenge/ }).waitFor();
+    await page.getByRole('button', { name: /Start creating/ }).waitFor();
+    await shot('09-play-hub');
   });
 
   await step('challenge arena runs a round', async () => {
