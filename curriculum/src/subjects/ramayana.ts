@@ -417,7 +417,7 @@ export default subject({
           ],
           t: ['Why might a story stay popular in a country where most people follow a different religion?', 'What does the spread of the Ramayana tell us about Asian history?'],
           k: ['Present how one Southeast Asian country tells the Ramayana.'],
-          m: ['Shadow Puppet Show', 'card, sticks, a torch, a white sheet', 'Make shadow puppets of three characters in wayang style | Practise a short scene | Perform for your family | Explain the Indonesian tradition'],
+          m: ['Shadow Puppet Show', 'card, sticks, a torch, a white sheet', 'Make shadow puppets of three characters in wayang style | Practise a short scene | Perform for your family | Explain the Indonesian tradition', "Use a cool-running torch pointed at the sheet, never into anyone's eyes. Keep the performance area clear and use child-safe materials."],
           q: [
             ch('Wayang is a form of…', '*puppet theatre|cooking|navigation'),
             tf('The Ramayana is valued as cultural heritage in Indonesia.', true),
