@@ -92,7 +92,7 @@ export default subject({
           ],
           t: ['Why do people have special rules in special places?', 'What questions would you like to ask when visiting?'],
           k: ['Show a grown-up how you would behave politely in a place of worship.'],
-          m: ['Places of Worship Picture Book', 'paper, crayons, stapler', 'Draw six places of worship | Write each name under the picture | Add one custom for each | Staple into a book and share'],
+          m: ['Places of Worship Picture Book', 'paper, crayons, stapler', 'Draw six places of worship | Write each name under the picture | Add one custom for each | Staple into a book and share', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('A Buddhist monastery or temple is often called a…', '*vihara|gurdwara|mosque'),
             tf('In many mosques, people wash before prayer.', true),
