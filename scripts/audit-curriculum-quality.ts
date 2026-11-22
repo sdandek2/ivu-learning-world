@@ -16,7 +16,7 @@ import type { RawItem, RawSubject, RawLesson } from '../curriculum/src/dsl.ts';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sourceDir = join(root, 'curriculum/src/subjects');
 const stageOrder = ['s4', 's5', 's6', 's7', 's9', 's12'] as const;
-const SAFETY_RISK = /\\b(coin battery|button cell|batter(?:y|ies)|electric(?:ity)?|wall socket|plug|hot water|hot|boil|flame|fire|knife|needle|scissors?|cut|glass|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|mirror|marbles?|pebbles?)\\b/i;
+const SAFETY_RISK = /\b(coin battery|button cell|batter(?:y|ies)|electric(?:ity)?|wall socket|plug|hot water|hot|boil|flame|fire|knife|needle|scissors?|cut|glass|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|mirror|marbles?|pebbles?)\b/i;
 
 type Finding = {
   subject: string;
@@ -30,14 +30,14 @@ type Finding = {
 
 type Metric = { lessons: number; explanationWords: number[]; storyWords: number[]; items: number; itemsWithWhy: number; lessonsWithWhy: number; lessonsWithoutWhy: number };
 
-const wordCount = (value: string) => (value.match(/[\\p{L}\\p{N}]+(?:['’-][\\p{L}\\p{N}]+)*/gu) ?? []).length;
+const wordCount = (value: string) => (value.match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu) ?? []).length;
 const kindCount = (items: RawItem[]) => new Set(items.map((item) => item.kind)).size;
 const average = (values: number[]) => values.length ? Math.round(values.reduce((sum, n) => sum + n, 0) / values.length) : 0;
 const emptyMetric = (): Metric => ({ lessons: 0, explanationWords: [], storyWords: [], items: 0, itemsWithWhy: 0, lessonsWithWhy: 0, lessonsWithoutWhy: 0 });
 
 async function main() {
   if (!existsSync(sourceDir)) throw new Error(`Curriculum source directory not found: ${sourceDir}`);
-  const available = new Set(readdirSync(sourceDir).filter((file) => file.endsWith('.ts')).map((file) => file.replace(/\\.ts$/, '')));
+  const available = new Set(readdirSync(sourceDir).filter((file) => file.endsWith('.ts')).map((file) => file.replace(/\.ts$/, '')));
   const findings: Finding[] = [];
   const subjectStats: { subject: string; lessons: number; reviewFindings: number; feedbackCoverage: string }[] = [];
   const stageStats = Object.fromEntries(stageOrder.map((stage) => [stage, emptyMetric()])) as Record<(typeof stageOrder)[number], Metric>;
@@ -153,7 +153,7 @@ async function main() {
   const docsDir = join(root, 'docs');
   const dataDir = join(root, 'curriculum');
   mkdirSync(docsDir, { recursive: true });
-  writeFileSync(join(dataDir, 'QUALITY_AUDIT.json'), JSON.stringify(report, null, 2) + '\\n');
+  writeFileSync(join(dataDir, 'QUALITY_AUDIT.json'), JSON.stringify(report, null, 2) + '\n');
 
   const lines = [
     '# Curriculum Quality Audit', '',
@@ -188,7 +188,7 @@ async function main() {
     '- Check all project risks and accessibility, including allergies, choking hazards, tools, heat, water, electricity and privacy.',
     '- Preserve stable lesson/item IDs and prerequisite relationships for all content edits.', '',
   ];
-  writeFileSync(join(docsDir, 'CURRICULUM_QUALITY_AUDIT.md'), lines.join('\\n'));
+  writeFileSync(join(docsDir, 'CURRICULUM_QUALITY_AUDIT.md'), lines.join('\n'));
   console.log(`Curriculum quality screen: ${subjectStats.length} subjects, ${total.lessons} lessons, ${total.items} items, ${findings.length} review findings.`);
 }
 
