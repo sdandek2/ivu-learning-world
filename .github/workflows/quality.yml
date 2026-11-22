@@ -72,6 +72,9 @@ jobs:
             package-lock.json
           if-no-files-found: warn
 
+      - name: Check narration catalogue and report audio coverage
+        run: npm run audit:audio
+
       - name: Type-check
         run: npm run typecheck
 

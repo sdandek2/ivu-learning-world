@@ -9,7 +9,8 @@ import { useStore } from '../../state/store.tsx';
 import { navigate } from '../../lib/router.ts';
 import { ItemPlayer } from '../../ui/ItemPlayer.tsx';
 import { Buddy } from '../../ui/WorldArt.tsx';
-import { ErrorBox, Loading, SpeakButton, StageDots, Stars, TopBar } from '../../ui/common.tsx';
+import { ErrorBox, Loading, NarrationControl, SpeakButton, StageDots, Stars, TopBar, useBuddyVoice } from '../../ui/common.tsx';
+import { BUDDY_LINES } from '../../lib/buddyLines.ts';
 import { worldById } from './Explore.tsx';
 import { skillIdOf, isUnlocked } from '../../engine/adaptive.ts';
 import { nextStepHint } from '../../engine/mastery.ts';
@@ -90,7 +91,7 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
 
   return (
     <div className="studio-lesson" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
-      <TopBar title={<span className="lesson-title">{lesson.title}</span>} back={`/subject/${subject.id}`} color={w.colors.land} />
+      <TopBar title={<span className="lesson-title">{lesson.title}</span>} back={`/subject/${subject.id}`} color={w.colors.land} right={<NarrationControl />} />
       <nav className="steps" aria-label="Lesson steps">
         {STEPS.map((s, i) => (
           <button key={s.id} className={cx('step', s.id === step && 'is-active', i < stepIdx && 'is-done')} onClick={() => go(s.id)} aria-current={s.id === step ? 'step' : undefined}>
@@ -267,7 +268,12 @@ function MakeStep({ lessonId, project, onNext }: { lessonId: string; project: Le
 
 function Celebrate({ stage, hint, score, onNext, nextLabel, color, accent }: { stage: MasteryStage; hint: string; score: number; onNext: () => void; nextLabel: string; color: string; accent: string }) {
   const { settings } = useStore();
-  useEffect(() => { if (settings.sounds) sounds.celebrate(); }, [settings.sounds]);
+  const say = useBuddyVoice();
+  useEffect(() => {
+    if (settings.sounds) sounds.celebrate();
+    const t = setTimeout(() => say(BUDDY_LINES.lessonDone), 700); // after the fanfare, in the recorded voice
+    return () => clearTimeout(t);
+  }, []); // once, when the celebration opens
   const stars = score >= 0.99 ? 3 : score >= 0.66 ? 2 : 1;
   const confetti = useMemo(() => shuffle(['🎉', '⭐', '🌟', '✨', '🎈', '💫', '🎊', '⭐']), []);
   return (
@@ -278,7 +284,7 @@ function Celebrate({ stage, hint, score, onNext, nextLabel, color, accent }: { s
       <Stars n={stars} />
       <div className="celebrate__stage"><StageDots stage={stage} /></div>
       <p className="celebrate__hint">{hint}</p>
-      <SpeakButton text={`You did it, ${settings.learnerName}! You earned ${stars} stars.`} auto />
+      <SpeakButton text={BUDDY_LINES.lessonDone.text} label="Hear Buddy" />
       <button className="btn btn--primary btn--big" onClick={onNext}>{nextLabel} →</button>
     </section>
   );
@@ -295,7 +301,7 @@ export function RevisePage({ lessonId }: { lessonId: string }) {
   const w = worldById(store.index.worlds, ctx.subject.worldId)!;
   return (
     <div className="studio-lesson" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
-      <TopBar title={<>🧠 Remember: {ctx.lesson.title}</>} back="/" color={w.colors.land} />
+      <TopBar title={<>🧠 Remember: {ctx.lesson.title}</>} back="/" color={w.colors.land} right={<NarrationControl />} />
       <main className="lesson-body">
         {done === null ? (
           <ItemsRun items={items} mode="assess" title="🧠 Do you remember?" teachingContext={ctx.lesson.explanation} onFinish={async (r) => {

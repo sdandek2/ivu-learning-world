@@ -1,14 +1,32 @@
 /**
- * Read-aloud. Uses IVU Reads' recorded voice when there is a recording for the exact text
- * (letter sounds, practice words, phrases, sentences, story lines), otherwise the browser's
- * built-in speech synthesis (fully offline on most systems).
+ * The IVU narrator — one voice, one queue, for the whole app.
+ *
+ *  - Recorded first: IVU Reads' human recordings play whenever there is one for the exact text
+ *    (or for every sentence of a passage — two voices are never mixed in one passage).
+ *  - Computer voice is the explicit fallback (browser speech synthesis), used only when no
+ *    recording exists or a recording fails to play.
+ *  - Only one thing speaks at a time: every new line stops the previous one.
+ *  - Pause, resume and replay work for both recorded and synthetic narration.
+ *  - Every line spoken is counted as recorded or synthetic; lines that fell back to the computer
+ *    voice are kept (bounded, on this device only) so grown-ups can see what still needs recording.
  */
 import { clipsForPassage, loadClips } from './ivuReads.ts';
+
+export type NarrationSource = 'recorded' | 'synth';
+export interface NarrationState { status: 'idle' | 'playing' | 'paused'; text: string | null; source: NarrationSource | null }
+export interface SpeakOptions { rate?: number; voiceURI?: string | null; recorded?: boolean; onEnd?: () => void }
 
 let current: SpeechSynthesisUtterance | null = null;
 let currentAudio: HTMLAudioElement | null = null;
 let playToken = 0;
+let state: NarrationState = { status: 'idle', text: null, source: null };
+let last: { text: string; opts: SpeakOptions } | null = null;
+const listeners = new Set<(s: NarrationState) => void>();
 if (typeof window !== 'undefined') void loadClips();
+
+function setState(s: NarrationState) { state = s; for (const f of listeners) f(s); }
+export function getNarration(): NarrationState { return state; }
+export function subscribeNarration(f: (s: NarrationState) => void): () => void { listeners.add(f); return () => { listeners.delete(f); }; }
 
 export const speechSupported = () => typeof window !== 'undefined' && 'speechSynthesis' in window;
 
@@ -17,30 +35,39 @@ export function speakable(text: string): string {
   return text.replace(/(\p{Extended_Pictographic}️?(‍\p{Extended_Pictographic}️?)*\s*)+/gu, ' ').replace(/\s+/g, ' ').trim();
 }
 
-export function speak(text: string, opts: { rate?: number; voiceURI?: string | null; recorded?: boolean; onEnd?: () => void } = {}): void {
+/** Which source a line would use right now (no sound is played). */
+export function narrationSourceFor(text: string, recorded = true): NarrationSource {
+  return recorded && clipsForPassage(speakable(text)) ? 'recorded' : 'synth';
+}
+
+export function speak(text: string, opts: SpeakOptions = {}): void {
   stopSpeaking();
+  last = { text, opts };
   const clips = opts.recorded === false || typeof Audio === 'undefined' ? null : clipsForPassage(speakable(text));
   if (clips) {
     const token = ++playToken;
+    noteCoverage(text, 'recorded');
+    setState({ status: 'playing', text, source: 'recorded' });
     const playAt = (i: number) => {
       if (token !== playToken) return; // stopped or replaced
-      if (i >= clips.length) { currentAudio = null; opts.onEnd?.(); return; }
+      if (i >= clips.length) { currentAudio = null; setState({ status: 'idle', text: null, source: null }); opts.onEnd?.(); return; }
       const a = new Audio(clips[i]);
       currentAudio = a;
       a.onended = () => setTimeout(() => playAt(i + 1), 250);
       // If a recording can't play (e.g. missing file), fall back to the synthetic voice for the whole text.
-      const fail = () => { if (token === playToken && currentAudio === a) { currentAudio = null; speakSynth(text, opts); } };
+      const fail = () => { if (token === playToken && currentAudio === a) { currentAudio = null; noteCoverage(text, 'synth'); speakSynth(text, opts); } };
       a.onerror = fail;
       a.play().catch(fail);
     };
     playAt(0);
     return;
   }
+  noteCoverage(text, 'synth');
   speakSynth(text, opts);
 }
 
-function speakSynth(text: string, opts: { rate?: number; voiceURI?: string | null; onEnd?: () => void }): void {
-  if (!speechSupported()) return;
+function speakSynth(text: string, opts: SpeakOptions): void {
+  if (!speechSupported()) { setState({ status: 'idle', text: null, source: null }); return; }
   const u = new SpeechSynthesisUtterance(speakable(text));
   u.rate = opts.rate ?? 0.9;
   u.pitch = 1.05;
@@ -48,8 +75,9 @@ function speakSynth(text: string, opts: { rate?: number; voiceURI?: string | nul
   const voices = window.speechSynthesis.getVoices();
   const v = (opts.voiceURI && voices.find((x) => x.voiceURI === opts.voiceURI)) || voices.find((x) => x.lang === 'en-IN') || voices.find((x) => x.lang.startsWith('en'));
   if (v) u.voice = v;
-  u.onend = () => { if (current === u) current = null; opts.onEnd?.(); };
+  u.onend = () => { if (current === u) { current = null; setState({ status: 'idle', text: null, source: null }); } opts.onEnd?.(); };
   current = u;
+  setState({ status: 'playing', text, source: 'synth' });
   window.speechSynthesis.speak(u);
 }
 
@@ -58,6 +86,28 @@ export function stopSpeaking(): void {
   current = null;
   playToken++;
   if (currentAudio) { try { currentAudio.pause(); } catch { /* ignore */ } currentAudio = null; }
+  if (state.status !== 'idle') setState({ status: 'idle', text: null, source: null });
+}
+
+export function pauseSpeaking(): void {
+  if (state.status !== 'playing') return;
+  if (currentAudio) { try { currentAudio.pause(); } catch { /* ignore */ } }
+  else if (speechSupported()) window.speechSynthesis.pause();
+  setState({ ...state, status: 'paused' });
+}
+
+export function resumeSpeaking(): void {
+  if (state.status !== 'paused') return;
+  if (currentAudio) { currentAudio.play().catch(() => { /* handled by onerror */ }); }
+  else if (speechSupported()) window.speechSynthesis.resume();
+  setState({ ...state, status: 'playing' });
+}
+
+/** Plays the last line again from the start. Returns false if nothing has been spoken yet. */
+export function replaySpeaking(): boolean {
+  if (!last) return false;
+  speak(last.text, last.opts);
+  return true;
 }
 
 /** True when read-aloud can work at all (synthetic voice or recordings). */
@@ -65,4 +115,44 @@ export const readAloudAvailable = () => speechSupported() || typeof Audio !== 'u
 
 export function englishVoices(): SpeechSynthesisVoice[] {
   return speechSupported() ? window.speechSynthesis.getVoices().filter((v) => v.lang.startsWith('en')) : [];
+}
+
+// ---------- Coverage (this device) ----------
+
+export const NARRATION_COVERAGE_KEY = 'ivu_narration_coverage_v1';
+const MAX_MISSES = 150;
+export interface NarrationCoverage { recorded: number; synth: number; misses: Record<string, number> }
+
+export function readNarrationCoverage(storage: Storage | undefined = globalThis.localStorage): NarrationCoverage {
+  try {
+    const raw = storage?.getItem(NARRATION_COVERAGE_KEY);
+    const c = raw ? (JSON.parse(raw) as NarrationCoverage) : null;
+    if (c && typeof c.recorded === 'number' && typeof c.synth === 'number' && c.misses && typeof c.misses === 'object') return c;
+  } catch { /* ignore */ }
+  return { recorded: 0, synth: 0, misses: {} };
+}
+
+export function noteCoverage(text: string, source: NarrationSource, storage: Storage | undefined = globalThis.localStorage): void {
+  if (!storage) return;
+  try {
+    const c = readNarrationCoverage(storage);
+    if (source === 'recorded') c.recorded++;
+    else {
+      c.synth++;
+      const line = speakable(text).slice(0, 160);
+      if (line) {
+        c.misses[line] = (c.misses[line] ?? 0) + 1;
+        const keys = Object.keys(c.misses);
+        if (keys.length > MAX_MISSES) {
+          // Drop the least-heard lines so the list stays small.
+          keys.sort((a, b) => c.misses[a] - c.misses[b]).slice(0, keys.length - MAX_MISSES).forEach((k) => delete c.misses[k]);
+        }
+      }
+    }
+    storage.setItem(NARRATION_COVERAGE_KEY, JSON.stringify(c));
+  } catch { /* storage full or unavailable: coverage is best-effort */ }
+}
+
+export function resetNarrationCoverage(storage: Storage | undefined = globalThis.localStorage): void {
+  try { storage?.removeItem(NARRATION_COVERAGE_KEY); } catch { /* ignore */ }
 }

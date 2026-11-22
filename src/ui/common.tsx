@@ -1,22 +1,66 @@
-import { useEffect, type ReactNode } from 'react';
+import { useCallback, useEffect, useSyncExternalStore, type ReactNode } from 'react';
 import { useStore } from '../state/store.tsx';
-import { speak, readAloudAvailable, stopSpeaking } from '../lib/speech.ts';
+import { speak, readAloudAvailable, stopSpeaking, pauseSpeaking, resumeSpeaking, replaySpeaking, subscribeNarration, getNarration, type NarrationState } from '../lib/speech.ts';
+import type { BuddyLine } from '../lib/buddyLines.ts';
 import { MASTERY_STAGES, type MasteryStage } from '../engine/types.ts';
 import { navigate } from '../lib/router.ts';
 import { cx } from '../lib/util.ts';
 
+/** Live narration state (playing / paused / idle) for any component. */
+export function useNarration(): NarrationState {
+  return useSyncExternalStore(subscribeNarration, getNarration, getNarration);
+}
+
+/**
+ * Buddy's voice for UI moments (feedback, celebrations, step changes). Follows the grown-up's
+ * settings: silent when read-aloud is off or feedback sounds are off.
+ */
+export function useBuddyVoice() {
+  const { settings } = useStore();
+  return useCallback((line: BuddyLine | string) => {
+    if (settings.readAloud === 'off' || !settings.sounds) return;
+    speak(typeof line === 'string' ? line : line.text, { rate: settings.speechRate, voiceURI: settings.voiceURI, recorded: settings.recordedVoice });
+  }, [settings.readAloud, settings.sounds, settings.speechRate, settings.voiceURI, settings.recordedVoice]);
+}
+
+/**
+ * Listen button. Tap to hear; while this text is playing, tap to pause; tap again to carry on.
+ * With `auto`, plays once when shown (if the grown-up chose automatic read-aloud).
+ */
 export function SpeakButton({ text, label = 'Listen', auto = false, small = false }: { text: string; label?: string; auto?: boolean; small?: boolean }) {
   const { settings } = useStore();
+  const n = useNarration();
   useEffect(() => {
     if (auto && settings.readAloud === 'auto') speak(text, { rate: settings.speechRate, voiceURI: settings.voiceURI, recorded: settings.recordedVoice });
     return () => { if (auto) stopSpeaking(); };
   }, [auto, text, settings.readAloud, settings.speechRate, settings.voiceURI, settings.recordedVoice]);
   if (!readAloudAvailable() || settings.readAloud === 'off') return null;
+  const mine = n.text === text && n.status !== 'idle';
+  const playing = mine && n.status === 'playing';
+  const onClick = () => {
+    if (playing) pauseSpeaking();
+    else if (mine && n.status === 'paused') resumeSpeaking();
+    else speak(text, { rate: settings.speechRate, voiceURI: settings.voiceURI, recorded: settings.recordedVoice });
+  };
+  const verb = playing ? 'Pause' : mine ? 'Carry on' : label;
   return (
-    <button type="button" className={cx('speak', small && 'speak--small')} onClick={() => speak(text, { rate: settings.speechRate, voiceURI: settings.voiceURI, recorded: settings.recordedVoice })} aria-label={`${label}: read aloud`}>
-      <span aria-hidden="true">🔊</span>{!small && <span>{label}</span>}
+    <button type="button" className={cx('speak', small && 'speak--small', playing && 'is-playing', mine && !playing && 'is-paused')} onClick={onClick}
+      aria-label={playing ? `Pause reading: ${label}` : mine ? `Carry on reading: ${label}` : `${label}: read aloud`} aria-pressed={playing}
+      data-source={mine ? n.source ?? undefined : undefined}>
+      <span aria-hidden="true">{playing ? '⏸' : mine ? '▶️' : '🔊'}</span>{!small && <span>{verb}</span>}
     </button>
   );
+}
+
+/** One control for whatever is being read: pause / carry on while narrating, otherwise "hear it again". */
+export function NarrationControl() {
+  const { settings } = useStore();
+  const n = useNarration();
+  if (!readAloudAvailable() || settings.readAloud === 'off') return null;
+  const [icon, label, act] = n.status === 'playing' ? ['⏸', 'Pause reading', pauseSpeaking]
+    : n.status === 'paused' ? ['▶️', 'Carry on reading', resumeSpeaking]
+    : ['🔁', 'Hear it again', () => { replaySpeaking(); }];
+  return <button type="button" className={cx('iconbtn', 'narration-ctl', n.status !== 'idle' && 'is-active')} onClick={act} aria-label={label} title={label}><span aria-hidden="true">{icon}</span></button>;
 }
 
 const STAGE_COLORS = ['#C9CED6', '#9AD0F5', '#7FD1AE', '#FFD166', '#FF9F6B', '#B784F5'];

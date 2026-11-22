@@ -11,7 +11,7 @@ import { STAGE_IDS, type StageId, type Item } from '../../curriculum/schema.ts';
 import { cx, pct, relativeDay } from '../../lib/util.ts';
 import { backupFileName, createBackup, downloadJSON, parseBackup, restoreBackup, type Backup } from '../../lib/backup.ts';
 import * as db from '../../db/db.ts';
-import { englishVoices } from '../../lib/speech.ts';
+import { englishVoices, readNarrationCoverage, resetNarrationCoverage } from '../../lib/speech.ts';
 import { IVU_READS_URL, loadLevels, readIvuReadsState, summarise, type IvuReadsSummary } from '../../lib/ivuReads.ts';
 import { PLANNED_LOCALES } from '../../i18n/index.ts';
 import { useSubject } from '../child/Explore.tsx';
@@ -443,6 +443,30 @@ function ItemList({ items }: { items: Item[] }) {
 
 // ---------------- Settings ----------------
 
+/** What the child has actually heard on this device: recorded human voice vs computer voice. */
+function VoiceCoverage() {
+  const [c, setC] = useState(() => readNarrationCoverage());
+  const total = c.recorded + c.synth;
+  const top = Object.entries(c.misses).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  return (
+    <section className="pcard">
+      <h2>Voice coverage</h2>
+      {total === 0 ? <p className="muted small">Nothing has been read aloud on this device yet.</p> : (
+        <>
+          <p>On this device, <b>{pct(c.recorded / total)}</b> of the lines read aloud used the recorded voice ({c.recorded} recorded, {c.synth} computer voice).</p>
+          {top.length > 0 && (
+            <>
+              <p className="muted small">Most-heard lines that still use the computer voice — these are the best ones to record next:</p>
+              <ol className="small">{top.map(([line, n]) => <li key={line}>{line} <span className="muted">×{n}</span></li>)}</ol>
+            </>
+          )}
+          <button className="pbtn" onClick={() => { resetNarrationCoverage(); setC(readNarrationCoverage()); }}>Clear these counts</button>
+        </>
+      )}
+    </section>
+  );
+}
+
 function SettingsPage() {
   const { settings, updateSettings, index, setSubjectStage } = useStore();
   const [voices, setVoices] = useState(englishVoices());
@@ -486,10 +510,11 @@ function SettingsPage() {
           </select>
         </label>
         <label className="pfield"><span>Speaking speed: {settings.speechRate.toFixed(2)}</span><input type="range" min="0.6" max="1.3" step="0.05" value={settings.speechRate} onChange={(e) => updateSettings({ speechRate: Number(e.target.value) })} /></label>
-        <label className="pcheck"><input type="checkbox" checked={settings.recordedVoice} onChange={(e) => updateSettings({ recordedVoice: e.target.checked })} /> Use the IVU Reads recorded voice for letter sounds, words, sentences and stories it has recordings for</label>
+        <label className="pcheck"><input type="checkbox" checked={settings.recordedVoice} onChange={(e) => updateSettings({ recordedVoice: e.target.checked })} /> Use the IVU Reads recorded voice whenever there is a recording (letter sounds, words, stories, and Buddy's praise and encouragement). Other lines use the computer voice above.</label>
         <label className="pcheck"><input type="checkbox" checked={settings.sounds} onChange={(e) => updateSettings({ sounds: e.target.checked })} /> Play feedback sounds</label>
         <label className="pcheck"><input type="checkbox" checked={settings.reducedMotion} onChange={(e) => updateSettings({ reducedMotion: e.target.checked })} /> Reduce motion and animations</label>
       </section>
+      <VoiceCoverage />
       <section className="pcard">
         <h2>Sessions & language</h2>
         <label className="pfield"><span>Suggested session length: {settings.sessionMinutes} minutes</span><input type="range" min="5" max="60" step="5" value={settings.sessionMinutes} onChange={(e) => updateSettings({ sessionMinutes: Number(e.target.value) })} /></label>

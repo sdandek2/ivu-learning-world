@@ -12,7 +12,8 @@ import type { ItemResult } from '../engine/types.ts';
 import { shuffle, shuffleNotIdentity, cx } from '../lib/util.ts';
 import { sounds } from '../lib/sound.ts';
 import { useStore } from '../state/store.tsx';
-import { SpeakButton } from './common.tsx';
+import { SpeakButton, useBuddyVoice } from './common.tsx';
+import { BUDDY_LINES, pick } from '../lib/buddyLines.ts';
 import { selectTeachingContext } from './item-feedback.ts';
 
 const EMOJI = /\p{Extended_Pictographic}(️|‍\p{Extended_Pictographic})*/gu;
@@ -25,15 +26,20 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
   const [finished, setFinished] = useState<null | boolean>(null);
   const [shake, setShake] = useState(0);
   const play = (f: () => void) => { if (settings.sounds) f(); };
+  const say = useBuddyVoice();
 
   const fail = () => {
     const w = wrong + 1;
     setWrong(w);
     setShake((s) => s + 1);
     play(sounds.tryAgain);
-    if (w >= MAX_WRONG) setFinished(false);
+    if (w >= MAX_WRONG) { setFinished(false); say(pick(BUDDY_LINES.showAnswer)); }
+    else say(pick(BUDDY_LINES.tryAgain));
   };
-  const succeed = () => { setFinished(true); play(sounds.correct); };
+  const succeed = () => {
+    setFinished(true); play(sounds.correct);
+    say(pick(wrong === 0 && !usedHint ? BUDDY_LINES.praise : BUDDY_LINES.gotIt));
+  };
   const hint = () => { setUsedHint(true); play(sounds.tap); };
 
   const result: ItemResult = { itemId: item.id, correct: !!finished, wrongTries: wrong, usedHint };
@@ -47,9 +53,9 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
       </div>
       <div key={shake} className={cx('item__body', shake > 0 && finished === null && 'shake')}>
         {item.kind === 'choice' && <Choice item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} seed={seed} />}
-        {item.kind === 'truefalse' && <TrueFalse item={item} disabled={finished !== null} onRight={succeed} onWrong={() => { setWrong(1); setFinished(false); play(sounds.tryAgain); }} />}
+        {item.kind === 'truefalse' && <TrueFalse item={item} disabled={finished !== null} onRight={succeed} onWrong={() => { setWrong(1); setFinished(false); play(sounds.tryAgain); say(pick(BUDDY_LINES.showAnswer)); }} />}
         {item.kind === 'order' && <Order item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} seed={seed} />}
-        {item.kind === 'match' && <Match item={item} disabled={finished !== null} onComplete={(mistakes) => { setWrong(mistakes); setFinished(mistakes <= 1); play(mistakes <= 1 ? sounds.correct : sounds.tryAgain); }} seed={seed} />}
+        {item.kind === 'match' && <Match item={item} disabled={finished !== null} onComplete={(mistakes) => { setWrong(mistakes); setFinished(mistakes <= 1); play(mistakes <= 1 ? sounds.correct : sounds.tryAgain); say(pick(mistakes === 0 ? BUDDY_LINES.praise : mistakes <= 1 ? BUDDY_LINES.gotIt : BUDDY_LINES.showAnswer)); }} seed={seed} />}
         {item.kind === 'count' && <Count item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} />}
       </div>
 

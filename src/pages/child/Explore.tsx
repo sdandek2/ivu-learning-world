@@ -4,7 +4,8 @@ import { navigate } from '../../lib/router.ts';
 import { loadSubject } from '../../curriculum/loader.ts';
 import type { StageId, Subject, World } from '../../curriculum/schema.ts';
 import { WorldArt, Buddy } from '../../ui/WorldArt.tsx';
-import { ErrorBox, Loading, SpeakButton, StageDots, TopBar } from '../../ui/common.tsx';
+import { ErrorBox, Loading, SpeakButton, StageDots, TopBar, useBuddyVoice } from '../../ui/common.tsx';
+import { BUDDY_LINES } from '../../lib/buddyLines.ts';
 import { isUnlocked, openStages, placement, recommend, stageOfSkill, skillIdOf } from '../../engine/adaptive.ts';
 import { isDue } from '../../engine/revision.ts';
 import { cx } from '../../lib/util.ts';
@@ -38,6 +39,8 @@ function greeting() {
 
 export function Universe() {
   const { index, outline, settings, skills } = useStore();
+  const say = useBuddyVoice();
+  const returning = Object.keys(skills).length > 0;
   const recs = useMemo(() => (outline && index ? recommend(outline, settings, skills, { worldOrder: index.worlds.map((w) => w.id) }) : []), [outline, index, settings, skills]);
   if (!index) return <Loading />;
   const hello = `${greeting()}, ${settings.learnerName}!`;
@@ -56,11 +59,11 @@ export function Universe() {
           <p className="owl-hero__sub">Ready for a wonderful adventure?</p>
           <button className="owl-hero__speak" onClick={() => navigate('/explore')} aria-label="Explore learning worlds">Let's explore <span aria-hidden="true">↗</span></button>
         </div>
-        <div className="owl-hero__buddy" aria-label="Buddy the owl, your learning guide">
+        <button type="button" className="owl-hero__buddy" onClick={() => say(returning ? BUDDY_LINES.welcomeBack : BUDDY_LINES.welcome)} aria-label="Buddy the owl, your learning guide. Tap to hear Buddy.">
           <span className="owl-hero__halo" />
           <Buddy size={176} color="#5145B8" accent="#FFD66B" className="bob" />
-          <span className="owl-hero__speech">Hi, explorer!</span>
-        </div>
+          <span className="owl-hero__speech">{returning ? 'Welcome back!' : 'Hi, explorer!'} <span aria-hidden="true">🔊</span></span>
+        </button>
         <div className="owl-hero__ground" aria-hidden="true" />
       </header>
 
@@ -111,6 +114,7 @@ export function ExploreMap() {
       <header className="atlas-hero">
         <Buddy size={92} color="#5145B8" accent="#FFD66B" mood="wow" />
         <div><span className="owl-kicker">BUDDY'S WORLD ATLAS</span><h1>Where shall we go?</h1><p>Every island has something wonderful to discover.</p></div>
+        <SpeakButton text={BUDDY_LINES.atlas.text} small />
       </header>
       <div className="atlas-map">
         <div className="atlas-map__path" aria-hidden="true" />
