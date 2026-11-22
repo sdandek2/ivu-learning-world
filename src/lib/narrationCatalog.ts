@@ -61,14 +61,33 @@ export function renderedCatalog(): NarrationCatalogFile { return rendered; }
 
 const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
 
+/**
+ * Clips that say `text` from one catalogue: the whole text if it is a catalogue line, otherwise
+ * the text split at sentence ends and covered by consecutive catalogue lines (longest first).
+ * That lets screens join prepared lines ("Lesson title. First explanation…", project steps)
+ * and still play every piece in the same prepared voice.
+ */
 function fromCatalog(cat: NarrationCatalogFile, text: string): string[] | null {
+  const lookup = (k: string) => cat.clips[k] ?? cat.clips[k.replace(/[.]$/, '')] ?? cat.clips[k + '.'];
   const t = norm(text);
-  const whole = cat.clips[t] ?? cat.clips[t.replace(/[.]$/, '')];
+  const whole = lookup(t);
   if (whole) return ['./narration/' + whole];
-  const parts = sentences(t);
+  // "Title?." → "Title?" so a question-mark title followed by ". " still splits cleanly.
+  const parts = sentences(t.replace(/\.{2,}/g, '.').replace(/([?!])\.(\s|$)/g, '$1$2'));
   if (parts.length < 2) return null;
-  const urls = parts.map((p) => cat.clips[p] ?? cat.clips[p.replace(/[.]$/, '')]);
-  return urls.every((u): u is string => !!u) ? urls.map((u) => './narration/' + u) : null;
+  const memo = new Map<number, string[] | null>();
+  const cover = (i: number): string[] | null => {
+    if (i === parts.length) return [];
+    if (memo.has(i)) return memo.get(i)!;
+    let found: string[] | null = null;
+    for (let k = parts.length; k > i && !found; k--) {
+      const clip = lookup(parts.slice(i, k).join(' '));
+      if (clip) { const rest = cover(k); if (rest) found = ['./narration/' + clip, ...rest]; }
+    }
+    memo.set(i, found);
+    return found;
+  };
+  return cover(0);
 }
 
 /** Audio for a speakable line, best source first; null when only the device voice can say it. */

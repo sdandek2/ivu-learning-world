@@ -63,8 +63,11 @@ const row = (label: string, ls: NarrationLine[]) => {
 };
 const HEAD = '| | Lines | Human voice | Rendered voice | Device voice |\n|---|---|---|---|---|';
 const KIND_LABEL: Record<Kind, string> = {
-  buddy: "Buddy's lines", prompt: 'Questions and instructions', explanation: 'Lesson explanations', story: 'Stories',
-  example: 'Examples', vocab: 'Vocabulary', thinking: 'Think & talk questions', option: 'Answer choices',
+  buddy: "Buddy's lines", screen: 'Screen guidance (worlds, arena, journey, story maker)', prompt: 'Questions and instructions',
+  title: 'Lesson titles', explanation: 'Lesson explanations', story: 'Stories', example: 'Examples',
+  vocab: 'Vocabulary (word + meaning)', term: 'Vocabulary words on their own', thinking: 'Think & talk questions',
+  speaking: 'Explain-it questions', project: 'Projects and experiments (title, materials, steps)',
+  overview: 'Subject overviews', option: 'Answer choices',
 };
 const distinct = distinctLines(lines);
 const humanPlan = distinct.filter((l) => l.tier === 'human');
@@ -94,7 +97,7 @@ ${row('**All lines**', lines)}
 
 | Plan | Distinct lines | Words | Done |
 |---|---|---|---|
-| Human voice (Buddy + ages 4–6 questions, explanations, stories) | ${n(humanPlan.length)} | ${n(words(humanPlan))} | ${n(humanDone)} recorded (${pct(humanDone, humanPlan.length)}) |
+| Human voice (Buddy, screens + ages 4–6 titles, questions, explanations, stories) | ${n(humanPlan.length)} | ${n(words(humanPlan))} | ${n(humanDone)} recorded (${pct(humanDone, humanPlan.length)}) |
 | Human recording still to do | ${n(humanTodo.length)} | ${n(words(humanTodo))} (≈${Math.round(words(humanTodo) / 150 / 60 * 10) / 10} h at 150 wpm) | — |
 | Rendered voice (everything else) | ${n(distinct.length - humanPlan.length)} | ${n(words(distinct) - words(humanPlan))} | rendered when \`npm run narration:render\` runs |
 

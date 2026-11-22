@@ -13,15 +13,15 @@ Rendered voice in this report: none rendered in this checkout (rendered audio is
 
 | | Lines | Human voice | Rendered voice | Device voice |
 |---|---|---|---|---|
-| **All lines** | 22,559 | 279 (1.2%) | 0 (0.0%) | 98.8% |
+| **All lines** | 31,695 | 311 (1.0%) | 0 (0.0%) | 99.0% |
 
 ## Hybrid plan progress
 
 | Plan | Distinct lines | Words | Done |
 |---|---|---|---|
-| Human voice (Buddy + ages 4–6 questions, explanations, stories) | 2,662 | 40,590 | 12 recorded (0.5%) |
-| Human recording still to do | 2,650 | 40,524 (≈4.5 h at 150 wpm) | — |
-| Rendered voice (everything else) | 17,327 | 148,864 | rendered when `npm run narration:render` runs |
+| Human voice (Buddy, screens + ages 4–6 titles, questions, explanations, stories) | 2,924 | 41,775 | 12 recorded (0.4%) |
+| Human recording still to do | 2,912 | 41,709 (≈4.6 h at 150 wpm) | — |
+| Rendered voice (everything else) | 24,527 | 198,903 | rendered when `npm run narration:render` runs |
 
 IVU Reads recordings: 500 (0 audio files not referenced). IVU narrator recordings: 0.
 
@@ -52,38 +52,44 @@ IVU Reads recordings: 500 (0 audio files not referenced). IVU narrator recording
 | | Lines | Human voice | Rendered voice | Device voice |
 |---|---|---|---|---|
 | Buddy's lines | 17 | 11 (64.7%) | 0 (0.0%) | 35.3% |
+| Screen guidance (worlds, arena, journey, story maker) | 19 | 0 (0.0%) | 0 (0.0%) | 100.0% |
 | Questions and instructions | 5,111 | 0 (0.0%) | 0 (0.0%) | 100.0% |
+| Lesson titles | 730 | 0 (0.0%) | 0 (0.0%) | 100.0% |
 | Lesson explanations | 2,190 | 0 (0.0%) | 0 (0.0%) | 100.0% |
 | Stories | 730 | 1 (0.1%) | 0 (0.0%) | 99.9% |
 | Examples | 1,460 | 2 (0.1%) | 0 (0.0%) | 99.9% |
-| Vocabulary | 2,894 | 0 (0.0%) | 0 (0.0%) | 100.0% |
+| Vocabulary (word + meaning) | 2,894 | 0 (0.0%) | 0 (0.0%) | 100.0% |
+| Vocabulary words on their own | 2,894 | 32 (1.1%) | 0 (0.0%) | 98.9% |
 | Think & talk questions | 1,460 | 0 (0.0%) | 0 (0.0%) | 100.0% |
+| Explain-it questions | 731 | 0 (0.0%) | 0 (0.0%) | 100.0% |
+| Projects and experiments (title, materials, steps) | 4,402 | 0 (0.0%) | 0 (0.0%) | 100.0% |
+| Subject overviews | 360 | 0 (0.0%) | 0 (0.0%) | 100.0% |
 | Answer choices | 8,697 | 265 (3.0%) | 0 (0.0%) | 97.0% |
 
 ## By world
 
 | | Lines | Human voice | Rendered voice | Device voice |
 |---|---|---|---|---|
-| Word Woods | 1,825 | 93 (5.1%) | 0 (0.0%) | 94.9% |
-| Number Mountains | 1,862 | 7 (0.4%) | 0 (0.0%) | 99.6% |
-| Discovery Lab | 1,845 | 29 (1.6%) | 0 (0.0%) | 98.4% |
-| Green Valley | 1,828 | 24 (1.3%) | 0 (0.0%) | 98.7% |
-| Wellness Island | 1,862 | 19 (1.0%) | 0 (0.0%) | 99.0% |
-| Heart Harbor | 1,863 | 5 (0.3%) | 0 (0.0%) | 99.7% |
-| Globe Garden | 1,868 | 16 (0.9%) | 0 (0.0%) | 99.1% |
-| Time Tunnel | 1,862 | 7 (0.4%) | 0 (0.0%) | 99.6% |
-| Heritage Palace | 2,126 | 8 (0.4%) | 0 (0.0%) | 99.6% |
-| Rainbow Studio | 1,851 | 22 (1.2%) | 0 (0.0%) | 98.8% |
-| Tinker Town | 1,866 | 22 (1.2%) | 0 (0.0%) | 98.8% |
-| Mind Galaxy | 1,884 | 16 (0.8%) | 0 (0.0%) | 99.2% |
+| Word Woods | 2,580 | 94 (3.6%) | 0 (0.0%) | 96.4% |
+| Number Mountains | 2,619 | 12 (0.5%) | 0 (0.0%) | 99.5% |
+| Discovery Lab | 2,606 | 34 (1.3%) | 0 (0.0%) | 98.7% |
+| Green Valley | 2,577 | 30 (1.2%) | 0 (0.0%) | 98.8% |
+| Wellness Island | 2,615 | 22 (0.8%) | 0 (0.0%) | 99.2% |
+| Heart Harbor | 2,614 | 7 (0.3%) | 0 (0.0%) | 99.7% |
+| Globe Garden | 2,620 | 18 (0.7%) | 0 (0.0%) | 99.3% |
+| Time Tunnel | 2,613 | 7 (0.3%) | 0 (0.0%) | 99.7% |
+| Heritage Palace | 2,973 | 8 (0.3%) | 0 (0.0%) | 99.7% |
+| Rainbow Studio | 2,602 | 24 (0.9%) | 0 (0.0%) | 99.1% |
+| Tinker Town | 2,617 | 25 (1.0%) | 0 (0.0%) | 99.0% |
+| Mind Galaxy | 2,635 | 19 (0.7%) | 0 (0.0%) | 99.3% |
 
 ## By stage
 
 | | Lines | Human voice | Rendered voice | Device voice |
 |---|---|---|---|---|
-| Ages 4–5 | 3,733 | 104 (2.8%) | 0 (0.0%) | 97.2% |
-| Ages 5–6 | 3,727 | 82 (2.2%) | 0 (0.0%) | 97.8% |
-| Ages 6–7 | 3,743 | 49 (1.3%) | 0 (0.0%) | 98.7% |
-| Ages 7–9 | 3,830 | 13 (0.3%) | 0 (0.0%) | 99.7% |
-| Ages 9–12 | 3,784 | 10 (0.3%) | 0 (0.0%) | 99.7% |
-| Ages 12+ | 3,725 | 10 (0.3%) | 0 (0.0%) | 99.7% |
+| Ages 4–5 | 5,258 | 124 (2.4%) | 0 (0.0%) | 97.6% |
+| Ages 5–6 | 5,229 | 89 (1.7%) | 0 (0.0%) | 98.3% |
+| Ages 6–7 | 5,251 | 52 (1.0%) | 0 (0.0%) | 99.0% |
+| Ages 7–9 | 5,370 | 14 (0.3%) | 0 (0.0%) | 99.7% |
+| Ages 9–12 | 5,317 | 10 (0.2%) | 0 (0.0%) | 99.8% |
+| Ages 12+ | 5,234 | 11 (0.2%) | 0 (0.0%) | 99.8% |
