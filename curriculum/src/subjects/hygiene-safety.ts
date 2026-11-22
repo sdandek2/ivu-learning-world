@@ -305,7 +305,7 @@ export default subject({
           ],
           t: ['Why are landmarks helpful when giving an address?', 'Why is it important to stay on the line?'],
           k: ['Role-play an emergency call with a family member, giving clear information.'],
-          m: ['Emergency Information Sheet', 'paper, pens, family help', 'Write your full address with landmarks | List emergency numbers (112, 1098, family doctor) | Practise a pretend call script | Ask a parent about local first aid courses'],
+          m: ['Emergency Information Sheet', 'paper, pens, family help', 'Write your full address with landmarks | List emergency numbers (112, 1098, family doctor) | Practise a pretend call script | Ask a parent about local first aid courses', "Complete this with a parent or trusted adult. Keep your full address and family contact details private and store the sheet securely; an adult should verify local emergency numbers."],
           q: [
             ch('First check in any emergency:', '*danger to yourself|your phone battery|the time'),
             tf('Learning certified first aid is valuable.', true),
