@@ -346,7 +346,7 @@ export function Journey() {
     <div className="journey">
       <TopBar title="🧭 My Journey" back="/" color="#3FA7A0" />
       <main>
-        <section className="journey__hero"><Buddy size={80} color="#3FA7A0" /><h1>{settings.learnerName}'s Journey</h1></section>
+        <section className="journey__hero"><Buddy size={80} color="#3FA7A0" mood="wow" /><div><span className="journey__eyebrow">YOUR ADVENTURES SO FAR</span><h1>{settings.learnerName}'s Journey</h1><p>Look how much you have discovered. Every little step counts!</p></div><SpeakButton text="Look how much you have discovered. Every little step counts!" small /></section>
         <div className="stats">{stats.map((s) => <div key={s.label} className="stat"><span className="stat__icon" aria-hidden="true">{s.icon}</span><span className="stat__n">{s.n}</span><span className="stat__label">{s.label}</span></div>)}</div>
         {due.length > 0 && (
           <section className="card"><h2>🧠 Time to remember</h2><div className="chips">{due.slice(0, 8).map((s) => <button key={s.skillId} className="chip" onClick={() => navigate(`/revise/${s.lessonId}`)}>{title(s.lessonId)}</button>)}</div></section>
@@ -388,6 +388,7 @@ export function Achievements() {
     <div className="achievements">
       <TopBar title="🏅 Achievements" back="/" color="#F2B134" />
       <main>
+        <header className="achievements__hero"><Buddy size={78} color="#D99A20" accent="#FFE18A" mood="wow" /><div><span className="achievements__eyebrow">YOUR TROPHY SHELF</span><h1>Look what you have earned!</h1><p>Every badge celebrates a step in your learning adventure.</p></div></header>
         <p className="achievements__count">{earned} of {ACHIEVEMENTS.length} badges earned</p>
         <div className="badges">
           {ACHIEVEMENTS.map((a) => {
