@@ -1,5 +1,5 @@
 import '../../styles/parent.css';
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { useStore } from '../../state/store.tsx';
 import { navigate } from '../../lib/router.ts';
 import { MASTERY_STAGES, type MasteryStage, type SkillRecord } from '../../engine/types.ts';
@@ -11,7 +11,8 @@ import { STAGE_IDS, type StageId, type Item } from '../../curriculum/schema.ts';
 import { cx, pct, relativeDay } from '../../lib/util.ts';
 import { backupFileName, createBackup, downloadJSON, parseBackup, restoreBackup, type Backup } from '../../lib/backup.ts';
 import * as db from '../../db/db.ts';
-import { englishVoices } from '../../lib/speech.ts';
+import { englishVoices, readNarrationCoverage, resetNarrationCoverage } from '../../lib/speech.ts';
+import { offlineVoiceStatus, saveVoiceOffline } from '../../lib/narrationCatalog.ts';
 import { IVU_READS_URL, loadLevels, readIvuReadsState, summarise, type IvuReadsSummary } from '../../lib/ivuReads.ts';
 import { PLANNED_LOCALES } from '../../i18n/index.ts';
 import { useSubject } from '../child/Explore.tsx';
@@ -231,6 +232,16 @@ function ProgressPage() {
     <div className="dash">
       <h1>How {settings.learnerName} is learning</h1>
       <p className="muted">Mastery here is never just a quiz score: each skill moves through five stages using accuracy, independence, practice, retention after a gap, and the ability to explain and apply the idea.</p>
+      <section className="pcard parent-mastery-guide">
+        <h2>What these numbers mean</h2>
+        <div className="parent-mastery-guide__grid">
+          <div><strong>Accuracy</strong><p>How often answers are correct, including supported retries.</p></div>
+          <div><strong>Independence</strong><p>How often the learner succeeds on the first try without a hint.</p></div>
+          <div><strong>Retention</strong><p>How well a skill is remembered during a later spaced-revision check.</p></div>
+          <div><strong>Explain and apply</strong><p>Whether the learner can describe an idea and use it in a project or real task.</p></div>
+        </div>
+        <p className="muted small">These are learning signals, not a diagnosis or a comparison with other children. Use them alongside conversation, observation and the child's confidence.</p>
+      </section>
 
       <div className="kpis">
         <Kpi n={all.length} label="skills explored" />
@@ -443,6 +454,52 @@ function ItemList({ items }: { items: Item[] }) {
 
 // ---------------- Settings ----------------
 
+/** What the child has actually heard on this device, and saving the IVU voice for offline use. */
+function VoiceCoverage() {
+  const { settings, index } = useStore();
+  const [c, setC] = useState(() => readNarrationCoverage());
+  const total = c.recorded + c.rendered + c.synth;
+  const top = Object.entries(c.misses).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const refresh = () => setC(readNarrationCoverage());
+  const misses = Object.keys(c.misses).length;
+  const stages = useMemo(() => [...new Set([settings.defaultStage, ...(index?.worlds.flatMap((w) => w.subjects.map((s) => placement(settings, s.id))) ?? [])])], [settings, index]);
+  const [offline, setOffline] = useState<{ saved: number; total: number } | null>(null);
+  const [saving, setSaving] = useState<string | null>(null);
+  useEffect(() => { let live = true; offlineVoiceStatus(stages).then((s) => live && setOffline(s)); return () => { live = false; }; }, [stages]);
+  const stageNames = stages.map((s) => index?.stages.find((x) => x.id === s)?.label ?? s).join(', ');
+  return (
+    <section className="pcard">
+      <div className="pcard__head"><h2>Voice & listening coverage</h2><button className="pbtn" onClick={refresh}>Refresh counts</button></div>
+      <p className="muted small">These are playback events observed on this device, not a measure of how much of the full curriculum has recorded audio. Counts stay in this browser and reset if its site data is cleared.</p>
+      {total === 0 ? <p className="muted small">Nothing has been read aloud on this device yet.</p> : (
+        <>
+          <p>Observed playback: <b>{pct(c.recorded / total)}</b> human recordings ({c.recorded}), <b>{pct(c.rendered / total)}</b> prepared IVU voice ({c.rendered}), and <b>{pct(c.synth / total)}</b> device voice ({c.synth}) across {total} playback events. There are {misses} distinct device-voice lines in the sample.</p>
+          {top.length > 0 && (
+            <>
+              <p className="muted small">Most-heard lines that used the device voice (useful candidates for future recording):</p>
+              <ol className="small">{top.map(([line, n]) => <li key={line}>{line} <span className="muted">×{n}</span></li>)}</ol>
+            </>
+          )}
+          <button className="pbtn" onClick={() => { resetNarrationCoverage(); refresh(); }}>Clear these counts</button>
+        </>
+      )}
+      {offline && offline.total > 0 && (
+        <div className="voice-offline">
+          <p><b>Offline voice</b> for {stageNames}: {offline.saved === offline.total ? 'saved on this device ✓' : `${offline.saved} of ${offline.total} lines saved.`} Lines are also saved automatically the first time they are played.</p>
+          {offline.saved < offline.total && (
+            <button className="pbtn" disabled={!!saving} onClick={async () => {
+              setSaving('Starting…');
+              const r = await saveVoiceOffline(stages, (d, t) => setSaving(`Saving ${d} of ${t}…`));
+              setSaving(r.failed ? `${r.failed} could not be saved — try again when online.` : null);
+              setOffline(await offlineVoiceStatus(stages));
+            }}>{saving ?? 'Save the voice for offline use'}</button>
+          )}
+        </div>
+      )}
+    </section>
+  );
+}
+
 function SettingsPage() {
   const { settings, updateSettings, index, setSubjectStage } = useStore();
   const [voices, setVoices] = useState(englishVoices());
@@ -486,10 +543,11 @@ function SettingsPage() {
           </select>
         </label>
         <label className="pfield"><span>Speaking speed: {settings.speechRate.toFixed(2)}</span><input type="range" min="0.6" max="1.3" step="0.05" value={settings.speechRate} onChange={(e) => updateSettings({ speechRate: Number(e.target.value) })} /></label>
-        <label className="pcheck"><input type="checkbox" checked={settings.recordedVoice} onChange={(e) => updateSettings({ recordedVoice: e.target.checked })} /> Use the IVU Reads recorded voice for letter sounds, words, sentences and stories it has recordings for</label>
+        <label className="pcheck"><input type="checkbox" checked={settings.recordedVoice} onChange={(e) => updateSettings({ recordedVoice: e.target.checked })} /> Use the IVU Reads recorded voice whenever there is a recording (letter sounds, words, stories, and Buddy's praise and encouragement). Other lines use the computer voice above.</label>
         <label className="pcheck"><input type="checkbox" checked={settings.sounds} onChange={(e) => updateSettings({ sounds: e.target.checked })} /> Play feedback sounds</label>
         <label className="pcheck"><input type="checkbox" checked={settings.reducedMotion} onChange={(e) => updateSettings({ reducedMotion: e.target.checked })} /> Reduce motion and animations</label>
       </section>
+      <VoiceCoverage />
       <section className="pcard">
         <h2>Sessions & language</h2>
         <label className="pfield"><span>Suggested session length: {settings.sessionMinutes} minutes</span><input type="range" min="5" max="60" step="5" value={settings.sessionMinutes} onChange={(e) => updateSettings({ sessionMinutes: Number(e.target.value) })} /></label>

@@ -64,6 +64,7 @@ export function Arena() {
   const [worldId, setWorldId] = useState<string | null>(null);
   const [items, setItems] = useState<ArenaItem[] | null>(null);
   const [result, setResult] = useState<number | null>(null);
+  const [questionCount, setQuestionCount] = useState(8);
   const [loading, setLoading] = useState(false);
 
   const start = async (wid: string) => {
@@ -81,7 +82,9 @@ export function Arena() {
       const seen = lessons.filter((l) => stageOfSkill(skills, l.id) > 0);
       for (const l of seen.length ? seen : lessons.slice(0, 1)) for (const it of [...l.activities, ...l.assessment]) pool.push({ ...it, lessonId: l.id });
     }
-    setItems(shuffle(pool).slice(0, 8));
+    const round = shuffle(pool).slice(0, 8);
+    setItems(round);
+    setQuestionCount(round.length);
     setLoading(false);
   };
 
@@ -101,12 +104,19 @@ export function Arena() {
       <TopBar title="⚔️ Challenge Arena" back="/" color="#E0607E" />
       {!worldId && (
         <main className="arena__pick">
-          <div className="arena__hero"><Buddy size={90} color="#E0607E" accent="#FFD166" mood="wow" className="bob" /><div><h1>Ready for a challenge?</h1><p>8 quick questions from things you've learned. How many can you get on the first try?</p></div><SpeakButton text="Ready for a challenge? Pick a world. Eight quick questions from things you have learned." /></div>
-          <button className="arena__all" onClick={() => start('all')}>🌈 Mix of all worlds</button>
+          <div className="arena__hero">
+            <Buddy size={90} color="#E0607E" accent="#FFD166" mood="wow" className="bob" />
+            <div><span className="arena__eyebrow">A MINI LEARNING QUEST</span><h1>Ready for a challenge?</h1><p>Play a short round from worlds you've explored. Every question is a chance to grow.</p></div>
+            <SpeakButton text="Ready for a challenge? Choose a world or try a mix of all your adventures. Every question is a chance to grow." />
+          </div>
+          <button className="arena__all" onClick={() => start('all')}><span aria-hidden="true">🌈</span><span><strong>Surprise me!</strong><small>A little mix from across your worlds</small></span><b aria-hidden="true">→</b></button>
+          <div className="arena__sectionhead"><h2>Choose your world</h2><p>Pick a place you have visited before.</p></div>
           <div className="arena__worlds">
-            {index.worlds.map((w) => (
+            {index.worlds.map((w, i) => (
               <button key={w.id} className="arena__world" onClick={() => start(w.id)} style={{ ['--world' as string]: w.colors.land }}>
-                <WorldArt world={w} className="arena__art" /><span>{w.title}</span>
+                <WorldArt world={w} className="arena__art" />
+                <span className="arena__worldmeta"><strong>{w.title}</strong><small>{w.domain}</small></span>
+                <span className="arena__worldnumber" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
               </button>
             ))}
           </div>
@@ -120,7 +130,7 @@ export function Arena() {
         <main className="lesson-body">
           <section className="card celebrate">
             <Buddy size={100} color="#E0607E" accent="#FFD166" mood="wow" />
-            <h2 className="celebrate__title">{Math.round(result * 8)} out of 8 on the first try!</h2>
+            <h2 className="celebrate__title">{Math.round(result * questionCount)} out of {questionCount} on the first try!</h2>
             <Stars n={result >= 0.99 ? 3 : result >= 0.6 ? 2 : 1} />
             <div className="row"><button className="btn" onClick={() => start(worldId!)}>Play again</button><button className="btn btn--primary btn--big" onClick={() => { setWorldId(null); setResult(null); }}>Pick another →</button></div>
           </section>
@@ -336,7 +346,7 @@ export function Journey() {
     <div className="journey">
       <TopBar title="🧭 My Journey" back="/" color="#3FA7A0" />
       <main>
-        <section className="journey__hero"><Buddy size={80} color="#3FA7A0" /><h1>{settings.learnerName}'s Journey</h1></section>
+        <section className="journey__hero"><Buddy size={80} color="#3FA7A0" mood="wow" /><div><span className="journey__eyebrow">YOUR ADVENTURES SO FAR</span><h1>{settings.learnerName}'s Journey</h1><p>Look how much you have discovered. Every little step counts!</p></div><SpeakButton text="Look how much you have discovered. Every little step counts!" small /></section>
         <div className="stats">{stats.map((s) => <div key={s.label} className="stat"><span className="stat__icon" aria-hidden="true">{s.icon}</span><span className="stat__n">{s.n}</span><span className="stat__label">{s.label}</span></div>)}</div>
         {due.length > 0 && (
           <section className="card"><h2>🧠 Time to remember</h2><div className="chips">{due.slice(0, 8).map((s) => <button key={s.skillId} className="chip" onClick={() => navigate(`/revise/${s.lessonId}`)}>{title(s.lessonId)}</button>)}</div></section>
@@ -378,6 +388,7 @@ export function Achievements() {
     <div className="achievements">
       <TopBar title="🏅 Achievements" back="/" color="#F2B134" />
       <main>
+        <header className="achievements__hero"><Buddy size={78} color="#D99A20" accent="#FFE18A" mood="wow" /><div><span className="achievements__eyebrow">YOUR TROPHY SHELF</span><h1>Look what you have earned!</h1><p>Every badge celebrates a step in your learning adventure.</p></div></header>
         <p className="achievements__count">{earned} of {ACHIEVEMENTS.length} badges earned</p>
         <div className="badges">
           {ACHIEVEMENTS.map((a) => {

@@ -64,12 +64,27 @@ export const CountItemSchema = z.object({
   answer: z.number().int().min(0).max(20),
 });
 
+/** Each object is assigned to exactly one category; UI supports tap-to-assign. */
+export const ClassifyItemSchema = z.object({
+  ...itemBase,
+  kind: z.literal('classify'),
+  categories: z.array(opt).min(2).max(4),
+  items: z.array(z.object({ label: opt, category: z.number().int().nonnegative() })).min(3).max(8),
+}).superRefine((item, ctx) => {
+  item.items.forEach((entry, index) => {
+    if (entry.category >= item.categories.length) ctx.addIssue({ code: 'custom', path: ['items', index, 'category'], message: 'category index out of range' });
+  });
+  if (new Set(item.items.map((entry) => entry.label)).size !== item.items.length) ctx.addIssue({ code: 'custom', path: ['items'], message: 'item labels must be unique' });
+  if (new Set(item.categories).size !== item.categories.length) ctx.addIssue({ code: 'custom', path: ['categories'], message: 'categories must be unique' });
+});
+
 export const ItemSchema = z.discriminatedUnion('kind', [
   ChoiceItemSchema,
   TrueFalseItemSchema,
   OrderItemSchema,
   MatchItemSchema,
   CountItemSchema,
+  ClassifyItemSchema,
 ]);
 export type Item = z.infer<typeof ItemSchema>;
 export type ItemKind = Item['kind'];
@@ -240,6 +255,11 @@ export function semanticCheck(subject: Subject): string[] {
       if (new Set(it.options).size !== it.options.length) problems.push(`${where}: duplicate options`);
     }
     if (it.kind === 'order' && new Set(it.items).size !== it.items.length) problems.push(`${where}: duplicate order items`);
+    if (it.kind === 'classify') {
+      if (it.items.some((entry) => entry.category >= it.categories.length)) problems.push(`${where}: classify category index out of range`);
+      if (new Set(it.items.map((entry) => entry.label)).size !== it.items.length) problems.push(`${where}: duplicate classify items`);
+      if (new Set(it.categories).size !== it.categories.length) problems.push(`${where}: duplicate classify categories`);
+    }
     if (it.kind === 'match') {
       const l = it.pairs.map((p) => p[0]);
       const r = it.pairs.map((p) => p[1]);

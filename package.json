@@ -14,7 +14,11 @@
     "test": "vitest run",
     "e2e": "node scripts/e2e-smoke.mjs",
     "import:ivu-reads": "node scripts/import-ivu-reads.mjs",
-    "audit:curriculum": "node scripts/audit-curriculum-quality.ts"
+    "audit:curriculum": "node scripts/audit-curriculum-quality.ts",
+    "audit:audio": "node scripts/audit-audio-coverage.ts --check --no-rendered",
+    "narration:render": "node scripts/render-narration.ts",
+    "narration:script": "node scripts/audit-audio-coverage.ts --no-rendered --script recording-script.csv",
+    "narration:import": "node scripts/import-recordings.ts"
   },
   "dependencies": {
     "@fontsource-variable/fredoka": "^5.1.1",

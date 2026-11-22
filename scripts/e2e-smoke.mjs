@@ -76,10 +76,10 @@ try {
   console.log('E2E smoke test');
   await step('home opens and Explore shows all 12 worlds', async () => {
     await page.goto(BASE);
-    await page.locator('.universe__hero').waitFor();
-    await page.getByRole('button', { name: /Explore the worlds/ }).click();
-    await page.locator('.island').first().waitFor();
-    const n = await page.locator('.island').count();
+    await page.locator('.owl-hero').waitFor();
+    await page.getByRole('button', { name: /Explore learning worlds/ }).click();
+    await page.locator('.atlas-island').first().waitFor();
+    const n = await page.locator('.atlas-island').count();
     if (n !== 12) throw new Error(`expected 12 worlds, got ${n}`);
     await shot('01-universe');
   });
@@ -90,7 +90,7 @@ try {
   const lesson = subject.stages[0].units[0].lessons[0];
 
   await step('world page shows 5 subjects', async () => {
-    await page.locator('.island', { hasText: firstSubject.world.title }).click();
+    await page.locator('.atlas-island', { hasText: firstSubject.world.title }).click();
     await page.locator('.subjectcard').first().waitFor();
     const n = await page.locator('.subjectcard').count();
     if (n !== 5) throw new Error(`expected 5 subjects, got ${n}`);
@@ -199,14 +199,14 @@ try {
 
   await step('works offline after first load (service worker)', async () => {
     await page.goto(BASE);
-    await page.locator('.universe__hero').waitFor();
+    await page.locator('.owl-hero').waitFor();
     await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error('service worker did not become ready')), 12000))]));
     await page.reload();
     await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error('service worker did not become ready')), 12000))]));
     await context.setOffline(true);
     await page.reload();
-    await page.getByRole('button', { name: /Explore the worlds/ }).click();
-    await page.locator('.island').first().waitFor({ timeout: 8000 });
+    await page.getByRole('button', { name: /Explore learning worlds/ }).click();
+    await page.locator('.atlas-island').first().waitFor({ timeout: 8000 });
     await page.goto(BASE + '#/subject/' + firstSubject.id);
     await page.locator('.unit').first().waitFor({ timeout: 8000 });
     // IVU Reads and its recordings are precached too
@@ -249,9 +249,9 @@ try {
     const m = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
     await m.goto(BASE);
     m.setDefaultTimeout(12000);
-    await m.locator('.universe__hero').waitFor();
-    await m.getByRole('button', { name: /Explore the worlds/ }).click();
-    await m.locator('.island').first().waitFor();
+    await m.locator('.owl-hero').waitFor();
+    await m.getByRole('button', { name: /Explore learning worlds/ }).click();
+    await m.locator('.atlas-island').first().waitFor();
     if (shotDir) await m.screenshot({ path: `${shotDir}/12-mobile.png` });
     await m.close();
   });

@@ -25,8 +25,9 @@ export function loadClips(): Promise<void> {
   return clipLoad;
 }
 
-/** Test hook. */
-export function setClipsForTest(map: Record<string, string> | null): void { clipMap = map; clipLoad = map ? Promise.resolve() : null; }
+/** Installs a clip map directly (tests, and the build-time audio coverage report). */
+export function setClipMap(map: Record<string, string> | null): void { clipMap = map; clipLoad = map ? Promise.resolve() : null; }
+export const setClipsForTest = setClipMap;
 
 const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
 

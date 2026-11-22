@@ -9,9 +9,10 @@ import { useStore } from '../../state/store.tsx';
 import { navigate } from '../../lib/router.ts';
 import { ItemPlayer } from '../../ui/ItemPlayer.tsx';
 import { Buddy } from '../../ui/WorldArt.tsx';
-import { ErrorBox, Loading, SpeakButton, StageDots, Stars, TopBar } from '../../ui/common.tsx';
+import { ErrorBox, Loading, NarrationControl, SpeakButton, StageDots, Stars, TopBar, useBuddyVoice } from '../../ui/common.tsx';
+import { BUDDY_LINES } from '../../lib/buddyLines.ts';
 import { worldById } from './Explore.tsx';
-import { skillIdOf, isUnlocked } from '../../engine/adaptive.ts';
+import { skillIdOf, isUnlocked, placement } from '../../engine/adaptive.ts';
 import { nextStepHint } from '../../engine/mastery.ts';
 import type { ItemResult, Level, MasteryStage } from '../../engine/types.ts';
 import type { ContextNote, Item } from '../../curriculum/schema.ts';
@@ -29,6 +30,8 @@ const STEPS = [
   { id: 'done', label: 'Yay!', icon: '🎉' },
 ] as const;
 type StepId = (typeof STEPS)[number]['id'];
+type AgeBand = 'early' | 'middle' | 'advanced';
+const ageBandOf = (stage: string): AgeBand => stage === 's4' || stage === 's5' ? 'early' : stage === 's6' || stage === 's7' ? 'middle' : 'advanced';
 
 export const CONTEXT_LABEL: Record<ContextNote['kind'], { label: string; icon: string }> = {
   evidence: { label: 'Historical evidence', icon: '🏺' },
@@ -68,13 +71,14 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
   const store = useStore();
   const { ctx, error } = useLesson(lessonId);
   const [step, setStep] = useState<StepId>('learn');
+  const sayBuddy = useBuddyVoice();
   const started = useRef(Date.now());
   const introduced = useRef<string | null>(null);
 
   useEffect(() => { setStep('learn'); started.current = Date.now(); }, [lessonId]);
   useEffect(() => {
-    if (ctx && introduced.current !== lessonId) { introduced.current = lessonId; store.introduce(lessonId); }
-  }, [ctx, lessonId, store]);
+    if (ctx && introduced.current !== lessonId) { introduced.current = lessonId; store.introduce(lessonId); sayBuddy(BUDDY_LINES.lessonIntro); }
+  }, [ctx, lessonId, store, sayBuddy]);
   useEffect(() => () => stopSpeaking(), [step]);
 
   if (error) return <ErrorBox error={error} />;
@@ -87,13 +91,27 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
   const next = () => go(STEPS[Math.min(stepIdx + 1, STEPS.length - 1)].id);
   const nextLesson = siblings[index + 1];
   const locked = !isUnlocked(lesson, store.skills);
+  const selectedStage = placement(store.settings, subject.id);
+  const ageBand = ageBandOf(selectedStage);
 
   return (
-    <div className="studio-lesson" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
-      <TopBar title={<span className="lesson-title">{lesson.title}</span>} back={`/subject/${subject.id}`} color={w.colors.land} />
-      <nav className="steps" aria-label="Lesson steps">
+    <div className={`studio-lesson studio-lesson--${ageBand}`} data-age-band={ageBand} style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
+      <TopBar title={<span className="lesson-title">{lesson.title}</span>} back={`/subject/${subject.id}`} color={w.colors.land} right={<NarrationControl />} />
+      <header className="lesson-welcome">
+        <Buddy size={76} color={w.colors.land} accent={w.colors.accent} mood="happy" />
+        <div className="lesson-welcome__copy">
+          <span className="owl-kicker">{subject.title} · {ageBand === 'early' ? 'LET’S EXPLORE' : ageBand === 'middle' ? 'YOUR ADVENTURE' : 'CHALLENGE YOURSELF'}</span>
+          <h1>{lesson.title}</h1>
+          <p>{ageBand === 'early' ? "Let’s explore together!" : lesson.explanation[0]}</p>
+        </div>
+        <SpeakButton text={`${lesson.title}. ${lesson.explanation[0]}`} small />
+      </header>
+      <nav className="steps steps--adventure" aria-label="Lesson journey">
+        <div className="steps__track" role="progressbar" aria-label="Lesson progress" aria-valuemin={0} aria-valuemax={STEPS.length - 1} aria-valuenow={stepIdx}>
+          <span style={{ width: `${(stepIdx / (STEPS.length - 1)) * 100}%` }} />
+        </div>
         {STEPS.map((s, i) => (
-          <button key={s.id} className={cx('step', s.id === step && 'is-active', i < stepIdx && 'is-done')} onClick={() => go(s.id)} aria-current={s.id === step ? 'step' : undefined}>
+          <button key={s.id} className={cx('step', s.id === step && 'is-active', i < stepIdx && 'is-done')} onClick={() => go(s.id)} aria-label={`${s.label}${i < stepIdx ? ', completed' : s.id === step ? ', current step' : ''}`} aria-current={s.id === step ? 'step' : undefined}>
             <span className="step__icon" aria-hidden="true">{i < stepIdx ? '✓' : s.icon}</span><span className="step__label">{s.label}</span>
           </button>
         ))}
@@ -101,19 +119,12 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
       {locked && step === 'learn' && <p className="notice">🔒 This lesson builds on “{lesson.prerequisites[0]}”. You can look around, but it's best to finish the earlier lesson first.</p>}
 
       <main className="lesson-body">
-        {step === 'learn' && <LearnStep ctx={ctx} onNext={next} />}
-        {step === 'story' && (
-          <section className="card storycard">
-            <h2>📖 {lesson.story.title}</h2>
-            <SpeakButton text={`${lesson.story.title}. ${lesson.story.text}`} label="Read me the story" auto />
-            <p className="storycard__text">{lesson.story.text}</p>
-            <button className="btn btn--primary btn--big" onClick={next}>Let's play →</button>
-          </section>
-        )}
-        {step === 'play' && <ItemsRun key="play" items={lesson.activities} mode="practice" teachingContext={lesson.explanation} onFinish={async (r) => { await store.practice(lesson.id, r); next(); }} />}
+        {step === 'learn' && <LearnStep ctx={ctx} ageBand={ageBand} onNext={next} />}
+        {step === 'story' && <StoryStep title={lesson.story.title} text={lesson.story.text} ageBand={ageBand} onNext={next} />}
+        {step === 'play' && <ItemsRun key="play" items={lesson.activities} mode="practice" ageBand={ageBand} teachingContext={lesson.explanation} onFinish={async (r) => { await store.practice(lesson.id, r); next(); }} />}
         {step === 'think' && <ThinkStep lessonId={lesson.id} thinking={lesson.thinking} speaking={lesson.speaking} onNext={next} />}
         {step === 'make' && <MakeStep lessonId={lesson.id} project={lesson.project} onNext={next} />}
-        {step === 'check' && <ItemsRun key="check" items={lesson.assessment} mode="assess" teachingContext={lesson.explanation} onFinish={async (r) => {
+        {step === 'check' && <ItemsRun key="check" items={lesson.assessment} mode="assess" ageBand={ageBand} teachingContext={lesson.explanation} onFinish={async (r) => {
           await store.assess(lesson.id, r, unit.revision.intervalsDays);
           await store.completeLesson(lesson.id, Math.round((Date.now() - started.current) / 1000));
           next();
@@ -133,7 +144,73 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
   );
 }
 
-function LearnStep({ ctx, onNext }: { ctx: LessonContext; onNext: () => void }) {
+
+export function StoryStep({ title, text, ageBand, onNext }: { title: string; text: string; ageBand: AgeBand; onNext: () => void }) {
+  const [showText, setShowText] = useState(ageBand !== 'early');
+  const [listened, setListened] = useState(false);
+  const [recallOpen, setRecallOpen] = useState(false);
+  return (
+    <section className={cx('card storycard', 'storycard--listening', !showText && 'storycard--listen-first')} data-age-band={ageBand}>
+      <h2>📖 {title}</h2>
+      <p className="storycard__listen-prompt">{ageBand === 'early' ? 'Let’s listen to Buddy’s story together.' : 'Listen carefully. What details can you remember?'}</p>
+      <SpeakButton text={title + '. ' + text} label={listened ? 'Listen again' : 'Listen to the story'} auto />
+      <button className="btn btn--ghost storycard__text-toggle" onClick={() => { setShowText((v) => !v); setListened(true); }} aria-expanded={showText}>
+        {showText ? 'Hide the story text' : 'Show the story text'}
+      </button>
+      {showText && <p className="storycard__text">{text}</p>}
+      {!showText && <p className="storycard__listen-hint" role="status">You can listen again or reveal the words whenever you’re ready.</p>}
+      <button type="button" className="btn btn--ghost" onClick={() => { setListened(true); setRecallOpen((v) => !v); }} aria-expanded={recallOpen}>{recallOpen ? 'Hide listening reflection' : 'I’ve listened — let’s remember'}</button>
+      {recallOpen && (
+        <div className="storycard__recall" aria-live="polite">
+          <h3>{ageBand === 'early' ? 'Tell Buddy what you remember' : 'Pause and recall'}</h3>
+          <p>What happened in the story?</p>
+          <p>Can you remember one detail, character or event?</p>
+          <p className="storycard__listen-hint">There is no score here. Retell it in your own words, and look back at the story if you need help.</p>
+        </div>
+      )}
+      <button className="btn btn--primary btn--big" onClick={onNext}>Let’s play →</button>
+    </section>
+  );
+}
+
+
+/** Gentle, non-scored word rehearsal using the lesson's own vocabulary and narration catalogue. */
+export function PhonicsWordPractice({ vocabulary, ageBand }: { vocabulary: LessonContext['lesson']['vocabulary']; ageBand: AgeBand }) {
+  const [revealed, setRevealed] = useState<string[]>(ageBand !== 'early' ? vocabulary.map((v) => v.term) : []);
+  const [tried, setTried] = useState<string[]>([]);
+  const toggle = (term: string) => setRevealed((old) => old.includes(term) ? old.filter((x) => x !== term) : [...old, term]);
+  return (
+    <section className="phonics-practice" aria-labelledby="phonics-practice-title" data-age-band={ageBand}>
+      <div className="phonics-practice__head">
+        <span aria-hidden="true">🔤</span>
+        <div><h3 id="phonics-practice-title">Sound & word practice</h3><p>{ageBand === 'early' ? 'Listen to a word, say it together, then peek at what it means.' : 'Listen, say the word aloud, then check its meaning.'}</p></div>
+      </div>
+      <div className="phonics-practice__words">
+        {vocabulary.map((v) => {
+          const isOpen = revealed.includes(v.term);
+          const didTry = tried.includes(v.term);
+          return (
+            <article className="phonics-practice__word" key={v.term}>
+              <div className="phonics-practice__wordtop">
+                <strong>{isOpen ? v.term : 'A word to discover'}</strong>
+                <SpeakButton text={v.term} label="Listen to the word" small />
+              </div>
+              {isOpen ? <p>{v.meaning}</p> : <p className="phonics-practice__concealed">Listen first, then reveal the word.</p>}
+              <div className="phonics-practice__actions">
+                <button type="button" className="btn btn--ghost" onClick={() => toggle(v.term)}>{isOpen ? 'Hide meaning' : 'Reveal word & meaning'}</button>
+                <button type="button" className={cx('btn', didTry && 'is-selected')} onClick={() => setTried((old) => didTry ? old.filter((x) => x !== v.term) : [...old, v.term])} aria-pressed={didTry}>{didTry ? '✓ Practised' : 'I said it'}</button>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+      <p className="phonics-practice__note">This is a practice reminder, not a scored reading test. A grown-up can listen and help with any tricky sounds.</p>
+    </section>
+  );
+}
+
+
+function LearnStep({ ctx, ageBand, onNext }: { ctx: LessonContext; ageBand: AgeBand; onNext: () => void }) {
   const { lesson } = ctx;
   const [page, setPage] = useState(0);
   const pages = lesson.explanation;
@@ -160,10 +237,14 @@ function LearnStep({ ctx, onNext }: { ctx: LessonContext; onNext: () => void }) 
             {lesson.vocabulary.map((v) => (
               <div key={v.term} className="vocab__card">
                 <strong>{v.term}</strong><span>{v.meaning}</span>
-                <SpeakButton text={`${v.term}. ${v.meaning}`} small />
+                <div className="vocab__audio">
+                  <SpeakButton text={v.term} label="Hear the word" small />
+                  <SpeakButton text={`${v.term}. ${v.meaning}`} label="Hear the meaning" small />
+                </div>
               </div>
             ))}
           </div>
+          {ctx.subject.id === 'phonics' && <PhonicsWordPractice vocabulary={lesson.vocabulary} ageBand={ageBand} />}
           <h3 className="mini-title">For example</h3>
           <ul className="examples">{lesson.examples.map((x) => <li key={x}>{x} <SpeakButton text={x} small /></li>)}</ul>
           <details className="for-grownups">
@@ -180,22 +261,28 @@ function LearnStep({ ctx, onNext }: { ctx: LessonContext; onNext: () => void }) 
 }
 
 /** Runs a list of items one after another and reports all results. */
-export function ItemsRun({ items, mode, onFinish, title, teachingContext = [] }: { items: Item[]; mode: 'practice' | 'assess'; onFinish: (r: ItemResult[]) => void | Promise<void>; title?: string; teachingContext?: string[] }) {
+export function ItemsRun({ items, mode, onFinish, title, teachingContext = [], ageBand = 'middle' }: { items: Item[]; mode: 'practice' | 'assess'; onFinish: (r: ItemResult[]) => void | Promise<void>; title?: string; teachingContext?: string[]; ageBand?: AgeBand }) {
   const [i, setI] = useState(0);
   const [results, setResults] = useState<ItemResult[]>([]);
   const [busy, setBusy] = useState(false);
   const seed = useMemo(() => Math.floor(Math.random() * 1e6), []);
   const item = items[i];
   return (
-    <section className={cx('card itemsrun', mode === 'assess' && 'itemsrun--check')}>
+    <section className={cx('card itemsrun', mode === 'assess' && 'itemsrun--check', `itemsrun--${ageBand}`)} data-age-band={ageBand}>
       <div className="itemsrun__head">
-        <h2>{title ?? (mode === 'assess' ? '✅ Show what you know' : '🎮 Let\'s play')}</h2>
-        <span className="itemsrun__count">{Math.min(i + 1, items.length)} / {items.length}</span>
+        <div className="itemsrun__heading">
+          <span className="itemsrun__eyebrow">{mode === 'assess' ? 'A LITTLE CHECK-IN' : 'BUDDY’S PLAY TIME'}</span>
+          <h2>{title ?? (mode === 'assess' ? '✅ Show what you know' : '🎮 Let\'s play')}</h2>
+        </div>
+        <span className="itemsrun__count" aria-live="polite">✨ {Math.min(i + 1, items.length)} of {items.length}</span>
       </div>
-      <div className="progressbar"><span style={{ width: `${(i / items.length) * 100}%` }} /></div>
+      <div className="itemsrun__progress" role="progressbar" aria-label="Activity progress" aria-valuemin={0} aria-valuemax={items.length} aria-valuenow={i}>
+        <span style={{ width: `${(i / items.length) * 100}%` }} />
+      </div>
+      <p className="itemsrun__encouragement">{mode === 'assess' ? 'Take your time. You can do this!' : 'Try it, explore, and have fun. Every try helps you learn.'}</p>
       {mode === 'assess' && i === 0 && <p className="itemsrun__note">Try these by yourself — no hints this time. It's okay to get some wrong; that's how we learn!</p>}
       {item && !busy && (
-        <ItemPlayer key={item.id} item={item} allowHints={mode === 'practice'} seed={seed + i} teachingContext={teachingContext} onDone={async (r) => {
+        <ItemPlayer key={item.id} item={item} allowHints={mode === 'practice'} ageBand={ageBand} seed={seed + i} teachingContext={teachingContext} onDone={async (r) => {
           const all = [...results, r];
           setResults(all);
           if (i + 1 < items.length) setI(i + 1);
@@ -267,7 +354,12 @@ function MakeStep({ lessonId, project, onNext }: { lessonId: string; project: Le
 
 function Celebrate({ stage, hint, score, onNext, nextLabel, color, accent }: { stage: MasteryStage; hint: string; score: number; onNext: () => void; nextLabel: string; color: string; accent: string }) {
   const { settings } = useStore();
-  useEffect(() => { if (settings.sounds) sounds.celebrate(); }, [settings.sounds]);
+  const say = useBuddyVoice();
+  useEffect(() => {
+    if (settings.sounds) sounds.celebrate();
+    const t = setTimeout(() => say(BUDDY_LINES.lessonDone), 700); // after the fanfare, in the recorded voice
+    return () => clearTimeout(t);
+  }, []); // once, when the celebration opens
   const stars = score >= 0.99 ? 3 : score >= 0.66 ? 2 : 1;
   const confetti = useMemo(() => shuffle(['🎉', '⭐', '🌟', '✨', '🎈', '💫', '🎊', '⭐']), []);
   return (
@@ -278,7 +370,7 @@ function Celebrate({ stage, hint, score, onNext, nextLabel, color, accent }: { s
       <Stars n={stars} />
       <div className="celebrate__stage"><StageDots stage={stage} /></div>
       <p className="celebrate__hint">{hint}</p>
-      <SpeakButton text={`You did it, ${settings.learnerName}! You earned ${stars} stars.`} auto />
+      <SpeakButton text={BUDDY_LINES.lessonDone.text} label="Hear Buddy" />
       <button className="btn btn--primary btn--big" onClick={onNext}>{nextLabel} →</button>
     </section>
   );
@@ -293,12 +385,13 @@ export function RevisePage({ lessonId }: { lessonId: string }) {
   if (error) return <ErrorBox error={error} />;
   if (!ctx || !store.index) return <Loading />;
   const w = worldById(store.index.worlds, ctx.subject.worldId)!;
+  const ageBand = ageBandOf(placement(store.settings, ctx.subject.id));
   return (
     <div className="studio-lesson" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
-      <TopBar title={<>🧠 Remember: {ctx.lesson.title}</>} back="/" color={w.colors.land} />
+      <TopBar title={<>🧠 Remember: {ctx.lesson.title}</>} back="/" color={w.colors.land} right={<NarrationControl />} />
       <main className="lesson-body">
         {done === null ? (
-          <ItemsRun items={items} mode="assess" title="🧠 Do you remember?" teachingContext={ctx.lesson.explanation} onFinish={async (r) => {
+          <ItemsRun items={items} mode="assess" ageBand={ageBand} title="🧠 Do you remember?" teachingContext={ctx.lesson.explanation} onFinish={async (r) => {
             await store.revise(lessonId, r, ctx.unit.revision.intervalsDays);
             setDone(r.filter((x) => x.correct && x.wrongTries === 0).length / r.length);
           }} />
