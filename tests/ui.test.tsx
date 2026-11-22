@@ -27,8 +27,8 @@ describe('ItemPlayer', () => {
   it('records hint use', () => {
     const item: Item = { id: 'x.a3', kind: 'count', prompt: 'How many? 🍎🍎', answer: 2 };
     const done = vi.fn();
-    render(<ItemPlayer item={item} onDone={done} />);
-    fireEvent.click(screen.getByRole('button', { name: /hint/i }));
+    render(<ItemPlayer item={item} ageBand="early" onDone={done} />);
+    fireEvent.click(screen.getByRole('button', { name: /Let Buddy help/i }));
     fireEvent.click(screen.getByRole('button', { name: '2' }));
     fireEvent.click(screen.getByRole('button', { name: /Next/ }));
     expect(done).toHaveBeenCalledWith({ itemId: 'x.a3', correct: true, wrongTries: 0, usedHint: true });
@@ -79,7 +79,7 @@ describe('story listening reflection', () => {
   it('offers open-ended recall without creating a scored result', async () => {
     const { StoryStep } = await import('../src/pages/child/LessonStudio.tsx');
     render(<StoryStep title="A small story" text="A character goes on an adventure and finds a friend." ageBand="early" onNext={vi.fn()} />);
-    fireEvent.click(screen.getByRole('button', { name: /I've listened — let's remember/i }));
+    fireEvent.click(screen.getByRole('button', { name: /listened.*let’s remember/i }));
     expect(screen.getByText('What happened in the story?')).toBeTruthy();
     expect(screen.getByText(/There is no score here/)).toBeTruthy();
   });
