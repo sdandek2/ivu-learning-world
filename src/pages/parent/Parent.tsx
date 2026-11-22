@@ -78,7 +78,7 @@ function ParentShell({ active, children }: { active: string; children: ReactNode
     <div className="parent">
       <header className="pheader">
         <div className="pheader__brand"><span className="pheader__logo">IVU</span><span>Parent Area · {settings.learnerName}</span></div>
-        <nav className="pnav">{links.map(([id, label]) => <button key={id} className={cx('pnav__link', active === id && 'is-active')} onClick={() => navigate(`/parent/${id}`)}>{label}</button>)}</nav>
+        <nav className="pnav" aria-label="Parent navigation">{links.map(([id, label]) => <button key={id} className={cx('pnav__link', active === id && 'is-active')} aria-current={active === id ? 'page' : undefined} onClick={() => navigate(`/parent/${id}`)}>{label}</button>)}</nav>
         <button className="pbtn" onClick={() => { lockParent(); navigate('/'); }}>Exit to child view</button>
       </header>
       <main className="pmain">{children}</main>
@@ -105,6 +105,7 @@ export function ParentArea({ section, arg }: { section: string; arg?: string }) 
 
 function OverviewPage() {
   const { index, skills, log, settings, artCount } = useStore();
+  const title = useLessonTitles();
   const started = Object.values(skills).filter((s) => s.stage > 0);
   const due = dueSkills(Object.values(skills));
   const weekSeconds = log.filter((l) => l.type === 'lesson-complete' && l.at > Date.now() - 7 * DAY).reduce((n, l) => n + (l.seconds ?? 0), 0);
@@ -138,8 +139,8 @@ function OverviewPage() {
           <h2>A gentle next step</h2>
           {next ? (
             <>
-              <p><b>{next.lessonId}</b> is currently at <b>{MASTERY_STAGES[next.stage as MasteryStage]}</b>. Revisit the lesson or use the progress view to see the evidence behind its stage.</p>
-              <button className="pbtn pbtn--primary" onClick={() => navigate('/lesson/' + next.lessonId)}>Open learning activity</button>
+              <p><b>{title(next.lessonId)}</b> is currently at <b>{MASTERY_STAGES[next.stage as MasteryStage]}</b>. Review its evidence and decide whether a revisit or a new challenge would help.</p>
+              <button className="pbtn pbtn--primary" onClick={() => navigate('/parent/progress')}>Review learning evidence</button>
             </>
           ) : <p>When a first lesson is explored, a suggested next step will appear here.</p>}
         </section>
