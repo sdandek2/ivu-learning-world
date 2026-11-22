@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['Why start with empathy?', 'Is a product that lasts longer more sustainable?'],
           k: ['Pitch your design solution to a panel.'],
-          m: ['Design Challenge', 'recycled materials, notebook, a real user to interview', 'Interview a user about a daily problem | Define the problem and sketch at least eight ideas | Build and test a prototype | Improve it and present a design journal'],
+          m: ['Design Challenge', 'recycled materials, notebook, a real user to interview', 'Interview a user about a daily problem | Define the problem and sketch at least eight ideas | Build and test a prototype | Improve it and present a design journal', "Ask permission before interviewing a user, explain how their feedback will be used, and do not record private details. Use safe, non-toxic materials for prototypes and supervise tools."],
           q: [
             ch('Understanding users\' needs is…', '*empathising|ideating|testing'),
             tf('Designers ask whether products can be repaired.', true),
