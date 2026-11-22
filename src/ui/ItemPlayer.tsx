@@ -19,7 +19,7 @@ import { selectTeachingContext } from './item-feedback.ts';
 const EMOJI = /\p{Extended_Pictographic}(️|‍\p{Extended_Pictographic})*/gu;
 const MAX_WRONG = 2;
 
-export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingContext = [] }: { item: Item; onDone: (r: ItemResult) => void; allowHints?: boolean; seed?: number; teachingContext?: string[] }) {
+export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingContext = [], ageBand = 'middle' }: { item: Item; onDone: (r: ItemResult) => void; allowHints?: boolean; seed?: number; teachingContext?: string[]; ageBand?: 'early' | 'middle' | 'advanced' }) {
   const { settings } = useStore();
   const [wrong, setWrong] = useState(0);
   const [usedHint, setUsedHint] = useState(false);
@@ -44,9 +44,12 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
 
   const result: ItemResult = { itemId: item.id, correct: !!finished, wrongTries: wrong, usedHint };
   const lessonFeedback = useMemo(() => selectTeachingContext(item, teachingContext), [item, teachingContext]);
+  const hintCopy: Partial<Record<Item['kind'], string>> = { choice: 'Look at each answer carefully. Which one matches what Buddy taught you?', order: 'Think about what happens first. Build the sequence one step at a time.', match: 'Look for a connection between the two things. Say each pair aloud.', count: 'Touch each picture once as you count. Keep track as you go.', classify: 'Think about what the items in each group have in common.' };
+  const canHint = allowHints && item.kind !== 'truefalse';
+  const showHintButton = canHint && !usedHint && (ageBand === 'early' || wrong > 0);
 
   return (
-    <div className="item" data-kind={item.kind}>
+    <div className={cx('item', `item--${ageBand}`)} data-kind={item.kind} data-age-band={ageBand}>
       <div className="item__prompt">
         <div className="item__prompt-copy">
           <span className="item__kind">{({ choice: 'PICK AN ANSWER', truefalse: 'TRUE OR FALSE', order: 'PUT IN ORDER', match: 'FIND THE PAIRS', count: 'COUNT TOGETHER', classify: 'SORT INTO GROUPS' })[item.kind]}</span>
@@ -64,9 +67,14 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
       </div>
 
       {finished === null && wrong > 0 && <p className="item__nudge" role="status">Not quite — try again! {allowHints && !usedHint && item.kind !== 'truefalse' && item.kind !== 'match' ? 'You can ask for a hint.' : ''}</p>}
-      {finished === null && allowHints && !usedHint && (item.kind === 'choice' || item.kind === 'order' || item.kind === 'count') && (
-        <button className="btn btn--ghost item__hint" onClick={hint}>💡 Ask Buddy for a hint</button>
+      {finished === null && showHintButton && (
+        <div className="item__hint-wrap">
+          <button className="btn btn--ghost item__hint" onClick={hint}>💡 {ageBand === 'early' ? 'Let Buddy help' : 'Ask Buddy for a hint'}</button>
+          {usedHint && hintCopy[item.kind] && <p className="item__hint-copy" role="status">{hintCopy[item.kind]}</p>}
+        </div>
       )}
+
+      {ageBand === 'early' && finished === null && <p className="item__coach" aria-live="polite">One little step at a time. You can do it!</p>}
 
       {finished !== null && (
         <div className={cx('item__feedback', finished ? 'is-right' : 'is-shown')} role="status">
