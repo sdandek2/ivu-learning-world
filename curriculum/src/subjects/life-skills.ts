@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why should grown-ups help with knives and stoves?', 'What other simple snack could you make?'],
           k: ['Explain your recipe to someone step by step.'],
-          m: ['Make and Share a Snack', 'fruits or bread and spread, a safe knife, a bowl, an adult', 'Choose a simple recipe | Gather ingredients | Make it with an adult supervising | Serve it to your family and clean up'],
+          m: ['Make and Share a Snack', 'fruits or bread and spread, a safe knife, a bowl, an adult', 'Choose a simple recipe | Gather ingredients | Make it with an adult supervising | Serve it to your family and clean up', "An adult must handle the knife and supervise food preparation. Wash fruit and hands first, check for food allergies and choking hazards, and keep raw foods separate from ready-to-eat foods."],
           q: [
             ch('First step in cooking:', '*wash your hands|eat the ingredients|turn on the stove alone'),
             tf('Fruit peels go in the wet-waste bin.', true),
