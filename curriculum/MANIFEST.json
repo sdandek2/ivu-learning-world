@@ -1,13 +1,13 @@
 {
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:35:29.482Z",
+ "generatedAt": "2026-11-22T12:37:41.060Z",
  "totals": {
-  "units": 657,
-  "lessons": 657,
-  "items": 4600,
-  "subjectsComplete": 54,
+  "units": 669,
+  "lessons": 669,
+  "items": 4684,
+  "subjectsComplete": 55,
   "subjectsInvalid": 0,
-  "subjectsRemaining": 6
+  "subjectsRemaining": 5
  },
  "subjects": [
   {
@@ -1903,11 +1903,36 @@
   {
    "subject": "digital",
    "world": "tinker-town",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
