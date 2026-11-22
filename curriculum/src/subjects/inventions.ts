@@ -58,7 +58,7 @@ export default subject({
           ],
           t: ['Is everything better after an invention? What might be lost?', 'Which invention do you think saved the most time?'],
           k: ['Interview a grandparent about one invention that changed their life and tell someone.'],
-          m: ['Before-and-After Picture Book', 'paper, crayons, an interview with an elder', 'Ask an elder about three chores long ago | Draw "before" and "after" pictures for each | Write or say one sentence for each | Share the book with the elder'],
+          m: ['Before-and-After Picture Book', 'paper, crayons, an interview with an elder', 'Ask an elder about three chores long ago | Draw "before" and "after" pictures for each | Write or say one sentence for each | Share the book with the elder', "Ask permission before interviewing an elder. They may skip any question; do not record or share private family details without consent."],
           q: [
             ch('Which replaced carrying water from wells?', '*taps|bicycles|radios'),
             tf('Inventions change how people live.', true),
@@ -314,7 +314,7 @@ export default subject({
           ],
           t: ['Who benefits from digital payments, and who might be left out?', 'How should privacy be protected in digital systems?'],
           k: ['Debate the benefits and risks of digital public infrastructure.'],
-          m: ['Digital Inclusion Survey', 'questionnaire, notebook, consent', 'Survey 10 people of different ages about digital payments and phone use | Analyse who uses them and who doesn\'t | Identify barriers | Propose solutions'],
+          m: ['Digital Inclusion Survey', 'questionnaire, notebook, consent', 'Survey 10 people of different ages about digital payments and phone use | Analyse who uses them and who doesn\'t | Identify barriers | Propose solutions', "Ask permission before surveying people, keep responses anonymous, and do not ask for account numbers, balances, PINs, passwords or other financial details."],
           q: [
             ch('Microchips contain many…', '*transistors|engines|batteries the size of cars'),
             tf('The Supreme Court recognised privacy as a fundamental right in 2017.', true),
@@ -378,7 +378,7 @@ export default subject({
           ],
           t: ['Which global challenge would you most like to solve?', 'Why do designs fail when users aren\'t involved?'],
           k: ['Pitch your prototype to a panel of family members and respond to feedback.'],
-          m: ['Design Thinking Innovation Project', 'notebook, materials for a prototype, potential users to interview', 'Interview at least three people about a real problem | Define the problem and brainstorm 10 ideas | Build and test a prototype | Iterate and present your final design with evidence from testing'],
+          m: ['Design Thinking Innovation Project', 'notebook, materials for a prototype, potential users to interview', 'Interview at least three people about a real problem | Define the problem and brainstorm 10 ideas | Build and test a prototype | Iterate and present your final design with evidence from testing', "Obtain consent before interviewing potential users. Do not collect private information, explain how feedback will be used, and test prototypes safely with adult supervision."],
           q: [
             ch('The first step of design thinking is to…', '*empathise with users|build immediately|sell the product'),
             tf('Iteration means repeating and improving.', true),
