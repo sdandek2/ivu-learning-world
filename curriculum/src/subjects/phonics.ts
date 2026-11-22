@@ -147,7 +147,7 @@ export default subject({
           ],
           t: ['What do you think Ivu did after eating the hot bun?', 'Why do we point to each word when we read?'],
           k: ['Read a short story to a grown-up, then ask them a question about it.'],
-          m: ['My First Little Book', 'paper, crayons, stapler', 'Fold two sheets into a little book | Write one short sentence on each page, like "The cat sat on a mat." | Draw a picture for each page | Read your book to your family'],
+          m: ['My First Little Book', 'paper, crayons, stapler', 'Fold two sheets into a little book | Write one short sentence on each page, like "The cat sat on a mat." | Draw a picture for each page | Read your book to your family', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from young children."],
           q: [
             ch('In "Ivu and the Red Car", what did Ivu eat?', '*a hot bun|a fish|an egg'),
             ch('Which word starts a sentence with a capital letter?', '*The|the|cat'),
@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['Why might an author choose compare–contrast instead of cause–effect for the same topic?', 'How can text features sometimes mislead a reader (e.g. a dramatic photo)?'],
           k: ['Explain to someone how you would find one fact in a non-fiction book in under two minutes.'],
-          m: ['Make a Mini Information Book', 'paper, stapler, pencils, reference books', 'Choose a topic you know well | Plan sections with headings | Use at least two structures (e.g. sequence and compare–contrast) | Add captions, a glossary and a contents page | Ask a reader to find a fact using your features'],
+          m: ['Make a Mini Information Book', 'paper, stapler, pencils, reference books', 'Choose a topic you know well | Plan sections with headings | Use at least two structures (e.g. sequence and compare–contrast) | Add captions, a glossary and a contents page | Ask a reader to find a fact using your features', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('"Water heats, then evaporates, then forms clouds." Structure?', '*sequence|problem–solution|compare–contrast'),
             ch('Which signal word suggests cause and effect?', 'similarly|*therefore|first'),
