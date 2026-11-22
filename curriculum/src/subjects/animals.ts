@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['How can we tell if an animal is happy or scared?', 'Why shouldn\'t we feed wild animals junk food?'],
           k: ['Explain to a grown-up three ways to be kind to animals.'],
-          m: ['Bird Water Station', 'a shallow dish, water, a few pebbles, a shady spot', 'Place pebbles in a shallow dish so small birds can stand | Fill with clean water | Put it in a shady, safe spot | Refill daily and draw the visitors you see'],
+          m: ['Bird Water Station', 'a shallow dish, water, a few pebbles, a shady spot', 'Place pebbles in a shallow dish so small birds can stand | Fill with clean water | Put it in a shady, safe spot | Refill daily and draw the visitors you see', "Use a shallow, stable dish and place it where children cannot trip over it. Clean and refill it regularly; watch birds from a distance and do not handle them."],
           q: [
             ch('Which is kind?', '*giving a dog fresh water|chasing birds|throwing stones'),
             tf('Wild animals should be watched from a distance.', true),
@@ -306,7 +306,7 @@ export default subject({
           ],
           t: ['Why do people often fear spiders and insects even though most are harmless?', 'What would happen without decomposers?'],
           k: ['Explain to someone why insects matter for the food we eat.'],
-          m: ['Minibeast Survey', 'a magnifying glass, a white tray, a quadrat (1 m² marked with string), notebook', 'Mark a square metre in a garden or park | Gently search under leaves and stones | Identify and count invertebrates (return them carefully) | Graph your results by group'],
+          m: ['Minibeast Survey', 'a magnifying glass, a white tray, a quadrat (1 m² marked with string), notebook', 'Mark a square metre in a garden or park | Gently search under leaves and stones | Identify and count invertebrates (return them carefully) | Graph your results by group', "Explore with an adult, look rather than touch, and do not handle unknown or stinging animals. Return stones gently, wash hands afterwards and leave wildlife undisturbed."],
           q: [
             ch('Insects have ___ legs.', '4|*6|8'),
             ch('An octopus is a…', 'crustacean|*mollusc|insect'),
