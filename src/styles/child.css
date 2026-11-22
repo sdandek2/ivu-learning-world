@@ -939,3 +939,54 @@ html:not(.reduce-motion) .owl-hero__buddy:active > svg { transform:scale(.95); }
 @media (prefers-reduced-motion:reduce) {
   .steps__track span,.subjectcard,.stone { transition:none!important; }
 }
+
+
+/* Playful activity system: progress, clear instructions and tactile controls. */
+.itemsrun { background:linear-gradient(155deg,#fff 0%,color-mix(in srgb,var(--sky) 24%,white) 100%); }
+.itemsrun__head { align-items:flex-end; gap:12px; }
+.itemsrun__heading { min-width:0; }
+.itemsrun__eyebrow { display:block; margin-bottom:4px; color:var(--world); font-size:.68rem; font-weight:1000; letter-spacing:.12em; }
+.itemsrun__head h2 { margin:0; }
+.itemsrun__count { flex:0 0 auto; color:var(--world); background:color-mix(in srgb,var(--sky) 72%,white); border:1px solid color-mix(in srgb,var(--world) 12%,white); font-size:.9rem; }
+.itemsrun__progress { height:10px; margin-top:14px; overflow:hidden; border-radius:999px; background:color-mix(in srgb,var(--world) 12%,white); }
+.itemsrun__progress span { display:block; height:100%; border-radius:inherit; background:linear-gradient(90deg,var(--world),var(--accent)); transition:width .3s ease; }
+.itemsrun__encouragement { margin:8px 0 0; color:var(--owl-muted); font-size:.86rem; font-weight:700; }
+.item { padding:4px 0 2px; }
+.item__prompt { align-items:center; padding:16px 18px; border:1px solid color-mix(in srgb,var(--world) 12%,white); border-radius:22px; background:linear-gradient(145deg,color-mix(in srgb,var(--sky) 68%,white),white); }
+.item__prompt-copy { flex:1; min-width:0; }
+.item__kind { display:inline-block; margin-bottom:5px; color:var(--world); font-size:.66rem; font-weight:1000; letter-spacing:.12em; }
+.item__text { margin:0; color:var(--owl-ink); }
+.item__body { padding:10px 2px 2px; }
+.choices { gap:14px; }
+.choice { border:1px solid color-mix(in srgb,var(--world) 10%,white); background:linear-gradient(145deg,#fff,color-mix(in srgb,var(--sky) 26%,white)); box-shadow:0 5px 0 color-mix(in srgb,var(--world) 15%,white),inset 0 0 0 2px rgba(255,255,255,.8); }
+.choice:hover:not(:disabled),.tile:hover:not(:disabled),.numpad__key:hover:not(:disabled) { transform:translateY(-2px); }
+.choice.is-right,.choice.is-answer { background:#DFF7EA; box-shadow:inset 0 0 0 3px var(--good),0 5px 0 color-mix(in srgb,var(--good) 28%,white); }
+.choice.is-wrong { background:#FFF0ED; }
+.tile { border:1px solid color-mix(in srgb,var(--world) 10%,white); background:linear-gradient(145deg,#fff,color-mix(in srgb,var(--sky) 28%,white)); }
+.item__hint { margin-top:12px; color:var(--world); box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--world) 22%,white),0 3px 0 color-mix(in srgb,var(--world) 15%,white); }
+.item__nudge { display:flex; align-items:center; gap:8px; padding:10px 14px; border-radius:14px; background:#FFF4E5; color:#8A572A; }
+.item__feedback { border:1px solid transparent; box-shadow:0 6px 18px rgba(45,37,91,.06); }
+.item__feedback.is-right { border-color:#B9E8D0; background:linear-gradient(145deg,#E8FAF0,#F8FFFB); }
+.item__feedback.is-shown { border-color:#F1D8A8; background:linear-gradient(145deg,#FFF5DF,#FFFCF5); }
+.item__feedback p { line-height:1.55; }
+.item__feedback .btn { margin-top:8px; }
+.order__slot { background:rgba(255,255,255,.7); }
+.match__col .tile { min-height:68px; }
+.count__thing { border:1px solid transparent; }
+.count__thing.is-touchable { border-color:color-mix(in srgb,var(--world) 18%,white); }
+.numpad__key { border:1px solid color-mix(in srgb,var(--world) 10%,white); background:linear-gradient(145deg,#fff,color-mix(in srgb,var(--sky) 24%,white)); }
+@media (max-width:520px) {
+  .itemsrun__head { align-items:flex-start; }
+  .itemsrun__head h2 { font-size:1.25rem; }
+  .itemsrun__count { padding:4px 9px; font-size:.78rem; }
+  .item__prompt { padding:13px; gap:8px; }
+  .item__text { font-size:1.22rem; }
+  .choices { grid-template-columns:repeat(auto-fit,minmax(125px,1fr)); gap:10px; }
+  .choice { min-height:68px; padding:12px 10px; font-size:1.12rem; }
+  .match { gap:9px; }
+  .match__col { gap:8px; }
+  .match__col .tile { padding:8px 6px; font-size:1rem; min-height:60px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .itemsrun__progress span,.choice,.tile,.numpad__key { transition:none!important; }
+}
