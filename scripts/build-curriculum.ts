@@ -10,7 +10,7 @@
  *   public/curriculum/v1/subjects/<subjectId>.json
  *   curriculum/MANIFEST.json and docs/CURRICULUM_MANIFEST.md  (progress tracking)
  */
-import { existsSync, mkdirSync, writeFileSync, readdirSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync, readdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
@@ -208,7 +208,16 @@ async function main() {
   if (!CHECK) {
     mkdirSync(join(outDir, 'subjects'), { recursive: true });
     for (const s of built) writeFileSync(join(outDir, 'subjects', `${s.id}.json`), JSON.stringify(s));
-    writeFileSync(join(outDir, 'index.json'), JSON.stringify(index, null, 1));
+    // Keep the build deterministic: only move generatedAt forward when the content actually changed,
+    // so an ordinary `npm run build` doesn't leave modified files behind in Git.
+    const indexPath = join(outDir, 'index.json');
+    if (existsSync(indexPath)) {
+      try {
+        const prev = JSON.parse(readFileSync(indexPath, 'utf8')) as CurriculumIndex;
+        if (JSON.stringify({ ...prev, generatedAt: '' }) === JSON.stringify({ ...index, generatedAt: '' })) index.generatedAt = prev.generatedAt;
+      } catch { /* unreadable previous index: keep the new timestamp */ }
+    }
+    writeFileSync(indexPath, JSON.stringify(index, null, 1));
     writeFileSync(join(outDir, 'outline.json'), JSON.stringify(outline));
     writeFileSync(join(root, 'curriculum/MANIFEST.json'), JSON.stringify({ contentVersion: CONTENT_VERSION, generatedAt: index.generatedAt, totals: { ...totals, subjectsComplete: done.length, subjectsInvalid: bad.length, subjectsRemaining: 60 - done.length }, subjects: manifest }, null, 1));
     mkdirSync(join(root, 'docs'), { recursive: true });

@@ -28,10 +28,26 @@ cd ivu-learning-world
 ```
 
 ```bash
-npm install
+npm ci
 ```
 
-`npm install` is the only step that needs the internet. After that, everything works offline.
+`npm ci` installs the exact versions recorded in `package-lock.json` without changing it. It is the only step that needs the internet; after that, everything works offline.
+
+### Getting updates later
+
+```bash
+git pull
+```
+
+```bash
+npm ci
+```
+
+```bash
+npm run build
+```
+
+If `git pull` says *"Your local changes … would be overwritten"* and you haven't edited anything yourself, those are just generated files. Discard them with `git checkout -- .` and pull again.
 
 ## 2. Running it
 
@@ -129,7 +145,7 @@ All progress (skills, activity log, settings, artwork, and IVU Reads progress an
 - **The site address matters.** Progress saved at `http://localhost:4173` is separate from `http://localhost:5173` (dev) or a LAN address. Use backup and restore to move between them.
 - **Persistent storage**: the Backup page shows whether the browser has granted persistent storage. If it has not, the browser may clear data when the disk is nearly full, which is one more reason to keep backups.
 - **Reset**: the Backup page also has *Reset progress* (type RESET to confirm). It deletes skills, activity and badges but keeps settings and creations. Download a backup first.
-- **The code and curriculum** are in Git. If the folder is lost, clone the repository again and run `npm install`. Learning data is *not* in Git; it lives only in the backup files.
+- **The code and curriculum** are in Git. If the folder is lost, clone the repository again and run `npm ci`. Learning data is *not* in Git; it lives only in the backup files.
 - **Curriculum updates** keep stable lesson IDs (`subject.stage.unit.lesson`), so existing progress stays attached to the right lessons after a content update.
 
 ### Updating IVU Reads
