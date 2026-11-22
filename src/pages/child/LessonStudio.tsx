@@ -12,7 +12,7 @@ import { Buddy } from '../../ui/WorldArt.tsx';
 import { ErrorBox, Loading, NarrationControl, SpeakButton, StageDots, Stars, TopBar, useBuddyVoice } from '../../ui/common.tsx';
 import { BUDDY_LINES } from '../../lib/buddyLines.ts';
 import { worldById } from './Explore.tsx';
-import { skillIdOf, isUnlocked } from '../../engine/adaptive.ts';
+import { skillIdOf, isUnlocked, placement } from '../../engine/adaptive.ts';
 import { nextStepHint } from '../../engine/mastery.ts';
 import type { ItemResult, Level, MasteryStage } from '../../engine/types.ts';
 import type { ContextNote, Item } from '../../curriculum/schema.ts';
@@ -89,16 +89,18 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
   const next = () => go(STEPS[Math.min(stepIdx + 1, STEPS.length - 1)].id);
   const nextLesson = siblings[index + 1];
   const locked = !isUnlocked(lesson, store.skills);
+  const selectedStage = placement(store.settings, subject.id);
+  const ageBand = selectedStage === 's4' || selectedStage === 's5' ? 'early' : selectedStage === 's6' || selectedStage === 's7' ? 'middle' : 'advanced';
 
   return (
-    <div className="studio-lesson" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
+    <div className={`studio-lesson studio-lesson--${ageBand}`} data-age-band={ageBand} style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
       <TopBar title={<span className="lesson-title">{lesson.title}</span>} back={`/subject/${subject.id}`} color={w.colors.land} right={<NarrationControl />} />
       <header className="lesson-welcome">
         <Buddy size={76} color={w.colors.land} accent={w.colors.accent} mood="happy" />
         <div className="lesson-welcome__copy">
-          <span className="owl-kicker">{subject.title} · YOUR ADVENTURE</span>
+          <span className="owl-kicker">{subject.title} · {ageBand === 'early' ? 'LET’S EXPLORE' : ageBand === 'middle' ? 'YOUR ADVENTURE' : 'CHALLENGE YOURSELF'}</span>
           <h1>{lesson.title}</h1>
-          <p>{lesson.explanation[0]}</p>
+          <p>{ageBand === 'early' ? "Let’s explore together!" : lesson.explanation[0]}</p>
         </div>
         <SpeakButton text={`${lesson.title}. ${lesson.explanation[0]}`} small />
       </header>
