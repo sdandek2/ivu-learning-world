@@ -152,7 +152,7 @@ export default subject({
           ],
           t: ['Why do you think many flowers are brightly coloured or smell sweet?', 'What might happen to our food if bee numbers fell sharply?'],
           k: ['Using a real flower, show someone the petals, stamens and pistil and explain pollination.'],
-          m: ['Flower Dissection Diagram', 'a large flower (hibiscus or lily), a tray, tweezers, paper, tape', 'Gently take the flower apart on a tray | Tape each part onto paper | Label petals, stamens and pistil | Look at pollen with a magnifying glass if you have one'],
+          m: ['Flower Dissection Diagram', 'a large flower (hibiscus or lily), a tray, tweezers, paper, tape', 'Gently take the flower apart on a tray | Tape each part onto paper | Label petals, stamens and pistil | Look at pollen with a magnifying glass if you have one', "Use a pesticide-free flower and have an adult supervise tweezers. Do not taste any plant parts; wash hands afterwards and avoid flowers that may cause allergies."],
           q: [
             ch('Pollen is made by the…', '*stamen|petal|root'),
             ch('After pollination, ovules become…', '*seeds|leaves|roots'),
@@ -214,7 +214,7 @@ export default subject({
           ],
           t: ['Where does most of a tree\'s mass come from?', 'Why would life on Earth be impossible without photosynthesis?'],
           k: ['Explain photosynthesis to someone using the idea of a kitchen with ingredients and a cook.'],
-          m: ['🧪 Pondweed Bubbles', 'water plant (from an aquarium shop), a glass of water, a lamp, a timer', 'Put the water plant in a glass of water | Place a lamp near it and count bubbles per minute | Move the lamp further away and count again | Explain how light affects photosynthesis'],
+          m: ['🧪 Pondweed Bubbles', 'water plant (from an aquarium shop), a glass of water, a lamp, a timer', 'Put the water plant in a glass of water | Place a lamp near it and count bubbles per minute | Move the lamp further away and count again | Explain how light affects photosynthesis', "Use a cool-running lamp, keep water away from plugs and electrical cords, and have an adult supervise the glass and lamp."],
           q: [
             ch('Photosynthesis happens mainly in…', 'roots|*leaves|flowers'),
             ch('Plants store extra glucose as…', '*starch|oxygen|chlorophyll'),
@@ -339,7 +339,7 @@ export default subject({
           ],
           t: ['How could knowledge of limiting factors help reduce farming costs?', 'Why do plants release CO₂ at night?'],
           k: ['Explain limiting factors using a graph you draw of rate versus light intensity.'],
-          m: ['🧪 Leaf Disc Flotation Investigation', 'spinach leaves, a straw or hole punch, syringe, baking soda water, cups, a lamp', 'Punch leaf discs and remove air with a syringe of baking soda water | Place discs in cups under lights at different distances | Time how long until discs float | Plot results and identify limiting factors'],
+          m: ['🧪 Leaf Disc Flotation Investigation', 'spinach leaves, a straw or hole punch, syringe, baking soda water, cups, a lamp', 'Punch leaf discs and remove air with a syringe of baking soda water | Place discs in cups under lights at different distances | Time how long until discs float | Plot results and identify limiting factors', "Use a blunt, needle-free syringe only; an adult should prepare the leaf discs and supervise the lamp. Do not taste the solution and wash hands afterwards."],
           q: [
             ch('Which is NOT a limiting factor for photosynthesis?', 'light intensity|CO₂ concentration|*the colour of the pot'),
             ch('Respiration releases…', '*energy|chlorophyll|light'),
