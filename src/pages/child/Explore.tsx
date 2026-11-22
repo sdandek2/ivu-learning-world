@@ -75,24 +75,38 @@ export function Universe() {
         </section>
       )}
 
-      <section aria-labelledby="worlds-h">
-        <h2 id="worlds-h" className="section-title">🌍 The Twelve Worlds</h2>
-        <div className="map">
-          {index.worlds.map((w, i) => {
-            const started = w.subjects.reduce((n, s) => n + Object.values(skills).filter((k) => k.subjectId === s.id && k.stage > 0).length, 0);
-            return (
-              <button key={w.id} className="island" style={{ ['--world' as string]: w.colors.land, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink, animationDelay: `${(i % 4) * 0.4}s` }} onClick={() => navigate(`/world/${w.id}`)}>
-                <WorldArt world={w} className="island__art" />
-                <span className="island__label">
-                  <span className="island__name">{w.title}</span>
-                  <span className="island__domain">{w.domain}</span>
-                </span>
-                {started > 0 && <span className="island__badge" aria-label={`${started} lessons started`}>⭐ {started}</span>}
-              </button>
-            );
-          })}
-        </div>
+      <section className="home-discover" aria-label="Explore the learning worlds">
+        <div><span className="home-discover__eyebrow">A universe of discovery</span><h2>12 wonderful worlds are waiting</h2><p>Follow a trail, meet new friends and discover something amazing.</p></div>
+        <button className="btn btn--primary btn--big" onClick={() => navigate('/explore')}>Explore the worlds <span aria-hidden="true">→</span></button>
       </section>
+    </div>
+  );
+}
+
+
+/** Dedicated discovery map keeps the home screen focused on the next adventure. */
+export function ExploreMap() {
+  const { index, skills } = useStore();
+  if (!index) return <Loading />;
+  return (
+    <div className="explore-page">
+      <TopBar title="Explore the worlds" back="/" color="#263B55" />
+      <header className="explore-page__intro">
+        <Buddy size={76} color="#4C5C8A" accent="#F7C96B" mood="wow" />
+        <div><p className="explore-page__eyebrow">Choose your next destination</p><h1>Where shall we go?</h1><p>Every world is a new adventure. Pick one to begin exploring.</p></div>
+      </header>
+      <div className="map map--cinematic">
+        {index.worlds.map((w, i) => {
+          const started = w.subjects.reduce((n, sub) => n + Object.values(skills).filter((k) => k.subjectId === sub.id && k.stage > 0).length, 0);
+          return (
+            <button key={w.id} className="island" style={{ ['--world' as string]: w.colors.land, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink, animationDelay: `${(i % 4) * 0.4}s` }} onClick={() => navigate(`/world/${w.id}`)}>
+              <WorldArt world={w} className="island__art" />
+              <span className="island__label"><span className="island__name">{w.title}</span><span className="island__domain">{w.domain}</span><span className="island__explore">Enter world <span aria-hidden="true">↗</span></span></span>
+              {started > 0 && <span className="island__badge" aria-label={`${started} lessons started`}>⭐ {started}</span>}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
