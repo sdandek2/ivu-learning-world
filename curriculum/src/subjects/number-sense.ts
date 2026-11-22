@@ -305,7 +305,7 @@ export default subject({
           ],
           t: ['Why might a shop say "50% off" instead of "half price"? Are they the same?', 'Can a percentage be more than 100%? Find a real example.'],
           k: ['Explain to someone why 0.3 is bigger than 0.25 even though 25 is bigger than 3.'],
-          m: ['Survey and Percentages', 'paper, pencil, at least 10 people or a set of objects to survey', 'Ask a question with a few choices (e.g. favourite fruit) | Tally the results | Convert each count to a fraction, decimal and percentage of the total | Present a poster with your findings'],
+          m: ['Survey and Percentages', 'paper, pencil, at least 10 people or a set of objects to survey', 'Ask a question with a few choices (e.g. favourite fruit) | Tally the results | Convert each count to a fraction, decimal and percentage of the total | Present a poster with your findings', "Ask permission before surveying people. Keep answers anonymous, avoid personal or sensitive questions, and report only combined totals."],
           q: [
             ch('¾ as a percentage is', '34%|*75%|0.75%'),
             ch('Which is smaller?', '*0.09|0.1'),
