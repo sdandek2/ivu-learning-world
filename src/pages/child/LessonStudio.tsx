@@ -163,6 +163,43 @@ function StoryStep({ title, text, ageBand, onNext }: { title: string; text: stri
   );
 }
 
+
+/** Gentle, non-scored word rehearsal using the lesson's own vocabulary and narration catalogue. */
+export function PhonicsWordPractice({ vocabulary, ageBand }: { vocabulary: LessonContext['lesson']['vocabulary']; ageBand: AgeBand }) {
+  const [revealed, setRevealed] = useState<string[]>(ageBand !== 'early' ? vocabulary.map((v) => v.term) : []);
+  const [tried, setTried] = useState<string[]>([]);
+  const toggle = (term: string) => setRevealed((old) => old.includes(term) ? old.filter((x) => x !== term) : [...old, term]);
+  return (
+    <section className="phonics-practice" aria-labelledby="phonics-practice-title" data-age-band={ageBand}>
+      <div className="phonics-practice__head">
+        <span aria-hidden="true">🔤</span>
+        <div><h3 id="phonics-practice-title">Sound & word practice</h3><p>{ageBand === 'early' ? 'Listen to a word, say it together, then peek at what it means.' : 'Listen, say the word aloud, then check its meaning.'}</p></div>
+      </div>
+      <div className="phonics-practice__words">
+        {vocabulary.map((v) => {
+          const isOpen = revealed.includes(v.term);
+          const didTry = tried.includes(v.term);
+          return (
+            <article className="phonics-practice__word" key={v.term}>
+              <div className="phonics-practice__wordtop">
+                <strong>{isOpen ? v.term : 'A word to discover'}</strong>
+                <SpeakButton text={v.term} label="Listen to the word" small />
+              </div>
+              {isOpen ? <p>{v.meaning}</p> : <p className="phonics-practice__concealed">Listen first, then reveal the word.</p>}
+              <div className="phonics-practice__actions">
+                <button type="button" className="btn btn--ghost" onClick={() => toggle(v.term)}>{isOpen ? 'Hide meaning' : 'Reveal word & meaning'}</button>
+                <button type="button" className={cx('btn', didTry && 'is-selected')} onClick={() => setTried((old) => didTry ? old.filter((x) => x !== v.term) : [...old, v.term])} aria-pressed={didTry}>{didTry ? '✓ Practised' : 'I said it'}</button>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+      <p className="phonics-practice__note">This is a practice reminder, not a scored reading test. A grown-up can listen and help with any tricky sounds.</p>
+    </section>
+  );
+}
+
+
 function LearnStep({ ctx, onNext }: { ctx: LessonContext; onNext: () => void }) {
   const { lesson } = ctx;
   const [page, setPage] = useState(0);
@@ -197,6 +234,7 @@ function LearnStep({ ctx, onNext }: { ctx: LessonContext; onNext: () => void }) 
               </div>
             ))}
           </div>
+          {ctx.subject.id === 'phonics' && <PhonicsWordPractice vocabulary={lesson.vocabulary} ageBand={ageBand} />}
           <h3 className="mini-title">For example</h3>
           <ul className="examples">{lesson.examples.map((x) => <li key={x}>{x} <SpeakButton text={x} small /></li>)}</ul>
           <details className="for-grownups">
