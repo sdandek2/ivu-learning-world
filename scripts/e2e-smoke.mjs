@@ -23,10 +23,15 @@ if (shotDir) mkdirSync(shotDir, { recursive: true });
 const PORT = 4179;
 const BASE = `http://localhost:${PORT}/`;
 
-const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], { stdio: 'pipe' });
+// Run Vite directly (not via npx) in its own process group so the whole server is stopped afterwards.
+const server = spawn(process.execPath, ['node_modules/vite/bin/vite.js', 'preview', '--port', String(PORT), '--strictPort'], { stdio: 'pipe', detached: true });
+const stopServer = () => { try { process.kill(-server.pid, 'SIGTERM'); } catch { /* already stopped */ } };
+process.on('exit', stopServer);
 await new Promise((resolve, reject) => {
   const t = setTimeout(() => reject(new Error('preview server did not start')), 20000);
   server.stdout.on('data', (d) => { if (String(d).includes(String(PORT))) { clearTimeout(t); resolve(); } });
+  server.stderr.on('data', (d) => { if (/already in use/i.test(String(d))) { clearTimeout(t); reject(new Error(`port ${PORT} is already in use`)); } });
+  server.on('exit', (code) => { clearTimeout(t); reject(new Error(`preview server exited (${code})`)); });
 });
 
 let failures = 0;
@@ -196,7 +201,7 @@ try {
   await step('no uncaught page errors', async () => { if (realErrors.length) throw new Error(realErrors.join(' | ')); });
 } finally {
   await browser.close();
-  server.kill();
+  stopServer();
 }
 console.log(failures ? `\n${failures} step(s) failed` : '\nAll E2E steps passed');
 process.exit(failures ? 1 : 0);
