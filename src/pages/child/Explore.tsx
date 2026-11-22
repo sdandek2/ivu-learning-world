@@ -8,7 +8,6 @@ import { ErrorBox, Loading, SpeakButton, StageDots, TopBar } from '../../ui/comm
 import { isUnlocked, openStages, placement, recommend, stageOfSkill, skillIdOf } from '../../engine/adaptive.ts';
 import { isDue } from '../../engine/revision.ts';
 import { cx } from '../../lib/util.ts';
-import { t } from '../../i18n/index.ts';
 import type { MasteryStage } from '../../engine/types.ts';
 import { IVU_READS_URL, loadLevels, readIvuReadsState, summarise, type IvuReadsSummary } from '../../lib/ivuReads.ts';
 
