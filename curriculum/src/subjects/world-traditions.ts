@@ -250,7 +250,7 @@ export default subject({
           ],
           t: ['Why do communities mark milestones together?', 'What milestone in your life would you like to celebrate?'],
           k: ['Describe a rite of passage you have seen or learned about.'],
-          m: ['Family Milestone Interview', 'notebook, a relative to interview', 'Ask a relative about a ceremony from their life | Record what happened and what it meant | Compare it with one from another tradition | Share what you learned'],
+          m: ['Family Milestone Interview', 'notebook, a relative to interview', 'Ask a relative about a ceremony from their life | Record what happened and what it meant | Compare it with one from another tradition | Share what you learned', "Ask permission before discussing personal or religious ceremonies. Let the person skip questions and do not share private stories or photographs without consent."],
           q: [
             ch('An initiation is a ceremony of…', '*joining a group|leaving school|cooking'),
             tf('Rites of passage differ within each tradition.', true),
@@ -348,7 +348,7 @@ export default subject({
           ],
           t: ['Can an outsider fully understand a religion?', 'Why might lived religion differ from official teachings?'],
           k: ['Describe a ritual from both emic and etic perspectives.'],
-          m: ['Lived Religion Study', 'consent from participants, notebook', 'Observe or interview (with permission) about a family practice | Record the insider\'s explanation | Analyse it using Smart\'s dimensions | Write a 1500-word reflective report'],
+          m: ['Lived Religion Study', 'consent from participants, notebook', 'Observe or interview (with permission) about a family practice | Record the insider\'s explanation | Analyse it using Smart\'s dimensions | Write a 1500-word reflective report', "Obtain informed consent before observing or interviewing. Respect that religious practices are personal, allow participants to decline, and anonymise notes unless they agree to be identified."],
           q: [
             ch('Methodological neutrality means…', '*not judging truth claims|choosing a side|ignoring evidence'),
             tf('Ninian Smart\'s model includes a material dimension.', true),
