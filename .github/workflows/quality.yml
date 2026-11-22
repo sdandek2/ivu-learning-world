@@ -20,7 +20,7 @@ jobs:
   validate:
     name: Curriculum, types, tests and production build
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -33,6 +33,9 @@ jobs:
 
       - name: Install locked dependencies
         run: npm ci
+
+      - name: Capture dependency security audit
+        run: npm audit --json > npm-audit.json || true
 
       - name: Validate curriculum without rewriting generated files
         run: npm run validate
@@ -48,6 +51,7 @@ jobs:
           path: |
             docs/CURRICULUM_QUALITY_AUDIT.md
             curriculum/QUALITY_AUDIT.json
+            npm-audit.json
           if-no-files-found: warn
 
       - name: Type-check
@@ -58,3 +62,12 @@ jobs:
 
       - name: Build production application
         run: npm run build
+
+      - name: Install Playwright for browser smoke test
+        run: npm install --no-save --package-lock=false playwright
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run browser end-to-end smoke test
+        run: npm run e2e
