@@ -366,7 +366,7 @@ export default subject({
           ],
           t: ['Does it matter if a language disappears? Why?', 'How should a multilingual country choose languages for schools?'],
           k: ['Lead a discussion on language rights and identity.'],
-          m: ['Language Documentation Project', 'a recording device, consent forms, a speaker of a less-documented language or dialect', 'With consent, record a speaker telling a story or describing daily life | Transcribe and translate it | Create a short glossary | Write a reflection on language, identity and preservation'],
+          m: ['Language Documentation Project', 'a recording device, consent forms, a speaker of a less-documented language or dialect', 'With consent, record a speaker telling a story or describing daily life | Transcribe and translate it | Create a short glossary | Write a reflection on language, identity and preservation', "Get informed consent from the speaker and explain how the recording will be used. Do not publish names, voices or personal stories without explicit permission; allow the speaker to stop or withdraw."],
           q: [
             ch('Efforts to revive a language are…', '*revitalisation|replacement|repetition'),
             tf('Hebrew was revived as a spoken language.', true),
