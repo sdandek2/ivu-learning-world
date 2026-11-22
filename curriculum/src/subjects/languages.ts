@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['What do you call your grandparents?', 'Why might families use special words for each other?'],
           k: ['Point to family photos and name each person in Marathi.'],
-          m: ['Marathi Family Tree', 'paper, crayons, family photos (optional)', 'Draw a tree with branches | Draw or stick your family on it | Label each person with the Marathi word | Show it to your family and say each word'],
+          m: ['Marathi Family Tree', 'paper, crayons, family photos (optional)', 'Draw a tree with branches | Draw or stick your family on it | Label each person with the Marathi word | Show it to your family and say each word', "Ask relatives before using their names or photographs. Include only information the family is comfortable sharing and keep the finished tree private unless everyone agrees."],
           q: [
             ch('Mother in Marathi is…', '*Aai|Ajoba|Tai'),
             tf('Ajoba means grandfather.', true),
