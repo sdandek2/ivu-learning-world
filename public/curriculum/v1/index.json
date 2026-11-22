@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:37:41.060Z",
+ "generatedAt": "2026-11-22T12:41:58.471Z",
  "stages": [
   {
    "id": "s4",
@@ -737,18 +737,18 @@
      "title": "Logic & Reasoning",
      "icon": "🧠",
      "tagline": "If this, then that",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/logic.json"
     },
     {
      "id": "puzzles",
      "title": "Puzzles & Problem Solving",
      "icon": "🎲",
      "tagline": "Stuck is where learning starts",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/puzzles.json"
     },
     {
      "id": "philosophy",
