@@ -5,7 +5,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { CurriculumIndexSchema, OutlineSchema, SubjectSchema, semanticCheck, STAGE_IDS, allLessons } from '../src/curriculum/schema.ts';
+import { CurriculumIndexSchema, OutlineSchema, SubjectSchema, ItemSchema, semanticCheck, STAGE_IDS, allLessons } from '../src/curriculum/schema.ts';
 
 const dir = join(__dirname, '..', 'public', 'curriculum', 'v1');
 const read = (p: string) => JSON.parse(readFileSync(join(dir, p), 'utf8'));
@@ -51,5 +51,29 @@ describe('manifest', () => {
     const m = JSON.parse(readFileSync(p, 'utf8'));
     const complete = m.subjects.filter((s: { status: string }) => s.status === 'complete').map((s: { subject: string }) => s.subject).sort();
     expect(complete).toEqual(subjects.filter((s) => s.file).map((s) => s.id).sort());
+  });
+});
+
+
+describe('classification activity schema', () => {
+  const example = {
+    id: 'test.classify',
+    kind: 'classify',
+    prompt: 'Which things belong in each group?',
+    categories: ['Fruit', 'Vegetables'],
+    items: [
+      { label: 'Apple', category: 0 },
+      { label: 'Banana', category: 0 },
+      { label: 'Carrot', category: 1 },
+    ],
+  };
+  it('accepts a valid tap-to-sort activity', () => {
+    expect(ItemSchema.parse(example)).toMatchObject({ kind: 'classify', categories: ['Fruit', 'Vegetables'] });
+  });
+  it('rejects category indexes outside the category list', () => {
+    expect(() => ItemSchema.parse({ ...example, items: [...example.items.slice(0, 2), { label: 'Carrot', category: 2 }] })).toThrow();
+  });
+  it('rejects duplicate item labels', () => {
+    expect(() => ItemSchema.parse({ ...example, items: [{ label: 'Apple', category: 0 }, { label: 'Apple', category: 1 }, example.items[2]] })).toThrow();
   });
 });
