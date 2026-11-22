@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T09:34:57.828Z",
+ "generatedAt": "2026-11-22T09:35:11.277Z",
  "stages": [
   {
    "id": "s4",
@@ -224,9 +224,9 @@
      "title": "Space & Astronomy",
      "icon": "🪐",
      "tagline": "Sun, Moon and stars",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/space.json"
     }
    ]
   },

@@ -83,7 +83,7 @@ export default subject({
           s: ['The Torch and the Ball', 'Bolt held a torch (the Sun) while Rangi slowly turned a ball with a sticker on it (India). When the sticker faced the torch, Rangi said "Good morning!" As the ball turned away, "Good night!" Then Rangi walked the ball all the way around Bolt. "That\'s a year," Bolt beeped.'],
           a: [
             ch('Day and night happen because…', '*Earth spins|the Sun goes around Earth every day|clouds block the Sun'),
-            ct('About how many hours does one spin of Earth take?', 24, 'One full spin is about 24 hours.'),
+            ch('About how long does one spin of Earth take?', '1 hour|*about 24 hours|a whole year', 'One full spin is about 24 hours — one day.'),
             ch('Earth travels around the Sun once every…', 'day|month|*year'),
             tf('When it is day in India, it is night somewhere else on Earth.', true),
           ],

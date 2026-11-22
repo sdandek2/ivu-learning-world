@@ -1,13 +1,13 @@
 {
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T09:34:57.828Z",
+ "generatedAt": "2026-11-22T09:35:11.277Z",
  "totals": {
-  "units": 169,
-  "lessons": 169,
-  "items": 1184,
-  "subjectsComplete": 14,
-  "subjectsInvalid": 1,
-  "subjectsRemaining": 46
+  "units": 181,
+  "lessons": 181,
+  "items": 1268,
+  "subjectsComplete": 15,
+  "subjectsInvalid": 0,
+  "subjectsRemaining": 45
  },
  "subjects": [
   {
@@ -503,7 +503,7 @@
   {
    "subject": "space",
    "world": "discovery-lab",
-   "status": "invalid",
+   "status": "complete",
    "stages": {
     "s4": {
      "units": 2,
@@ -533,9 +533,7 @@
    "units": 12,
    "lessons": 12,
    "items": 84,
-   "problems": [
-    "stages.1.units.0.lessons.0.activities.1.answer: Too big: expected number to be <=20"
-   ]
+   "problems": []
   },
   {
    "subject": "plants",
