@@ -242,7 +242,7 @@ export default subject({
           ],
           t: ['Why is a bicycle such an efficient machine?', 'What makes Rube Goldberg machines fun to build?'],
           k: ['Present your chain-reaction machine and name each simple machine in it.'],
-          m: ['Chain-Reaction Machine', 'dominoes, ramps, marbles, string, cups, toy cars', 'Plan a machine with at least six steps | Include at least three simple machines | Build and test each step separately | Run the whole machine and film it'],
+          m: ['Chain-Reaction Machine', 'dominoes, ramps, marbles, string, cups, toy cars', 'Plan a machine with at least six steps | Include at least three simple machines | Build and test each step separately | Run the whole machine and film it', "Use large marbles only with adult supervision; keep all small parts away from mouths and younger children. Build on a stable floor away from stairs, pets and edges."],
           q: [
             ch('A series of events each causing the next is a…', '*chain reaction|chain store|chair'),
             tf('A compound machine has two or more simple machines.', true),
