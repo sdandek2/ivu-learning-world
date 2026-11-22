@@ -60,7 +60,7 @@ const DRY = argv.includes('--dry-run');
 const YES = argv.includes('--yes');
 const XI = 'https://api.elevenlabs.io/v1';
 
-if (PAID && !env.ELEVENLABS_API_KEY) {
+if (PAID && !env.ELEVENLABS_API_KEY && !DRY) {
   console.error('ElevenLabs needs ELEVENLABS_API_KEY. Put it in .env.local (git-ignored) — see docs/NARRATION.md.');
   process.exit(2);
 }
@@ -71,7 +71,7 @@ if (PAID && argv.includes('--list-voices')) {
   for (const v of voices) console.log(`${v.voice_id}  ${v.name.padEnd(28)} ${v.category.padEnd(12)} ${Object.values(v.labels ?? {}).join(', ')}`);
   process.exit(0);
 }
-if (PAID && !VOICE) { console.error('Choose the IVU Reads voice: --voice <voice id>, or ELEVENLABS_VOICE_ID in .env.local (find it with --list-voices).'); process.exit(2); }
+if (PAID && !VOICE && !DRY) { console.error('Choose the IVU Reads voice: --voice <voice id>, or ELEVENLABS_VOICE_ID in .env.local (find it with --list-voices).'); process.exit(2); }
 const STAGES = opt('stages')?.split(',');
 const TIER = opt('tier') as Tier | undefined;
 const LIMIT = Number(opt('limit', 'Infinity'));
