@@ -69,13 +69,14 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
   const store = useStore();
   const { ctx, error } = useLesson(lessonId);
   const [step, setStep] = useState<StepId>('learn');
+  const sayBuddy = useBuddyVoice();
   const started = useRef(Date.now());
   const introduced = useRef<string | null>(null);
 
   useEffect(() => { setStep('learn'); started.current = Date.now(); }, [lessonId]);
   useEffect(() => {
-    if (ctx && introduced.current !== lessonId) { introduced.current = lessonId; store.introduce(lessonId); }
-  }, [ctx, lessonId, store]);
+    if (ctx && introduced.current !== lessonId) { introduced.current = lessonId; store.introduce(lessonId); sayBuddy(BUDDY_LINES.lessonIntro); }
+  }, [ctx, lessonId, store, sayBuddy]);
   useEffect(() => () => stopSpeaking(), [step]);
 
   if (error) return <ErrorBox error={error} />;
@@ -92,9 +93,21 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
   return (
     <div className="studio-lesson" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
       <TopBar title={<span className="lesson-title">{lesson.title}</span>} back={`/subject/${subject.id}`} color={w.colors.land} right={<NarrationControl />} />
-      <nav className="steps" aria-label="Lesson steps">
+      <header className="lesson-welcome">
+        <Buddy size={76} color={w.colors.land} accent={w.colors.accent} mood="happy" />
+        <div className="lesson-welcome__copy">
+          <span className="owl-kicker">{subject.title} · YOUR ADVENTURE</span>
+          <h1>{lesson.title}</h1>
+          <p>{lesson.explanation[0]}</p>
+        </div>
+        <SpeakButton text={`${lesson.title}. ${lesson.explanation[0]}`} small />
+      </header>
+      <nav className="steps steps--adventure" aria-label="Lesson journey">
+        <div className="steps__track" role="progressbar" aria-label="Lesson progress" aria-valuemin={0} aria-valuemax={STEPS.length - 1} aria-valuenow={stepIdx}>
+          <span style={{ width: `${(stepIdx / (STEPS.length - 1)) * 100}%` }} />
+        </div>
         {STEPS.map((s, i) => (
-          <button key={s.id} className={cx('step', s.id === step && 'is-active', i < stepIdx && 'is-done')} onClick={() => go(s.id)} aria-current={s.id === step ? 'step' : undefined}>
+          <button key={s.id} className={cx('step', s.id === step && 'is-active', i < stepIdx && 'is-done')} onClick={() => go(s.id)} aria-label={`${s.label}${i < stepIdx ? ', completed' : s.id === step ? ', current step' : ''}`} aria-current={s.id === step ? 'step' : undefined}>
             <span className="step__icon" aria-hidden="true">{i < stepIdx ? '✓' : s.icon}</span><span className="step__label">{s.label}</span>
           </button>
         ))}
