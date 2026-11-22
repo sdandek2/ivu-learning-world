@@ -79,6 +79,7 @@ export function Universe() {
         <div><span className="home-discover__eyebrow">A universe of discovery</span><h2>12 wonderful worlds are waiting</h2><p>Follow a trail, meet new friends and discover something amazing.</p></div>
         <button className="btn btn--primary btn--big" onClick={() => navigate('/explore')}>Explore the worlds <span aria-hidden="true">→</span></button>
       </section>
+      <footer className="home-grownups"><span>Made for curious minds, guided by grown-ups.</span><button className="home-grownups__link" onClick={() => navigate('/parent/dashboard')}>Grown-ups <span aria-hidden="true">↗</span></button></footer>
     </div>
   );
 }
