@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why do you think ponds have so many insects?', 'What might pollute a pond?'],
           k: ['Describe a pond to someone and name five things that live there.'],
-          m: ['Pond in a Tub', 'a large tub, rainwater or pond water, a few water plants, stones (with an adult\'s help)', 'Set up a tub with water and plants in a shady spot | Add stones as steps for insects to climb | Observe it each week | Record any visitors like dragonflies or birds'],
+          m: ['Pond in a Tub', 'a large tub, rainwater or pond water, a few water plants, stones (with an adult\'s help)', 'Set up a tub with water and plants in a shady spot | Add stones as steps for insects to climb | Observe it each week | Record any visitors like dragonflies or birds', "Use a shallow, stable tub with an adult present. Do not drink the water or touch unknown wildlife; wash hands afterwards and empty the tub when finished."],
           q: [
             ch('Lily pads float on…', '*water|sand|trees'),
             ch('Dragonfly young live…', '*underwater|in trees|in the sky only'),
@@ -244,7 +244,7 @@ export default subject({
           ],
           t: ['Who should be responsible for cleaning polluted rivers?', 'How do your daily choices affect rivers far away?'],
           k: ['Make a short speech to your class or family about one way to reduce river pollution.'],
-          m: ['Litter Audit', 'gloves, bags, a notebook, an adult', 'With an adult, collect litter from a park or roadside for 20 minutes | Sort and count the items by type | Make a bar chart | Suggest three ways to reduce the most common item'],
+          m: ['Litter Audit', 'gloves, bags, a notebook, an adult', 'With an adult, collect litter from a park or roadside for 20 minutes | Sort and count the items by type | Make a bar chart | Suggest three ways to reduce the most common item', "Only do this with an adult in a safe park area away from roads and water. Do not touch sharp, medical, chemical or unknown waste; leave it for an adult or local cleanup service."],
           q: [
             ch('Which is a source of water pollution?', '*untreated sewage|planting trees|rainwater harvesting'),
             ch('Fertilisers washing into lakes can cause…', '*algal blooms|earthquakes|tides'),
