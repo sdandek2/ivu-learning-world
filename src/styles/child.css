@@ -1076,3 +1076,39 @@ html:not(.reduce-motion) .owl-hero__buddy:active > svg { transform:scale(.95); }
   .badge__icon { width:68px;height:68px;font-size:2.4rem; }
 }
 @media(prefers-reduced-motion:reduce) { .worldrow,.badge { transition:none!important; } }
+
+
+/* Age-band presentation: preserve the same curriculum while tuning scale and density. */
+.studio-lesson--early .lesson-welcome { padding:22px 24px; }
+.studio-lesson--early .lesson-welcome__copy h1 { font-size:clamp(1.7rem,4vw,2.35rem); }
+.studio-lesson--early .lesson-welcome__copy p { font-size:1.08rem; }
+.studio-lesson--early .steps--adventure .step__icon { width:48px;height:48px;font-size:1.3rem; }
+.studio-lesson--early .choice,.studio-lesson--early .tile,.studio-lesson--early .numpad__key { min-height:76px;font-size:1.3rem;border-radius:24px; }
+.studio-lesson--early .item__text { font-size:clamp(1.45rem,4vw,2rem); }
+.studio-lesson--middle .lesson-welcome { padding:18px 22px; }
+.studio-lesson--advanced .lesson-welcome { padding:14px 18px; }
+.studio-lesson--advanced .lesson-welcome__copy p { font-size:.88rem; }
+.studio-lesson--advanced .steps--adventure .step__icon { width:36px;height:36px; }
+.studio-lesson--advanced .lesson-body .card { border-radius:24px; }
+@media(max-width:520px) {
+  .studio-lesson--early .lesson-welcome { padding:13px; }
+  .studio-lesson--early .steps--adventure .step__icon { width:40px;height:40px; }
+  .studio-lesson--early .choice,.studio-lesson--early .tile,.studio-lesson--early .numpad__key { min-height:68px;font-size:1.12rem; }
+}
+/* Creative Studio shares the same warm, tactile Owl visual system. */
+.creative { background:radial-gradient(ellipse at 50% 0%,#fff 0%,transparent 44%),linear-gradient(180deg,#FFE9EC 0,#FFF9F0 430px); }
+.creative .tabs { max-width:1120px;padding-top:18px; }
+.creative .tab { border:1px solid rgba(233,79,100,.12);box-shadow:var(--owl-card-shadow); }
+.creative .tab.is-active { background:linear-gradient(110deg,#D94D78,#8B5CF6);color:#fff; }
+.draw__tools,.draw__canvas,.storymaker__row,.gallery__item { border:1px solid rgba(233,79,100,.12);box-shadow:var(--owl-card-shadow); }
+.draw__tools { border-radius:24px; }
+.draw__canvas { border-radius:28px; }
+.swatch,.size,.stampbtn { min-width:48px;min-height:48px; }
+.storypart { border:1px solid rgba(233,79,100,.1);border-radius:22px;background:linear-gradient(145deg,#fff,#FFF4F4);box-shadow:0 4px 0 rgba(233,79,100,.1); }
+.storypart.is-on { background:#FFE9EC;box-shadow:inset 0 0 0 3px var(--world),0 4px 0 rgba(233,79,100,.16); }
+.gallery__item { border-radius:22px; }
+@media(max-width:600px) {
+  .draw__actions { margin-left:0;flex-wrap:wrap; }
+  .swatches,.sizes,.stamps { gap:8px; }
+  .creative .tab { min-height:48px;padding:8px 15px;font-size:.92rem; }
+}
