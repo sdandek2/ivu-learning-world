@@ -10,7 +10,7 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: quality-${{ github.workflow }}-${{ github.ref }}
@@ -33,6 +33,17 @@ jobs:
 
       - name: Refresh lockfile for patched test tooling
         run: npm install --package-lock-only --ignore-scripts
+
+      - name: Commit regenerated patched lockfile
+        if: github.event_name == 'push' && github.ref == 'refs/heads/feature/ivu-cinematic-redesign'
+        run: |
+          if ! git diff --quiet -- package-lock.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add package-lock.json
+            git commit -m "Update lockfile for patched Vitest"
+            git push
+          fi
 
       - name: Install locked dependencies
         run: npm ci
