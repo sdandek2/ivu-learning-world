@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['How many new words can you make by changing only the middle sound of "hat"?', 'Why are vowels important in almost every word?'],
           k: ['Read five 3-letter words to a grown-up, then explain how you worked out the hardest one.'],
-          m: ['Word Slider', 'card strips, scissors, pen', 'Write a start letter and an end letter on a card with a gap | Make a strip of vowels a e i o u | Slide the strip through the gap | Read each word and decide if it is a real word or a silly word'],
+          m: ['Word Slider', 'card strips, scissors, pen', 'Write a start letter and an end letter on a card with a gap | Make a strip of vowels a e i o u | Slide the strip through the gap | Read each word and decide if it is a real word or a silly word', "Use child-safe scissors with adult supervision. Adults should handle any sharp cutting tools and keep small pieces away from younger children."],
           q: [
             ch('Read: h – e – n', '*hen|hat|hot'),
             ch('Which picture matches "pig"?', '*🐷|🐶|🐮'),
