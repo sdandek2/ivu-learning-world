@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['Which question word is the hardest to answer? Why?', 'Why do little children ask "why?" so often?'],
           k: ['Interview a family member using all six question words, then tell someone else what you found out.'],
-          m: ['Family Reporter Interview', 'a toy microphone (or a spoon!), paper', 'Choose someone to interview | Plan six questions, one with each question word | Ask your questions and listen carefully | Report back three things you learned'],
+          m: ['Family Reporter Interview', 'a toy microphone (or a spoon!), paper', 'Choose someone to interview | Plan six questions, one with each question word | Ask your questions and listen carefully | Report back three things you learned', "Ask permission before interviewing anyone. Let them skip any question, do not record private details, and share only what they agree may be shared."],
           q: [
             ch('"___ is your birthday?" asks about time.', 'Who|*When|Where'),
             ch('"___ made this cake?" asks about a person.', '*Who|Why|Where'),
