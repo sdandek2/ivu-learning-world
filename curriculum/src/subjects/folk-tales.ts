@@ -58,7 +58,7 @@ export default subject({
           ],
           t: ['What else could the crow have tried?', 'When did you keep trying until you solved something?'],
           k: ['Show a grown-up how the crow solved the problem using a cup and pebbles.'],
-          m: ['🧪 Crow\'s Pebble Experiment', 'a clear cup, a little water, clean pebbles or marbles (with an adult)', 'Mark the water level with tape | Drop in pebbles one at a time | Watch the water rise | Count how many pebbles it took'],
+          m: ['🧪 Crow\'s Pebble Experiment', 'a clear cup, a little water, clean pebbles or marbles (with an adult)', 'Mark the water level with tape | Drop in pebbles one at a time | Watch the water rise | Count how many pebbles it took', "Use large, clean stones that cannot be swallowed; do not use marbles or small pebbles with young children. An adult should supervise the water and glass, and keep the materials away from mouths."],
           q: [
             ch('What made the water rise?', '*pebbles|wind|sugar'),
             tf('Patience means keeping on trying calmly.', true),
