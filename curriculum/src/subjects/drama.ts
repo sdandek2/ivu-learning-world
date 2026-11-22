@@ -242,7 +242,7 @@ export default subject({
           ],
           t: ['How could you show a forest with very few props?', 'Which theatre job would you like? Why?'],
           k: ['Explain your design ideas for a scene.'],
-          m: ['Design a Set in a Shoebox', 'a shoebox, card, fabric, a torch', 'Choose a scene from a play | Build a model set inside the shoebox | Use a torch with coloured paper for lighting | Present your design choices'],
+          m: ['Design a Set in a Shoebox', 'a shoebox, card, fabric, a torch', 'Choose a scene from a play | Build a model set inside the shoebox | Use a torch with coloured paper for lighting | Present your design choices', "Use a cool-running torch and keep it pointed away from eyes. Do not cover the torch or leave it switched on unattended."],
           q: [
             ch('The person who runs the show is the…', '*stage manager|actor|critic'),
             tf('Stage directions use the actor\'s point of view.', true),
