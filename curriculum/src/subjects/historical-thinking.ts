@@ -220,7 +220,7 @@ export default subject({
           ],
           t: ['Is any account completely neutral?', 'How can historians learn about people who didn\'t write records?'],
           k: ['Retell a family event from two different family members\' perspectives.'],
-          m: ['Oral History Interview', 'questions, a recorder or notebook, consent', 'Interview an elder about an event they remember | Interview a second person about the same event | Compare accounts | Write what agrees, what differs and why'],
+          m: ['Oral History Interview', 'questions, a recorder or notebook, consent', 'Interview an elder about an event they remember | Interview a second person about the same event | Compare accounts | Write what agrees, what differs and why', "Obtain informed consent, explain how the interview will be used, and allow the person to skip questions or stop. Keep recordings private and do not publish identifying details without permission."],
           q: [
             ch('A point of view is a…', '*perspective|source|date'),
             tf('Comparing accounts helps build a fuller picture.', true),
