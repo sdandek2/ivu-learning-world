@@ -213,7 +213,7 @@ export default subject({
           ],
           t: ['Why must subtractive sculptors plan very carefully?', 'What does an armature do?'],
           k: ['Explain additive and subtractive methods using your sculptures.'],
-          m: ['Two-Method Sculpture', 'a soap bar, a spoon, foil, air-dry clay (with an adult)', 'Carve a simple shape from soap | Make a foil armature of a figure | Cover it with clay | Compare the two methods'],
+          m: ['Two-Method Sculpture', 'a soap bar, a spoon, foil, air-dry clay (with an adult)', 'Carve a simple shape from soap | Make a foil armature of a figure | Cover it with clay | Compare the two methods', "Use a spoon with a rounded edge, not a knife or blade. An adult should supervise carving; do not put soap or clay in mouths or eyes."],
           q: [
             ch('An inner frame in a sculpture is an…', '*armature|apron|arch'),
             tf('Dhokra is a metal-casting craft.', true),
