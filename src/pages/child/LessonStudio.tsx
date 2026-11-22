@@ -120,14 +120,7 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
 
       <main className="lesson-body">
         {step === 'learn' && <LearnStep ctx={ctx} onNext={next} />}
-        {step === 'story' && (
-          <section className="card storycard">
-            <h2>📖 {lesson.story.title}</h2>
-            <SpeakButton text={`${lesson.story.title}. ${lesson.story.text}`} label="Read me the story" auto />
-            <p className="storycard__text">{lesson.story.text}</p>
-            <button className="btn btn--primary btn--big" onClick={next}>Let's play →</button>
-          </section>
-        )}
+        {step === 'story' && <StoryStep title={lesson.story.title} text={lesson.story.text} ageBand={ageBand} onNext={next} />}
         {step === 'play' && <ItemsRun key="play" items={lesson.activities} mode="practice" ageBand={ageBand} teachingContext={lesson.explanation} onFinish={async (r) => { await store.practice(lesson.id, r); next(); }} />}
         {step === 'think' && <ThinkStep lessonId={lesson.id} thinking={lesson.thinking} speaking={lesson.speaking} onNext={next} />}
         {step === 'make' && <MakeStep lessonId={lesson.id} project={lesson.project} onNext={next} />}
@@ -148,6 +141,25 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
         )}
       </main>
     </div>
+  );
+}
+
+
+function StoryStep({ title, text, ageBand, onNext }: { title: string; text: string; ageBand: AgeBand; onNext: () => void }) {
+  const [showText, setShowText] = useState(ageBand !== 'early');
+  const [listened, setListened] = useState(false);
+  return (
+    <section className={cx('card storycard', 'storycard--listening', !showText && 'storycard--listen-first')} data-age-band={ageBand}>
+      <h2>📖 {title}</h2>
+      <p className="storycard__listen-prompt">{ageBand === 'early' ? 'Let’s listen to Buddy’s story together.' : 'Listen carefully. What details can you remember?'}</p>
+      <SpeakButton text={title + '. ' + text} label={listened ? 'Listen again' : 'Listen to the story'} auto />
+      <button className="btn btn--ghost storycard__text-toggle" onClick={() => { setShowText((v) => !v); setListened(true); }} aria-expanded={showText}>
+        {showText ? 'Hide the story text' : 'Show the story text'}
+      </button>
+      {showText && <p className="storycard__text">{text}</p>}
+      {!showText && <p className="storycard__listen-hint" role="status">You can listen again or reveal the words whenever you’re ready.</p>}
+      <button className="btn btn--primary btn--big" onClick={onNext}>Let’s play →</button>
+    </section>
   );
 }
 
