@@ -829,3 +829,113 @@ html:not(.reduce-motion) .owl-hero__buddy:active > svg { transform:scale(.95); }
 @media (prefers-reduced-motion:reduce) {
   .atlas-island__scene svg { transition:none!important; }
 }
+
+
+/* ==========================================================================
+   IVU Learning World 2.0 — shared discovery and lesson design language
+   ========================================================================== */
+:root {
+  --owl-ink:#30285E;
+  --owl-muted:#77718C;
+  --owl-purple:#5145B8;
+  --owl-lilac:#EEEAFE;
+  --owl-surface:rgba(255,255,255,.92);
+  --owl-border:rgba(81,69,184,.12);
+  --owl-card-shadow:0 14px 34px -24px rgba(45,37,91,.42),0 2px 8px rgba(45,37,91,.04);
+}
+.world,.subject,.studio-lesson { color:var(--owl-ink); }
+.world { min-height:100vh; background:linear-gradient(180deg,color-mix(in srgb,var(--sky) 78%,white),var(--paper) 440px); }
+.world__banner { max-width:1120px; margin:22px auto 0; }
+.world__art { border-radius:34px; box-shadow:0 20px 46px -28px rgba(45,37,91,.55); }
+.world__intro {
+  max-width:900px; margin:-34px auto 0; padding:14px 22px; border:1px solid var(--owl-border);
+  border-radius:24px; box-shadow:var(--owl-card-shadow); backdrop-filter:blur(12px);
+}
+.world__guide { color:var(--world); letter-spacing:.02em; }
+.world__tagline { color:var(--owl-ink); font-size:clamp(1.05rem,2vw,1.35rem); }
+.subjects { max-width:1120px; grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr)); gap:18px; margin:26px auto 42px; }
+.subjectcard {
+  min-height:210px; padding:22px; border:1px solid var(--owl-border);
+  box-shadow:var(--owl-card-shadow),inset 0 0 0 2px color-mix(in srgb,var(--world) 10%,transparent);
+  background:linear-gradient(145deg,#fff 0%,color-mix(in srgb,var(--sky) 30%,white) 100%);
+}
+.subjectcard__icon { width:72px;height:72px;border-radius:23px;background:linear-gradient(145deg,var(--sky),#fff);box-shadow:inset 0 0 0 1px rgba(255,255,255,.9); }
+.subjectcard__title { color:var(--owl-ink);font-size:1.42rem; }
+.subjectcard__tag { color:var(--owl-muted); }
+.subjectcard .progressbar { height:10px; margin-top:auto; }
+.subjectcard:disabled { filter:saturate(.65);opacity:.72; }
+.subject { min-height:100vh; background:linear-gradient(180deg,color-mix(in srgb,var(--sky) 70%,white),var(--paper) 420px); }
+.stagetabs { max-width:1120px; padding-top:20px; gap:10px; }
+.stagetab { border:1px solid var(--owl-border); box-shadow:0 3px 10px rgba(45,37,91,.04); }
+.stagetab.is-active { background:var(--world); }
+.subject__overview { color:var(--owl-ink); }
+.subject__stage-desc { color:var(--owl-muted); }
+.units { max-width:1120px; gap:22px; }
+.unit { border:1px solid var(--owl-border); border-radius:28px; box-shadow:var(--owl-card-shadow); }
+.unit__num { border-radius:17px; }
+.stone { border:1px solid color-mix(in srgb,var(--world) 12%,white); background:linear-gradient(145deg,var(--sky),color-mix(in srgb,var(--sky) 50%,white)); box-shadow:0 4px 0 color-mix(in srgb,var(--world) 28%,transparent); }
+.stone__title { color:var(--owl-ink); }
+.structure { border:1px solid var(--owl-border); box-shadow:var(--owl-card-shadow); }
+
+/* Buddy-led lesson welcome and compact icon journey. */
+.studio-lesson { min-height:100vh; background:radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--sky) 80%,white),transparent 48%),linear-gradient(180deg,var(--sky),var(--paper) 520px); }
+.lesson-welcome {
+  max-width:980px; margin:18px auto 0; padding:18px 22px; display:flex; align-items:center; gap:16px;
+  border:1px solid var(--owl-border); border-radius:26px; background:rgba(255,255,255,.84);
+  box-shadow:var(--owl-card-shadow);
+}
+.lesson-welcome > svg { flex:0 0 auto; filter:drop-shadow(0 6px 5px rgba(45,37,91,.12)); }
+.lesson-welcome__copy { flex:1; min-width:0; }
+.lesson-welcome__copy .owl-kicker { color:var(--world);font-size:.68rem; }
+.lesson-welcome h1 { margin:2px 0 4px; color:var(--owl-ink); font-size:clamp(1.35rem,3vw,2rem); }
+.lesson-welcome p { margin:0; color:var(--owl-muted); font-size:.94rem; }
+.steps--adventure {
+  position:relative; max-width:760px; justify-content:space-between; align-items:flex-start;
+  gap:2px; margin:10px auto 4px; padding:10px 14px 6px;
+}
+.steps__track {
+  position:absolute; left:8%;right:8%;top:31px;height:5px;overflow:hidden;
+  border-radius:999px;background:color-mix(in srgb,var(--world) 14%,white);z-index:0;
+}
+.steps__track span { display:block;height:100%;border-radius:inherit;background:var(--world);transition:width .25s ease; }
+.steps--adventure .step { position:relative;z-index:1;flex:1 1 0;min-width:0;padding:0 2px;gap:5px;font-size:.7rem; }
+.steps--adventure .step__icon { width:42px;height:42px;border:3px solid var(--paper);font-size:1.12rem;box-shadow:0 2px 8px rgba(45,37,91,.1); }
+.steps--adventure .step.is-active .step__icon { box-shadow:0 0 0 3px color-mix(in srgb,var(--world) 22%,transparent),0 4px 12px rgba(45,37,91,.16); }
+.steps--adventure .step__label { max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.68rem; }
+.lesson-body { max-width:980px; padding-bottom:54px; }
+.lesson-body .card { border:1px solid var(--owl-border); border-radius:30px; box-shadow:var(--owl-card-shadow); }
+.learncard__guide { align-items:flex-start; }
+.learncard__guide > svg { filter:drop-shadow(0 5px 4px rgba(45,37,91,.12)); }
+.bubble { border:1px solid color-mix(in srgb,var(--world) 10%,white); background:linear-gradient(145deg,var(--sky),color-mix(in srgb,var(--sky) 55%,white)); }
+.bubble__text { color:var(--owl-ink); }
+.storycard,.thinkcard,.makecard,.itemsrun { overflow:hidden; }
+.storycard__text { color:var(--owl-ink);line-height:1.7; }
+.itemsrun__head h2 { color:var(--owl-ink); }
+.item__prompt { padding:14px 16px;border-radius:20px;background:linear-gradient(145deg,var(--sky),#fff); }
+.item__text { color:var(--owl-ink); }
+.celebrate { border:1px solid color-mix(in srgb,var(--accent) 45%,white)!important;background:radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--accent) 20%,white),white 62%); }
+@media (max-width:760px) {
+  .world__banner { margin-top:14px; }
+  .world__intro { margin:-24px 10px 0; padding:12px 14px; }
+  .subjects { margin-top:18px; gap:13px; }
+  .subjectcard { min-height:190px; padding:17px; }
+  .lesson-welcome { margin:12px 12px 0;padding:14px;gap:10px; }
+  .lesson-welcome > svg { width:58px;height:58px; }
+  .steps--adventure { margin:8px 8px 2px;padding:8px 5px 4px; }
+  .steps__track { left:9%;right:9%;top:28px; }
+  .steps--adventure .step__icon { width:38px;height:38px;font-size:1rem; }
+  .steps--adventure .step__label { font-size:.6rem; }
+}
+@media (max-width:480px) {
+  .lesson-welcome { align-items:flex-start; }
+  .lesson-welcome > svg { width:48px;height:48px; }
+  .lesson-welcome p { font-size:.82rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden; }
+  .lesson-welcome > .speak { flex:0 0 40px;width:40px;height:40px;min-height:40px; }
+  .steps--adventure .step { min-width:0; }
+  .steps--adventure .step__icon { width:34px;height:34px;font-size:.9rem; }
+  .steps__track { top:25px; }
+  .steps--adventure .step__label { font-size:.55rem; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .steps__track span,.subjectcard,.stone { transition:none!important; }
+}
