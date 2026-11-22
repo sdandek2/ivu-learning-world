@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['Why do you think we sleep at night and not in the day?', 'What is your favourite part of the day and why?'],
           k: ['Tell a grown-up what you do in the morning, afternoon and evening.'],
-          m: ['My Day Picture Clock', 'a paper plate, crayons, a paper arrow, a split pin', 'Divide the plate into four parts: morning, afternoon, evening, night | Draw what you do in each part | Attach an arrow with a split pin | Move the arrow through your day'],
+          m: ['My Day Picture Clock', 'a paper plate, crayons, a paper arrow, a split pin', 'Divide the plate into four parts: morning, afternoon, evening, night | Draw what you do in each part | Attach an arrow with a split pin | Move the arrow through your day', "An adult should attach the split pin and check that no sharp point is exposed. Keep the pin away from mouths and eyes."],
           q: [
             od('Order', 'breakfast|lunch|dinner'),
             ch('Which day comes before Wednesday?', '*Tuesday|Thursday|Saturday'),
