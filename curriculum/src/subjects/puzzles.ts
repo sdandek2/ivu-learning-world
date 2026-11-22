@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['How do you feel when you\'re stuck?', 'What helps you keep trying?'],
           k: ['Show a grown-up your jigsaw strategy.'],
-          m: ['Make Your Own Jigsaw', 'an old greeting card or your drawing, safety scissors', 'Draw a picture or use an old card | Cut it into 6–8 pieces with wavy lines | Mix them up | Solve it and give it to someone else'],
+          m: ['Make Your Own Jigsaw', 'an old greeting card or your drawing, safety scissors', 'Draw a picture or use an old card | Cut it into 6–8 pieces with wavy lines | Mix them up | Solve it and give it to someone else', "Use child-safe scissors with adult supervision. Adults should handle any sharp cutting tools and keep small pieces away from younger children."],
           q: [
             ch('A plan for solving is a…', '*strategy|sticker|story'),
             tf('Corner pieces have two straight edges.', true),
@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['What helps you remember where things are?', 'Why does slow looking help?'],
           k: ['Play a pairs game with a grown-up and explain your memory trick.'],
-          m: ['Homemade Memory Game', 'card, crayons, scissors', 'Cut 12 equal cards | Draw 6 pairs of matching pictures | Shuffle and lay them face down | Play with family and share memory tricks'],
+          m: ['Homemade Memory Game', 'card, crayons, scissors', 'Cut 12 equal cards | Draw 6 pairs of matching pictures | Shuffle and lay them face down | Play with family and share memory tricks', "Use child-safe scissors with adult supervision and keep small cards away from children who may put them in their mouths."],
           q: [
             ch('Focusing on something is…', '*attention|allergy|arithmetic'),
             tf('Scanning part by part helps find differences.', true),
@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why do you think one puzzle can make so many shapes?', 'Which piece is hardest to place?'],
           k: ['Show a grown-up a tangram animal you made.'],
-          m: ['Make a Tangram', 'a square of card, ruler, scissors (with an adult)', 'Draw the tangram cutting lines on the square | Cut out the seven pieces | Make the big square again | Create three animals of your own'],
+          m: ['Make a Tangram', 'a square of card, ruler, scissors (with an adult)', 'Draw the tangram cutting lines on the square | Cut out the seven pieces | Make the big square again | Create three animals of your own', "An adult should supervise cutting and use child-safe scissors. Keep the seven pieces away from younger children who may mouth small objects."],
           q: [
             ch('To turn something around is to…', '*rotate|repeat|remove'),
             tf('A tangram has one square.', true),
