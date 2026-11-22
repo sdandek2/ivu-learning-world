@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['What else could you power with a circuit?', 'How is a torch like a circuit?'],
           k: ['Show a grown-up how your circuit works and what breaks it.'],
-          m: ['🧪 Light-Up Card', 'a sealed low-voltage battery holder with secured cells (adult-installed), an LED, copper tape, card', 'Draw a picture with a star or a sun | Stick copper tape in a loop | Place the LED and battery so the loop is complete | Fold the corner to close the circuit and light up', "An adult must install and secure the battery and LED before the child uses the card. Keep all loose batteries away from children and never put them in the mouth. Use only a low-voltage battery; never connect to a wall socket."],
+          m: ['🧪 Light-Up Card', 'a screw-closed low-voltage AA battery holder (adult-installed; no coin or button cells), an LED, copper tape, card', 'Draw a picture with a star or a sun | Stick copper tape in a loop | Place the LED and battery so the loop is complete | Fold the corner to close the circuit and light up', "An adult alone must install and remove the AA cells and close the screw-secured holder before the child uses the card. Do not use coin or button cells; keep all loose batteries out of children's reach. Never connect to a wall socket."],
           q: [
             ch('A complete path for electricity is a…', '*circuit|circle drawing|cable car'),
             tf('A torch contains a simple circuit.', true),
