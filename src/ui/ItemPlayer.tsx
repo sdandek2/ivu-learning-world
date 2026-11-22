@@ -1,5 +1,5 @@
 /**
- * Plays one interactive item (choice, true/false, order, match, count).
+ * Plays one interactive item (choice, true/false, order, match, count, classify).
  *
  * Adaptive scaffolding: a wrong answer gets gentle feedback and another try; the "hint"
  * removes a wrong option / fixes the first step / turns on touch-counting. After two wrong
@@ -49,7 +49,7 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
     <div className="item" data-kind={item.kind}>
       <div className="item__prompt">
         <div className="item__prompt-copy">
-          <span className="item__kind">{({ choice: 'PICK AN ANSWER', truefalse: 'TRUE OR FALSE', order: 'PUT IN ORDER', match: 'FIND THE PAIRS', count: 'COUNT TOGETHER' })[item.kind]}</span>
+          <span className="item__kind">{({ choice: 'PICK AN ANSWER', truefalse: 'TRUE OR FALSE', order: 'PUT IN ORDER', match: 'FIND THE PAIRS', count: 'COUNT TOGETHER', classify: 'SORT INTO GROUPS' })[item.kind]}</span>
           <p className="item__text">{item.kind === 'count' && (item.prompt.match(EMOJI)?.length ?? 0) > 1 ? item.prompt.replace(EMOJI, '').trim() : item.prompt}</p>
         </div>
         <SpeakButton text={item.prompt} auto small />
@@ -59,7 +59,7 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
         {item.kind === 'truefalse' && <TrueFalse item={item} disabled={finished !== null} onRight={succeed} onWrong={() => { setWrong(1); setFinished(false); play(sounds.tryAgain); say(pick(BUDDY_LINES.showAnswer)); }} />}
         {item.kind === 'order' && <Order item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} seed={seed} />}
         {item.kind === 'match' && <Match item={item} disabled={finished !== null} onComplete={(mistakes) => { setWrong(mistakes); setFinished(mistakes <= 1); play(mistakes <= 1 ? sounds.correct : sounds.tryAgain); say(pick(mistakes === 0 ? BUDDY_LINES.praise : mistakes <= 1 ? BUDDY_LINES.gotIt : BUDDY_LINES.showAnswer)); }} seed={seed} />}
-        {item.kind === 'count' && <Count item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} />}
+        {item.kind === 'count' && <Count item={item} hinted={usedHint} disabled={finished !== null} onRight={succeed} onWrong={fail} />}\n        {item.kind === 'classify' && <Classify item={item} disabled={finished !== null} onRight={succeed} onWrong={fail} seed={seed} />}
       </div>
 
       {finished === null && wrong > 0 && <p className="item__nudge" role="status">Not quite — try again! {allowHints && !usedHint && item.kind !== 'truefalse' && item.kind !== 'match' ? 'You can ask for a hint.' : ''}</p>}
@@ -86,7 +86,7 @@ export function answerText(item: Item): string {
     case 'truefalse': return item.answer ? 'True' : 'False';
     case 'order': return item.items.join(' → ');
     case 'match': return item.pairs.map(([a, b]) => `${a} = ${b}`).join(', ');
-    case 'count': return String(item.answer);
+    case 'count': return String(item.answer);\n    case 'classify': return item.categories.map((category, i) => `${category}: ${item.items.filter((entry) => entry.category === i).map((entry) => entry.label).join(', ')}`).join('; ');
   }
 }
 
@@ -207,6 +207,36 @@ function Count({ item, hinted, disabled, onRight, onWrong }: { item: Extract<Ite
             onClick={() => { if (n === item.answer) onRight(); else { setTried((t) => [...t, n]); onWrong(); } }}>{n}</button>
         ))}
       </div>
+    </div>
+  );
+}
+
+
+/** Accessible sorting interaction: choose an object, then choose its category. */
+function Classify({ item, disabled, onRight, onWrong, seed }: { item: Extract<Item, { kind: 'classify' }>; disabled: boolean; onRight: () => void; onWrong: () => void; seed?: number }) {
+  const order = useMemo(() => shuffle(item.items.map((_, i) => i), seed), [item, seed]);
+  const [selected, setSelected] = useState<number | null>(null);
+  const [assigned, setAssigned] = useState<Record<number, number>>({});
+  const [tried, setTried] = useState(false);
+  const complete = Object.keys(assigned).length === item.items.length;
+  const check = () => {
+    const correct = item.items.every((entry, i) => assigned[i] === entry.category);
+    if (correct) onRight();
+    else { setTried(true); onWrong(); setAssigned({}); setSelected(null); }
+  };
+  return (
+    <div className="classify">
+      <div className="classify__items" role="group" aria-label="Items to sort">
+        {order.map((i) => <button key={i} className={cx('tile', selected === i && 'is-selected', assigned[i] !== undefined && 'is-done')} disabled={disabled || assigned[i] !== undefined} aria-pressed={selected === i} onClick={() => setSelected(i)}>{item.items[i].label}</button>)}
+      </div>
+      <p className="match__help" aria-live="polite">{selected === null ? 'Choose an item to sort.' : `Now choose a group for “${item.items[selected].label}”.`}</p>
+      <div className="classify__categories" role="group" aria-label="Categories">
+        {item.categories.map((category, i) => <button key={category} className="tile" disabled={disabled || selected === null} onClick={() => { if (selected !== null) { setAssigned((current) => ({ ...current, [selected]: i })); setSelected(null); } }}>
+          {category}<span className="classify__count">{Object.values(assigned).filter((v) => v === i).length}</span>
+        </button>)}
+      </div>
+      {complete && !disabled && <button className="btn btn--primary" onClick={check}>Check my groups ✓</button>}
+      {tried && !disabled && <p className="item__nudge" role="status">Let’s try sorting those again.</p>}
     </div>
   );
 }
