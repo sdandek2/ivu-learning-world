@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['What would happen to a plant with no roots?', 'Why do you think many fruits taste sweet?'],
           k: ['Show someone a real plant and point to each part, explaining its job.'],
-          m: ['🧪 Colour-Changing Celery', 'a celery stick or white flower, a glass of water, food colouring', 'Put water and food colouring in a glass | Stand the celery or flower in it | Check after a few hours and the next day | Explain what the stem did'],
+          m: ['🧪 Colour-Changing Celery', 'a celery stick or white flower, a glass of water, food colouring', 'Put water and food colouring in a glass | Stand the celery or flower in it | Check after a few hours and the next day | Explain what the stem did', "Use a sturdy plastic cup instead of glass. Do not drink the coloured water or eat the celery after the experiment; wash hands afterwards."],
           q: [
             ch('Which part makes seeds?', '*flower|root|stem'),
             ch('Spinach is a…', 'root|stem|*leaf'),
@@ -340,7 +340,7 @@ export default subject({
           ],
           t: ['Why does it matter to finish a course of antibiotics as prescribed?', 'Why do scientists say populations, not individuals, evolve?'],
           k: ['Explain natural selection to someone using a simulation you design.'],
-          m: ['🧪 Beak Simulation', 'tools (tweezers, spoons, clothes pegs, chopsticks), "food" (rice, beans, marbles), cups, timer', 'Each person gets a "beak" tool | Collect food for 30 seconds per round | The least successful beaks "die" and others "reproduce" | Change the food type and repeat | Graph the beak types over generations and explain'],
+          m: ['🧪 Beak Simulation', 'tools (tweezers, spoons, clothes pegs, chopsticks), "food" (rice, beans, marbles), cups, timer', 'Each person gets a "beak" tool | Collect food for 30 seconds per round | The least successful beaks "die" and others "reproduce" | Change the food type and repeat | Graph the beak types over generations and explain', "Use large, clean pretend food pieces that cannot be swallowed; do not use small beans or marbles with young children. Keep tools away from faces and do not harm real animals."],
           q: [
             ch('Natural selection acts on…', 'acquired traits|*inherited variation|wishes'),
             ch('"On the Origin of Species" was published in…', '1759|*1859|1959'),
