@@ -104,31 +104,56 @@ export function Universe() {
   );
 }
 
-/** An illustrated atlas of all twelve worlds, with a clear, repeatable destination action. */
+/** An illustrated atlas of all twelve worlds, with real progress and a clear next step. */
 export function ExploreMap() {
   const { index, skills } = useStore();
   if (!index) return <Loading />;
+  const totalStarted = Object.values(skills).filter((skill) => skill.stage > 0).length;
+  const totalMastered = Object.values(skills).filter((skill) => skill.stage >= 3).length;
   return (
     <div className="explore-page explore-page--atlas">
       <TopBar title="Explore the worlds" back="/" color="#5145B8" />
       <header className="atlas-hero">
         <Buddy size={92} color="#5145B8" accent="#FFD66B" mood="wow" />
-        <div><span className="owl-kicker">BUDDY'S WORLD ATLAS</span><h1>Where shall we go?</h1><p>Every island has something wonderful to discover.</p></div>
+        <div className="atlas-hero__copy">
+          <span className="owl-kicker">BUDDY'S WORLD ATLAS</span>
+          <h1>Where shall we go?</h1>
+          <p>Every island has something wonderful to discover.</p>
+          <div className="atlas-hero__stats" aria-label={`${totalStarted} skills started and ${totalMastered} mastered`}>
+            <span>🧭 12 worlds to explore</span>
+            <span>⭐ {totalMastered} skills mastered</span>
+          </div>
+        </div>
         <SpeakButton text={BUDDY_LINES.atlas.text} small />
       </header>
+      <section className="atlas-intro" aria-label="How to explore">
+        <span className="atlas-intro__icon" aria-hidden="true">✨</span>
+        <p><strong>Choose your next adventure.</strong> Visit any island, discover its subjects and collect stars as you learn.</p>
+      </section>
       <div className="atlas-map">
         <div className="atlas-map__path" aria-hidden="true" />
         {index.worlds.map((w, i) => {
-          const started = w.subjects.reduce((n, sub) => n + Object.values(skills).filter((k) => k.subjectId === sub.id && k.stage > 0).length, 0);
+          const subjectSkills = Object.values(skills).filter((skill) => w.subjects.some((subject) => subject.id === skill.subjectId));
+          const started = subjectSkills.filter((skill) => skill.stage > 0).length;
+          const mastered = subjectSkills.filter((skill) => skill.stage >= 3).length;
+          const hasProgress = started > 0;
           return (
-            <button key={w.id} className={`atlas-island atlas-island--${i % 6}`} style={{ ['--island-world' as string]: w.colors.land, ['--island-sky' as string]: w.colors.sky, ['--island-accent' as string]: w.colors.accent }} onClick={() => navigate(`/world/${w.id}`)}>
-              <span className="atlas-island__scene"><WorldArt world={w} /></span>
-              <span className="atlas-island__meta"><strong>{w.title}</strong><small>{w.domain}</small><span className="atlas-island__enter">Visit this world <b aria-hidden="true">→</b></span></span>
-              {started > 0 && <span className="atlas-island__progress" aria-label={`${started} learning skills started`}>⭐ {started}</span>}
+            <button key={w.id} className={`atlas-island atlas-island--${i % 6} ${hasProgress ? 'has-progress' : ''}`} style={{ ['--island-world' as string]: w.colors.land, ['--island-sky' as string]: w.colors.sky, ['--island-accent' as string]: w.colors.accent }} onClick={() => navigate(`/world/${w.id}`)} aria-label={`Explore ${w.title}, ${w.domain}. ${started} skills started, ${mastered} mastered.`}>
+              <span className="atlas-island__scene"><WorldArt world={w} /><span className="atlas-island__number">{String(i + 1).padStart(2, '0')}</span></span>
+              <span className="atlas-island__meta">
+                <strong>{w.title}</strong>
+                <small>{w.domain}</small>
+                <span className="atlas-island__tagline">{w.tagline}</span>
+                <span className="atlas-island__progressline">
+                  <span className="atlas-island__progresscount">{hasProgress ? `⭐ ${mastered} mastered` : '🌱 Ready to explore'}</span>
+                  <span className="atlas-island__enter">Explore <b aria-hidden="true">→</b></span>
+                </span>
+              </span>
             </button>
           );
         })}
       </div>
+      <footer className="atlas-footer"><Buddy size={42} color="#5145B8" accent="#FFD66B" /><p><strong>Every great adventure starts with curiosity.</strong><span>Buddy is right here whenever you need a hand.</span></p></footer>
     </div>
   );
 }
