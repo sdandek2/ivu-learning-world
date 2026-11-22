@@ -31,11 +31,17 @@ jobs:
           node-version: 22.18.0
           cache: npm
 
+      - name: Refresh lockfile for patched test tooling
+        run: npm install --package-lock-only --ignore-scripts
+
       - name: Install locked dependencies
         run: npm ci
 
       - name: Capture dependency security audit
-        run: npm audit --json > npm-audit.json || true
+        run: npm audit --json > npm-audit.json
+
+      - name: Enforce dependency security baseline
+        run: npm audit --audit-level=moderate
 
       - name: Validate curriculum without rewriting generated files
         run: npm run validate
@@ -52,6 +58,7 @@ jobs:
             docs/CURRICULUM_QUALITY_AUDIT.md
             curriculum/QUALITY_AUDIT.json
             npm-audit.json
+            package-lock.json
           if-no-files-found: warn
 
       - name: Type-check
