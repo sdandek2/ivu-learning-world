@@ -444,3 +444,20 @@ p { margin: 0 0 .7em; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
 .reduce-motion *, .reduce-motion *::before, .reduce-motion *::after { animation: none !important; transition: none !important; }
+
+/* IVU Reads entry card (Word Woods + Phonics) */
+.ivureads-card {
+  display: flex; align-items: center; gap: 18px; max-width: 964px; margin: 22px auto 0; box-sizing: border-box; padding: 18px 22px; border-radius: 28px; text-decoration: none; color: #fff;
+  background: linear-gradient(135deg, #FF8A3D 0%, #F0386B 55%, #8B5CF6 100%); box-shadow: var(--shadow), 0 8px 0 #C2410C33; transition: transform .15s, box-shadow .2s;
+}
+.ivureads-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); }
+.ivureads-card:active { transform: scale(.98); }
+.ivureads-card__icon { font-size: 2.6rem; filter: drop-shadow(0 3px 0 rgba(0,0,0,.15)); }
+.ivureads-card__text { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.ivureads-card__title { font-family: var(--font-display); font-size: 1.9rem; font-weight: 700; line-height: 1.1; }
+.ivureads-card__sub { font-weight: 700; opacity: .95; }
+.ivureads-card__go { width: 56px; height: 56px; flex: none; border-radius: 50%; background: rgba(255,255,255,.25); display: grid; place-items: center; font-size: 1.4rem; }
+.ivureads-card--compact { margin: 8px auto 18px; padding: 12px 18px; }
+.world > .ivureads-card { width: calc(100% - 36px); }
+.ivureads-card--compact .ivureads-card__title { font-size: 1.4rem; }
+.ivureads-card--compact .ivureads-card__icon { font-size: 2rem; }

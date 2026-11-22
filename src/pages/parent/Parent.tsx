@@ -12,6 +12,7 @@ import { cx, pct, relativeDay } from '../../lib/util.ts';
 import { backupFileName, createBackup, downloadJSON, parseBackup, restoreBackup, type Backup } from '../../lib/backup.ts';
 import * as db from '../../db/db.ts';
 import { englishVoices } from '../../lib/speech.ts';
+import { IVU_READS_URL, loadLevels, readIvuReadsState, summarise, type IvuReadsSummary } from '../../lib/ivuReads.ts';
 import { PLANNED_LOCALES } from '../../i18n/index.ts';
 import { useSubject } from '../child/Explore.tsx';
 import { describeLog, useLessonTitles } from '../child/More.tsx';
@@ -20,6 +21,36 @@ import { answerText } from '../../ui/ItemPlayer.tsx';
 import { stageColor } from '../../ui/common.tsx';
 
 const DAY = 86400000;
+
+/** Reading progress from IVU Reads (its own levels and mastery rule: read correctly N times, on 2 different days). */
+function IvuReadsPanel() {
+  const [sum, setSum] = useState<IvuReadsSummary | null>(null);
+  useEffect(() => { let live = true; loadLevels().then((lv) => { if (live) setSum(summarise(lv, readIvuReadsState())); }); return () => { live = false; }; }, []);
+  if (!sum || sum.levels.length === 0) return null;
+  const cur = sum.levels[sum.currentLevel];
+  return (
+    <section className="pcard ivureads">
+      <h2>📖 IVU Reads — phonics and reading</h2>
+      {!sum.started ? (
+        <p>Not started on this device yet. IVU Reads is the phonics flashcard app (15 levels, from letter sounds to short stories, with recorded voice). Open it from <b>Word Woods → 📖 IVU Reads</b>, or <a href={IVU_READS_URL}>open it now</a>. To bring over progress from another copy of IVU Reads, use its own <i>Grown-ups → Backup</i> there.</p>
+      ) : (
+        <>
+          <p>Current level: <b>{cur?.sticker} Level {sum.currentLevel} · {cur?.name}</b> · {sum.wordsMastered} of {sum.wordsTotal} cards learned · {sum.stickers} level stickers · {sum.stars} ⭐ · {sum.sessions} sessions{sum.lastSession ? `, last on ${sum.lastSession}` : ''}.</p>
+          <ul className="ivureads__levels">
+            {sum.levels.map((l) => (
+              <li key={l.index} className={cx(l.current && 'is-current', !l.unlocked && 'is-locked')}>
+                <span className="ivureads__name">{l.sticker} {l.index}. {l.name}</span>
+                <span className="meter" aria-label={`${l.mastered} of ${l.total} learned`}><span style={{ width: `${(l.mastered / l.total) * 100}%` }} /></span>
+                <span className="ivureads__n">{l.mastered}/{l.total}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="pnote">A card counts as learned when it has been read correctly enough times on two different days (IVU Reads' own rule, set in its Grown-ups area).</p>
+        </>
+      )}
+    </section>
+  );
+}
 
 export function ParentGate({ next }: { next: string }) {
   const { unlockParent } = useStore();
@@ -125,6 +156,8 @@ function Dashboard() {
           <p>A failed revision check (below {THRESHOLDS.retentionFail * 100}%) moves the skill back to Understanding until it is re-earned.</p>
         </details>
       </section>
+
+      <IvuReadsPanel />
 
       <section className="pcard">
         <h2>Evidence profile</h2>
@@ -349,6 +382,7 @@ function SettingsPage() {
           </select>
         </label>
         <label className="pfield"><span>Speaking speed: {settings.speechRate.toFixed(2)}</span><input type="range" min="0.6" max="1.3" step="0.05" value={settings.speechRate} onChange={(e) => updateSettings({ speechRate: Number(e.target.value) })} /></label>
+        <label className="pcheck"><input type="checkbox" checked={settings.recordedVoice} onChange={(e) => updateSettings({ recordedVoice: e.target.checked })} /> Use the IVU Reads recorded voice for letter sounds, words, sentences and stories it has recordings for</label>
         <label className="pcheck"><input type="checkbox" checked={settings.sounds} onChange={(e) => updateSettings({ sounds: e.target.checked })} /> Play feedback sounds</label>
         <label className="pcheck"><input type="checkbox" checked={settings.reducedMotion} onChange={(e) => updateSettings({ reducedMotion: e.target.checked })} /> Reduce motion and animations</label>
       </section>

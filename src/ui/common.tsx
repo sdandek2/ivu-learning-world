@@ -1,6 +1,6 @@
 import { useEffect, type ReactNode } from 'react';
 import { useStore } from '../state/store.tsx';
-import { speak, speechSupported, stopSpeaking } from '../lib/speech.ts';
+import { speak, readAloudAvailable, stopSpeaking } from '../lib/speech.ts';
 import { MASTERY_STAGES, type MasteryStage } from '../engine/types.ts';
 import { navigate } from '../lib/router.ts';
 import { cx } from '../lib/util.ts';
@@ -8,12 +8,12 @@ import { cx } from '../lib/util.ts';
 export function SpeakButton({ text, label = 'Listen', auto = false, small = false }: { text: string; label?: string; auto?: boolean; small?: boolean }) {
   const { settings } = useStore();
   useEffect(() => {
-    if (auto && settings.readAloud === 'auto') speak(text, { rate: settings.speechRate, voiceURI: settings.voiceURI });
+    if (auto && settings.readAloud === 'auto') speak(text, { rate: settings.speechRate, voiceURI: settings.voiceURI, recorded: settings.recordedVoice });
     return () => { if (auto) stopSpeaking(); };
-  }, [auto, text, settings.readAloud, settings.speechRate, settings.voiceURI]);
-  if (!speechSupported() || settings.readAloud === 'off') return null;
+  }, [auto, text, settings.readAloud, settings.speechRate, settings.voiceURI, settings.recordedVoice]);
+  if (!readAloudAvailable() || settings.readAloud === 'off') return null;
   return (
-    <button type="button" className={cx('speak', small && 'speak--small')} onClick={() => speak(text, { rate: settings.speechRate, voiceURI: settings.voiceURI })} aria-label={`${label}: read aloud`}>
+    <button type="button" className={cx('speak', small && 'speak--small')} onClick={() => speak(text, { rate: settings.speechRate, voiceURI: settings.voiceURI, recorded: settings.recordedVoice })} aria-label={`${label}: read aloud`}>
       <span aria-hidden="true">🔊</span>{!small && <span>{label}</span>}
     </button>
   );

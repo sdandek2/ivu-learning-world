@@ -10,13 +10,13 @@ IVU Learning World v1.0 is complete against the brief. It is a working, local-fi
 |---|---|
 | Curriculum build, `--strict` (all 60 subjects required) | 60/60 complete, 0 invalid |
 | Type check (`tsc --noEmit`) | Pass |
-| Unit and integration tests (`npm test`) | 266/266 pass |
+| Unit and integration tests (`npm test`) | 279/279 pass |
 | Production build (`npm run build`) | Pass: 404 KB main JS (124 KB gzip), 27 KB lazy parent chunk, 3.4 MB curriculum JSON |
-| End-to-end browser test (`npm run e2e`) | 13/13 steps pass, including offline reload and mobile layout |
+| End-to-end browser test (`npm run e2e`) | 15/15 steps pass, including offline reload, IVU Reads and recorded voice, and mobile layout |
 
 ## 2. Starting point
 
-The brief asked for the existing IVU Reads app to be inspected first. It was not available to this session: none of the repositories visible to the session was IVU Reads, which the owner confirmed. The platform was therefore **built from scratch**. No code, design or data was carried over.
+The brief asked for the existing IVU Reads app to be inspected first. It was not available while the platform was built, so Learning World was **built from scratch**. IVU Reads was supplied afterwards as two single-file HTML versions, and has now been integrated (see 3.4).
 
 ## 3. What was built
 
@@ -26,13 +26,13 @@ The brief asked for the existing IVU Reads app to be inspected first. It was not
 |---|---|
 | Worlds / subjects | 12 / 60 |
 | Stage syllabuses (6 per subject) | 360 |
-| Units / full lessons | 729 / 729 |
-| Interactive items (activities + assessments) | 5,104 (2,916 activities, 2,188 assessment items) |
-| By kind | 2,948 multiple choice · 1,402 true/false · 498 matching · 165 ordering · 91 counting |
-| Vocabulary entries | 2,888 |
+| Units / full lessons | 730 / 730 |
+| Interactive items (activities + assessments) | 5,111 (2,920 activities, 2,191 assessment items) |
+| By kind | 2,953 multiple choice · 1,403 true/false · 498 matching · 166 ordering · 91 counting |
+| Vocabulary entries | 2,894 |
 | Projects / hands-on experiments | 613 / 116 |
 | Labelled context notes (history and heritage) | 386 (160 evidence · 100 interpretation · 68 tradition · 36 belief · 22 science) |
-| Lessons per stage | s4: 123 · s5: 120 · s6: 121 · s7: 123 · s9: 122 · s12: 120 |
+| Lessons per stage | s4: 123 · s5: 121 · s6: 121 · s7: 123 · s9: 122 · s12: 120 |
 
 **Every lesson** contains objectives, prerequisites (named and linked by ID), a multi-part explanation, vocabulary, examples, a story, at least 3 interactive activities, critical-thinking questions, a speaking task, a project or experiment with materials and steps, an assessment, and mastery criteria. **Every unit** has topics and subtopics, objectives, mastery criteria and a stage-appropriate revision schedule. **Every stage** has an overview and goals.
 
@@ -80,7 +80,21 @@ The brief asked for the existing IVU Reads app to be inspected first. It was not
 - **Content**: every generated subject file is validated against the schema, and the manifest is cross-checked (243 test cases).
 - **End to end**: Playwright drives a real Chromium through the complete flow, including the service-worker offline reload.
 
-### 3.4 Documentation
+### 3.4 IVU Reads integration
+
+The newer of the two supplied IVU Reads files (the one with "My practice words" and "Mixed vowel practice") was imported with `scripts/import-ivu-reads.mjs`:
+
+- **Runs as its own area** at `./ivu-reads/`. Its logic, 15 levels, games, mastery rule (N correct reads on 2 different days), recordings wizard and own backup are unchanged.
+- **Recordings extracted:** the 500 embedded MP3 clips are now separate files, taking the page from 2.9 MB to 190 KB. They cover 39 letter sounds, 261 words, 150 phrases, sentences and story lines, 13 story questions and 37 prompts. The per-word highlight timings are preserved.
+- **Fully local:** Google Fonts was replaced with bundled Andika and Fredoka, so IVU Reads makes no external requests and is precached for offline use with all its recordings.
+- **Connected to Learning World:**
+  - a 🚗📖 entry card on Word Woods and on Phonics (ages 4–6), plus a 🏠 Learning World button inside IVU Reads;
+  - a per-level progress panel on the parent dashboard;
+  - IVU Reads progress and parent-recorded sounds are included in, and validated by, Learning World backups.
+- **Recorded voice:** Learning World's read-aloud uses the recordings whenever there is one for the exact text, sentence by sentence (only when every sentence is recorded, so voices are never mixed). It falls back to the synthetic voice otherwise, and can be switched off in Settings.
+- **Phonics realigned:** the age 4–5 and 5–6 Phonics lessons now follow IVU Reads' sequence: letter sounds → 2-letter words → short a → short i and o → short u and e → sh/ch/th/ck → star words → phrases, sentences and stories. A new lesson, "I Can Read a Story!", uses IVU Reads' story *Ivu and the Red Car*. Lesson IDs are unchanged.
+
+### 3.5 Documentation
 
 - `README.md`: installation, running, use on a home network, the mastery model, **backup and recovery**, project structure and quality checks.
 - `docs/AUTHORING.md`: curriculum authoring rules.
@@ -103,15 +117,16 @@ The brief asked for the existing IVU Reads app to be inspected first. It was not
    - It has **not** been reviewed by subject experts or teachers.
    - A parent or expert review is recommended, especially for heritage and religious content, historical dates and the advanced (age 12+) material.
 3. **Self-reported evidence.** The "explain" and "apply" evidence (speaking tasks and projects) is recorded by the child or a parent pressing a button, not verified automatically.
-4. **Marathi and Sanskrit.**
+4. **IVU Reads progress is separate from Learning World's mastery model.** It is shown side by side on the dashboard rather than merged into skill stages, and progress from a separately opened copy must be moved once with IVU Reads' own backup and restore.
+5. **Marathi and Sanskrit.**
    - The interface ships in English only; `mr` and `sa` are registered as planned locales.
    - Devanagari text in the *Languages & Scripts* subject uses the device's system fonts, because only Latin font subsets are bundled.
-5. **Read-aloud quality** depends on the voices installed in the operating system and browser.
-6. **Single learner and device.**
+6. **Read-aloud quality** depends on the voices installed in the operating system and browser.
+7. **Single learner and device.**
    - There is one learner profile per browser.
    - Progress does not sync between devices; backup and restore moves it.
    - Offline mode needs `localhost` or HTTPS.
-7. **AI features** were deliberately deferred, as the brief required.
+8. **AI features** were deliberately deferred, as the brief required.
 
 ## 6. Suggested next steps
 

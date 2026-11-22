@@ -214,7 +214,7 @@ function StoryMaker() {
           <h2>📖 Your story</h2>
           <p className="storycard__text">{story}</p>
           <div className="row">
-            <button className="btn" onClick={() => speak(story, { rate: settings.speechRate, voiceURI: settings.voiceURI })}>🔊 Read it to me</button>
+            <button className="btn" onClick={() => speak(story, { rate: settings.speechRate, voiceURI: settings.voiceURI, recorded: settings.recordedVoice })}>🔊 Read it to me</button>
             <button className="btn btn--primary" onClick={save} disabled={saved}>{saved ? '✓ Saved to gallery' : '💾 Save my story'}</button>
           </div>
         </section>

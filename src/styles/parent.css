@@ -114,3 +114,12 @@
 .gate__q { display: block; font-size: 1.3rem; font-weight: 800; margin: 12px 0 8px; }
 .gate input { font: inherit; font-size: 1.4rem; padding: 10px 12px; border: 1px solid #CDD2DA; border-radius: 10px; width: 100%; }
 .gate__err { color: var(--p-danger); font-weight: 700; margin-top: 8px; }
+
+/* IVU Reads progress panel */
+.ivureads__levels { list-style: none; padding: 0; margin: 12px 0; display: grid; gap: 6px; }
+.ivureads__levels li { display: grid; grid-template-columns: minmax(180px, 1.4fr) 2fr 56px; gap: 12px; align-items: center; font-size: .92rem; }
+.ivureads__levels li.is-current .ivureads__name { font-weight: 800; }
+.ivureads__levels li.is-locked { opacity: .55; }
+.ivureads__levels .meter { height: 10px; background: #EEF0F5; border-radius: 6px; overflow: hidden; display: block; }
+.ivureads__levels .meter span { display: block; height: 100%; background: #2F9E6A; border-radius: 6px; }
+.ivureads__n { text-align: right; font-variant-numeric: tabular-nums; color: var(--p-soft); font-weight: 700; }

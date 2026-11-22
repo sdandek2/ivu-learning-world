@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:55:15.977Z",
+ "generatedAt": "2026-11-22T19:02:29.530Z",
  "stages": [
   {
    "id": "s4",
@@ -66,8 +66,8 @@
      "title": "Phonics & Reading",
      "icon": "🔤",
      "tagline": "Sounds become words",
-     "units": 12,
-     "lessons": 12,
+     "units": 13,
+     "lessons": 13,
      "file": "subjects/phonics.json"
     },
     {

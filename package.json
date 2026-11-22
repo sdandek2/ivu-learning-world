@@ -12,7 +12,8 @@
     "build": "npm run build:curriculum && tsc --noEmit -p . && vite build",
     "preview": "vite preview --port 4173",
     "test": "vitest run",
-    "e2e": "node scripts/e2e-smoke.mjs"
+    "e2e": "node scripts/e2e-smoke.mjs",
+    "import:ivu-reads": "node scripts/import-ivu-reads.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fredoka": "^5.1.1",
@@ -22,6 +23,7 @@
     "zod": "^4.0.0"
   },
   "devDependencies": {
+    "@fontsource/andika": "^5.3.0",
     "@testing-library/react": "^16.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",

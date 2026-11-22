@@ -10,6 +10,24 @@ import { isDue } from '../../engine/revision.ts';
 import { cx } from '../../lib/util.ts';
 import { t } from '../../i18n/index.ts';
 import type { MasteryStage } from '../../engine/types.ts';
+import { IVU_READS_URL, loadLevels, readIvuReadsState, summarise, type IvuReadsSummary } from '../../lib/ivuReads.ts';
+
+/** Big card that opens IVU Reads, Ivaan's phonics flashcard app, with his current level. */
+export function IvuReadsCard({ compact = false }: { compact?: boolean }) {
+  const [sum, setSum] = useState<IvuReadsSummary | null>(null);
+  useEffect(() => { let live = true; loadLevels().then((lv) => { if (live && lv.length) setSum(summarise(lv, readIvuReadsState())); }); return () => { live = false; }; }, []);
+  const cur = sum?.levels[sum.currentLevel];
+  return (
+    <a className={cx('ivureads-card', compact && 'ivureads-card--compact')} href={IVU_READS_URL}>
+      <span className="ivureads-card__icon" aria-hidden="true">🚗📖</span>
+      <span className="ivureads-card__text">
+        <span className="ivureads-card__title">IVU Reads!</span>
+        <span className="ivureads-card__sub">{sum?.started && cur ? `Keep driving! You are on ${cur.sticker} ${cur.name}` : 'Sounds, words and stories — drive the reading road'}</span>
+      </span>
+      <span className="ivureads-card__go" aria-hidden="true">▶</span>
+    </a>
+  );
+}
 
 export function worldById(worlds: World[], id: string) { return worlds.find((w) => w.id === id); }
 export function worldOfSubject(worlds: World[], subjectId: string) { return worlds.find((w) => w.subjects.some((s) => s.id === subjectId)); }
@@ -98,6 +116,7 @@ export function WorldPage({ worldId }: { worldId: string }) {
           <SpeakButton text={`${w.guide} says: Welcome to ${w.title}! ${w.tagline}. Pick a path to explore.`} small />
         </div>
       </div>
+      {w.id === 'word-woods' && <IvuReadsCard />}
       <div className="subjects">
         {w.subjects.map((s) => {
           const stage = placement(settings, s.id);
@@ -156,6 +175,7 @@ export function SubjectPage({ subjectId }: { subjectId: string }) {
         })}
       </div>
       <p className="subject__overview">{st.overview} <SpeakButton text={st.overview} small /></p>
+      {subject.id === 'phonics' && (stage === 's4' || stage === 's5') && <IvuReadsCard compact />}
       <p className="subject__stage-desc">{stageMeta.description}</p>
 
       {subject.structure && (

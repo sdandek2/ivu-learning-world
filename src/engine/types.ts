@@ -47,6 +47,8 @@ export interface Settings {
   defaultStage: StageId;
   subjectStages: Record<string, StageId>;
   readAloud: 'off' | 'tap' | 'auto';
+  /** Prefer IVU Reads' recorded voice when a recording exists for the text. */
+  recordedVoice: boolean;
   speechRate: number;
   voiceURI: string | null;
   sounds: boolean;
@@ -63,6 +65,7 @@ export const DEFAULT_SETTINGS: Settings = {
   defaultStage: 's4',
   subjectStages: {},
   readAloud: 'tap',
+  recordedVoice: true,
   speechRate: 0.9,
   voiceURI: null,
   sounds: true,

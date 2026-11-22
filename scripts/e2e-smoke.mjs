@@ -186,7 +186,40 @@ try {
     await page.locator('.island').first().waitFor({ timeout: 8000 });
     await page.goto(BASE + '#/subject/' + firstSubject.id);
     await page.locator('.unit').first().waitFor({ timeout: 8000 });
+    // IVU Reads and its recordings are precached too
+    await page.goto(BASE + 'ivu-reads/index.html');
+    await page.locator('.node').first().waitFor({ timeout: 8000 });
+    const clipOk = await page.evaluate(async () => (await fetch(window.AUDIO_CLIPS['w:cat'])).ok);
+    if (!clipOk) throw new Error('IVU Reads recording not available offline');
     await context.setOffline(false);
+  });
+
+  await step('IVU Reads opens from Word Woods and returns', async () => {
+    const extReq = [];
+    const onReq = (r) => { if (!r.url().startsWith(BASE)) extReq.push(r.url()); };
+    page.on('request', onReq);
+    await page.goto(BASE + '#/world/word-woods');
+    await page.locator('.ivureads-card').click();
+    await page.waitForURL(/ivu-reads\/index\.html/);
+    await page.locator('.node').first().waitFor();
+    await shot('13-ivu-reads');
+    await page.locator('.lw-home').click();
+    await page.locator('.ivureads-card').waitFor();
+    page.off('request', onReq);
+    if (extReq.length) throw new Error('external requests: ' + extReq.join(', '));
+  });
+
+  await step('read-aloud uses the IVU Reads recorded voice', async () => {
+    const audioReqs = [];
+    const onReq = (r) => { if (r.url().includes('/ivu-reads/audio/')) audioReqs.push(r.url()); };
+    page.on('request', onReq);
+    // "I Can Read a Story!" uses IVU Reads' own story, so every sentence has a recording
+    await page.goto(BASE + '#/lesson/phonics.s5.first-stories.first-stories');
+    await page.getByRole('button', { name: /Story/ }).first().click();
+    await page.getByRole('button', { name: /Read me the story/ }).click();
+    await page.waitForTimeout(2500);
+    page.off('request', onReq);
+    if (audioReqs.length < 2) throw new Error(`expected recorded clips to play, got ${audioReqs.length} audio requests`);
   });
 
   await step('mobile layout renders', async () => {

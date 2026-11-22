@@ -4,7 +4,7 @@ A local-first learning platform for **Ivaan** (age 4 and growing): **12 learning
 
 | | |
 |---|---|
-| Curriculum | v1.0.0: 60/60 subjects, 729 units, 729 lessons, 5,104 interactive items (see [`docs/CURRICULUM_MANIFEST.md`](docs/CURRICULUM_MANIFEST.md)) |
+| Curriculum | v1.0.0: 60/60 subjects, 730 units, 730 lessons, 5,111 interactive items (see [`docs/CURRICULUM_MANIFEST.md`](docs/CURRICULUM_MANIFEST.md)) |
 | Stack | React 19 + TypeScript + Vite 7, zod 4, IndexedDB, hand-written service worker |
 | Language | English (Marathi and Sanskrit interfaces are planned; see [Languages](#languages)) |
 | AI | None. Intentionally deferred |
@@ -79,6 +79,14 @@ Then open the `Network:` address it prints (for example `http://192.168.1.20:417
 - **Studio**: drawing canvas, story maker and gallery.
 - **Journey**: personal progress map. **Badges**: 18 achievements.
 
+**IVU Reads** (the big 🚗📖 card on the Word Woods page, and on the Phonics page at ages 4–6) is Ivaan's phonics flashcard app, built in as its own area:
+
+- **Reading road:** 15 levels, from letter sounds through 2-letter, 3-letter and 4-letter words, sound pairs, star words, phrases and sentences, to short stories and vowel teams.
+- **Activities:** sound-it-out blending, games, "My practice words" and mixed vowel practice.
+- **Recorded voice:** its 500 recorded clips also power Learning World's read-aloud wherever there is a recording for the exact text. For example, the Phonics lessons use IVU Reads' words and its story "Ivu and the Red Car". This can be switched off in *Grown-ups → Settings*.
+- **Progress:** stays inside IVU Reads (in this browser), appears on the parent dashboard, and is included in Learning World backups.
+- **Getting home:** tap **🏠 Learning World** (bottom left) to come back.
+
 **Grown-ups area** (the *Grown-ups* tab in the bottom bar, protected by a multiplication question):
 
 - **Dashboard**: mastery stages, the evidence profile (accuracy, independence, retention, explaining, applying), per-world progress, revisions due and recent activity.
@@ -102,7 +110,7 @@ A failed retention check caps the skill at Understanding until it is earned agai
 
 ## 4. Backup and recovery
 
-All progress (skills, activity log, settings and artwork) lives in this browser's IndexedDB **for this site address on this device**. Clearing browsing data or "site data", uninstalling the browser, or switching to a different browser or profile removes or hides it. **Back up regularly.**
+All progress (skills, activity log, settings, artwork, and IVU Reads progress and recorded sounds) lives in this browser's storage (IndexedDB, plus localStorage for IVU Reads) **for this site address on this device**. Clearing browsing data or "site data", uninstalling the browser, or switching to a different browser or profile removes or hides it. **Back up regularly.**
 
 **Make a backup**
 
@@ -124,6 +132,18 @@ All progress (skills, activity log, settings and artwork) lives in this browser'
 - **The code and curriculum** are in Git. If the folder is lost, clone the repository again and run `npm install`. Learning data is *not* in Git; it lives only in the backup files.
 - **Curriculum updates** keep stable lesson IDs (`subject.stage.unit.lesson`), so existing progress stays attached to the right lessons after a content update.
 
+### Updating IVU Reads
+
+If you have a newer IVU Reads HTML file, re-import it:
+
+```bash
+npm run import:ivu-reads -- path/to/ivu_reads.html
+```
+
+Then run `npm run build`. The import extracts the embedded recordings to `public/ivu-reads/audio/`, replaces Google Fonts with local copies, and adds the home button. IVU Reads' own logic is left unchanged, and progress is kept, because the storage keys stay the same.
+
+**Moving existing IVU Reads progress:** if Ivaan has progress in a separate copy of IVU Reads (for example, the HTML file opened on its own), export it there with *Grown-ups (press and hold) → ⬇ Download backup*. Then open IVU Reads inside Learning World and load the file with *Grown-ups → ⬆ Restore backup*.
+
 ## 5. Project structure
 
 ```
@@ -131,7 +151,8 @@ curriculum/src/          Authoring source (TypeScript DSL): catalog.ts (worlds, 
 curriculum/MANIFEST.json Generated progress manifest (also docs/CURRICULUM_MANIFEST.md)
 public/curriculum/v1/    Generated, validated JSON: index.json, outline.json, subjects/<id>.json (lazy-loaded)
 public/sw.js             Service worker (precache list injected at build time)
-scripts/                 build-curriculum.ts, tidy-imports.mjs, save-progress.sh, e2e-smoke.mjs
+public/ivu-reads/        IVU Reads app (imported): index.html, 500 recordings in audio/, clips.json, levels.json, local fonts
+scripts/                 build-curriculum.ts, import-ivu-reads.mjs, tidy-imports.mjs, save-progress.sh, e2e-smoke.mjs
 src/curriculum/          zod schema + semantic checks (shared by build, app and tests), loader
 src/engine/              Pure logic: mastery, revision scheduling, adaptive recommendations, achievements
 src/db/                  IndexedDB wrapper (stores: kv, skills, log, art)
@@ -172,8 +193,8 @@ npm test
 npm run build && npm run e2e
 ```
 
-- `npm test` runs 266 tests: the mastery engine, revision and adaptive logic, achievements, storage and backup round-trip, the item player UI, and validation of every generated curriculum file against the schema and the manifest.
-- `npm run e2e` drives a real browser (Playwright) through the universe, a world, a subject, a full lesson, the parent gate and dashboard, the curriculum guide, backup download, the Arena, the Studio, the Journey and badges, an offline reload and the mobile layout. Add `-- --shots <dir>` to save screenshots.
+- `npm test` runs 279 tests: the mastery engine, revision and adaptive logic, achievements, storage and backup round-trip, the item player UI, the IVU Reads bridge (mastery rule, recorded-voice lookup, backup round-trip), and validation of every generated curriculum file against the schema and the manifest.
+- `npm run e2e` drives a real browser (Playwright) through the universe, a world, a subject, a full lesson, the parent gate and dashboard, the curriculum guide, backup download, the Arena, the Studio, the Journey and badges, an offline reload (including IVU Reads and its recordings), opening IVU Reads from Word Woods, recorded-voice read-aloud and the mobile layout. Add `-- --shots <dir>` to save screenshots.
 
 ## Languages
 
@@ -181,4 +202,4 @@ The interface strings live in `src/i18n/` (English ships in v1). Marathi (`mr`) 
 
 ## Privacy
 
-There is no network traffic beyond loading the app from your own machine: no analytics, no accounts, no external APIs. Read-aloud uses the browser's built-in speech synthesis. The voices available depend on the operating system.
+There is no network traffic beyond loading the app from your own machine: no analytics, no accounts, no external APIs. Read-aloud uses the IVU Reads recordings where they exist; otherwise it uses the browser's built-in speech synthesis, whose voices depend on the operating system.

@@ -5,6 +5,7 @@
 import { z } from 'zod';
 import { getAll, getAllKV, replaceAll } from '../db/db.ts';
 import { SCHEMA_VERSION } from '../curriculum/schema.ts';
+import { exportIvuReads, importIvuReads } from './ivuReads.ts';
 
 export const BACKUP_FORMAT = 'ivu-learning-world-backup';
 export const BACKUP_VERSION = 1;
@@ -31,8 +32,14 @@ export const BackupSchema = z.object({
     skills: z.array(SkillRecordSchema),
     log: z.array(z.object({ at: z.number(), type: z.string() }).loose()),
     art: z.array(z.object({ id: z.string(), kind: z.string(), title: z.string(), createdAt: z.number() }).loose()),
+    /** IVU Reads progress and parent-recorded sounds (its localStorage), as raw JSON strings. Optional: older backups don't have it. */
+    ivuReads: z.object({
+      state: z.string().nullable().refine((v) => v === null || isJson(v), 'IVU Reads progress is not valid JSON'),
+      sounds: z.string().nullable().refine((v) => v === null || isJson(v), 'IVU Reads sounds are not valid JSON'),
+    }).nullable().optional(),
   }),
 });
+function isJson(v: string): boolean { try { JSON.parse(v); return true; } catch { return false; } }
 export type Backup = z.infer<typeof BackupSchema>;
 
 export async function createBackup(): Promise<Backup> {
@@ -43,7 +50,7 @@ export async function createBackup(): Promise<Backup> {
     curriculumSchemaVersion: SCHEMA_VERSION,
     createdAt: new Date().toISOString(),
     app: 'IVU Learning World 1.0',
-    data: { kv, skills: skills as Backup['data']['skills'], log: log as Backup['data']['log'], art: art as Backup['data']['art'] },
+    data: { kv, skills: skills as Backup['data']['skills'], log: log as Backup['data']['log'], art: art as Backup['data']['art'], ivuReads: exportIvuReads() },
   };
 }
 
@@ -72,9 +79,13 @@ export function parseBackup(json: string): ParseResult {
     return { ok: false, error: `This is not an IVU Learning World backup (${i.path.join('.') || 'file'}: ${i.message}).` };
   }
   const d = r.data.data;
-  return { ok: true, backup: r.data, summary: `${d.skills.length} skills, ${d.log.length} activity entries, ${d.art.length} creations — saved ${new Date(r.data.createdAt).toLocaleString()}` };
+  const reads = d.ivuReads?.state ? ', IVU Reads progress' : '';
+  return { ok: true, backup: r.data, summary: `${d.skills.length} skills, ${d.log.length} activity entries, ${d.art.length} creations${reads} — saved ${new Date(r.data.createdAt).toLocaleString()}` };
 }
 
 export async function restoreBackup(b: Backup): Promise<void> {
-  await replaceAll(b.data);
+  const { kv, skills, log, art, ivuReads } = b.data;
+  await replaceAll({ kv, skills, log, art });
+  // Only touch IVU Reads when the backup actually contains its data (older backups leave it as it is).
+  if (ivuReads) importIvuReads(ivuReads);
 }
