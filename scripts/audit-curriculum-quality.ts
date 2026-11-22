@@ -40,7 +40,7 @@ async function main() {
   if (!existsSync(sourceDir)) throw new Error(`Curriculum source directory not found: ${sourceDir}`);
   const available = new Set(readdirSync(sourceDir).filter((file) => file.endsWith('.ts')).map((file) => file.replace(/\.ts$/, '')));
   const findings: Finding[] = [];
-  const subjectStats: { subject: string; lessons: number; reviewFindings: number; feedbackCoverage: string }[] = [];
+  const subjectStats: { subject: string; lessons: number; reviewFindings: number; itemSpecificFeedbackCoverage: string }[] = [];
   const stageStats = Object.fromEntries(stageOrder.map((stage) => [stage, emptyMetric()])) as Record<(typeof stageOrder)[number], Metric>;
   const total = emptyMetric();
 
@@ -147,8 +147,9 @@ async function main() {
       interactiveItems: total.items,
       findings: findings.length,
       findingsByCode: countsByCode,
-      feedbackCoveragePercent: total.items ? Math.round(total.itemsWithWhy / total.items * 100) : 0,
-      lessonsWithNoExplanatoryFeedback: total.lessonsWithoutWhy,
+      itemSpecificFeedbackCoveragePercent: total.items ? Math.round(total.itemsWithWhy / total.items * 100) : 0,
+      lessonsWithoutItemSpecificRationale: total.lessonsWithoutWhy,
+      lessonContextFallbackCoveragePercent: total.lessons ? 100 : 0,
     },
     stages: Object.fromEntries(stageOrder.map((stage) => [stage, metricSummary(stageStats[stage])])),
     overall: metricSummary(total),
@@ -174,13 +175,13 @@ async function main() {
     `- ${total.lessonsWithoutWhy} lessons have no item-specific rationale; this is distinct from the contextual fallback described above.`, 
     `- Average explanation length: ${report.overall.averageExplanationWords} words; average story length: ${report.overall.averageStoryWords} words.`, '',
     '## Developmental-stage metrics', '',
-    '| Stage | Lessons | Avg explanation words | Avg story words | Feedback coverage |', '|---|---:|---:|---:|---:|',
+    '| Stage | Lessons | Avg explanation words | Avg story words | Item-specific rationale | Context fallback |', '|---|---:|---:|---:|---:|---:|',
     ...stageOrder.map((stage) => {
       const m = report.stages[stage];
       return `| ${stage} | ${m.lessons} | ${m.averageExplanationWords} | ${m.averageStoryWords} | ${m.itemSpecificFeedbackCoveragePercent}% | ${m.lessonContextFallbackCoveragePercent}% |`;
     }), '',
     '## Subject metrics', '',
-    '| Subject | Lessons | Review findings | Feedback coverage |', '|---|---:|---:|---:|',
+    '| Subject | Lessons | Review findings | Item-specific rationale |', '|---|---:|---:|---:|',
     ...subjectStats.map((row) => `| ${row.subject} | ${row.lessons} | ${row.reviewFindings} | ${row.itemSpecificFeedbackCoverage} |`), '',
     '## Findings', '',
     ...(findings.length
