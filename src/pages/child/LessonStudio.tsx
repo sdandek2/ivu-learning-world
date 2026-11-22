@@ -30,6 +30,8 @@ const STEPS = [
   { id: 'done', label: 'Yay!', icon: '🎉' },
 ] as const;
 type StepId = (typeof STEPS)[number]['id'];
+type AgeBand = 'early' | 'middle' | 'advanced';
+const ageBandOf = (stage: string): AgeBand => stage === 's4' || stage === 's5' ? 'early' : stage === 's6' || stage === 's7' ? 'middle' : 'advanced';
 
 export const CONTEXT_LABEL: Record<ContextNote['kind'], { label: string; icon: string }> = {
   evidence: { label: 'Historical evidence', icon: '🏺' },
@@ -90,7 +92,7 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
   const nextLesson = siblings[index + 1];
   const locked = !isUnlocked(lesson, store.skills);
   const selectedStage = placement(store.settings, subject.id);
-  const ageBand = selectedStage === 's4' || selectedStage === 's5' ? 'early' : selectedStage === 's6' || selectedStage === 's7' ? 'middle' : 'advanced';
+  const ageBand = ageBandOf(selectedStage);
 
   return (
     <div className={`studio-lesson studio-lesson--${ageBand}`} data-age-band={ageBand} style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
@@ -126,10 +128,10 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
             <button className="btn btn--primary btn--big" onClick={next}>Let's play →</button>
           </section>
         )}
-        {step === 'play' && <ItemsRun key="play" items={lesson.activities} mode="practice" teachingContext={lesson.explanation} onFinish={async (r) => { await store.practice(lesson.id, r); next(); }} />}
+        {step === 'play' && <ItemsRun key="play" items={lesson.activities} mode="practice" ageBand={ageBand} teachingContext={lesson.explanation} onFinish={async (r) => { await store.practice(lesson.id, r); next(); }} />}
         {step === 'think' && <ThinkStep lessonId={lesson.id} thinking={lesson.thinking} speaking={lesson.speaking} onNext={next} />}
         {step === 'make' && <MakeStep lessonId={lesson.id} project={lesson.project} onNext={next} />}
-        {step === 'check' && <ItemsRun key="check" items={lesson.assessment} mode="assess" teachingContext={lesson.explanation} onFinish={async (r) => {
+        {step === 'check' && <ItemsRun key="check" items={lesson.assessment} mode="assess" ageBand={ageBand} teachingContext={lesson.explanation} onFinish={async (r) => {
           await store.assess(lesson.id, r, unit.revision.intervalsDays);
           await store.completeLesson(lesson.id, Math.round((Date.now() - started.current) / 1000));
           next();
@@ -176,7 +178,10 @@ function LearnStep({ ctx, onNext }: { ctx: LessonContext; onNext: () => void }) 
             {lesson.vocabulary.map((v) => (
               <div key={v.term} className="vocab__card">
                 <strong>{v.term}</strong><span>{v.meaning}</span>
-                <SpeakButton text={`${v.term}. ${v.meaning}`} small />
+                <div className="vocab__audio">
+                  <SpeakButton text={v.term} label="Hear the word" small />
+                  <SpeakButton text={`${v.term}. ${v.meaning}`} label="Hear the meaning" small />
+                </div>
               </div>
             ))}
           </div>
@@ -196,14 +201,14 @@ function LearnStep({ ctx, onNext }: { ctx: LessonContext; onNext: () => void }) 
 }
 
 /** Runs a list of items one after another and reports all results. */
-export function ItemsRun({ items, mode, onFinish, title, teachingContext = [] }: { items: Item[]; mode: 'practice' | 'assess'; onFinish: (r: ItemResult[]) => void | Promise<void>; title?: string; teachingContext?: string[] }) {
+export function ItemsRun({ items, mode, onFinish, title, teachingContext = [], ageBand = 'middle' }: { items: Item[]; mode: 'practice' | 'assess'; onFinish: (r: ItemResult[]) => void | Promise<void>; title?: string; teachingContext?: string[]; ageBand?: AgeBand }) {
   const [i, setI] = useState(0);
   const [results, setResults] = useState<ItemResult[]>([]);
   const [busy, setBusy] = useState(false);
   const seed = useMemo(() => Math.floor(Math.random() * 1e6), []);
   const item = items[i];
   return (
-    <section className={cx('card itemsrun', mode === 'assess' && 'itemsrun--check')}>
+    <section className={cx('card itemsrun', mode === 'assess' && 'itemsrun--check', `itemsrun--${ageBand}`)} data-age-band={ageBand}>
       <div className="itemsrun__head">
         <div className="itemsrun__heading">
           <span className="itemsrun__eyebrow">{mode === 'assess' ? 'A LITTLE CHECK-IN' : 'BUDDY’S PLAY TIME'}</span>
@@ -217,7 +222,7 @@ export function ItemsRun({ items, mode, onFinish, title, teachingContext = [] }:
       <p className="itemsrun__encouragement">{mode === 'assess' ? 'Take your time. You can do this!' : 'Try it, explore, and have fun. Every try helps you learn.'}</p>
       {mode === 'assess' && i === 0 && <p className="itemsrun__note">Try these by yourself — no hints this time. It's okay to get some wrong; that's how we learn!</p>}
       {item && !busy && (
-        <ItemPlayer key={item.id} item={item} allowHints={mode === 'practice'} seed={seed + i} teachingContext={teachingContext} onDone={async (r) => {
+        <ItemPlayer key={item.id} item={item} allowHints={mode === 'practice'} ageBand={ageBand} seed={seed + i} teachingContext={teachingContext} onDone={async (r) => {
           const all = [...results, r];
           setResults(all);
           if (i + 1 < items.length) setI(i + 1);
@@ -320,12 +325,13 @@ export function RevisePage({ lessonId }: { lessonId: string }) {
   if (error) return <ErrorBox error={error} />;
   if (!ctx || !store.index) return <Loading />;
   const w = worldById(store.index.worlds, ctx.subject.worldId)!;
+  const ageBand = ageBandOf(placement(store.settings, ctx.subject.id));
   return (
     <div className="studio-lesson" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
       <TopBar title={<>🧠 Remember: {ctx.lesson.title}</>} back="/" color={w.colors.land} right={<NarrationControl />} />
       <main className="lesson-body">
         {done === null ? (
-          <ItemsRun items={items} mode="assess" title="🧠 Do you remember?" teachingContext={ctx.lesson.explanation} onFinish={async (r) => {
+          <ItemsRun items={items} mode="assess" ageBand={ageBand} title="🧠 Do you remember?" teachingContext={ctx.lesson.explanation} onFinish={async (r) => {
             await store.revise(lessonId, r, ctx.unit.revision.intervalsDays);
             setDone(r.filter((x) => x.correct && x.wrongTries === 0).length / r.length);
           }} />
