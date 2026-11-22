@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:31:14.669Z",
+ "generatedAt": "2026-11-22T12:35:29.482Z",
  "stages": [
   {
    "id": "s4",
@@ -694,18 +694,18 @@
      "title": "Simple Machines",
      "icon": "⚙️",
      "tagline": "Levers, wheels and ramps",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/machines.json"
     },
     {
      "id": "electricity",
      "title": "Electricity & Circuits",
      "icon": "🔋",
      "tagline": "Making things light up",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/electricity.json"
     },
     {
      "id": "digital",
