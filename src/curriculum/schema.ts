@@ -70,6 +70,12 @@ export const ClassifyItemSchema = z.object({
   kind: z.literal('classify'),
   categories: z.array(opt).min(2).max(4),
   items: z.array(z.object({ label: opt, category: z.number().int().nonnegative() })).min(3).max(8),
+}).superRefine((item, ctx) => {
+  item.items.forEach((entry, index) => {
+    if (entry.category >= item.categories.length) ctx.addIssue({ code: 'custom', path: ['items', index, 'category'], message: 'category index out of range' });
+  });
+  if (new Set(item.items.map((entry) => entry.label)).size !== item.items.length) ctx.addIssue({ code: 'custom', path: ['items'], message: 'item labels must be unique' });
+  if (new Set(item.categories).size !== item.categories.length) ctx.addIssue({ code: 'custom', path: ['categories'], message: 'categories must be unique' });
 });
 
 export const ItemSchema = z.discriminatedUnion('kind', [
