@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:41:58.471Z",
+ "generatedAt": "2026-11-22T12:46:27.579Z",
  "stages": [
   {
    "id": "s4",
@@ -755,18 +755,18 @@
      "title": "Big Questions",
      "icon": "🤔",
      "tagline": "Wondering together",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/philosophy.json"
     },
     {
      "id": "study-skills",
      "title": "Memory & Learning Skills",
      "icon": "🗂️",
      "tagline": "Learn how to learn",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/study-skills.json"
     },
     {
      "id": "languages",
