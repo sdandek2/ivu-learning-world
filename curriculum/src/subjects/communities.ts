@@ -342,7 +342,7 @@ export default subject({
           ],
           t: ['Which institution influences you most?', 'What social changes have you seen in your family?'],
           k: ['Interview three generations of a family and present how roles have changed.'],
-          m: ['Three-Generation Oral History', 'recording device or notebook, consent from interviewees', 'Interview a grandparent, parent and young person about childhood, education, work and family | Compare answers | Identify social changes and continuities | Write a 1000-word sociological report'],
+          m: ['Three-Generation Oral History', 'recording device or notebook, consent from interviewees', 'Interview a grandparent, parent and young person about childhood, education, work and family | Compare answers | Identify social changes and continuities | Write a 1000-word sociological report', "Obtain informed consent from each person, explain how recordings will be used, and let them skip questions or stop. Keep recordings private and do not share personal or sensitive stories without permission."],
           q: [
             ch('Sociology studies…', '*society|stars|soil'),
             tf('Socialisation begins in the family.', true),
