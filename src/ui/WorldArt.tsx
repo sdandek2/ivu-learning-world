@@ -129,8 +129,9 @@ export function Buddy({ color = '#5867C9', accent = '#FFD166', size = 72, mood =
       <path d="M28 22 L34 6 L44 20Z M72 22 L66 6 L56 20Z" fill={color} />
       <circle cx="50" cy="52" r="38" fill={color} />
       <ellipse cx="50" cy="64" rx="24" ry="20" fill="#fff" opacity=".9" />
-      <circle cx="37" cy="44" r="9" fill="#fff" /><circle cx="63" cy="44" r="9" fill="#fff" />
+      <circle cx="37" cy="44" r="10" fill="#fff" /><circle cx="63" cy="44" r="10" fill="#fff" />
       <circle cx={mood === 'think' ? 39 : 38} cy={mood === 'think' ? 42 : 45} r="4.5" fill="#1B1B2F" /><circle cx={mood === 'think' ? 65 : 64} cy={mood === 'think' ? 42 : 45} r="4.5" fill="#1B1B2F" />
+      <circle cx="37" cy="44" r="13" fill="none" stroke="#F5D99B" strokeWidth="3.2" /><circle cx="63" cy="44" r="13" fill="none" stroke="#F5D99B" strokeWidth="3.2" /><path d="M50 43 Q50 40 50 43" stroke="#F5D99B" strokeWidth="3.2" fill="none" /><path d="M24 39 Q29 34 32 36 M68 36 Q73 34 76 39" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round"/>
       <circle cx="39.5" cy="43" r="1.5" fill="#fff" /><circle cx="65.5" cy="43" r="1.5" fill="#fff" />
       <path d="M46 54 L50 59 L54 54Z" fill={accent} />
       {mood === 'wow' ? <ellipse cx="50" cy="68" rx="5" ry="6" fill="#1B1B2F" /> : mood === 'think' ? <path d="M43 68 H57" stroke="#1B1B2F" strokeWidth="3" strokeLinecap="round" /> : <path d="M40 65 Q50 75 60 65" stroke="#1B1B2F" strokeWidth="3" fill="none" strokeLinecap="round" />}
