@@ -368,7 +368,7 @@ export default subject({
           ],
           t: ['What makes you feel you belong somewhere?', 'How can a community welcome newcomers while keeping its traditions?'],
           k: ['Pitch an inclusion initiative to your school or residential society.'],
-          m: ['Belonging Initiative', 'survey forms, a small team, a plan', 'Survey peers about belonging | Identify a group that may feel excluded | Design and run a small initiative for a month | Resurvey and report the results'],
+          m: ['Belonging Initiative', 'survey forms, a small team, a plan', 'Survey peers about belonging | Identify a group that may feel excluded | Design and run a small initiative for a month | Resurvey and report the results', "Ask permission before surveying peers, make participation voluntary and anonymous, and avoid sensitive questions. Work with a trusted adult and report only group-level results."],
           q: [
             ch('Selfless service in Sikhism is…', '*seva|groupthink|conformity'),
             tf('Strong social connection is linked to better health.', true),
