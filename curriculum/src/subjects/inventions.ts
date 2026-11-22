@@ -156,7 +156,7 @@ export default subject({
           ],
           t: ['Which communication invention changed the world most?', 'Why might inventors choose not to patent their work?'],
           k: ['Explain to someone how one communication invention built on an earlier one.'],
-          m: ['🧪 Morse Code Messages', 'a torch or a bell, a Morse code chart', 'Learn Morse code for a few letters | Send a short message with torch flashes or taps | Have a partner decode it | Compare with sending a text message'],
+          m: ['🧪 Morse Code Messages', 'a torch or a bell, a Morse code chart', 'Learn Morse code for a few letters | Send a short message with torch flashes or taps | Have a partner decode it | Compare with sending a text message', "Keep the torch pointed at a wall or the floor, never into anyone's eyes. Use a cool-running torch and agree on a safe signal before flashing."],
           q: [
             ch('Gutenberg\'s printing press was around…', '*1450|1950|50 BCE'),
             tf('Movable type printing existed in China before Europe.', true),
