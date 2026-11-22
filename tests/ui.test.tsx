@@ -73,3 +73,14 @@ describe('phonics word rehearsal', () => {
     expect(screen.getByText(/not a scored reading test/)).toBeTruthy();
   });
 });
+
+
+describe('story listening reflection', () => {
+  it('offers open-ended recall without creating a scored result', async () => {
+    const { StoryStep } = await import('../src/pages/child/LessonStudio.tsx');
+    render(<StoryStep title="A small story" text="A character goes on an adventure and finds a friend." ageBand="early" onNext={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: /I've listened — let's remember/i }));
+    expect(screen.getByText('What happened in the story?')).toBeTruthy();
+    expect(screen.getByText(/There is no score here/)).toBeTruthy();
+  });
+});
