@@ -5,7 +5,7 @@ const PRECACHE = __PRECACHE__;
 /* Rendered narration lives in its own cache so it survives app updates (it is large and only
    changes when the voice is re-rendered; files are named by line ID, so stale ones are simply unused). */
 const NARRATION_CACHE = 'ivu-narration-v1';
-const isNarration = (url) => url.pathname.includes('/narration/rendered/');
+const isNarration = (url) => /\/narration\/rendered(-local)?\//.test(url.pathname);
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', ...PRECACHE])).then(() => self.skipWaiting()));

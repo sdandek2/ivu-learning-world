@@ -21,6 +21,8 @@
  *     --tier human|rendered  only lines in this tier of the hybrid plan (default: both)
  *     --lessons a,b          only lines used in these lessons (lesson IDs; Buddy's lines included)
  *     --limit N              stop after N new files (for samples)
+ *     --max-chars N          stop before going over N characters (≈ credits): spend exactly what
+ *                            the account has left; the next run carries on where this one stopped
  *     --jobs N               parallel renders (default 4)
  *     --force                re-render everything (e.g. after changing voice)
  *
@@ -77,6 +79,7 @@ const STAGES = opt('stages')?.split(',');
 const LESSONS = opt('lessons')?.split(',');
 const TIER = opt('tier') as Tier | undefined;
 const LIMIT = Number(opt('limit', 'Infinity'));
+const MAX_CHARS = Number(opt('max-chars', 'Infinity'));
 const JOBS = Number(opt('jobs', opt('engine') === 'elevenlabs' ? '2' : '4'));
 const FORCE = argv.includes('--force');
 
@@ -84,8 +87,11 @@ if (ENGINE === 'piper' && !MODEL) { console.error('--engine piper needs --model 
 const voiceId = ENGINE === 'elevenlabs' ? `elevenlabs:${VOICE}:${MODEL}/mp3_22050_32`
   : (ENGINE === 'say' ? `say:${VOICE}@${RATE}` : `piper:${MODEL!.split('/').pop()}`) + '/aac24';
 
-const outDir = join(root, 'public/narration/rendered');
-const catPath = join(root, 'public/narration/rendered.json');
+// The voice service and the free local engines keep separate catalogues, so partial service
+// renders sit on top of a complete free one instead of replacing it.
+const CAT_NAME = ENGINE === 'elevenlabs' ? 'rendered' : 'rendered-local';
+const outDir = join(root, 'public/narration', CAT_NAME);
+const catPath = join(root, `public/narration/${CAT_NAME}.json`);
 const humanPath = join(root, 'public/narration/human.json');
 const read = <T,>(p: string, d: T): T => (existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : d);
 
@@ -171,10 +177,17 @@ const save = () => {
 let made = 0, kept = 0, failed = 0;
 let stopAll: string | null = null;
 const queue = todo.filter((l) => {
-  const rel = `rendered/${l.id}.${EXT}`;
+  const rel = `${CAT_NAME}/${l.id}.${EXT}`;
   if (cat.clips[l.text] === rel && existsSync(join(root, 'public/narration', rel))) { kept++; return false; }
   return true;
 }).slice(0, LIMIT);
+// Character budget: keep the highest-priority lines that fit (queue is already in priority order).
+if (Number.isFinite(MAX_CHARS)) {
+  let used = 0, cut = queue.length;
+  for (let i = 0; i < queue.length; i++) { used += forEngine(queue[i].text).length; if (used > MAX_CHARS) { cut = i; break; } }
+  if (cut < queue.length) console.log(`Budget ${MAX_CHARS.toLocaleString('en')} characters: rendering the first ${cut} of ${queue.length} lines; run again later to continue.`);
+  queue.splice(cut);
+}
 
 const chars = queue.reduce((a, l) => a + forEngine(l.text).length, 0);
 console.log(`${DRY ? '[dry run] Would render' : 'Rendering'} ${queue.length} lines, ${chars.toLocaleString('en')} characters, with ${voiceId} (${kept} already rendered, ${todo.length} in scope, ${all.length} distinct lines in total).`);
@@ -189,7 +202,7 @@ let next = 0;
 await Promise.all(Array.from({ length: Math.max(1, JOBS) }, async () => {
   while (next < queue.length && !stopAll) {
     const l = queue[next++];
-    const rel = `rendered/${l.id}.${EXT}`;
+    const rel = `${CAT_NAME}/${l.id}.${EXT}`;
     try {
       await render(l.text, join(root, 'public/narration', rel));
       cat.clips[l.text] = rel;

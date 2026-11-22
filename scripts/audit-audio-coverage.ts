@@ -35,15 +35,16 @@ const read = <T,>(p: string): T | null => (existsSync(p) ? JSON.parse(readFileSy
 const reads = read<{ clips: Record<string, string> }>(join(root, 'public/ivu-reads/clips.json'))!;
 const human = read<NarrationCatalogFile>(join(root, 'public/narration/human.json'));
 const rendered = WITH_RENDERED ? read<NarrationCatalogFile>(join(root, 'public/narration/rendered.json')) : null;
+const renderedLocal = WITH_RENDERED ? read<NarrationCatalogFile>(join(root, 'public/narration/rendered-local.json')) : null;
 setClipMap(reads.clips);
-setNarrationCatalogs(human, rendered);
+setNarrationCatalogs(human, rendered, renderedLocal);
 
 // ---- Catalogue integrity ----
 const problems: string[] = [];
 const readsFiles = Object.values(reads.clips);
 const onDisk = new Set(readdirSync(join(root, 'public/ivu-reads/audio')).map((f) => 'audio/' + f));
 for (const f of new Set(readsFiles)) if (!onDisk.has(f)) problems.push(`ivu-reads/clips.json points at a missing file: ${f}`);
-for (const [name, cat] of [['human', human], ['rendered', rendered]] as const) {
+for (const [name, cat] of [['human', human], ['rendered', rendered], ['rendered-local', renderedLocal]] as const) {
   if (cat) for (const f of new Set(Object.values(cat.clips))) if (!existsSync(join(root, 'public/narration', f))) problems.push(`narration/${name}.json points at a missing file: ${f}`);
 }
 const orphans = [...onDisk].filter((f) => !readsFiles.includes(f));

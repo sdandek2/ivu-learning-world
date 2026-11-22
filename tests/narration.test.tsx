@@ -165,3 +165,17 @@ describe('hybrid narration sources', () => {
     stopSpeaking(); vi.unstubAllGlobals();
   });
 });
+
+describe('voice service renders layered over the free local render', () => {
+  const service = { source: 'rendered' as const, voice: 'elevenlabs:x', clips: { 'Is a rock alive?': 'rendered/e1.mp3' }, stageFiles: { s4: ['rendered/e1.mp3'] } };
+  const local = { source: 'rendered' as const, voice: 'say:Tara', clips: { 'Is a rock alive?': 'rendered-local/l1.m4a', 'Is a cat alive?': 'rendered-local/l2.m4a' }, stageFiles: { s4: ['rendered-local/l1.m4a', 'rendered-local/l2.m4a'] } };
+  beforeEach(() => setNarrationCatalogs(null, service, local));
+  afterEach(() => setNarrationCatalogs(null, null, null));
+  it('plays the service voice where it exists and the local voice elsewhere', () => {
+    expect(resolveNarration('Is a rock alive?')?.urls).toEqual(['./narration/rendered/e1.mp3']);
+    expect(resolveNarration('Is a cat alive?')?.urls).toEqual(['./narration/rendered-local/l2.m4a']);
+  });
+  it('saves for offline only the file that would actually play', () => {
+    expect(renderedFilesFor(['s4']).sort()).toEqual(['./narration/rendered-local/l2.m4a', './narration/rendered/e1.mp3']);
+  });
+});

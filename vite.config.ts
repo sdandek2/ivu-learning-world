@@ -21,7 +21,7 @@ function precacheManifest(): Plugin {
       walk(dist);
       // Rendered narration is large (tens of MB per stage): it is cached when first played, or
       // saved per stage from Settings, instead of being forced onto every device at install.
-      const precache = files.filter((f) => !f.startsWith('./narration/rendered/'));
+      const precache = files.filter((f) => !/^\.\/narration\/rendered(-local)?\//.test(f));
       const version = JSON.parse(readFileSync(join(dist, 'curriculum/v1/index.json'), 'utf8')).contentVersion;
       const sw = readFileSync(join(dist, 'sw.js'), 'utf8')
         .replace('__PRECACHE__', JSON.stringify(precache.sort()))

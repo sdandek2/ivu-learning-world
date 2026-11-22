@@ -7,6 +7,8 @@ coverage
 # Generated narration (npm run narration:render) — large, rebuilt from the curriculum
 public/narration/rendered/
 public/narration/rendered.json
+public/narration/rendered-local/
+public/narration/rendered-local.json
 recording-script.csv
 
 # Local secrets (ElevenLabs key etc.) — never commit
