@@ -122,7 +122,7 @@ export default subject({
           ],
           t: ['Can memories ever be wrong?', 'What evidence of your life might historians find in 100 years?'],
           k: ['Ask four questions about an old object to a grown-up.'],
-          m: ['Mystery Object Investigation', 'an old object from home or a museum photo, a question sheet', 'Look closely at the object | Write or draw answers to: what, who, when, why | Ask an elder or check a book | Present your findings'],
+          m: ['Mystery Object Investigation', 'an old object from home or a museum photo, a question sheet', 'Look closely at the object | Write or draw answers to: what, who, when, why | Ask an elder or check a book | Present your findings', "Choose a clean, sturdy object with no sharp edges, loose parts, batteries or breakable pieces. An adult should check it before the child handles it."],
           q: [
             ch('An object made by people long ago is an…', '*artefact|astronaut|animal'),
             tf('Historians use evidence.', true),
@@ -156,7 +156,7 @@ export default subject({
           ],
           t: ['Why might a diary not tell the whole story?', 'Can a secondary source become a primary source for later historians?'],
           k: ['Show someone one primary and one secondary source about your family and explain the difference.'],
-          m: ['Source Sorting Activity', 'a mix of items: old letters, photos, a textbook, a newspaper, a printed web article', 'Sort items into primary and secondary for a chosen topic | Explain each choice | Note one strength and one limit of each | Present to family'],
+          m: ['Source Sorting Activity', 'a mix of items: old letters, photos, a textbook, a newspaper, a printed web article', 'Sort items into primary and secondary for a chosen topic | Explain each choice | Note one strength and one limit of each | Present to family', "Use public or family-approved copies of sources. Do not share private letters, personal details or photographs without permission."],
           q: [
             ch('A photograph taken in 1947 of a 1947 event is…', '*primary|secondary'),
             tf('Ashoka\'s edicts were deciphered after the Brahmi script was decoded.', true),
