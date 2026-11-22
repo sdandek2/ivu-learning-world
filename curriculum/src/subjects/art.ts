@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['What colour makes you feel happy?', 'What do you think would happen if you mixed all three?'],
           k: ['Tell a grown-up how to make green paint.'],
-          m: ['🧪 Colour Mixing Bags', 'zip bags, red, yellow and blue paint (with an adult)', 'Put two blobs of different colours in a bag | Seal it tightly | Squish the bag to mix | Name the new colour you made'],
+          m: ['🧪 Colour Mixing Bags', 'zip bags, red, yellow and blue paint (with an adult)', 'Put two blobs of different colours in a bag | Seal it tightly | Squish the bag to mix | Name the new colour you made', "Use non-toxic, washable paint, seal the bag securely with an adult, and do not open or taste the paint. Wash hands after the activity."],
           q: [
             ch('Blue and red make…', '*purple|yellow|green'),
             tf('Mixing colours can make new colours.', true),
@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['What textures can you find in your room?', 'Why might an artist use real materials in a picture?'],
           k: ['Describe three textures in your collage to someone.'],
-          m: ['Texture Collage', 'card, glue, fabric, paper, leaves, buttons', 'Collect materials with different textures | Make rubbings of two of them | Plan a picture | Glue the pieces into a collage and name the textures'],
+          m: ['Texture Collage', 'card, glue, fabric, paper, leaves, buttons', 'Collect materials with different textures | Make rubbings of two of them | Plan a picture | Glue the pieces into a collage and name the textures', "Use non-toxic glue and clean materials. Avoid small buttons or loose pieces with young children; supervise collection of leaves and natural objects."],
           q: [
             ch('Texture is…', '*how something feels|a colour|a number'),
             tf('Matisse made collages with cut paper.', true),
@@ -242,7 +242,7 @@ export default subject({
           ],
           t: ['Which artist\'s style do you like best? Why?', 'Why might an artist paint themselves?'],
           k: ['Present one artist and one artwork using art words.'],
-          m: ['In the Style Of', 'paints, paper, prints of artworks', 'Choose one master | Study their colours, brushstrokes and subjects | Paint your own subject in their style | Write a label naming the artist who inspired you'],
+          m: ['In the Style Of', 'paints, paper, prints of artworks', 'Choose one master | Study their colours, brushstrokes and subjects | Paint your own subject in their style | Write a label naming the artist who inspired you', "Use non-toxic, washable paints and protect clothing and surfaces. Do not taste paints; wash hands after the activity."],
           q: [
             ch('Amrita Sher-Gil is a pioneer of…', '*modern Indian art|cave painting|photography'),
             tf('Van Gogh used thick paint and swirling strokes.', true),
