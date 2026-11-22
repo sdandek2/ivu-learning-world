@@ -3,7 +3,7 @@ import { StoreProvider, useStore } from './state/store.tsx';
 import { useRoute, navigate } from './lib/router.ts';
 import { Universe, ExploreMap, WorldPage, SubjectPage } from './pages/child/Explore.tsx';
 import { LessonStudio, RevisePage } from './pages/child/LessonStudio.tsx';
-import { Arena, CreativeStudio, Journey, Achievements } from './pages/child/More.tsx';
+import { Arena, CreativeStudio, Journey, Achievements, PlayHub } from './pages/child/More.tsx';
 
 // The parent area is loaded on demand: it is never needed during a child's session.
 const ParentArea = lazy(() => import('./pages/parent/Parent.tsx').then((m) => ({ default: m.ParentArea })));
@@ -12,7 +12,7 @@ import { cx } from './lib/util.ts';
 
 function ChildNav({ active }: { active: string }) {
   const items = [
-    ['', '🏡', 'Home'], ['explore', '🧭', 'Explore'], ['arena', '🎮', 'Play'], ['journey', '✨', 'My Journey'],
+    ['', '🏡', 'Home'], ['explore', '🧭', 'Explore'], ['play', '🎮', 'Play'], ['journey', '✨', 'My Journey'],
   ];
   return (
     <nav className="childnav" aria-label="Main">
@@ -43,13 +43,14 @@ function Routes() {
     case 'subject': page = <SubjectPage subjectId={b} />; break;
     case 'lesson': page = <LessonStudio lessonId={b} />; break;
     case 'revise': page = <RevisePage lessonId={b} />; break;
+    case 'play': page = <PlayHub />; break;
     case 'arena': page = <Arena />; break;
     case 'studio': page = <CreativeStudio tab={b} />; break;
     case 'journey': page = <Journey />; break;
     case 'achievements': page = <Achievements />; break;
     default: page = <ErrorBox error="Page not found." />;
   }
-  const navActive = a === undefined || a === 'world' || a === 'subject' ? '' : a;
+  const navActive = a === undefined || a === 'world' || a === 'subject' ? '' : a === 'arena' || a === 'studio' ? 'play' : a;
   const showNav = a !== 'lesson' && a !== 'revise';
   return (
     <div className={cx('child', showNav && 'child--nav')}>
