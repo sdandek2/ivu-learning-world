@@ -58,7 +58,7 @@ export default subject({
           ],
           t: ['How do you know what happened when you were a baby if you can\'t remember?', 'What would you like to add to your timeline next year?'],
           k: ['Tell a grown-up about three events on your timeline in order.'],
-          m: ['My Life Timeline', 'a long paper strip, photos or drawings, glue', 'Collect 4–5 photos or draw pictures of your life | Put them in order on a strip | Ask a grown-up about events you don\'t remember | Add labels and share'],
+          m: ['My Life Timeline', 'a long paper strip, photos or drawings, glue', 'Collect 4–5 photos or draw pictures of your life | Put them in order on a strip | Ask a grown-up about events you don\'t remember | Add labels and share', "Use only photos and details your family agrees to share. Do not include private information or post the timeline publicly without permission."],
           q: [
             ch('Things that happened are…', '*events|colours|toys'),
             tf('A timeline goes from earliest to latest.', true),
@@ -92,7 +92,7 @@ export default subject({
           ],
           t: ['What big changes might your grandparents have seen?', 'Why do historians use timelines?'],
           k: ['Show your family timeline to someone and explain it.'],
-          m: ['Family Timeline Wall', 'a long paper strip, family photos or drawings, markers', 'Ask family members for important dates | Mark years along a strip | Add events and photos | Note one world event near each family event'],
+          m: ['Family Timeline Wall', 'a long paper strip, family photos or drawings, markers', 'Ask family members for important dates | Mark years along a strip | Add events and photos | Note one world event near each family event', "Ask relatives before using their names, dates or photographs. Share the timeline only with people your family is comfortable sharing it with."],
           q: [
             ch('Which year is earliest?', '*1950|2000|2024'),
             tf('A century is 100 years.', true),
