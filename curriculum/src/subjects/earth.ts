@@ -90,7 +90,7 @@ export default subject({
           ],
           t: ['Where do you think soil comes from?', 'Why might farmers be happy to see worms?'],
           k: ['Show someone two rocks and describe how they are different.'],
-          m: ['🧪 Soil Shake Jar', 'a clear jar with lid, a handful of soil, water', 'Put soil in a jar and fill with water | Close the lid and shake | Leave it to settle overnight | Draw the layers you see (stones, sand, silt, clay, floating bits)'],
+          m: ['🧪 Soil Shake Jar', 'a clear jar with lid, a handful of soil, water', 'Put soil in a jar and fill with water | Close the lid and shake | Leave it to settle overnight | Draw the layers you see (stones, sand, silt, clay, floating bits)', "Use a sturdy plastic jar with a secure lid rather than glass. Do not taste the soil or water; wash hands after the activity."],
           q: [
             ch('Soil is made of broken rock and…', '*rotted plants and animals|plastic|sugar'),
             ch('A rock you can scratch easily is…', '*soft|hard'),
@@ -342,7 +342,7 @@ export default subject({
           ],
           t: ['Why did scientists reject Wegener\'s idea at first — and were they wrong to be cautious?', 'How does plate tectonics explain the location of earthquakes?'],
           k: ['Present the history of plate tectonics as a story of evidence and changing ideas.'],
-          m: ['Continental Jigsaw', 'a printed world map, scissors, glue, fossil distribution information', 'Cut out the continents | Fit them together like Pangaea/Gondwana | Mark fossil and rock evidence | Write a paragraph evaluating the evidence'],
+          m: ['Continental Jigsaw', 'a printed world map, scissors, glue, fossil distribution information', 'Cut out the continents | Fit them together like Pangaea/Gondwana | Mark fossil and rock evidence | Write a paragraph evaluating the evidence', "Use child-safe scissors with adult supervision. Adults should handle sharp cutting tools and keep small pieces away from younger children."],
           q: [
             ch('Sea-floor spreading occurs at…', '*mid-ocean ridges|transform faults only|river deltas'),
             ch('The Himalayas formed at a ___ boundary.', 'divergent|*convergent|transform'),
