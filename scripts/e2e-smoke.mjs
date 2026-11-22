@@ -74,8 +74,10 @@ const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 try {
   console.log('E2E smoke test');
-  await step('universe loads with 12 worlds', async () => {
+  await step('home opens and Explore shows all 12 worlds', async () => {
     await page.goto(BASE);
+    await page.locator('.universe__hero').waitFor();
+    await page.getByRole('button', { name: /Explore the worlds/ }).click();
     await page.locator('.island').first().waitFor();
     const n = await page.locator('.island').count();
     if (n !== 12) throw new Error(`expected 12 worlds, got ${n}`);
@@ -135,7 +137,7 @@ try {
   });
 
   await step('parent navigation separates progress and recommendations', async () => {
-    await page.getByRole('button', { name: 'Progress' }).click();
+    await page.locator('.pnav').getByRole('button', { name: 'Progress' }).click();
     await page.locator('.dash h1').waitFor();
     await page.getByRole('button', { name: 'Recommendations' }).click();
     await page.getByRole('heading', { name: 'Recommended next steps' }).waitFor();
@@ -197,11 +199,13 @@ try {
 
   await step('works offline after first load (service worker)', async () => {
     await page.goto(BASE);
+    await page.locator('.universe__hero').waitFor();
     await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error('service worker did not become ready')), 12000))]));
     await page.reload();
     await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error('service worker did not become ready')), 12000))]));
     await context.setOffline(true);
     await page.reload();
+    await page.getByRole('button', { name: /Explore the worlds/ }).click();
     await page.locator('.island').first().waitFor({ timeout: 8000 });
     await page.goto(BASE + '#/subject/' + firstSubject.id);
     await page.locator('.unit').first().waitFor({ timeout: 8000 });
@@ -244,6 +248,9 @@ try {
   await step('mobile layout renders', async () => {
     const m = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
     await m.goto(BASE);
+    m.setDefaultTimeout(12000);
+    await m.locator('.universe__hero').waitFor();
+    await m.getByRole('button', { name: /Explore the worlds/ }).click();
     await m.locator('.island').first().waitFor();
     if (shotDir) await m.screenshot({ path: `${shotDir}/12-mobile.png` });
     await m.close();
