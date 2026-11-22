@@ -306,7 +306,7 @@ export default subject({
           ],
           t: ['If a weightlifter builds big muscles, will their children be born with big muscles? Why?', 'Why are identical twins useful for scientists studying genes and environment?'],
           k: ['Explain to someone one trait you inherited and one you acquired.'],
-          m: ['Family Trait Survey', 'a table on paper, willing family members', 'Choose traits like earlobe shape, tongue rolling, dimples | Survey family members across generations | Record the results | Discuss patterns — and note that many traits are more complex than single genes'],
+          m: ['Family Trait Survey', 'a table on paper, willing family members', 'Choose traits like earlobe shape, tongue rolling, dimples | Survey family members across generations | Record the results | Discuss patterns — and note that many traits are more complex than single genes', "Participation must be voluntary. Do not pressure relatives to share personal traits, label anyone, or infer health or genetic conditions; use fictional examples if anyone is uncomfortable."],
           q: [
             ch('Which is acquired?', 'blood group|*riding a bicycle|natural eye colour'),
             ch('Mendel studied inheritance using…', '*pea plants|dogs|bacteria'),
