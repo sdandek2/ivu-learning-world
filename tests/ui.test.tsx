@@ -59,3 +59,17 @@ describe('age-aware activity scaffolding', () => {
     expect(screen.queryByText(/One little step at a time/)).toBeNull();
   });
 });
+
+
+describe('phonics word rehearsal', () => {
+  it('keeps early-stage words hidden until revealed and tracks practice without scoring', async () => {
+    const { PhonicsWordPractice } = await import('../src/pages/child/LessonStudio.tsx');
+    render(<PhonicsWordPractice vocabulary={[{ term: 'blend', meaning: 'push sounds together to say a word' }, { term: 'sound', meaning: 'what we hear' }]} ageBand="early" />);
+    expect(screen.getAllByText('A word to discover')).toHaveLength(2);
+    fireEvent.click(screen.getAllByRole('button', { name: 'Reveal word & meaning' })[0]);
+    expect(screen.getByText('push sounds together to say a word')).toBeTruthy();
+    fireEvent.click(screen.getAllByRole('button', { name: 'I said it' })[0]);
+    expect(screen.getByRole('button', { name: '✓ Practised' })).toBeTruthy();
+    expect(screen.getByText(/not a scored reading test/)).toBeTruthy();
+  });
+});
