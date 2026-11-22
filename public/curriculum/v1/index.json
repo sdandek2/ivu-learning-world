@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T09:23:39.330Z",
+ "generatedAt": "2026-11-22T09:34:57.828Z",
  "stages": [
   {
    "id": "s4",
@@ -188,36 +188,36 @@
      "title": "Living Things",
      "icon": "🐛",
      "tagline": "What makes something alive?",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/life-science.json"
     },
     {
      "id": "forces",
      "title": "Forces, Motion & Energy",
      "icon": "🧲",
      "tagline": "Push, pull, go!",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/forces.json"
     },
     {
      "id": "materials",
      "title": "Matter & Materials",
      "icon": "🧪",
      "tagline": "What things are made of",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/materials.json"
     },
     {
      "id": "earth",
      "title": "Earth & Weather",
      "icon": "🌦️",
      "tagline": "Rocks, rain and sky",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/earth.json"
     },
     {
      "id": "space",
