@@ -1,13 +1,13 @@
 {
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T10:07:27.244Z",
+ "generatedAt": "2026-11-22T11:41:47.384Z",
  "totals": {
-  "units": 361,
-  "lessons": 361,
-  "items": 2528,
-  "subjectsComplete": 30,
+  "units": 385,
+  "lessons": 385,
+  "items": 2696,
+  "subjectsComplete": 32,
   "subjectsInvalid": 0,
-  "subjectsRemaining": 30
+  "subjectsRemaining": 28
  },
  "subjects": [
   {
@@ -1063,21 +1063,71 @@
   {
    "subject": "geography",
    "world": "globe-garden",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "communities",
    "world": "globe-garden",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {

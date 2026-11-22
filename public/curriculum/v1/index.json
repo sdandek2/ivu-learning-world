@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T10:07:27.244Z",
+ "generatedAt": "2026-11-22T11:41:47.384Z",
  "stages": [
   {
    "id": "s4",
@@ -432,18 +432,18 @@
      "title": "Maps & Geography",
      "icon": "🗺️",
      "tagline": "Where in the world?",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/geography.json"
     },
     {
      "id": "communities",
      "title": "Communities & Helpers",
      "icon": "🏘️",
      "tagline": "People who help us",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/communities.json"
     },
     {
      "id": "cultures",
