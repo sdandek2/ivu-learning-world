@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T09:15:08.299Z",
+ "generatedAt": "2026-11-22T09:23:39.330Z",
  "stages": [
   {
    "id": "s4",
@@ -136,36 +136,36 @@
      "title": "Adding, Subtracting & Beyond",
      "icon": "➕",
      "tagline": "Put together, take apart",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/operations.json"
     },
     {
      "id": "shapes",
      "title": "Shapes & Geometry",
      "icon": "🔺",
      "tagline": "Corners, sides and space",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/shapes.json"
     },
     {
      "id": "measurement",
      "title": "Measurement & Data",
      "icon": "📏",
      "tagline": "Long, heavy, full — and charts",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/measurement.json"
     },
     {
      "id": "patterns",
      "title": "Patterns & Algebra",
      "icon": "🔁",
      "tagline": "What comes next, and why",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/patterns.json"
     }
    ]
   },

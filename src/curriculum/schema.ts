@@ -88,7 +88,7 @@ export const CONTEXT_KINDS = ['evidence', 'science', 'tradition', 'belief', 'int
 export const ContextNoteSchema = z.object({ kind: z.enum(CONTEXT_KINDS), text });
 export type ContextNote = z.infer<typeof ContextNoteSchema>;
 
-export const VocabSchema = z.object({ term: text, meaning: text });
+export const VocabSchema = z.object({ term: opt, meaning: text });
 
 export const ProjectSchema = z.object({
   kind: z.enum(['project', 'experiment']),
