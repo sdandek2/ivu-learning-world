@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['Why do you think lions don\'t eat grass?', 'What do you eat — plants, meat, or both?'],
           k: ['Tell a grown-up what three animals eat and how you know.'],
-          m: ['Animal Lunchbox Game', 'paper plates, pictures of animals and foods (drawn or cut out)', 'Put an animal picture on each plate | Choose the right food for each plate | Explain your choices | Make a funny wrong plate and see if someone spots it'],
+          m: ['Animal Lunchbox Game', 'paper plates, pictures of animals and foods (drawn or cut out)', 'Put an animal picture on each plate | Choose the right food for each plate | Explain your choices | Make a funny wrong plate and see if someone spots it', "Use child-safe scissors with adult supervision if cutting pictures. Keep small paper pieces away from younger children."],
           q: [
             ch('Which is a meat eater?', 'cow|rabbit|*lion'),
             ch('A rabbit eats…', '*plants|meat|metal'),
@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['What would the forest look like without decomposers?', 'Why shouldn\'t we put plastic in compost?'],
           k: ['Explain nature\'s recycling to someone using a fallen leaf.'],
-          m: ['🧪 Compost in a Bottle', 'a clear bottle cut open (adult help), soil, vegetable peels, dry leaves, a little water', 'Layer soil, peels and leaves in the bottle | Add a little water and cover loosely | Keep it in the shade and observe weekly | Draw the changes over a month'],
+          m: ['🧪 Compost in a Bottle', 'a clear bottle cut open (adult help), soil, vegetable peels, dry leaves, a little water', 'Layer soil, peels and leaves in the bottle | Add a little water and cover loosely | Keep it in the shade and observe weekly | Draw the changes over a month', "An adult must cut and prepare the bottle. Use clean vegetable scraps and soil, do not touch mold, keep the container covered and wash hands after observing."],
           q: [
             ch('Bacteria are…', '*tiny living things that help decompose|big animals|rocks'),
             ch('Compost is made from…', '*plant waste|plastic bottles|metal cans'),
@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why does every food chain start with a plant?', 'What would happen if all the frogs disappeared?'],
           k: ['Make up a food chain from your garden and explain it to someone.'],
-          m: ['Food Chain Mobile', 'card, string, a stick, crayons', 'Draw a plant and two or three animals in a chain | Cut them out | Hang them in order from a stick with string | Add the Sun at the top'],
+          m: ['Food Chain Mobile', 'card, string, a stick, crayons', 'Draw a plant and two or three animals in a chain | Cut them out | Hang them in order from a stick with string | Add the Sun at the top', "Use child-safe scissors with adult supervision. Keep string away from the neck and small cut-outs away from younger children."],
           q: [
             od('Order', 'seeds|mouse|owl'),
             ch('Which comes first in a pond food chain?', '*algae|fish|kingfisher'),
@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Why do some animals thrive in cities while others disappear?', 'How can new buildings be designed to help wildlife?'],
           k: ['Describe a change you have noticed in a place near your home and how it affected living things.'],
-          m: ['Sparrow Nest Box', 'a small wooden or sturdy cardboard box, scissors (adult help), string', 'With an adult, cut a 3 cm entry hole in a box | Make sure it is weatherproof | Hang it in a shady, safe spot | Watch over weeks and record any visitors'],
+          m: ['Sparrow Nest Box', 'a small wooden or sturdy cardboard box, scissors (adult help), string', 'With an adult, cut a 3 cm entry hole in a box | Make sure it is weatherproof | Hang it in a shady, safe spot | Watch over weeks and record any visitors', "An adult must cut the entry hole and prepare the box. Secure it safely without climbing; observe birds from a distance and do not disturb nests."],
           q: [
             ch('Draining a wetland is a…', 'natural change|*human change'),
             tf('All animals do well in cities.', false),
