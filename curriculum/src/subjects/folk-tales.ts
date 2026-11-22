@@ -250,7 +250,7 @@ export default subject({
           ],
           t: ['Why do you think storytellers used frames?', 'How does a cliffhanger make you feel?'],
           k: ['Tell a short story inside a frame story of your own.'],
-          m: ['Nested Story Booklet', 'paper, stapler, colours', 'Write a frame story about a storyteller | Add two short tales inside it | End each tale with a riddle or cliffhanger | Bind it into a booklet and share it'],
+          m: ['Nested Story Booklet', 'paper, stapler, colours', 'Write a frame story about a storyteller | Add two short tales inside it | End each tale with a riddle or cliffhanger | Bind it into a booklet and share it', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('Vikram and Betal comes from the Sanskrit…', '*Vetalapanchavimshati|Ramayana|Rigveda'),
             tf('A cliffhanger stops at an exciting point.', true),
