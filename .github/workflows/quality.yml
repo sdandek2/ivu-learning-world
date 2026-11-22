@@ -37,6 +37,9 @@ jobs:
       - name: Validate curriculum without rewriting generated files
         run: npm run validate
 
+      - name: Audit curriculum quality heuristics
+        run: npm run audit:curriculum
+
       - name: Type-check
         run: npm run typecheck
 
