@@ -78,7 +78,6 @@ async function main() {
             const assessments = lesson.q ?? [];
             const allItems = [...activities, ...assessments];
             const activityKinds = kindCounts(activities);
-            const assessmentKinds = kindCounts(assessments);
             const activityRatio = dominantRatio(activityKinds, activities.length);
             const activityKindsLabel = Object.keys(activityKinds).join(', ') || 'none';
 
