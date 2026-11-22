@@ -1,13 +1,13 @@
 {
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T09:46:03.437Z",
+ "generatedAt": "2026-11-22T09:56:43.517Z",
  "totals": {
-  "units": 241,
-  "lessons": 241,
-  "items": 1688,
-  "subjectsComplete": 20,
+  "units": 301,
+  "lessons": 301,
+  "items": 2108,
+  "subjectsComplete": 25,
   "subjectsInvalid": 0,
-  "subjectsRemaining": 40
+  "subjectsRemaining": 35
  },
  "subjects": [
   {
@@ -713,51 +713,176 @@
   {
    "subject": "body",
    "world": "wellness-island",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "senses",
    "world": "wellness-island",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "nutrition",
    "world": "wellness-island",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "hygiene-safety",
    "world": "wellness-island",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "fitness",
    "world": "wellness-island",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {

@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T09:46:03.437Z",
+ "generatedAt": "2026-11-22T09:56:43.517Z",
  "stages": [
   {
    "id": "s4",
@@ -310,45 +310,45 @@
      "title": "My Amazing Body",
      "icon": "🫀",
      "tagline": "Bones, muscles and more",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/body.json"
     },
     {
      "id": "senses",
      "title": "The Five Senses",
      "icon": "👂",
      "tagline": "See, hear, smell, taste, touch",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/senses.json"
     },
     {
      "id": "nutrition",
      "title": "Food & Nutrition",
      "icon": "🥕",
      "tagline": "Fuel for growing",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/nutrition.json"
     },
     {
      "id": "hygiene-safety",
      "title": "Hygiene & Safety",
      "icon": "🧼",
      "tagline": "Clean, careful, confident",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/hygiene-safety.json"
     },
     {
      "id": "fitness",
      "title": "Movement & Fitness",
      "icon": "🤸",
      "tagline": "Run, stretch, balance",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/fitness.json"
     }
    ]
   },
