@@ -203,10 +203,16 @@ export function ItemsRun({ items, mode, onFinish, title, teachingContext = [] }:
   return (
     <section className={cx('card itemsrun', mode === 'assess' && 'itemsrun--check')}>
       <div className="itemsrun__head">
-        <h2>{title ?? (mode === 'assess' ? '✅ Show what you know' : '🎮 Let\'s play')}</h2>
-        <span className="itemsrun__count">{Math.min(i + 1, items.length)} / {items.length}</span>
+        <div className="itemsrun__heading">
+          <span className="itemsrun__eyebrow">{mode === 'assess' ? 'A LITTLE CHECK-IN' : 'BUDDY’S PLAY TIME'}</span>
+          <h2>{title ?? (mode === 'assess' ? '✅ Show what you know' : '🎮 Let\'s play')}</h2>
+        </div>
+        <span className="itemsrun__count" aria-live="polite">✨ {Math.min(i + 1, items.length)} of {items.length}</span>
       </div>
-      <div className="progressbar"><span style={{ width: `${(i / items.length) * 100}%` }} /></div>
+      <div className="itemsrun__progress" role="progressbar" aria-label="Activity progress" aria-valuemin={0} aria-valuemax={items.length} aria-valuenow={i}>
+        <span style={{ width: `${(i / items.length) * 100}%` }} />
+      </div>
+      <p className="itemsrun__encouragement">{mode === 'assess' ? 'Take your time. You can do this!' : 'Try it, explore, and have fun. Every try helps you learn.'}</p>
       {mode === 'assess' && i === 0 && <p className="itemsrun__note">Try these by yourself — no hints this time. It's okay to get some wrong; that's how we learn!</p>}
       {item && !busy && (
         <ItemPlayer key={item.id} item={item} allowHints={mode === 'practice'} seed={seed + i} teachingContext={teachingContext} onDone={async (r) => {
