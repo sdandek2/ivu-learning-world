@@ -73,12 +73,12 @@ export function ParentGate({ next }: { next: string }) {
 
 function ParentShell({ active, children }: { active: string; children: ReactNode }) {
   const { lockParent, settings } = useStore();
-  const links = [['dashboard', 'Dashboard'], ['curriculum', 'Curriculum'], ['settings', 'Settings'], ['backup', 'Backup & restore']];
+  const links = [['overview', 'Overview'], ['progress', 'Progress'], ['recommendations', 'Recommendations'], ['curriculum', 'Curriculum'], ['settings', 'Settings & Backup']];
   return (
     <div className="parent">
       <header className="pheader">
         <div className="pheader__brand"><span className="pheader__logo">IVU</span><span>Parent Area · {settings.learnerName}</span></div>
-        <nav className="pnav">{links.map(([id, label]) => <button key={id} className={cx('pnav__link', active === id && 'is-active')} onClick={() => navigate(`/parent/${id}`)}>{label}</button>)}</nav>
+        <nav className="pnav" aria-label="Parent navigation">{links.map(([id, label]) => <button key={id} className={cx('pnav__link', active === id && 'is-active')} aria-current={active === id ? 'page' : undefined} onClick={() => navigate(`/parent/${id}`)}>{label}</button>)}</nav>
         <button className="pbtn" onClick={() => { lockParent(); navigate('/'); }}>Exit to child view</button>
       </header>
       <main className="pmain">{children}</main>
@@ -91,17 +91,121 @@ export function ParentArea({ section, arg }: { section: string; arg?: string }) 
   if (parentUnlockedUntil < Date.now()) return <ParentGate next={`/parent/${section}${arg ? '/' + arg : ''}`} />;
   return (
     <ParentShell active={section}>
-      {section === 'dashboard' && <Dashboard />}
+      {(section === 'overview' || section === 'dashboard') && <OverviewPage />}
+      {section === 'progress' && <ProgressPage />}
+      {section === 'recommendations' && <RecommendationsPage />}
       {section === 'curriculum' && <CurriculumBrowser subjectId={arg} />}
-      {section === 'settings' && <SettingsPage />}
+      {section === 'settings' && <SettingsAndBackupPage />}
       {section === 'backup' && <BackupPage />}
     </ParentShell>
   );
 }
 
-// ---------------- Dashboard ----------------
+// ---------------- Parent overview ----------------
 
-function Dashboard() {
+function OverviewPage() {
+  const { index, skills, log, settings, artCount } = useStore();
+  const title = useLessonTitles();
+  const started = Object.values(skills).filter((s) => s.stage > 0);
+  const due = dueSkills(Object.values(skills));
+  const weekSeconds = log.filter((l) => l.type === 'lesson-complete' && l.at > Date.now() - 7 * DAY).reduce((n, l) => n + (l.seconds ?? 0), 0);
+  const mastered = started.filter((s) => s.stage === 5).length;
+  if (!index) return null;
+  const next = [...started].sort((a, b) => (a.stage - b.stage) || ((b.lastPracticedAt ?? 0) - (a.lastPracticedAt ?? 0)))[0];
+  return (
+    <div className="parent-overview">
+      <div className="parent-page-hero">
+        <p className="parent-page-hero__eyebrow">A little progress, every day</p>
+        <h1>Welcome to {settings.learnerName}'s learning world</h1>
+        <p>A clear snapshot of what has been explored, what is growing, and where a little support may help next.</p>
+      </div>
+      <div className="kpis">
+        <Kpi n={started.length} label="skills explored" />
+        <Kpi n={completedLessons(log)} label="lessons finished" />
+        <Kpi n={mastered} label="skills mastered" />
+        <Kpi n={Math.round(weekSeconds / 60)} label="learning minutes this week" />
+        <Kpi n={streakDays(log)} label="day streak" />
+        <Kpi n={due.length} label="revisions due" warn={due.length > 5} />
+      </div>
+      <div className="parent-overview__grid">
+        <section className="pcard">
+          <h2>Learning at a glance</h2>
+          <p><b>{started.length}</b> of the recorded skills have been started across <b>{index.worlds.length}</b> learning worlds.</p>
+          <p><b>{artCount}</b> creations saved in Creative Studio.</p>
+          <p><b>{due.length}</b> revision {due.length === 1 ? 'check is' : 'checks are'} ready for a return visit.</p>
+          <button className="pbtn pbtn--primary" onClick={() => navigate('/parent/progress')}>Explore detailed progress</button>
+        </section>
+        <section className="pcard">
+          <h2>A gentle next step</h2>
+          {next ? (
+            <>
+              <p><b>{title(next.lessonId)}</b> is currently at <b>{MASTERY_STAGES[next.stage as MasteryStage]}</b>. Review its evidence and decide whether a revisit or a new challenge would help.</p>
+              <button className="pbtn pbtn--primary" onClick={() => navigate('/parent/progress')}>Review learning evidence</button>
+            </>
+          ) : <p>When a first lesson is explored, a suggested next step will appear here.</p>}
+        </section>
+      </div>
+      <IvuReadsPanel />
+      <p className="muted small">Progress is stored on this device. A regular backup helps protect learning history if browser data is cleared.</p>
+    </div>
+  );
+}
+
+// ---------------- Recommendations ----------------
+
+function RecommendationsPage() {
+  const { index, outline, skills, settings, setSubjectStage, addLog } = useStore();
+  const title = useLessonTitles();
+  const due = dueSkills(Object.values(skills));
+  const ready = outline ? readyToAdvance(outline, settings, skills) : [];
+  const subjectName = (id: string) => index?.worlds.flatMap((w) => w.subjects).find((s) => s.id === id)?.title ?? id;
+  if (!index || !outline) return null;
+  return (
+    <div className="parent-recommendations">
+      <div className="parent-page-hero">
+        <p className="parent-page-hero__eyebrow">Thoughtful guidance</p>
+        <h1>Recommended next steps</h1>
+        <p>Suggestions are based on recorded practice, spaced revision and the existing mastery rules. They never change a learner's stage without your choice.</p>
+      </div>
+      <section className="pcard">
+        <h2>Revisit and strengthen</h2>
+        {due.length === 0 ? <p>No revisions are due right now. Keep following the child's curiosity and return to earlier skills when they appear here.</p> : (
+          <ul className="plist">
+            {due.map((item) => (
+              <li key={item.skillId}>
+                <span><b>{title(item.lessonId)}</b><span className="muted small"> · {subjectName(item.subjectId)} · {relativeDay(item.revision?.dueAt ?? Date.now())}</span></span>
+                <button className="pbtn pbtn--primary" onClick={() => navigate('/revise/' + item.lessonId)}>Start revision</button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+      <section className="pcard">
+        <h2>Ready for a new stage</h2>
+        {ready.length === 0 ? <p>No subject currently meets the automatic stage-advance criteria. That is fine—steady practice matters more than rushing ahead.</p> : (
+          <ul className="plist">
+            {ready.map((r) => (
+              <li key={r.subjectId}>
+                <span><b>{subjectName(r.subjectId)}</b><span className="muted small"> · {r.from} → {r.to}</span></span>
+                <button className="pbtn pbtn--primary" onClick={async () => { await setSubjectStage(r.subjectId, r.to); await addLog({ type: 'stage-up', subjectId: r.subjectId, detail: `${r.from}→${r.to}` }); }}>Approve stage change</button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+    </div>
+  );
+}
+
+// ---------------- Settings & Backup ----------------
+
+function SettingsAndBackupPage() {
+  return <div className="settings-backup"><SettingsPage /><BackupPage /></div>;
+}
+
+// ---------------- Progress detail ----------------
+
+function ProgressPage() {
   const { index, outline, skills, log, settings, setSubjectStage, addLog } = useStore();
   const title = useLessonTitles();
   const [subjectFilter, setSubjectFilter] = useState<string>('');

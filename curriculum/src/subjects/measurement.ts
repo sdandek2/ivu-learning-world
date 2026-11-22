@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['Why do you think we sleep at night and not in the day?', 'What is your favourite part of the day and why?'],
           k: ['Tell a grown-up what you do in the morning, afternoon and evening.'],
-          m: ['My Day Picture Clock', 'a paper plate, crayons, a paper arrow, a split pin', 'Divide the plate into four parts: morning, afternoon, evening, night | Draw what you do in each part | Attach an arrow with a split pin | Move the arrow through your day'],
+          m: ['My Day Picture Clock', 'a paper plate, crayons, a paper arrow, a split pin', 'Divide the plate into four parts: morning, afternoon, evening, night | Draw what you do in each part | Attach an arrow with a split pin | Move the arrow through your day', "An adult should attach the split pin and check that no sharp point is exposed. Keep the pin away from mouths and eyes."],
           q: [
             od('Order', 'breakfast|lunch|dinner'),
             ch('Which day comes before Wednesday?', '*Tuesday|Thursday|Saturday'),
@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why do you think the hour hand moves so slowly?', 'What would happen if clocks had no numbers?'],
           k: ['Show times on a toy clock and tell someone what you usually do at each time.'],
-          m: ['Paper Plate Clock', 'paper plate, card, split pin, pen', 'Write 1–12 around the plate | Cut a short and long hand and fix them with a split pin | Show the times of your meals and bedtime | Quiz a family member'],
+          m: ['Paper Plate Clock', 'paper plate, card, split pin, pen', 'Write 1–12 around the plate | Cut a short and long hand and fix them with a split pin | Show the times of your meals and bedtime | Quiz a family member', "An adult should attach the split pin and check that no sharp point is exposed. Use child-safe scissors with supervision."],
           q: [
             ch('Long hand on 12, short hand on 10. Time?', '*10 o\'clock|12 o\'clock|half past 10'),
             ch('Half past 1: the long hand points to…', '12|*6|1'),
@@ -155,7 +155,7 @@ export default subject({
           q: [
             ch('1 litre = ?', '100 ml|*1000 ml|10 ml'),
             ch('Best unit for a person\'s mass:', 'g|*kg|cm'),
-            ch('A line starts at 0 and ends at 7 on a ruler. Length?', '6 cm|*7 cm|8 cm'),
+            ct('A line starts at 0 and ends at 7 on a ruler. Length?', 7, 'Measure from zero to the 7 cm mark: the line is 7 cm long.'),
           ],
           ms: ['Measures accurately to the nearest cm', 'Chooses appropriate units', 'Reads simple scales'],
         }),
@@ -217,7 +217,7 @@ export default subject({
           q: [
             ch('11:05 pm =', '11:05|*23:05|13:05'),
             ch('From 14:50 to 15:25 is…', '25 min|*35 min|75 min'),
-            ch('06:00 is…', '*6 am|6 pm'),
+            tf('06:00 is 6 am.', true, 'Times from 00:00 to 11:59 are in the morning.'),
           ],
           ms: ['Converts between 12- and 24-hour times', 'Calculates durations including across hours', 'Interprets real timetables'],
         }),
@@ -268,7 +268,7 @@ export default subject({
           x: ['Data 3, 5, 5, 7, 10: mean 6, median 5, mode 5, range 7.', 'Shoe shops care about the mode size most.'],
           s: ['The Average Height Trick', 'A basketball coach said, "Our team\'s average height is 160 cm." A rival found that four players were about 140 cm and one was 240 cm! The median was 140 cm. "Choosing which average to report," said Nova, "can change the story."'],
           a: [
-            ch('Mean of 2, 4, 6, 8?', '4|*5|6'),
+            ct('Mean of 2, 4, 6, 8?', 5, 'Add the values (20) and divide by 4: the mean is 5.'),
             ch('Median of 1, 3, 9, 10, 12?', '3|*9|7'),
             ch('Mode of 4, 7, 7, 2, 9?', '4|*7|9'),
             ch('Range of 15, 3, 22, 9?', '13|*19|22'),

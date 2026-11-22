@@ -1,1 +1,2493 @@
-{"schemaVersion":1,"id":"geography","worldId":"globe-garden","title":"Maps & Geography","icon":"🗺️","tagline":"Where in the world?","description":"Where things are and why: from my room and neighbourhood to maps, compass directions, India's states and features, continents and oceans, latitude and longitude, climate zones, population and human geography, and geographic information systems.","contentVersion":"1.0.0","sensitivity":"none","stages":[{"stage":"s4","overview":"My home, my neighbourhood, and simple maps.","goals":["Describe places near home","Understand a map is a picture from above","Use words like near, far, left and right"],"units":[{"id":"geography.s4.my-place","title":"My Place","summary":"Home, street and neighbourhood.","topics":[{"title":"My home and address","subtopics":["My home and address"]},{"title":"Places in my neighbourhood","subtopics":["shop","park","school","temple","mosque","hospital"]},{"title":"Near and far","subtopics":["Near and far"]}],"objectives":["Name places in the neighbourhood","Describe places as near or far"],"masteryCriteria":["Names neighbourhood places","Uses near/far correctly","Recognises landmarks"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"geography.s4.my-place.neighbourhood","title":"My Neighbourhood","skillId":"sk.geography.s4.my-place.neighbourhood","minutes":8,"objectives":["Name places in the neighbourhood","Describe places as near or far"],"prerequisites":["Can talk about places they visit"],"prerequisiteIds":[],"explanation":["A neighbourhood is the area around your home. It has places like shops, a park, a school, a hospital, places of worship, a bus stop and other people's homes.","Some places are near (a short walk away), and some are far (you need a bus or car).","Knowing your neighbourhood helps you find your way and feel safe."],"context":[],"vocabulary":[{"term":"neighbourhood","meaning":"the area around your home"},{"term":"near","meaning":"a short distance away"},{"term":"far","meaning":"a long distance away"},{"term":"landmark","meaning":"a place that is easy to recognise"}],"examples":["The park is near; Grandma's village is far.","The big banyan tree is a landmark on the way to school."],"story":{"title":"Zuri's Walk to the Park","text":"Zuri walked to the park with her father. They passed the vegetable shop, the post office and a big blue gate. \"That gate is a landmark,\" said Papa. \"If you see it, the park is near.\" Zuri counted: vegetable shop, post office, blue gate, park! Now she knew the way."},"activities":[{"id":"geography.s4.my-place.neighbourhood.a1","prompt":"A place where we buy vegetables:","kind":"choice","options":["a shop 🏪","a park 🌳","a bus 🚌"],"answer":0},{"id":"geography.s4.my-place.neighbourhood.a2","prompt":"A landmark is…","kind":"choice","options":["a place that is easy to recognise","a type of food","a toy"],"answer":0},{"id":"geography.s4.my-place.neighbourhood.a3","prompt":"Some places are near and some are far.","kind":"truefalse","answer":true},{"id":"geography.s4.my-place.neighbourhood.a4","prompt":"Match the place to what we do there","kind":"match","pairs":[["park","play"],["school","learn"],["hospital","get better when sick"]]}],"thinking":["What is your favourite place in your neighbourhood? Why?","How would you tell a friend the way to your home?"],"speaking":["Tell a grown-up three places you pass on the way to school or the park."],"project":{"kind":"project","title":"Neighbourhood Walk Map","materials":["paper","crayons","a walk with a grown-up"],"steps":["Go for a short walk around your area","Notice three landmarks","Draw them on paper in the order you passed them","Add your home and draw a path"]},"assessment":[{"id":"geography.s4.my-place.neighbourhood.q1","prompt":"We go to school to…","kind":"choice","options":["learn","sleep","buy vegetables"],"answer":0},{"id":"geography.s4.my-place.neighbourhood.q2","prompt":"A landmark helps us find our way.","kind":"truefalse","answer":true},{"id":"geography.s4.my-place.neighbourhood.q3","prompt":"Grandma lives in another city. That is…","kind":"choice","options":["near","far"],"answer":1}],"mastery":["Names neighbourhood places","Uses near/far correctly","Recognises landmarks"]}]},{"id":"geography.s4.bird-view","title":"A Bird's-Eye View","summary":"Maps show places from above.","topics":[{"title":"Looking from above","subtopics":["Looking from above"]},{"title":"Simple room map","subtopics":["Simple room map"]},{"title":"Map symbols","subtopics":["Map symbols"]}],"objectives":["Understand that a map shows a place from above","Draw a simple map of a room"],"masteryCriteria":["Explains bird's-eye view","Draws a simple map","Uses symbols"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"geography.s4.bird-view.from-above","title":"Seeing Like a Bird","skillId":"sk.geography.s4.bird-view.from-above","minutes":8,"objectives":["Understand that a map shows a place from above","Draw a simple map of a room"],"prerequisites":["Can describe a room"],"prerequisiteIds":[],"explanation":["A bird flying above sees the tops of things: the roof of a house, the round top of a tree, the flat top of a table. A map is like a picture drawn from above.","On a map, we use simple shapes and symbols: a square for a table, a circle for a rug, a little tree shape for a tree.","Maps help us find things and plan where to go."],"context":[],"vocabulary":[{"term":"map","meaning":"a picture of a place seen from above"},{"term":"symbol","meaning":"a small picture that stands for something"},{"term":"above","meaning":"higher up, over"}],"examples":["From above, a round table looks like a circle.","A treasure map shows where treasure is hidden."],"story":{"title":"Mayur's Flight","text":"Mayur the peacock flew up high above the village. \"Everything looks different!\" Houses were squares, the pond was a blue circle, the road a grey ribbon. Mayur drew what he saw and gave it to Kiko. \"A map!\" said Kiko. \"Now I can find the pond.\""},"activities":[{"id":"geography.s4.bird-view.from-above.a1","prompt":"A map shows a place from…","kind":"choice","options":["above","inside a box","underground"],"answer":0},{"id":"geography.s4.bird-view.from-above.a2","prompt":"From above, a round rug looks like a…","kind":"choice","options":["circle ⚪","triangle","star"],"answer":0},{"id":"geography.s4.bird-view.from-above.a3","prompt":"Symbols on maps stand for real things.","kind":"truefalse","answer":true},{"id":"geography.s4.bird-view.from-above.a4","prompt":"Match the thing to its map symbol","kind":"match","pairs":[["tree","🌳 small tree shape"],["pond","🔵 blue shape"],["house","🟥 small square"]]}],"thinking":["What would your bed look like from above?","Why do maps use symbols instead of photos?"],"speaking":["Show a grown-up your room map and explain each symbol."],"project":{"kind":"project","title":"Toy Room Map","materials":["toys or blocks","a sheet of paper","crayons"],"steps":["Arrange toys on a sheet of paper","Look at them from above","Draw around each one to make a map","Hide a small toy and use the map to find it"]},"assessment":[{"id":"geography.s4.bird-view.from-above.q1","prompt":"A map is like a picture seen by a…","kind":"choice","options":["bird flying above","fish underwater","worm underground"],"answer":0},{"id":"geography.s4.bird-view.from-above.q2","prompt":"Maps help us find places.","kind":"truefalse","answer":true},{"id":"geography.s4.bird-view.from-above.q3","prompt":"A small picture on a map is a…","kind":"choice","options":["symbol","song","clock"],"answer":0}],"mastery":["Explains bird's-eye view","Draws a simple map","Uses symbols"]}]}]},{"stage":"s5","overview":"Directions, map keys and the globe.","goals":["Use left, right, forward and backward","Use a map key","Know the Earth is round and has land and water"],"units":[{"id":"geography.s5.directions","title":"Which Way?","summary":"Giving and following directions.","topics":[{"title":"Left and right","subtopics":["Left and right"]},{"title":"Forward and backward","subtopics":["Forward and backward"]},{"title":"Turning","subtopics":["Turning"]},{"title":"Simple routes","subtopics":["Simple routes"]}],"objectives":["Give and follow directions using left, right, forward and turn","Describe a simple route"],"masteryCriteria":["Gives clear directions","Follows multi-step routes","Uses landmarks"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"geography.s5.directions.route","title":"Follow the Route","skillId":"sk.geography.s5.directions.route","minutes":10,"objectives":["Give and follow directions using left, right, forward and turn","Describe a simple route"],"prerequisites":["Knows left and right"],"prerequisiteIds":[],"explanation":["Directions help us move from one place to another. Forward means go straight ahead. Turn left or turn right changes which way we face.","A route is the path we take. We can describe it in steps: \"Go forward 5 steps, turn left, go forward 3 steps.\"","Landmarks make directions easier: \"Turn right at the big tree.\""],"context":[],"vocabulary":[{"term":"direction","meaning":"the way something faces or moves"},{"term":"route","meaning":"the path from one place to another"},{"term":"turn","meaning":"change the way you face"},{"term":"forward","meaning":"straight ahead"}],"examples":["\"Walk to the door, turn right, the kitchen is ahead.\"","\"Turn left at the temple.\""],"story":{"title":"Bolt's Treasure Hunt","text":"Kiko hid a ball and gave Bolt directions: \"Forward 4 steps. Turn right. Forward 2 steps. Look under the chair.\" Bolt followed each step — beep, beep, turn, beep — and found the ball! \"Clear directions are the best treasure map,\" Bolt said."},"activities":[{"id":"geography.s5.directions.route.a1","prompt":"Follow the route","kind":"order","items":["go forward 3 steps","turn left","go forward 2 steps","find the toy"]},{"id":"geography.s5.directions.route.a2","prompt":"\"Straight ahead\" means…","kind":"choice","options":["forward","backward","turn around"],"answer":0},{"id":"geography.s5.directions.route.a3","prompt":"Landmarks can make directions easier.","kind":"truefalse","answer":true},{"id":"geography.s5.directions.route.a4","prompt":"If you turn right twice, you face…","kind":"choice","options":["the same way","the opposite way","upwards"],"answer":1}],"thinking":["Why do people sometimes get lost?","How would you give directions to someone who can't see?"],"speaking":["Give a grown-up directions to find something hidden in your home."],"project":{"kind":"project","title":"Treasure Hunt Directions","materials":["a small \"treasure\"","paper and pencil"],"steps":["Hide a treasure in a room","Write or draw step-by-step directions with arrows","Ask a family member to follow them","Swap roles"]},"assessment":[{"id":"geography.s5.directions.route.q1","prompt":"A route is…","kind":"choice","options":["the path from one place to another","a kind of fruit","a song"],"answer":0},{"id":"geography.s5.directions.route.q2","prompt":"Turning changes which way you face.","kind":"truefalse","answer":true},{"id":"geography.s5.directions.route.q3","prompt":"\"Go back\" means…","kind":"choice","options":["forward","backward","left"],"answer":1}],"mastery":["Gives clear directions","Follows multi-step routes","Uses landmarks"]}]},{"id":"geography.s5.globe","title":"Our Round Earth","summary":"A globe is a model of the Earth.","topics":[{"title":"Globe vs map","subtopics":["Globe vs map"]},{"title":"Land and water","subtopics":["Land and water"]},{"title":"Blue for water, other colours for land","subtopics":["Blue for water, other colours for land"]}],"objectives":["Explain that a globe is a model of the round Earth","Identify land and water on a globe"],"masteryCriteria":["Explains globe as Earth model","Distinguishes land and water","Locates India on a globe"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"geography.s5.globe.globe-model","title":"Spinning the Globe","skillId":"sk.geography.s5.globe.globe-model","minutes":10,"objectives":["Explain that a globe is a model of the round Earth","Identify land and water on a globe"],"prerequisites":["Knows maps show places from above"],"prerequisiteIds":[],"explanation":["The Earth is round like a ball. A globe is a small model of the Earth that we can hold and spin.","On a globe, blue shows water — oceans and seas. Green, brown and yellow show land. There is much more water than land on Earth!","A map is flat, but a globe is round, so a globe shows the true shape of the Earth best."],"context":[],"vocabulary":[{"term":"globe","meaning":"a round model of the Earth"},{"term":"ocean","meaning":"a very large area of salty water"},{"term":"land","meaning":"ground that is not covered by water"},{"term":"model","meaning":"a small copy of something"}],"examples":["India is shaped a bit like a triangle pointing down into the ocean.","The big blue areas are oceans."],"story":{"title":"The Blue Planet","text":"Nova showed Kiko a photo of Earth taken from space. \"It's mostly blue!\" said Kiko. \"That's the ocean,\" said Nova. She spun a globe and stopped it with her finger. \"And this is India — our home, on this big blue ball.\""},"activities":[{"id":"geography.s5.globe.globe-model.a1","prompt":"A globe is shaped like a…","kind":"choice","options":["ball","box","triangle"],"answer":0},{"id":"geography.s5.globe.globe-model.a2","prompt":"On a globe, blue usually shows…","kind":"choice","options":["water","land","mountains only"],"answer":0},{"id":"geography.s5.globe.globe-model.a3","prompt":"Earth has more water than land.","kind":"truefalse","answer":true},{"id":"geography.s5.globe.globe-model.a4","prompt":"Which shows Earth's true shape best?","kind":"choice","options":["a globe","a flat map"],"answer":0}],"thinking":["Why do you think a flat map can't show Earth perfectly?","If you dug straight through the Earth from India, where might you come out?"],"speaking":["Find India on a globe and show a grown-up."],"project":{"kind":"project","title":"Balloon Globe","materials":["a blue balloon","green paper","glue","marker"],"steps":["Blow up a blue balloon (oceans)","Cut out rough continent shapes in green paper","Stick them on","Mark India with a star"]},"assessment":[{"id":"geography.s5.globe.globe-model.q1","prompt":"Large areas of salty water are…","kind":"choice","options":["oceans","deserts","forests"],"answer":0},{"id":"geography.s5.globe.globe-model.q2","prompt":"A globe is a model of the Earth.","kind":"truefalse","answer":true},{"id":"geography.s5.globe.globe-model.q3","prompt":"India is on the…","kind":"choice","options":["land","ocean","Moon"],"answer":0}],"mastery":["Explains globe as Earth model","Distinguishes land and water","Locates India on a globe"]}]}]},{"stage":"s6","overview":"Compass directions, map scale and India on the map.","goals":["Use north, south, east and west","Understand simple map scale","Locate India's states and neighbours"],"units":[{"id":"geography.s6.compass","title":"The Compass","summary":"North, south, east and west.","topics":[{"title":"Cardinal directions","subtopics":["Cardinal directions"]},{"title":"Sunrise in the east","subtopics":["Sunrise in the east"]},{"title":"Using a compass","subtopics":["Using a compass"]},{"title":"Compass rose on maps","subtopics":["Compass rose on maps"]}],"objectives":["Name the four cardinal directions","Use a compass rose to describe locations on a map"],"masteryCriteria":["Names and uses cardinal directions","Relates directions to the Sun","Reads a compass rose"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"geography.s6.compass.nsew","title":"Never Eat Soggy Wheat","skillId":"sk.geography.s6.compass.nsew","minutes":15,"objectives":["Name the four cardinal directions","Use a compass rose to describe locations on a map"],"prerequisites":["Gives directions with left and right"],"prerequisiteIds":[],"explanation":["There are four main (cardinal) directions: north, east, south and west. A memory trick going clockwise: \"Never Eat Soggy Wheat\" (N, E, S, W).","The Sun rises in the east and sets in the west. A magnetic compass needle points towards magnetic north.","Maps have a compass rose showing directions. Usually north is at the top. We can say \"The Himalayas are in the north of India; Kanyakumari is in the south.\""],"context":[],"vocabulary":[{"term":"north","meaning":"the direction a compass points"},{"term":"compass","meaning":"a tool showing directions"},{"term":"compass rose","meaning":"a symbol on a map showing directions"},{"term":"cardinal directions","meaning":"north, east, south, west"}],"examples":["Kashmir is in the north of India.","The Bay of Bengal is east of India's peninsula."],"story":{"title":"The Sunrise Guide","text":"On a camping trip, Kiko's family lost their way. \"The Sun rose over that hill,\" said Mama, \"so that's east. Our camp is north.\" They turned so the sunrise was on their right and walked straight ahead. Soon they saw their tent!"},"activities":[{"id":"geography.s6.compass.nsew.a1","prompt":"Clockwise from north","kind":"order","items":["north","east","south","west"]},{"id":"geography.s6.compass.nsew.a2","prompt":"The Sun rises in the…","kind":"choice","options":["east","west","north"],"answer":0},{"id":"geography.s6.compass.nsew.a3","prompt":"On most maps, north is at the…","kind":"choice","options":["top","bottom","left"],"answer":0},{"id":"geography.s6.compass.nsew.a4","prompt":"A compass needle points north.","kind":"truefalse","answer":true}],"thinking":["How could you find directions without a compass?","Why do maps usually put north at the top?"],"speaking":["Stand outside and point to north, south, east and west, explaining how you know."],"project":{"kind":"experiment","title":"Make a Compass","materials":["a needle","a magnet","a cork slice or leaf","a bowl of water"],"steps":["Stroke a needle with a magnet 30 times in one direction (adult help)","Float it on a cork in water","Watch it turn to point north–south","Check with the sunrise or a real compass"]},"assessment":[{"id":"geography.s6.compass.nsew.q1","prompt":"The Sun sets in the…","kind":"choice","options":["east","west","south"],"answer":1},{"id":"geography.s6.compass.nsew.q2","prompt":"Opposite of north:","kind":"choice","options":["south","east","west"],"answer":0},{"id":"geography.s6.compass.nsew.q3","prompt":"A compass rose shows directions on a map.","kind":"truefalse","answer":true}],"mastery":["Names and uses cardinal directions","Relates directions to the Sun","Reads a compass rose"]}]},{"id":"geography.s6.india-map","title":"India on the Map","summary":"States, capitals and neighbours.","topics":[{"title":"States and union territories","subtopics":["States and union territories"]},{"title":"Capital","subtopics":["New Delhi"]},{"title":"Neighbouring countries","subtopics":["Neighbouring countries"]},{"title":"Using an atlas","subtopics":["Using an atlas"]}],"objectives":["Locate several Indian states and their capitals","Name India's neighbouring countries"],"masteryCriteria":["Locates states and capitals","Names neighbouring countries","Uses an atlas"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"geography.s6.india-map.states-capitals","title":"States and Neighbours","skillId":"sk.geography.s6.india-map.states-capitals","minutes":15,"objectives":["Locate several Indian states and their capitals","Name India's neighbouring countries"],"prerequisites":["Uses compass directions"],"prerequisiteIds":[],"explanation":["India is divided into 28 states and 8 union territories. Each state has a capital: Maharashtra — Mumbai, Tamil Nadu — Chennai, West Bengal — Kolkata, Karnataka — Bengaluru. New Delhi is India's capital.","India's neighbours include Pakistan to the west, China and Nepal and Bhutan to the north, Bangladesh and Myanmar to the east, and Sri Lanka and the Maldives across the sea to the south.","An atlas is a book of maps. Using its index and grid helps us find places."],"context":[{"kind":"evidence","text":"As of 2019 reorganisation, India has 28 states and 8 union territories; administrative divisions can change by law."}],"vocabulary":[{"term":"state","meaning":"a part of a country with its own government"},{"term":"capital","meaning":"the city where a government is based"},{"term":"neighbour country","meaning":"a country that shares a border"},{"term":"atlas","meaning":"a book of maps"}],"examples":["Ivaan might live in Maharashtra, whose capital is Mumbai.","Sri Lanka is an island nation south of India."],"story":{"title":"Zuri's Postcard Collection","text":"Zuri's pen-friends sent postcards from across India: a lighthouse from Chennai, a tram from Kolkata, the Gateway of India from Mumbai, and Dal Lake from Srinagar. She stuck each one on a big map of India and drew a line to her home. \"My map is full of friends!\" she said."},"activities":[{"id":"geography.s6.india-map.states-capitals.a1","prompt":"Match the state to its capital","kind":"match","pairs":[["Maharashtra","Mumbai"],["Tamil Nadu","Chennai"],["West Bengal","Kolkata"],["Karnataka","Bengaluru"]]},{"id":"geography.s6.india-map.states-capitals.a2","prompt":"India's capital is…","kind":"choice","options":["New Delhi","Mumbai","Kolkata"],"answer":0},{"id":"geography.s6.india-map.states-capitals.a3","prompt":"Which country is an island to the south of India?","kind":"choice","options":["Sri Lanka","Nepal","Bhutan"],"answer":0},{"id":"geography.s6.india-map.states-capitals.a4","prompt":"How many states does India have?","why":"India has 28 states and 8 union territories.","kind":"choice","options":["8","28","100"],"answer":1}],"thinking":["Why do you think countries are divided into states?","What can you learn about a state from a map?"],"speaking":["Point to your state on a map of India and name its capital and two neighbouring states."],"project":{"kind":"project","title":"India Puzzle Map","materials":["a printed outline map of India with states","card","scissors","glue"],"steps":["Stick the map on card","Colour and label states","Cut along state borders to make a puzzle","Put it together, naming states and capitals"]},"assessment":[{"id":"geography.s6.india-map.states-capitals.q1","prompt":"A book of maps is an…","kind":"choice","options":["atlas","album","almanac only"],"answer":0},{"id":"geography.s6.india-map.states-capitals.q2","prompt":"Nepal is to the ___ of India.","kind":"choice","options":["north","south","west"],"answer":0},{"id":"geography.s6.india-map.states-capitals.q3","prompt":"Each state has a capital.","kind":"truefalse","answer":true}],"mastery":["Locates states and capitals","Names neighbouring countries","Uses an atlas"]}]}]},{"stage":"s7","overview":"Continents, oceans, physical features and the world map.","goals":["Name and locate continents and oceans","Describe major world physical features","Use map scale to measure distances"],"units":[{"id":"geography.s7.continents","title":"Continents and Oceans","summary":"The world's big land masses and waters.","topics":[{"title":"Seven continents","subtopics":["Seven continents"]},{"title":"Five oceans","subtopics":["Five oceans"]},{"title":"Largest, smallest","subtopics":["Largest, smallest"]},{"title":"Hemispheres","subtopics":["Hemispheres"]}],"objectives":["Name and locate the seven continents and five oceans","Describe the hemispheres"],"masteryCriteria":["Names and locates continents and oceans","Explains hemispheres","Describes features of each continent"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"geography.s7.continents.seven-five","title":"Seven Continents, Five Oceans","skillId":"sk.geography.s7.continents.seven-five","minutes":20,"objectives":["Name and locate the seven continents and five oceans","Describe the hemispheres"],"prerequisites":["Knows land and water on a globe"],"prerequisiteIds":[],"explanation":["Earth's land is divided into seven continents: Asia (the largest, where India is), Africa, North America, South America, Antarctica, Europe and Australia (Oceania).","The five oceans are the Pacific (the largest), Atlantic, Indian, Southern and Arctic.","The equator divides Earth into the Northern and Southern Hemispheres. India is in the Northern Hemisphere. Australia is in the Southern Hemisphere, so its seasons are opposite to ours."],"context":[],"vocabulary":[{"term":"continent","meaning":"one of the seven very large land masses"},{"term":"ocean","meaning":"one of the five large bodies of salt water"},{"term":"equator","meaning":"an imaginary line around the middle of Earth"},{"term":"hemisphere","meaning":"half of the Earth"}],"examples":["Antarctica is covered in ice and has no permanent residents.","The Indian Ocean is named after India."],"story":{"title":"Around the World in a Paper Plane","text":"Bolt designed a pretend round-the-world trip: from Asia (India) across the Indian Ocean to Africa, over the Atlantic to South America, up to North America, across the Pacific — waving at Australia — then over Europe and home. \"And I'll send a postcard from Antarctica,\" Bolt beeped, \"to the penguins.\""},"activities":[{"id":"geography.s7.continents.seven-five.a1","prompt":"How many continents are there?","kind":"count","answer":7},{"id":"geography.s7.continents.seven-five.a2","prompt":"The largest ocean is the…","kind":"choice","options":["Pacific","Atlantic","Arctic"],"answer":0},{"id":"geography.s7.continents.seven-five.a3","prompt":"India is in…","kind":"choice","options":["Asia","Africa","Europe"],"answer":0},{"id":"geography.s7.continents.seven-five.a4","prompt":"Australia's seasons are opposite to India's.","kind":"truefalse","answer":true}],"thinking":["Why is Antarctica so cold and so empty of people?","Why might the Indian Ocean have been named after India?"],"speaking":["Point to all seven continents on a world map and name them."],"project":{"kind":"project","title":"Continent Collage","materials":["a world map outline","magazines or drawings","glue"],"steps":["Colour each continent differently","Add pictures of an animal, landmark or food from each","Label the oceans","Present your map"]},"assessment":[{"id":"geography.s7.continents.seven-five.q1","prompt":"The largest continent is…","kind":"choice","options":["Asia","Australia","Europe"],"answer":0},{"id":"geography.s7.continents.seven-five.q2","prompt":"How many oceans are there?","kind":"count","answer":5},{"id":"geography.s7.continents.seven-five.q3","prompt":"The equator divides Earth into…","kind":"choice","options":["hemispheres","states","continents"],"answer":0}],"mastery":["Names and locates continents and oceans","Explains hemispheres","Describes features of each continent"]}]},{"id":"geography.s7.scale","title":"Map Scale and Distance","summary":"How maps shrink the real world.","topics":[{"title":"Scale bars","subtopics":["Scale bars"]},{"title":"Measuring distances","subtopics":["Measuring distances"]},{"title":"Large and small scale maps","subtopics":["Large and small scale maps"]}],"objectives":["Use a scale bar to calculate real distances","Compare large-scale and small-scale maps"],"masteryCriteria":["Uses scale to calculate distances","Distinguishes map scales","Creates scale drawings"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"geography.s7.scale.map-scale","title":"How Far Is It?","skillId":"sk.geography.s7.scale.map-scale","minutes":20,"objectives":["Use a scale bar to calculate real distances","Compare large-scale and small-scale maps"],"prerequisites":["Measures in centimetres"],"prerequisiteIds":[],"explanation":["Maps are much smaller than the real world. A scale tells us how much smaller: \"1 cm = 10 km\" means every centimetre on the map stands for 10 kilometres in real life.","To find a distance: measure on the map with a ruler, then multiply by the scale. 4 cm on a 1 cm = 10 km map is 40 km.","A large-scale map shows a small area in lots of detail (a neighbourhood). A small-scale map shows a large area with less detail (the whole world)."],"context":[],"vocabulary":[{"term":"scale","meaning":"how map distance relates to real distance"},{"term":"scale bar","meaning":"a line on a map showing distances"},{"term":"large-scale map","meaning":"shows a small area in detail"},{"term":"small-scale map","meaning":"shows a large area with less detail"}],"examples":["A city map shows individual streets.","A world map shows only big cities."],"story":{"title":"The Trip Planner","text":"Zuri's family planned a road trip. On the map, the next town was 6 cm away. The scale said 1 cm = 25 km. \"That's 150 km,\" Zuri calculated. \"At 50 km an hour, about 3 hours.\" Her father was impressed. \"You're our navigator now!\""},"activities":[{"id":"geography.s7.scale.map-scale.a1","prompt":"Scale 1 cm = 10 km. 5 cm on the map is…","kind":"choice","options":["15 km","50 km","5 km"],"answer":1},{"id":"geography.s7.scale.map-scale.a2","prompt":"A map of your neighbourhood is…","kind":"choice","options":["large-scale","small-scale"],"answer":0},{"id":"geography.s7.scale.map-scale.a3","prompt":"A scale shows how map distance relates to real distance.","kind":"truefalse","answer":true},{"id":"geography.s7.scale.map-scale.a4","prompt":"Scale 1 cm = 100 km. 3.5 cm is…","kind":"choice","options":["35 km","350 km","3,500 km"],"answer":1}],"thinking":["Why does a straight-line distance on a map differ from the road distance?","Why can't one map show everything in detail?"],"speaking":["Measure the distance between two cities on a map and explain your calculation."],"project":{"kind":"project","title":"Scale Drawing of My Room","materials":["squared paper","tape measure","ruler"],"steps":["Measure your room in metres","Choose a scale (1 cm = 50 cm)","Draw the room and furniture to scale","Calculate real distances from your drawing"]},"assessment":[{"id":"geography.s7.scale.map-scale.q1","prompt":"Scale 1 cm = 5 km, distance 8 cm:","kind":"choice","options":["13 km","40 km","85 km"],"answer":1},{"id":"geography.s7.scale.map-scale.q2","prompt":"A world map is a small-scale map.","kind":"truefalse","answer":true},{"id":"geography.s7.scale.map-scale.q3","prompt":"A scale bar helps measure…","kind":"choice","options":["real distances","temperature","time"],"answer":0}],"mastery":["Uses scale to calculate distances","Distinguishes map scales","Creates scale drawings"]}]}]},{"stage":"s9","overview":"Latitude, longitude, time zones and climate zones.","goals":["Locate places using latitude and longitude","Explain time zones","Describe world climate zones"],"units":[{"id":"geography.s9.lat-long","title":"Latitude and Longitude","summary":"A global address system.","topics":[{"title":"Lines of latitude and longitude","subtopics":["Lines of latitude and longitude"]},{"title":"Equator and Prime Meridian","subtopics":["Equator and Prime Meridian"]},{"title":"Coordinates","subtopics":["Coordinates"]},{"title":"Tropics of Cancer and Capricorn","subtopics":["Tropics of Cancer and Capricorn"]}],"objectives":["Read latitude and longitude coordinates","Locate places using coordinates"],"masteryCriteria":["Reads and uses coordinates","Explains latitude and longitude","Locates key lines and places"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"geography.s9.lat-long.coordinates","title":"Earth's Grid","skillId":"sk.geography.s9.lat-long.coordinates","minutes":30,"objectives":["Read latitude and longitude coordinates","Locate places using coordinates"],"prerequisites":["Uses coordinates on a grid"],"prerequisiteIds":[],"explanation":["Latitude lines run east–west around the Earth and measure how far north or south a place is from the equator (0°), up to 90° at the poles.","Longitude lines run from pole to pole and measure how far east or west a place is from the Prime Meridian (0°) through Greenwich, London, up to 180°.","Together they give coordinates. New Delhi is at about 28.6° N, 77.2° E. The Tropic of Cancer (about 23.4° N) passes through the middle of India."],"context":[],"vocabulary":[{"term":"latitude","meaning":"distance north or south of the equator in degrees"},{"term":"longitude","meaning":"distance east or west of the Prime Meridian in degrees"},{"term":"Prime Meridian","meaning":"0° longitude"},{"term":"coordinates","meaning":"a pair of numbers giving a location"}],"examples":["Mumbai: about 19° N, 73° E.","GPS on phones uses latitude and longitude."],"story":{"title":"The Ship's Navigator","text":"Centuries ago, sailors could find latitude by measuring the height of the Sun or Pole Star, but longitude was much harder. In the 1700s, John Harrison built accurate sea clocks; by comparing local time with home time, sailors could finally work out longitude and stop getting lost."},"activities":[{"id":"geography.s9.lat-long.coordinates.a1","prompt":"Latitude measures distance from the…","kind":"choice","options":["equator","Prime Meridian","Moon"],"answer":0},{"id":"geography.s9.lat-long.coordinates.a2","prompt":"The Prime Meridian is…","kind":"choice","options":["0° longitude","0° latitude","the North Pole"],"answer":0},{"id":"geography.s9.lat-long.coordinates.a3","prompt":"The Tropic of Cancer passes through India.","kind":"truefalse","answer":true},{"id":"geography.s9.lat-long.coordinates.a4","prompt":"Match","kind":"match","pairs":[["equator","0° latitude"],["North Pole","90° N"],["Prime Meridian","0° longitude"]]}],"thinking":["Why was longitude harder to find than latitude at sea?","How does your phone know where you are?"],"speaking":["Find the coordinates of your city and explain what they mean."],"project":{"kind":"project","title":"Coordinate Treasure Hunt","materials":["a world map with a grid","a list of coordinates"],"steps":["Write coordinates for 8 famous places","Swap with a partner to find them","Check answers","Find the coordinates of your own home city"]},"assessment":[{"id":"geography.s9.lat-long.coordinates.q1","prompt":"Longitude lines run…","kind":"choice","options":["from pole to pole","parallel to the equator","nowhere"],"answer":0},{"id":"geography.s9.lat-long.coordinates.q2","prompt":"New Delhi is in the…","kind":"choice","options":["Northern and Eastern Hemispheres","Southern Hemisphere","Western Hemisphere"],"answer":0},{"id":"geography.s9.lat-long.coordinates.q3","prompt":"Coordinates use latitude and longitude.","kind":"truefalse","answer":true}],"mastery":["Reads and uses coordinates","Explains latitude and longitude","Locates key lines and places"]}]},{"id":"geography.s9.time-climate","title":"Time Zones and Climate Zones","summary":"Why time and climate differ around the world.","topics":[{"title":"Time zones and IST","subtopics":["Time zones and IST"]},{"title":"International Date Line","subtopics":["International Date Line"]},{"title":"Climate zones","subtopics":["tropical","dry","temperate","polar","highland"]}],"objectives":["Explain why time zones exist","Calculate times in other zones"],"masteryCriteria":["Explains time zones","Calculates time differences","Describes climate zones"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"geography.s9.time-climate.time-zones","title":"What Time Is It There?","skillId":"sk.geography.s9.time-climate.time-zones","minutes":30,"objectives":["Explain why time zones exist","Calculate times in other zones"],"prerequisites":["Knows Earth rotates"],"prerequisiteIds":[],"explanation":["Because the Earth rotates, it's day in some places and night in others. To keep noon roughly when the Sun is highest, the world is divided into time zones, usually one hour apart (about every 15° of longitude).","India uses one time zone: Indian Standard Time (IST), which is 5 hours 30 minutes ahead of Coordinated Universal Time (UTC+5:30). When it's 12:00 noon in India, it's 6:30 am in London (UTC) in winter.","Climate zones depend on latitude and other factors: tropical near the equator, dry deserts, temperate in mid-latitudes, polar near the poles, and highland in mountains."],"context":[{"kind":"evidence","text":"IST is based on the 82.5° E meridian near Mirzapur, Uttar Pradesh. Some people propose two time zones for India because the Sun rises much earlier in the northeast than in the west."}],"vocabulary":[{"term":"time zone","meaning":"a region using the same standard time"},{"term":"IST","meaning":"Indian Standard Time, UTC+5:30"},{"term":"UTC","meaning":"Coordinated Universal Time"},{"term":"International Date Line","meaning":"where the calendar date changes, near 180°"}],"examples":["A video call to a cousin in the USA must account for time differences.","The sun rises over an hour earlier in Arunachal Pradesh than in Gujarat."],"story":{"title":"The Midnight Birthday Call","text":"Riya wanted to wish her uncle in California a happy birthday at exactly midnight his time. In summer, California was 12 and a half hours behind India. She did the maths and set an alarm for 12:30 pm the next day in India. Her uncle laughed: \"Right on time!\""},"activities":[{"id":"geography.s9.time-climate.time-zones.a1","prompt":"IST is…","kind":"choice","options":["UTC+5:30","UTC+3","UTC"],"answer":0},{"id":"geography.s9.time-climate.time-zones.a2","prompt":"Time zones exist because…","kind":"choice","options":["the Earth rotates and places see the Sun at different times","countries like different times","clocks are broken"],"answer":0},{"id":"geography.s9.time-climate.time-zones.a3","prompt":"Match the climate zone","kind":"match","pairs":[["near the equator","tropical"],["near the poles","polar"],["high mountains","highland"]]},{"id":"geography.s9.time-climate.time-zones.a4","prompt":"India uses one standard time zone.","kind":"truefalse","answer":true}],"thinking":["Should India have two time zones? What are the arguments?","What problems do time zones cause for international teams?"],"speaking":["Calculate the time in three world cities when it is 9 am in India and explain your working."],"project":{"kind":"project","title":"World Clock Display","materials":["paper plates as clocks","a world time zone map"],"steps":["Make 5 clocks for different cities","Set them for a chosen IST time","Mark day or night for each","Explain the differences using a globe and torch"]},"assessment":[{"id":"geography.s9.time-climate.time-zones.q1","prompt":"Time zones are roughly every…","kind":"choice","options":["15° of longitude","1° of latitude","1,000 km of latitude"],"answer":0},{"id":"geography.s9.time-climate.time-zones.q2","prompt":"Deserts are in the ___ climate zone.","kind":"choice","options":["dry","polar","tropical rainforest"],"answer":0},{"id":"geography.s9.time-climate.time-zones.q3","prompt":"When it's noon in India, it's morning in London.","kind":"truefalse","answer":true}],"mastery":["Explains time zones","Calculates time differences","Describes climate zones"]}]}]},{"stage":"s12","overview":"Human geography, urbanisation, and geospatial technology.","goals":["Analyse population distribution and migration","Evaluate urbanisation and its challenges","Use GIS and remote sensing concepts"],"units":[{"id":"geography.s12.population","title":"Population and Migration","summary":"Where people live and why they move.","topics":[{"title":"Population density","subtopics":["Population density"]},{"title":"Push and pull factors","subtopics":["Push and pull factors"]},{"title":"Urbanisation in India","subtopics":["Urbanisation in India"]},{"title":"Demographic transition","subtopics":["Demographic transition"]}],"objectives":["Explain population distribution and density","Analyse migration using push and pull factors"],"masteryCriteria":["Explains population distribution","Analyses migration factors","Interprets census data"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"geography.s12.population.push-pull","title":"Push and Pull","skillId":"sk.geography.s12.population.push-pull","minutes":40,"objectives":["Explain population distribution and density","Analyse migration using push and pull factors"],"prerequisites":["Uses maps and data"],"prerequisiteIds":[],"explanation":["Population density is the number of people per square kilometre. Some areas, like the Gangetic Plain, are very densely populated because of fertile land and water; others, like the Thar Desert or high Himalayas, are sparse.","People migrate for many reasons. Push factors make people leave (lack of jobs, drought, conflict); pull factors attract them (jobs, education, safety, family).","India is urbanising: a growing share of people live in cities. Cities offer opportunities but face challenges of housing, transport, water and pollution."],"context":[{"kind":"evidence","text":"Census data show India's urban population share rising from about 17% in 1951 to about 31% in 2011."}],"vocabulary":[{"term":"population density","meaning":"people per square kilometre"},{"term":"migration","meaning":"moving from one place to another to live"},{"term":"push factor","meaning":"a reason to leave a place"},{"term":"pull factor","meaning":"a reason to move to a place"},{"term":"urbanisation","meaning":"the growth of cities"}],"examples":["A farmer moving to a city after crop failure (push) for construction work (pull).","Students moving to cities for universities."],"story":{"title":"Two Brothers","text":"Two brothers grew up in a village in Bihar. When the monsoon failed twice, one moved to Mumbai for construction work and sent money home. The other stayed and started a small dairy with a loan. Their lives showed both sides of migration — opportunity, hardship and connection between village and city."},"activities":[{"id":"geography.s12.population.push-pull.a1","prompt":"Push or pull?","kind":"match","pairs":[["drought at home","push factor"],["jobs in a city","pull factor"],["good universities","pull factor, education"]]},{"id":"geography.s12.population.push-pull.a2","prompt":"Population density means…","kind":"choice","options":["people per square kilometre","total land area","number of cities"],"answer":0},{"id":"geography.s12.population.push-pull.a3","prompt":"India's urban population share has grown over time.","kind":"truefalse","answer":true},{"id":"geography.s12.population.push-pull.a4","prompt":"Why is the Gangetic Plain densely populated?","kind":"choice","options":["fertile land and water","deserts","ice"],"answer":0}],"thinking":["What are the benefits and costs of migration for families and villages?","How should cities plan for migrants?"],"speaking":["Interview a family member about any migration in your family history and present it."],"project":{"kind":"project","title":"Family Migration Map and Data Study","materials":["a map","census data summaries","interviews"],"steps":["Map where your family has lived across generations","Identify push and pull factors","Compare with national migration patterns","Write a short report"]},"assessment":[{"id":"geography.s12.population.push-pull.q1","prompt":"Conflict forcing people to leave is a…","kind":"choice","options":["push factor","pull factor","climate zone"],"answer":0},{"id":"geography.s12.population.push-pull.q2","prompt":"Urbanisation means growth of cities.","kind":"truefalse","answer":true},{"id":"geography.s12.population.push-pull.q3","prompt":"A sparsely populated region in India:","kind":"choice","options":["the Thar Desert","Kolkata","the Gangetic Plain"],"answer":0}],"mastery":["Explains population distribution","Analyses migration factors","Interprets census data"]}]},{"id":"geography.s12.gis","title":"Geospatial Technology","summary":"Maps, satellites and data.","topics":[{"title":"GPS","subtopics":["GPS"]},{"title":"Remote sensing","subtopics":["Remote sensing"]},{"title":"GIS layers","subtopics":["GIS layers"]},{"title":"Applications","subtopics":["disaster response","planning"]}],"objectives":["Explain GPS, remote sensing and GIS","Describe uses of geospatial technology"],"masteryCriteria":["Explains geospatial technologies","Applies layering to analysis","Considers ethical issues"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"geography.s12.gis.gis-layers","title":"Layers of Information","skillId":"sk.geography.s12.gis.gis-layers","minutes":40,"objectives":["Explain GPS, remote sensing and GIS","Describe uses of geospatial technology"],"prerequisites":["Reads coordinates and maps"],"prerequisiteIds":[],"explanation":["GPS uses signals from satellites to find a receiver's location. India has its own regional system, NavIC.","Remote sensing means gathering information about Earth from a distance, usually satellites. Images can show forest cover, floods, crop health and city growth. ISRO's satellites provide such data, and platforms like Bhuvan share it.","A Geographic Information System (GIS) combines layers of data on a map — roads, rivers, population, schools — to answer questions: Where should a new hospital go? Which villages are at flood risk?"],"context":[{"kind":"evidence","text":"NavIC (Navigation with Indian Constellation) is ISRO's regional satellite navigation system; Bhuvan is ISRO's geoportal."}],"vocabulary":[{"term":"GPS","meaning":"satellite system for finding location"},{"term":"remote sensing","meaning":"collecting data about Earth from a distance"},{"term":"GIS","meaning":"system combining layers of geographic data"},{"term":"layer","meaning":"one set of mapped information"}],"examples":["Flood maps from satellite images guiding rescue teams.","Delivery apps using GPS to track riders."],"story":{"title":"Mapping the Flood","text":"During a severe flood, satellite images showed which areas were underwater. GIS analysts overlaid layers of population, roads and hospitals. Rescue teams knew which villages to reach first and which roads were still usable. \"Maps,\" said one officer, \"saved lives today.\""},"activities":[{"id":"geography.s12.gis.gis-layers.a1","prompt":"Match the technology","kind":"match","pairs":[["GPS","finds location using satellites"],["remote sensing","observes Earth from a distance"],["GIS","combines layers of map data"]]},{"id":"geography.s12.gis.gis-layers.a2","prompt":"India's regional navigation system is…","kind":"choice","options":["NavIC","Chandrayaan","Aadhaar"],"answer":0},{"id":"geography.s12.gis.gis-layers.a3","prompt":"GIS can help decide where to build a hospital.","kind":"truefalse","answer":true},{"id":"geography.s12.gis.gis-layers.a4","prompt":"Satellite images can show…","kind":"choice","options":["forest cover and floods","people's thoughts","tomorrow's lottery"],"answer":0}],"thinking":["What privacy concerns come with location data?","How could GIS help your city solve a problem?"],"speaking":["Present a GIS-style analysis of a local problem using layered maps."],"project":{"kind":"project","title":"Paper GIS Project","materials":["tracing paper or transparent sheets","a base map of your area","pens"],"steps":["Draw a base map","On separate transparent sheets, map layers (schools, parks, bus stops, population)","Overlay layers to find gaps","Propose where a new facility should go and why"]},"assessment":[{"id":"geography.s12.gis.gis-layers.q1","prompt":"Collecting data about Earth from satellites is…","kind":"choice","options":["remote sensing","GPS only","surveying by foot"],"answer":0},{"id":"geography.s12.gis.gis-layers.q2","prompt":"GIS uses layers of information.","kind":"truefalse","answer":true},{"id":"geography.s12.gis.gis-layers.q3","prompt":"Location data raises concerns about…","kind":"choice","options":["privacy","gravity","tides"],"answer":0}],"mastery":["Explains geospatial technologies","Applies layering to analysis","Considers ethical issues"]}]}]}]}
+{
+  "schemaVersion": 1,
+  "id": "geography",
+  "worldId": "globe-garden",
+  "title": "Maps & Geography",
+  "icon": "🗺️",
+  "tagline": "Where in the world?",
+  "description": "Where things are and why: from my room and neighbourhood to maps, compass directions, India's states and features, continents and oceans, latitude and longitude, climate zones, population and human geography, and geographic information systems.",
+  "contentVersion": "1.0.0",
+  "sensitivity": "none",
+  "stages": [
+    {
+      "stage": "s4",
+      "overview": "My home, my neighbourhood, and simple maps.",
+      "goals": [
+        "Describe places near home",
+        "Understand a map is a picture from above",
+        "Use words like near, far, left and right"
+      ],
+      "units": [
+        {
+          "id": "geography.s4.my-place",
+          "title": "My Place",
+          "summary": "Home, street and neighbourhood.",
+          "topics": [
+            {
+              "title": "My home and address",
+              "subtopics": [
+                "My home and address"
+              ]
+            },
+            {
+              "title": "Places in my neighbourhood",
+              "subtopics": [
+                "shop",
+                "park",
+                "school",
+                "temple",
+                "mosque",
+                "hospital"
+              ]
+            },
+            {
+              "title": "Near and far",
+              "subtopics": [
+                "Near and far"
+              ]
+            }
+          ],
+          "objectives": [
+            "Name places in the neighbourhood",
+            "Describe places as near or far"
+          ],
+          "masteryCriteria": [
+            "Names neighbourhood places",
+            "Uses near/far correctly",
+            "Recognises landmarks"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "geography.s4.my-place.neighbourhood",
+              "title": "My Neighbourhood",
+              "skillId": "sk.geography.s4.my-place.neighbourhood",
+              "minutes": 8,
+              "objectives": [
+                "Name places in the neighbourhood",
+                "Describe places as near or far"
+              ],
+              "prerequisites": [
+                "Can talk about places they visit"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A neighbourhood is the area around your home. It has places like shops, a park, a school, a hospital, places of worship, a bus stop and other people's homes.",
+                "Some places are near (a short walk away), and some are far (you need a bus or car).",
+                "Knowing your neighbourhood helps you find your way and feel safe."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "neighbourhood",
+                  "meaning": "the area around your home"
+                },
+                {
+                  "term": "near",
+                  "meaning": "a short distance away"
+                },
+                {
+                  "term": "far",
+                  "meaning": "a long distance away"
+                },
+                {
+                  "term": "landmark",
+                  "meaning": "a place that is easy to recognise"
+                }
+              ],
+              "examples": [
+                "The park is near; Grandma's village is far.",
+                "The big banyan tree is a landmark on the way to school."
+              ],
+              "story": {
+                "title": "Zuri's Walk to the Park",
+                "text": "Zuri walked to the park with her father. They passed the vegetable shop, the post office and a big blue gate. \"That gate is a landmark,\" said Papa. \"If you see it, the park is near.\" Zuri counted: vegetable shop, post office, blue gate, park! Now she knew the way."
+              },
+              "activities": [
+                {
+                  "id": "geography.s4.my-place.neighbourhood.a1",
+                  "prompt": "A place where we buy vegetables:",
+                  "kind": "choice",
+                  "options": [
+                    "a shop 🏪",
+                    "a park 🌳",
+                    "a bus 🚌"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s4.my-place.neighbourhood.a2",
+                  "prompt": "A landmark is…",
+                  "kind": "choice",
+                  "options": [
+                    "a place that is easy to recognise",
+                    "a type of food",
+                    "a toy"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s4.my-place.neighbourhood.a3",
+                  "prompt": "Some places are near and some are far.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s4.my-place.neighbourhood.a4",
+                  "prompt": "Match the place to what we do there",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "park",
+                      "play"
+                    ],
+                    [
+                      "school",
+                      "learn"
+                    ],
+                    [
+                      "hospital",
+                      "get better when sick"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "What is your favourite place in your neighbourhood? Why?",
+                "How would you tell a friend the way to your home?"
+              ],
+              "speaking": [
+                "Tell a grown-up three places you pass on the way to school or the park."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Neighbourhood Walk Map",
+                "materials": [
+                  "paper",
+                  "crayons",
+                  "a walk with a grown-up"
+                ],
+                "steps": [
+                  "Go for a short walk around your area",
+                  "Notice three landmarks",
+                  "Draw them on paper in the order you passed them",
+                  "Add your home and draw a path"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "geography.s4.my-place.neighbourhood.q1",
+                  "prompt": "We go to school to…",
+                  "kind": "choice",
+                  "options": [
+                    "learn",
+                    "sleep",
+                    "buy vegetables"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s4.my-place.neighbourhood.q2",
+                  "prompt": "A landmark helps us find our way.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s4.my-place.neighbourhood.q3",
+                  "prompt": "Grandma lives in another city. That is…",
+                  "kind": "choice",
+                  "options": [
+                    "near",
+                    "far"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "mastery": [
+                "Names neighbourhood places",
+                "Uses near/far correctly",
+                "Recognises landmarks"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "geography.s4.bird-view",
+          "title": "A Bird's-Eye View",
+          "summary": "Maps show places from above.",
+          "topics": [
+            {
+              "title": "Looking from above",
+              "subtopics": [
+                "Looking from above"
+              ]
+            },
+            {
+              "title": "Simple room map",
+              "subtopics": [
+                "Simple room map"
+              ]
+            },
+            {
+              "title": "Map symbols",
+              "subtopics": [
+                "Map symbols"
+              ]
+            }
+          ],
+          "objectives": [
+            "Understand that a map shows a place from above",
+            "Draw a simple map of a room"
+          ],
+          "masteryCriteria": [
+            "Explains bird's-eye view",
+            "Draws a simple map",
+            "Uses symbols"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "geography.s4.bird-view.from-above",
+              "title": "Seeing Like a Bird",
+              "skillId": "sk.geography.s4.bird-view.from-above",
+              "minutes": 8,
+              "objectives": [
+                "Understand that a map shows a place from above",
+                "Draw a simple map of a room"
+              ],
+              "prerequisites": [
+                "Can describe a room"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A bird flying above sees the tops of things: the roof of a house, the round top of a tree, the flat top of a table. A map is like a picture drawn from above.",
+                "On a map, we use simple shapes and symbols: a square for a table, a circle for a rug, a little tree shape for a tree.",
+                "Maps help us find things and plan where to go."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "map",
+                  "meaning": "a picture of a place seen from above"
+                },
+                {
+                  "term": "symbol",
+                  "meaning": "a small picture that stands for something"
+                },
+                {
+                  "term": "above",
+                  "meaning": "higher up, over"
+                }
+              ],
+              "examples": [
+                "From above, a round table looks like a circle.",
+                "A treasure map shows where treasure is hidden."
+              ],
+              "story": {
+                "title": "Mayur's Flight",
+                "text": "Mayur the peacock flew up high above the village. \"Everything looks different!\" Houses were squares, the pond was a blue circle, the road a grey ribbon. Mayur drew what he saw and gave it to Kiko. \"A map!\" said Kiko. \"Now I can find the pond.\""
+              },
+              "activities": [
+                {
+                  "id": "geography.s4.bird-view.from-above.a1",
+                  "prompt": "A map shows a place from…",
+                  "kind": "choice",
+                  "options": [
+                    "above",
+                    "inside a box",
+                    "underground"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s4.bird-view.from-above.a2",
+                  "prompt": "From above, a round rug looks like a…",
+                  "kind": "choice",
+                  "options": [
+                    "circle ⚪",
+                    "triangle",
+                    "star"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s4.bird-view.from-above.a3",
+                  "prompt": "Symbols on maps stand for real things.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s4.bird-view.from-above.a4",
+                  "prompt": "Match the thing to its map symbol",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "tree",
+                      "🌳 small tree shape"
+                    ],
+                    [
+                      "pond",
+                      "🔵 blue shape"
+                    ],
+                    [
+                      "house",
+                      "🟥 small square"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "What would your bed look like from above?",
+                "Why do maps use symbols instead of photos?"
+              ],
+              "speaking": [
+                "Show a grown-up your room map and explain each symbol."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Toy Room Map",
+                "materials": [
+                  "toys or blocks",
+                  "a sheet of paper",
+                  "crayons"
+                ],
+                "steps": [
+                  "Arrange toys on a sheet of paper",
+                  "Look at them from above",
+                  "Draw around each one to make a map",
+                  "Hide a small toy and use the map to find it"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "geography.s4.bird-view.from-above.q1",
+                  "prompt": "A map is like a picture seen by a…",
+                  "kind": "choice",
+                  "options": [
+                    "bird flying above",
+                    "fish underwater",
+                    "worm underground"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s4.bird-view.from-above.q2",
+                  "prompt": "Maps help us find places.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s4.bird-view.from-above.q3",
+                  "prompt": "A small picture on a map is a…",
+                  "kind": "choice",
+                  "options": [
+                    "symbol",
+                    "song",
+                    "clock"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Explains bird's-eye view",
+                "Draws a simple map",
+                "Uses symbols"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s5",
+      "overview": "Directions, map keys and the globe.",
+      "goals": [
+        "Use left, right, forward and backward",
+        "Use a map key",
+        "Know the Earth is round and has land and water"
+      ],
+      "units": [
+        {
+          "id": "geography.s5.directions",
+          "title": "Which Way?",
+          "summary": "Giving and following directions.",
+          "topics": [
+            {
+              "title": "Left and right",
+              "subtopics": [
+                "Left and right"
+              ]
+            },
+            {
+              "title": "Forward and backward",
+              "subtopics": [
+                "Forward and backward"
+              ]
+            },
+            {
+              "title": "Turning",
+              "subtopics": [
+                "Turning"
+              ]
+            },
+            {
+              "title": "Simple routes",
+              "subtopics": [
+                "Simple routes"
+              ]
+            }
+          ],
+          "objectives": [
+            "Give and follow directions using left, right, forward and turn",
+            "Describe a simple route"
+          ],
+          "masteryCriteria": [
+            "Gives clear directions",
+            "Follows multi-step routes",
+            "Uses landmarks"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "geography.s5.directions.route",
+              "title": "Follow the Route",
+              "skillId": "sk.geography.s5.directions.route",
+              "minutes": 10,
+              "objectives": [
+                "Give and follow directions using left, right, forward and turn",
+                "Describe a simple route"
+              ],
+              "prerequisites": [
+                "Knows left and right"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Directions help us move from one place to another. Forward means go straight ahead. Turn left or turn right changes which way we face.",
+                "A route is the path we take. We can describe it in steps: \"Go forward 5 steps, turn left, go forward 3 steps.\"",
+                "Landmarks make directions easier: \"Turn right at the big tree.\""
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "direction",
+                  "meaning": "the way something faces or moves"
+                },
+                {
+                  "term": "route",
+                  "meaning": "the path from one place to another"
+                },
+                {
+                  "term": "turn",
+                  "meaning": "change the way you face"
+                },
+                {
+                  "term": "forward",
+                  "meaning": "straight ahead"
+                }
+              ],
+              "examples": [
+                "\"Walk to the door, turn right, the kitchen is ahead.\"",
+                "\"Turn left at the temple.\""
+              ],
+              "story": {
+                "title": "Bolt's Treasure Hunt",
+                "text": "Kiko hid a ball and gave Bolt directions: \"Forward 4 steps. Turn right. Forward 2 steps. Look under the chair.\" Bolt followed each step — beep, beep, turn, beep — and found the ball! \"Clear directions are the best treasure map,\" Bolt said."
+              },
+              "activities": [
+                {
+                  "id": "geography.s5.directions.route.a1",
+                  "prompt": "Follow the route",
+                  "kind": "order",
+                  "items": [
+                    "go forward 3 steps",
+                    "turn left",
+                    "go forward 2 steps",
+                    "find the toy"
+                  ]
+                },
+                {
+                  "id": "geography.s5.directions.route.a2",
+                  "prompt": "\"Straight ahead\" means…",
+                  "kind": "choice",
+                  "options": [
+                    "forward",
+                    "backward",
+                    "turn around"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s5.directions.route.a3",
+                  "prompt": "Landmarks can make directions easier.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s5.directions.route.a4",
+                  "prompt": "If you turn right twice, you face…",
+                  "kind": "choice",
+                  "options": [
+                    "the same way",
+                    "the opposite way",
+                    "upwards"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Why do people sometimes get lost?",
+                "How would you give directions to someone who can't see?"
+              ],
+              "speaking": [
+                "Give a grown-up directions to find something hidden in your home."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Treasure Hunt Directions",
+                "materials": [
+                  "a small \"treasure\"",
+                  "paper and pencil"
+                ],
+                "steps": [
+                  "Hide a treasure in a room",
+                  "Write or draw step-by-step directions with arrows",
+                  "Ask a family member to follow them",
+                  "Swap roles"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "geography.s5.directions.route.q1",
+                  "prompt": "A route is…",
+                  "kind": "choice",
+                  "options": [
+                    "the path from one place to another",
+                    "a kind of fruit",
+                    "a song"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s5.directions.route.q2",
+                  "prompt": "Turning changes which way you face.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s5.directions.route.q3",
+                  "prompt": "\"Go back\" means…",
+                  "kind": "choice",
+                  "options": [
+                    "forward",
+                    "backward",
+                    "left"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "mastery": [
+                "Gives clear directions",
+                "Follows multi-step routes",
+                "Uses landmarks"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "geography.s5.globe",
+          "title": "Our Round Earth",
+          "summary": "A globe is a model of the Earth.",
+          "topics": [
+            {
+              "title": "Globe vs map",
+              "subtopics": [
+                "Globe vs map"
+              ]
+            },
+            {
+              "title": "Land and water",
+              "subtopics": [
+                "Land and water"
+              ]
+            },
+            {
+              "title": "Blue for water, other colours for land",
+              "subtopics": [
+                "Blue for water, other colours for land"
+              ]
+            }
+          ],
+          "objectives": [
+            "Explain that a globe is a model of the round Earth",
+            "Identify land and water on a globe"
+          ],
+          "masteryCriteria": [
+            "Explains globe as Earth model",
+            "Distinguishes land and water",
+            "Locates India on a globe"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "geography.s5.globe.globe-model",
+              "title": "Spinning the Globe",
+              "skillId": "sk.geography.s5.globe.globe-model",
+              "minutes": 10,
+              "objectives": [
+                "Explain that a globe is a model of the round Earth",
+                "Identify land and water on a globe"
+              ],
+              "prerequisites": [
+                "Knows maps show places from above"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "The Earth is round like a ball. A globe is a small model of the Earth that we can hold and spin.",
+                "On a globe, blue shows water — oceans and seas. Green, brown and yellow show land. There is much more water than land on Earth!",
+                "A map is flat, but a globe is round, so a globe shows the true shape of the Earth best."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "globe",
+                  "meaning": "a round model of the Earth"
+                },
+                {
+                  "term": "ocean",
+                  "meaning": "a very large area of salty water"
+                },
+                {
+                  "term": "land",
+                  "meaning": "ground that is not covered by water"
+                },
+                {
+                  "term": "model",
+                  "meaning": "a small copy of something"
+                }
+              ],
+              "examples": [
+                "India is shaped a bit like a triangle pointing down into the ocean.",
+                "The big blue areas are oceans."
+              ],
+              "story": {
+                "title": "The Blue Planet",
+                "text": "Nova showed Kiko a photo of Earth taken from space. \"It's mostly blue!\" said Kiko. \"That's the ocean,\" said Nova. She spun a globe and stopped it with her finger. \"And this is India — our home, on this big blue ball.\""
+              },
+              "activities": [
+                {
+                  "id": "geography.s5.globe.globe-model.a1",
+                  "prompt": "A globe is shaped like a…",
+                  "kind": "choice",
+                  "options": [
+                    "ball",
+                    "box",
+                    "triangle"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s5.globe.globe-model.a2",
+                  "prompt": "On a globe, blue usually shows…",
+                  "kind": "choice",
+                  "options": [
+                    "water",
+                    "land",
+                    "mountains only"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s5.globe.globe-model.a3",
+                  "prompt": "Earth has more water than land.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s5.globe.globe-model.a4",
+                  "prompt": "Which shows Earth's true shape best?",
+                  "kind": "choice",
+                  "options": [
+                    "a globe",
+                    "a flat map"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why do you think a flat map can't show Earth perfectly?",
+                "If you dug straight through the Earth from India, where might you come out?"
+              ],
+              "speaking": [
+                "Find India on a globe and show a grown-up."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Balloon Globe",
+                "materials": [
+                  "a blue balloon",
+                  "green paper",
+                  "glue",
+                  "marker"
+                ],
+                "steps": [
+                  "Blow up a blue balloon (oceans)",
+                  "Cut out rough continent shapes in green paper",
+                  "Stick them on",
+                  "Mark India with a star"
+                ],
+                "safety": "Use child-safe scissors with adult supervision. Keep balloons away from children who may chew them and discard broken balloon pieces immediately."
+              },
+              "assessment": [
+                {
+                  "id": "geography.s5.globe.globe-model.q1",
+                  "prompt": "Large areas of salty water are…",
+                  "kind": "choice",
+                  "options": [
+                    "oceans",
+                    "deserts",
+                    "forests"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s5.globe.globe-model.q2",
+                  "prompt": "A globe is a model of the Earth.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s5.globe.globe-model.q3",
+                  "prompt": "India is on the…",
+                  "kind": "choice",
+                  "options": [
+                    "land",
+                    "ocean",
+                    "Moon"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Explains globe as Earth model",
+                "Distinguishes land and water",
+                "Locates India on a globe"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s6",
+      "overview": "Compass directions, map scale and India on the map.",
+      "goals": [
+        "Use north, south, east and west",
+        "Understand simple map scale",
+        "Locate India's states and neighbours"
+      ],
+      "units": [
+        {
+          "id": "geography.s6.compass",
+          "title": "The Compass",
+          "summary": "North, south, east and west.",
+          "topics": [
+            {
+              "title": "Cardinal directions",
+              "subtopics": [
+                "Cardinal directions"
+              ]
+            },
+            {
+              "title": "Sunrise in the east",
+              "subtopics": [
+                "Sunrise in the east"
+              ]
+            },
+            {
+              "title": "Using a compass",
+              "subtopics": [
+                "Using a compass"
+              ]
+            },
+            {
+              "title": "Compass rose on maps",
+              "subtopics": [
+                "Compass rose on maps"
+              ]
+            }
+          ],
+          "objectives": [
+            "Name the four cardinal directions",
+            "Use a compass rose to describe locations on a map"
+          ],
+          "masteryCriteria": [
+            "Names and uses cardinal directions",
+            "Relates directions to the Sun",
+            "Reads a compass rose"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "geography.s6.compass.nsew",
+              "title": "Never Eat Soggy Wheat",
+              "skillId": "sk.geography.s6.compass.nsew",
+              "minutes": 15,
+              "objectives": [
+                "Name the four cardinal directions",
+                "Use a compass rose to describe locations on a map"
+              ],
+              "prerequisites": [
+                "Gives directions with left and right"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "There are four main (cardinal) directions: north, east, south and west. A memory trick going clockwise: \"Never Eat Soggy Wheat\" (N, E, S, W).",
+                "The Sun rises in the east and sets in the west. A magnetic compass needle points towards magnetic north.",
+                "Maps have a compass rose showing directions. Usually north is at the top. We can say \"The Himalayas are in the north of India; Kanyakumari is in the south.\""
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "north",
+                  "meaning": "the direction a compass points"
+                },
+                {
+                  "term": "compass",
+                  "meaning": "a tool showing directions"
+                },
+                {
+                  "term": "compass rose",
+                  "meaning": "a symbol on a map showing directions"
+                },
+                {
+                  "term": "cardinal directions",
+                  "meaning": "north, east, south, west"
+                }
+              ],
+              "examples": [
+                "Kashmir is in the north of India.",
+                "The Bay of Bengal is east of India's peninsula."
+              ],
+              "story": {
+                "title": "The Sunrise Guide",
+                "text": "On a camping trip, Kiko's family lost their way. \"The Sun rose over that hill,\" said Mama, \"so that's east. Our camp is north.\" They turned so the sunrise was on their right and walked straight ahead. Soon they saw their tent!"
+              },
+              "activities": [
+                {
+                  "id": "geography.s6.compass.nsew.a1",
+                  "prompt": "Clockwise from north",
+                  "kind": "order",
+                  "items": [
+                    "north",
+                    "east",
+                    "south",
+                    "west"
+                  ]
+                },
+                {
+                  "id": "geography.s6.compass.nsew.a2",
+                  "prompt": "The Sun rises in the…",
+                  "kind": "choice",
+                  "options": [
+                    "east",
+                    "west",
+                    "north"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s6.compass.nsew.a3",
+                  "prompt": "On most maps, north is at the…",
+                  "kind": "choice",
+                  "options": [
+                    "top",
+                    "bottom",
+                    "left"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s6.compass.nsew.a4",
+                  "prompt": "A compass needle points north.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "How could you find directions without a compass?",
+                "Why do maps usually put north at the top?"
+              ],
+              "speaking": [
+                "Stand outside and point to north, south, east and west, explaining how you know."
+              ],
+              "project": {
+                "kind": "experiment",
+                "title": "Make a Compass",
+                "materials": [
+                  "a needle",
+                  "a magnet",
+                  "a cork slice or leaf",
+                  "a bowl of water"
+                ],
+                "steps": [
+                  "Stroke a needle with a magnet 30 times in one direction (adult help)",
+                  "Float it on a cork in water",
+                  "Watch it turn to point north–south",
+                  "Check with the sunrise or a real compass"
+                ],
+                "safety": "An adult must handle the sharp needle and magnetise it. Keep the needle pointed away from people, do not touch the point, and store it safely after the activity."
+              },
+              "assessment": [
+                {
+                  "id": "geography.s6.compass.nsew.q1",
+                  "prompt": "The Sun sets in the…",
+                  "kind": "choice",
+                  "options": [
+                    "east",
+                    "west",
+                    "south"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "geography.s6.compass.nsew.q2",
+                  "prompt": "Opposite of north:",
+                  "kind": "choice",
+                  "options": [
+                    "south",
+                    "east",
+                    "west"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s6.compass.nsew.q3",
+                  "prompt": "A compass rose shows directions on a map.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Names and uses cardinal directions",
+                "Relates directions to the Sun",
+                "Reads a compass rose"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "geography.s6.india-map",
+          "title": "India on the Map",
+          "summary": "States, capitals and neighbours.",
+          "topics": [
+            {
+              "title": "States and union territories",
+              "subtopics": [
+                "States and union territories"
+              ]
+            },
+            {
+              "title": "Capital",
+              "subtopics": [
+                "New Delhi"
+              ]
+            },
+            {
+              "title": "Neighbouring countries",
+              "subtopics": [
+                "Neighbouring countries"
+              ]
+            },
+            {
+              "title": "Using an atlas",
+              "subtopics": [
+                "Using an atlas"
+              ]
+            }
+          ],
+          "objectives": [
+            "Locate several Indian states and their capitals",
+            "Name India's neighbouring countries"
+          ],
+          "masteryCriteria": [
+            "Locates states and capitals",
+            "Names neighbouring countries",
+            "Uses an atlas"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "geography.s6.india-map.states-capitals",
+              "title": "States and Neighbours",
+              "skillId": "sk.geography.s6.india-map.states-capitals",
+              "minutes": 15,
+              "objectives": [
+                "Locate several Indian states and their capitals",
+                "Name India's neighbouring countries"
+              ],
+              "prerequisites": [
+                "Uses compass directions"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "India is divided into 28 states and 8 union territories. Each state has a capital: Maharashtra — Mumbai, Tamil Nadu — Chennai, West Bengal — Kolkata, Karnataka — Bengaluru. New Delhi is India's capital.",
+                "India's neighbours include Pakistan to the west, China and Nepal and Bhutan to the north, Bangladesh and Myanmar to the east, and Sri Lanka and the Maldives across the sea to the south.",
+                "An atlas is a book of maps. Using its index and grid helps us find places."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "As of 2019 reorganisation, India has 28 states and 8 union territories; administrative divisions can change by law."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "state",
+                  "meaning": "a part of a country with its own government"
+                },
+                {
+                  "term": "capital",
+                  "meaning": "the city where a government is based"
+                },
+                {
+                  "term": "neighbour country",
+                  "meaning": "a country that shares a border"
+                },
+                {
+                  "term": "atlas",
+                  "meaning": "a book of maps"
+                }
+              ],
+              "examples": [
+                "Ivaan might live in Maharashtra, whose capital is Mumbai.",
+                "Sri Lanka is an island nation south of India."
+              ],
+              "story": {
+                "title": "Zuri's Postcard Collection",
+                "text": "Zuri's pen-friends sent postcards from across India: a lighthouse from Chennai, a tram from Kolkata, the Gateway of India from Mumbai, and Dal Lake from Srinagar. She stuck each one on a big map of India and drew a line to her home. \"My map is full of friends!\" she said."
+              },
+              "activities": [
+                {
+                  "id": "geography.s6.india-map.states-capitals.a1",
+                  "prompt": "Match the state to its capital",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Maharashtra",
+                      "Mumbai"
+                    ],
+                    [
+                      "Tamil Nadu",
+                      "Chennai"
+                    ],
+                    [
+                      "West Bengal",
+                      "Kolkata"
+                    ],
+                    [
+                      "Karnataka",
+                      "Bengaluru"
+                    ]
+                  ]
+                },
+                {
+                  "id": "geography.s6.india-map.states-capitals.a2",
+                  "prompt": "India's capital is…",
+                  "kind": "choice",
+                  "options": [
+                    "New Delhi",
+                    "Mumbai",
+                    "Kolkata"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s6.india-map.states-capitals.a3",
+                  "prompt": "Which country is an island to the south of India?",
+                  "kind": "choice",
+                  "options": [
+                    "Sri Lanka",
+                    "Nepal",
+                    "Bhutan"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s6.india-map.states-capitals.a4",
+                  "prompt": "How many states does India have?",
+                  "why": "India has 28 states and 8 union territories.",
+                  "kind": "choice",
+                  "options": [
+                    "8",
+                    "28",
+                    "100"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Why do you think countries are divided into states?",
+                "What can you learn about a state from a map?"
+              ],
+              "speaking": [
+                "Point to your state on a map of India and name its capital and two neighbouring states."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "India Puzzle Map",
+                "materials": [
+                  "a printed outline map of India with states",
+                  "card",
+                  "scissors",
+                  "glue"
+                ],
+                "steps": [
+                  "Stick the map on card",
+                  "Colour and label states",
+                  "Cut along state borders to make a puzzle",
+                  "Put it together, naming states and capitals"
+                ],
+                "safety": "Use child-safe scissors with adult supervision. Adults should handle any sharp cutting tools and keep small cut-out pieces away from younger children."
+              },
+              "assessment": [
+                {
+                  "id": "geography.s6.india-map.states-capitals.q1",
+                  "prompt": "A book of maps is an…",
+                  "kind": "choice",
+                  "options": [
+                    "atlas",
+                    "album",
+                    "almanac only"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s6.india-map.states-capitals.q2",
+                  "prompt": "Nepal is to the ___ of India.",
+                  "kind": "choice",
+                  "options": [
+                    "north",
+                    "south",
+                    "west"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s6.india-map.states-capitals.q3",
+                  "prompt": "Each state has a capital.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Locates states and capitals",
+                "Names neighbouring countries",
+                "Uses an atlas"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s7",
+      "overview": "Continents, oceans, physical features and the world map.",
+      "goals": [
+        "Name and locate continents and oceans",
+        "Describe major world physical features",
+        "Use map scale to measure distances"
+      ],
+      "units": [
+        {
+          "id": "geography.s7.continents",
+          "title": "Continents and Oceans",
+          "summary": "The world's big land masses and waters.",
+          "topics": [
+            {
+              "title": "Seven continents",
+              "subtopics": [
+                "Seven continents"
+              ]
+            },
+            {
+              "title": "Five oceans",
+              "subtopics": [
+                "Five oceans"
+              ]
+            },
+            {
+              "title": "Largest, smallest",
+              "subtopics": [
+                "Largest, smallest"
+              ]
+            },
+            {
+              "title": "Hemispheres",
+              "subtopics": [
+                "Hemispheres"
+              ]
+            }
+          ],
+          "objectives": [
+            "Name and locate the seven continents and five oceans",
+            "Describe the hemispheres"
+          ],
+          "masteryCriteria": [
+            "Names and locates continents and oceans",
+            "Explains hemispheres",
+            "Describes features of each continent"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "geography.s7.continents.seven-five",
+              "title": "Seven Continents, Five Oceans",
+              "skillId": "sk.geography.s7.continents.seven-five",
+              "minutes": 20,
+              "objectives": [
+                "Name and locate the seven continents and five oceans",
+                "Describe the hemispheres"
+              ],
+              "prerequisites": [
+                "Knows land and water on a globe"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Earth's land is divided into seven continents: Asia (the largest, where India is), Africa, North America, South America, Antarctica, Europe and Australia (Oceania).",
+                "The five oceans are the Pacific (the largest), Atlantic, Indian, Southern and Arctic.",
+                "The equator divides Earth into the Northern and Southern Hemispheres. India is in the Northern Hemisphere. Australia is in the Southern Hemisphere, so its seasons are opposite to ours."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "continent",
+                  "meaning": "one of the seven very large land masses"
+                },
+                {
+                  "term": "ocean",
+                  "meaning": "one of the five large bodies of salt water"
+                },
+                {
+                  "term": "equator",
+                  "meaning": "an imaginary line around the middle of Earth"
+                },
+                {
+                  "term": "hemisphere",
+                  "meaning": "half of the Earth"
+                }
+              ],
+              "examples": [
+                "Antarctica is covered in ice and has no permanent residents.",
+                "The Indian Ocean is named after India."
+              ],
+              "story": {
+                "title": "Around the World in a Paper Plane",
+                "text": "Bolt designed a pretend round-the-world trip: from Asia (India) across the Indian Ocean to Africa, over the Atlantic to South America, up to North America, across the Pacific — waving at Australia — then over Europe and home. \"And I'll send a postcard from Antarctica,\" Bolt beeped, \"to the penguins.\""
+              },
+              "activities": [
+                {
+                  "id": "geography.s7.continents.seven-five.a1",
+                  "prompt": "How many continents are there?",
+                  "kind": "count",
+                  "answer": 7
+                },
+                {
+                  "id": "geography.s7.continents.seven-five.a2",
+                  "prompt": "The largest ocean is the…",
+                  "kind": "choice",
+                  "options": [
+                    "Pacific",
+                    "Atlantic",
+                    "Arctic"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s7.continents.seven-five.a3",
+                  "prompt": "India is in…",
+                  "kind": "choice",
+                  "options": [
+                    "Asia",
+                    "Africa",
+                    "Europe"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s7.continents.seven-five.a4",
+                  "prompt": "Australia's seasons are opposite to India's.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Why is Antarctica so cold and so empty of people?",
+                "Why might the Indian Ocean have been named after India?"
+              ],
+              "speaking": [
+                "Point to all seven continents on a world map and name them."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Continent Collage",
+                "materials": [
+                  "a world map outline",
+                  "magazines or drawings",
+                  "glue"
+                ],
+                "steps": [
+                  "Colour each continent differently",
+                  "Add pictures of an animal, landmark or food from each",
+                  "Label the oceans",
+                  "Present your map"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "geography.s7.continents.seven-five.q1",
+                  "prompt": "The largest continent is…",
+                  "kind": "choice",
+                  "options": [
+                    "Asia",
+                    "Australia",
+                    "Europe"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s7.continents.seven-five.q2",
+                  "prompt": "How many oceans are there?",
+                  "kind": "count",
+                  "answer": 5
+                },
+                {
+                  "id": "geography.s7.continents.seven-five.q3",
+                  "prompt": "The equator divides Earth into…",
+                  "kind": "choice",
+                  "options": [
+                    "hemispheres",
+                    "states",
+                    "continents"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Names and locates continents and oceans",
+                "Explains hemispheres",
+                "Describes features of each continent"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "geography.s7.scale",
+          "title": "Map Scale and Distance",
+          "summary": "How maps shrink the real world.",
+          "topics": [
+            {
+              "title": "Scale bars",
+              "subtopics": [
+                "Scale bars"
+              ]
+            },
+            {
+              "title": "Measuring distances",
+              "subtopics": [
+                "Measuring distances"
+              ]
+            },
+            {
+              "title": "Large and small scale maps",
+              "subtopics": [
+                "Large and small scale maps"
+              ]
+            }
+          ],
+          "objectives": [
+            "Use a scale bar to calculate real distances",
+            "Compare large-scale and small-scale maps"
+          ],
+          "masteryCriteria": [
+            "Uses scale to calculate distances",
+            "Distinguishes map scales",
+            "Creates scale drawings"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "geography.s7.scale.map-scale",
+              "title": "How Far Is It?",
+              "skillId": "sk.geography.s7.scale.map-scale",
+              "minutes": 20,
+              "objectives": [
+                "Use a scale bar to calculate real distances",
+                "Compare large-scale and small-scale maps"
+              ],
+              "prerequisites": [
+                "Measures in centimetres"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Maps are much smaller than the real world. A scale tells us how much smaller: \"1 cm = 10 km\" means every centimetre on the map stands for 10 kilometres in real life.",
+                "To find a distance: measure on the map with a ruler, then multiply by the scale. 4 cm on a 1 cm = 10 km map is 40 km.",
+                "A large-scale map shows a small area in lots of detail (a neighbourhood). A small-scale map shows a large area with less detail (the whole world)."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "scale",
+                  "meaning": "how map distance relates to real distance"
+                },
+                {
+                  "term": "scale bar",
+                  "meaning": "a line on a map showing distances"
+                },
+                {
+                  "term": "large-scale map",
+                  "meaning": "shows a small area in detail"
+                },
+                {
+                  "term": "small-scale map",
+                  "meaning": "shows a large area with less detail"
+                }
+              ],
+              "examples": [
+                "A city map shows individual streets.",
+                "A world map shows only big cities."
+              ],
+              "story": {
+                "title": "The Trip Planner",
+                "text": "Zuri's family planned a road trip. On the map, the next town was 6 cm away. The scale said 1 cm = 25 km. \"That's 150 km,\" Zuri calculated. \"At 50 km an hour, about 3 hours.\" Her father was impressed. \"You're our navigator now!\""
+              },
+              "activities": [
+                {
+                  "id": "geography.s7.scale.map-scale.a1",
+                  "prompt": "Scale 1 cm = 10 km. 5 cm on the map is…",
+                  "kind": "choice",
+                  "options": [
+                    "15 km",
+                    "50 km",
+                    "5 km"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "geography.s7.scale.map-scale.a2",
+                  "prompt": "A map of your neighbourhood is…",
+                  "kind": "choice",
+                  "options": [
+                    "large-scale",
+                    "small-scale"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s7.scale.map-scale.a3",
+                  "prompt": "A scale shows how map distance relates to real distance.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s7.scale.map-scale.a4",
+                  "prompt": "Scale 1 cm = 100 km. 3.5 cm is…",
+                  "kind": "choice",
+                  "options": [
+                    "35 km",
+                    "350 km",
+                    "3,500 km"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Why does a straight-line distance on a map differ from the road distance?",
+                "Why can't one map show everything in detail?"
+              ],
+              "speaking": [
+                "Measure the distance between two cities on a map and explain your calculation."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Scale Drawing of My Room",
+                "materials": [
+                  "squared paper",
+                  "tape measure",
+                  "ruler"
+                ],
+                "steps": [
+                  "Measure your room in metres",
+                  "Choose a scale (1 cm = 50 cm)",
+                  "Draw the room and furniture to scale",
+                  "Calculate real distances from your drawing"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "geography.s7.scale.map-scale.q1",
+                  "prompt": "Scale 1 cm = 5 km, distance 8 cm:",
+                  "kind": "choice",
+                  "options": [
+                    "13 km",
+                    "40 km",
+                    "85 km"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "geography.s7.scale.map-scale.q2",
+                  "prompt": "A world map is a small-scale map.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s7.scale.map-scale.q3",
+                  "prompt": "A scale bar helps measure…",
+                  "kind": "choice",
+                  "options": [
+                    "real distances",
+                    "temperature",
+                    "time"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Uses scale to calculate distances",
+                "Distinguishes map scales",
+                "Creates scale drawings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s9",
+      "overview": "Latitude, longitude, time zones and climate zones.",
+      "goals": [
+        "Locate places using latitude and longitude",
+        "Explain time zones",
+        "Describe world climate zones"
+      ],
+      "units": [
+        {
+          "id": "geography.s9.lat-long",
+          "title": "Latitude and Longitude",
+          "summary": "A global address system.",
+          "topics": [
+            {
+              "title": "Lines of latitude and longitude",
+              "subtopics": [
+                "Lines of latitude and longitude"
+              ]
+            },
+            {
+              "title": "Equator and Prime Meridian",
+              "subtopics": [
+                "Equator and Prime Meridian"
+              ]
+            },
+            {
+              "title": "Coordinates",
+              "subtopics": [
+                "Coordinates"
+              ]
+            },
+            {
+              "title": "Tropics of Cancer and Capricorn",
+              "subtopics": [
+                "Tropics of Cancer and Capricorn"
+              ]
+            }
+          ],
+          "objectives": [
+            "Read latitude and longitude coordinates",
+            "Locate places using coordinates"
+          ],
+          "masteryCriteria": [
+            "Reads and uses coordinates",
+            "Explains latitude and longitude",
+            "Locates key lines and places"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "geography.s9.lat-long.coordinates",
+              "title": "Earth's Grid",
+              "skillId": "sk.geography.s9.lat-long.coordinates",
+              "minutes": 30,
+              "objectives": [
+                "Read latitude and longitude coordinates",
+                "Locate places using coordinates"
+              ],
+              "prerequisites": [
+                "Uses coordinates on a grid"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Latitude lines run east–west around the Earth and measure how far north or south a place is from the equator (0°), up to 90° at the poles.",
+                "Longitude lines run from pole to pole and measure how far east or west a place is from the Prime Meridian (0°) through Greenwich, London, up to 180°.",
+                "Together they give coordinates. New Delhi is at about 28.6° N, 77.2° E. The Tropic of Cancer (about 23.4° N) passes through the middle of India."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "latitude",
+                  "meaning": "distance north or south of the equator in degrees"
+                },
+                {
+                  "term": "longitude",
+                  "meaning": "distance east or west of the Prime Meridian in degrees"
+                },
+                {
+                  "term": "Prime Meridian",
+                  "meaning": "0° longitude"
+                },
+                {
+                  "term": "coordinates",
+                  "meaning": "a pair of numbers giving a location"
+                }
+              ],
+              "examples": [
+                "Mumbai: about 19° N, 73° E.",
+                "GPS on phones uses latitude and longitude."
+              ],
+              "story": {
+                "title": "The Ship's Navigator",
+                "text": "Centuries ago, sailors could find latitude by measuring the height of the Sun or Pole Star, but longitude was much harder. In the 1700s, John Harrison built accurate sea clocks; by comparing local time with home time, sailors could finally work out longitude and stop getting lost."
+              },
+              "activities": [
+                {
+                  "id": "geography.s9.lat-long.coordinates.a1",
+                  "prompt": "Latitude measures distance from the…",
+                  "kind": "choice",
+                  "options": [
+                    "equator",
+                    "Prime Meridian",
+                    "Moon"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s9.lat-long.coordinates.a2",
+                  "prompt": "The Prime Meridian is…",
+                  "kind": "choice",
+                  "options": [
+                    "0° longitude",
+                    "0° latitude",
+                    "the North Pole"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s9.lat-long.coordinates.a3",
+                  "prompt": "The Tropic of Cancer passes through India.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s9.lat-long.coordinates.a4",
+                  "prompt": "Match",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "equator",
+                      "0° latitude"
+                    ],
+                    [
+                      "North Pole",
+                      "90° N"
+                    ],
+                    [
+                      "Prime Meridian",
+                      "0° longitude"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why was longitude harder to find than latitude at sea?",
+                "How does your phone know where you are?"
+              ],
+              "speaking": [
+                "Find the coordinates of your city and explain what they mean."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Coordinate Treasure Hunt",
+                "materials": [
+                  "a world map with a grid",
+                  "a list of coordinates"
+                ],
+                "steps": [
+                  "Write coordinates for 8 famous places",
+                  "Swap with a partner to find them",
+                  "Check answers",
+                  "Find the coordinates of your own home city"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "geography.s9.lat-long.coordinates.q1",
+                  "prompt": "Longitude lines run…",
+                  "kind": "choice",
+                  "options": [
+                    "from pole to pole",
+                    "parallel to the equator",
+                    "nowhere"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s9.lat-long.coordinates.q2",
+                  "prompt": "New Delhi is in the…",
+                  "kind": "choice",
+                  "options": [
+                    "Northern and Eastern Hemispheres",
+                    "Southern Hemisphere",
+                    "Western Hemisphere"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s9.lat-long.coordinates.q3",
+                  "prompt": "Coordinates use latitude and longitude.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Reads and uses coordinates",
+                "Explains latitude and longitude",
+                "Locates key lines and places"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "geography.s9.time-climate",
+          "title": "Time Zones and Climate Zones",
+          "summary": "Why time and climate differ around the world.",
+          "topics": [
+            {
+              "title": "Time zones and IST",
+              "subtopics": [
+                "Time zones and IST"
+              ]
+            },
+            {
+              "title": "International Date Line",
+              "subtopics": [
+                "International Date Line"
+              ]
+            },
+            {
+              "title": "Climate zones",
+              "subtopics": [
+                "tropical",
+                "dry",
+                "temperate",
+                "polar",
+                "highland"
+              ]
+            }
+          ],
+          "objectives": [
+            "Explain why time zones exist",
+            "Calculate times in other zones"
+          ],
+          "masteryCriteria": [
+            "Explains time zones",
+            "Calculates time differences",
+            "Describes climate zones"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "geography.s9.time-climate.time-zones",
+              "title": "What Time Is It There?",
+              "skillId": "sk.geography.s9.time-climate.time-zones",
+              "minutes": 30,
+              "objectives": [
+                "Explain why time zones exist",
+                "Calculate times in other zones"
+              ],
+              "prerequisites": [
+                "Knows Earth rotates"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Because the Earth rotates, it's day in some places and night in others. To keep noon roughly when the Sun is highest, the world is divided into time zones, usually one hour apart (about every 15° of longitude).",
+                "India uses one time zone: Indian Standard Time (IST), which is 5 hours 30 minutes ahead of Coordinated Universal Time (UTC+5:30). When it's 12:00 noon in India, it's 6:30 am in London (UTC) in winter.",
+                "Climate zones depend on latitude and other factors: tropical near the equator, dry deserts, temperate in mid-latitudes, polar near the poles, and highland in mountains."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "IST is based on the 82.5° E meridian near Mirzapur, Uttar Pradesh. Some people propose two time zones for India because the Sun rises much earlier in the northeast than in the west."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "time zone",
+                  "meaning": "a region using the same standard time"
+                },
+                {
+                  "term": "IST",
+                  "meaning": "Indian Standard Time, UTC+5:30"
+                },
+                {
+                  "term": "UTC",
+                  "meaning": "Coordinated Universal Time"
+                },
+                {
+                  "term": "International Date Line",
+                  "meaning": "where the calendar date changes, near 180°"
+                }
+              ],
+              "examples": [
+                "A video call to a cousin in the USA must account for time differences.",
+                "The sun rises over an hour earlier in Arunachal Pradesh than in Gujarat."
+              ],
+              "story": {
+                "title": "The Midnight Birthday Call",
+                "text": "Riya wanted to wish her uncle in California a happy birthday at exactly midnight his time. In summer, California was 12 and a half hours behind India. She did the maths and set an alarm for 12:30 pm the next day in India. Her uncle laughed: \"Right on time!\""
+              },
+              "activities": [
+                {
+                  "id": "geography.s9.time-climate.time-zones.a1",
+                  "prompt": "IST is…",
+                  "kind": "choice",
+                  "options": [
+                    "UTC+5:30",
+                    "UTC+3",
+                    "UTC"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s9.time-climate.time-zones.a2",
+                  "prompt": "Time zones exist because…",
+                  "kind": "choice",
+                  "options": [
+                    "the Earth rotates and places see the Sun at different times",
+                    "countries like different times",
+                    "clocks are broken"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s9.time-climate.time-zones.a3",
+                  "prompt": "Match the climate zone",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "near the equator",
+                      "tropical"
+                    ],
+                    [
+                      "near the poles",
+                      "polar"
+                    ],
+                    [
+                      "high mountains",
+                      "highland"
+                    ]
+                  ]
+                },
+                {
+                  "id": "geography.s9.time-climate.time-zones.a4",
+                  "prompt": "India uses one standard time zone.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Should India have two time zones? What are the arguments?",
+                "What problems do time zones cause for international teams?"
+              ],
+              "speaking": [
+                "Calculate the time in three world cities when it is 9 am in India and explain your working."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "World Clock Display",
+                "materials": [
+                  "paper plates as clocks",
+                  "a world time zone map"
+                ],
+                "steps": [
+                  "Make 5 clocks for different cities",
+                  "Set them for a chosen IST time",
+                  "Mark day or night for each",
+                  "Explain the differences using a globe and torch"
+                ],
+                "safety": "Keep the torch pointed at the globe, never into anyone's eyes. Use a cool-running torch and keep the area clear."
+              },
+              "assessment": [
+                {
+                  "id": "geography.s9.time-climate.time-zones.q1",
+                  "prompt": "Time zones are roughly every…",
+                  "kind": "choice",
+                  "options": [
+                    "15° of longitude",
+                    "1° of latitude",
+                    "1,000 km of latitude"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s9.time-climate.time-zones.q2",
+                  "prompt": "Deserts are in the ___ climate zone.",
+                  "kind": "choice",
+                  "options": [
+                    "dry",
+                    "polar",
+                    "tropical rainforest"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s9.time-climate.time-zones.q3",
+                  "prompt": "When it's noon in India, it's morning in London.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Explains time zones",
+                "Calculates time differences",
+                "Describes climate zones"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s12",
+      "overview": "Human geography, urbanisation, and geospatial technology.",
+      "goals": [
+        "Analyse population distribution and migration",
+        "Evaluate urbanisation and its challenges",
+        "Use GIS and remote sensing concepts"
+      ],
+      "units": [
+        {
+          "id": "geography.s12.population",
+          "title": "Population and Migration",
+          "summary": "Where people live and why they move.",
+          "topics": [
+            {
+              "title": "Population density",
+              "subtopics": [
+                "Population density"
+              ]
+            },
+            {
+              "title": "Push and pull factors",
+              "subtopics": [
+                "Push and pull factors"
+              ]
+            },
+            {
+              "title": "Urbanisation in India",
+              "subtopics": [
+                "Urbanisation in India"
+              ]
+            },
+            {
+              "title": "Demographic transition",
+              "subtopics": [
+                "Demographic transition"
+              ]
+            }
+          ],
+          "objectives": [
+            "Explain population distribution and density",
+            "Analyse migration using push and pull factors"
+          ],
+          "masteryCriteria": [
+            "Explains population distribution",
+            "Analyses migration factors",
+            "Interprets census data"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "geography.s12.population.push-pull",
+              "title": "Push and Pull",
+              "skillId": "sk.geography.s12.population.push-pull",
+              "minutes": 40,
+              "objectives": [
+                "Explain population distribution and density",
+                "Analyse migration using push and pull factors"
+              ],
+              "prerequisites": [
+                "Uses maps and data"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Population density is the number of people per square kilometre. Some areas, like the Gangetic Plain, are very densely populated because of fertile land and water; others, like the Thar Desert or high Himalayas, are sparse.",
+                "People migrate for many reasons. Push factors make people leave (lack of jobs, drought, conflict); pull factors attract them (jobs, education, safety, family).",
+                "India is urbanising: a growing share of people live in cities. Cities offer opportunities but face challenges of housing, transport, water and pollution."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Census data show India's urban population share rising from about 17% in 1951 to about 31% in 2011."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "population density",
+                  "meaning": "people per square kilometre"
+                },
+                {
+                  "term": "migration",
+                  "meaning": "moving from one place to another to live"
+                },
+                {
+                  "term": "push factor",
+                  "meaning": "a reason to leave a place"
+                },
+                {
+                  "term": "pull factor",
+                  "meaning": "a reason to move to a place"
+                },
+                {
+                  "term": "urbanisation",
+                  "meaning": "the growth of cities"
+                }
+              ],
+              "examples": [
+                "A farmer moving to a city after crop failure (push) for construction work (pull).",
+                "Students moving to cities for universities."
+              ],
+              "story": {
+                "title": "Two Brothers",
+                "text": "Two brothers grew up in a village in Bihar. When the monsoon failed twice, one moved to Mumbai for construction work and sent money home. The other stayed and started a small dairy with a loan. Their lives showed both sides of migration — opportunity, hardship and connection between village and city."
+              },
+              "activities": [
+                {
+                  "id": "geography.s12.population.push-pull.a1",
+                  "prompt": "Push or pull?",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "drought at home",
+                      "push factor"
+                    ],
+                    [
+                      "jobs in a city",
+                      "pull factor"
+                    ],
+                    [
+                      "good universities",
+                      "pull factor, education"
+                    ]
+                  ]
+                },
+                {
+                  "id": "geography.s12.population.push-pull.a2",
+                  "prompt": "Population density means…",
+                  "kind": "choice",
+                  "options": [
+                    "people per square kilometre",
+                    "total land area",
+                    "number of cities"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s12.population.push-pull.a3",
+                  "prompt": "India's urban population share has grown over time.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s12.population.push-pull.a4",
+                  "prompt": "Why is the Gangetic Plain densely populated?",
+                  "kind": "choice",
+                  "options": [
+                    "fertile land and water",
+                    "deserts",
+                    "ice"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What are the benefits and costs of migration for families and villages?",
+                "How should cities plan for migrants?"
+              ],
+              "speaking": [
+                "Interview a family member about any migration in your family history and present it."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Family Migration Map and Data Study",
+                "materials": [
+                  "a map",
+                  "census data summaries",
+                  "interviews"
+                ],
+                "steps": [
+                  "Map where your family has lived across generations",
+                  "Identify push and pull factors",
+                  "Compare with national migration patterns",
+                  "Write a short report"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "geography.s12.population.push-pull.q1",
+                  "prompt": "Conflict forcing people to leave is a…",
+                  "kind": "choice",
+                  "options": [
+                    "push factor",
+                    "pull factor",
+                    "climate zone"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s12.population.push-pull.q2",
+                  "prompt": "Urbanisation means growth of cities.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s12.population.push-pull.q3",
+                  "prompt": "A sparsely populated region in India:",
+                  "kind": "choice",
+                  "options": [
+                    "the Thar Desert",
+                    "Kolkata",
+                    "the Gangetic Plain"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Explains population distribution",
+                "Analyses migration factors",
+                "Interprets census data"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "geography.s12.gis",
+          "title": "Geospatial Technology",
+          "summary": "Maps, satellites and data.",
+          "topics": [
+            {
+              "title": "GPS",
+              "subtopics": [
+                "GPS"
+              ]
+            },
+            {
+              "title": "Remote sensing",
+              "subtopics": [
+                "Remote sensing"
+              ]
+            },
+            {
+              "title": "GIS layers",
+              "subtopics": [
+                "GIS layers"
+              ]
+            },
+            {
+              "title": "Applications",
+              "subtopics": [
+                "disaster response",
+                "planning"
+              ]
+            }
+          ],
+          "objectives": [
+            "Explain GPS, remote sensing and GIS",
+            "Describe uses of geospatial technology"
+          ],
+          "masteryCriteria": [
+            "Explains geospatial technologies",
+            "Applies layering to analysis",
+            "Considers ethical issues"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "geography.s12.gis.gis-layers",
+              "title": "Layers of Information",
+              "skillId": "sk.geography.s12.gis.gis-layers",
+              "minutes": 40,
+              "objectives": [
+                "Explain GPS, remote sensing and GIS",
+                "Describe uses of geospatial technology"
+              ],
+              "prerequisites": [
+                "Reads coordinates and maps"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "GPS uses signals from satellites to find a receiver's location. India has its own regional system, NavIC.",
+                "Remote sensing means gathering information about Earth from a distance, usually satellites. Images can show forest cover, floods, crop health and city growth. ISRO's satellites provide such data, and platforms like Bhuvan share it.",
+                "A Geographic Information System (GIS) combines layers of data on a map — roads, rivers, population, schools — to answer questions: Where should a new hospital go? Which villages are at flood risk?"
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "NavIC (Navigation with Indian Constellation) is ISRO's regional satellite navigation system; Bhuvan is ISRO's geoportal."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "GPS",
+                  "meaning": "satellite system for finding location"
+                },
+                {
+                  "term": "remote sensing",
+                  "meaning": "collecting data about Earth from a distance"
+                },
+                {
+                  "term": "GIS",
+                  "meaning": "system combining layers of geographic data"
+                },
+                {
+                  "term": "layer",
+                  "meaning": "one set of mapped information"
+                }
+              ],
+              "examples": [
+                "Flood maps from satellite images guiding rescue teams.",
+                "Delivery apps using GPS to track riders."
+              ],
+              "story": {
+                "title": "Mapping the Flood",
+                "text": "During a severe flood, satellite images showed which areas were underwater. GIS analysts overlaid layers of population, roads and hospitals. Rescue teams knew which villages to reach first and which roads were still usable. \"Maps,\" said one officer, \"saved lives today.\""
+              },
+              "activities": [
+                {
+                  "id": "geography.s12.gis.gis-layers.a1",
+                  "prompt": "Match the technology",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "GPS",
+                      "finds location using satellites"
+                    ],
+                    [
+                      "remote sensing",
+                      "observes Earth from a distance"
+                    ],
+                    [
+                      "GIS",
+                      "combines layers of map data"
+                    ]
+                  ]
+                },
+                {
+                  "id": "geography.s12.gis.gis-layers.a2",
+                  "prompt": "India's regional navigation system is…",
+                  "kind": "choice",
+                  "options": [
+                    "NavIC",
+                    "Chandrayaan",
+                    "Aadhaar"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s12.gis.gis-layers.a3",
+                  "prompt": "GIS can help decide where to build a hospital.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s12.gis.gis-layers.a4",
+                  "prompt": "Satellite images can show…",
+                  "kind": "choice",
+                  "options": [
+                    "forest cover and floods",
+                    "people's thoughts",
+                    "tomorrow's lottery"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What privacy concerns come with location data?",
+                "How could GIS help your city solve a problem?"
+              ],
+              "speaking": [
+                "Present a GIS-style analysis of a local problem using layered maps."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Paper GIS Project",
+                "materials": [
+                  "tracing paper or transparent sheets",
+                  "a base map of your area",
+                  "pens"
+                ],
+                "steps": [
+                  "Draw a base map",
+                  "On separate transparent sheets, map layers (schools, parks, bus stops, population)",
+                  "Overlay layers to find gaps",
+                  "Propose where a new facility should go and why"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "geography.s12.gis.gis-layers.q1",
+                  "prompt": "Collecting data about Earth from satellites is…",
+                  "kind": "choice",
+                  "options": [
+                    "remote sensing",
+                    "GPS only",
+                    "surveying by foot"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "geography.s12.gis.gis-layers.q2",
+                  "prompt": "GIS uses layers of information.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "geography.s12.gis.gis-layers.q3",
+                  "prompt": "Location data raises concerns about…",
+                  "kind": "choice",
+                  "options": [
+                    "privacy",
+                    "gravity",
+                    "tides"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Explains geospatial technologies",
+                "Applies layering to analysis",
+                "Considers ethical issues"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

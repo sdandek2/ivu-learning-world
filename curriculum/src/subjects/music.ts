@@ -151,7 +151,7 @@ export default subject({
           ],
           t: ['Does your favourite song\'s melody go up or down at the start?', 'Why do you think the scale returns to Sa?'],
           k: ['Sing the sargam going up and down for a grown-up.'],
-          m: ['🧪 Water Glass Scale', 'eight glasses, water, a spoon (with an adult)', 'Fill glasses with different amounts of water | Tap each gently with a spoon | Arrange them from low to high | Play the sargam on your glasses'],
+          m: ['🧪 Water Glass Scale', 'eight glasses, water, a spoon (with an adult)', 'Fill glasses with different amounts of water | Tap each gently with a spoon | Arrange them from low to high | Play the sargam on your glasses', "An adult should set up and move the glasses on a stable surface. Tap gently with a soft spoon, keep the area clear, and stop if any glass is chipped or cracked."],
           q: [
             ch('A tune is called a…', '*melody|rest|rhythm'),
             tf('Swara means a note in Indian music.', true),

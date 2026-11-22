@@ -213,7 +213,7 @@ export default subject({
           ],
           t: ['Can a story have more than one problem? How would that change the mountain?', 'Why do you think almost every story has a problem?'],
           k: ['Tell a story out loud to someone using all five parts of the story mountain.'],
-          m: ['Illustrated Story Book', 'paper, pencils, colours, stapler', 'Draw a story mountain and plan each part in notes | Write the story with a paragraph for each part | Read it aloud and fix anything confusing | Illustrate and bind it into a book'],
+          m: ['Illustrated Story Book', 'paper, pencils, colours, stapler', 'Draw a story mountain and plan each part in notes | Write the story with a paragraph for each part | Read it aloud and fix anything confusing | Illustrate and bind it into a book', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('The highest point of the story mountain is…', 'the opening|*the problem|the ending'),
             tf('Planning before writing can make a story better.', true),

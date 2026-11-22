@@ -76,7 +76,7 @@ export default subject({
           e: [
             'A circuit is a path that electricity flows around. A simple circuit needs a battery (the power source), wires, and something to power, like a bulb or buzzer.',
             'The circuit must be a complete loop from one end of the battery, through the bulb, and back to the other end. If there is a gap, the electricity stops and the bulb goes out.',
-            'Small batteries used for experiments are safe. Never experiment with wall sockets!',
+            'A low-voltage battery pack can power this experiment when an adult sets it up. Batteries still need careful handling: keep them out of mouths and away from young children. Never experiment with wall sockets.',
           ],
           v: 'circuit = a complete path for electricity; bulb = a device that gives light; buzzer = a device that makes a sound; complete = with no gaps',
           x: ['A torch is a simple circuit.', 'A doorbell circuit with a buzzer.'],
@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['What else could you power with a circuit?', 'How is a torch like a circuit?'],
           k: ['Show a grown-up how your circuit works and what breaks it.'],
-          m: ['🧪 Light-Up Card', 'a coin battery, an LED, copper tape, card (with an adult)', 'Draw a picture with a star or a sun | Stick copper tape in a loop | Place the LED and battery so the loop is complete | Fold the corner to close the circuit and light up'],
+          m: ['🧪 Light-Up Card', 'a screw-closed low-voltage AA battery holder (adult-installed; no coin or button cells), an LED, copper tape, card', 'Draw a picture with a star or a sun | Stick copper tape in a loop | Place the LED and battery so the loop is complete | Fold the corner to close the circuit and light up', "An adult alone must install and remove the AA cells and close the screw-secured holder before the child uses the card. Do not use coin or button cells; keep all loose batteries out of children's reach. Never connect to a wall socket."],
           q: [
             ch('A complete path for electricity is a…', '*circuit|circle drawing|cable car'),
             tf('A torch contains a simple circuit.', true),
@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why do electricians wear rubber gloves?', 'Is water a conductor? Why might that matter?'],
           k: ['Explain conductors and insulators using your test results.'],
-          m: ['🧪 Conductor Tester', 'a battery, bulb or LED, wires, objects to test', 'Make a circuit with a gap | Place each object in the gap | Record if the bulb lights | Sort objects into conductors and insulators'],
+          m: ['🧪 Conductor Tester', 'a low-voltage battery pack, bulb or LED, wires, objects to test', 'Make a circuit with a gap | Place each object in the gap | Record if the bulb lights | Sort objects into conductors and insulators', "Use only a small low-voltage battery pack, never mains electricity or a wall socket. An adult should check the circuit and disconnect the battery between tests. Stop if any wire or battery becomes warm."],
           q: [
             ch('A material that blocks electricity is an…', '*insulator|conductor|engine'),
             tf('Copper is used inside wires.', true),
@@ -151,7 +151,7 @@ export default subject({
           ],
           t: ['Why would a house wired in series be annoying?', 'Where else might you use a switch?'],
           k: ['Show both circuit types and explain the difference.'],
-          m: ['🧪 Series vs Parallel Build', 'two batteries, three bulbs or LEDs, wires, a switch (paper clip and pins)', 'Build a series circuit with two bulbs and a switch | Remove one bulb and observe | Build a parallel circuit | Remove one bulb and compare'],
+          m: ['🧪 Series vs Parallel Build', 'an enclosed low-voltage battery pack, three bulbs or LEDs, wires, a switch (adult-prepared)', 'Build a series circuit with two bulbs and a switch | Remove one bulb and observe | Build a parallel circuit | Remove one bulb and compare', "An adult should assemble and supervise the low-voltage battery circuits. Never connect wires directly across a battery or use a wall socket. Disconnect the battery before changing the circuit."],
           q: [
             ch('Components in a single loop form a…', '*series circuit|parallel circuit|short circuit'),
             tf('In parallel, other bulbs stay lit if one breaks.', true),
@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Why is being able to switch it off useful?', 'How could you test the strength of your electromagnet?'],
           k: ['Demonstrate your electromagnet picking up paper clips.'],
-          m: ['🧪 Nail Electromagnet', 'an iron nail, insulated wire, a battery, paper clips (with an adult)', 'Wrap wire 20 times around the nail | Connect the ends to a battery briefly | Count paper clips picked up | Try 40 coils and compare'],
+          m: ['🧪 Nail Electromagnet', 'an iron nail, insulated wire, a low-voltage battery pack, a current-limiting resistor and momentary switch, paper clips (adult-supervised)', 'Wrap wire 20 times around the nail | An adult connects the ends through the resistor and momentary switch for only a few seconds | Count paper clips picked up | Try 40 coils and compare', "An adult must make and supervise the battery connection. Connect only briefly, disconnect between tests, and stop immediately if the wire or battery becomes warm. Never use a wall socket or leave the circuit connected."],
           q: [
             ch('To push away is to…', '*repel|attract|reflect'),
             tf('Opposite poles attract.', true),
@@ -213,7 +213,7 @@ export default subject({
           ],
           t: ['Why do longer, thinner wires have more resistance?', 'Where does the water analogy break down?'],
           k: ['Solve an Ohm\'s law problem aloud, explaining each step.'],
-          m: ['🧪 Measuring Ohm\'s Law', 'a multimeter, batteries, resistors (with an adult)', 'Build a circuit with one resistor | Measure voltage and current | Repeat with 1, 2 and 3 batteries | Graph V against I and find R from the slope'],
+          m: ['🧪 Measuring Ohm\'s Law', 'a multimeter, batteries, resistors (with an adult)', 'Build a circuit with one resistor | Measure voltage and current | Repeat with 1, 2 and 3 batteries | Graph V against I and find R from the slope', "An adult must set up and supervise a low-voltage battery circuit. Never use wall sockets or mains power; disconnect before changing components and stop if anything becomes warm."],
           q: [
             ch('Opposition to current is…', '*resistance|voltage|power'),
             tf('Current is measured with an ammeter.', true),
@@ -275,7 +275,7 @@ export default subject({
           ],
           t: ['Why do LEDs need resistors?', 'Why did transistors transform computing?'],
           k: ['Explain your circuit design, component by component.'],
-          m: ['🧪 Automatic Night Light', 'breadboard, LDR, transistor, resistors, LED, battery (with an adult)', 'Follow a circuit diagram to build the night light | Test in light and dark | Adjust a resistor to change sensitivity | Draw and annotate your circuit'],
+          m: ['🧪 Automatic Night Light', 'breadboard, LDR, transistor, resistors, LED, low-voltage battery pack (adult-installed)', 'Follow a circuit diagram to build the night light | Test in light and dark | Adjust a resistor to change sensitivity | Draw and annotate your circuit', "Use only a low-voltage battery pack and follow the circuit diagram with an adult. Keep wires away from water, disconnect power before changing components, and never use a wall socket."],
           q: [
             ch('LED stands for…', '*light-emitting diode|long electric device|low energy dynamo'),
             tf('A transistor can act as an amplifier.', true),
@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['How could your family reduce its electricity use?', 'Why is balancing the grid harder with lots of solar power?'],
           k: ['Read an electricity bill and explain its units and charges.'],
-          m: ['Home Energy Audit', 'appliance labels, a notebook, an electricity bill', 'List appliances with their power ratings | Estimate daily hours of use | Calculate monthly kWh for each | Suggest three ways to save energy'],
+          m: ['Home Energy Audit', 'appliance labels, a notebook, an electricity bill', 'List appliances with their power ratings | Estimate daily hours of use | Calculate monthly kWh for each | Suggest three ways to save energy', "Use the bill only with the household's permission. Do not photograph, upload or share account numbers, addresses or other private details; use approximate readings in the report."],
           q: [
             ch('A device that changes voltage is a…', '*transformer|transistor|turbine'),
             tf('Higher voltage means lower current for the same power.', true),

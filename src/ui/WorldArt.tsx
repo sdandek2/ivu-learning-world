@@ -2,6 +2,7 @@
  * Illustrated world scenes — hand-built SVG so every world is visually distinct,
  * crisp at any size, tiny to ship, and fully offline.
  */
+import { useId } from 'react';
 import type { World } from '../curriculum/schema.ts';
 
 type C = World['colors'];
@@ -113,10 +114,39 @@ const scenes: Record<string, (c: C) => React.ReactNode> = {
 
 export function WorldArt({ world, className, title }: { world: Pick<World, 'motif' | 'colors' | 'title'>; className?: string; title?: string }) {
   const c = world.colors;
+  const uid = useId().replace(/:/g, '');
   return (
     <svg viewBox="0 0 240 160" className={className} role="img" aria-label={title ?? `${world.title} illustration`} preserveAspectRatio="xMidYMid slice">
-      <rect width="240" height="160" fill={c.sky} />
-      {scenes[world.motif]?.(c)}
+      <defs>
+        <linearGradient id={`${uid}-sky`} x1="0" y1="0" x2="0.9" y2="1">
+          <stop offset="0%" stopColor="#fff" stopOpacity=".46" />
+          <stop offset="48%" stopColor={c.sky} />
+          <stop offset="100%" stopColor={c.ink} stopOpacity=".34" />
+        </linearGradient>
+        <radialGradient id={`${uid}-glow`} cx="50%" cy="34%" r="70%">
+          <stop offset="0%" stopColor="#fff" stopOpacity=".34" />
+          <stop offset="100%" stopColor="#fff" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id={`${uid}-shade`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#142b3b" stopOpacity="0" />
+          <stop offset="100%" stopColor="#142b3b" stopOpacity=".22" />
+        </linearGradient>
+        <pattern id={`${uid}-grain`} width="13" height="13" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="3" r=".65" fill="#fff" opacity=".32" />
+          <circle cx="10" cy="9" r=".45" fill={c.ink} opacity=".18" />
+        </pattern>
+        <filter id={`${uid}-soft-shadow`} x="-20%" y="-20%" width="140%" height="150%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="1.4" result="blur" />
+          <feOffset dy="1.5" result="offset" />
+          <feComponentTransfer in="offset"><feFuncA type="linear" slope=".2" /></feComponentTransfer>
+          <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+        </filter>
+      </defs>
+      <rect width="240" height="160" fill={`url(#${uid}-sky)`} />
+      <rect width="240" height="160" fill={`url(#${uid}-glow)`} />
+      <g filter={`url(#${uid}-soft-shadow)`}>{scenes[world.motif]?.(c)}</g>
+      <rect width="240" height="160" fill={`url(#${uid}-grain)`} opacity=".3" pointerEvents="none" />
+      <rect width="240" height="160" fill={`url(#${uid}-shade)`} pointerEvents="none" />
     </svg>
   );
 }
@@ -129,8 +159,9 @@ export function Buddy({ color = '#5867C9', accent = '#FFD166', size = 72, mood =
       <path d="M28 22 L34 6 L44 20Z M72 22 L66 6 L56 20Z" fill={color} />
       <circle cx="50" cy="52" r="38" fill={color} />
       <ellipse cx="50" cy="64" rx="24" ry="20" fill="#fff" opacity=".9" />
-      <circle cx="37" cy="44" r="9" fill="#fff" /><circle cx="63" cy="44" r="9" fill="#fff" />
+      <circle cx="37" cy="44" r="10" fill="#fff" /><circle cx="63" cy="44" r="10" fill="#fff" />
       <circle cx={mood === 'think' ? 39 : 38} cy={mood === 'think' ? 42 : 45} r="4.5" fill="#1B1B2F" /><circle cx={mood === 'think' ? 65 : 64} cy={mood === 'think' ? 42 : 45} r="4.5" fill="#1B1B2F" />
+      <circle cx="37" cy="44" r="13" fill="none" stroke="#F5D99B" strokeWidth="3.2" /><circle cx="63" cy="44" r="13" fill="none" stroke="#F5D99B" strokeWidth="3.2" /><path d="M50 43 Q50 40 50 43" stroke="#F5D99B" strokeWidth="3.2" fill="none" /><path d="M24 39 Q29 34 32 36 M68 36 Q73 34 76 39" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round"/>
       <circle cx="39.5" cy="43" r="1.5" fill="#fff" /><circle cx="65.5" cy="43" r="1.5" fill="#fff" />
       <path d="M46 54 L50 59 L54 54Z" fill={accent} />
       {mood === 'wow' ? <ellipse cx="50" cy="68" rx="5" ry="6" fill="#1B1B2F" /> : mood === 'think' ? <path d="M43 68 H57" stroke="#1B1B2F" strokeWidth="3" strokeLinecap="round" /> : <path d="M40 65 Q50 75 60 65" stroke="#1B1B2F" strokeWidth="3" fill="none" strokeLinecap="round" />}

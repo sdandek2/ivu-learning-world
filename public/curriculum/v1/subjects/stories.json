@@ -1,1 +1,2453 @@
-{"schemaVersion":1,"id":"stories","worldId":"word-woods","title":"Stories & Literature","icon":"📖","tagline":"Enter other worlds","description":"Enjoying, understanding and responding to stories, poems and plays from India and around the world. Children move from listening and retelling to analysing character, genre, theme and the craft of authors.","contentVersion":"1.0.0","sensitivity":"none","stages":[{"stage":"s4","overview":"Loving stories: listening, joining in with repeated lines, and retelling with pictures.","goals":["Listen to a story and join in with repeated parts","Name characters and say what happened","Retell a familiar story in order"],"units":[{"id":"stories.s4.story-time","title":"Story Time","summary":"Stories have characters, places, and things that happen.","topics":[{"title":"Characters","subtopics":["who is in the story"]},{"title":"Setting","subtopics":["where it happens"]},{"title":"Events","subtopics":["what happens first","next","last"]}],"objectives":["Name the characters and setting of a story","Say what happened at the beginning, middle and end"],"masteryCriteria":["Names characters and setting of a familiar story","Retells a short story with beginning, middle and end","Answers simple \"why\" questions about a story"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"stories.s4.story-time.who-where-what","title":"Who, Where, What?","skillId":"sk.stories.s4.story-time.who-where-what","minutes":8,"objectives":["Name the characters and setting of a story","Say what happened at the beginning, middle and end"],"prerequisites":["Can listen to a short story"],"prerequisiteIds":[],"explanation":["Every story has characters — the people or animals in it. It has a setting — the place where it happens, like a forest or a kitchen.","Things happen in a story, one after another. Something happens at the beginning, something exciting in the middle, and the story finishes at the end.","When we remember who, where and what happened, we can tell the story again in our own words. That is called retelling."],"context":[],"vocabulary":[{"term":"character","meaning":"a person or animal in a story"},{"term":"setting","meaning":"where a story happens"},{"term":"beginning","meaning":"the start"},{"term":"end","meaning":"the finish"}],"examples":["In \"The Thirsty Crow\", the character is a crow and the setting is a hot, dry place with a pot.","Beginning: the crow is thirsty. Middle: it drops pebbles in the pot. End: it drinks the water."],"story":{"title":"The Thirsty Crow","text":"On a hot day, a crow was very thirsty. It found a pot with a little water at the bottom, but its beak could not reach. The crow had an idea! It dropped pebbles into the pot, one by one. The water rose higher and higher, until the crow could drink. Clever crow!"},"activities":[{"id":"stories.s4.story-time.who-where-what.a1","prompt":"Who is the main character in The Thirsty Crow?","kind":"choice","options":["a crow 🐦‍⬛","a lion 🦁","a fish 🐟"],"answer":0},{"id":"stories.s4.story-time.who-where-what.a2","prompt":"Put the story in order","kind":"order","items":["The crow was thirsty","It found a pot","It dropped in pebbles","It drank the water"]},{"id":"stories.s4.story-time.who-where-what.a3","prompt":"What did the crow put in the pot?","kind":"choice","options":["leaves 🍃","pebbles 🪨","sticks 🪵"],"answer":1},{"id":"stories.s4.story-time.who-where-what.a4","prompt":"The crow gave up and flew away.","kind":"truefalse","answer":false}],"thinking":["What else could the crow have done to get the water?","Why do you think the crow did not give up?"],"speaking":["Retell The Thirsty Crow to a grown-up using a cup, water and pebbles."],"project":{"kind":"experiment","title":"Be the Clever Crow","materials":["a tall glass","a little water","small clean pebbles or marbles"],"steps":["Pour a little water into the glass","Mark where the water is","Drop pebbles in one at a time","Watch the water rise","Tell the story while you do it"]},"assessment":[{"id":"stories.s4.story-time.who-where-what.q1","prompt":"Where did the crow find water?","kind":"choice","options":["in a pot","in a river","in a cloud"],"answer":0},{"id":"stories.s4.story-time.who-where-what.q2","prompt":"Order","kind":"order","items":["Thirsty crow","Pebbles in pot","Water rises","Crow drinks"]},{"id":"stories.s4.story-time.who-where-what.q3","prompt":"The water went up when the pebbles went in.","kind":"truefalse","answer":true}],"mastery":["Names characters and setting of a familiar story","Retells a short story with beginning, middle and end","Answers simple \"why\" questions about a story"]}]},{"id":"stories.s4.rhymes-poems","title":"Rhymes and Action Poems","summary":"Poems and rhymes are fun to say, sing and act out.","topics":[{"title":"Nursery rhymes","subtopics":["rhythm and rhyme"]},{"title":"Action poems","subtopics":["moving to words"]},{"title":"Repeated lines","subtopics":["joining in"]}],"objectives":["Join in with a rhyme using actions","Hear the rhyming words in a poem"],"masteryCriteria":["Joins in with rhymes and repeated refrains","Identifies rhyming pairs","Keeps a steady beat while reciting"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"stories.s4.rhymes-poems.action-rhymes","title":"Clap, Stomp and Rhyme","skillId":"sk.stories.s4.rhymes-poems.action-rhymes","minutes":8,"objectives":["Join in with a rhyme using actions","Hear the rhyming words in a poem"],"prerequisites":["Can repeat short phrases"],"prerequisiteIds":[],"explanation":["Poems often have rhymes — words that sound the same at the end, like star and far, or bee and tree.","Poems also have a beat, like a heart: da-DUM, da-DUM. We can clap or stomp to the beat.","Many rhymes repeat lines again and again. Repeating helps us remember the poem and join in."],"context":[],"vocabulary":[{"term":"poem","meaning":"words arranged with rhythm, often rhyming"},{"term":"rhyme","meaning":"words that end with the same sound"},{"term":"beat","meaning":"the steady rhythm we can clap to"}],"examples":["\"Twinkle, twinkle, little star, how I wonder what you are\" — star and are rhyme.","\"Machli jal ki rani hai\" is a Hindi rhyme many children in India know."],"story":{"title":"The Rhyming Parade","text":"In Word Woods, the animals had a rhyming parade. \"I'm a cat in a hat!\" called the cat. \"I'm a frog on a log!\" croaked the frog. \"I'm a bee in a tree!\" buzzed the bee. Olu the owl clapped the beat, and everyone stomped along."},"activities":[{"id":"stories.s4.rhymes-poems.action-rhymes.a1","prompt":"Match the rhyming words","kind":"match","pairs":[["cat","hat"],["frog","log"],["bee","tree"],["star","car"]]},{"id":"stories.s4.rhymes-poems.action-rhymes.a2","prompt":"Which word rhymes with \"sun\"?","kind":"choice","options":["fun","moon","sky"],"answer":0},{"id":"stories.s4.rhymes-poems.action-rhymes.a3","prompt":"\"Ball\" and \"tall\" rhyme.","kind":"truefalse","answer":true},{"id":"stories.s4.rhymes-poems.action-rhymes.a4","prompt":"Which word does NOT rhyme with \"cake\"?","kind":"choice","options":["lake","bake","cup"],"answer":2}],"thinking":["Why do you think little children love rhymes?","Can you make up a silly rhyme for your name?"],"speaking":["Say a favourite rhyme to a grown-up with actions, and point out two words that rhyme."],"project":{"kind":"project","title":"Rhyme Time Shaker Show","materials":["an empty bottle","dry rice or beans","tape"],"steps":["Make a shaker by putting rice in a bottle and taping it shut","Choose a rhyme you know","Shake on each beat as you say it","Perform it for your family"]},"assessment":[{"id":"stories.s4.rhymes-poems.action-rhymes.q1","prompt":"Which rhymes with \"dog\"?","kind":"choice","options":["cat","log","pig"],"answer":1},{"id":"stories.s4.rhymes-poems.action-rhymes.q2","prompt":"\"Star\" and \"moon\" rhyme.","kind":"truefalse","answer":false},{"id":"stories.s4.rhymes-poems.action-rhymes.q3","prompt":"Rhyme pairs","kind":"match","pairs":[["bed","red"],["hen","ten"],["cap","map"]]}],"mastery":["Joins in with rhymes and repeated refrains","Identifies rhyming pairs","Keeps a steady beat while reciting"]}]}]},{"stage":"s5","overview":"Fables, fairy tales and folk tales from around the world; predicting and making connections.","goals":["Predict what will happen next using clues","Connect stories to own experiences","Recognise a moral in a fable"],"units":[{"id":"stories.s5.fables","title":"Fables and Their Lessons","summary":"Short animal stories that teach a lesson.","topics":[{"title":"Fables","subtopics":["Aesop and Panchatantra"]},{"title":"Morals","subtopics":["what the story teaches"]},{"title":"Characters","subtopics":["tricky","wise","foolish"]}],"objectives":["Retell a fable and identify its moral","Explain how a character's actions led to the ending"],"masteryCriteria":["Retells a fable in sequence","States the moral in own words","Links character actions to consequences"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"stories.s5.fables.tortoise-hare","title":"The Hare and the Tortoise","skillId":"sk.stories.s5.fables.tortoise-hare","minutes":10,"objectives":["Retell a fable and identify its moral","Explain how a character's actions led to the ending"],"prerequisites":["Can retell a simple story"],"prerequisiteIds":[],"explanation":["A fable is a short story, often with animals, that teaches a lesson. The lesson is called the moral.","Many famous fables are credited to Aesop, a storyteller from ancient Greece. India has its own great collection of fables, the Panchatantra.","In fables, what characters do leads to what happens to them. A boastful character often learns a lesson; a patient or clever character often succeeds."],"context":[],"vocabulary":[{"term":"fable","meaning":"a short story that teaches a lesson"},{"term":"moral","meaning":"the lesson of a story"},{"term":"boast","meaning":"to show off about yourself"}],"examples":["The Hare and the Tortoise: moral — slow and steady wins the race.","The Lion and the Mouse: moral — even small friends can be a big help."],"story":{"title":"The Hare and the Tortoise","text":"A speedy hare laughed at a slow tortoise. \"Let's race!\" said the tortoise. The hare raced ahead, then thought, \"I have plenty of time,\" and lay down for a nap. The tortoise kept walking, step by step, never stopping. When the hare woke up, the tortoise was crossing the finish line!"},"activities":[{"id":"stories.s5.fables.tortoise-hare.a1","prompt":"Why did the hare lose?","kind":"choice","options":["He was too slow","He took a nap","He got lost"],"answer":1},{"id":"stories.s5.fables.tortoise-hare.a2","prompt":"The moral is…","kind":"choice","options":["Slow and steady wins the race","Always run fast","Never race"],"answer":0},{"id":"stories.s5.fables.tortoise-hare.a3","prompt":"Put the fable in order","kind":"order","items":["Hare laughs at tortoise","The race begins","Hare naps","Tortoise wins"]},{"id":"stories.s5.fables.tortoise-hare.a4","prompt":"The tortoise stopped to rest.","kind":"truefalse","answer":false}],"thinking":["Was the hare a bad animal, or did he just make a mistake?","When in your life is \"slow and steady\" a good idea?"],"speaking":["Tell the fable from the tortoise's point of view to someone."],"project":{"kind":"project","title":"Fable Finger Puppets","materials":["paper","crayons","tape","scissors (with a grown-up)"],"steps":["Draw a hare and a tortoise and cut them out","Tape them into rings for your fingers","Act out the race","Say the moral at the end"]},"assessment":[{"id":"stories.s5.fables.tortoise-hare.q1","prompt":"A fable usually teaches a…","kind":"choice","options":["recipe","lesson","song"],"answer":1},{"id":"stories.s5.fables.tortoise-hare.q2","prompt":"Who won the race?","kind":"choice","options":["the hare","the tortoise","nobody"],"answer":1},{"id":"stories.s5.fables.tortoise-hare.q3","prompt":"The Panchatantra is a collection of fables from India.","kind":"truefalse","answer":true}],"mastery":["Retells a fable in sequence","States the moral in own words","Links character actions to consequences"]}]},{"id":"stories.s5.folk-fairy","title":"Folk Tales and Fairy Tales","summary":"Stories passed down through generations.","topics":[{"title":"Folk tales","subtopics":["Akbar–Birbal","Tenali Raman"]},{"title":"Fairy tales","subtopics":["magic and wishes"]},{"title":"Predicting","subtopics":["using clues to guess what happens next"]}],"objectives":["Make predictions using clues from the story","Check and change predictions as the story continues"],"masteryCriteria":["Makes predictions supported by a clue","Revises predictions with new information","Retells a folk tale with key events"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"stories.s5.folk-fairy.predict-next","title":"What Will Happen Next?","skillId":"sk.stories.s5.folk-fairy.predict-next","minutes":10,"objectives":["Make predictions using clues from the story","Check and change predictions as the story continues"],"prerequisites":["Can retell familiar stories"],"prerequisiteIds":[],"explanation":["Good readers think ahead. They make a prediction: a smart guess about what will happen next, based on clues.","Clues come from the title, pictures, what characters say, and what usually happens in stories like this one.","As we keep reading, we check: was I right? If not, we change our prediction. Being wrong is fine — it means the author surprised us!"],"context":[],"vocabulary":[{"term":"prediction","meaning":"a smart guess about what will happen"},{"term":"clue","meaning":"a hint"},{"term":"folk tale","meaning":"a traditional story passed down by telling"}],"examples":["Title: \"The Clever Minister\" — clue that someone will be clever.","A character says \"I will trick him!\" — clue that a trick is coming."],"story":{"title":"Birbal and the Crow Count","text":"Emperor Akbar asked, \"Birbal, how many crows live in this city?\" Everyone wondered how anyone could know. Birbal smiled and said, \"Nine thousand and ninety-nine, Your Majesty. If there are more, some are visiting relatives. If fewer, some have gone to visit theirs!\" Akbar laughed at the clever answer."},"activities":[{"id":"stories.s5.folk-fairy.predict-next.a1","prompt":"Akbar asks a very hard question. What do you predict Birbal will do?","kind":"choice","options":["run away","give a clever answer","cry"],"answer":1},{"id":"stories.s5.folk-fairy.predict-next.a2","prompt":"Which is a clue for a prediction?","kind":"choice","options":["what a character says","the page number","the colour of the cover only"],"answer":0},{"id":"stories.s5.folk-fairy.predict-next.a3","prompt":"Good readers change their prediction if new clues appear.","kind":"truefalse","answer":true},{"id":"stories.s5.folk-fairy.predict-next.a4","prompt":"Birbal's answer was…","kind":"choice","options":["a real count","a clever joke-answer","a mistake"],"answer":1}],"thinking":["Could anyone really count all the crows in a city? Why was Birbal's answer clever?","Is it more fun when a story surprises you?"],"speaking":["Stop a story halfway and predict the ending to a grown-up, giving one clue for your idea."],"project":{"kind":"project","title":"Prediction Story Box","materials":["a shoebox","small toys or drawings"],"steps":["A grown-up puts three objects from a story in a box","Look at them and predict what the story is about","Listen to the story","Say what you got right and what surprised you"]},"assessment":[{"id":"stories.s5.folk-fairy.predict-next.q1","prompt":"A prediction is…","kind":"choice","options":["a fact","a smart guess","the ending"],"answer":1},{"id":"stories.s5.folk-fairy.predict-next.q2","prompt":"Pictures can give clues about what will happen.","kind":"truefalse","answer":true},{"id":"stories.s5.folk-fairy.predict-next.q3","prompt":"Who was the clever minister in the story?","kind":"choice","options":["Akbar","Birbal","a crow"],"answer":1}],"mastery":["Makes predictions supported by a clue","Revises predictions with new information","Retells a folk tale with key events"]}]}]},{"stage":"s6","overview":"Characters and feelings, story settings, and comparing versions of stories.","goals":["Describe characters' feelings and how they change","Describe settings using senses","Compare two versions of a story"],"units":[{"id":"stories.s6.characters","title":"Getting to Know Characters","summary":"Characters have feelings, wants and personalities.","topics":[{"title":"Character traits","subtopics":["kind","brave","greedy"]},{"title":"Feelings and change","subtopics":["how characters grow"]},{"title":"Evidence","subtopics":["what they say and do"]}],"objectives":["Describe a character's traits using evidence","Explain how a character changes during a story"],"masteryCriteria":["Identifies traits supported by evidence","Describes character change across a story","Uses varied trait vocabulary"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"stories.s6.characters.character-traits","title":"What Is This Character Like?","skillId":"sk.stories.s6.characters.character-traits","minutes":15,"objectives":["Describe a character's traits using evidence","Explain how a character changes during a story"],"prerequisites":["Can retell stories in order"],"prerequisiteIds":[],"explanation":["A character trait is what a character is like inside: brave, greedy, kind, lazy, honest. Traits are shown through what characters say, do and think.","Feelings change during a story, and sometimes traits change too. A greedy character may learn to share by the end.","To describe a character, give evidence: \"The king was greedy because he wanted everything he touched to turn to gold.\""],"context":[],"vocabulary":[{"term":"trait","meaning":"what a character is like inside"},{"term":"evidence","meaning":"proof from the story"},{"term":"change","meaning":"when a character becomes different"}],"examples":["King Midas is greedy (he asks for everything to turn to gold), then regretful (his food and daughter turn to gold).","The lion is proud, but becomes grateful when the mouse frees him."],"story":{"title":"The Golden Touch","text":"In an old Greek story, King Midas wished that everything he touched would turn to gold. At first he was delighted — gold chairs, gold roses! But then his bread turned to gold, and he could not eat. When he hugged his daughter, she turned to gold too. Midas wept and begged for the wish to be taken away. He learned that love matters more than gold."},"activities":[{"id":"stories.s6.characters.character-traits.a1","prompt":"At the start, King Midas was…","kind":"choice","options":["greedy","lazy","shy"],"answer":0},{"id":"stories.s6.characters.character-traits.a2","prompt":"Which is evidence he changed?","kind":"choice","options":["He liked gold.","He begged for the wish to be taken away.","He was a king."],"answer":1},{"id":"stories.s6.characters.character-traits.a3","prompt":"Match the action to the trait","kind":"match","pairs":[["shares food","generous"],["tells the truth","honest"],["helps others despite fear","brave"]]},{"id":"stories.s6.characters.character-traits.a4","prompt":"Characters can change during a story.","kind":"truefalse","answer":true}],"thinking":["Why do you think authors make characters change?","Would you want the golden touch? What would you wish for instead?"],"speaking":["Describe a character from a favourite book using two traits and evidence for each."],"project":{"kind":"project","title":"Character Profile Card","materials":["card","pencils","a favourite book"],"steps":["Draw the character in the middle","Write three traits around them","Add evidence from the story for each","Draw an arrow showing how they changed"]},"assessment":[{"id":"stories.s6.characters.character-traits.q1","prompt":"A character trait is…","kind":"choice","options":["where the story happens","what a character is like","the title"],"answer":1},{"id":"stories.s6.characters.character-traits.q2","prompt":"King Midas learned that…","kind":"choice","options":["gold is best","love matters more than gold","wishes are easy"],"answer":1},{"id":"stories.s6.characters.character-traits.q3","prompt":"We find evidence for traits in what characters say and do.","kind":"truefalse","answer":true}],"mastery":["Identifies traits supported by evidence","Describes character change across a story","Uses varied trait vocabulary"]}]},{"id":"stories.s6.versions","title":"Same Story, Different Tellings","summary":"Stories change as they travel between places and people.","topics":[{"title":"Comparing versions","subtopics":["Cinderella-type stories worldwide"]},{"title":"Retelling","subtopics":["changing the point of view"]},{"title":"Settings","subtopics":["how place changes a story"]}],"objectives":["Compare two versions of a similar story","Explain how setting and culture shape a story"],"masteryCriteria":["Identifies similarities and differences across versions","Explains how setting/culture influences details","Creates an adapted version maintaining core plot"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"stories.s6.versions.compare-versions","title":"Cinderella Around the World","skillId":"sk.stories.s6.versions.compare-versions","minutes":15,"objectives":["Compare two versions of a similar story","Explain how setting and culture shape a story"],"prerequisites":["Describes characters and settings"],"prerequisiteIds":[],"explanation":["Some stories are told in many countries, each with its own twist. Stories about a kind, mistreated person who is rewarded — like Cinderella — appear in many cultures.","An early recorded version is the Chinese tale of Ye Xian, written down over a thousand years ago. Other versions come from Egypt, France, Germany and many other places.","When we compare versions, we look for what is the same (the plot pattern) and what is different (the setting, the magic helper, the ending)."],"context":[{"kind":"evidence","text":"The story of Ye Xian was recorded by the Chinese writer Duan Chengshi in the 9th century CE. Folklorists group stories like this under a shared \"tale type\" because similar plots appear in many cultures."}],"vocabulary":[{"term":"version","meaning":"one way of telling a story"},{"term":"compare","meaning":"find what is the same and different"},{"term":"culture","meaning":"the way of life of a group of people"}],"examples":["In the French version, a fairy godmother helps; in Ye Xian, a magical fish helps.","The lost shoe is a glass slipper in one version and a golden shoe in another."],"story":{"title":"Ye Xian and the Magic Fish","text":"Long ago in China, a kind girl named Ye Xian was treated unkindly by her stepmother. Her only friend was a beautiful fish. When the stepmother harmed the fish, its bones still granted Ye Xian's wishes. She went to a festival in a cloak of kingfisher feathers and golden shoes. She lost a shoe — and the king searched the land to find whose foot it fitted."},"activities":[{"id":"stories.s6.versions.compare-versions.a1","prompt":"Who helped Ye Xian?","kind":"choice","options":["a fairy godmother","a magic fish","a cat"],"answer":1},{"id":"stories.s6.versions.compare-versions.a2","prompt":"Match the story to its detail","kind":"match","pairs":[["Ye Xian","a magic fish helps"],["Cinderella (French)","a fairy godmother helps"],["both stories","a lost shoe"]]},{"id":"stories.s6.versions.compare-versions.a3","prompt":"Similar stories can come from different countries.","kind":"truefalse","answer":true},{"id":"stories.s6.versions.compare-versions.a4","prompt":"What is the SAME in both stories?","kind":"choice","options":["A lost shoe helps find the heroine","The helper is a fish","They are set in France"],"answer":0}],"thinking":["Why do you think similar stories appear in places far apart?","If you set the story in your town today, what would the \"lost shoe\" be?"],"speaking":["Tell someone the similarities and differences between two versions of a story you know."],"project":{"kind":"project","title":"Venn Diagram of Two Tales","materials":["paper","two coloured pencils"],"steps":["Draw two overlapping circles","Label one Ye Xian and one Cinderella","Write differences in the outer parts and similarities in the middle","Write your own version set in India"]},"assessment":[{"id":"stories.s6.versions.compare-versions.q1","prompt":"Ye Xian's story was written down in…","kind":"choice","options":["China","Brazil","Antarctica"],"answer":0},{"id":"stories.s6.versions.compare-versions.q2","prompt":"Comparing versions means finding…","kind":"choice","options":["only differences","similarities and differences","the author's age"],"answer":1},{"id":"stories.s6.versions.compare-versions.q3","prompt":"Every version of a story must be exactly the same.","kind":"truefalse","answer":false}],"mastery":["Identifies similarities and differences across versions","Explains how setting/culture influences details","Creates an adapted version maintaining core plot"]}]}]},{"stage":"s7","overview":"Genres, poetry forms, myths and legends, and responding to longer books.","goals":["Identify features of genres (myth, legend, adventure, mystery)","Read and write simple poetry forms","Sustain reading of chapter books"],"units":[{"id":"stories.s7.myths-legends","title":"Myths and Legends","summary":"Ancient stories that explain the world or celebrate heroes.","topics":[{"title":"Myths","subtopics":["explaining nature (Greek","Norse","Indian)"]},{"title":"Legends","subtopics":["heroes with some historical basis"]},{"title":"Traditional narratives vs history","subtopics":["Traditional narratives vs history"]}],"objectives":["Distinguish myths, legends and historical accounts","Identify features of myths and legends"],"masteryCriteria":["Distinguishes myth, legend and history with examples","Identifies typical features of myths and legends","Discusses traditional stories respectfully, separating evidence from narrative"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"stories.s7.myths-legends.myth-or-legend","title":"Myths, Legends and History","skillId":"sk.stories.s7.myths-legends.myth-or-legend","minutes":20,"objectives":["Distinguish myths, legends and historical accounts","Identify features of myths and legends"],"prerequisites":["Can compare versions of stories"],"prerequisiteIds":[],"explanation":["A myth is a traditional story, often involving gods or supernatural beings, that explains something about the world — like why the seasons change. Many cultures have myths: Greek, Norse, Egyptian, Indian and more.","A legend is a traditional story about a hero or event that may have some basis in history, but has been exaggerated or changed over many retellings — like stories of King Arthur or Robin Hood.","History is based on evidence: documents, objects and remains. We can enjoy myths and legends as stories and also ask what evidence exists. For many people, some traditional stories are also sacred, and we treat those with respect."],"context":[{"kind":"interpretation","text":"Scholars use \"myth\" as a technical term for traditional sacred or explanatory narratives; it does not mean \"false\". Many communities hold their traditional stories as sacred or true, and respectful study recognises this."}],"vocabulary":[{"term":"myth","meaning":"a traditional story explaining the world, often involving gods"},{"term":"legend","meaning":"a traditional story about a hero, possibly based on real events"},{"term":"evidence","meaning":"information that shows what really happened"}],"examples":["Greek myth: Persephone's time in the underworld explains winter.","Legend: Robin Hood, an outlaw hero whose real existence historians debate."],"story":{"title":"Why Persephone Brings Spring","text":"In a Greek myth, the goddess Demeter made crops grow. When her daughter Persephone was taken to the underworld, Demeter grieved and nothing grew. A deal was made: Persephone would spend part of each year below and part above. When she returned, Demeter rejoiced and spring arrived. Ancient Greeks told this story to explain the seasons."},"activities":[{"id":"stories.s7.myths-legends.myth-or-legend.a1","prompt":"Match the story type to its description","kind":"match","pairs":[["myth","explains nature with gods"],["legend","a hero with possible real roots"],["history","based on evidence"]]},{"id":"stories.s7.myths-legends.myth-or-legend.a2","prompt":"What does the Persephone myth explain?","kind":"choice","options":["the seasons","the tides","volcanoes"],"answer":0},{"id":"stories.s7.myths-legends.myth-or-legend.a3","prompt":"Scientists explain seasons by the tilt of the Earth as it orbits the Sun.","kind":"truefalse","answer":true},{"id":"stories.s7.myths-legends.myth-or-legend.a4","prompt":"A legend is…","kind":"choice","options":["always completely true","a story about a hero that may have some historical basis","a science report"],"answer":1}],"thinking":["Why did ancient people create myths to explain nature?","Can a story be meaningful even if it is not historical fact?"],"speaking":["Retell a myth from any culture and explain what it was trying to explain."],"project":{"kind":"project","title":"Write Your Own Myth","materials":["paper","pencils"],"steps":["Choose something in nature (why the moon changes shape, why peacocks dance in rain)","Invent characters and a problem","Write a myth that explains it","Add a short note about the real scientific explanation"]},"assessment":[{"id":"stories.s7.myths-legends.myth-or-legend.q1","prompt":"A story that explains thunder through a god's anger is a…","kind":"choice","options":["myth","science report","recount"],"answer":0},{"id":"stories.s7.myths-legends.myth-or-legend.q2","prompt":"\"Myth\" in literature study always means a lie.","kind":"truefalse","answer":false},{"id":"stories.s7.myths-legends.myth-or-legend.q3","prompt":"History relies on…","kind":"choice","options":["imagination only","evidence","rhymes"],"answer":1}],"mastery":["Distinguishes myth, legend and history with examples","Identifies typical features of myths and legends","Discusses traditional stories respectfully, separating evidence from narrative"]}]},{"id":"stories.s7.poetry-forms","title":"Poetry Forms","summary":"Poems come in many shapes and patterns.","topics":[{"title":"Haiku","subtopics":["5-7-5 syllables"]},{"title":"Acrostic and shape poems","subtopics":["Acrostic and shape poems"]},{"title":"Free verse and imagery","subtopics":["Free verse and imagery"]}],"objectives":["Identify the features of a haiku","Write a haiku using sensory imagery"],"masteryCriteria":["Identifies haiku features","Writes haiku with clear imagery","Reads poems aloud with attention to rhythm"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"stories.s7.poetry-forms.haiku","title":"Tiny Poems: Haiku","skillId":"sk.stories.s7.poetry-forms.haiku","minutes":20,"objectives":["Identify the features of a haiku","Write a haiku using sensory imagery"],"prerequisites":["Can count syllables"],"prerequisiteIds":[],"explanation":["A haiku is a short poem form from Japan. In English, haiku are often written in three lines with 5, 7 and 5 syllables.","Traditional haiku capture one moment in nature, often with a hint of the season. They use vivid images rather than telling feelings directly.","Matsuo Bashō, a famous Japanese poet of the 1600s, wrote one of the best-known haiku, about an old pond and a frog jumping in."],"context":[{"kind":"evidence","text":"Matsuo Bashō (1644–1694) is widely regarded as a master of the form; the 5-7-5 pattern in English approximates Japanese sound units (on), which are not exactly the same as English syllables."}],"vocabulary":[{"term":"haiku","meaning":"a three-line poem, often 5-7-5 syllables, about a moment in nature"},{"term":"syllable","meaning":"a beat in a word"},{"term":"imagery","meaning":"words that create pictures in the mind"}],"examples":["\"Monsoon clouds roll in (5) / peacocks spread their shining tails (7) / the dry earth drinks deep (5).\"","Acrostic: the first letters of each line spell a word."],"story":{"title":"The Frog and the Pond","text":"A poet sat by an old, quiet pond. Everything was still. Suddenly — plop! — a frog jumped in, and the sound rippled out. The poet wrote just a few words about it. More than three hundred years later, people around the world still read that tiny poem and feel the quiet moment."},"activities":[{"id":"stories.s7.poetry-forms.haiku.a1","prompt":"Put the parts of writing a haiku in order","kind":"order","items":["Observe a moment in nature","Note sights and sounds","Shape three lines of 5, 7, 5 syllables","Read it aloud and refine"]},{"id":"stories.s7.poetry-forms.haiku.a2","prompt":"Haiku traditionally come from…","kind":"choice","options":["Japan","Brazil","Egypt"],"answer":0},{"id":"stories.s7.poetry-forms.haiku.a3","prompt":"Haiku often describe a moment in nature.","kind":"truefalse","answer":true},{"id":"stories.s7.poetry-forms.haiku.a4","prompt":"Which line has 5 syllables?","kind":"choice","options":["cool rain on the leaves","the elephant walks slowly home","dancing"],"answer":0}],"thinking":["Why might a very short poem be powerful?","Is it more important to follow 5-7-5 exactly, or to capture a strong image?"],"speaking":["Read your haiku aloud slowly, then explain the moment it captures."],"project":{"kind":"project","title":"Haiku Nature Walk","materials":["notebook","pencil","a garden or window"],"steps":["Spend five quiet minutes observing nature","Note sights, sounds and smells","Write three haiku about what you noticed","Illustrate your favourite one"]},"assessment":[{"id":"stories.s7.poetry-forms.haiku.q1","prompt":"How many lines in a haiku?","kind":"choice","options":["2","3","5"],"answer":1},{"id":"stories.s7.poetry-forms.haiku.q2","prompt":"Middle line usually has ___ syllables.","kind":"choice","options":["5","7","9"],"answer":1},{"id":"stories.s7.poetry-forms.haiku.q3","prompt":"Imagery helps readers picture the moment.","kind":"truefalse","answer":true}],"mastery":["Identifies haiku features","Writes haiku with clear imagery","Reads poems aloud with attention to rhythm"]}]}]},{"stage":"s9","overview":"Novels, perspective and narrative voice, and literature from many cultures.","goals":["Analyse point of view and narrative voice","Explore themes across texts","Read literature from a range of cultures and periods"],"units":[{"id":"stories.s9.point-of-view","title":"Point of View","summary":"Who tells the story changes the story.","topics":[{"title":"First person","subtopics":["I"]},{"title":"Third person limited and omniscient","subtopics":["Third person limited and omniscient"]},{"title":"Unreliable narrators","subtopics":["Unreliable narrators"]}],"objectives":["Identify first-person and third-person narration","Explain how point of view affects what readers know and feel"],"masteryCriteria":["Identifies narrative perspective accurately","Analyses how perspective shapes meaning","Writes from varied perspectives"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"stories.s9.point-of-view.who-tells","title":"Who Is Telling the Story?","skillId":"sk.stories.s9.point-of-view.who-tells","minutes":30,"objectives":["Identify first-person and third-person narration","Explain how point of view affects what readers know and feel"],"prerequisites":["Analyses characters with evidence"],"prerequisiteIds":[],"explanation":["A first-person narrator is a character in the story using \"I\": \"I opened the door and froze.\" We see only what they see and know only what they think.","A third-person narrator uses \"he\", \"she\", \"they\". A third-person limited narrator follows one character closely; an omniscient (all-knowing) narrator can tell us what everyone thinks.","Point of view shapes our sympathy and suspense. A narrator might even be unreliable — mistaken, biased, or hiding things — so readers must think critically about what they are told."],"context":[],"vocabulary":[{"term":"narrator","meaning":"the voice telling the story"},{"term":"first person","meaning":"narration using I"},{"term":"omniscient","meaning":"knowing everything"},{"term":"unreliable narrator","meaning":"a narrator whose account cannot be fully trusted"}],"examples":["\"I knew I shouldn't open the box.\" — first person.","\"Meanwhile, far away, the king was plotting.\" — omniscient third person."],"story":{"title":"The Wolf's Side of the Story","text":"Everyone knows the tale of the three little pigs. But what if the wolf told it? \"I only went to borrow a cup of sugar,\" he says, \"and I had a terrible cold. Achoo!\" Readers laugh — because a narrator telling his own story might not be telling the whole truth."},"activities":[{"id":"stories.s9.point-of-view.who-tells.a1","prompt":"Match the sentence to its point of view","kind":"match","pairs":[["I ran home.","first person"],["She ran home.","third person"],["Everyone secretly wondered what Ravi knew.","omniscient"]]},{"id":"stories.s9.point-of-view.who-tells.a2","prompt":"An unreliable narrator…","kind":"choice","options":["always tells the truth","might be mistaken or biased","is never a character"],"answer":1},{"id":"stories.s9.point-of-view.who-tells.a3","prompt":"A first-person narrator can know exactly what everyone else thinks.","kind":"truefalse","answer":false},{"id":"stories.s9.point-of-view.who-tells.a4","prompt":"Which pronoun shows first person?","kind":"choice","options":["I","they","she"],"answer":0}],"thinking":["How would a story you know change if a different character narrated it?","Why might an author choose an unreliable narrator?"],"speaking":["Retell a well-known story from the villain's point of view to someone, then discuss how it changed."],"project":{"kind":"project","title":"Point-of-View Rewrite","materials":["a short story or fable","notebook"],"steps":["Choose a familiar story","Rewrite one key scene in first person from a minor character","Rewrite it again with an omniscient narrator","Compare what readers learn in each version"]},"assessment":[{"id":"stories.s9.point-of-view.who-tells.q1","prompt":"\"He wondered if anyone noticed.\" Point of view?","kind":"choice","options":["first person","third person","second person"],"answer":1},{"id":"stories.s9.point-of-view.who-tells.q2","prompt":"A narrator who knows all characters' thoughts is…","kind":"choice","options":["omniscient","limited","unreliable"],"answer":0},{"id":"stories.s9.point-of-view.who-tells.q3","prompt":"Point of view affects how readers feel about characters.","kind":"truefalse","answer":true}],"mastery":["Identifies narrative perspective accurately","Analyses how perspective shapes meaning","Writes from varied perspectives"]}]},{"id":"stories.s9.world-literature","title":"Literature from Many Cultures","summary":"Great writing from India and around the world.","topics":[{"title":"Indian literature","subtopics":["Tagore","R.K. Narayan","Ruskin Bond"]},{"title":"World classics","subtopics":["World classics"]},{"title":"Translation","subtopics":["what is gained and lost"]}],"objectives":["Read and respond to works by notable Indian writers","Discuss how setting and culture appear in literature"],"masteryCriteria":["Responds thoughtfully to works from Indian and world literature","Explains cultural context in literary works","Considers issues of translation"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"stories.s9.world-literature.tagore-narayan","title":"Stories from Indian Writers","skillId":"sk.stories.s9.world-literature.tagore-narayan","minutes":30,"objectives":["Read and respond to works by notable Indian writers","Discuss how setting and culture appear in literature"],"prerequisites":["Discusses themes and point of view"],"prerequisiteIds":[],"explanation":["India has a rich literary tradition in many languages. Rabindranath Tagore wrote poems, songs and stories in Bengali and became the first non-European to win the Nobel Prize in Literature, in 1913.","R. K. Narayan wrote in English about the fictional town of Malgudi, capturing everyday South Indian life with gentle humour; \"Swami and Friends\" follows a schoolboy's adventures.","Reading literature from many places lets us see the world through different eyes. Translations bring stories across languages, though some meanings, wordplay and sounds are hard to carry over."],"context":[{"kind":"evidence","text":"Tagore received the Nobel Prize in Literature in 1913, largely for \"Gitanjali\". R. K. Narayan's first novel, \"Swami and Friends\", was published in 1935."}],"vocabulary":[{"term":"literature","meaning":"written works valued for their artistry and ideas"},{"term":"translation","meaning":"rendering text from one language into another"},{"term":"setting","meaning":"time and place of a story"},{"term":"anthology","meaning":"a collection of works"}],"examples":["Tagore's \"Kabuliwala\" tells of a bond between a little girl and an Afghan fruit-seller in Kolkata.","Malgudi is a fictional town, but readers feel they could visit it."],"story":{"title":"The Kabuliwala","text":"In Tagore's story, little Mini chatters happily with Rahamat, a tall fruit-seller from Kabul who reminds him of his own daughter far away. Years pass, and when he returns, Mini is a grown bride who no longer remembers him. Her father, seeing Rahamat's sadness, understands that fathers everywhere share the same love."},"activities":[{"id":"stories.s9.world-literature.tagore-narayan.a1","prompt":"Tagore won the Nobel Prize in Literature in…","kind":"choice","options":["1813","1913","2013"],"answer":1},{"id":"stories.s9.world-literature.tagore-narayan.a2","prompt":"Malgudi is…","kind":"choice","options":["a real city","a fictional town created by R. K. Narayan","a river"],"answer":1},{"id":"stories.s9.world-literature.tagore-narayan.a3","prompt":"Translations can lose some wordplay and sound of the original.","kind":"truefalse","answer":true},{"id":"stories.s9.world-literature.tagore-narayan.a4","prompt":"The Kabuliwala reminds Mini's father that…","kind":"choice","options":["love for children is shared across cultures","fruit is expensive","travel is dangerous"],"answer":0}],"thinking":["What can stories from another place teach us that a textbook cannot?","Should we read literature in its original language if we can? Why?"],"speaking":["Give a short talk recommending a book by an Indian author, explaining its setting and why someone should read it."],"project":{"kind":"project","title":"Literary Map","materials":["a map of India (printed or drawn)","sticky notes"],"steps":["Choose five Indian writers in different languages","Find where each was from or set their work","Mark them on the map with a book title","Read one short story and write a review"]},"assessment":[{"id":"stories.s9.world-literature.tagore-narayan.q1","prompt":"R. K. Narayan wrote mainly in…","kind":"choice","options":["English","Bengali","Tamil"],"answer":0},{"id":"stories.s9.world-literature.tagore-narayan.q2","prompt":"Tagore wrote in Bengali.","kind":"truefalse","answer":true},{"id":"stories.s9.world-literature.tagore-narayan.q3","prompt":"A collection of stories by different authors is an…","kind":"choice","options":["atlas","anthology","almanac"],"answer":1}],"mastery":["Responds thoughtfully to works from Indian and world literature","Explains cultural context in literary works","Considers issues of translation"]}]}]},{"stage":"s12","overview":"Literary criticism, tragedy and drama, and comparative literary study.","goals":["Apply critical lenses to literature","Analyse drama including tragedy","Write comparative literary essays"],"units":[{"id":"stories.s12.drama-tragedy","title":"Drama and Tragedy","summary":"How plays work, from Sanskrit drama to Shakespeare.","topics":[{"title":"Elements of drama","subtopics":["dialogue","stage directions","soliloquy"]},{"title":"Tragedy","subtopics":["flaw","downfall","catharsis"]},{"title":"Sanskrit drama","subtopics":["Kalidasa"]}],"objectives":["Analyse the features of tragedy","Compare dramatic traditions"],"masteryCriteria":["Analyses tragic structure in a play","Compares dramatic traditions with accurate context","Writes informed comparative analysis"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"stories.s12.drama-tragedy.tragic-hero","title":"The Tragic Hero","skillId":"sk.stories.s12.drama-tragedy.tragic-hero","minutes":40,"objectives":["Analyse the features of tragedy","Compare dramatic traditions"],"prerequisites":["Analyses character, theme and point of view"],"prerequisiteIds":[],"explanation":["In classical tragedy, as described by Aristotle, a noble hero falls from good fortune to disaster, often through a flaw or error of judgement (hamartia). The audience feels pity and fear, followed by a release of emotion called catharsis.","Shakespeare's tragedies — Hamlet, Macbeth, King Lear — follow and adapt this pattern. Macbeth's ambition, stirred by prophecy, leads him to murder and ruin.","India has its own classical drama. Kalidasa's Sanskrit play \"Abhijnanashakuntalam\" (The Recognition of Shakuntala) is celebrated worldwide. Classical Sanskrit drama theory (in the Natyashastra) emphasises rasa — the emotional flavour experienced by the audience — and the classical tradition generally avoided tragic endings."],"context":[{"kind":"evidence","text":"The Natyashastra is traditionally attributed to Bharata Muni; scholars date its compilation broadly between about 200 BCE and 200 CE. Kalidasa is usually dated to around the 4th–5th century CE."},{"kind":"interpretation","text":"Critics debate whether \"tragic flaw\" is the best translation of Aristotle's hamartia; many prefer \"error\" or \"mistake\"."}],"vocabulary":[{"term":"tragedy","meaning":"a drama ending in the downfall of the main character"},{"term":"hamartia","meaning":"the hero's error or flaw"},{"term":"catharsis","meaning":"emotional release felt by the audience"},{"term":"rasa","meaning":"in Indian aesthetics, the emotional essence evoked in the audience"}],"examples":["Macbeth: ambition → murder → guilt → downfall.","Shakuntala: separation through a curse, then recognition and reunion."],"story":{"title":"Two Theatres, Two Feelings","text":"A student watched Macbeth and left shaken but strangely relieved. Months later she watched a performance of Shakuntala and left uplifted, filled with longing and joy. She wondered: why did one tradition want audiences to feel catharsis through ruin, and another to savour rasa through harmony?"},"activities":[{"id":"stories.s12.drama-tragedy.tragic-hero.a1","prompt":"Match the term to its meaning","kind":"match","pairs":[["hamartia","the hero's error or flaw"],["catharsis","emotional release"],["rasa","emotional essence savoured by the audience"]]},{"id":"stories.s12.drama-tragedy.tragic-hero.a2","prompt":"Macbeth's downfall is driven mainly by…","kind":"choice","options":["ambition","laziness","kindness"],"answer":0},{"id":"stories.s12.drama-tragedy.tragic-hero.a3","prompt":"Kalidasa wrote in Sanskrit.","kind":"truefalse","answer":true},{"id":"stories.s12.drama-tragedy.tragic-hero.a4","prompt":"Classical Sanskrit drama generally…","kind":"choice","options":["ended in tragedy","avoided tragic endings","had no music"],"answer":1}],"thinking":["Why might audiences enjoy watching tragedy?","What do the differences between Greek and Sanskrit drama suggest about their cultures' values?"],"speaking":["Perform a short soliloquy and explain what it reveals about the character's inner conflict."],"project":{"kind":"project","title":"Comparative Drama Essay","materials":["Macbeth and an English translation of Shakuntala (or detailed summaries)","notebook"],"steps":["Read key scenes from both plays","Note how each handles conflict, emotion and ending","Research Aristotle's and the Natyashastra's ideas","Write a 1000-word comparison"]},"assessment":[{"id":"stories.s12.drama-tragedy.tragic-hero.q1","prompt":"Aristotle's word for emotional release is…","kind":"choice","options":["rasa","catharsis","hamartia"],"answer":1},{"id":"stories.s12.drama-tragedy.tragic-hero.q2","prompt":"The Natyashastra is a work about…","kind":"choice","options":["medicine","performing arts and drama","astronomy"],"answer":1},{"id":"stories.s12.drama-tragedy.tragic-hero.q3","prompt":"A tragic hero usually begins in a position of high status.","kind":"truefalse","answer":true}],"mastery":["Analyses tragic structure in a play","Compares dramatic traditions with accurate context","Writes informed comparative analysis"]}]},{"id":"stories.s12.critical-lenses","title":"Critical Lenses","summary":"Different ways of reading the same text.","topics":[{"title":"Lenses","subtopics":["historical","feminist","postcolonial","reader-response"]},{"title":"Context of writing vs context of reading","subtopics":["Context of writing vs context of reading"]},{"title":"Constructing interpretations","subtopics":["Constructing interpretations"]}],"objectives":["Apply at least two critical lenses to a text","Evaluate competing interpretations"],"masteryCriteria":["Applies multiple critical lenses with evidence","Evaluates the strengths and limits of interpretations","Writes nuanced literary criticism"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"stories.s12.critical-lenses.lenses","title":"Reading Through Different Lenses","skillId":"sk.stories.s12.critical-lenses.lenses","minutes":40,"objectives":["Apply at least two critical lenses to a text","Evaluate competing interpretations"],"prerequisites":["Writes analytical essays with a thesis"],"prerequisiteIds":[],"explanation":["Literary critics read texts through different \"lenses\" — sets of questions that highlight different aspects. A historical lens asks how the time of writing shaped the text.","A feminist lens asks how gender roles are portrayed and challenged. A postcolonial lens examines how colonialism and power between cultures shape stories. A reader-response lens focuses on how readers create meaning.","No single lens is \"correct\". Each reveals something and misses something. Strong critics test interpretations against textual evidence and remain open to others."],"context":[{"kind":"interpretation","text":"Critical lenses are interpretive frameworks; different scholars may reach different, well-argued conclusions about the same text."}],"vocabulary":[{"term":"critical lens","meaning":"a perspective used to interpret a text"},{"term":"postcolonial","meaning":"relating to the effects of colonisation on cultures and literature"},{"term":"interpretation","meaning":"an explanation of meaning"},{"term":"context","meaning":"circumstances surrounding a text"}],"examples":["Feminist lens on a fairy tale: why does the princess wait to be rescued?","Postcolonial lens on \"Kim\" by Kipling: how is India represented by a British author?"],"story":{"title":"The Book Club Argument","text":"Four friends discussed the same novel. One talked about the era it was written in; another about how women were shown; another about how colonial power appeared; the last about how the ending made her feel. At first they argued — then realised each had noticed something the others missed."},"activities":[{"id":"stories.s12.critical-lenses.lenses.a1","prompt":"Match the lens to its question","kind":"match","pairs":[["historical","How did the time of writing shape this?"],["feminist","How are gender roles portrayed?"],["postcolonial","How are colonised peoples represented?"],["reader-response","What does this mean to me as a reader?"]]},{"id":"stories.s12.critical-lenses.lenses.a2","prompt":"There is only one correct interpretation of a great book.","kind":"truefalse","answer":false},{"id":"stories.s12.critical-lenses.lenses.a3","prompt":"A strong interpretation is supported by…","kind":"choice","options":["personal guesses","textual evidence","the book cover"],"answer":1},{"id":"stories.s12.critical-lenses.lenses.a4","prompt":"A postcolonial lens would especially examine…","kind":"choice","options":["rhyme scheme","representation of colonised cultures","page numbers"],"answer":1}],"thinking":["Can applying a modern lens to an old text be unfair to it? Or necessary?","Which lens do you find most useful, and why?"],"speaking":["Lead a short discussion of a fairy tale, asking questions from two different lenses."],"project":{"kind":"project","title":"Multi-Lens Analysis","materials":["a novel or short story studied in depth","notebook"],"steps":["Choose a text","Write one paragraph each from three lenses","Identify evidence each lens highlights","Write a conclusion evaluating which lens is most illuminating for this text"]},"assessment":[{"id":"stories.s12.critical-lenses.lenses.q1","prompt":"A lens focusing on the reader's experience is…","kind":"choice","options":["historical","reader-response","feminist"],"answer":1},{"id":"stories.s12.critical-lenses.lenses.q2","prompt":"Different lenses can reveal different meanings.","kind":"truefalse","answer":true},{"id":"stories.s12.critical-lenses.lenses.q3","prompt":"\"Context\" means…","kind":"choice","options":["circumstances surrounding a text","the first chapter","the author's name"],"answer":0}],"mastery":["Applies multiple critical lenses with evidence","Evaluates the strengths and limits of interpretations","Writes nuanced literary criticism"]}]}]}]}
+{
+  "schemaVersion": 1,
+  "id": "stories",
+  "worldId": "word-woods",
+  "title": "Stories & Literature",
+  "icon": "📖",
+  "tagline": "Enter other worlds",
+  "description": "Enjoying, understanding and responding to stories, poems and plays from India and around the world. Children move from listening and retelling to analysing character, genre, theme and the craft of authors.",
+  "contentVersion": "1.0.0",
+  "sensitivity": "none",
+  "stages": [
+    {
+      "stage": "s4",
+      "overview": "Loving stories: listening, joining in with repeated lines, and retelling with pictures.",
+      "goals": [
+        "Listen to a story and join in with repeated parts",
+        "Name characters and say what happened",
+        "Retell a familiar story in order"
+      ],
+      "units": [
+        {
+          "id": "stories.s4.story-time",
+          "title": "Story Time",
+          "summary": "Stories have characters, places, and things that happen.",
+          "topics": [
+            {
+              "title": "Characters",
+              "subtopics": [
+                "who is in the story"
+              ]
+            },
+            {
+              "title": "Setting",
+              "subtopics": [
+                "where it happens"
+              ]
+            },
+            {
+              "title": "Events",
+              "subtopics": [
+                "what happens first",
+                "next",
+                "last"
+              ]
+            }
+          ],
+          "objectives": [
+            "Name the characters and setting of a story",
+            "Say what happened at the beginning, middle and end"
+          ],
+          "masteryCriteria": [
+            "Names characters and setting of a familiar story",
+            "Retells a short story with beginning, middle and end",
+            "Answers simple \"why\" questions about a story"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "stories.s4.story-time.who-where-what",
+              "title": "Who, Where, What?",
+              "skillId": "sk.stories.s4.story-time.who-where-what",
+              "minutes": 8,
+              "objectives": [
+                "Name the characters and setting of a story",
+                "Say what happened at the beginning, middle and end"
+              ],
+              "prerequisites": [
+                "Can listen to a short story"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Every story has characters — the people or animals in it. It has a setting — the place where it happens, like a forest or a kitchen.",
+                "Things happen in a story, one after another. Something happens at the beginning, something exciting in the middle, and the story finishes at the end.",
+                "When we remember who, where and what happened, we can tell the story again in our own words. That is called retelling."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "character",
+                  "meaning": "a person or animal in a story"
+                },
+                {
+                  "term": "setting",
+                  "meaning": "where a story happens"
+                },
+                {
+                  "term": "beginning",
+                  "meaning": "the start"
+                },
+                {
+                  "term": "end",
+                  "meaning": "the finish"
+                }
+              ],
+              "examples": [
+                "In \"The Thirsty Crow\", the character is a crow and the setting is a hot, dry place with a pot.",
+                "Beginning: the crow is thirsty. Middle: it drops pebbles in the pot. End: it drinks the water."
+              ],
+              "story": {
+                "title": "The Thirsty Crow",
+                "text": "On a hot day, a crow was very thirsty. It found a pot with a little water at the bottom, but its beak could not reach. The crow had an idea! It dropped pebbles into the pot, one by one. The water rose higher and higher, until the crow could drink. Clever crow!"
+              },
+              "activities": [
+                {
+                  "id": "stories.s4.story-time.who-where-what.a1",
+                  "prompt": "Who is the main character in The Thirsty Crow?",
+                  "kind": "choice",
+                  "options": [
+                    "a crow 🐦‍⬛",
+                    "a lion 🦁",
+                    "a fish 🐟"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s4.story-time.who-where-what.a2",
+                  "prompt": "Put the story in order",
+                  "kind": "order",
+                  "items": [
+                    "The crow was thirsty",
+                    "It found a pot",
+                    "It dropped in pebbles",
+                    "It drank the water"
+                  ]
+                },
+                {
+                  "id": "stories.s4.story-time.who-where-what.a3",
+                  "prompt": "What did the crow put in the pot?",
+                  "kind": "choice",
+                  "options": [
+                    "leaves 🍃",
+                    "pebbles 🪨",
+                    "sticks 🪵"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s4.story-time.who-where-what.a4",
+                  "prompt": "The crow gave up and flew away.",
+                  "kind": "truefalse",
+                  "answer": false
+                }
+              ],
+              "thinking": [
+                "What else could the crow have done to get the water?",
+                "Why do you think the crow did not give up?"
+              ],
+              "speaking": [
+                "Retell The Thirsty Crow to a grown-up using a cup, water and pebbles."
+              ],
+              "project": {
+                "kind": "experiment",
+                "title": "Be the Clever Crow",
+                "materials": [
+                  "a tall glass",
+                  "a little water",
+                  "small clean pebbles or marbles"
+                ],
+                "steps": [
+                  "Pour a little water into the glass",
+                  "Mark where the water is",
+                  "Drop pebbles in one at a time",
+                  "Watch the water rise",
+                  "Tell the story while you do it"
+                ],
+                "safety": "Use a wide, stable plastic cup instead of a tall glass and large stones that cannot be swallowed; do not use marbles or small pebbles with young children. Supervise the activity and keep objects away from mouths."
+              },
+              "assessment": [
+                {
+                  "id": "stories.s4.story-time.who-where-what.q1",
+                  "prompt": "Where did the crow find water?",
+                  "kind": "choice",
+                  "options": [
+                    "in a pot",
+                    "in a river",
+                    "in a cloud"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s4.story-time.who-where-what.q2",
+                  "prompt": "Order",
+                  "kind": "order",
+                  "items": [
+                    "Thirsty crow",
+                    "Pebbles in pot",
+                    "Water rises",
+                    "Crow drinks"
+                  ]
+                },
+                {
+                  "id": "stories.s4.story-time.who-where-what.q3",
+                  "prompt": "The water went up when the pebbles went in.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Names characters and setting of a familiar story",
+                "Retells a short story with beginning, middle and end",
+                "Answers simple \"why\" questions about a story"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stories.s4.rhymes-poems",
+          "title": "Rhymes and Action Poems",
+          "summary": "Poems and rhymes are fun to say, sing and act out.",
+          "topics": [
+            {
+              "title": "Nursery rhymes",
+              "subtopics": [
+                "rhythm and rhyme"
+              ]
+            },
+            {
+              "title": "Action poems",
+              "subtopics": [
+                "moving to words"
+              ]
+            },
+            {
+              "title": "Repeated lines",
+              "subtopics": [
+                "joining in"
+              ]
+            }
+          ],
+          "objectives": [
+            "Join in with a rhyme using actions",
+            "Hear the rhyming words in a poem"
+          ],
+          "masteryCriteria": [
+            "Joins in with rhymes and repeated refrains",
+            "Identifies rhyming pairs",
+            "Keeps a steady beat while reciting"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "stories.s4.rhymes-poems.action-rhymes",
+              "title": "Clap, Stomp and Rhyme",
+              "skillId": "sk.stories.s4.rhymes-poems.action-rhymes",
+              "minutes": 8,
+              "objectives": [
+                "Join in with a rhyme using actions",
+                "Hear the rhyming words in a poem"
+              ],
+              "prerequisites": [
+                "Can repeat short phrases"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Poems often have rhymes — words that sound the same at the end, like star and far, or bee and tree.",
+                "Poems also have a beat, like a heart: da-DUM, da-DUM. We can clap or stomp to the beat.",
+                "Many rhymes repeat lines again and again. Repeating helps us remember the poem and join in."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "poem",
+                  "meaning": "words arranged with rhythm, often rhyming"
+                },
+                {
+                  "term": "rhyme",
+                  "meaning": "words that end with the same sound"
+                },
+                {
+                  "term": "beat",
+                  "meaning": "the steady rhythm we can clap to"
+                }
+              ],
+              "examples": [
+                "\"Twinkle, twinkle, little star, how I wonder what you are\" — star and are rhyme.",
+                "\"Machli jal ki rani hai\" is a Hindi rhyme many children in India know."
+              ],
+              "story": {
+                "title": "The Rhyming Parade",
+                "text": "In Word Woods, the animals had a rhyming parade. \"I'm a cat in a hat!\" called the cat. \"I'm a frog on a log!\" croaked the frog. \"I'm a bee in a tree!\" buzzed the bee. Olu the owl clapped the beat, and everyone stomped along."
+              },
+              "activities": [
+                {
+                  "id": "stories.s4.rhymes-poems.action-rhymes.a1",
+                  "prompt": "Match the rhyming words",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "cat",
+                      "hat"
+                    ],
+                    [
+                      "frog",
+                      "log"
+                    ],
+                    [
+                      "bee",
+                      "tree"
+                    ],
+                    [
+                      "star",
+                      "car"
+                    ]
+                  ]
+                },
+                {
+                  "id": "stories.s4.rhymes-poems.action-rhymes.a2",
+                  "prompt": "Which word rhymes with \"sun\"?",
+                  "kind": "choice",
+                  "options": [
+                    "fun",
+                    "moon",
+                    "sky"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s4.rhymes-poems.action-rhymes.a3",
+                  "prompt": "\"Ball\" and \"tall\" rhyme.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s4.rhymes-poems.action-rhymes.a4",
+                  "prompt": "Which word does NOT rhyme with \"cake\"?",
+                  "kind": "choice",
+                  "options": [
+                    "lake",
+                    "bake",
+                    "cup"
+                  ],
+                  "answer": 2
+                }
+              ],
+              "thinking": [
+                "Why do you think little children love rhymes?",
+                "Can you make up a silly rhyme for your name?"
+              ],
+              "speaking": [
+                "Say a favourite rhyme to a grown-up with actions, and point out two words that rhyme."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Rhyme Time Shaker Show",
+                "materials": [
+                  "an empty bottle",
+                  "dry rice or beans",
+                  "tape"
+                ],
+                "steps": [
+                  "Make a shaker by putting rice in a bottle and taping it shut",
+                  "Choose a rhyme you know",
+                  "Shake on each beat as you say it",
+                  "Perform it for your family"
+                ],
+                "safety": "Use a sturdy plastic bottle with a secure cap, tape it closed with an adult, and check that no small pieces can escape. Do not put rice or beans in the mouth."
+              },
+              "assessment": [
+                {
+                  "id": "stories.s4.rhymes-poems.action-rhymes.q1",
+                  "prompt": "Which rhymes with \"dog\"?",
+                  "kind": "choice",
+                  "options": [
+                    "cat",
+                    "log",
+                    "pig"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s4.rhymes-poems.action-rhymes.q2",
+                  "prompt": "\"Star\" and \"moon\" rhyme.",
+                  "kind": "truefalse",
+                  "answer": false
+                },
+                {
+                  "id": "stories.s4.rhymes-poems.action-rhymes.q3",
+                  "prompt": "Rhyme pairs",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "bed",
+                      "red"
+                    ],
+                    [
+                      "hen",
+                      "ten"
+                    ],
+                    [
+                      "cap",
+                      "map"
+                    ]
+                  ]
+                }
+              ],
+              "mastery": [
+                "Joins in with rhymes and repeated refrains",
+                "Identifies rhyming pairs",
+                "Keeps a steady beat while reciting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s5",
+      "overview": "Fables, fairy tales and folk tales from around the world; predicting and making connections.",
+      "goals": [
+        "Predict what will happen next using clues",
+        "Connect stories to own experiences",
+        "Recognise a moral in a fable"
+      ],
+      "units": [
+        {
+          "id": "stories.s5.fables",
+          "title": "Fables and Their Lessons",
+          "summary": "Short animal stories that teach a lesson.",
+          "topics": [
+            {
+              "title": "Fables",
+              "subtopics": [
+                "Aesop and Panchatantra"
+              ]
+            },
+            {
+              "title": "Morals",
+              "subtopics": [
+                "what the story teaches"
+              ]
+            },
+            {
+              "title": "Characters",
+              "subtopics": [
+                "tricky",
+                "wise",
+                "foolish"
+              ]
+            }
+          ],
+          "objectives": [
+            "Retell a fable and identify its moral",
+            "Explain how a character's actions led to the ending"
+          ],
+          "masteryCriteria": [
+            "Retells a fable in sequence",
+            "States the moral in own words",
+            "Links character actions to consequences"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "stories.s5.fables.tortoise-hare",
+              "title": "The Hare and the Tortoise",
+              "skillId": "sk.stories.s5.fables.tortoise-hare",
+              "minutes": 10,
+              "objectives": [
+                "Retell a fable and identify its moral",
+                "Explain how a character's actions led to the ending"
+              ],
+              "prerequisites": [
+                "Can retell a simple story"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A fable is a short story, often with animals, that teaches a lesson. The lesson is called the moral.",
+                "Many famous fables are credited to Aesop, a storyteller from ancient Greece. India has its own great collection of fables, the Panchatantra.",
+                "In fables, what characters do leads to what happens to them. A boastful character often learns a lesson; a patient or clever character often succeeds."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "fable",
+                  "meaning": "a short story that teaches a lesson"
+                },
+                {
+                  "term": "moral",
+                  "meaning": "the lesson of a story"
+                },
+                {
+                  "term": "boast",
+                  "meaning": "to show off about yourself"
+                }
+              ],
+              "examples": [
+                "The Hare and the Tortoise: moral — slow and steady wins the race.",
+                "The Lion and the Mouse: moral — even small friends can be a big help."
+              ],
+              "story": {
+                "title": "The Hare and the Tortoise",
+                "text": "A speedy hare laughed at a slow tortoise. \"Let's race!\" said the tortoise. The hare raced ahead, then thought, \"I have plenty of time,\" and lay down for a nap. The tortoise kept walking, step by step, never stopping. When the hare woke up, the tortoise was crossing the finish line!"
+              },
+              "activities": [
+                {
+                  "id": "stories.s5.fables.tortoise-hare.a1",
+                  "prompt": "Why did the hare lose?",
+                  "kind": "choice",
+                  "options": [
+                    "He was too slow",
+                    "He took a nap",
+                    "He got lost"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s5.fables.tortoise-hare.a2",
+                  "prompt": "The moral is…",
+                  "kind": "choice",
+                  "options": [
+                    "Slow and steady wins the race",
+                    "Always run fast",
+                    "Never race"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s5.fables.tortoise-hare.a3",
+                  "prompt": "Put the fable in order",
+                  "kind": "order",
+                  "items": [
+                    "Hare laughs at tortoise",
+                    "The race begins",
+                    "Hare naps",
+                    "Tortoise wins"
+                  ]
+                },
+                {
+                  "id": "stories.s5.fables.tortoise-hare.a4",
+                  "prompt": "The tortoise stopped to rest.",
+                  "kind": "truefalse",
+                  "answer": false
+                }
+              ],
+              "thinking": [
+                "Was the hare a bad animal, or did he just make a mistake?",
+                "When in your life is \"slow and steady\" a good idea?"
+              ],
+              "speaking": [
+                "Tell the fable from the tortoise's point of view to someone."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Fable Finger Puppets",
+                "materials": [
+                  "paper",
+                  "crayons",
+                  "tape",
+                  "scissors (with a grown-up)"
+                ],
+                "steps": [
+                  "Draw a hare and a tortoise and cut them out",
+                  "Tape them into rings for your fingers",
+                  "Act out the race",
+                  "Say the moral at the end"
+                ],
+                "safety": "Use child-safe scissors with adult supervision. Keep small paper pieces away from younger children who may put them in their mouths."
+              },
+              "assessment": [
+                {
+                  "id": "stories.s5.fables.tortoise-hare.q1",
+                  "prompt": "A fable usually teaches a…",
+                  "kind": "choice",
+                  "options": [
+                    "recipe",
+                    "lesson",
+                    "song"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s5.fables.tortoise-hare.q2",
+                  "prompt": "Who won the race?",
+                  "kind": "choice",
+                  "options": [
+                    "the hare",
+                    "the tortoise",
+                    "nobody"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s5.fables.tortoise-hare.q3",
+                  "prompt": "The Panchatantra is a collection of fables from India.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Retells a fable in sequence",
+                "States the moral in own words",
+                "Links character actions to consequences"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stories.s5.folk-fairy",
+          "title": "Folk Tales and Fairy Tales",
+          "summary": "Stories passed down through generations.",
+          "topics": [
+            {
+              "title": "Folk tales",
+              "subtopics": [
+                "Akbar–Birbal",
+                "Tenali Raman"
+              ]
+            },
+            {
+              "title": "Fairy tales",
+              "subtopics": [
+                "magic and wishes"
+              ]
+            },
+            {
+              "title": "Predicting",
+              "subtopics": [
+                "using clues to guess what happens next"
+              ]
+            }
+          ],
+          "objectives": [
+            "Make predictions using clues from the story",
+            "Check and change predictions as the story continues"
+          ],
+          "masteryCriteria": [
+            "Makes predictions supported by a clue",
+            "Revises predictions with new information",
+            "Retells a folk tale with key events"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "stories.s5.folk-fairy.predict-next",
+              "title": "What Will Happen Next?",
+              "skillId": "sk.stories.s5.folk-fairy.predict-next",
+              "minutes": 10,
+              "objectives": [
+                "Make predictions using clues from the story",
+                "Check and change predictions as the story continues"
+              ],
+              "prerequisites": [
+                "Can retell familiar stories"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Good readers think ahead. They make a prediction: a smart guess about what will happen next, based on clues.",
+                "Clues come from the title, pictures, what characters say, and what usually happens in stories like this one.",
+                "As we keep reading, we check: was I right? If not, we change our prediction. Being wrong is fine — it means the author surprised us!"
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "prediction",
+                  "meaning": "a smart guess about what will happen"
+                },
+                {
+                  "term": "clue",
+                  "meaning": "a hint"
+                },
+                {
+                  "term": "folk tale",
+                  "meaning": "a traditional story passed down by telling"
+                }
+              ],
+              "examples": [
+                "Title: \"The Clever Minister\" — clue that someone will be clever.",
+                "A character says \"I will trick him!\" — clue that a trick is coming."
+              ],
+              "story": {
+                "title": "Birbal and the Crow Count",
+                "text": "Emperor Akbar asked, \"Birbal, how many crows live in this city?\" Everyone wondered how anyone could know. Birbal smiled and said, \"Nine thousand and ninety-nine, Your Majesty. If there are more, some are visiting relatives. If fewer, some have gone to visit theirs!\" Akbar laughed at the clever answer."
+              },
+              "activities": [
+                {
+                  "id": "stories.s5.folk-fairy.predict-next.a1",
+                  "prompt": "Akbar asks a very hard question. What do you predict Birbal will do?",
+                  "kind": "choice",
+                  "options": [
+                    "run away",
+                    "give a clever answer",
+                    "cry"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s5.folk-fairy.predict-next.a2",
+                  "prompt": "Which is a clue for a prediction?",
+                  "kind": "choice",
+                  "options": [
+                    "what a character says",
+                    "the page number",
+                    "the colour of the cover only"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s5.folk-fairy.predict-next.a3",
+                  "prompt": "Good readers change their prediction if new clues appear.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s5.folk-fairy.predict-next.a4",
+                  "prompt": "Birbal's answer was…",
+                  "kind": "choice",
+                  "options": [
+                    "a real count",
+                    "a clever joke-answer",
+                    "a mistake"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Could anyone really count all the crows in a city? Why was Birbal's answer clever?",
+                "Is it more fun when a story surprises you?"
+              ],
+              "speaking": [
+                "Stop a story halfway and predict the ending to a grown-up, giving one clue for your idea."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Prediction Story Box",
+                "materials": [
+                  "a shoebox",
+                  "small toys or drawings"
+                ],
+                "steps": [
+                  "A grown-up puts three objects from a story in a box",
+                  "Look at them and predict what the story is about",
+                  "Listen to the story",
+                  "Say what you got right and what surprised you"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s5.folk-fairy.predict-next.q1",
+                  "prompt": "A prediction is…",
+                  "kind": "choice",
+                  "options": [
+                    "a fact",
+                    "a smart guess",
+                    "the ending"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s5.folk-fairy.predict-next.q2",
+                  "prompt": "Pictures can give clues about what will happen.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s5.folk-fairy.predict-next.q3",
+                  "prompt": "Who was the clever minister in the story?",
+                  "kind": "choice",
+                  "options": [
+                    "Akbar",
+                    "Birbal",
+                    "a crow"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "mastery": [
+                "Makes predictions supported by a clue",
+                "Revises predictions with new information",
+                "Retells a folk tale with key events"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s6",
+      "overview": "Characters and feelings, story settings, and comparing versions of stories.",
+      "goals": [
+        "Describe characters' feelings and how they change",
+        "Describe settings using senses",
+        "Compare two versions of a story"
+      ],
+      "units": [
+        {
+          "id": "stories.s6.characters",
+          "title": "Getting to Know Characters",
+          "summary": "Characters have feelings, wants and personalities.",
+          "topics": [
+            {
+              "title": "Character traits",
+              "subtopics": [
+                "kind",
+                "brave",
+                "greedy"
+              ]
+            },
+            {
+              "title": "Feelings and change",
+              "subtopics": [
+                "how characters grow"
+              ]
+            },
+            {
+              "title": "Evidence",
+              "subtopics": [
+                "what they say and do"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe a character's traits using evidence",
+            "Explain how a character changes during a story"
+          ],
+          "masteryCriteria": [
+            "Identifies traits supported by evidence",
+            "Describes character change across a story",
+            "Uses varied trait vocabulary"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "stories.s6.characters.character-traits",
+              "title": "What Is This Character Like?",
+              "skillId": "sk.stories.s6.characters.character-traits",
+              "minutes": 15,
+              "objectives": [
+                "Describe a character's traits using evidence",
+                "Explain how a character changes during a story"
+              ],
+              "prerequisites": [
+                "Can retell stories in order"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A character trait is what a character is like inside: brave, greedy, kind, lazy, honest. Traits are shown through what characters say, do and think.",
+                "Feelings change during a story, and sometimes traits change too. A greedy character may learn to share by the end.",
+                "To describe a character, give evidence: \"The king was greedy because he wanted everything he touched to turn to gold.\""
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "trait",
+                  "meaning": "what a character is like inside"
+                },
+                {
+                  "term": "evidence",
+                  "meaning": "proof from the story"
+                },
+                {
+                  "term": "change",
+                  "meaning": "when a character becomes different"
+                }
+              ],
+              "examples": [
+                "King Midas is greedy (he asks for everything to turn to gold), then regretful (his food and daughter turn to gold).",
+                "The lion is proud, but becomes grateful when the mouse frees him."
+              ],
+              "story": {
+                "title": "The Golden Touch",
+                "text": "In an old Greek story, King Midas wished that everything he touched would turn to gold. At first he was delighted — gold chairs, gold roses! But then his bread turned to gold, and he could not eat. When he hugged his daughter, she turned to gold too. Midas wept and begged for the wish to be taken away. He learned that love matters more than gold."
+              },
+              "activities": [
+                {
+                  "id": "stories.s6.characters.character-traits.a1",
+                  "prompt": "At the start, King Midas was…",
+                  "kind": "choice",
+                  "options": [
+                    "greedy",
+                    "lazy",
+                    "shy"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s6.characters.character-traits.a2",
+                  "prompt": "Which is evidence he changed?",
+                  "kind": "choice",
+                  "options": [
+                    "He liked gold.",
+                    "He begged for the wish to be taken away.",
+                    "He was a king."
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s6.characters.character-traits.a3",
+                  "prompt": "Match the action to the trait",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "shares food",
+                      "generous"
+                    ],
+                    [
+                      "tells the truth",
+                      "honest"
+                    ],
+                    [
+                      "helps others despite fear",
+                      "brave"
+                    ]
+                  ]
+                },
+                {
+                  "id": "stories.s6.characters.character-traits.a4",
+                  "prompt": "Characters can change during a story.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Why do you think authors make characters change?",
+                "Would you want the golden touch? What would you wish for instead?"
+              ],
+              "speaking": [
+                "Describe a character from a favourite book using two traits and evidence for each."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Character Profile Card",
+                "materials": [
+                  "card",
+                  "pencils",
+                  "a favourite book"
+                ],
+                "steps": [
+                  "Draw the character in the middle",
+                  "Write three traits around them",
+                  "Add evidence from the story for each",
+                  "Draw an arrow showing how they changed"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s6.characters.character-traits.q1",
+                  "prompt": "A character trait is…",
+                  "kind": "choice",
+                  "options": [
+                    "where the story happens",
+                    "what a character is like",
+                    "the title"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s6.characters.character-traits.q2",
+                  "prompt": "King Midas learned that…",
+                  "kind": "choice",
+                  "options": [
+                    "gold is best",
+                    "love matters more than gold",
+                    "wishes are easy"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s6.characters.character-traits.q3",
+                  "prompt": "We find evidence for traits in what characters say and do.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Identifies traits supported by evidence",
+                "Describes character change across a story",
+                "Uses varied trait vocabulary"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stories.s6.versions",
+          "title": "Same Story, Different Tellings",
+          "summary": "Stories change as they travel between places and people.",
+          "topics": [
+            {
+              "title": "Comparing versions",
+              "subtopics": [
+                "Cinderella-type stories worldwide"
+              ]
+            },
+            {
+              "title": "Retelling",
+              "subtopics": [
+                "changing the point of view"
+              ]
+            },
+            {
+              "title": "Settings",
+              "subtopics": [
+                "how place changes a story"
+              ]
+            }
+          ],
+          "objectives": [
+            "Compare two versions of a similar story",
+            "Explain how setting and culture shape a story"
+          ],
+          "masteryCriteria": [
+            "Identifies similarities and differences across versions",
+            "Explains how setting/culture influences details",
+            "Creates an adapted version maintaining core plot"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "stories.s6.versions.compare-versions",
+              "title": "Cinderella Around the World",
+              "skillId": "sk.stories.s6.versions.compare-versions",
+              "minutes": 15,
+              "objectives": [
+                "Compare two versions of a similar story",
+                "Explain how setting and culture shape a story"
+              ],
+              "prerequisites": [
+                "Describes characters and settings"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Some stories are told in many countries, each with its own twist. Stories about a kind, mistreated person who is rewarded — like Cinderella — appear in many cultures.",
+                "An early recorded version is the Chinese tale of Ye Xian, written down over a thousand years ago. Other versions come from Egypt, France, Germany and many other places.",
+                "When we compare versions, we look for what is the same (the plot pattern) and what is different (the setting, the magic helper, the ending)."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "The story of Ye Xian was recorded by the Chinese writer Duan Chengshi in the 9th century CE. Folklorists group stories like this under a shared \"tale type\" because similar plots appear in many cultures."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "version",
+                  "meaning": "one way of telling a story"
+                },
+                {
+                  "term": "compare",
+                  "meaning": "find what is the same and different"
+                },
+                {
+                  "term": "culture",
+                  "meaning": "the way of life of a group of people"
+                }
+              ],
+              "examples": [
+                "In the French version, a fairy godmother helps; in Ye Xian, a magical fish helps.",
+                "The lost shoe is a glass slipper in one version and a golden shoe in another."
+              ],
+              "story": {
+                "title": "Ye Xian and the Magic Fish",
+                "text": "Long ago in China, a kind girl named Ye Xian was treated unkindly by her stepmother. Her only friend was a beautiful fish. When the stepmother harmed the fish, its bones still granted Ye Xian's wishes. She went to a festival in a cloak of kingfisher feathers and golden shoes. She lost a shoe — and the king searched the land to find whose foot it fitted."
+              },
+              "activities": [
+                {
+                  "id": "stories.s6.versions.compare-versions.a1",
+                  "prompt": "Who helped Ye Xian?",
+                  "kind": "choice",
+                  "options": [
+                    "a fairy godmother",
+                    "a magic fish",
+                    "a cat"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s6.versions.compare-versions.a2",
+                  "prompt": "Match the story to its detail",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Ye Xian",
+                      "a magic fish helps"
+                    ],
+                    [
+                      "Cinderella (French)",
+                      "a fairy godmother helps"
+                    ],
+                    [
+                      "both stories",
+                      "a lost shoe"
+                    ]
+                  ]
+                },
+                {
+                  "id": "stories.s6.versions.compare-versions.a3",
+                  "prompt": "Similar stories can come from different countries.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s6.versions.compare-versions.a4",
+                  "prompt": "What is the SAME in both stories?",
+                  "kind": "choice",
+                  "options": [
+                    "A lost shoe helps find the heroine",
+                    "The helper is a fish",
+                    "They are set in France"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why do you think similar stories appear in places far apart?",
+                "If you set the story in your town today, what would the \"lost shoe\" be?"
+              ],
+              "speaking": [
+                "Tell someone the similarities and differences between two versions of a story you know."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Venn Diagram of Two Tales",
+                "materials": [
+                  "paper",
+                  "two coloured pencils"
+                ],
+                "steps": [
+                  "Draw two overlapping circles",
+                  "Label one Ye Xian and one Cinderella",
+                  "Write differences in the outer parts and similarities in the middle",
+                  "Write your own version set in India"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s6.versions.compare-versions.q1",
+                  "prompt": "Ye Xian's story was written down in…",
+                  "kind": "choice",
+                  "options": [
+                    "China",
+                    "Brazil",
+                    "Antarctica"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s6.versions.compare-versions.q2",
+                  "prompt": "Comparing versions means finding…",
+                  "kind": "choice",
+                  "options": [
+                    "only differences",
+                    "similarities and differences",
+                    "the author's age"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s6.versions.compare-versions.q3",
+                  "prompt": "Every version of a story must be exactly the same.",
+                  "kind": "truefalse",
+                  "answer": false
+                }
+              ],
+              "mastery": [
+                "Identifies similarities and differences across versions",
+                "Explains how setting/culture influences details",
+                "Creates an adapted version maintaining core plot"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s7",
+      "overview": "Genres, poetry forms, myths and legends, and responding to longer books.",
+      "goals": [
+        "Identify features of genres (myth, legend, adventure, mystery)",
+        "Read and write simple poetry forms",
+        "Sustain reading of chapter books"
+      ],
+      "units": [
+        {
+          "id": "stories.s7.myths-legends",
+          "title": "Myths and Legends",
+          "summary": "Ancient stories that explain the world or celebrate heroes.",
+          "topics": [
+            {
+              "title": "Myths",
+              "subtopics": [
+                "explaining nature (Greek",
+                "Norse",
+                "Indian)"
+              ]
+            },
+            {
+              "title": "Legends",
+              "subtopics": [
+                "heroes with some historical basis"
+              ]
+            },
+            {
+              "title": "Traditional narratives vs history",
+              "subtopics": [
+                "Traditional narratives vs history"
+              ]
+            }
+          ],
+          "objectives": [
+            "Distinguish myths, legends and historical accounts",
+            "Identify features of myths and legends"
+          ],
+          "masteryCriteria": [
+            "Distinguishes myth, legend and history with examples",
+            "Identifies typical features of myths and legends",
+            "Discusses traditional stories respectfully, separating evidence from narrative"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "stories.s7.myths-legends.myth-or-legend",
+              "title": "Myths, Legends and History",
+              "skillId": "sk.stories.s7.myths-legends.myth-or-legend",
+              "minutes": 20,
+              "objectives": [
+                "Distinguish myths, legends and historical accounts",
+                "Identify features of myths and legends"
+              ],
+              "prerequisites": [
+                "Can compare versions of stories"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A myth is a traditional story, often involving gods or supernatural beings, that explains something about the world — like why the seasons change. Many cultures have myths: Greek, Norse, Egyptian, Indian and more.",
+                "A legend is a traditional story about a hero or event that may have some basis in history, but has been exaggerated or changed over many retellings — like stories of King Arthur or Robin Hood.",
+                "History is based on evidence: documents, objects and remains. We can enjoy myths and legends as stories and also ask what evidence exists. For many people, some traditional stories are also sacred, and we treat those with respect."
+              ],
+              "context": [
+                {
+                  "kind": "interpretation",
+                  "text": "Scholars use \"myth\" as a technical term for traditional sacred or explanatory narratives; it does not mean \"false\". Many communities hold their traditional stories as sacred or true, and respectful study recognises this."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "myth",
+                  "meaning": "a traditional story explaining the world, often involving gods"
+                },
+                {
+                  "term": "legend",
+                  "meaning": "a traditional story about a hero, possibly based on real events"
+                },
+                {
+                  "term": "evidence",
+                  "meaning": "information that shows what really happened"
+                }
+              ],
+              "examples": [
+                "Greek myth: Persephone's time in the underworld explains winter.",
+                "Legend: Robin Hood, an outlaw hero whose real existence historians debate."
+              ],
+              "story": {
+                "title": "Why Persephone Brings Spring",
+                "text": "In a Greek myth, the goddess Demeter made crops grow. When her daughter Persephone was taken to the underworld, Demeter grieved and nothing grew. A deal was made: Persephone would spend part of each year below and part above. When she returned, Demeter rejoiced and spring arrived. Ancient Greeks told this story to explain the seasons."
+              },
+              "activities": [
+                {
+                  "id": "stories.s7.myths-legends.myth-or-legend.a1",
+                  "prompt": "Match the story type to its description",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "myth",
+                      "explains nature with gods"
+                    ],
+                    [
+                      "legend",
+                      "a hero with possible real roots"
+                    ],
+                    [
+                      "history",
+                      "based on evidence"
+                    ]
+                  ]
+                },
+                {
+                  "id": "stories.s7.myths-legends.myth-or-legend.a2",
+                  "prompt": "What does the Persephone myth explain?",
+                  "kind": "choice",
+                  "options": [
+                    "the seasons",
+                    "the tides",
+                    "volcanoes"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s7.myths-legends.myth-or-legend.a3",
+                  "prompt": "Scientists explain seasons by the tilt of the Earth as it orbits the Sun.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s7.myths-legends.myth-or-legend.a4",
+                  "prompt": "A legend is…",
+                  "kind": "choice",
+                  "options": [
+                    "always completely true",
+                    "a story about a hero that may have some historical basis",
+                    "a science report"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Why did ancient people create myths to explain nature?",
+                "Can a story be meaningful even if it is not historical fact?"
+              ],
+              "speaking": [
+                "Retell a myth from any culture and explain what it was trying to explain."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Write Your Own Myth",
+                "materials": [
+                  "paper",
+                  "pencils"
+                ],
+                "steps": [
+                  "Choose something in nature (why the moon changes shape, why peacocks dance in rain)",
+                  "Invent characters and a problem",
+                  "Write a myth that explains it",
+                  "Add a short note about the real scientific explanation"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s7.myths-legends.myth-or-legend.q1",
+                  "prompt": "A story that explains thunder through a god's anger is a…",
+                  "kind": "choice",
+                  "options": [
+                    "myth",
+                    "science report",
+                    "recount"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s7.myths-legends.myth-or-legend.q2",
+                  "prompt": "\"Myth\" in literature study always means a lie.",
+                  "kind": "truefalse",
+                  "answer": false
+                },
+                {
+                  "id": "stories.s7.myths-legends.myth-or-legend.q3",
+                  "prompt": "History relies on…",
+                  "kind": "choice",
+                  "options": [
+                    "imagination only",
+                    "evidence",
+                    "rhymes"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "mastery": [
+                "Distinguishes myth, legend and history with examples",
+                "Identifies typical features of myths and legends",
+                "Discusses traditional stories respectfully, separating evidence from narrative"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stories.s7.poetry-forms",
+          "title": "Poetry Forms",
+          "summary": "Poems come in many shapes and patterns.",
+          "topics": [
+            {
+              "title": "Haiku",
+              "subtopics": [
+                "5-7-5 syllables"
+              ]
+            },
+            {
+              "title": "Acrostic and shape poems",
+              "subtopics": [
+                "Acrostic and shape poems"
+              ]
+            },
+            {
+              "title": "Free verse and imagery",
+              "subtopics": [
+                "Free verse and imagery"
+              ]
+            }
+          ],
+          "objectives": [
+            "Identify the features of a haiku",
+            "Write a haiku using sensory imagery"
+          ],
+          "masteryCriteria": [
+            "Identifies haiku features",
+            "Writes haiku with clear imagery",
+            "Reads poems aloud with attention to rhythm"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "stories.s7.poetry-forms.haiku",
+              "title": "Tiny Poems: Haiku",
+              "skillId": "sk.stories.s7.poetry-forms.haiku",
+              "minutes": 20,
+              "objectives": [
+                "Identify the features of a haiku",
+                "Write a haiku using sensory imagery"
+              ],
+              "prerequisites": [
+                "Can count syllables"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A haiku is a short poem form from Japan. In English, haiku are often written in three lines with 5, 7 and 5 syllables.",
+                "Traditional haiku capture one moment in nature, often with a hint of the season. They use vivid images rather than telling feelings directly.",
+                "Matsuo Bashō, a famous Japanese poet of the 1600s, wrote one of the best-known haiku, about an old pond and a frog jumping in."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Matsuo Bashō (1644–1694) is widely regarded as a master of the form; the 5-7-5 pattern in English approximates Japanese sound units (on), which are not exactly the same as English syllables."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "haiku",
+                  "meaning": "a three-line poem, often 5-7-5 syllables, about a moment in nature"
+                },
+                {
+                  "term": "syllable",
+                  "meaning": "a beat in a word"
+                },
+                {
+                  "term": "imagery",
+                  "meaning": "words that create pictures in the mind"
+                }
+              ],
+              "examples": [
+                "\"Monsoon clouds roll in (5) / peacocks spread their shining tails (7) / the dry earth drinks deep (5).\"",
+                "Acrostic: the first letters of each line spell a word."
+              ],
+              "story": {
+                "title": "The Frog and the Pond",
+                "text": "A poet sat by an old, quiet pond. Everything was still. Suddenly — plop! — a frog jumped in, and the sound rippled out. The poet wrote just a few words about it. More than three hundred years later, people around the world still read that tiny poem and feel the quiet moment."
+              },
+              "activities": [
+                {
+                  "id": "stories.s7.poetry-forms.haiku.a1",
+                  "prompt": "Put the parts of writing a haiku in order",
+                  "kind": "order",
+                  "items": [
+                    "Observe a moment in nature",
+                    "Note sights and sounds",
+                    "Shape three lines of 5, 7, 5 syllables",
+                    "Read it aloud and refine"
+                  ]
+                },
+                {
+                  "id": "stories.s7.poetry-forms.haiku.a2",
+                  "prompt": "Haiku traditionally come from…",
+                  "kind": "choice",
+                  "options": [
+                    "Japan",
+                    "Brazil",
+                    "Egypt"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s7.poetry-forms.haiku.a3",
+                  "prompt": "Haiku often describe a moment in nature.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s7.poetry-forms.haiku.a4",
+                  "prompt": "Which line has 5 syllables?",
+                  "kind": "choice",
+                  "options": [
+                    "cool rain on the leaves",
+                    "the elephant walks slowly home",
+                    "dancing"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why might a very short poem be powerful?",
+                "Is it more important to follow 5-7-5 exactly, or to capture a strong image?"
+              ],
+              "speaking": [
+                "Read your haiku aloud slowly, then explain the moment it captures."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Haiku Nature Walk",
+                "materials": [
+                  "notebook",
+                  "pencil",
+                  "a garden or window"
+                ],
+                "steps": [
+                  "Spend five quiet minutes observing nature",
+                  "Note sights, sounds and smells",
+                  "Write three haiku about what you noticed",
+                  "Illustrate your favourite one"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s7.poetry-forms.haiku.q1",
+                  "prompt": "How many lines in a haiku?",
+                  "kind": "choice",
+                  "options": [
+                    "2",
+                    "3",
+                    "5"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s7.poetry-forms.haiku.q2",
+                  "prompt": "Middle line usually has ___ syllables.",
+                  "kind": "choice",
+                  "options": [
+                    "5",
+                    "7",
+                    "9"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s7.poetry-forms.haiku.q3",
+                  "prompt": "Imagery helps readers picture the moment.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Identifies haiku features",
+                "Writes haiku with clear imagery",
+                "Reads poems aloud with attention to rhythm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s9",
+      "overview": "Novels, perspective and narrative voice, and literature from many cultures.",
+      "goals": [
+        "Analyse point of view and narrative voice",
+        "Explore themes across texts",
+        "Read literature from a range of cultures and periods"
+      ],
+      "units": [
+        {
+          "id": "stories.s9.point-of-view",
+          "title": "Point of View",
+          "summary": "Who tells the story changes the story.",
+          "topics": [
+            {
+              "title": "First person",
+              "subtopics": [
+                "I"
+              ]
+            },
+            {
+              "title": "Third person limited and omniscient",
+              "subtopics": [
+                "Third person limited and omniscient"
+              ]
+            },
+            {
+              "title": "Unreliable narrators",
+              "subtopics": [
+                "Unreliable narrators"
+              ]
+            }
+          ],
+          "objectives": [
+            "Identify first-person and third-person narration",
+            "Explain how point of view affects what readers know and feel"
+          ],
+          "masteryCriteria": [
+            "Identifies narrative perspective accurately",
+            "Analyses how perspective shapes meaning",
+            "Writes from varied perspectives"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "stories.s9.point-of-view.who-tells",
+              "title": "Who Is Telling the Story?",
+              "skillId": "sk.stories.s9.point-of-view.who-tells",
+              "minutes": 30,
+              "objectives": [
+                "Identify first-person and third-person narration",
+                "Explain how point of view affects what readers know and feel"
+              ],
+              "prerequisites": [
+                "Analyses characters with evidence"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A first-person narrator is a character in the story using \"I\": \"I opened the door and froze.\" We see only what they see and know only what they think.",
+                "A third-person narrator uses \"he\", \"she\", \"they\". A third-person limited narrator follows one character closely; an omniscient (all-knowing) narrator can tell us what everyone thinks.",
+                "Point of view shapes our sympathy and suspense. A narrator might even be unreliable — mistaken, biased, or hiding things — so readers must think critically about what they are told."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "narrator",
+                  "meaning": "the voice telling the story"
+                },
+                {
+                  "term": "first person",
+                  "meaning": "narration using I"
+                },
+                {
+                  "term": "omniscient",
+                  "meaning": "knowing everything"
+                },
+                {
+                  "term": "unreliable narrator",
+                  "meaning": "a narrator whose account cannot be fully trusted"
+                }
+              ],
+              "examples": [
+                "\"I knew I shouldn't open the box.\" — first person.",
+                "\"Meanwhile, far away, the king was plotting.\" — omniscient third person."
+              ],
+              "story": {
+                "title": "The Wolf's Side of the Story",
+                "text": "Everyone knows the tale of the three little pigs. But what if the wolf told it? \"I only went to borrow a cup of sugar,\" he says, \"and I had a terrible cold. Achoo!\" Readers laugh — because a narrator telling his own story might not be telling the whole truth."
+              },
+              "activities": [
+                {
+                  "id": "stories.s9.point-of-view.who-tells.a1",
+                  "prompt": "Match the sentence to its point of view",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "I ran home.",
+                      "first person"
+                    ],
+                    [
+                      "She ran home.",
+                      "third person"
+                    ],
+                    [
+                      "Everyone secretly wondered what Ravi knew.",
+                      "omniscient"
+                    ]
+                  ]
+                },
+                {
+                  "id": "stories.s9.point-of-view.who-tells.a2",
+                  "prompt": "An unreliable narrator…",
+                  "kind": "choice",
+                  "options": [
+                    "always tells the truth",
+                    "might be mistaken or biased",
+                    "is never a character"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s9.point-of-view.who-tells.a3",
+                  "prompt": "A first-person narrator can know exactly what everyone else thinks.",
+                  "kind": "truefalse",
+                  "answer": false
+                },
+                {
+                  "id": "stories.s9.point-of-view.who-tells.a4",
+                  "prompt": "Which pronoun shows first person?",
+                  "kind": "choice",
+                  "options": [
+                    "I",
+                    "they",
+                    "she"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "How would a story you know change if a different character narrated it?",
+                "Why might an author choose an unreliable narrator?"
+              ],
+              "speaking": [
+                "Retell a well-known story from the villain's point of view to someone, then discuss how it changed."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Point-of-View Rewrite",
+                "materials": [
+                  "a short story or fable",
+                  "notebook"
+                ],
+                "steps": [
+                  "Choose a familiar story",
+                  "Rewrite one key scene in first person from a minor character",
+                  "Rewrite it again with an omniscient narrator",
+                  "Compare what readers learn in each version"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s9.point-of-view.who-tells.q1",
+                  "prompt": "\"He wondered if anyone noticed.\" Point of view?",
+                  "kind": "choice",
+                  "options": [
+                    "first person",
+                    "third person",
+                    "second person"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s9.point-of-view.who-tells.q2",
+                  "prompt": "A narrator who knows all characters' thoughts is…",
+                  "kind": "choice",
+                  "options": [
+                    "omniscient",
+                    "limited",
+                    "unreliable"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s9.point-of-view.who-tells.q3",
+                  "prompt": "Point of view affects how readers feel about characters.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Identifies narrative perspective accurately",
+                "Analyses how perspective shapes meaning",
+                "Writes from varied perspectives"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stories.s9.world-literature",
+          "title": "Literature from Many Cultures",
+          "summary": "Great writing from India and around the world.",
+          "topics": [
+            {
+              "title": "Indian literature",
+              "subtopics": [
+                "Tagore",
+                "R.K. Narayan",
+                "Ruskin Bond"
+              ]
+            },
+            {
+              "title": "World classics",
+              "subtopics": [
+                "World classics"
+              ]
+            },
+            {
+              "title": "Translation",
+              "subtopics": [
+                "what is gained and lost"
+              ]
+            }
+          ],
+          "objectives": [
+            "Read and respond to works by notable Indian writers",
+            "Discuss how setting and culture appear in literature"
+          ],
+          "masteryCriteria": [
+            "Responds thoughtfully to works from Indian and world literature",
+            "Explains cultural context in literary works",
+            "Considers issues of translation"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "stories.s9.world-literature.tagore-narayan",
+              "title": "Stories from Indian Writers",
+              "skillId": "sk.stories.s9.world-literature.tagore-narayan",
+              "minutes": 30,
+              "objectives": [
+                "Read and respond to works by notable Indian writers",
+                "Discuss how setting and culture appear in literature"
+              ],
+              "prerequisites": [
+                "Discusses themes and point of view"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "India has a rich literary tradition in many languages. Rabindranath Tagore wrote poems, songs and stories in Bengali and became the first non-European to win the Nobel Prize in Literature, in 1913.",
+                "R. K. Narayan wrote in English about the fictional town of Malgudi, capturing everyday South Indian life with gentle humour; \"Swami and Friends\" follows a schoolboy's adventures.",
+                "Reading literature from many places lets us see the world through different eyes. Translations bring stories across languages, though some meanings, wordplay and sounds are hard to carry over."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Tagore received the Nobel Prize in Literature in 1913, largely for \"Gitanjali\". R. K. Narayan's first novel, \"Swami and Friends\", was published in 1935."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "literature",
+                  "meaning": "written works valued for their artistry and ideas"
+                },
+                {
+                  "term": "translation",
+                  "meaning": "rendering text from one language into another"
+                },
+                {
+                  "term": "setting",
+                  "meaning": "time and place of a story"
+                },
+                {
+                  "term": "anthology",
+                  "meaning": "a collection of works"
+                }
+              ],
+              "examples": [
+                "Tagore's \"Kabuliwala\" tells of a bond between a little girl and an Afghan fruit-seller in Kolkata.",
+                "Malgudi is a fictional town, but readers feel they could visit it."
+              ],
+              "story": {
+                "title": "The Kabuliwala",
+                "text": "In Tagore's story, little Mini chatters happily with Rahamat, a tall fruit-seller from Kabul who reminds him of his own daughter far away. Years pass, and when he returns, Mini is a grown bride who no longer remembers him. Her father, seeing Rahamat's sadness, understands that fathers everywhere share the same love."
+              },
+              "activities": [
+                {
+                  "id": "stories.s9.world-literature.tagore-narayan.a1",
+                  "prompt": "Tagore won the Nobel Prize in Literature in…",
+                  "kind": "choice",
+                  "options": [
+                    "1813",
+                    "1913",
+                    "2013"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s9.world-literature.tagore-narayan.a2",
+                  "prompt": "Malgudi is…",
+                  "kind": "choice",
+                  "options": [
+                    "a real city",
+                    "a fictional town created by R. K. Narayan",
+                    "a river"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s9.world-literature.tagore-narayan.a3",
+                  "prompt": "Translations can lose some wordplay and sound of the original.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s9.world-literature.tagore-narayan.a4",
+                  "prompt": "The Kabuliwala reminds Mini's father that…",
+                  "kind": "choice",
+                  "options": [
+                    "love for children is shared across cultures",
+                    "fruit is expensive",
+                    "travel is dangerous"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What can stories from another place teach us that a textbook cannot?",
+                "Should we read literature in its original language if we can? Why?"
+              ],
+              "speaking": [
+                "Give a short talk recommending a book by an Indian author, explaining its setting and why someone should read it."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Literary Map",
+                "materials": [
+                  "a map of India (printed or drawn)",
+                  "sticky notes"
+                ],
+                "steps": [
+                  "Choose five Indian writers in different languages",
+                  "Find where each was from or set their work",
+                  "Mark them on the map with a book title",
+                  "Read one short story and write a review"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s9.world-literature.tagore-narayan.q1",
+                  "prompt": "R. K. Narayan wrote mainly in…",
+                  "kind": "choice",
+                  "options": [
+                    "English",
+                    "Bengali",
+                    "Tamil"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s9.world-literature.tagore-narayan.q2",
+                  "prompt": "Tagore wrote in Bengali.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s9.world-literature.tagore-narayan.q3",
+                  "prompt": "A collection of stories by different authors is an…",
+                  "kind": "choice",
+                  "options": [
+                    "atlas",
+                    "anthology",
+                    "almanac"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "mastery": [
+                "Responds thoughtfully to works from Indian and world literature",
+                "Explains cultural context in literary works",
+                "Considers issues of translation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s12",
+      "overview": "Literary criticism, tragedy and drama, and comparative literary study.",
+      "goals": [
+        "Apply critical lenses to literature",
+        "Analyse drama including tragedy",
+        "Write comparative literary essays"
+      ],
+      "units": [
+        {
+          "id": "stories.s12.drama-tragedy",
+          "title": "Drama and Tragedy",
+          "summary": "How plays work, from Sanskrit drama to Shakespeare.",
+          "topics": [
+            {
+              "title": "Elements of drama",
+              "subtopics": [
+                "dialogue",
+                "stage directions",
+                "soliloquy"
+              ]
+            },
+            {
+              "title": "Tragedy",
+              "subtopics": [
+                "flaw",
+                "downfall",
+                "catharsis"
+              ]
+            },
+            {
+              "title": "Sanskrit drama",
+              "subtopics": [
+                "Kalidasa"
+              ]
+            }
+          ],
+          "objectives": [
+            "Analyse the features of tragedy",
+            "Compare dramatic traditions"
+          ],
+          "masteryCriteria": [
+            "Analyses tragic structure in a play",
+            "Compares dramatic traditions with accurate context",
+            "Writes informed comparative analysis"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "stories.s12.drama-tragedy.tragic-hero",
+              "title": "The Tragic Hero",
+              "skillId": "sk.stories.s12.drama-tragedy.tragic-hero",
+              "minutes": 40,
+              "objectives": [
+                "Analyse the features of tragedy",
+                "Compare dramatic traditions"
+              ],
+              "prerequisites": [
+                "Analyses character, theme and point of view"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "In classical tragedy, as described by Aristotle, a noble hero falls from good fortune to disaster, often through a flaw or error of judgement (hamartia). The audience feels pity and fear, followed by a release of emotion called catharsis.",
+                "Shakespeare's tragedies — Hamlet, Macbeth, King Lear — follow and adapt this pattern. Macbeth's ambition, stirred by prophecy, leads him to murder and ruin.",
+                "India has its own classical drama. Kalidasa's Sanskrit play \"Abhijnanashakuntalam\" (The Recognition of Shakuntala) is celebrated worldwide. Classical Sanskrit drama theory (in the Natyashastra) emphasises rasa — the emotional flavour experienced by the audience — and the classical tradition generally avoided tragic endings."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "The Natyashastra is traditionally attributed to Bharata Muni; scholars date its compilation broadly between about 200 BCE and 200 CE. Kalidasa is usually dated to around the 4th–5th century CE."
+                },
+                {
+                  "kind": "interpretation",
+                  "text": "Critics debate whether \"tragic flaw\" is the best translation of Aristotle's hamartia; many prefer \"error\" or \"mistake\"."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "tragedy",
+                  "meaning": "a drama ending in the downfall of the main character"
+                },
+                {
+                  "term": "hamartia",
+                  "meaning": "the hero's error or flaw"
+                },
+                {
+                  "term": "catharsis",
+                  "meaning": "emotional release felt by the audience"
+                },
+                {
+                  "term": "rasa",
+                  "meaning": "in Indian aesthetics, the emotional essence evoked in the audience"
+                }
+              ],
+              "examples": [
+                "Macbeth: ambition → murder → guilt → downfall.",
+                "Shakuntala: separation through a curse, then recognition and reunion."
+              ],
+              "story": {
+                "title": "Two Theatres, Two Feelings",
+                "text": "A student watched Macbeth and left shaken but strangely relieved. Months later she watched a performance of Shakuntala and left uplifted, filled with longing and joy. She wondered: why did one tradition want audiences to feel catharsis through ruin, and another to savour rasa through harmony?"
+              },
+              "activities": [
+                {
+                  "id": "stories.s12.drama-tragedy.tragic-hero.a1",
+                  "prompt": "Match the term to its meaning",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "hamartia",
+                      "the hero's error or flaw"
+                    ],
+                    [
+                      "catharsis",
+                      "emotional release"
+                    ],
+                    [
+                      "rasa",
+                      "emotional essence savoured by the audience"
+                    ]
+                  ]
+                },
+                {
+                  "id": "stories.s12.drama-tragedy.tragic-hero.a2",
+                  "prompt": "Macbeth's downfall is driven mainly by…",
+                  "kind": "choice",
+                  "options": [
+                    "ambition",
+                    "laziness",
+                    "kindness"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "stories.s12.drama-tragedy.tragic-hero.a3",
+                  "prompt": "Kalidasa wrote in Sanskrit.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s12.drama-tragedy.tragic-hero.a4",
+                  "prompt": "Classical Sanskrit drama generally…",
+                  "kind": "choice",
+                  "options": [
+                    "ended in tragedy",
+                    "avoided tragic endings",
+                    "had no music"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Why might audiences enjoy watching tragedy?",
+                "What do the differences between Greek and Sanskrit drama suggest about their cultures' values?"
+              ],
+              "speaking": [
+                "Perform a short soliloquy and explain what it reveals about the character's inner conflict."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Comparative Drama Essay",
+                "materials": [
+                  "Macbeth and an English translation of Shakuntala (or detailed summaries)",
+                  "notebook"
+                ],
+                "steps": [
+                  "Read key scenes from both plays",
+                  "Note how each handles conflict, emotion and ending",
+                  "Research Aristotle's and the Natyashastra's ideas",
+                  "Write a 1000-word comparison"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s12.drama-tragedy.tragic-hero.q1",
+                  "prompt": "Aristotle's word for emotional release is…",
+                  "kind": "choice",
+                  "options": [
+                    "rasa",
+                    "catharsis",
+                    "hamartia"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s12.drama-tragedy.tragic-hero.q2",
+                  "prompt": "The Natyashastra is a work about…",
+                  "kind": "choice",
+                  "options": [
+                    "medicine",
+                    "performing arts and drama",
+                    "astronomy"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s12.drama-tragedy.tragic-hero.q3",
+                  "prompt": "A tragic hero usually begins in a position of high status.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Analyses tragic structure in a play",
+                "Compares dramatic traditions with accurate context",
+                "Writes informed comparative analysis"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stories.s12.critical-lenses",
+          "title": "Critical Lenses",
+          "summary": "Different ways of reading the same text.",
+          "topics": [
+            {
+              "title": "Lenses",
+              "subtopics": [
+                "historical",
+                "feminist",
+                "postcolonial",
+                "reader-response"
+              ]
+            },
+            {
+              "title": "Context of writing vs context of reading",
+              "subtopics": [
+                "Context of writing vs context of reading"
+              ]
+            },
+            {
+              "title": "Constructing interpretations",
+              "subtopics": [
+                "Constructing interpretations"
+              ]
+            }
+          ],
+          "objectives": [
+            "Apply at least two critical lenses to a text",
+            "Evaluate competing interpretations"
+          ],
+          "masteryCriteria": [
+            "Applies multiple critical lenses with evidence",
+            "Evaluates the strengths and limits of interpretations",
+            "Writes nuanced literary criticism"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "stories.s12.critical-lenses.lenses",
+              "title": "Reading Through Different Lenses",
+              "skillId": "sk.stories.s12.critical-lenses.lenses",
+              "minutes": 40,
+              "objectives": [
+                "Apply at least two critical lenses to a text",
+                "Evaluate competing interpretations"
+              ],
+              "prerequisites": [
+                "Writes analytical essays with a thesis"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Literary critics read texts through different \"lenses\" — sets of questions that highlight different aspects. A historical lens asks how the time of writing shaped the text.",
+                "A feminist lens asks how gender roles are portrayed and challenged. A postcolonial lens examines how colonialism and power between cultures shape stories. A reader-response lens focuses on how readers create meaning.",
+                "No single lens is \"correct\". Each reveals something and misses something. Strong critics test interpretations against textual evidence and remain open to others."
+              ],
+              "context": [
+                {
+                  "kind": "interpretation",
+                  "text": "Critical lenses are interpretive frameworks; different scholars may reach different, well-argued conclusions about the same text."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "critical lens",
+                  "meaning": "a perspective used to interpret a text"
+                },
+                {
+                  "term": "postcolonial",
+                  "meaning": "relating to the effects of colonisation on cultures and literature"
+                },
+                {
+                  "term": "interpretation",
+                  "meaning": "an explanation of meaning"
+                },
+                {
+                  "term": "context",
+                  "meaning": "circumstances surrounding a text"
+                }
+              ],
+              "examples": [
+                "Feminist lens on a fairy tale: why does the princess wait to be rescued?",
+                "Postcolonial lens on \"Kim\" by Kipling: how is India represented by a British author?"
+              ],
+              "story": {
+                "title": "The Book Club Argument",
+                "text": "Four friends discussed the same novel. One talked about the era it was written in; another about how women were shown; another about how colonial power appeared; the last about how the ending made her feel. At first they argued — then realised each had noticed something the others missed."
+              },
+              "activities": [
+                {
+                  "id": "stories.s12.critical-lenses.lenses.a1",
+                  "prompt": "Match the lens to its question",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "historical",
+                      "How did the time of writing shape this?"
+                    ],
+                    [
+                      "feminist",
+                      "How are gender roles portrayed?"
+                    ],
+                    [
+                      "postcolonial",
+                      "How are colonised peoples represented?"
+                    ],
+                    [
+                      "reader-response",
+                      "What does this mean to me as a reader?"
+                    ]
+                  ]
+                },
+                {
+                  "id": "stories.s12.critical-lenses.lenses.a2",
+                  "prompt": "There is only one correct interpretation of a great book.",
+                  "kind": "truefalse",
+                  "answer": false
+                },
+                {
+                  "id": "stories.s12.critical-lenses.lenses.a3",
+                  "prompt": "A strong interpretation is supported by…",
+                  "kind": "choice",
+                  "options": [
+                    "personal guesses",
+                    "textual evidence",
+                    "the book cover"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s12.critical-lenses.lenses.a4",
+                  "prompt": "A postcolonial lens would especially examine…",
+                  "kind": "choice",
+                  "options": [
+                    "rhyme scheme",
+                    "representation of colonised cultures",
+                    "page numbers"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Can applying a modern lens to an old text be unfair to it? Or necessary?",
+                "Which lens do you find most useful, and why?"
+              ],
+              "speaking": [
+                "Lead a short discussion of a fairy tale, asking questions from two different lenses."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Multi-Lens Analysis",
+                "materials": [
+                  "a novel or short story studied in depth",
+                  "notebook"
+                ],
+                "steps": [
+                  "Choose a text",
+                  "Write one paragraph each from three lenses",
+                  "Identify evidence each lens highlights",
+                  "Write a conclusion evaluating which lens is most illuminating for this text"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "stories.s12.critical-lenses.lenses.q1",
+                  "prompt": "A lens focusing on the reader's experience is…",
+                  "kind": "choice",
+                  "options": [
+                    "historical",
+                    "reader-response",
+                    "feminist"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "stories.s12.critical-lenses.lenses.q2",
+                  "prompt": "Different lenses can reveal different meanings.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "stories.s12.critical-lenses.lenses.q3",
+                  "prompt": "\"Context\" means…",
+                  "kind": "choice",
+                  "options": [
+                    "circumstances surrounding a text",
+                    "the first chapter",
+                    "the author's name"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Applies multiple critical lenses with evidence",
+                "Evaluates the strengths and limits of interpretations",
+                "Writes nuanced literary criticism"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

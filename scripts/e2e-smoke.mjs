@@ -4,8 +4,8 @@
  *
  * Starts `vite preview`, then drives a real browser through the main learning flows:
  * universe → world → subject → full lesson (learn, story, play, think, make, check) →
- * mastery recorded → parent gate → dashboard → curriculum guide → backup export →
- * arena → creative studio → offline reload.
+ * mastery recorded → parent gate → overview/progress/recommendations → curriculum →
+ * backup export → Play hub → arena → creative studio → offline reload.
  */
 import { spawn } from 'node:child_process';
 import { mkdirSync } from 'node:fs';
@@ -43,6 +43,8 @@ const step = async (name, fn) => {
 const browser = await chromium.launch();
 const context = await browser.newContext({ viewport: { width: 1280, height: 860 }, deviceScaleFactor: 1 });
 const page = await context.newPage();
+page.setDefaultTimeout(12000);
+page.setDefaultNavigationTimeout(12000);
 const errors = [];
 page.on('pageerror', (e) => errors.push(String(e)));
 page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
@@ -72,8 +74,10 @@ const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 try {
   console.log('E2E smoke test');
-  await step('universe loads with 12 worlds', async () => {
+  await step('home opens and Explore shows all 12 worlds', async () => {
     await page.goto(BASE);
+    await page.locator('.universe__hero').waitFor();
+    await page.getByRole('button', { name: /Explore the worlds/ }).click();
     await page.locator('.island').first().waitFor();
     const n = await page.locator('.island').count();
     if (n !== 12) throw new Error(`expected 12 worlds, got ${n}`);
@@ -132,8 +136,16 @@ try {
     await shot('07-parent-dashboard');
   });
 
+  await step('parent navigation separates progress and recommendations', async () => {
+    await page.locator('.pnav').getByRole('button', { name: 'Progress' }).click();
+    await page.locator('.dash h1').waitFor();
+    await page.locator('.pnav').getByRole('button', { name: 'Recommendations' }).click();
+    await page.getByRole('heading', { name: 'Recommended next steps' }).waitFor();
+    await shot('08-parent-recommendations');
+  });
+
   await step('curriculum guide shows full lesson detail', async () => {
-    await page.getByRole('button', { name: 'Curriculum' }).click();
+    await page.locator('.pnav').getByRole('button', { name: 'Curriculum' }).click();
     await page.locator('.cbrowser__nav button', { hasText: firstSubject.title }).click();
     await page.locator('.plesson').first().click();
     await page.getByText('Critical-thinking questions').first().waitFor();
@@ -141,12 +153,21 @@ try {
   });
 
   await step('backup export downloads a valid file', async () => {
-    await page.getByRole('button', { name: 'Backup & restore' }).click();
+    await page.locator('.pnav').getByRole('button', { name: 'Settings & Backup' }).click();
     const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download backup/ }).click()]);
     const path = await dl.path();
     const { readFileSync } = await import('node:fs');
     const json = JSON.parse(readFileSync(path, 'utf8'));
     if (json.format !== 'ivu-learning-world-backup' || json.data.skills.length < 1) throw new Error('backup content invalid');
+  });
+
+  await step('Play hub offers both challenge and creative paths', async () => {
+    await page.goto(BASE);
+    await page.getByRole('button', { name: /Play/ }).click();
+    await page.getByRole('heading', { name: 'What would you like to make today?' }).waitFor();
+    await page.getByRole('button', { name: /Choose a challenge/ }).waitFor();
+    await page.getByRole('button', { name: /Start creating/ }).waitFor();
+    await shot('09-play-hub');
   });
 
   await step('challenge arena runs a round', async () => {
@@ -178,11 +199,13 @@ try {
 
   await step('works offline after first load (service worker)', async () => {
     await page.goto(BASE);
-    await page.evaluate(() => navigator.serviceWorker.ready);
+    await page.locator('.universe__hero').waitFor();
+    await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error('service worker did not become ready')), 12000))]));
     await page.reload();
-    await page.evaluate(() => navigator.serviceWorker.ready);
+    await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error('service worker did not become ready')), 12000))]));
     await context.setOffline(true);
     await page.reload();
+    await page.getByRole('button', { name: /Explore the worlds/ }).click();
     await page.locator('.island').first().waitFor({ timeout: 8000 });
     await page.goto(BASE + '#/subject/' + firstSubject.id);
     await page.locator('.unit').first().waitFor({ timeout: 8000 });
@@ -225,6 +248,9 @@ try {
   await step('mobile layout renders', async () => {
     const m = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
     await m.goto(BASE);
+    m.setDefaultTimeout(12000);
+    await m.locator('.universe__hero').waitFor();
+    await m.getByRole('button', { name: /Explore the worlds/ }).click();
     await m.locator('.island').first().waitFor();
     if (shotDir) await m.screenshot({ path: `${shotDir}/12-mobile.png` });
     await m.close();

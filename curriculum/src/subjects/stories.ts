@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['What else could the crow have done to get the water?', 'Why do you think the crow did not give up?'],
           k: ['Retell The Thirsty Crow to a grown-up using a cup, water and pebbles.'],
-          m: ['🧪 Be the Clever Crow', 'a tall glass, a little water, small clean pebbles or marbles', 'Pour a little water into the glass | Mark where the water is | Drop pebbles in one at a time | Watch the water rise | Tell the story while you do it'],
+          m: ['🧪 Be the Clever Crow', 'a tall glass, a little water, small clean pebbles or marbles', 'Pour a little water into the glass | Mark where the water is | Drop pebbles in one at a time | Watch the water rise | Tell the story while you do it', "Use a wide, stable plastic cup instead of a tall glass and large stones that cannot be swallowed; do not use marbles or small pebbles with young children. Supervise the activity and keep objects away from mouths."],
           q: [
             ch('Where did the crow find water?', '*in a pot|in a river|in a cloud'),
             od('Order', 'Thirsty crow|Pebbles in pot|Water rises|Crow drinks'),
@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['Why do you think little children love rhymes?', 'Can you make up a silly rhyme for your name?'],
           k: ['Say a favourite rhyme to a grown-up with actions, and point out two words that rhyme.'],
-          m: ['Rhyme Time Shaker Show', 'an empty bottle, dry rice or beans, tape', 'Make a shaker by putting rice in a bottle and taping it shut | Choose a rhyme you know | Shake on each beat as you say it | Perform it for your family'],
+          m: ['Rhyme Time Shaker Show', 'an empty bottle, dry rice or beans, tape', 'Make a shaker by putting rice in a bottle and taping it shut | Choose a rhyme you know | Shake on each beat as you say it | Perform it for your family', "Use a sturdy plastic bottle with a secure cap, tape it closed with an adult, and check that no small pieces can escape. Do not put rice or beans in the mouth."],
           q: [
             ch('Which rhymes with "dog"?', 'cat|*log|pig'),
             tf('"Star" and "moon" rhyme.', false),
@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['Was the hare a bad animal, or did he just make a mistake?', 'When in your life is "slow and steady" a good idea?'],
           k: ['Tell the fable from the tortoise\'s point of view to someone.'],
-          m: ['Fable Finger Puppets', 'paper, crayons, tape, scissors (with a grown-up)', 'Draw a hare and a tortoise and cut them out | Tape them into rings for your fingers | Act out the race | Say the moral at the end'],
+          m: ['Fable Finger Puppets', 'paper, crayons, tape, scissors (with a grown-up)', 'Draw a hare and a tortoise and cut them out | Tape them into rings for your fingers | Act out the race | Say the moral at the end', "Use child-safe scissors with adult supervision. Keep small paper pieces away from younger children who may put them in their mouths."],
           q: [
             ch('A fable usually teaches a…', 'recipe|*lesson|song'),
             ch('Who won the race?', 'the hare|*the tortoise|nobody'),

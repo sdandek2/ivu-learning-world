@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['What else can you make by tearing paper?', 'Why should scissors only cut paper?'],
           k: ['Show a grown-up how to hold and carry scissors safely.'],
-          m: ['Torn Paper Garden', 'coloured paper, safety scissors, glue stick, card', 'Tear green strips for grass | Cut a circle for the sun | Glue everything onto card | Tell someone about your garden'],
+          m: ['Torn Paper Garden', 'coloured paper, safety scissors, glue stick, card', 'Tear green strips for grass | Cut a circle for the sun | Glue everything onto card | Tell someone about your garden', "Use child-safe scissors with adult supervision and non-toxic glue. Adults should handle any sharp tools."],
           q: [
             ch('Rounded-tip scissors are called…', '*safety scissors|garden shears|knives'),
             tf('We cut away from our fingers.', true),
@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['What animal can you make with only balls?', 'Why do you think clay gets hard when baked?'],
           k: ['Tell a grown-up how you made your dough animal.'],
-          m: ['🧪 Homemade Play Dough', 'flour, salt, water, a little oil, food colouring (with an adult)', 'Mix 2 cups flour with 1 cup salt | Add water and a spoon of oil slowly and knead | Add a drop of colour | Make your dough zoo'],
+          m: ['🧪 Homemade Play Dough', 'flour, salt, water, a little oil, food colouring (with an adult)', 'Mix 2 cups flour with 1 cup salt | Add water and a spoon of oil slowly and knead | Add a drop of colour | Make your dough zoo', "Use food-safe ingredients and non-toxic colouring. This dough is for play, not eating; keep it away from mouths and wash hands afterwards. An adult should supervise mixing."],
           q: [
             ch('Squeezing with finger and thumb is…', '*pinching|rolling|cutting'),
             tf('Two balls can make a snowman.', true),
@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why should you press creases firmly?', 'What would happen if your boat was made of tissue paper?'],
           k: ['Teach someone how to make a valley fold and a mountain fold.'],
-          m: ['🧪 Paper Boat Float Test', 'rectangular paper, a tub of water', 'Fold a paper boat step by step | Float it in a tub of water | Time how long it floats | Try a different paper and compare'],
+          m: ['🧪 Paper Boat Float Test', 'rectangular paper, a tub of water', 'Fold a paper boat step by step | Float it in a tub of water | Time how long it floats | Try a different paper and compare', "Use a shallow tub and supervise children around water. Empty the tub immediately afterwards and wipe up spills."],
           q: [
             ch('A fold away from you is a…', '*mountain fold|valley fold|cut'),
             tf('Lining up edges helps neat folding.', true),
@@ -151,7 +151,7 @@ export default subject({
           ],
           t: ['Why does the next row start differently?', 'How long do you think it takes to weave a sari?'],
           k: ['Explain warp and weft using your woven piece.'],
-          m: ['Card Loom Weaving', 'stiff card, string, wool, safety scissors', 'Cut notches at the top and bottom of the card | Wind string for the warp | Weave wool over and under for the weft | Push rows together and finish the edges'],
+          m: ['Card Loom Weaving', 'stiff card, string, wool, safety scissors', 'Cut notches at the top and bottom of the card | Wind string for the warp | Weave wool over and under for the weft | Push rows together and finish the edges', "An adult should prepare any notches or cuts in stiff card. Use blunt, child-safe scissors with supervision and keep string away from the neck."],
           q: [
             ch('A frame for weaving is a…', '*loom|kiln|lathe'),
             tf('Pochampally ikat comes from Telangana.', true),
@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Why might artisans use natural dyes?', 'Why is it important to buy crafts from artisans fairly?'],
           k: ['Show your printed pattern and explain how you made it.'],
-          m: ['Potato or Foam Block Print', 'a potato or craft foam, paint, paper (with an adult for cutting)', 'Draw a simple shape | Carve it with adult help | Dip in paint and press onto paper | Repeat to make a pattern'],
+          m: ['Potato or Foam Block Print', 'a potato or craft foam, paint, paper (with an adult for cutting)', 'Draw a simple shape | Carve it with adult help | Dip in paint and press onto paper | Repeat to make a pattern', "An adult must do any cutting or carving. Children should use only the prepared block, non-toxic washable paint and a protected work surface."],
           q: [
             ch('A colour used to stain cloth is a…', '*dye|glue|clay'),
             tf('Sanganer is famous for block printing.', true),
@@ -213,7 +213,7 @@ export default subject({
           ],
           t: ['Why must subtractive sculptors plan very carefully?', 'What does an armature do?'],
           k: ['Explain additive and subtractive methods using your sculptures.'],
-          m: ['Two-Method Sculpture', 'a soap bar, a spoon, foil, air-dry clay (with an adult)', 'Carve a simple shape from soap | Make a foil armature of a figure | Cover it with clay | Compare the two methods'],
+          m: ['Two-Method Sculpture', 'a soap bar, a spoon, foil, air-dry clay (with an adult)', 'Carve a simple shape from soap | Make a foil armature of a figure | Cover it with clay | Compare the two methods', "Use a spoon with a rounded edge, not a knife or blade. An adult should supervise carving; do not put soap or clay in mouths or eyes."],
           q: [
             ch('An inner frame in a sculpture is an…', '*armature|apron|arch'),
             tf('Dhokra is a metal-casting craft.', true),
@@ -242,7 +242,7 @@ export default subject({
           ],
           t: ['Why do packages have tabs?', 'How could you make two things pop up at once?'],
           k: ['Show how your pop-up mechanism works.'],
-          m: ['Pop-Up Card and Gift Box', 'card, ruler, scissors, glue', 'Make a pop-up card with a box fold | Draw a net for a small cube box with tabs | Fold and glue the box | Give both as a gift'],
+          m: ['Pop-Up Card and Gift Box', 'card, ruler, scissors, glue', 'Make a pop-up card with a box fold | Draw a net for a small cube box with tabs | Fold and glue the box | Give both as a gift', "Use child-safe scissors and non-toxic glue with adult supervision. Adults should handle any sharp tools; keep small pieces away from younger children."],
           q: [
             ch('Parts that make something move are a…', '*mechanism|material|motif'),
             tf('Packaging designers use nets.', true),
@@ -275,7 +275,7 @@ export default subject({
           ],
           t: ['Why was khadi a powerful symbol?', 'What are the pros and cons of synthetic fibres?'],
           k: ['Explain the journey from fibre to fabric with samples.'],
-          m: ['🧪 Fibre Investigation', 'samples of cotton, wool, silk and polyester fabric, magnifier, water', 'Examine each fabric with a magnifier | Test how quickly a drop of water absorbs | Compare warmth and stretch | Record results in a table'],
+          m: ['🧪 Fibre Investigation', 'samples of cotton, wool, silk and polyester fabric, magnifier, water', 'Examine each fabric with a magnifier | Test how quickly a drop of water absorbs | Compare warmth and stretch | Record results in a table', "Use clean fabric samples and a small amount of water. Do not taste materials; wash hands after handling samples."],
           q: [
             ch('Spun fibres ready for weaving are…', '*yarn|dye|fibreglass'),
             tf('Indigo is a natural dye.', true),
@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['Why start with empathy?', 'Is a product that lasts longer more sustainable?'],
           k: ['Pitch your design solution to a panel.'],
-          m: ['Design Challenge', 'recycled materials, notebook, a real user to interview', 'Interview a user about a daily problem | Define the problem and sketch at least eight ideas | Build and test a prototype | Improve it and present a design journal'],
+          m: ['Design Challenge', 'recycled materials, notebook, a real user to interview', 'Interview a user about a daily problem | Define the problem and sketch at least eight ideas | Build and test a prototype | Improve it and present a design journal', "Ask permission before interviewing a user, explain how their feedback will be used, and do not record private details. Use safe, non-toxic materials for prototypes and supervise tools."],
           q: [
             ch('Understanding users\' needs is…', '*empathising|ideating|testing'),
             tf('Designers ask whether products can be repaired.', true),

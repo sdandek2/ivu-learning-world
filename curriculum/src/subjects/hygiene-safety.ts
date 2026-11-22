@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['Why can\'t we see germs?', 'Why is soap better than just water?'],
           k: ['Show a grown-up how you wash your hands, saying each step.'],
-          m: ['🧪 Glitter Germs', 'a little glitter or flour, soap, water', 'Put a pinch of glitter on your hands (pretend germs) | Shake hands with a teddy and see the glitter spread | Try washing with water only | Then wash with soap and compare'],
+          m: ['🧪 Glitter Germs', 'a little glitter or flour, soap, water', 'Put a pinch of glitter on your hands (pretend germs) | Shake hands with a teddy and see the glitter spread | Try washing with water only | Then wash with soap and compare', "Use a small amount of washable, non-toxic material; keep it away from eyes and mouths and do not breathe it in. Wash hands and clean the surface afterwards."],
           q: [
             ch('How long should we scrub?', '1 second|*about 20 seconds|1 hour'),
             ch('After using the toilet, we should…', '*wash our hands|eat straight away|touch our eyes'),
@@ -214,7 +214,7 @@ export default subject({
           ],
           t: ['Why shouldn\'t we put butter or toothpaste on burns?', 'How can staying calm help an injured person?'],
           k: ['Show someone how to help with a nosebleed, explaining each step.'],
-          m: ['Mini First Aid Kit', 'a small box, plasters, clean gauze, a card with emergency numbers', 'Collect basic first aid items with an adult | Label the box | Make a card with simple instructions for cuts, burns and nosebleeds | Keep it somewhere everyone knows'],
+          m: ['Mini First Aid Kit', 'a small box, plasters, clean gauze, a card with emergency numbers', 'Collect basic first aid items with an adult | Label the box | Make a card with simple instructions for cuts, burns and nosebleeds | Keep it somewhere everyone knows', "Make this kit with an adult. Children should tell an adult about injuries and must not treat serious burns, heavy bleeding or other emergencies themselves. An adult should check and maintain the kit."],
           q: [
             ch('How long should you cool a burn?', '10 seconds|*at least 20 minutes|1 hour in ice'),
             tf('You should tilt your head back during a nosebleed.', false),
@@ -305,7 +305,7 @@ export default subject({
           ],
           t: ['Why are landmarks helpful when giving an address?', 'Why is it important to stay on the line?'],
           k: ['Role-play an emergency call with a family member, giving clear information.'],
-          m: ['Emergency Information Sheet', 'paper, pens, family help', 'Write your full address with landmarks | List emergency numbers (112, 1098, family doctor) | Practise a pretend call script | Ask a parent about local first aid courses'],
+          m: ['Emergency Information Sheet', 'paper, pens, family help', 'Write your full address with landmarks | List emergency numbers (112, 1098, family doctor) | Practise a pretend call script | Ask a parent about local first aid courses', "Complete this with a parent or trusted adult. Keep your full address and family contact details private and store the sheet securely; an adult should verify local emergency numbers."],
           q: [
             ch('First check in any emergency:', '*danger to yourself|your phone battery|the time'),
             tf('Learning certified first aid is valuable.', true),

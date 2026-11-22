@@ -153,7 +153,7 @@ export default subject({
           ],
           t: ['Why do countries have national symbols?', 'How should we show respect to the flag and anthem?'],
           k: ['Describe the national flag to someone and explain one national day.'],
-          m: ['National Symbols Booklet', 'paper, crayons, stapler', 'Make a booklet with one page each for the flag, emblem, anthem, animal, bird and flower | Draw and label each | Add one fact | Share it on Republic Day'],
+          m: ['National Symbols Booklet', 'paper, crayons, stapler', 'Make a booklet with one page each for the flag, emblem, anthem, animal, bird and flower | Draw and label each | Add one fact | Share it on Republic Day', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('The colour at the top of the flag is…', '*saffron|green|blue'),
             ch('Republic Day is on…', '15 August|*26 January|2 October'),

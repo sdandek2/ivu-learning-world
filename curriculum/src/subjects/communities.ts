@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['What do you like doing with your family?', 'How do family members help each other?'],
           k: ['Tell a grown-up about everyone in your family and one thing you love about each.'],
-          m: ['Family Tree Picture', 'paper, crayons, photos (optional)', 'Draw a tree | Put yourself on the trunk | Add family members on the branches | Ask grown-ups about relatives you haven\'t met'],
+          m: ['Family Tree Picture', 'paper, crayons, photos (optional)', 'Draw a tree | Put yourself on the trunk | Add family members on the branches | Ask grown-ups about relatives you haven\'t met', "Ask family members before using their names or photographs. Share the finished tree only with people your family is comfortable sharing it with."],
           q: [
             ch('Your father\'s sister is your…', '*aunt|cousin|niece'),
             tf('All families must look the same.', false),
@@ -308,7 +308,7 @@ export default subject({
           ],
           t: ['Is equal opportunity enough, or do some people need extra support?', 'How can we measure whether a policy works?'],
           k: ['Present an analysis of one government scheme: aims, results and improvements.'],
-          m: ['Service Access Survey', 'a short questionnaire, notebook', 'Survey 10 families about access to schools, clinics and water (with permission) | Map the results | Identify inequalities | Suggest one evidence-based improvement'],
+          m: ['Service Access Survey', 'a short questionnaire, notebook', 'Survey 10 families about access to schools, clinics and water (with permission) | Map the results | Identify inequalities | Suggest one evidence-based improvement', "Get permission from an adult before speaking with families. Do not record names, addresses or identifying details; report only anonymous totals."],
           q: [
             ch('The ability to use a service is…', '*access|inequality|policy'),
             tf('People debate the best ways to reduce inequality.', true),
@@ -342,7 +342,7 @@ export default subject({
           ],
           t: ['Which institution influences you most?', 'What social changes have you seen in your family?'],
           k: ['Interview three generations of a family and present how roles have changed.'],
-          m: ['Three-Generation Oral History', 'recording device or notebook, consent from interviewees', 'Interview a grandparent, parent and young person about childhood, education, work and family | Compare answers | Identify social changes and continuities | Write a 1000-word sociological report'],
+          m: ['Three-Generation Oral History', 'recording device or notebook, consent from interviewees', 'Interview a grandparent, parent and young person about childhood, education, work and family | Compare answers | Identify social changes and continuities | Write a 1000-word sociological report', "Obtain informed consent from each person, explain how recordings will be used, and let them skip questions or stop. Keep recordings private and do not share personal or sensitive stories without permission."],
           q: [
             ch('Sociology studies…', '*society|stars|soil'),
             tf('Socialisation begins in the family.', true),

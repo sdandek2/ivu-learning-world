@@ -1,1 +1,2771 @@
-{"schemaVersion":1,"id":"phonics","worldId":"word-woods","title":"Phonics & Reading","icon":"🔤","tagline":"Sounds become words","description":"From hearing sounds in words to fluent, thoughtful reading. Systematic synthetic phonics in the early stages (sounds → blending → decodable words), then fluency, comprehension strategies, and finally critical reading of complex texts.","contentVersion":"1.0.0","sensitivity":"none","stages":[{"stage":"s4","overview":"Tuning in to sounds: rhyme, first sounds, and the first letter–sound links.","goals":["Hear and make rhymes","Hear the first sound in a spoken word","Link the sounds s, a, t, p, i, n to their letters"],"units":[{"id":"phonics.s4.sound-ears","title":"Listening Ears","summary":"Words are made of sounds we can hear and play with.","topics":[{"title":"Rhyme","subtopics":["hearing and making rhymes"]},{"title":"First sounds","subtopics":["I-spy with sounds"]},{"title":"Syllables","subtopics":["clapping word beats"]}],"objectives":["Hear the first sound in a spoken word","Find objects that start with the same sound"],"masteryCriteria":["Identifies the first sound in spoken words reliably","Sorts objects or pictures by first sound","Produces a word with a given first sound"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"phonics.s4.sound-ears.first-sounds","title":"What Sound Does It Start With?","skillId":"sk.phonics.s4.sound-ears.first-sounds","minutes":8,"objectives":["Hear the first sound in a spoken word","Find objects that start with the same sound"],"prerequisites":["Can listen to and repeat short words"],"prerequisiteIds":[],"explanation":["Every word we say is made of sounds. \"Sun\" starts with a hissing snake sound: sss. \"Mango\" starts with a humming sound: mmm.","We are listening for the SOUND, not the letter name. The sound of s is \"sss\", not \"ess\". Stretch the start of a word to hear it: \"sssun\".","Words can share a first sound: sun, sock and sandwich all start with sss. Playing \"I spy something beginning with mmm\" trains your listening ears."],"context":[],"vocabulary":[{"term":"sound","meaning":"what we hear when we say part of a word"},{"term":"first sound","meaning":"the sound at the very start of a word"},{"term":"rhyme","meaning":"words that end with the same sound, like cat and hat"}],"examples":["Ball, bat and bus all start with b.","Moon and mango start with mmm; sun does not."],"story":{"title":"Olu's Sound Basket","text":"Olu the owl had a basket for things starting with sss. Kiko brought a sock — in it went! Then a spoon — in it went! Then Kiko brought a banana. \"Bbb-banana,\" Olu listened. \"That starts with bbb, not sss. It needs the b-basket!\" Kiko laughed and made a second basket."},"activities":[{"id":"phonics.s4.sound-ears.first-sounds.a1","prompt":"Which starts with the same sound as SUN ☀️?","kind":"choice","options":["sock 🧦","ball ⚽","moon 🌙"],"answer":0},{"id":"phonics.s4.sound-ears.first-sounds.a2","prompt":"Which starts with mmm?","kind":"choice","options":["fish 🐟","mango 🥭","tiger 🐯"],"answer":1},{"id":"phonics.s4.sound-ears.first-sounds.a3","prompt":"Match the pictures that start with the same sound","kind":"match","pairs":[["🐝 bee","⚽ ball"],["🐟 fish","🦊 fox"],["🐍 snake","🧦 sock"]]},{"id":"phonics.s4.sound-ears.first-sounds.a4","prompt":"Cat and cup start with the same sound.","kind":"truefalse","answer":true}],"thinking":["Does your name start with the same sound as anyone else's in your family?","Why do you think we stretch the first sound when we listen?"],"speaking":["Play I-spy with a grown-up using sounds: \"I spy something beginning with…\" and explain your clue."],"project":{"kind":"project","title":"Sound Treasure Hunt","materials":["a bag or basket","objects around the house"],"steps":["Pick a sound, like sss or mmm","Hunt for 5 things that start with that sound","Say each word, stretching the first sound","Put a wrong one in the basket and see if a grown-up can find it"]},"assessment":[{"id":"phonics.s4.sound-ears.first-sounds.q1","prompt":"Which starts like DOG 🐶?","kind":"choice","options":["cat 🐱","duck 🦆","pig 🐷"],"answer":1},{"id":"phonics.s4.sound-ears.first-sounds.q2","prompt":"Ball and bat start with the same sound.","kind":"truefalse","answer":true},{"id":"phonics.s4.sound-ears.first-sounds.q3","prompt":"Which starts with sss?","kind":"choice","options":["sun ☀️","pen 🖊️","top 🔝"],"answer":0}],"mastery":["Identifies the first sound in spoken words reliably","Sorts objects or pictures by first sound","Produces a word with a given first sound"]}]},{"id":"phonics.s4.first-letters","title":"Letter Sounds and First Words","summary":"Each letter shape stands for a sound, and two sounds can already make a word.","topics":[{"title":"Letter sounds","subtopics":["a to z (the sound","not the name)"]},{"title":"Tricky sounds","subtopics":["b","d","g","p","t without \"uh\""]},{"title":"2-letter words","subtopics":["at","in","up","on","it"]},{"title":"Oral blending","subtopics":["a-t → at"]}],"objectives":["Say the sound (not the name) for each letter a to z","Blend two sounds into a word: a-t → at, i-n → in, u-p → up"],"masteryCriteria":["Says the sound for each letter on sight (IVU Reads Level 0)","Says b, d, g, p, t without adding \"uh\"","Reads 2-letter words such as at, in, up, on (IVU Reads Level 1)"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"phonics.s4.first-letters.satpin","title":"Letters Make Sounds","skillId":"sk.phonics.s4.first-letters.satpin","minutes":8,"objectives":["Say the sound (not the name) for each letter a to z","Blend two sounds into a word: a-t → at, i-n → in, u-p → up"],"prerequisites":["Can hear the first sound in a word"],"prerequisiteIds":[],"explanation":["Letters are shapes that stand for sounds. We say the SOUND, not the letter name: s says \"sss\" like a snake, m says \"mmm\" like yummy food, a says \"a\" as in apple.","Short sounds like b, d, g, p and t are said quickly and cleanly, with no \"uh\" after them: \"b\", not \"buh\". This makes blending much easier later.","Blending means pushing sounds together to make a word. Start with just two sounds: a… t… a-t… at! i… n… in! u… p… up! This is exactly how IVU Reads starts too (Levels 0 and 1)."],"context":[],"vocabulary":[{"term":"letter","meaning":"a written shape for a sound"},{"term":"sound","meaning":"what the letter says, like \"sss\" for s"},{"term":"blend","meaning":"push sounds together to say a word"},{"term":"sound buttons","meaning":"touching under each letter as you say its sound"}],"examples":["a-t blends to at; i-n blends to in.","u-p blends to up; o-n blends to on."],"story":{"title":"The Little Red Car","text":"Ivaan's little red car drove along a road of letters. At the a it said \"a!\", and at the t it said \"t!\" Then it drove faster and faster — a-t, a-t — until the two sounds bumped together: \"at!\" \"I made a word!\" Ivaan cheered. The car beeped and drove off to find i and n."},"activities":[{"id":"phonics.s4.first-letters.satpin.a1","prompt":"Blend: a – t","kind":"choice","options":["at","up","in"],"answer":0},{"id":"phonics.s4.first-letters.satpin.a2","prompt":"Blend: u – p","kind":"choice","options":["on","up","it"],"answer":1},{"id":"phonics.s4.first-letters.satpin.a3","prompt":"Match the letter to its picture","kind":"match","pairs":[["a","🍎 apple"],["s","☀️ sun"],["m","🐒 monkey"],["d","🐶 dog"]]},{"id":"phonics.s4.first-letters.satpin.a4","prompt":"Which is the sound of s?","kind":"choice","options":["\"sss\" like a snake","\"ess\"","\"buh\""],"answer":0}],"thinking":["Why do we say \"sss\" and not \"ess\" when we read?","Can you think of a word that starts with the sound \"mmm\"?"],"speaking":["Read \"at\", \"in\" and \"up\" to a grown-up by touching each letter as you say its sound, then saying the whole word."],"project":{"kind":"project","title":"Sandy Letters","materials":["a tray with sand","salt or flour","letter cards"],"steps":["Look at a letter card and say its sound","Draw the letter in the sand with your finger","Say the sound again as you draw","Put two letters side by side and blend them into a word like \"at\" or \"in\""]},"assessment":[{"id":"phonics.s4.first-letters.satpin.q1","prompt":"Blend: i – n","kind":"choice","options":["in","on","at"],"answer":0},{"id":"phonics.s4.first-letters.satpin.q2","prompt":"Which letter says \"mmm\"?","kind":"choice","options":["a","m","t"],"answer":1},{"id":"phonics.s4.first-letters.satpin.q3","prompt":"How many sounds in \"it\"? 🔵🔵","kind":"count","answer":2}],"mastery":["Says the sound for each letter on sight (IVU Reads Level 0)","Says b, d, g, p, t without adding \"uh\"","Reads 2-letter words such as at, in, up, on (IVU Reads Level 1)"]}]}]},{"stage":"s5","overview":"Reading simple words, sentences and first stories: short vowels, sound pairs, star words and decodable stories (IVU Reads Levels 2–12).","goals":["Read 3-letter words with every short vowel","Read sh, ch, th and ck words and star (sight) words","Read phrases, sentences and short decodable stories"],"units":[{"id":"phonics.s5.cvc-words","title":"Reading 3-Letter Words","summary":"Sound out and blend consonant–vowel–consonant words.","topics":[{"title":"Short a","subtopics":["cat","map","van"]},{"title":"Short i and o","subtopics":["pig","dog","hot"]},{"title":"Short u and e","subtopics":["sun","bus","bed","hen"]},{"title":"Segmenting","subtopics":["hearing each sound for spelling"]}],"objectives":["Read 3-letter words with all five short vowels","Segment spoken 3-letter words into three sounds"],"masteryCriteria":["Reads short a, i, o, u and e words accurately (IVU Reads Levels 2–4)","Spells 3-letter words by segmenting","Explains what changing the vowel does"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"phonics.s5.cvc-words.vowel-sandwich","title":"The Vowel in the Middle","skillId":"sk.phonics.s5.cvc-words.vowel-sandwich","minutes":10,"objectives":["Read 3-letter words with all five short vowels","Segment spoken 3-letter words into three sounds"],"prerequisites":["Knows the letter sounds and reads 2-letter words"],"prerequisiteIds":[],"explanation":["Many short words are like a sandwich: a consonant, a vowel in the middle, and a consonant — like c-a-t or d-o-g. We call them CVC words.","The five vowels a, e, i, o, u are the \"filling\". Learn them in order: short a (cat, map, van), then short i and o (pig, dog, hot), then short u and e (sun, bus, bed, hen) — the same order as IVU Reads Levels 2, 3 and 4.","To read, say each sound and blend: c… a… t… cat! To spell, do the opposite: say the word slowly and write a letter for each sound you hear. That is called segmenting."],"context":[],"vocabulary":[{"term":"vowel","meaning":"one of the letters a, e, i, o, u"},{"term":"consonant","meaning":"any letter that is not a vowel"},{"term":"CVC word","meaning":"consonant, vowel, consonant, like cat"},{"term":"segment","meaning":"split a word into its sounds"}],"examples":["c-a-t → cat; p-i-g → pig; b-u-s → bus.","Changing the vowel: hat → hit → hot → hut."],"story":{"title":"The Magic Middle","text":"Rangi the chameleon could change colour — and words! Rangi sat on the word \"hat\" and turned purple: it became \"hit\". Rangi turned blue: \"hot\". Then orange: \"hut\". \"I only changed the middle sound,\" Rangi giggled, \"but each time I made a new word!\""},"activities":[{"id":"phonics.s5.cvc-words.vowel-sandwich.a1","prompt":"Read: d – o – g","kind":"choice","options":["dig","dog","dug"],"answer":1},{"id":"phonics.s5.cvc-words.vowel-sandwich.a2","prompt":"Match the word to the picture","kind":"match","pairs":[["sun","☀️"],["bed","🛏️"],["cat","🐱"],["bus","🚌"]]},{"id":"phonics.s5.cvc-words.vowel-sandwich.a3","prompt":"Which word has the sound \"e\" in the middle?","kind":"choice","options":["pin","pen","pan"],"answer":1},{"id":"phonics.s5.cvc-words.vowel-sandwich.a4","prompt":"Put the sounds in order to make \"map\"","kind":"order","items":["m","a","p"]}],"thinking":["How many new words can you make by changing only the middle sound of \"hat\"?","Why are vowels important in almost every word?"],"speaking":["Read five 3-letter words to a grown-up, then explain how you worked out the hardest one."],"project":{"kind":"project","title":"Word Slider","materials":["card strips","scissors","pen"],"steps":["Write a start letter and an end letter on a card with a gap","Make a strip of vowels a e i o u","Slide the strip through the gap","Read each word and decide if it is a real word or a silly word"]},"assessment":[{"id":"phonics.s5.cvc-words.vowel-sandwich.q1","prompt":"Read: h – e – n","kind":"choice","options":["hen","hat","hot"],"answer":0},{"id":"phonics.s5.cvc-words.vowel-sandwich.q2","prompt":"Which picture matches \"pig\"?","kind":"choice","options":["🐷","🐶","🐮"],"answer":0},{"id":"phonics.s5.cvc-words.vowel-sandwich.q3","prompt":"How many sounds in \"dog\"? 🔵🔵🔵","kind":"count","answer":3}],"mastery":["Reads short a, i, o, u and e words accurately (IVU Reads Levels 2–4)","Spells 3-letter words by segmenting","Explains what changing the vowel does"]}]},{"id":"phonics.s5.digraphs","title":"Sound Pairs and Star Words","summary":"Some sounds are written with two letters, and some words we just know.","topics":[{"title":"Sound pairs","subtopics":["sh","ch","th","ck"]},{"title":"4-letter words","subtopics":["frog","jump","hand"]},{"title":"Star (sight) words","subtopics":["the","a","I","is","to","was","said"]},{"title":"Sentences","subtopics":["reading with finger tracking"]}],"objectives":["Read words containing sh, ch, th and ck","Recognise that two letters can make one sound, and know the first star words"],"masteryCriteria":["Reads words with sh, ch, th and ck (IVU Reads Level 5)","Counts sounds (not letters) correctly in digraph words","Reads the first star words on sight (IVU Reads Level 7)"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"phonics.s5.digraphs.sh-ch-th","title":"sh, ch, th and ck","skillId":"sk.phonics.s5.digraphs.sh-ch-th","minutes":10,"objectives":["Read words containing sh, ch, th and ck","Recognise that two letters can make one sound, and know the first star words"],"prerequisites":["Reads 3-letter words"],"prerequisiteIds":[],"explanation":["Sometimes two letters work together to make ONE sound. We call them a sound pair (or digraph). s and h together say \"sh\", like a quiet finger on your lips: ship, fish, shop.","c and h say \"ch\" like a train: chin, chip, chop. t and h say \"th\" — stick your tongue out a little: thin, bath, moth. c and k together say just \"k\": duck, sock, rock.","Star words (sight words) like \"the\", \"said\" and \"was\" don't follow the usual rules, so we learn them by heart. IVU Reads practises these in Levels 5 to 7."],"context":[],"vocabulary":[{"term":"digraph","meaning":"two letters that make one sound"},{"term":"sound button","meaning":"a dot under the letters for each sound"},{"term":"star word","meaning":"a word we learn by sight, like \"the\" or \"said\""}],"examples":["sh: ship, fish, shop; ch: chin, chip.","th: thin, bath; ck: duck, sock, rock."],"story":{"title":"The Quiet Ship","text":"A big ship sailed past the harbour. \"SHHH!\" said Momo the bear. \"The baby fish are sleeping.\" Everyone whispered. \"Sh is the sleeping sound,\" said Momo. When the fish woke up, a duck went quack and the little fish swam off — ch-ch-ch — like a train."},"activities":[{"id":"phonics.s5.digraphs.sh-ch-th.a1","prompt":"Which word has \"sh\"?","kind":"choice","options":["chin","shop","thin"],"answer":1},{"id":"phonics.s5.digraphs.sh-ch-th.a2","prompt":"How many SOUNDS in \"fish\"? f-i-sh 🔵🔵🔵","why":"sh is two letters but one sound.","kind":"count","answer":3},{"id":"phonics.s5.digraphs.sh-ch-th.a3","prompt":"Match","kind":"match","pairs":[["ship","🚢"],["duck","🦆"],["bath","🛁"]]},{"id":"phonics.s5.digraphs.sh-ch-th.a4","prompt":"In \"chip\", c and h make one sound together.","kind":"truefalse","answer":true}],"thinking":["Why can't we just read \"s\" then \"h\" in ship? What would it sound like?","Why do you think some words are \"star words\" that we learn by heart?"],"speaking":["Teach a grown-up the actions for sh (finger on lips), ch (train) and th (tongue out), and read one word for each."],"project":{"kind":"project","title":"Digraph Fishing Game","materials":["paper fish shapes","paper clips","a stick with string and a magnet (or just tongs)","pen"],"steps":["Write a word with sh, ch, th or ck on each fish","Add a paper clip to each","Fish one out","Read it, then sort it into the right pond"]},"assessment":[{"id":"phonics.s5.digraphs.sh-ch-th.q1","prompt":"Which word starts with \"ch\"?","kind":"choice","options":["ship","chop","thin"],"answer":1},{"id":"phonics.s5.digraphs.sh-ch-th.q2","prompt":"How many sounds in \"duck\"? 🔵🔵🔵","kind":"count","answer":3},{"id":"phonics.s5.digraphs.sh-ch-th.q3","prompt":"\"th\" is in…","kind":"choice","options":["chip","thin","shed"],"answer":1}],"mastery":["Reads words with sh, ch, th and ck (IVU Reads Level 5)","Counts sounds (not letters) correctly in digraph words","Reads the first star words on sight (IVU Reads Level 7)"]}]},{"id":"phonics.s5.first-stories","title":"From Words to Stories","summary":"Put words together into phrases, sentences and whole little stories.","topics":[{"title":"Phrases","subtopics":["big dog","a red car"]},{"title":"Sentences","subtopics":["The cat sat on a mat."]},{"title":"Stories","subtopics":["Ivu and the Red Car","The Mud Pig"]},{"title":"Questions","subtopics":["understanding what we read"]}],"objectives":["Read 2- and 3-word phrases and short sentences","Read a short decodable story and answer a question about it"],"masteryCriteria":["Reads phrases and short sentences with finger tracking (IVU Reads Levels 8–11)","Reads a short decodable story (IVU Reads Level 12)","Answers a question about what was read"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"phonics.s5.first-stories.first-stories","title":"I Can Read a Story!","skillId":"sk.phonics.s5.first-stories.first-stories","minutes":10,"objectives":["Read 2- and 3-word phrases and short sentences","Read a short decodable story and answer a question about it"],"prerequisites":["Reads 3-letter words, sound pairs and some star words"],"prerequisiteIds":[],"explanation":["Once we can read words, we can read them together. Two words make a phrase: \"big dog\", \"red car\". Three words: \"a red car\", \"the big dog\".","A sentence starts with a capital letter and ends with a full stop: \"The cat sat on a mat.\" Point to each word with your finger as you read it.","A story is a few sentences in a row. After reading, a good reader can answer questions: Who? What? Where? IVU Reads practises this in Levels 8 to 12, with stories like \"Ivu and the Red Car\" and \"The Mud Pig\"."],"context":[],"vocabulary":[{"term":"phrase","meaning":"a small group of words, like \"big dog\""},{"term":"sentence","meaning":"words that make a complete thought, ending with a full stop"},{"term":"capital letter","meaning":"the big letter at the start of a sentence"},{"term":"full stop","meaning":"the dot at the end of a sentence"}],"examples":["The cat sat on a mat.","Ivu has a red car."],"story":{"title":"Ivu and the Red Car","text":"Ivu has a red car. The car is fast. Ivu gets in the car. Up the hill went the car! Then the car had to stop. Ivu hops off and has a hot bun."},"activities":[{"id":"phonics.s5.first-stories.first-stories.a1","prompt":"In the story, what colour is the car?","kind":"choice","options":["red","blue","green"],"answer":0},{"id":"phonics.s5.first-stories.first-stories.a2","prompt":"Put the words in order to make a sentence","kind":"order","items":["The","cat","sat","on","a","mat."]},{"id":"phonics.s5.first-stories.first-stories.a3","prompt":"Which is a sentence?","kind":"choice","options":["The dog can dig.","big dog","dog dig the"],"answer":0},{"id":"phonics.s5.first-stories.first-stories.a4","prompt":"A sentence ends with a full stop.","kind":"truefalse","answer":true}],"thinking":["What do you think Ivu did after eating the hot bun?","Why do we point to each word when we read?"],"speaking":["Read a short story to a grown-up, then ask them a question about it."],"project":{"kind":"project","title":"My First Little Book","materials":["paper","crayons","stapler"],"steps":["Fold two sheets into a little book","Write one short sentence on each page, like \"The cat sat on a mat.\"","Draw a picture for each page","Read your book to your family"]},"assessment":[{"id":"phonics.s5.first-stories.first-stories.q1","prompt":"In \"Ivu and the Red Car\", what did Ivu eat?","kind":"choice","options":["a hot bun","a fish","an egg"],"answer":0},{"id":"phonics.s5.first-stories.first-stories.q2","prompt":"Which word starts a sentence with a capital letter?","kind":"choice","options":["The","the","cat"],"answer":0},{"id":"phonics.s5.first-stories.first-stories.q3","prompt":"How many words in \"a red car\"? 🔵🔵🔵","kind":"count","answer":3}],"mastery":["Reads phrases and short sentences with finger tracking (IVU Reads Levels 8–11)","Reads a short decodable story (IVU Reads Level 12)","Answers a question about what was read"]}]}]},{"stage":"s6","overview":"Long vowel sounds, alternative spellings, and reading with fluency and understanding.","goals":["Read words with vowel digraphs (ai, ee, igh, oa, oo)","Know split digraphs (a-e, i-e, o-e)","Read aloud with expression and retell"],"units":[{"id":"phonics.s6.long-vowels","title":"Long Vowel Teams","summary":"Vowel teams and split digraphs make long vowel sounds.","topics":[{"title":"Vowel digraphs","subtopics":["ai","ee","igh","oa","oo"]},{"title":"Split digraphs","subtopics":["a-e","i-e","o-e","u-e"]},{"title":"Alternative spellings","subtopics":["ay/ai","ee/ea"]}],"objectives":["Read words with split digraphs a-e, i-e, o-e, u-e","Explain how the final e changes the vowel sound"],"masteryCriteria":["Reads split digraph words accurately in and out of context","Explains the role of silent e","Spells common split digraph words"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"phonics.s6.long-vowels.magic-e","title":"The Split Digraph (Magic e)","skillId":"sk.phonics.s6.long-vowels.magic-e","minutes":15,"objectives":["Read words with split digraphs a-e, i-e, o-e, u-e","Explain how the final e changes the vowel sound"],"prerequisites":["Reads CVC words and common digraphs"],"prerequisiteIds":[],"explanation":["Look at \"cap\" and \"cape\". Adding e at the end changes the short \"a\" into a long \"ay\" sound. The a and the e work as a team even though a letter sits between them — a split digraph.","It works for other vowels: pin → pine, hop → hope, cub → cube. The e itself is silent; its job is to change the vowel.","Reading tip: when you see a vowel, one consonant, then e at the end, try the long vowel sound first."],"context":[],"vocabulary":[{"term":"split digraph","meaning":"two vowel letters split by a consonant that make one long sound"},{"term":"long vowel","meaning":"a vowel that says its name, like a in cake"},{"term":"silent letter","meaning":"a letter we write but do not say"}],"examples":["kit → kite, not → note.","tub → tube; man → mane."],"story":{"title":"The Sneaky e","text":"Little e loved jumping onto the ends of words. It hopped onto \"hop\" — and suddenly the word said \"hope\"! It leapt onto \"kit\" — \"kite!\" \"I don't make a sound,\" said little e, \"but I make the vowel shout its name!\""},"activities":[{"id":"phonics.s6.long-vowels.magic-e.a1","prompt":"Add e to \"pin\". What does it say?","kind":"choice","options":["pin","pine","pen"],"answer":1},{"id":"phonics.s6.long-vowels.magic-e.a2","prompt":"Match","kind":"match","pairs":[["cap","🧢"],["cape","🦸"],["kit","🧰"],["kite","🪁"]]},{"id":"phonics.s6.long-vowels.magic-e.a3","prompt":"In \"hope\", the e is silent.","kind":"truefalse","answer":true},{"id":"phonics.s6.long-vowels.magic-e.a4","prompt":"Which word has a split digraph?","kind":"choice","options":["cat","cake","coat"],"answer":1}],"thinking":["Why might English use a silent e instead of a new letter for long sounds?","Can you find a word where the \"magic e\" rule does not work? (Hint: \"have\", \"give\")"],"speaking":["Explain the split digraph to a younger child or a toy using cap and cape."],"project":{"kind":"project","title":"Flip Book of Magic e","materials":["paper strips","stapler","pens"],"steps":["Write short words like cap, pin, hop, cub on strips","Add a flap with e that folds over the end","Read each word with and without the flap","Draw a picture for both words"]},"assessment":[{"id":"phonics.s6.long-vowels.magic-e.q1","prompt":"Read: r-o-b-e","kind":"choice","options":["rob","robe","rib"],"answer":1},{"id":"phonics.s6.long-vowels.magic-e.q2","prompt":"Which is a long \"i\" word?","kind":"choice","options":["bit","bite","bat"],"answer":1},{"id":"phonics.s6.long-vowels.magic-e.q3","prompt":"Adding e to \"cub\" makes \"cube\".","kind":"truefalse","answer":true}],"mastery":["Reads split digraph words accurately in and out of context","Explains the role of silent e","Spells common split digraph words"]}]},{"id":"phonics.s6.fluent-reading","title":"Reading with Fluency","summary":"Reading smoothly, with expression, and understanding what we read.","topics":[{"title":"Fluency","subtopics":["phrasing","punctuation","expression"]},{"title":"Comprehension","subtopics":["who","what","where","why"]},{"title":"Retelling","subtopics":["beginning","middle","end"]}],"objectives":["Use punctuation to read with expression","Retell a short story in order"],"masteryCriteria":["Reads age-appropriate text with phrasing and attention to punctuation","Retells a story with beginning, middle and end","Self-corrects when meaning breaks down"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"phonics.s6.fluent-reading.read-like-a-storyteller","title":"Read Like a Storyteller","skillId":"sk.phonics.s6.fluent-reading.read-like-a-storyteller","minutes":15,"objectives":["Use punctuation to read with expression","Retell a short story in order"],"prerequisites":["Reads simple sentences by sounding out"],"prerequisiteIds":[],"explanation":["Fluent readers read smoothly, not word… by… word. They group words into phrases, like \"the big red bus\", and say them together.","Punctuation is a signal: a full stop means pause; a question mark means your voice goes up; an exclamation mark means say it with feeling!","Good readers also check understanding. After a page, ask: Who is in it? What happened? Why? If something does not make sense, go back and re-read."],"context":[],"vocabulary":[{"term":"fluency","meaning":"reading smoothly and at a good speed"},{"term":"expression","meaning":"using your voice to show feeling"},{"term":"punctuation","meaning":"marks like . ? ! that guide reading"},{"term":"retell","meaning":"tell what happened in your own words"}],"examples":["\"Help!\" shouted the cat. — read \"Help!\" loudly.","\"Where is my hat?\" — voice goes up at the end."],"story":{"title":"The Robot Who Read Too Flat","text":"Bolt read a story aloud: \"THE. WOLF. IS. COMING. RUN.\" Nobody was scared. Rangi showed Bolt the exclamation mark. Bolt tried again: \"The wolf is coming… RUN!\" Everyone jumped. \"Punctuation tells me how to read,\" Bolt beeped happily."},"activities":[{"id":"phonics.s6.fluent-reading.read-like-a-storyteller.a1","prompt":"What should your voice do at a question mark?","kind":"choice","options":["go up","go down","stop talking"],"answer":0},{"id":"phonics.s6.fluent-reading.read-like-a-storyteller.a2","prompt":"Match the mark to its job","kind":"match","pairs":[[".","stop and pause"],["?","ask a question"],["!","show strong feeling"]]},{"id":"phonics.s6.fluent-reading.read-like-a-storyteller.a3","prompt":"Put the story in order","kind":"order","items":["Pip planted a seed","Pip watered it every day","A green shoot appeared","A big sunflower grew"]},{"id":"phonics.s6.fluent-reading.read-like-a-storyteller.a4","prompt":"Good readers re-read when something does not make sense.","kind":"truefalse","answer":true}],"thinking":["Why do you think reading in phrases helps us understand?","How can the same sentence mean different things if you read it differently?"],"speaking":["Read a page of a favourite book to someone using expression, then retell it without looking."],"project":{"kind":"project","title":"Family Radio Show","materials":["a short story book","a phone or tablet to record (optional)"],"steps":["Choose a short story","Practise reading it three times, adding expression","Perform it for your family like a radio show","Ask your listeners to retell the beginning, middle and end"]},"assessment":[{"id":"phonics.s6.fluent-reading.read-like-a-storyteller.q1","prompt":"\"Look out!\" should be read…","kind":"choice","options":["quietly and slowly","loudly and with feeling","as a question"],"answer":1},{"id":"phonics.s6.fluent-reading.read-like-a-storyteller.q2","prompt":"Order: beginning, middle, end","kind":"order","items":["The egg cracked","A chick wriggled out","The chick cheeped for its mother"]},{"id":"phonics.s6.fluent-reading.read-like-a-storyteller.q3","prompt":"A full stop means…","kind":"choice","options":["pause; the sentence is finished","ask a question","shout"],"answer":0}],"mastery":["Reads age-appropriate text with phrasing and attention to punctuation","Retells a story with beginning, middle and end","Self-corrects when meaning breaks down"]}]}]},{"stage":"s7","overview":"Reading to learn: complex spellings, prefixes and suffixes, and comprehension strategies.","goals":["Decode multisyllabic words using syllables and morphemes","Infer characters' feelings and motives","Summarise texts"],"units":[{"id":"phonics.s7.word-parts","title":"Word Parts: Prefixes and Suffixes","summary":"Long words are built from smaller meaningful parts.","topics":[{"title":"Prefixes","subtopics":["un-","re-","dis-","pre-"]},{"title":"Suffixes","subtopics":["-ful","-less","-ing","-ed","-ly"]},{"title":"Syllable division","subtopics":["chunking long words"]}],"objectives":["Use prefixes and suffixes to read and understand longer words","Break multisyllabic words into syllables"],"masteryCriteria":["Identifies common prefixes/suffixes and their meanings","Decodes unfamiliar multisyllabic words by syllables and morphemes","Uses morphology to infer meaning of new words"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"phonics.s7.word-parts.build-a-word","title":"Build-a-Word","skillId":"sk.phonics.s7.word-parts.build-a-word","minutes":20,"objectives":["Use prefixes and suffixes to read and understand longer words","Break multisyllabic words into syllables"],"prerequisites":["Reads most single-syllable words fluently"],"prerequisiteIds":[],"explanation":["Long words are often built from parts. A root word carries the main meaning: \"help\". A prefix goes in front and changes meaning: \"un-\" means not. A suffix goes at the end: \"-ful\" means full of.","So \"unhelpful\" = un + help + ful = not full of help. Spotting parts lets you read and understand words you have never seen before.","For other long words, split into syllables — each has one vowel sound: fan-tas-tic, hel-i-cop-ter. Read each chunk, then blend the chunks."],"context":[],"vocabulary":[{"term":"root word","meaning":"the main part of a word that carries its meaning"},{"term":"prefix","meaning":"a part added at the start of a word"},{"term":"suffix","meaning":"a part added at the end of a word"},{"term":"syllable","meaning":"a beat of a word with one vowel sound"}],"examples":["re + play = replay (play again).","care + less = careless (without care)."],"story":{"title":"The Word Workshop","text":"In Tinker Town, Bolt ran a word workshop. A customer wanted a word meaning \"not happy\". Bolt took the prefix \"un-\" from the shelf and bolted it onto \"happy\": \"unhappy!\" Next someone wanted \"full of joy\". Bolt fitted \"-ful\" onto \"joy\": \"joyful!\""},"activities":[{"id":"phonics.s7.word-parts.build-a-word.a1","prompt":"\"Rewrite\" means…","kind":"choice","options":["write again","not write","write before"],"answer":0},{"id":"phonics.s7.word-parts.build-a-word.a2","prompt":"Match the prefix to its meaning","kind":"match","pairs":[["un-","not"],["re-","again"],["pre-","before"]]},{"id":"phonics.s7.word-parts.build-a-word.a3","prompt":"How many syllables in \"helicopter\"? hel-i-cop-ter","kind":"count","answer":4},{"id":"phonics.s7.word-parts.build-a-word.a4","prompt":"Which word means \"without fear\"?","kind":"choice","options":["fearful","fearless","unfear"],"answer":1}],"thinking":["Why might \"disappear\" and \"appear\" be connected? What does \"dis-\" do?","Can a word have both a prefix and a suffix? Find three examples."],"speaking":["Invent a new word using a real prefix and root, and explain to someone what it would mean."],"project":{"kind":"project","title":"Word Family Tree","materials":["large paper","markers"],"steps":["Write a root word (like \"play\" or \"kind\") in the trunk","Add branches with prefixes and suffixes","Write each new word on a leaf","Use three of the words in sentences"]},"assessment":[{"id":"phonics.s7.word-parts.build-a-word.q1","prompt":"In \"unkind\", the prefix is…","kind":"choice","options":["un","kind","nd"],"answer":0},{"id":"phonics.s7.word-parts.build-a-word.q2","prompt":"\"Hopeful\" means…","kind":"choice","options":["without hope","full of hope","hope again"],"answer":1},{"id":"phonics.s7.word-parts.build-a-word.q3","prompt":"How many syllables in \"fantastic\"?","kind":"count","answer":3}],"mastery":["Identifies common prefixes/suffixes and their meanings","Decodes unfamiliar multisyllabic words by syllables and morphemes","Uses morphology to infer meaning of new words"]}]},{"id":"phonics.s7.comprehension","title":"Reading Between the Lines","summary":"Inference and summarising: understanding more than the words say.","topics":[{"title":"Inference","subtopics":["clues + what I know"]},{"title":"Characters","subtopics":["feelings","motives","change"]},{"title":"Summarising","subtopics":["main idea","key details"]}],"objectives":["Make inferences using text clues and background knowledge","Support an inference with evidence from the text"],"masteryCriteria":["Makes plausible inferences about feelings, motives and events","Supports inferences with quoted or paraphrased evidence","Distinguishes literal information from inferred meaning"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"phonics.s7.comprehension.inference-detective","title":"Inference Detective","skillId":"sk.phonics.s7.comprehension.inference-detective","minutes":20,"objectives":["Make inferences using text clues and background knowledge","Support an inference with evidence from the text"],"prerequisites":["Reads short passages independently"],"prerequisiteIds":[],"explanation":["Authors don't tell us everything. They leave clues. Inference means using those clues plus what you already know to work out what is not said.","Example: \"Riya stamped upstairs and slammed her door.\" The author never says \"angry\", but stamping and slamming are clues — and we know people do that when they are upset.","Good inference needs evidence. Say: \"I think… because the text says…\". A guess without a clue from the text is not an inference."],"context":[],"vocabulary":[{"term":"inference","meaning":"a conclusion reached from clues and knowledge"},{"term":"evidence","meaning":"words in the text that support an idea"},{"term":"motive","meaning":"the reason a character does something"},{"term":"literal","meaning":"exactly what the words say"}],"examples":["\"He shivered and pulled his scarf tighter\" → it is cold.","\"Her eyes sparkled as she unwrapped the box\" → she is excited or pleased."],"story":{"title":"The Muddy Footprints","text":"Detective Nova found muddy paw prints from the garden to the sofa, a chewed cushion, and a wagging tail sticking out from under a blanket. \"Nobody told me who did it,\" said Nova, \"but the clues tell me everything. The puppy has been in the garden — and is very pleased with itself!\""},"activities":[{"id":"phonics.s7.comprehension.inference-detective.a1","prompt":"\"Arjun yawned and rubbed his eyes.\" Arjun is probably…","kind":"choice","options":["hungry","tired","angry"],"answer":1},{"id":"phonics.s7.comprehension.inference-detective.a2","prompt":"Which shows an inference with evidence?","kind":"choice","options":["She is sad.","She is sad because the text says tears ran down her face.","I like sad stories."],"answer":1},{"id":"phonics.s7.comprehension.inference-detective.a3","prompt":"An inference must be supported by clues in the text.","kind":"truefalse","answer":true},{"id":"phonics.s7.comprehension.inference-detective.a4","prompt":"Match the clue to the inference","kind":"match","pairs":[["umbrellas everywhere","it is raining"],["smoke and sirens","there is a fire"],["wrapping paper on the floor","someone opened presents"]]}],"thinking":["Can two readers make different inferences from the same text? How would you decide which is better?","Why do authors \"show\" feelings instead of just telling us?"],"speaking":["Read a short story page and explain one inference to someone, using the sentence \"I think… because the text says…\"."],"project":{"kind":"project","title":"Inference Clue Cards","materials":["index cards","pens","a picture book"],"steps":["Find 5 sentences in a book that hint at a feeling or event without saying it","Copy each onto a card","Write your inference and the clue words on the back","Swap cards with a family member and compare inferences"]},"assessment":[{"id":"phonics.s7.comprehension.inference-detective.q1","prompt":"\"The dog's ears flattened and it hid behind the sofa during the thunder.\" The dog feels…","kind":"choice","options":["excited","scared","sleepy"],"answer":1},{"id":"phonics.s7.comprehension.inference-detective.q2","prompt":"If the text says \"Maya laughed until she cried\", we can infer Maya found something funny.","kind":"truefalse","answer":true},{"id":"phonics.s7.comprehension.inference-detective.q3","prompt":"Best evidence that a character is nervous:","kind":"choice","options":["She wore a blue dress.","Her hands shook as she held the microphone.","She lived in a big house."],"answer":1}],"mastery":["Makes plausible inferences about feelings, motives and events","Supports inferences with quoted or paraphrased evidence","Distinguishes literal information from inferred meaning"]}]}]},{"stage":"s9","overview":"Reading across genres: non-fiction structures, author's purpose, and evaluating sources.","goals":["Identify text structures and features of non-fiction","Determine author's purpose and viewpoint","Compare information across texts"],"units":[{"id":"phonics.s9.nonfiction","title":"Reading Non-Fiction","summary":"How information texts are organised and how to navigate them.","topics":[{"title":"Text features","subtopics":["headings","captions","diagrams","glossary"]},{"title":"Text structures","subtopics":["cause–effect","compare–contrast","problem–solution","sequence"]},{"title":"Note-making","subtopics":["key words","mind maps"]}],"objectives":["Identify common non-fiction text structures","Use structure and features to find and summarise information"],"masteryCriteria":["Identifies text structures using signal words","Uses features (contents, index, headings, glossary) efficiently","Summarises a non-fiction section accurately"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"phonics.s9.nonfiction.text-structures","title":"How Information Is Organised","skillId":"sk.phonics.s9.nonfiction.text-structures","minutes":30,"objectives":["Identify common non-fiction text structures","Use structure and features to find and summarise information"],"prerequisites":["Reads fluently and can summarise a paragraph"],"prerequisiteIds":[],"explanation":["Non-fiction writers organise ideas in patterns. Sequence explains steps or time order. Cause and effect explains why something happens. Compare and contrast shows similarities and differences. Problem and solution describes a problem and ways to solve it.","Signal words reveal the structure: \"first, then, finally\" (sequence); \"because, as a result, therefore\" (cause–effect); \"however, similarly, whereas\" (compare); \"one solution is\" (problem–solution).","Text features help navigation: headings tell you what a section is about, captions explain images, a glossary defines key words, and an index helps you find topics."],"context":[],"vocabulary":[{"term":"text structure","meaning":"the way information is organised"},{"term":"signal word","meaning":"a word that hints at the structure"},{"term":"glossary","meaning":"a list of key words and meanings"},{"term":"caption","meaning":"text explaining a picture"}],"examples":["\"Because forests were cut down, the soil washed away\" — cause and effect.","\"Frogs have smooth skin, whereas toads have bumpy skin\" — compare and contrast."],"story":{"title":"Lost in the Library Book","text":"Zuri needed to find out what tigers eat for a project. She started reading a 200-page book from page one. Nova showed her the index: \"Tigers, diet — page 43.\" Then the heading \"What Tigers Eat\" and a diagram of a food chain. Zuri found her answer in two minutes."},"activities":[{"id":"phonics.s9.nonfiction.text-structures.a1","prompt":"Match signal words to structure","kind":"match","pairs":[["first, next, finally","sequence"],["because, as a result","cause and effect"],["whereas, however","compare and contrast"]]},{"id":"phonics.s9.nonfiction.text-structures.a2","prompt":"A list of key words and their meanings at the back of a book is a…","kind":"choice","options":["caption","glossary","heading"],"answer":1},{"id":"phonics.s9.nonfiction.text-structures.a3","prompt":"\"Plastic harms sea turtles. One solution is to use cloth bags.\" Structure?","kind":"choice","options":["sequence","problem and solution","compare and contrast"],"answer":1},{"id":"phonics.s9.nonfiction.text-structures.a4","prompt":"Headings help readers find information quickly.","kind":"truefalse","answer":true}],"thinking":["Why might an author choose compare–contrast instead of cause–effect for the same topic?","How can text features sometimes mislead a reader (e.g. a dramatic photo)?"],"speaking":["Explain to someone how you would find one fact in a non-fiction book in under two minutes."],"project":{"kind":"project","title":"Make a Mini Information Book","materials":["paper","stapler","pencils","reference books"],"steps":["Choose a topic you know well","Plan sections with headings","Use at least two structures (e.g. sequence and compare–contrast)","Add captions, a glossary and a contents page","Ask a reader to find a fact using your features"]},"assessment":[{"id":"phonics.s9.nonfiction.text-structures.q1","prompt":"\"Water heats, then evaporates, then forms clouds.\" Structure?","kind":"choice","options":["sequence","problem–solution","compare–contrast"],"answer":0},{"id":"phonics.s9.nonfiction.text-structures.q2","prompt":"Which signal word suggests cause and effect?","kind":"choice","options":["similarly","therefore","first"],"answer":1},{"id":"phonics.s9.nonfiction.text-structures.q3","prompt":"An index is usually at the front of a book.","why":"The contents page is at the front; the index is usually at the back.","kind":"truefalse","answer":false}],"mastery":["Identifies text structures using signal words","Uses features (contents, index, headings, glossary) efficiently","Summarises a non-fiction section accurately"]}]},{"id":"phonics.s9.purpose-viewpoint","title":"Author's Purpose and Viewpoint","summary":"Why was this written, and from whose point of view?","topics":[{"title":"Purpose","subtopics":["inform","persuade","entertain","explain"]},{"title":"Viewpoint","subtopics":["fact vs opinion","bias"]},{"title":"Comparing texts","subtopics":["same topic","different accounts"]}],"objectives":["Distinguish facts from opinions in texts","Identify the author's purpose and viewpoint"],"masteryCriteria":["Separates fact from opinion with justification","Identifies purpose and viewpoint in varied texts","Compares two accounts and explains differences"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"phonics.s9.purpose-viewpoint.fact-opinion","title":"Fact, Opinion and Purpose","skillId":"sk.phonics.s9.purpose-viewpoint.fact-opinion","minutes":30,"objectives":["Distinguish facts from opinions in texts","Identify the author's purpose and viewpoint"],"prerequisites":["Understands basic non-fiction structures"],"prerequisiteIds":[],"explanation":["A fact can be checked and shown to be true or false: \"The Ganga flows into the Bay of Bengal.\" An opinion is what someone thinks or feels: \"The Ganga is the most beautiful river.\" Opinions can be reasonable or unreasonable, but they cannot be proven true like facts.","Authors write for a purpose: to inform, persuade, entertain or explain. Persuasive texts mix facts with opinions and use emotive words to influence you.","Every author has a viewpoint. Ask: Who wrote this? Why? What did they leave out? Comparing two accounts of the same event reveals different viewpoints."],"context":[],"vocabulary":[{"term":"fact","meaning":"a statement that can be checked"},{"term":"opinion","meaning":"a belief or judgement"},{"term":"bias","meaning":"leaning unfairly to one side"},{"term":"persuade","meaning":"try to make someone agree or act"}],"examples":["Advert: \"Crunchy-O's — the tastiest cereal ever!\" (opinion, persuade).","Encyclopedia: \"Cheetahs can reach speeds of over 100 km/h in short bursts.\" (fact, inform)."],"story":{"title":"Two Reports of the Match","text":"After the school football final, two newspapers reported it. The Red Times wrote: \"Brilliant Reds deservedly win 2–1!\" The Blue Gazette wrote: \"Unlucky Blues lose 2–1 after a dubious penalty.\" Kiko noticed: both agreed on the score — the fact — but told very different stories."},"activities":[{"id":"phonics.s9.purpose-viewpoint.fact-opinion.a1","prompt":"Which is a FACT?","kind":"choice","options":["Mangoes are the best fruit.","Mangoes grow on trees.","Mangoes are too sweet."],"answer":1},{"id":"phonics.s9.purpose-viewpoint.fact-opinion.a2","prompt":"Match text to purpose","kind":"match","pairs":[["advertisement","persuade"],["recipe","explain how"],["joke book","entertain"],["encyclopedia","inform"]]},{"id":"phonics.s9.purpose-viewpoint.fact-opinion.a3","prompt":"A text can contain both facts and opinions.","kind":"truefalse","answer":true},{"id":"phonics.s9.purpose-viewpoint.fact-opinion.a4","prompt":"Which word signals an opinion?","kind":"choice","options":["measured","wonderful","located"],"answer":1}],"thinking":["Is \"Most people in my class like cricket\" a fact or an opinion? How could you check?","Why might an author leave out certain facts?"],"speaking":["Find an advertisement and explain to someone which parts are facts and which are opinions, and what it wants you to do."],"project":{"kind":"project","title":"Two Sides Newspaper","materials":["paper","pens"],"steps":["Pick a simple event (e.g. \"the new park opens\")","Write a short neutral report with only facts","Rewrite it twice: once strongly for, once strongly against","Highlight opinion words in each version","Present them and explain how viewpoint changes the story"]},"assessment":[{"id":"phonics.s9.purpose-viewpoint.fact-opinion.q1","prompt":"\"Delhi is the capital of India.\" This is…","kind":"choice","options":["a fact","an opinion"],"answer":0},{"id":"phonics.s9.purpose-viewpoint.fact-opinion.q2","prompt":"A leaflet saying \"Join the best club in town!\" mainly wants to…","kind":"choice","options":["entertain","inform","persuade"],"answer":2},{"id":"phonics.s9.purpose-viewpoint.fact-opinion.q3","prompt":"Opinions can always be proven true.","kind":"truefalse","answer":false}],"mastery":["Separates fact from opinion with justification","Identifies purpose and viewpoint in varied texts","Compares two accounts and explains differences"]}]}]},{"stage":"s12","overview":"Critical and analytical reading: rhetoric, argument evaluation, and close reading of literature.","goals":["Analyse rhetorical techniques","Evaluate arguments and evidence","Close-read literary texts for theme and craft"],"units":[{"id":"phonics.s12.rhetoric","title":"Rhetoric and Argument","summary":"How texts persuade, and how to evaluate whether they should.","topics":[{"title":"Rhetorical appeals","subtopics":["ethos","pathos","logos"]},{"title":"Techniques","subtopics":["repetition","rhetorical questions","tricolon"]},{"title":"Fallacies","subtopics":["ad hominem","straw man","false dilemma"]}],"objectives":["Identify the three classical rhetorical appeals","Evaluate whether an argument's evidence and reasoning are sound"],"masteryCriteria":["Identifies appeals and techniques in unfamiliar texts","Detects common fallacies and explains why they are flawed","Writes a balanced evaluation of an argument's effectiveness and soundness"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"phonics.s12.rhetoric.ethos-pathos-logos","title":"Ethos, Pathos, Logos","skillId":"sk.phonics.s12.rhetoric.ethos-pathos-logos","minutes":40,"objectives":["Identify the three classical rhetorical appeals","Evaluate whether an argument's evidence and reasoning are sound"],"prerequisites":["Can identify fact, opinion and purpose"],"prerequisiteIds":[],"explanation":["Aristotle described three modes of persuasion: ethos (credibility of the speaker), pathos (appeal to emotion), and logos (appeal to logic and evidence). Most persuasive texts mix all three.","Rhetorical techniques include repetition, rhetorical questions, triads (\"tricolon\"), and vivid imagery. Recognising them helps you notice when you are being moved — and decide if you should be.","A strong argument has true premises and valid reasoning. Watch for fallacies: attacking the person instead of the argument (ad hominem), misrepresenting an opposing view (straw man), or presenting only two options when more exist (false dilemma)."],"context":[{"kind":"evidence","text":"The ethos–pathos–logos framework comes from Aristotle's \"Rhetoric\", written in the 4th century BCE."}],"vocabulary":[{"term":"ethos","meaning":"persuasion through credibility"},{"term":"pathos","meaning":"persuasion through emotion"},{"term":"logos","meaning":"persuasion through logic and evidence"},{"term":"fallacy","meaning":"a flaw in reasoning that makes an argument unsound"}],"examples":["\"As a doctor with 20 years' experience…\" — ethos.","\"Either we ban all cars or the planet is doomed.\" — false dilemma."],"story":{"title":"The School Debate","text":"In a debate about longer lunch breaks, Meera said, \"Ninety percent of students surveyed reported feeling tired after lunch-rush.\" Her opponent replied, \"Meera just wants to play more football.\" The judge noted: Meera used logos; her opponent used an ad hominem attack — which didn't answer her evidence at all."},"activities":[{"id":"phonics.s12.rhetoric.ethos-pathos-logos.a1","prompt":"Match the example to the appeal","kind":"match","pairs":[["statistics from a study","logos"],["a heartbreaking photo","pathos"],["endorsement by an expert","ethos"]]},{"id":"phonics.s12.rhetoric.ethos-pathos-logos.a2","prompt":"\"You can't trust his idea about recycling — he failed maths.\" This is…","kind":"choice","options":["straw man","ad hominem","false dilemma"],"answer":1},{"id":"phonics.s12.rhetoric.ethos-pathos-logos.a3","prompt":"An emotional appeal is always a fallacy.","why":"Pathos can be legitimate when emotions fit the facts.","kind":"truefalse","answer":false},{"id":"phonics.s12.rhetoric.ethos-pathos-logos.a4","prompt":"Which is a false dilemma?","kind":"choice","options":["\"You're either with us or against us.\"","\"Studies show sleep improves memory.\"","\"I have taught for ten years.\""],"answer":0}],"thinking":["When is an emotional appeal fair, and when is it manipulative?","Can an argument use a fallacy and still reach a true conclusion?"],"speaking":["Give a one-minute persuasive speech using all three appeals, then ask listeners to identify each one."],"project":{"kind":"project","title":"Rhetoric Annotation Project","materials":["a printed famous speech or editorial","highlighters"],"steps":["Choose a speech or op-ed","Highlight ethos, pathos and logos in three colours","Mark rhetorical techniques in the margin","Identify any fallacies","Write a 300-word evaluation of how convincing it is and why"]},"assessment":[{"id":"phonics.s12.rhetoric.ethos-pathos-logos.q1","prompt":"\"Nine out of ten dentists recommend…\" mainly uses…","kind":"choice","options":["pathos","ethos and logos","ad hominem"],"answer":1},{"id":"phonics.s12.rhetoric.ethos-pathos-logos.q2","prompt":"Misrepresenting an opponent's view to attack it easily is a…","kind":"choice","options":["straw man","ad hominem","tricolon"],"answer":0},{"id":"phonics.s12.rhetoric.ethos-pathos-logos.q3","prompt":"A valid argument with a false premise can still lead to a false conclusion.","kind":"truefalse","answer":true}],"mastery":["Identifies appeals and techniques in unfamiliar texts","Detects common fallacies and explains why they are flawed","Writes a balanced evaluation of an argument's effectiveness and soundness"]}]},{"id":"phonics.s12.close-reading","title":"Close Reading Literature","summary":"How writers create meaning through language, structure and form.","topics":[{"title":"Language","subtopics":["imagery","metaphor","connotation"]},{"title":"Structure","subtopics":["perspective","pacing","foreshadowing"]},{"title":"Theme","subtopics":["universal ideas and evidence"]}],"objectives":["Analyse how specific word choices create effects","Develop and support an interpretation of theme"],"masteryCriteria":["Analyses language and structure with precise terminology","Formulates arguable theme statements","Writes sustained interpretations supported by evidence"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"phonics.s12.close-reading.craft-and-theme","title":"Craft and Theme","skillId":"sk.phonics.s12.close-reading.craft-and-theme","minutes":40,"objectives":["Analyse how specific word choices create effects","Develop and support an interpretation of theme"],"prerequisites":["Can infer and support inferences with evidence"],"prerequisiteIds":[],"explanation":["Close reading means slowing down to notice how a writer creates meaning. Word choice matters: \"the house loomed\" suggests threat in a way \"the house stood\" does not. That suggestion is the word's connotation.","Writers shape structure too: who narrates, what is revealed when, and how pacing speeds up or slows down. Foreshadowing plants hints of later events.","A theme is a central idea about life the text explores — not just a topic. \"Friendship\" is a topic; \"true friendship requires honesty even when it hurts\" is a theme. Support interpretations with precise evidence and explanation (point–evidence–explain)."],"context":[],"vocabulary":[{"term":"connotation","meaning":"the feelings or ideas a word suggests beyond its literal meaning"},{"term":"foreshadowing","meaning":"hints of what will happen later"},{"term":"theme","meaning":"a central message or insight about life"},{"term":"imagery","meaning":"language that appeals to the senses"}],"examples":["\"Her voice was ice\" (metaphor) suggests coldness and distance.","Point: the narrator is lonely. Evidence: \"the empty chairs stared back\". Explain: personifying chairs emphasises her isolation."],"story":{"title":"The Same Storm","text":"Two students described the same storm. One wrote: \"It rained heavily.\" The other wrote: \"The sky split open and the rain came down like a punishment.\" Their teacher asked the class: \"What does the second writer want you to feel — and how did they do it in eleven words?\""},"activities":[{"id":"phonics.s12.close-reading.craft-and-theme.a1","prompt":"\"The shadows crept across the floor.\" The verb \"crept\" suggests…","kind":"choice","options":["something slow and threatening","happiness","speed"],"answer":0},{"id":"phonics.s12.close-reading.craft-and-theme.a2","prompt":"A theme is the same thing as the topic of a story.","why":"A theme is an insight or message about the topic.","kind":"truefalse","answer":false},{"id":"phonics.s12.close-reading.craft-and-theme.a3","prompt":"Order the analysis paragraph","kind":"order","items":["Point: make a claim","Evidence: quote the text","Explain: analyse how the evidence supports the claim"]},{"id":"phonics.s12.close-reading.craft-and-theme.a4","prompt":"Match the device to the example","kind":"match","pairs":[["simile","as brave as a lion"],["metaphor","the classroom was a zoo"],["personification","the wind whispered"]]}],"thinking":["Can a text have a theme the author did not intend? Who decides what a text means?","Why might a writer tell a story from an unreliable narrator's point of view?"],"speaking":["Present a two-minute close reading of a single paragraph from a novel, focusing on three word choices."],"project":{"kind":"project","title":"Close Reading Essay","materials":["a short story or novel chapter","notebook"],"steps":["Choose a passage of about 200 words","Annotate imagery, connotation and structure","Formulate a theme statement","Write a 500-word essay using point–evidence–explain","Revise after reading it aloud"]},"assessment":[{"id":"phonics.s12.close-reading.craft-and-theme.q1","prompt":"Which is a theme statement?","kind":"choice","options":["War","War destroys innocence even in those who survive it.","A story about soldiers"],"answer":1},{"id":"phonics.s12.close-reading.craft-and-theme.q2","prompt":"A hint early in a story about a later event is…","kind":"choice","options":["imagery","foreshadowing","connotation"],"answer":1},{"id":"phonics.s12.close-reading.craft-and-theme.q3","prompt":"In close reading, explaining the effect of evidence matters as much as quoting it.","kind":"truefalse","answer":true}],"mastery":["Analyses language and structure with precise terminology","Formulates arguable theme statements","Writes sustained interpretations supported by evidence"]}]}]}]}
+{
+  "schemaVersion": 1,
+  "id": "phonics",
+  "worldId": "word-woods",
+  "title": "Phonics & Reading",
+  "icon": "🔤",
+  "tagline": "Sounds become words",
+  "description": "From hearing sounds in words to fluent, thoughtful reading. Systematic synthetic phonics in the early stages (sounds → blending → decodable words), then fluency, comprehension strategies, and finally critical reading of complex texts.",
+  "contentVersion": "1.0.0",
+  "sensitivity": "none",
+  "stages": [
+    {
+      "stage": "s4",
+      "overview": "Tuning in to sounds: rhyme, first sounds, and the first letter–sound links.",
+      "goals": [
+        "Hear and make rhymes",
+        "Hear the first sound in a spoken word",
+        "Link the sounds s, a, t, p, i, n to their letters"
+      ],
+      "units": [
+        {
+          "id": "phonics.s4.sound-ears",
+          "title": "Listening Ears",
+          "summary": "Words are made of sounds we can hear and play with.",
+          "topics": [
+            {
+              "title": "Rhyme",
+              "subtopics": [
+                "hearing and making rhymes"
+              ]
+            },
+            {
+              "title": "First sounds",
+              "subtopics": [
+                "I-spy with sounds"
+              ]
+            },
+            {
+              "title": "Syllables",
+              "subtopics": [
+                "clapping word beats"
+              ]
+            }
+          ],
+          "objectives": [
+            "Hear the first sound in a spoken word",
+            "Find objects that start with the same sound"
+          ],
+          "masteryCriteria": [
+            "Identifies the first sound in spoken words reliably",
+            "Sorts objects or pictures by first sound",
+            "Produces a word with a given first sound"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s4.sound-ears.first-sounds",
+              "title": "What Sound Does It Start With?",
+              "skillId": "sk.phonics.s4.sound-ears.first-sounds",
+              "minutes": 8,
+              "objectives": [
+                "Hear the first sound in a spoken word",
+                "Find objects that start with the same sound"
+              ],
+              "prerequisites": [
+                "Can listen to and repeat short words"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Every word we say is made of sounds. \"Sun\" starts with a hissing snake sound: sss. \"Mango\" starts with a humming sound: mmm.",
+                "We are listening for the SOUND, not the letter name. The sound of s is \"sss\", not \"ess\". Stretch the start of a word to hear it: \"sssun\".",
+                "Words can share a first sound: sun, sock and sandwich all start with sss. Playing \"I spy something beginning with mmm\" trains your listening ears."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "sound",
+                  "meaning": "what we hear when we say part of a word"
+                },
+                {
+                  "term": "first sound",
+                  "meaning": "the sound at the very start of a word"
+                },
+                {
+                  "term": "rhyme",
+                  "meaning": "words that end with the same sound, like cat and hat"
+                }
+              ],
+              "examples": [
+                "Ball, bat and bus all start with b.",
+                "Moon and mango start with mmm; sun does not."
+              ],
+              "story": {
+                "title": "Olu's Sound Basket",
+                "text": "Olu the owl had a basket for things starting with sss. Kiko brought a sock — in it went! Then a spoon — in it went! Then Kiko brought a banana. \"Bbb-banana,\" Olu listened. \"That starts with bbb, not sss. It needs the b-basket!\" Kiko laughed and made a second basket."
+              },
+              "activities": [
+                {
+                  "id": "phonics.s4.sound-ears.first-sounds.a1",
+                  "prompt": "Which starts with the same sound as SUN ☀️?",
+                  "kind": "choice",
+                  "options": [
+                    "sock 🧦",
+                    "ball ⚽",
+                    "moon 🌙"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s4.sound-ears.first-sounds.a2",
+                  "prompt": "Which starts with mmm?",
+                  "kind": "choice",
+                  "options": [
+                    "fish 🐟",
+                    "mango 🥭",
+                    "tiger 🐯"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s4.sound-ears.first-sounds.a3",
+                  "prompt": "Match the pictures that start with the same sound",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "🐝 bee",
+                      "⚽ ball"
+                    ],
+                    [
+                      "🐟 fish",
+                      "🦊 fox"
+                    ],
+                    [
+                      "🐍 snake",
+                      "🧦 sock"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s4.sound-ears.first-sounds.a4",
+                  "prompt": "Cat and cup start with the same sound.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Does your name start with the same sound as anyone else's in your family?",
+                "Why do you think we stretch the first sound when we listen?"
+              ],
+              "speaking": [
+                "Play I-spy with a grown-up using sounds: \"I spy something beginning with…\" and explain your clue."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Sound Treasure Hunt",
+                "materials": [
+                  "a bag or basket",
+                  "objects around the house"
+                ],
+                "steps": [
+                  "Pick a sound, like sss or mmm",
+                  "Hunt for 5 things that start with that sound",
+                  "Say each word, stretching the first sound",
+                  "Put a wrong one in the basket and see if a grown-up can find it"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s4.sound-ears.first-sounds.q1",
+                  "prompt": "Which starts like DOG 🐶?",
+                  "kind": "choice",
+                  "options": [
+                    "cat 🐱",
+                    "duck 🦆",
+                    "pig 🐷"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s4.sound-ears.first-sounds.q2",
+                  "prompt": "Ball and bat start with the same sound.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "phonics.s4.sound-ears.first-sounds.q3",
+                  "prompt": "Which starts with sss?",
+                  "kind": "choice",
+                  "options": [
+                    "sun ☀️",
+                    "pen 🖊️",
+                    "top 🔝"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Identifies the first sound in spoken words reliably",
+                "Sorts objects or pictures by first sound",
+                "Produces a word with a given first sound"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phonics.s4.first-letters",
+          "title": "Letter Sounds and First Words",
+          "summary": "Each letter shape stands for a sound, and two sounds can already make a word.",
+          "topics": [
+            {
+              "title": "Letter sounds",
+              "subtopics": [
+                "a to z (the sound",
+                "not the name)"
+              ]
+            },
+            {
+              "title": "Tricky sounds",
+              "subtopics": [
+                "b",
+                "d",
+                "g",
+                "p",
+                "t without \"uh\""
+              ]
+            },
+            {
+              "title": "2-letter words",
+              "subtopics": [
+                "at",
+                "in",
+                "up",
+                "on",
+                "it"
+              ]
+            },
+            {
+              "title": "Oral blending",
+              "subtopics": [
+                "a-t → at"
+              ]
+            }
+          ],
+          "objectives": [
+            "Say the sound (not the name) for each letter a to z",
+            "Blend two sounds into a word: a-t → at, i-n → in, u-p → up"
+          ],
+          "masteryCriteria": [
+            "Says the sound for each letter on sight (IVU Reads Level 0)",
+            "Says b, d, g, p, t without adding \"uh\"",
+            "Reads 2-letter words such as at, in, up, on (IVU Reads Level 1)"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s4.first-letters.satpin",
+              "title": "Letters Make Sounds",
+              "skillId": "sk.phonics.s4.first-letters.satpin",
+              "minutes": 8,
+              "objectives": [
+                "Say the sound (not the name) for each letter a to z",
+                "Blend two sounds into a word: a-t → at, i-n → in, u-p → up"
+              ],
+              "prerequisites": [
+                "Can hear the first sound in a word"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Letters are shapes that stand for sounds. We say the SOUND, not the letter name: s says \"sss\" like a snake, m says \"mmm\" like yummy food, a says \"a\" as in apple.",
+                "Short sounds like b, d, g, p and t are said quickly and cleanly, with no \"uh\" after them: \"b\", not \"buh\". This makes blending much easier later.",
+                "Blending means pushing sounds together to make a word. Start with just two sounds: a… t… a-t… at! i… n… in! u… p… up! This is exactly how IVU Reads starts too (Levels 0 and 1)."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "letter",
+                  "meaning": "a written shape for a sound"
+                },
+                {
+                  "term": "sound",
+                  "meaning": "what the letter says, like \"sss\" for s"
+                },
+                {
+                  "term": "blend",
+                  "meaning": "push sounds together to say a word"
+                },
+                {
+                  "term": "sound buttons",
+                  "meaning": "touching under each letter as you say its sound"
+                }
+              ],
+              "examples": [
+                "a-t blends to at; i-n blends to in.",
+                "u-p blends to up; o-n blends to on."
+              ],
+              "story": {
+                "title": "The Little Red Car",
+                "text": "Ivaan's little red car drove along a road of letters. At the a it said \"a!\", and at the t it said \"t!\" Then it drove faster and faster — a-t, a-t — until the two sounds bumped together: \"at!\" \"I made a word!\" Ivaan cheered. The car beeped and drove off to find i and n."
+              },
+              "activities": [
+                {
+                  "id": "phonics.s4.first-letters.satpin.a1",
+                  "prompt": "Blend: a – t",
+                  "kind": "choice",
+                  "options": [
+                    "at",
+                    "up",
+                    "in"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s4.first-letters.satpin.a2",
+                  "prompt": "Blend: u – p",
+                  "kind": "choice",
+                  "options": [
+                    "on",
+                    "up",
+                    "it"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s4.first-letters.satpin.a3",
+                  "prompt": "Match the letter to its picture",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "a",
+                      "🍎 apple"
+                    ],
+                    [
+                      "s",
+                      "☀️ sun"
+                    ],
+                    [
+                      "m",
+                      "🐒 monkey"
+                    ],
+                    [
+                      "d",
+                      "🐶 dog"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s4.first-letters.satpin.a4",
+                  "prompt": "Which is the sound of s?",
+                  "kind": "choice",
+                  "options": [
+                    "\"sss\" like a snake",
+                    "\"ess\"",
+                    "\"buh\""
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why do we say \"sss\" and not \"ess\" when we read?",
+                "Can you think of a word that starts with the sound \"mmm\"?"
+              ],
+              "speaking": [
+                "Read \"at\", \"in\" and \"up\" to a grown-up by touching each letter as you say its sound, then saying the whole word."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Sandy Letters",
+                "materials": [
+                  "a tray with sand",
+                  "salt or flour",
+                  "letter cards"
+                ],
+                "steps": [
+                  "Look at a letter card and say its sound",
+                  "Draw the letter in the sand with your finger",
+                  "Say the sound again as you draw",
+                  "Put two letters side by side and blend them into a word like \"at\" or \"in\""
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s4.first-letters.satpin.q1",
+                  "prompt": "Blend: i – n",
+                  "kind": "choice",
+                  "options": [
+                    "in",
+                    "on",
+                    "at"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s4.first-letters.satpin.q2",
+                  "prompt": "Which letter says \"mmm\"?",
+                  "kind": "choice",
+                  "options": [
+                    "a",
+                    "m",
+                    "t"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s4.first-letters.satpin.q3",
+                  "prompt": "How many sounds in \"it\"? 🔵🔵",
+                  "kind": "count",
+                  "answer": 2
+                }
+              ],
+              "mastery": [
+                "Says the sound for each letter on sight (IVU Reads Level 0)",
+                "Says b, d, g, p, t without adding \"uh\"",
+                "Reads 2-letter words such as at, in, up, on (IVU Reads Level 1)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s5",
+      "overview": "Reading simple words, sentences and first stories: short vowels, sound pairs, star words and decodable stories (IVU Reads Levels 2–12).",
+      "goals": [
+        "Read 3-letter words with every short vowel",
+        "Read sh, ch, th and ck words and star (sight) words",
+        "Read phrases, sentences and short decodable stories"
+      ],
+      "units": [
+        {
+          "id": "phonics.s5.cvc-words",
+          "title": "Reading 3-Letter Words",
+          "summary": "Sound out and blend consonant–vowel–consonant words.",
+          "topics": [
+            {
+              "title": "Short a",
+              "subtopics": [
+                "cat",
+                "map",
+                "van"
+              ]
+            },
+            {
+              "title": "Short i and o",
+              "subtopics": [
+                "pig",
+                "dog",
+                "hot"
+              ]
+            },
+            {
+              "title": "Short u and e",
+              "subtopics": [
+                "sun",
+                "bus",
+                "bed",
+                "hen"
+              ]
+            },
+            {
+              "title": "Segmenting",
+              "subtopics": [
+                "hearing each sound for spelling"
+              ]
+            }
+          ],
+          "objectives": [
+            "Read 3-letter words with all five short vowels",
+            "Segment spoken 3-letter words into three sounds"
+          ],
+          "masteryCriteria": [
+            "Reads short a, i, o, u and e words accurately (IVU Reads Levels 2–4)",
+            "Spells 3-letter words by segmenting",
+            "Explains what changing the vowel does"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s5.cvc-words.vowel-sandwich",
+              "title": "The Vowel in the Middle",
+              "skillId": "sk.phonics.s5.cvc-words.vowel-sandwich",
+              "minutes": 10,
+              "objectives": [
+                "Read 3-letter words with all five short vowels",
+                "Segment spoken 3-letter words into three sounds"
+              ],
+              "prerequisites": [
+                "Knows the letter sounds and reads 2-letter words"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Many short words are like a sandwich: a consonant, a vowel in the middle, and a consonant — like c-a-t or d-o-g. We call them CVC words.",
+                "The five vowels a, e, i, o, u are the \"filling\". Learn them in order: short a (cat, map, van), then short i and o (pig, dog, hot), then short u and e (sun, bus, bed, hen) — the same order as IVU Reads Levels 2, 3 and 4.",
+                "To read, say each sound and blend: c… a… t… cat! To spell, do the opposite: say the word slowly and write a letter for each sound you hear. That is called segmenting."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "vowel",
+                  "meaning": "one of the letters a, e, i, o, u"
+                },
+                {
+                  "term": "consonant",
+                  "meaning": "any letter that is not a vowel"
+                },
+                {
+                  "term": "CVC word",
+                  "meaning": "consonant, vowel, consonant, like cat"
+                },
+                {
+                  "term": "segment",
+                  "meaning": "split a word into its sounds"
+                }
+              ],
+              "examples": [
+                "c-a-t → cat; p-i-g → pig; b-u-s → bus.",
+                "Changing the vowel: hat → hit → hot → hut."
+              ],
+              "story": {
+                "title": "The Magic Middle",
+                "text": "Rangi the chameleon could change colour — and words! Rangi sat on the word \"hat\" and turned purple: it became \"hit\". Rangi turned blue: \"hot\". Then orange: \"hut\". \"I only changed the middle sound,\" Rangi giggled, \"but each time I made a new word!\""
+              },
+              "activities": [
+                {
+                  "id": "phonics.s5.cvc-words.vowel-sandwich.a1",
+                  "prompt": "Read: d – o – g",
+                  "kind": "choice",
+                  "options": [
+                    "dig",
+                    "dog",
+                    "dug"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s5.cvc-words.vowel-sandwich.a2",
+                  "prompt": "Match the word to the picture",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "sun",
+                      "☀️"
+                    ],
+                    [
+                      "bed",
+                      "🛏️"
+                    ],
+                    [
+                      "cat",
+                      "🐱"
+                    ],
+                    [
+                      "bus",
+                      "🚌"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s5.cvc-words.vowel-sandwich.a3",
+                  "prompt": "Which word has the sound \"e\" in the middle?",
+                  "kind": "choice",
+                  "options": [
+                    "pin",
+                    "pen",
+                    "pan"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s5.cvc-words.vowel-sandwich.a4",
+                  "prompt": "Put the sounds in order to make \"map\"",
+                  "kind": "order",
+                  "items": [
+                    "m",
+                    "a",
+                    "p"
+                  ]
+                }
+              ],
+              "thinking": [
+                "How many new words can you make by changing only the middle sound of \"hat\"?",
+                "Why are vowels important in almost every word?"
+              ],
+              "speaking": [
+                "Read five 3-letter words to a grown-up, then explain how you worked out the hardest one."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Word Slider",
+                "materials": [
+                  "card strips",
+                  "scissors",
+                  "pen"
+                ],
+                "steps": [
+                  "Write a start letter and an end letter on a card with a gap",
+                  "Make a strip of vowels a e i o u",
+                  "Slide the strip through the gap",
+                  "Read each word and decide if it is a real word or a silly word"
+                ],
+                "safety": "Use child-safe scissors with adult supervision. Adults should handle any sharp cutting tools and keep small pieces away from younger children."
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s5.cvc-words.vowel-sandwich.q1",
+                  "prompt": "Read: h – e – n",
+                  "kind": "choice",
+                  "options": [
+                    "hen",
+                    "hat",
+                    "hot"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s5.cvc-words.vowel-sandwich.q2",
+                  "prompt": "Which picture matches \"pig\"?",
+                  "kind": "choice",
+                  "options": [
+                    "🐷",
+                    "🐶",
+                    "🐮"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s5.cvc-words.vowel-sandwich.q3",
+                  "prompt": "How many sounds in \"dog\"? 🔵🔵🔵",
+                  "kind": "count",
+                  "answer": 3
+                }
+              ],
+              "mastery": [
+                "Reads short a, i, o, u and e words accurately (IVU Reads Levels 2–4)",
+                "Spells 3-letter words by segmenting",
+                "Explains what changing the vowel does"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phonics.s5.digraphs",
+          "title": "Sound Pairs and Star Words",
+          "summary": "Some sounds are written with two letters, and some words we just know.",
+          "topics": [
+            {
+              "title": "Sound pairs",
+              "subtopics": [
+                "sh",
+                "ch",
+                "th",
+                "ck"
+              ]
+            },
+            {
+              "title": "4-letter words",
+              "subtopics": [
+                "frog",
+                "jump",
+                "hand"
+              ]
+            },
+            {
+              "title": "Star (sight) words",
+              "subtopics": [
+                "the",
+                "a",
+                "I",
+                "is",
+                "to",
+                "was",
+                "said"
+              ]
+            },
+            {
+              "title": "Sentences",
+              "subtopics": [
+                "reading with finger tracking"
+              ]
+            }
+          ],
+          "objectives": [
+            "Read words containing sh, ch, th and ck",
+            "Recognise that two letters can make one sound, and know the first star words"
+          ],
+          "masteryCriteria": [
+            "Reads words with sh, ch, th and ck (IVU Reads Level 5)",
+            "Counts sounds (not letters) correctly in digraph words",
+            "Reads the first star words on sight (IVU Reads Level 7)"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s5.digraphs.sh-ch-th",
+              "title": "sh, ch, th and ck",
+              "skillId": "sk.phonics.s5.digraphs.sh-ch-th",
+              "minutes": 10,
+              "objectives": [
+                "Read words containing sh, ch, th and ck",
+                "Recognise that two letters can make one sound, and know the first star words"
+              ],
+              "prerequisites": [
+                "Reads 3-letter words"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Sometimes two letters work together to make ONE sound. We call them a sound pair (or digraph). s and h together say \"sh\", like a quiet finger on your lips: ship, fish, shop.",
+                "c and h say \"ch\" like a train: chin, chip, chop. t and h say \"th\" — stick your tongue out a little: thin, bath, moth. c and k together say just \"k\": duck, sock, rock.",
+                "Star words (sight words) like \"the\", \"said\" and \"was\" don't follow the usual rules, so we learn them by heart. IVU Reads practises these in Levels 5 to 7."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "digraph",
+                  "meaning": "two letters that make one sound"
+                },
+                {
+                  "term": "sound button",
+                  "meaning": "a dot under the letters for each sound"
+                },
+                {
+                  "term": "star word",
+                  "meaning": "a word we learn by sight, like \"the\" or \"said\""
+                }
+              ],
+              "examples": [
+                "sh: ship, fish, shop; ch: chin, chip.",
+                "th: thin, bath; ck: duck, sock, rock."
+              ],
+              "story": {
+                "title": "The Quiet Ship",
+                "text": "A big ship sailed past the harbour. \"SHHH!\" said Momo the bear. \"The baby fish are sleeping.\" Everyone whispered. \"Sh is the sleeping sound,\" said Momo. When the fish woke up, a duck went quack and the little fish swam off — ch-ch-ch — like a train."
+              },
+              "activities": [
+                {
+                  "id": "phonics.s5.digraphs.sh-ch-th.a1",
+                  "prompt": "Which word has \"sh\"?",
+                  "kind": "choice",
+                  "options": [
+                    "chin",
+                    "shop",
+                    "thin"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s5.digraphs.sh-ch-th.a2",
+                  "prompt": "How many SOUNDS in \"fish\"? f-i-sh 🔵🔵🔵",
+                  "why": "sh is two letters but one sound.",
+                  "kind": "count",
+                  "answer": 3
+                },
+                {
+                  "id": "phonics.s5.digraphs.sh-ch-th.a3",
+                  "prompt": "Match",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "ship",
+                      "🚢"
+                    ],
+                    [
+                      "duck",
+                      "🦆"
+                    ],
+                    [
+                      "bath",
+                      "🛁"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s5.digraphs.sh-ch-th.a4",
+                  "prompt": "In \"chip\", c and h make one sound together.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Why can't we just read \"s\" then \"h\" in ship? What would it sound like?",
+                "Why do you think some words are \"star words\" that we learn by heart?"
+              ],
+              "speaking": [
+                "Teach a grown-up the actions for sh (finger on lips), ch (train) and th (tongue out), and read one word for each."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Digraph Fishing Game",
+                "materials": [
+                  "paper fish shapes",
+                  "paper clips",
+                  "a stick with string and a magnet (or just tongs)",
+                  "pen"
+                ],
+                "steps": [
+                  "Write a word with sh, ch, th or ck on each fish",
+                  "Add a paper clip to each",
+                  "Fish one out",
+                  "Read it, then sort it into the right pond"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s5.digraphs.sh-ch-th.q1",
+                  "prompt": "Which word starts with \"ch\"?",
+                  "kind": "choice",
+                  "options": [
+                    "ship",
+                    "chop",
+                    "thin"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s5.digraphs.sh-ch-th.q2",
+                  "prompt": "How many sounds in \"duck\"? 🔵🔵🔵",
+                  "kind": "count",
+                  "answer": 3
+                },
+                {
+                  "id": "phonics.s5.digraphs.sh-ch-th.q3",
+                  "prompt": "\"th\" is in…",
+                  "kind": "choice",
+                  "options": [
+                    "chip",
+                    "thin",
+                    "shed"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "mastery": [
+                "Reads words with sh, ch, th and ck (IVU Reads Level 5)",
+                "Counts sounds (not letters) correctly in digraph words",
+                "Reads the first star words on sight (IVU Reads Level 7)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phonics.s5.first-stories",
+          "title": "From Words to Stories",
+          "summary": "Put words together into phrases, sentences and whole little stories.",
+          "topics": [
+            {
+              "title": "Phrases",
+              "subtopics": [
+                "big dog",
+                "a red car"
+              ]
+            },
+            {
+              "title": "Sentences",
+              "subtopics": [
+                "The cat sat on a mat."
+              ]
+            },
+            {
+              "title": "Stories",
+              "subtopics": [
+                "Ivu and the Red Car",
+                "The Mud Pig"
+              ]
+            },
+            {
+              "title": "Questions",
+              "subtopics": [
+                "understanding what we read"
+              ]
+            }
+          ],
+          "objectives": [
+            "Read 2- and 3-word phrases and short sentences",
+            "Read a short decodable story and answer a question about it"
+          ],
+          "masteryCriteria": [
+            "Reads phrases and short sentences with finger tracking (IVU Reads Levels 8–11)",
+            "Reads a short decodable story (IVU Reads Level 12)",
+            "Answers a question about what was read"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s5.first-stories.first-stories",
+              "title": "I Can Read a Story!",
+              "skillId": "sk.phonics.s5.first-stories.first-stories",
+              "minutes": 10,
+              "objectives": [
+                "Read 2- and 3-word phrases and short sentences",
+                "Read a short decodable story and answer a question about it"
+              ],
+              "prerequisites": [
+                "Reads 3-letter words, sound pairs and some star words"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Once we can read words, we can read them together. Two words make a phrase: \"big dog\", \"red car\". Three words: \"a red car\", \"the big dog\".",
+                "A sentence starts with a capital letter and ends with a full stop: \"The cat sat on a mat.\" Point to each word with your finger as you read it.",
+                "A story is a few sentences in a row. After reading, a good reader can answer questions: Who? What? Where? IVU Reads practises this in Levels 8 to 12, with stories like \"Ivu and the Red Car\" and \"The Mud Pig\"."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "phrase",
+                  "meaning": "a small group of words, like \"big dog\""
+                },
+                {
+                  "term": "sentence",
+                  "meaning": "words that make a complete thought, ending with a full stop"
+                },
+                {
+                  "term": "capital letter",
+                  "meaning": "the big letter at the start of a sentence"
+                },
+                {
+                  "term": "full stop",
+                  "meaning": "the dot at the end of a sentence"
+                }
+              ],
+              "examples": [
+                "The cat sat on a mat.",
+                "Ivu has a red car."
+              ],
+              "story": {
+                "title": "Ivu and the Red Car",
+                "text": "Ivu has a red car. The car is fast. Ivu gets in the car. Up the hill went the car! Then the car had to stop. Ivu hops off and has a hot bun."
+              },
+              "activities": [
+                {
+                  "id": "phonics.s5.first-stories.first-stories.a1",
+                  "prompt": "In the story, what colour is the car?",
+                  "kind": "choice",
+                  "options": [
+                    "red",
+                    "blue",
+                    "green"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s5.first-stories.first-stories.a2",
+                  "prompt": "Put the words in order to make a sentence",
+                  "kind": "order",
+                  "items": [
+                    "The",
+                    "cat",
+                    "sat",
+                    "on",
+                    "a",
+                    "mat."
+                  ]
+                },
+                {
+                  "id": "phonics.s5.first-stories.first-stories.a3",
+                  "prompt": "Which is a sentence?",
+                  "kind": "choice",
+                  "options": [
+                    "The dog can dig.",
+                    "big dog",
+                    "dog dig the"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s5.first-stories.first-stories.a4",
+                  "prompt": "A sentence ends with a full stop.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "What do you think Ivu did after eating the hot bun?",
+                "Why do we point to each word when we read?"
+              ],
+              "speaking": [
+                "Read a short story to a grown-up, then ask them a question about it."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "My First Little Book",
+                "materials": [
+                  "paper",
+                  "crayons",
+                  "stapler"
+                ],
+                "steps": [
+                  "Fold two sheets into a little book",
+                  "Write one short sentence on each page, like \"The cat sat on a mat.\"",
+                  "Draw a picture for each page",
+                  "Read your book to your family"
+                ],
+                "safety": "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from young children."
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s5.first-stories.first-stories.q1",
+                  "prompt": "In \"Ivu and the Red Car\", what did Ivu eat?",
+                  "kind": "choice",
+                  "options": [
+                    "a hot bun",
+                    "a fish",
+                    "an egg"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s5.first-stories.first-stories.q2",
+                  "prompt": "Which word starts a sentence with a capital letter?",
+                  "kind": "choice",
+                  "options": [
+                    "The",
+                    "the",
+                    "cat"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s5.first-stories.first-stories.q3",
+                  "prompt": "How many words in \"a red car\"? 🔵🔵🔵",
+                  "kind": "count",
+                  "answer": 3
+                }
+              ],
+              "mastery": [
+                "Reads phrases and short sentences with finger tracking (IVU Reads Levels 8–11)",
+                "Reads a short decodable story (IVU Reads Level 12)",
+                "Answers a question about what was read"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s6",
+      "overview": "Long vowel sounds, alternative spellings, and reading with fluency and understanding.",
+      "goals": [
+        "Read words with vowel digraphs (ai, ee, igh, oa, oo)",
+        "Know split digraphs (a-e, i-e, o-e)",
+        "Read aloud with expression and retell"
+      ],
+      "units": [
+        {
+          "id": "phonics.s6.long-vowels",
+          "title": "Long Vowel Teams",
+          "summary": "Vowel teams and split digraphs make long vowel sounds.",
+          "topics": [
+            {
+              "title": "Vowel digraphs",
+              "subtopics": [
+                "ai",
+                "ee",
+                "igh",
+                "oa",
+                "oo"
+              ]
+            },
+            {
+              "title": "Split digraphs",
+              "subtopics": [
+                "a-e",
+                "i-e",
+                "o-e",
+                "u-e"
+              ]
+            },
+            {
+              "title": "Alternative spellings",
+              "subtopics": [
+                "ay/ai",
+                "ee/ea"
+              ]
+            }
+          ],
+          "objectives": [
+            "Read words with split digraphs a-e, i-e, o-e, u-e",
+            "Explain how the final e changes the vowel sound"
+          ],
+          "masteryCriteria": [
+            "Reads split digraph words accurately in and out of context",
+            "Explains the role of silent e",
+            "Spells common split digraph words"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s6.long-vowels.magic-e",
+              "title": "The Split Digraph (Magic e)",
+              "skillId": "sk.phonics.s6.long-vowels.magic-e",
+              "minutes": 15,
+              "objectives": [
+                "Read words with split digraphs a-e, i-e, o-e, u-e",
+                "Explain how the final e changes the vowel sound"
+              ],
+              "prerequisites": [
+                "Reads CVC words and common digraphs"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Look at \"cap\" and \"cape\". Adding e at the end changes the short \"a\" into a long \"ay\" sound. The a and the e work as a team even though a letter sits between them — a split digraph.",
+                "It works for other vowels: pin → pine, hop → hope, cub → cube. The e itself is silent; its job is to change the vowel.",
+                "Reading tip: when you see a vowel, one consonant, then e at the end, try the long vowel sound first."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "split digraph",
+                  "meaning": "two vowel letters split by a consonant that make one long sound"
+                },
+                {
+                  "term": "long vowel",
+                  "meaning": "a vowel that says its name, like a in cake"
+                },
+                {
+                  "term": "silent letter",
+                  "meaning": "a letter we write but do not say"
+                }
+              ],
+              "examples": [
+                "kit → kite, not → note.",
+                "tub → tube; man → mane."
+              ],
+              "story": {
+                "title": "The Sneaky e",
+                "text": "Little e loved jumping onto the ends of words. It hopped onto \"hop\" — and suddenly the word said \"hope\"! It leapt onto \"kit\" — \"kite!\" \"I don't make a sound,\" said little e, \"but I make the vowel shout its name!\""
+              },
+              "activities": [
+                {
+                  "id": "phonics.s6.long-vowels.magic-e.a1",
+                  "prompt": "Add e to \"pin\". What does it say?",
+                  "kind": "choice",
+                  "options": [
+                    "pin",
+                    "pine",
+                    "pen"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s6.long-vowels.magic-e.a2",
+                  "prompt": "Match",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "cap",
+                      "🧢"
+                    ],
+                    [
+                      "cape",
+                      "🦸"
+                    ],
+                    [
+                      "kit",
+                      "🧰"
+                    ],
+                    [
+                      "kite",
+                      "🪁"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s6.long-vowels.magic-e.a3",
+                  "prompt": "In \"hope\", the e is silent.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "phonics.s6.long-vowels.magic-e.a4",
+                  "prompt": "Which word has a split digraph?",
+                  "kind": "choice",
+                  "options": [
+                    "cat",
+                    "cake",
+                    "coat"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Why might English use a silent e instead of a new letter for long sounds?",
+                "Can you find a word where the \"magic e\" rule does not work? (Hint: \"have\", \"give\")"
+              ],
+              "speaking": [
+                "Explain the split digraph to a younger child or a toy using cap and cape."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Flip Book of Magic e",
+                "materials": [
+                  "paper strips",
+                  "stapler",
+                  "pens"
+                ],
+                "steps": [
+                  "Write short words like cap, pin, hop, cub on strips",
+                  "Add a flap with e that folds over the end",
+                  "Read each word with and without the flap",
+                  "Draw a picture for both words"
+                ],
+                "safety": "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from young children."
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s6.long-vowels.magic-e.q1",
+                  "prompt": "Read: r-o-b-e",
+                  "kind": "choice",
+                  "options": [
+                    "rob",
+                    "robe",
+                    "rib"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s6.long-vowels.magic-e.q2",
+                  "prompt": "Which is a long \"i\" word?",
+                  "kind": "choice",
+                  "options": [
+                    "bit",
+                    "bite",
+                    "bat"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s6.long-vowels.magic-e.q3",
+                  "prompt": "Adding e to \"cub\" makes \"cube\".",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Reads split digraph words accurately in and out of context",
+                "Explains the role of silent e",
+                "Spells common split digraph words"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phonics.s6.fluent-reading",
+          "title": "Reading with Fluency",
+          "summary": "Reading smoothly, with expression, and understanding what we read.",
+          "topics": [
+            {
+              "title": "Fluency",
+              "subtopics": [
+                "phrasing",
+                "punctuation",
+                "expression"
+              ]
+            },
+            {
+              "title": "Comprehension",
+              "subtopics": [
+                "who",
+                "what",
+                "where",
+                "why"
+              ]
+            },
+            {
+              "title": "Retelling",
+              "subtopics": [
+                "beginning",
+                "middle",
+                "end"
+              ]
+            }
+          ],
+          "objectives": [
+            "Use punctuation to read with expression",
+            "Retell a short story in order"
+          ],
+          "masteryCriteria": [
+            "Reads age-appropriate text with phrasing and attention to punctuation",
+            "Retells a story with beginning, middle and end",
+            "Self-corrects when meaning breaks down"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s6.fluent-reading.read-like-a-storyteller",
+              "title": "Read Like a Storyteller",
+              "skillId": "sk.phonics.s6.fluent-reading.read-like-a-storyteller",
+              "minutes": 15,
+              "objectives": [
+                "Use punctuation to read with expression",
+                "Retell a short story in order"
+              ],
+              "prerequisites": [
+                "Reads simple sentences by sounding out"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Fluent readers read smoothly, not word… by… word. They group words into phrases, like \"the big red bus\", and say them together.",
+                "Punctuation is a signal: a full stop means pause; a question mark means your voice goes up; an exclamation mark means say it with feeling!",
+                "Good readers also check understanding. After a page, ask: Who is in it? What happened? Why? If something does not make sense, go back and re-read."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "fluency",
+                  "meaning": "reading smoothly and at a good speed"
+                },
+                {
+                  "term": "expression",
+                  "meaning": "using your voice to show feeling"
+                },
+                {
+                  "term": "punctuation",
+                  "meaning": "marks like . ? ! that guide reading"
+                },
+                {
+                  "term": "retell",
+                  "meaning": "tell what happened in your own words"
+                }
+              ],
+              "examples": [
+                "\"Help!\" shouted the cat. — read \"Help!\" loudly.",
+                "\"Where is my hat?\" — voice goes up at the end."
+              ],
+              "story": {
+                "title": "The Robot Who Read Too Flat",
+                "text": "Bolt read a story aloud: \"THE. WOLF. IS. COMING. RUN.\" Nobody was scared. Rangi showed Bolt the exclamation mark. Bolt tried again: \"The wolf is coming… RUN!\" Everyone jumped. \"Punctuation tells me how to read,\" Bolt beeped happily."
+              },
+              "activities": [
+                {
+                  "id": "phonics.s6.fluent-reading.read-like-a-storyteller.a1",
+                  "prompt": "What should your voice do at a question mark?",
+                  "kind": "choice",
+                  "options": [
+                    "go up",
+                    "go down",
+                    "stop talking"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s6.fluent-reading.read-like-a-storyteller.a2",
+                  "prompt": "Match the mark to its job",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      ".",
+                      "stop and pause"
+                    ],
+                    [
+                      "?",
+                      "ask a question"
+                    ],
+                    [
+                      "!",
+                      "show strong feeling"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s6.fluent-reading.read-like-a-storyteller.a3",
+                  "prompt": "Put the story in order",
+                  "kind": "order",
+                  "items": [
+                    "Pip planted a seed",
+                    "Pip watered it every day",
+                    "A green shoot appeared",
+                    "A big sunflower grew"
+                  ]
+                },
+                {
+                  "id": "phonics.s6.fluent-reading.read-like-a-storyteller.a4",
+                  "prompt": "Good readers re-read when something does not make sense.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Why do you think reading in phrases helps us understand?",
+                "How can the same sentence mean different things if you read it differently?"
+              ],
+              "speaking": [
+                "Read a page of a favourite book to someone using expression, then retell it without looking."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Family Radio Show",
+                "materials": [
+                  "a short story book",
+                  "a phone or tablet to record (optional)"
+                ],
+                "steps": [
+                  "Choose a short story",
+                  "Practise reading it three times, adding expression",
+                  "Perform it for your family like a radio show",
+                  "Ask your listeners to retell the beginning, middle and end"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s6.fluent-reading.read-like-a-storyteller.q1",
+                  "prompt": "\"Look out!\" should be read…",
+                  "kind": "choice",
+                  "options": [
+                    "quietly and slowly",
+                    "loudly and with feeling",
+                    "as a question"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s6.fluent-reading.read-like-a-storyteller.q2",
+                  "prompt": "Order: beginning, middle, end",
+                  "kind": "order",
+                  "items": [
+                    "The egg cracked",
+                    "A chick wriggled out",
+                    "The chick cheeped for its mother"
+                  ]
+                },
+                {
+                  "id": "phonics.s6.fluent-reading.read-like-a-storyteller.q3",
+                  "prompt": "A full stop means…",
+                  "kind": "choice",
+                  "options": [
+                    "pause; the sentence is finished",
+                    "ask a question",
+                    "shout"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Reads age-appropriate text with phrasing and attention to punctuation",
+                "Retells a story with beginning, middle and end",
+                "Self-corrects when meaning breaks down"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s7",
+      "overview": "Reading to learn: complex spellings, prefixes and suffixes, and comprehension strategies.",
+      "goals": [
+        "Decode multisyllabic words using syllables and morphemes",
+        "Infer characters' feelings and motives",
+        "Summarise texts"
+      ],
+      "units": [
+        {
+          "id": "phonics.s7.word-parts",
+          "title": "Word Parts: Prefixes and Suffixes",
+          "summary": "Long words are built from smaller meaningful parts.",
+          "topics": [
+            {
+              "title": "Prefixes",
+              "subtopics": [
+                "un-",
+                "re-",
+                "dis-",
+                "pre-"
+              ]
+            },
+            {
+              "title": "Suffixes",
+              "subtopics": [
+                "-ful",
+                "-less",
+                "-ing",
+                "-ed",
+                "-ly"
+              ]
+            },
+            {
+              "title": "Syllable division",
+              "subtopics": [
+                "chunking long words"
+              ]
+            }
+          ],
+          "objectives": [
+            "Use prefixes and suffixes to read and understand longer words",
+            "Break multisyllabic words into syllables"
+          ],
+          "masteryCriteria": [
+            "Identifies common prefixes/suffixes and their meanings",
+            "Decodes unfamiliar multisyllabic words by syllables and morphemes",
+            "Uses morphology to infer meaning of new words"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s7.word-parts.build-a-word",
+              "title": "Build-a-Word",
+              "skillId": "sk.phonics.s7.word-parts.build-a-word",
+              "minutes": 20,
+              "objectives": [
+                "Use prefixes and suffixes to read and understand longer words",
+                "Break multisyllabic words into syllables"
+              ],
+              "prerequisites": [
+                "Reads most single-syllable words fluently"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Long words are often built from parts. A root word carries the main meaning: \"help\". A prefix goes in front and changes meaning: \"un-\" means not. A suffix goes at the end: \"-ful\" means full of.",
+                "So \"unhelpful\" = un + help + ful = not full of help. Spotting parts lets you read and understand words you have never seen before.",
+                "For other long words, split into syllables — each has one vowel sound: fan-tas-tic, hel-i-cop-ter. Read each chunk, then blend the chunks."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "root word",
+                  "meaning": "the main part of a word that carries its meaning"
+                },
+                {
+                  "term": "prefix",
+                  "meaning": "a part added at the start of a word"
+                },
+                {
+                  "term": "suffix",
+                  "meaning": "a part added at the end of a word"
+                },
+                {
+                  "term": "syllable",
+                  "meaning": "a beat of a word with one vowel sound"
+                }
+              ],
+              "examples": [
+                "re + play = replay (play again).",
+                "care + less = careless (without care)."
+              ],
+              "story": {
+                "title": "The Word Workshop",
+                "text": "In Tinker Town, Bolt ran a word workshop. A customer wanted a word meaning \"not happy\". Bolt took the prefix \"un-\" from the shelf and bolted it onto \"happy\": \"unhappy!\" Next someone wanted \"full of joy\". Bolt fitted \"-ful\" onto \"joy\": \"joyful!\""
+              },
+              "activities": [
+                {
+                  "id": "phonics.s7.word-parts.build-a-word.a1",
+                  "prompt": "\"Rewrite\" means…",
+                  "kind": "choice",
+                  "options": [
+                    "write again",
+                    "not write",
+                    "write before"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s7.word-parts.build-a-word.a2",
+                  "prompt": "Match the prefix to its meaning",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "un-",
+                      "not"
+                    ],
+                    [
+                      "re-",
+                      "again"
+                    ],
+                    [
+                      "pre-",
+                      "before"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s7.word-parts.build-a-word.a3",
+                  "prompt": "How many syllables in \"helicopter\"? hel-i-cop-ter",
+                  "kind": "count",
+                  "answer": 4
+                },
+                {
+                  "id": "phonics.s7.word-parts.build-a-word.a4",
+                  "prompt": "Which word means \"without fear\"?",
+                  "kind": "choice",
+                  "options": [
+                    "fearful",
+                    "fearless",
+                    "unfear"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Why might \"disappear\" and \"appear\" be connected? What does \"dis-\" do?",
+                "Can a word have both a prefix and a suffix? Find three examples."
+              ],
+              "speaking": [
+                "Invent a new word using a real prefix and root, and explain to someone what it would mean."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Word Family Tree",
+                "materials": [
+                  "large paper",
+                  "markers"
+                ],
+                "steps": [
+                  "Write a root word (like \"play\" or \"kind\") in the trunk",
+                  "Add branches with prefixes and suffixes",
+                  "Write each new word on a leaf",
+                  "Use three of the words in sentences"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s7.word-parts.build-a-word.q1",
+                  "prompt": "In \"unkind\", the prefix is…",
+                  "kind": "choice",
+                  "options": [
+                    "un",
+                    "kind",
+                    "nd"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s7.word-parts.build-a-word.q2",
+                  "prompt": "\"Hopeful\" means…",
+                  "kind": "choice",
+                  "options": [
+                    "without hope",
+                    "full of hope",
+                    "hope again"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s7.word-parts.build-a-word.q3",
+                  "prompt": "How many syllables in \"fantastic\"?",
+                  "kind": "count",
+                  "answer": 3
+                }
+              ],
+              "mastery": [
+                "Identifies common prefixes/suffixes and their meanings",
+                "Decodes unfamiliar multisyllabic words by syllables and morphemes",
+                "Uses morphology to infer meaning of new words"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phonics.s7.comprehension",
+          "title": "Reading Between the Lines",
+          "summary": "Inference and summarising: understanding more than the words say.",
+          "topics": [
+            {
+              "title": "Inference",
+              "subtopics": [
+                "clues + what I know"
+              ]
+            },
+            {
+              "title": "Characters",
+              "subtopics": [
+                "feelings",
+                "motives",
+                "change"
+              ]
+            },
+            {
+              "title": "Summarising",
+              "subtopics": [
+                "main idea",
+                "key details"
+              ]
+            }
+          ],
+          "objectives": [
+            "Make inferences using text clues and background knowledge",
+            "Support an inference with evidence from the text"
+          ],
+          "masteryCriteria": [
+            "Makes plausible inferences about feelings, motives and events",
+            "Supports inferences with quoted or paraphrased evidence",
+            "Distinguishes literal information from inferred meaning"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s7.comprehension.inference-detective",
+              "title": "Inference Detective",
+              "skillId": "sk.phonics.s7.comprehension.inference-detective",
+              "minutes": 20,
+              "objectives": [
+                "Make inferences using text clues and background knowledge",
+                "Support an inference with evidence from the text"
+              ],
+              "prerequisites": [
+                "Reads short passages independently"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Authors don't tell us everything. They leave clues. Inference means using those clues plus what you already know to work out what is not said.",
+                "Example: \"Riya stamped upstairs and slammed her door.\" The author never says \"angry\", but stamping and slamming are clues — and we know people do that when they are upset.",
+                "Good inference needs evidence. Say: \"I think… because the text says…\". A guess without a clue from the text is not an inference."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "inference",
+                  "meaning": "a conclusion reached from clues and knowledge"
+                },
+                {
+                  "term": "evidence",
+                  "meaning": "words in the text that support an idea"
+                },
+                {
+                  "term": "motive",
+                  "meaning": "the reason a character does something"
+                },
+                {
+                  "term": "literal",
+                  "meaning": "exactly what the words say"
+                }
+              ],
+              "examples": [
+                "\"He shivered and pulled his scarf tighter\" → it is cold.",
+                "\"Her eyes sparkled as she unwrapped the box\" → she is excited or pleased."
+              ],
+              "story": {
+                "title": "The Muddy Footprints",
+                "text": "Detective Nova found muddy paw prints from the garden to the sofa, a chewed cushion, and a wagging tail sticking out from under a blanket. \"Nobody told me who did it,\" said Nova, \"but the clues tell me everything. The puppy has been in the garden — and is very pleased with itself!\""
+              },
+              "activities": [
+                {
+                  "id": "phonics.s7.comprehension.inference-detective.a1",
+                  "prompt": "\"Arjun yawned and rubbed his eyes.\" Arjun is probably…",
+                  "kind": "choice",
+                  "options": [
+                    "hungry",
+                    "tired",
+                    "angry"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s7.comprehension.inference-detective.a2",
+                  "prompt": "Which shows an inference with evidence?",
+                  "kind": "choice",
+                  "options": [
+                    "She is sad.",
+                    "She is sad because the text says tears ran down her face.",
+                    "I like sad stories."
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s7.comprehension.inference-detective.a3",
+                  "prompt": "An inference must be supported by clues in the text.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "phonics.s7.comprehension.inference-detective.a4",
+                  "prompt": "Match the clue to the inference",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "umbrellas everywhere",
+                      "it is raining"
+                    ],
+                    [
+                      "smoke and sirens",
+                      "there is a fire"
+                    ],
+                    [
+                      "wrapping paper on the floor",
+                      "someone opened presents"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Can two readers make different inferences from the same text? How would you decide which is better?",
+                "Why do authors \"show\" feelings instead of just telling us?"
+              ],
+              "speaking": [
+                "Read a short story page and explain one inference to someone, using the sentence \"I think… because the text says…\"."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Inference Clue Cards",
+                "materials": [
+                  "index cards",
+                  "pens",
+                  "a picture book"
+                ],
+                "steps": [
+                  "Find 5 sentences in a book that hint at a feeling or event without saying it",
+                  "Copy each onto a card",
+                  "Write your inference and the clue words on the back",
+                  "Swap cards with a family member and compare inferences"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s7.comprehension.inference-detective.q1",
+                  "prompt": "\"The dog's ears flattened and it hid behind the sofa during the thunder.\" The dog feels…",
+                  "kind": "choice",
+                  "options": [
+                    "excited",
+                    "scared",
+                    "sleepy"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s7.comprehension.inference-detective.q2",
+                  "prompt": "If the text says \"Maya laughed until she cried\", we can infer Maya found something funny.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "phonics.s7.comprehension.inference-detective.q3",
+                  "prompt": "Best evidence that a character is nervous:",
+                  "kind": "choice",
+                  "options": [
+                    "She wore a blue dress.",
+                    "Her hands shook as she held the microphone.",
+                    "She lived in a big house."
+                  ],
+                  "answer": 1
+                }
+              ],
+              "mastery": [
+                "Makes plausible inferences about feelings, motives and events",
+                "Supports inferences with quoted or paraphrased evidence",
+                "Distinguishes literal information from inferred meaning"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s9",
+      "overview": "Reading across genres: non-fiction structures, author's purpose, and evaluating sources.",
+      "goals": [
+        "Identify text structures and features of non-fiction",
+        "Determine author's purpose and viewpoint",
+        "Compare information across texts"
+      ],
+      "units": [
+        {
+          "id": "phonics.s9.nonfiction",
+          "title": "Reading Non-Fiction",
+          "summary": "How information texts are organised and how to navigate them.",
+          "topics": [
+            {
+              "title": "Text features",
+              "subtopics": [
+                "headings",
+                "captions",
+                "diagrams",
+                "glossary"
+              ]
+            },
+            {
+              "title": "Text structures",
+              "subtopics": [
+                "cause–effect",
+                "compare–contrast",
+                "problem–solution",
+                "sequence"
+              ]
+            },
+            {
+              "title": "Note-making",
+              "subtopics": [
+                "key words",
+                "mind maps"
+              ]
+            }
+          ],
+          "objectives": [
+            "Identify common non-fiction text structures",
+            "Use structure and features to find and summarise information"
+          ],
+          "masteryCriteria": [
+            "Identifies text structures using signal words",
+            "Uses features (contents, index, headings, glossary) efficiently",
+            "Summarises a non-fiction section accurately"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s9.nonfiction.text-structures",
+              "title": "How Information Is Organised",
+              "skillId": "sk.phonics.s9.nonfiction.text-structures",
+              "minutes": 30,
+              "objectives": [
+                "Identify common non-fiction text structures",
+                "Use structure and features to find and summarise information"
+              ],
+              "prerequisites": [
+                "Reads fluently and can summarise a paragraph"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Non-fiction writers organise ideas in patterns. Sequence explains steps or time order. Cause and effect explains why something happens. Compare and contrast shows similarities and differences. Problem and solution describes a problem and ways to solve it.",
+                "Signal words reveal the structure: \"first, then, finally\" (sequence); \"because, as a result, therefore\" (cause–effect); \"however, similarly, whereas\" (compare); \"one solution is\" (problem–solution).",
+                "Text features help navigation: headings tell you what a section is about, captions explain images, a glossary defines key words, and an index helps you find topics."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "text structure",
+                  "meaning": "the way information is organised"
+                },
+                {
+                  "term": "signal word",
+                  "meaning": "a word that hints at the structure"
+                },
+                {
+                  "term": "glossary",
+                  "meaning": "a list of key words and meanings"
+                },
+                {
+                  "term": "caption",
+                  "meaning": "text explaining a picture"
+                }
+              ],
+              "examples": [
+                "\"Because forests were cut down, the soil washed away\" — cause and effect.",
+                "\"Frogs have smooth skin, whereas toads have bumpy skin\" — compare and contrast."
+              ],
+              "story": {
+                "title": "Lost in the Library Book",
+                "text": "Zuri needed to find out what tigers eat for a project. She started reading a 200-page book from page one. Nova showed her the index: \"Tigers, diet — page 43.\" Then the heading \"What Tigers Eat\" and a diagram of a food chain. Zuri found her answer in two minutes."
+              },
+              "activities": [
+                {
+                  "id": "phonics.s9.nonfiction.text-structures.a1",
+                  "prompt": "Match signal words to structure",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "first, next, finally",
+                      "sequence"
+                    ],
+                    [
+                      "because, as a result",
+                      "cause and effect"
+                    ],
+                    [
+                      "whereas, however",
+                      "compare and contrast"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s9.nonfiction.text-structures.a2",
+                  "prompt": "A list of key words and their meanings at the back of a book is a…",
+                  "kind": "choice",
+                  "options": [
+                    "caption",
+                    "glossary",
+                    "heading"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s9.nonfiction.text-structures.a3",
+                  "prompt": "\"Plastic harms sea turtles. One solution is to use cloth bags.\" Structure?",
+                  "kind": "choice",
+                  "options": [
+                    "sequence",
+                    "problem and solution",
+                    "compare and contrast"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s9.nonfiction.text-structures.a4",
+                  "prompt": "Headings help readers find information quickly.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Why might an author choose compare–contrast instead of cause–effect for the same topic?",
+                "How can text features sometimes mislead a reader (e.g. a dramatic photo)?"
+              ],
+              "speaking": [
+                "Explain to someone how you would find one fact in a non-fiction book in under two minutes."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Make a Mini Information Book",
+                "materials": [
+                  "paper",
+                  "stapler",
+                  "pencils",
+                  "reference books"
+                ],
+                "steps": [
+                  "Choose a topic you know well",
+                  "Plan sections with headings",
+                  "Use at least two structures (e.g. sequence and compare–contrast)",
+                  "Add captions, a glossary and a contents page",
+                  "Ask a reader to find a fact using your features"
+                ],
+                "safety": "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s9.nonfiction.text-structures.q1",
+                  "prompt": "\"Water heats, then evaporates, then forms clouds.\" Structure?",
+                  "kind": "choice",
+                  "options": [
+                    "sequence",
+                    "problem–solution",
+                    "compare–contrast"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s9.nonfiction.text-structures.q2",
+                  "prompt": "Which signal word suggests cause and effect?",
+                  "kind": "choice",
+                  "options": [
+                    "similarly",
+                    "therefore",
+                    "first"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s9.nonfiction.text-structures.q3",
+                  "prompt": "An index is usually at the front of a book.",
+                  "why": "The contents page is at the front; the index is usually at the back.",
+                  "kind": "truefalse",
+                  "answer": false
+                }
+              ],
+              "mastery": [
+                "Identifies text structures using signal words",
+                "Uses features (contents, index, headings, glossary) efficiently",
+                "Summarises a non-fiction section accurately"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phonics.s9.purpose-viewpoint",
+          "title": "Author's Purpose and Viewpoint",
+          "summary": "Why was this written, and from whose point of view?",
+          "topics": [
+            {
+              "title": "Purpose",
+              "subtopics": [
+                "inform",
+                "persuade",
+                "entertain",
+                "explain"
+              ]
+            },
+            {
+              "title": "Viewpoint",
+              "subtopics": [
+                "fact vs opinion",
+                "bias"
+              ]
+            },
+            {
+              "title": "Comparing texts",
+              "subtopics": [
+                "same topic",
+                "different accounts"
+              ]
+            }
+          ],
+          "objectives": [
+            "Distinguish facts from opinions in texts",
+            "Identify the author's purpose and viewpoint"
+          ],
+          "masteryCriteria": [
+            "Separates fact from opinion with justification",
+            "Identifies purpose and viewpoint in varied texts",
+            "Compares two accounts and explains differences"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s9.purpose-viewpoint.fact-opinion",
+              "title": "Fact, Opinion and Purpose",
+              "skillId": "sk.phonics.s9.purpose-viewpoint.fact-opinion",
+              "minutes": 30,
+              "objectives": [
+                "Distinguish facts from opinions in texts",
+                "Identify the author's purpose and viewpoint"
+              ],
+              "prerequisites": [
+                "Understands basic non-fiction structures"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A fact can be checked and shown to be true or false: \"The Ganga flows into the Bay of Bengal.\" An opinion is what someone thinks or feels: \"The Ganga is the most beautiful river.\" Opinions can be reasonable or unreasonable, but they cannot be proven true like facts.",
+                "Authors write for a purpose: to inform, persuade, entertain or explain. Persuasive texts mix facts with opinions and use emotive words to influence you.",
+                "Every author has a viewpoint. Ask: Who wrote this? Why? What did they leave out? Comparing two accounts of the same event reveals different viewpoints."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "fact",
+                  "meaning": "a statement that can be checked"
+                },
+                {
+                  "term": "opinion",
+                  "meaning": "a belief or judgement"
+                },
+                {
+                  "term": "bias",
+                  "meaning": "leaning unfairly to one side"
+                },
+                {
+                  "term": "persuade",
+                  "meaning": "try to make someone agree or act"
+                }
+              ],
+              "examples": [
+                "Advert: \"Crunchy-O's — the tastiest cereal ever!\" (opinion, persuade).",
+                "Encyclopedia: \"Cheetahs can reach speeds of over 100 km/h in short bursts.\" (fact, inform)."
+              ],
+              "story": {
+                "title": "Two Reports of the Match",
+                "text": "After the school football final, two newspapers reported it. The Red Times wrote: \"Brilliant Reds deservedly win 2–1!\" The Blue Gazette wrote: \"Unlucky Blues lose 2–1 after a dubious penalty.\" Kiko noticed: both agreed on the score — the fact — but told very different stories."
+              },
+              "activities": [
+                {
+                  "id": "phonics.s9.purpose-viewpoint.fact-opinion.a1",
+                  "prompt": "Which is a FACT?",
+                  "kind": "choice",
+                  "options": [
+                    "Mangoes are the best fruit.",
+                    "Mangoes grow on trees.",
+                    "Mangoes are too sweet."
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s9.purpose-viewpoint.fact-opinion.a2",
+                  "prompt": "Match text to purpose",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "advertisement",
+                      "persuade"
+                    ],
+                    [
+                      "recipe",
+                      "explain how"
+                    ],
+                    [
+                      "joke book",
+                      "entertain"
+                    ],
+                    [
+                      "encyclopedia",
+                      "inform"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s9.purpose-viewpoint.fact-opinion.a3",
+                  "prompt": "A text can contain both facts and opinions.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "phonics.s9.purpose-viewpoint.fact-opinion.a4",
+                  "prompt": "Which word signals an opinion?",
+                  "kind": "choice",
+                  "options": [
+                    "measured",
+                    "wonderful",
+                    "located"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "thinking": [
+                "Is \"Most people in my class like cricket\" a fact or an opinion? How could you check?",
+                "Why might an author leave out certain facts?"
+              ],
+              "speaking": [
+                "Find an advertisement and explain to someone which parts are facts and which are opinions, and what it wants you to do."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Two Sides Newspaper",
+                "materials": [
+                  "paper",
+                  "pens"
+                ],
+                "steps": [
+                  "Pick a simple event (e.g. \"the new park opens\")",
+                  "Write a short neutral report with only facts",
+                  "Rewrite it twice: once strongly for, once strongly against",
+                  "Highlight opinion words in each version",
+                  "Present them and explain how viewpoint changes the story"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s9.purpose-viewpoint.fact-opinion.q1",
+                  "prompt": "\"Delhi is the capital of India.\" This is…",
+                  "kind": "choice",
+                  "options": [
+                    "a fact",
+                    "an opinion"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s9.purpose-viewpoint.fact-opinion.q2",
+                  "prompt": "A leaflet saying \"Join the best club in town!\" mainly wants to…",
+                  "kind": "choice",
+                  "options": [
+                    "entertain",
+                    "inform",
+                    "persuade"
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "phonics.s9.purpose-viewpoint.fact-opinion.q3",
+                  "prompt": "Opinions can always be proven true.",
+                  "kind": "truefalse",
+                  "answer": false
+                }
+              ],
+              "mastery": [
+                "Separates fact from opinion with justification",
+                "Identifies purpose and viewpoint in varied texts",
+                "Compares two accounts and explains differences"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s12",
+      "overview": "Critical and analytical reading: rhetoric, argument evaluation, and close reading of literature.",
+      "goals": [
+        "Analyse rhetorical techniques",
+        "Evaluate arguments and evidence",
+        "Close-read literary texts for theme and craft"
+      ],
+      "units": [
+        {
+          "id": "phonics.s12.rhetoric",
+          "title": "Rhetoric and Argument",
+          "summary": "How texts persuade, and how to evaluate whether they should.",
+          "topics": [
+            {
+              "title": "Rhetorical appeals",
+              "subtopics": [
+                "ethos",
+                "pathos",
+                "logos"
+              ]
+            },
+            {
+              "title": "Techniques",
+              "subtopics": [
+                "repetition",
+                "rhetorical questions",
+                "tricolon"
+              ]
+            },
+            {
+              "title": "Fallacies",
+              "subtopics": [
+                "ad hominem",
+                "straw man",
+                "false dilemma"
+              ]
+            }
+          ],
+          "objectives": [
+            "Identify the three classical rhetorical appeals",
+            "Evaluate whether an argument's evidence and reasoning are sound"
+          ],
+          "masteryCriteria": [
+            "Identifies appeals and techniques in unfamiliar texts",
+            "Detects common fallacies and explains why they are flawed",
+            "Writes a balanced evaluation of an argument's effectiveness and soundness"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s12.rhetoric.ethos-pathos-logos",
+              "title": "Ethos, Pathos, Logos",
+              "skillId": "sk.phonics.s12.rhetoric.ethos-pathos-logos",
+              "minutes": 40,
+              "objectives": [
+                "Identify the three classical rhetorical appeals",
+                "Evaluate whether an argument's evidence and reasoning are sound"
+              ],
+              "prerequisites": [
+                "Can identify fact, opinion and purpose"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Aristotle described three modes of persuasion: ethos (credibility of the speaker), pathos (appeal to emotion), and logos (appeal to logic and evidence). Most persuasive texts mix all three.",
+                "Rhetorical techniques include repetition, rhetorical questions, triads (\"tricolon\"), and vivid imagery. Recognising them helps you notice when you are being moved — and decide if you should be.",
+                "A strong argument has true premises and valid reasoning. Watch for fallacies: attacking the person instead of the argument (ad hominem), misrepresenting an opposing view (straw man), or presenting only two options when more exist (false dilemma)."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "The ethos–pathos–logos framework comes from Aristotle's \"Rhetoric\", written in the 4th century BCE."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "ethos",
+                  "meaning": "persuasion through credibility"
+                },
+                {
+                  "term": "pathos",
+                  "meaning": "persuasion through emotion"
+                },
+                {
+                  "term": "logos",
+                  "meaning": "persuasion through logic and evidence"
+                },
+                {
+                  "term": "fallacy",
+                  "meaning": "a flaw in reasoning that makes an argument unsound"
+                }
+              ],
+              "examples": [
+                "\"As a doctor with 20 years' experience…\" — ethos.",
+                "\"Either we ban all cars or the planet is doomed.\" — false dilemma."
+              ],
+              "story": {
+                "title": "The School Debate",
+                "text": "In a debate about longer lunch breaks, Meera said, \"Ninety percent of students surveyed reported feeling tired after lunch-rush.\" Her opponent replied, \"Meera just wants to play more football.\" The judge noted: Meera used logos; her opponent used an ad hominem attack — which didn't answer her evidence at all."
+              },
+              "activities": [
+                {
+                  "id": "phonics.s12.rhetoric.ethos-pathos-logos.a1",
+                  "prompt": "Match the example to the appeal",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "statistics from a study",
+                      "logos"
+                    ],
+                    [
+                      "a heartbreaking photo",
+                      "pathos"
+                    ],
+                    [
+                      "endorsement by an expert",
+                      "ethos"
+                    ]
+                  ]
+                },
+                {
+                  "id": "phonics.s12.rhetoric.ethos-pathos-logos.a2",
+                  "prompt": "\"You can't trust his idea about recycling — he failed maths.\" This is…",
+                  "kind": "choice",
+                  "options": [
+                    "straw man",
+                    "ad hominem",
+                    "false dilemma"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s12.rhetoric.ethos-pathos-logos.a3",
+                  "prompt": "An emotional appeal is always a fallacy.",
+                  "why": "Pathos can be legitimate when emotions fit the facts.",
+                  "kind": "truefalse",
+                  "answer": false
+                },
+                {
+                  "id": "phonics.s12.rhetoric.ethos-pathos-logos.a4",
+                  "prompt": "Which is a false dilemma?",
+                  "kind": "choice",
+                  "options": [
+                    "\"You're either with us or against us.\"",
+                    "\"Studies show sleep improves memory.\"",
+                    "\"I have taught for ten years.\""
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "When is an emotional appeal fair, and when is it manipulative?",
+                "Can an argument use a fallacy and still reach a true conclusion?"
+              ],
+              "speaking": [
+                "Give a one-minute persuasive speech using all three appeals, then ask listeners to identify each one."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Rhetoric Annotation Project",
+                "materials": [
+                  "a printed famous speech or editorial",
+                  "highlighters"
+                ],
+                "steps": [
+                  "Choose a speech or op-ed",
+                  "Highlight ethos, pathos and logos in three colours",
+                  "Mark rhetorical techniques in the margin",
+                  "Identify any fallacies",
+                  "Write a 300-word evaluation of how convincing it is and why"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s12.rhetoric.ethos-pathos-logos.q1",
+                  "prompt": "\"Nine out of ten dentists recommend…\" mainly uses…",
+                  "kind": "choice",
+                  "options": [
+                    "pathos",
+                    "ethos and logos",
+                    "ad hominem"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s12.rhetoric.ethos-pathos-logos.q2",
+                  "prompt": "Misrepresenting an opponent's view to attack it easily is a…",
+                  "kind": "choice",
+                  "options": [
+                    "straw man",
+                    "ad hominem",
+                    "tricolon"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s12.rhetoric.ethos-pathos-logos.q3",
+                  "prompt": "A valid argument with a false premise can still lead to a false conclusion.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Identifies appeals and techniques in unfamiliar texts",
+                "Detects common fallacies and explains why they are flawed",
+                "Writes a balanced evaluation of an argument's effectiveness and soundness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phonics.s12.close-reading",
+          "title": "Close Reading Literature",
+          "summary": "How writers create meaning through language, structure and form.",
+          "topics": [
+            {
+              "title": "Language",
+              "subtopics": [
+                "imagery",
+                "metaphor",
+                "connotation"
+              ]
+            },
+            {
+              "title": "Structure",
+              "subtopics": [
+                "perspective",
+                "pacing",
+                "foreshadowing"
+              ]
+            },
+            {
+              "title": "Theme",
+              "subtopics": [
+                "universal ideas and evidence"
+              ]
+            }
+          ],
+          "objectives": [
+            "Analyse how specific word choices create effects",
+            "Develop and support an interpretation of theme"
+          ],
+          "masteryCriteria": [
+            "Analyses language and structure with precise terminology",
+            "Formulates arguable theme statements",
+            "Writes sustained interpretations supported by evidence"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "phonics.s12.close-reading.craft-and-theme",
+              "title": "Craft and Theme",
+              "skillId": "sk.phonics.s12.close-reading.craft-and-theme",
+              "minutes": 40,
+              "objectives": [
+                "Analyse how specific word choices create effects",
+                "Develop and support an interpretation of theme"
+              ],
+              "prerequisites": [
+                "Can infer and support inferences with evidence"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Close reading means slowing down to notice how a writer creates meaning. Word choice matters: \"the house loomed\" suggests threat in a way \"the house stood\" does not. That suggestion is the word's connotation.",
+                "Writers shape structure too: who narrates, what is revealed when, and how pacing speeds up or slows down. Foreshadowing plants hints of later events.",
+                "A theme is a central idea about life the text explores — not just a topic. \"Friendship\" is a topic; \"true friendship requires honesty even when it hurts\" is a theme. Support interpretations with precise evidence and explanation (point–evidence–explain)."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "connotation",
+                  "meaning": "the feelings or ideas a word suggests beyond its literal meaning"
+                },
+                {
+                  "term": "foreshadowing",
+                  "meaning": "hints of what will happen later"
+                },
+                {
+                  "term": "theme",
+                  "meaning": "a central message or insight about life"
+                },
+                {
+                  "term": "imagery",
+                  "meaning": "language that appeals to the senses"
+                }
+              ],
+              "examples": [
+                "\"Her voice was ice\" (metaphor) suggests coldness and distance.",
+                "Point: the narrator is lonely. Evidence: \"the empty chairs stared back\". Explain: personifying chairs emphasises her isolation."
+              ],
+              "story": {
+                "title": "The Same Storm",
+                "text": "Two students described the same storm. One wrote: \"It rained heavily.\" The other wrote: \"The sky split open and the rain came down like a punishment.\" Their teacher asked the class: \"What does the second writer want you to feel — and how did they do it in eleven words?\""
+              },
+              "activities": [
+                {
+                  "id": "phonics.s12.close-reading.craft-and-theme.a1",
+                  "prompt": "\"The shadows crept across the floor.\" The verb \"crept\" suggests…",
+                  "kind": "choice",
+                  "options": [
+                    "something slow and threatening",
+                    "happiness",
+                    "speed"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "phonics.s12.close-reading.craft-and-theme.a2",
+                  "prompt": "A theme is the same thing as the topic of a story.",
+                  "why": "A theme is an insight or message about the topic.",
+                  "kind": "truefalse",
+                  "answer": false
+                },
+                {
+                  "id": "phonics.s12.close-reading.craft-and-theme.a3",
+                  "prompt": "Order the analysis paragraph",
+                  "kind": "order",
+                  "items": [
+                    "Point: make a claim",
+                    "Evidence: quote the text",
+                    "Explain: analyse how the evidence supports the claim"
+                  ]
+                },
+                {
+                  "id": "phonics.s12.close-reading.craft-and-theme.a4",
+                  "prompt": "Match the device to the example",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "simile",
+                      "as brave as a lion"
+                    ],
+                    [
+                      "metaphor",
+                      "the classroom was a zoo"
+                    ],
+                    [
+                      "personification",
+                      "the wind whispered"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Can a text have a theme the author did not intend? Who decides what a text means?",
+                "Why might a writer tell a story from an unreliable narrator's point of view?"
+              ],
+              "speaking": [
+                "Present a two-minute close reading of a single paragraph from a novel, focusing on three word choices."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Close Reading Essay",
+                "materials": [
+                  "a short story or novel chapter",
+                  "notebook"
+                ],
+                "steps": [
+                  "Choose a passage of about 200 words",
+                  "Annotate imagery, connotation and structure",
+                  "Formulate a theme statement",
+                  "Write a 500-word essay using point–evidence–explain",
+                  "Revise after reading it aloud"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "phonics.s12.close-reading.craft-and-theme.q1",
+                  "prompt": "Which is a theme statement?",
+                  "kind": "choice",
+                  "options": [
+                    "War",
+                    "War destroys innocence even in those who survive it.",
+                    "A story about soldiers"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s12.close-reading.craft-and-theme.q2",
+                  "prompt": "A hint early in a story about a later event is…",
+                  "kind": "choice",
+                  "options": [
+                    "imagery",
+                    "foreshadowing",
+                    "connotation"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "phonics.s12.close-reading.craft-and-theme.q3",
+                  "prompt": "In close reading, explaining the effect of evidence matters as much as quoting it.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Analyses language and structure with precise terminology",
+                "Formulates arguable theme statements",
+                "Writes sustained interpretations supported by evidence"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

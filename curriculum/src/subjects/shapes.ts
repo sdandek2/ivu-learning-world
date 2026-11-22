@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['Is a square a kind of rectangle? What do you think?', 'Why do you think wheels are circles and not squares?'],
           k: ['Go on a shape walk and tell a grown-up three shapes you found and where.'],
-          m: ['Shape Collage', 'coloured paper shapes (cut by a grown-up), glue, paper', 'Sort the shapes into circles, triangles, squares and rectangles | Make a picture (a house, a robot, a rocket) using the shapes | Count how many of each shape you used | Tell someone about your picture'],
+          m: ['Shape Collage', 'coloured paper shapes (cut by a grown-up), glue, paper', 'Sort the shapes into circles, triangles, squares and rectangles | Make a picture (a house, a robot, a rocket) using the shapes | Count how many of each shape you used | Tell someone about your picture', "Use pre-cut shapes or child-safe scissors with adult supervision. Adults should handle sharp cutting tools."],
           q: [
             ct('How many sides does a triangle have?', 3),
             ch('Which is round?', '*⚪|🔺|🟥'),
@@ -213,9 +213,9 @@ export default subject({
           ],
           t: ['Why do you think a full turn was divided into 360 degrees?', 'Can a triangle have two right angles? Why not?'],
           k: ['Explain to someone how to use a protractor, then measure an angle in front of them.'],
-          m: ['Angle Hunt', 'protractor, paper, ruler', 'Find 10 angles at home (scissors, laptop screen, roof, book) | Estimate each angle | Measure with a protractor or a paper right-angle tester | Record estimate, measurement and type in a table'],
+          m: ['Angle Hunt', 'protractor, paper, ruler', 'Find 10 angles at home (scissors, laptop screen, roof, book) | Estimate each angle | Measure with a protractor or a paper right-angle tester | Record estimate, measurement and type in a table', "Use scissors only as an example of an angle; keep blades closed when measuring and handle them carefully with adult supervision."],
           q: [
-            ch('An angle of 175° is…', 'acute|right|*obtuse'),
+            tf('175° is an obtuse angle.', true, 'An obtuse angle is greater than 90° and less than 180°.'),
             ch('Angles around a point add up to…', '180°|*360°|90°'),
             ch('A full turn is…', '180°|*360°|100°'),
           ],
@@ -246,7 +246,7 @@ export default subject({
           q: [
             ch('Area of a 7 m × 4 m room?', '22 m²|*28 m²|11 m²'),
             ch('Perimeter of a square with side 5 cm?', '*20 cm|25 cm|10 cm'),
-            ch('Area is measured in…', 'cm|*cm²|kg'),
+            tf('Area is measured in square units.', true, 'Area measures a surface, so its units are squared, such as cm².'),
           ],
           ms: ['Calculates perimeter and area of rectangles and composite rectilinear shapes', 'Distinguishes perimeter and area in context', 'Explores relationships between them'],
         }),
@@ -339,7 +339,7 @@ export default subject({
           ],
           t: ['Does a² + b² = c² work for non-right triangles? What happens when the angle is bigger than 90°?', 'Why is it fair to say several civilisations "discovered" this relationship?'],
           k: ['Present the rearrangement proof to someone using paper cut-outs.'],
-          m: ['Paper Proof and Field Check', 'card, scissors, ruler, string, tape measure', 'Cut four identical right triangles and demonstrate the rearrangement proof | Use a 3–4–5 string triangle to check corners of a room or garden | Measure a diagonal of a rectangular space and check it against Pythagoras'],
+          m: ['Paper Proof and Field Check', 'card, scissors, ruler, string, tape measure', 'Cut four identical right triangles and demonstrate the rearrangement proof | Use a 3–4–5 string triangle to check corners of a room or garden | Measure a diagonal of a rectangular space and check it against Pythagoras', "Use child-safe scissors with adult supervision. Take measurements in a safe, uncluttered area and do not climb or lean over edges."],
           q: [
             ch('Hypotenuse is opposite the…', 'smallest angle|*right angle|longest side'),
             ch('Legs 9 and 12, hypotenuse?', '*15|21|13'),
@@ -371,7 +371,7 @@ export default subject({
           k: ['Explain to someone how to find a tree\'s height using trigonometry.'],
           m: ['🧪 Build a Clinometer', 'protractor, straw, string, small weight, tape measure', 'Tape a straw along a protractor and hang a weighted string from the centre | Sight the top of a tall object and read the angle | Measure your distance from its base | Calculate the height with tan and compare with another method'],
           q: [
-            ch('cos θ = adjacent ÷ ___', 'opposite|*hypotenuse|tangent'),
+            tf('cos θ = adjacent ÷ hypotenuse.', true, 'In a right triangle, cosine is adjacent divided by hypotenuse.'),
             ch('Hypotenuse 10, angle 30°, opposite side = ?', '*5|8.66|10'),
             ch('To find an angle from a ratio, use the…', '*inverse function|square root|distributive law'),
           ],

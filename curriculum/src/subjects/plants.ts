@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['Why do you think the root grows first?', 'What would happen to a seed kept in a dry box?'],
           k: ['Show a grown-up your seed pot and explain what you will do to help it grow.'],
-          m: ['🧪 Bean in a Jar', 'a clear jar, paper towel, water, 2–3 mung or rajma beans', 'Line the jar with damp paper towel | Push beans between the towel and glass | Keep the towel damp and the jar in light | Draw what you see every day for a week'],
+          m: ['🧪 Bean in a Jar', 'a clear jar, paper towel, water, 2–3 mung or rajma beans', 'Line the jar with damp paper towel | Push beans between the towel and glass | Keep the towel damp and the jar in light | Draw what you see every day for a week', "Use a sturdy plastic jar rather than glass. Do not eat raw seeds from the experiment; wash hands after handling soil, seeds and water."],
           q: [
             ch('The first green part that grows up is the…', '*shoot|root|seed'),
             tf('Too much water can harm a plant.', true),
@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['Why should we be gentle with bees?', 'Is a weed a bad plant? What do you think?'],
           k: ['Tell a grown-up which garden helper you like best and why.'],
-          m: ['Bug Hotel', 'a plastic bottle cut in half or a small box, sticks, dry leaves, pine cones, bamboo pieces', 'Fill the container with sticks, leaves and hollow stems | Place it in a quiet corner of the garden or balcony | Check it gently every few days | Draw any creatures that move in'],
+          m: ['Bug Hotel', 'a plastic bottle cut in half or a small box, sticks, dry leaves, pine cones, bamboo pieces', 'Fill the container with sticks, leaves and hollow stems | Place it in a quiet corner of the garden or balcony | Check it gently every few days | Draw any creatures that move in', "An adult must cut the bottle and cover sharp edges. Use clean natural materials, avoid sharp sticks, and observe insects without touching or disturbing them."],
           q: [
             ch('Which creature carries pollen?', '*🐝|🐌|🐟'),
             ch('Pulling out weeds helps plants get more…', '*water and space|music|toys'),
@@ -152,7 +152,7 @@ export default subject({
           ],
           t: ['Why do you think many flowers are brightly coloured or smell sweet?', 'What might happen to our food if bee numbers fell sharply?'],
           k: ['Using a real flower, show someone the petals, stamens and pistil and explain pollination.'],
-          m: ['Flower Dissection Diagram', 'a large flower (hibiscus or lily), a tray, tweezers, paper, tape', 'Gently take the flower apart on a tray | Tape each part onto paper | Label petals, stamens and pistil | Look at pollen with a magnifying glass if you have one'],
+          m: ['Flower Dissection Diagram', 'a large flower (hibiscus or lily), a tray, tweezers, paper, tape', 'Gently take the flower apart on a tray | Tape each part onto paper | Label petals, stamens and pistil | Look at pollen with a magnifying glass if you have one', "Use a pesticide-free flower and have an adult supervise tweezers. Do not taste any plant parts; wash hands afterwards and avoid flowers that may cause allergies."],
           q: [
             ch('Pollen is made by the…', '*stamen|petal|root'),
             ch('After pollination, ovules become…', '*seeds|leaves|roots'),
@@ -181,7 +181,7 @@ export default subject({
           ],
           t: ['Which method do you think spreads seeds the furthest?', 'How might humans spread seeds without meaning to?'],
           k: ['Show someone a seed and explain how you think it travels, based on its shape.'],
-          m: ['🧪 Paper Helicopter Seeds', 'paper, scissors, paper clips, a stopwatch', 'Make paper "helicopter seeds" with different wing lengths | Drop each from the same height | Time how long they take to fall and how far they drift | Explain which design would spread seeds best'],
+          m: ['🧪 Paper Helicopter Seeds', 'paper, scissors, paper clips, a stopwatch', 'Make paper "helicopter seeds" with different wing lengths | Drop each from the same height | Time how long they take to fall and how far they drift | Explain which design would spread seeds best', "Use child-safe scissors with adult supervision. Keep paper clips away from mouths and eyes; an adult should check that clips are secure."],
           q: [
             ch('A fluffy parachute seed travels by…', '*wind|water|bursting'),
             ch('Hooked seeds stick to…', '*animal fur|water|rocks'),
@@ -214,7 +214,7 @@ export default subject({
           ],
           t: ['Where does most of a tree\'s mass come from?', 'Why would life on Earth be impossible without photosynthesis?'],
           k: ['Explain photosynthesis to someone using the idea of a kitchen with ingredients and a cook.'],
-          m: ['🧪 Pondweed Bubbles', 'water plant (from an aquarium shop), a glass of water, a lamp, a timer', 'Put the water plant in a glass of water | Place a lamp near it and count bubbles per minute | Move the lamp further away and count again | Explain how light affects photosynthesis'],
+          m: ['🧪 Pondweed Bubbles', 'water plant (from an aquarium shop), a glass of water, a lamp, a timer', 'Put the water plant in a glass of water | Place a lamp near it and count bubbles per minute | Move the lamp further away and count again | Explain how light affects photosynthesis', "Use a cool-running lamp, keep water away from plugs and electrical cords, and have an adult supervise the glass and lamp."],
           q: [
             ch('Photosynthesis happens mainly in…', 'roots|*leaves|flowers'),
             ch('Plants store extra glucose as…', '*starch|oxygen|chlorophyll'),
@@ -306,7 +306,7 @@ export default subject({
           ],
           t: ['How can traditional knowledge and modern science work together?', 'Why is plant biodiversity important for medicine and food?'],
           k: ['Present one Indian forest type: where it is, what grows there and why it matters.'],
-          m: ['Local Tree Survey', 'a notebook, a phone camera or sketchbook, a tree field guide', 'Survey 10 trees in your neighbourhood | Identify and photograph or sketch each | Note uses and any traditional significance | Make a map and booklet of your local trees'],
+          m: ['Local Tree Survey', 'a notebook, a phone camera or sketchbook, a tree field guide', 'Survey 10 trees in your neighbourhood | Identify and photograph or sketch each | Note uses and any traditional significance | Make a map and booklet of your local trees', "Stay with an adult, do not enter private property or touch unknown plants, and avoid sharing precise home locations or identifiable photographs publicly."],
           q: [
             ch('Mangroves grow in…', '*salty coastal water|deserts|snow'),
             ch('Teak is mainly found in…', '*deciduous forests|alpine meadows|mangroves'),
@@ -339,7 +339,7 @@ export default subject({
           ],
           t: ['How could knowledge of limiting factors help reduce farming costs?', 'Why do plants release CO₂ at night?'],
           k: ['Explain limiting factors using a graph you draw of rate versus light intensity.'],
-          m: ['🧪 Leaf Disc Flotation Investigation', 'spinach leaves, a straw or hole punch, syringe, baking soda water, cups, a lamp', 'Punch leaf discs and remove air with a syringe of baking soda water | Place discs in cups under lights at different distances | Time how long until discs float | Plot results and identify limiting factors'],
+          m: ['🧪 Leaf Disc Flotation Investigation', 'spinach leaves, a straw or hole punch, syringe, baking soda water, cups, a lamp', 'Punch leaf discs and remove air with a syringe of baking soda water | Place discs in cups under lights at different distances | Time how long until discs float | Plot results and identify limiting factors', "Use a blunt, needle-free syringe only; an adult should prepare the leaf discs and supervise the lamp. Do not taste the solution and wash hands afterwards."],
           q: [
             ch('Which is NOT a limiting factor for photosynthesis?', 'light intensity|CO₂ concentration|*the colour of the pot'),
             ch('Respiration releases…', '*energy|chlorophyll|light'),

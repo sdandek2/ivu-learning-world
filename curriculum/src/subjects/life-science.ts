@@ -29,7 +29,7 @@ export default subject({
           k: ['Find three living and three non-living things at home and explain how you decided.'],
           m: ['Living and Non-Living Sorting Hunt', 'two baskets or boxes, labels, toys and real objects, a plant pot', 'Label one basket "living" and one "non-living" | Collect objects (use a photo or drawing for animals) | Sort them | Explain your trickiest choice'],
           q: [
-            ch('Which is living?', '🪑 chair|*🐞 ladybird|🔑 key'),
+            ch('Which one can grow and needs water?', '🪑 chair|*🌻 sunflower|🔑 key', 'A sunflower is a living plant. It grows and takes in water through its roots.'),
             tf('A rock grows if you water it.', false),
             ch('All living things need…', '*water|toys|television'),
           ],
@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['What would happen to a plant with no roots?', 'Why do you think many fruits taste sweet?'],
           k: ['Show someone a real plant and point to each part, explaining its job.'],
-          m: ['🧪 Colour-Changing Celery', 'a celery stick or white flower, a glass of water, food colouring', 'Put water and food colouring in a glass | Stand the celery or flower in it | Check after a few hours and the next day | Explain what the stem did'],
+          m: ['🧪 Colour-Changing Celery', 'a celery stick or white flower, a glass of water, food colouring', 'Put water and food colouring in a glass | Stand the celery or flower in it | Check after a few hours and the next day | Explain what the stem did', "Use a sturdy plastic cup instead of glass. Do not drink the coloured water or eat the celery after the experiment; wash hands afterwards."],
           q: [
             ch('Which part makes seeds?', '*flower|root|stem'),
             ch('Spinach is a…', 'root|stem|*leaf'),
@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['What would happen to the tigers if all the grass disappeared?', 'Why do food chains almost always start with plants?'],
           k: ['Tell someone a food chain from the sea or forest and explain what the arrows mean.'],
-          m: ['Food Chain Paper Links', 'paper strips, glue or stapler, pens', 'Write a living thing on each strip (start with a plant) | Link strips into a chain in order | Make two different chains | Join them where an animal appears in both to make a mini food web'],
+          m: ['Food Chain Paper Links', 'paper strips, glue or stapler, pens', 'Write a living thing on each strip (start with a plant) | Link strips into a chain in order | Make two different chains | Join them where an animal appears in both to make a mini food web', "An adult should operate the stapler and check that staples are fully closed. Use glue as a safer alternative for younger children; keep loose staples away."],
           q: [
             ch('A deer is a…', '*herbivore|carnivore|producer'),
             od('Order', 'leaves|caterpillar|bird'),
@@ -306,7 +306,7 @@ export default subject({
           ],
           t: ['If a weightlifter builds big muscles, will their children be born with big muscles? Why?', 'Why are identical twins useful for scientists studying genes and environment?'],
           k: ['Explain to someone one trait you inherited and one you acquired.'],
-          m: ['Family Trait Survey', 'a table on paper, willing family members', 'Choose traits like earlobe shape, tongue rolling, dimples | Survey family members across generations | Record the results | Discuss patterns — and note that many traits are more complex than single genes'],
+          m: ['Family Trait Survey', 'a table on paper, willing family members', 'Choose traits like earlobe shape, tongue rolling, dimples | Survey family members across generations | Record the results | Discuss patterns — and note that many traits are more complex than single genes', "Participation must be voluntary. Do not pressure relatives to share personal traits, label anyone, or infer health or genetic conditions; use fictional examples if anyone is uncomfortable."],
           q: [
             ch('Which is acquired?', 'blood group|*riding a bicycle|natural eye colour'),
             ch('Mendel studied inheritance using…', '*pea plants|dogs|bacteria'),
@@ -340,7 +340,7 @@ export default subject({
           ],
           t: ['Why does it matter to finish a course of antibiotics as prescribed?', 'Why do scientists say populations, not individuals, evolve?'],
           k: ['Explain natural selection to someone using a simulation you design.'],
-          m: ['🧪 Beak Simulation', 'tools (tweezers, spoons, clothes pegs, chopsticks), "food" (rice, beans, marbles), cups, timer', 'Each person gets a "beak" tool | Collect food for 30 seconds per round | The least successful beaks "die" and others "reproduce" | Change the food type and repeat | Graph the beak types over generations and explain'],
+          m: ['🧪 Beak Simulation', 'tools (tweezers, spoons, clothes pegs, chopsticks), "food" (rice, beans, marbles), cups, timer', 'Each person gets a "beak" tool | Collect food for 30 seconds per round | The least successful beaks "die" and others "reproduce" | Change the food type and repeat | Graph the beak types over generations and explain', "Use large, clean pretend food pieces that cannot be swallowed; do not use small beans or marbles with young children. Keep tools away from faces and do not harm real animals."],
           q: [
             ch('Natural selection acts on…', 'acquired traits|*inherited variation|wishes'),
             ch('"On the Origin of Species" was published in…', '1759|*1859|1959'),

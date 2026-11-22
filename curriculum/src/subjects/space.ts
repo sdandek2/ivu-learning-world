@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['Why do you think people long ago believed the Sun moved around the Earth?', 'If Earth spun faster, what would happen to the length of a day?'],
           k: ['Use a ball and torch to show someone why we have day and night.'],
-          m: ['🧪 Torch and Globe Model', 'a torch, a ball or orange, a sticker, a darkened room', 'Put a sticker on the ball for your home | Shine the torch on it in a dark room | Slowly turn the ball and say when your home has day and night | Walk it around the torch to show a year'],
+          m: ['🧪 Torch and Globe Model', 'a torch, a ball or orange, a sticker, a darkened room', 'Put a sticker on the ball for your home | Shine the torch on it in a dark room | Slowly turn the ball and say when your home has day and night | Walk it around the torch to show a year', "Keep the torch pointed at the ball, never into anyone's eyes. Use a cool-running torch and keep the room clear while lights are dimmed."],
           q: [
             ch('Earth\'s spin is called…', '*rotation|orbit|eclipse'),
             ch('Earth\'s path around the Sun is its…', 'axis|*orbit|shadow'),
@@ -153,7 +153,7 @@ export default subject({
           ],
           t: ['Why might different cultures see different pictures in the same stars?', 'How could you test whether a claim about the stars is scientific?'],
           k: ['Find a constellation (in the sky or in a book) and tell someone its story and one scientific fact.'],
-          m: ['Constellation Viewer', 'a paper cup or toilet roll tube, pin, paper, a torch', 'Draw a constellation on paper over the end of a tube | Prick holes for the stars | Shine a torch through in a dark room | Tell the cultural story and the science of the stars'],
+          m: ['Constellation Viewer', 'a paper cup or toilet roll tube, pin, paper, a torch', 'Draw a constellation on paper over the end of a tube | Prick holes for the stars | Shine a torch through in a dark room | Tell the cultural story and the science of the stars', "An adult must make the pinholes and handle the pin. Keep the torch pointed away from eyes and use a clear, uncluttered area."],
           q: [
             ch('Stars look tiny because they are…', 'small|*very far away|cold'),
             ch('Which is a science?', '*astronomy|astrology'),

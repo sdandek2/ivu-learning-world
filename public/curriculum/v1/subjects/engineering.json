@@ -1,1 +1,2441 @@
-{"schemaVersion":1,"id":"engineering","worldId":"tinker-town","title":"Building & Engineering","icon":"🏗️","tagline":"Strong, tall, useful","description":"Building and engineering from block towers to sustainable design: stable bases, strong shapes, materials, bridges, the engineering design process, tension and compression, Indian engineering marvels from stepwells to modern bridges, earthquake-resistant design, engineering disciplines, learning from failure and engineering ethics.","contentVersion":"1.0.0","sensitivity":"none","stages":[{"stage":"s4","overview":"Building towers and walls that stand up.","goals":["Build towers with a wide, stable base","Test what makes buildings fall","Talk about building plans"],"units":[{"id":"engineering.s4.towers","title":"Tall Towers","summary":"Making things stand up.","topics":[{"title":"Wide bases","subtopics":["Wide bases"]},{"title":"Balance","subtopics":["Balance"]},{"title":"Testing and rebuilding","subtopics":["Testing and rebuilding"]}],"objectives":["Build a tower that stands up using a wide base","Test a tower and improve it"],"masteryCriteria":["Builds with a stable base","Tests and improves","Uses building vocabulary"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"engineering.s4.towers.stable-towers","title":"Wide at the Bottom","skillId":"sk.engineering.s4.towers.stable-towers","minutes":8,"objectives":["Build a tower that stands up using a wide base","Test a tower and improve it"],"prerequisites":["Can stack blocks"],"prerequisiteIds":[],"explanation":["When we build a tower, a wide, strong bottom (base) helps it stand up. A tower that is wide at the bottom and narrow at the top is stable — hard to knock over.","If blocks are not lined up straight, the tower leans and may fall. Builders check that things are straight and balanced.","Engineers are people who design and build things. They test their buildings, see what goes wrong and make them better. Falling down is part of learning!"],"context":[],"vocabulary":[{"term":"base","meaning":"the bottom part that holds things up"},{"term":"stable","meaning":"steady and hard to knock over"},{"term":"balance","meaning":"staying steady without falling"},{"term":"engineer","meaning":"a person who designs and builds things"}],"examples":["A pyramid of blocks.","A temple tower wide at the bottom."],"story":{"title":"The Wobbly Tower","text":"Ivaan stacked blocks one on top of another — tall and thin. Wobble, wobble, CRASH! He tried again with four blocks at the bottom, then three, then two, then one. It stood strong, even when his sister blew on it. \"Wide at the bottom!\" he said. \"That's the engineer's secret.\""},"activities":[{"id":"engineering.s4.towers.stable-towers.a1","prompt":"Which tower is most stable?","kind":"choice","options":["wide at the bottom","thin all the way","wide at the top"],"answer":0},{"id":"engineering.s4.towers.stable-towers.a2","prompt":"A person who designs and builds things is an…","kind":"choice","options":["engineer","artist only","astronaut"],"answer":0},{"id":"engineering.s4.towers.stable-towers.a3","prompt":"Falling down helps us learn how to build better.","kind":"truefalse","answer":true},{"id":"engineering.s4.towers.stable-towers.a4","prompt":"Put the building steps in order","kind":"order","items":["Plan the tower","Build it","Test it","Make it better"]}],"thinking":["Why do you think a wide base helps?","What tall buildings have you seen?"],"speaking":["Show a grown-up your tower and explain why it stands."],"project":{"kind":"project","title":"Tower Challenge","materials":["blocks or paper cups"],"steps":["Build the tallest tower you can","Test it by blowing gently","Rebuild it with a wider base","Compare which stood better"]},"assessment":[{"id":"engineering.s4.towers.stable-towers.q1","prompt":"Steady and hard to knock over is…","kind":"choice","options":["stable","wobbly","tiny"],"answer":0},{"id":"engineering.s4.towers.stable-towers.q2","prompt":"A leaning tower may fall.","kind":"truefalse","answer":true},{"id":"engineering.s4.towers.stable-towers.q3","prompt":"The bottom part that holds things up is the…","kind":"choice","options":["base","top","roof"],"answer":0}],"mastery":["Builds with a stable base","Tests and improves","Uses building vocabulary"]}]},{"id":"engineering.s4.walls-houses","title":"Walls and Houses","summary":"Building like a bricklayer.","topics":[{"title":"Brick patterns","subtopics":["Brick patterns"]},{"title":"Strong walls","subtopics":["Strong walls"]},{"title":"Houses around the world","subtopics":["Houses around the world"]}],"objectives":["Build a wall with overlapping bricks","Name homes made from different materials"],"masteryCriteria":["Builds overlapping walls","Names building materials","Links homes to climate"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"engineering.s4.walls-houses.brick-walls","title":"Brick by Brick","skillId":"sk.engineering.s4.walls-houses.brick-walls","minutes":8,"objectives":["Build a wall with overlapping bricks","Name homes made from different materials"],"prerequisites":["Can build a stable tower"],"prerequisiteIds":[],"explanation":["Bricklayers stack bricks so each brick sits across two bricks below, like a staircase pattern. This overlapping pattern makes walls strong; straight stacks split apart easily.","Houses are built from many materials: bricks, stone, wood, mud, bamboo, ice and even snow.","People build homes that suit their weather: thick mud walls stay cool in hot places, stilt houses stay dry in flood areas, and igloos made of snow keep warm in the Arctic."],"context":[],"vocabulary":[{"term":"brick","meaning":"a block used for building walls"},{"term":"overlap","meaning":"to lie partly over something"},{"term":"material","meaning":"what something is made of"},{"term":"stilts","meaning":"tall posts that lift a house off the ground"}],"examples":["Overlapping bricks on a school wall.","Bamboo stilt houses in Assam."],"story":{"title":"The Three Little Builders","text":"Three little builders each made a wall. The first stacked bricks straight up in towers. The second leaned them against each other. The third overlapped each brick over two below. When the wind blew, only the third wall stood. \"Overlap makes them hold hands,\" the third builder explained."},"activities":[{"id":"engineering.s4.walls-houses.brick-walls.a1","prompt":"Strong walls have bricks that…","kind":"choice","options":["overlap","stand in straight stacks","are loose"],"answer":0},{"id":"engineering.s4.walls-houses.brick-walls.a2","prompt":"Match the home to the material","kind":"match","pairs":[["igloo","snow"],["stilt house","bamboo"],["cottage","bricks"]]},{"id":"engineering.s4.walls-houses.brick-walls.a3","prompt":"Homes are built to suit the weather.","kind":"truefalse","answer":true},{"id":"engineering.s4.walls-houses.brick-walls.a4","prompt":"Stilts keep a house…","kind":"choice","options":["dry in floods","very cold","underground"],"answer":0}],"thinking":["What is your home made of?","Why would an igloo be warm inside?"],"speaking":["Tell a grown-up why overlapping bricks make a wall stronger."],"project":{"kind":"project","title":"Strong Wall Test","materials":["blocks","a toy car"],"steps":["Build one wall with straight stacks","Build one with overlapping bricks","Roll a toy car into each","See which wall stays strong"]},"assessment":[{"id":"engineering.s4.walls-houses.brick-walls.q1","prompt":"Tall posts that lift a house are…","kind":"choice","options":["stilts","stairs","sticks"],"answer":0},{"id":"engineering.s4.walls-houses.brick-walls.q2","prompt":"Mud walls can keep homes cool.","kind":"truefalse","answer":true},{"id":"engineering.s4.walls-houses.brick-walls.q3","prompt":"What something is made of is its…","kind":"choice","options":["material","colour","name"],"answer":0}],"mastery":["Builds overlapping walls","Names building materials","Links homes to climate"]}]}]},{"stage":"s5","overview":"Strong shapes and choosing materials.","goals":["Discover why triangles are strong","Choose suitable materials for a job","Build and test structures"],"units":[{"id":"engineering.s5.shapes","title":"Strong Shapes","summary":"Triangles hold firm.","topics":[{"title":"Triangles vs squares","subtopics":["Triangles vs squares"]},{"title":"Triangles in buildings","subtopics":["Triangles in buildings"]},{"title":"Building with straws","subtopics":["Building with straws"]}],"objectives":["Show that a triangle keeps its shape better than a square","Find triangles in real structures"],"masteryCriteria":["Demonstrates triangle rigidity","Strengthens shapes with diagonals","Finds triangles in structures"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"engineering.s5.shapes.triangles","title":"The Triangle Trick","skillId":"sk.engineering.s5.shapes.triangles","minutes":10,"objectives":["Show that a triangle keeps its shape better than a square","Find triangles in real structures"],"prerequisites":["Knows basic shapes"],"prerequisiteIds":[],"explanation":["If you make a square from straws and push a corner, it squashes into a diamond shape. If you make a triangle and push it, it holds its shape!","That is why engineers use triangles in bridges, roofs, cranes and towers. Adding a diagonal across a square turns it into two triangles and makes it strong.","Look for triangles in electricity towers, bicycle frames and roof trusses."],"context":[],"vocabulary":[{"term":"triangle","meaning":"a shape with three sides"},{"term":"diagonal","meaning":"a line joining opposite corners"},{"term":"rigid","meaning":"stiff and keeps its shape"},{"term":"truss","meaning":"a frame made of triangles"}],"examples":["Triangles in an electricity pylon.","A bicycle frame made of two triangles."],"story":{"title":"Squish or Stay?","text":"Zuri made a square and a triangle from straws and pipe cleaners. She pushed the square — squish, it went flat. She pushed the triangle — it stayed strong! \"Triangles are stubborn,\" she laughed. She added a straw across the square, and now it was stubborn too."},"activities":[{"id":"engineering.s5.shapes.triangles.a1","prompt":"Which shape keeps its shape when pushed?","kind":"choice","options":["triangle","square","circle made of straws"],"answer":0},{"id":"engineering.s5.shapes.triangles.a2","prompt":"A diagonal turns a square into…","kind":"choice","options":["two triangles","a circle","a line"],"answer":0},{"id":"engineering.s5.shapes.triangles.a3","prompt":"Bicycle frames use triangles.","kind":"truefalse","answer":true},{"id":"engineering.s5.shapes.triangles.a4","prompt":"A frame made of triangles is a…","kind":"choice","options":["truss","tent","table"],"answer":0}],"thinking":["Where can you see triangles in your neighbourhood?","Why don't all buildings use triangles everywhere?"],"speaking":["Show a grown-up the straw square and triangle test."],"project":{"kind":"experiment","title":"Straw Structure Test","materials":["straws","pipe cleaners or tape"],"steps":["Build a square and a triangle","Push each corner gently","Add a diagonal to the square","Build a tower using triangles"]},"assessment":[{"id":"engineering.s5.shapes.triangles.q1","prompt":"Stiff and keeps its shape is…","kind":"choice","options":["rigid","floppy","bendy"],"answer":0},{"id":"engineering.s5.shapes.triangles.q2","prompt":"A triangle has three sides.","kind":"truefalse","answer":true},{"id":"engineering.s5.shapes.triangles.q3","prompt":"A line joining opposite corners is a…","kind":"choice","options":["diagonal","circle","curve"],"answer":0}],"mastery":["Demonstrates triangle rigidity","Strengthens shapes with diagonals","Finds triangles in structures"]}]},{"id":"engineering.s5.materials","title":"Choosing Materials","summary":"The right stuff for the job.","topics":[{"title":"Strong, bendy, waterproof","subtopics":["Strong, bendy, waterproof"]},{"title":"Testing materials","subtopics":["Testing materials"]},{"title":"Matching materials to jobs","subtopics":["Matching materials to jobs"]}],"objectives":["Describe materials as strong, bendy, waterproof or light","Choose materials for a purpose and test them"],"masteryCriteria":["Describes material properties","Chooses materials for purpose","Tests materials fairly"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"engineering.s5.materials.choose-materials","title":"The Right Material","skillId":"sk.engineering.s5.materials.choose-materials","minutes":10,"objectives":["Describe materials as strong, bendy, waterproof or light","Choose materials for a purpose and test them"],"prerequisites":["Can name common materials"],"prerequisiteIds":[],"explanation":["Engineers choose materials by their properties. Steel is strong; rubber is bendy and stretchy; glass is see-through; plastic can be waterproof; wood is strong and light.","The right material depends on the job. A raincoat must be waterproof. A window must be see-through. A bridge must be strong.","Engineers test materials before using them — how much weight they hold, whether they bend or break, whether water soaks through."],"context":[],"vocabulary":[{"term":"property","meaning":"what a material is like"},{"term":"waterproof","meaning":"does not let water through"},{"term":"flexible","meaning":"bends easily"},{"term":"transparent","meaning":"see-through"}],"examples":["A rubber ball bouncing because it is flexible.","A plastic raincoat keeping you dry."],"story":{"title":"The Teddy's Umbrella","text":"Teddy needed an umbrella. Ivaan tested materials with a cup of water: paper got soggy, cloth dripped through, foil stayed dry, and a plastic bag stayed dry too. He made the umbrella from a plastic bag and a straw handle. Drip, drip — Teddy stayed perfectly dry!"},"activities":[{"id":"engineering.s5.materials.choose-materials.a1","prompt":"Match the material to the property","kind":"match","pairs":[["glass","transparent"],["rubber","flexible"],["plastic bag","waterproof"]]},{"id":"engineering.s5.materials.choose-materials.a2","prompt":"A raincoat must be…","kind":"choice","options":["waterproof","see-through","soft as cotton wool"],"answer":0},{"id":"engineering.s5.materials.choose-materials.a3","prompt":"Engineers test materials before using them.","kind":"truefalse","answer":true},{"id":"engineering.s5.materials.choose-materials.a4","prompt":"See-through means…","kind":"choice","options":["transparent","flexible","heavy"],"answer":0}],"thinking":["Why aren't bridges made of paper?","What material would you use for a lunchbox?"],"speaking":["Explain which material you chose for a job and why."],"project":{"kind":"experiment","title":"Teddy Umbrella Test","materials":["paper","cloth","foil","plastic","a cup of water","a teddy"],"steps":["Drip water onto each material","Record which stay dry","Make an umbrella from the best one","Test it on teddy"]},"assessment":[{"id":"engineering.s5.materials.choose-materials.q1","prompt":"What a material is like is its…","kind":"choice","options":["property","price","place"],"answer":0},{"id":"engineering.s5.materials.choose-materials.q2","prompt":"Steel is strong.","kind":"truefalse","answer":true},{"id":"engineering.s5.materials.choose-materials.q3","prompt":"Bends easily means…","kind":"choice","options":["flexible","rigid","transparent"],"answer":0}],"mastery":["Describes material properties","Chooses materials for purpose","Tests materials fairly"]}]}]},{"stage":"s6","overview":"Bridges and the engineering design process.","goals":["Compare beam, arch and suspension bridges","Follow the engineering design process","Build and test a model bridge"],"units":[{"id":"engineering.s6.bridges","title":"Bridges","summary":"Crossing gaps.","topics":[{"title":"Beam bridges","subtopics":["Beam bridges"]},{"title":"Arch bridges","subtopics":["Arch bridges"]},{"title":"Suspension and cable-stayed bridges","subtopics":["Suspension and cable-stayed bridges"]}],"objectives":["Describe beam, arch and suspension bridges","Explain how each carries weight"],"masteryCriteria":["Describes bridge types","Explains load paths simply","Tests model bridges"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"engineering.s6.bridges.bridge-types","title":"Beam, Arch and Suspension","skillId":"sk.engineering.s6.bridges.bridge-types","minutes":15,"objectives":["Describe beam, arch and suspension bridges","Explain how each carries weight"],"prerequisites":["Knows strong shapes"],"prerequisiteIds":[],"explanation":["A beam bridge is a flat deck resting on supports at each end — simple but limited in length. An arch bridge pushes the weight outwards and down into strong supports at each end called abutments; the Romans built many stone arches.","A suspension bridge hangs the deck from cables slung between tall towers, allowing very long spans — like the Golden Gate Bridge. A cable-stayed bridge connects cables directly from towers to the deck — like the Bandra–Worli Sea Link in Mumbai.","India's Chenab Rail Bridge in Jammu and Kashmir, opened in 2025, is a steel arch bridge about 359 metres above the river — the highest railway bridge in the world."],"context":[],"vocabulary":[{"term":"span","meaning":"the distance a bridge crosses between supports"},{"term":"deck","meaning":"the surface you travel on"},{"term":"abutment","meaning":"a strong support at the end of an arch"},{"term":"cable","meaning":"a thick, strong wire rope"}],"examples":["A plank across a stream (beam).","The Bandra–Worli Sea Link (cable-stayed)."],"story":{"title":"A Bridge Above the Clouds","text":"Engineers building the Chenab Bridge faced deep gorges, strong winds and earthquakes. They designed a huge steel arch, tested it for winds of over 200 km/h and protected it against blasts. When the first trains crossed in 2025, passengers looked down at a river far below — higher than the Eiffel Tower is tall."},"activities":[{"id":"engineering.s6.bridges.bridge-types.a1","prompt":"Match the bridge to its type","kind":"match","pairs":[["plank across a stream","beam"],["Chenab Bridge","arch"],["Golden Gate","suspension"],["Bandra–Worli Sea Link","cable-stayed"]]},{"id":"engineering.s6.bridges.bridge-types.a2","prompt":"Which bridge type allows the longest spans?","kind":"choice","options":["suspension","beam","stepping stones"],"answer":0},{"id":"engineering.s6.bridges.bridge-types.a3","prompt":"Arch bridges push weight into abutments.","kind":"truefalse","answer":true},{"id":"engineering.s6.bridges.bridge-types.a4","prompt":"The surface you travel on is the…","kind":"choice","options":["deck","cable","tower"],"answer":0}],"thinking":["Why can't a beam bridge be very long?","Which bridge type would you build over a wide sea?"],"speaking":["Explain how one bridge type carries weight, using your hands as a model."],"project":{"kind":"experiment","title":"Paper Bridge Challenge","materials":["paper","books","coins"],"steps":["Place two books apart as banks","Make a flat paper beam bridge and add coins until it fails","Fold the paper into an arch or zigzag and test again","Record which holds the most coins"]},"assessment":[{"id":"engineering.s6.bridges.bridge-types.q1","prompt":"The distance a bridge crosses is its…","kind":"choice","options":["span","deck","cable"],"answer":0},{"id":"engineering.s6.bridges.bridge-types.q2","prompt":"The Chenab Bridge is a steel arch bridge.","kind":"truefalse","answer":true},{"id":"engineering.s6.bridges.bridge-types.q3","prompt":"A thick, strong wire rope is a…","kind":"choice","options":["cable","beam","brick"],"answer":0}],"mastery":["Describes bridge types","Explains load paths simply","Tests model bridges"]}]},{"id":"engineering.s6.design-process","title":"The Engineering Design Process","summary":"How engineers solve problems.","topics":[{"title":"Ask and imagine","subtopics":["Ask and imagine"]},{"title":"Plan and create","subtopics":["Plan and create"]},{"title":"Test and improve","subtopics":["Test and improve"]}],"objectives":["Follow the steps of the engineering design process","Use constraints and criteria in a design challenge"],"masteryCriteria":["Follows the design process","Applies criteria and constraints","Improves designs from test data"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"engineering.s6.design-process.edp","title":"Ask, Imagine, Plan, Create, Improve","skillId":"sk.engineering.s6.design-process.edp","minutes":15,"objectives":["Follow the steps of the engineering design process","Use constraints and criteria in a design challenge"],"prerequisites":["Can build and test models"],"prerequisiteIds":[],"explanation":["Engineers follow a design process: Ask (what is the problem?), Imagine (brainstorm ideas), Plan (draw and choose materials), Create (build a prototype) and Improve (test and make it better). Then they often repeat.","Criteria are what the design must do — \"hold 10 coins\". Constraints are the limits — \"use only 10 straws and 50 cm of tape\".","Engineers work in teams, share ideas and record their tests so they know what worked."],"context":[],"vocabulary":[{"term":"criteria","meaning":"what a design must achieve"},{"term":"constraint","meaning":"a limit on a design"},{"term":"prototype","meaning":"a first model for testing"},{"term":"iterate","meaning":"to repeat the process to improve"}],"examples":["Designing an egg protector for a drop test.","Using only newspaper to build a tower."],"story":{"title":"Operation Egg Drop","text":"Zuri's team had to protect an egg dropped from a chair, using only straws, tape and paper. Their first design cracked the egg. They studied the break, added a straw \"crumple zone\" and a paper parachute. The second egg landed softly. \"Engineering is failing forward,\" their teacher grinned."},"activities":[{"id":"engineering.s6.design-process.edp.a1","prompt":"Put the design process in order","kind":"order","items":["Ask","Imagine","Plan","Create","Improve"]},{"id":"engineering.s6.design-process.edp.a2","prompt":"A limit on a design is a…","kind":"choice","options":["constraint","criterion","prototype"],"answer":0},{"id":"engineering.s6.design-process.edp.a3","prompt":"Engineers often repeat the design process.","kind":"truefalse","answer":true},{"id":"engineering.s6.design-process.edp.a4","prompt":"A first model for testing is a…","kind":"choice","options":["prototype","blueprint only","final product"],"answer":0}],"thinking":["Why test a prototype before building the real thing?","How does working in a team help?"],"speaking":["Present your design, test results and improvements."],"project":{"kind":"project","title":"Egg Drop Challenge","materials":["straws","tape","paper","a raw egg (with an adult)"],"steps":["Write the criteria and constraints","Sketch and build a protector","Drop it from a safe height and record results","Improve and test again"]},"assessment":[{"id":"engineering.s6.design-process.edp.q1","prompt":"What a design must achieve are its…","kind":"choice","options":["criteria","constraints","crumbs"],"answer":0},{"id":"engineering.s6.design-process.edp.q2","prompt":"Recording tests helps engineers improve.","kind":"truefalse","answer":true},{"id":"engineering.s6.design-process.edp.q3","prompt":"To repeat a process to improve is to…","kind":"choice","options":["iterate","imitate","ignore"],"answer":0}],"mastery":["Follows the design process","Applies criteria and constraints","Improves designs from test data"]}]}]},{"stage":"s7","overview":"Forces in structures and Indian engineering marvels.","goals":["Explain tension, compression and load","Analyse how structures carry loads","Describe historic and modern Indian engineering"],"units":[{"id":"engineering.s7.forces-structures","title":"Forces in Structures","summary":"Push and pull inside buildings.","topics":[{"title":"Tension and compression","subtopics":["Tension and compression"]},{"title":"Loads","subtopics":["Loads"]},{"title":"Beams and columns","subtopics":["Beams and columns"]}],"objectives":["Distinguish tension and compression in structures","Identify dead and live loads"],"masteryCriteria":["Distinguishes tension and compression","Identifies load types","Explains reinforced concrete"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"engineering.s7.forces-structures.tension-compression","title":"Squash and Stretch","skillId":"sk.engineering.s7.forces-structures.tension-compression","minutes":20,"objectives":["Distinguish tension and compression in structures","Identify dead and live loads"],"prerequisites":["Knows bridge types"],"prerequisiteIds":[],"explanation":["Compression is a squashing force; tension is a stretching force. A column holding up a roof is in compression. A suspension bridge cable is in tension.","When a beam bends under a load, its top is squashed (compression) and its bottom is stretched (tension). Concrete is strong in compression but weak in tension, so engineers add steel bars inside it — reinforced concrete.","Structures carry loads. Dead load is the structure's own weight; live load is changing weight such as people, vehicles and furniture. Wind and earthquakes add environmental loads."],"context":[],"vocabulary":[{"term":"compression","meaning":"a squashing force"},{"term":"tension","meaning":"a stretching force"},{"term":"load","meaning":"a force a structure must carry"},{"term":"reinforced concrete","meaning":"concrete strengthened with steel bars"}],"examples":["A sponge beam: the top squashes, the bottom stretches.","Steel rebar in a building's columns."],"story":{"title":"The Sponge Bridge","text":"Kiko drew lines across the top and bottom of a sponge, then bent it like a loaded beam. The top lines squeezed together; the bottom lines spread apart. \"Compression on top, tension underneath!\" he said. \"That's why builders put steel in the bottom of concrete beams.\""},"activities":[{"id":"engineering.s7.forces-structures.tension-compression.a1","prompt":"Match the term to its meaning","kind":"match","pairs":[["compression","squashing force"],["tension","stretching force"],["live load","changing weight such as people"]]},{"id":"engineering.s7.forces-structures.tension-compression.a2","prompt":"Concrete is weak in…","kind":"choice","options":["tension","compression","colour"],"answer":0},{"id":"engineering.s7.forces-structures.tension-compression.a3","prompt":"Live load includes people and vehicles.","kind":"truefalse","answer":true},{"id":"engineering.s7.forces-structures.tension-compression.a4","prompt":"Concrete with steel bars is…","kind":"choice","options":["reinforced concrete","plain mud","glass"],"answer":0}],"thinking":["Why do engineers need to know the live load of a stadium?","Where else might tension be important?"],"speaking":["Demonstrate tension and compression with a sponge or ruler."],"project":{"kind":"experiment","title":"Beam Investigation","materials":["strips of card","books","coins","a ruler"],"steps":["Make beams from single and folded card","Rest them between books","Add coins and measure the sag","Explain results using tension and compression"]},"assessment":[{"id":"engineering.s7.forces-structures.tension-compression.q1","prompt":"A stretching force is…","kind":"choice","options":["tension","compression","friction"],"answer":0},{"id":"engineering.s7.forces-structures.tension-compression.q2","prompt":"Dead load is a structure's own weight.","kind":"truefalse","answer":true},{"id":"engineering.s7.forces-structures.tension-compression.q3","prompt":"A squashing force is…","kind":"choice","options":["compression","tension","gravity only"],"answer":0}],"mastery":["Distinguishes tension and compression","Identifies load types","Explains reinforced concrete"]}]},{"id":"engineering.s7.indian-engineering","title":"Indian Engineering Marvels","summary":"From stepwells to sea links.","topics":[{"title":"Stepwells and Kallanai","subtopics":["Stepwells and Kallanai"]},{"title":"Temples and forts","subtopics":["Temples and forts"]},{"title":"Modern megaprojects","subtopics":["Modern megaprojects"]}],"objectives":["Describe historic and modern Indian engineering achievements","Explain the engineering problems they solved"],"masteryCriteria":["Describes marvels accurately","Explains engineering problems solved","Connects history and modern engineering"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"engineering.s7.indian-engineering.marvels","title":"Engineering Through the Ages","skillId":"sk.engineering.s7.indian-engineering.marvels","minutes":20,"objectives":["Describe historic and modern Indian engineering achievements","Explain the engineering problems they solved"],"prerequisites":["Knows forces in structures"],"prerequisiteIds":[],"explanation":["Ancient engineers solved water problems. Stepwells such as Rani ki Vav in Gujarat (11th century, a UNESCO World Heritage Site) gave access to groundwater through many levels of steps. The Kallanai (Grand Anicut) on the Kaveri, traditionally credited to the Chola king Karikalan around the 2nd century CE, is among the oldest water-diversion structures still in use.","The Harappan cities had planned streets and covered drains over 4,000 years ago. The Iron Pillar of Delhi, around 1,600 years old, has resisted rust remarkably — studied by metallurgists for its protective layer.","Modern achievements include the Konkan Railway through the Western Ghats (completed 1998), the Delhi Metro, the Atal Tunnel under the Rohtang Pass (2020) and the Chenab Bridge. Engineer M. Visvesvaraya, whose birthday (15 September) is celebrated as Engineers' Day in India, designed dams and flood-protection systems."],"context":[],"vocabulary":[{"term":"stepwell","meaning":"a well reached by steps descending to the water"},{"term":"anicut","meaning":"a dam or weir across a river"},{"term":"metallurgy","meaning":"the science of metals"},{"term":"tunnel","meaning":"an underground passage"}],"examples":["Rani ki Vav's seven levels of sculpted steps.","The Atal Tunnel, over 9 km long at high altitude."],"story":{"title":"The Engineer Who Tamed Floods","text":"In 1908, a terrible flood struck Hyderabad. The Nizam called on engineer M. Visvesvaraya, who designed a flood-protection plan, including reservoirs, to prevent such disasters. Later he built the Krishna Raja Sagara dam in Mysore. India honours him every year on Engineers' Day."},"activities":[{"id":"engineering.s7.indian-engineering.marvels.a1","prompt":"Match the marvel to its place","kind":"match","pairs":[["Rani ki Vav","Gujarat"],["Kallanai","Kaveri river"],["Atal Tunnel","Rohtang Pass"]]},{"id":"engineering.s7.indian-engineering.marvels.a2","prompt":"Engineers' Day in India honours…","kind":"choice","options":["M. Visvesvaraya","Aryabhata","C. V. Raman"],"answer":0},{"id":"engineering.s7.indian-engineering.marvels.a3","prompt":"The Harappans built covered drains.","kind":"truefalse","answer":true},{"id":"engineering.s7.indian-engineering.marvels.a4","prompt":"The Iron Pillar of Delhi is famous for…","kind":"choice","options":["resisting rust","being made of gold","moving by itself"],"answer":0}],"thinking":["What problem did stepwells solve?","What modern problem would you like to engineer a solution for?"],"speaking":["Present one Indian engineering marvel and the problem it solved."],"project":{"kind":"project","title":"Marvel Model","materials":["card","clay or recycled materials","research sources"],"steps":["Choose a marvel and research it","Build a simple model","Label the engineering features","Present how it solved a real problem"]},"assessment":[{"id":"engineering.s7.indian-engineering.marvels.q1","prompt":"A well reached by steps is a…","kind":"choice","options":["stepwell","staircase only","tunnel"],"answer":0},{"id":"engineering.s7.indian-engineering.marvels.q2","prompt":"The Konkan Railway runs through the Western Ghats.","kind":"truefalse","answer":true},{"id":"engineering.s7.indian-engineering.marvels.q3","prompt":"The science of metals is…","kind":"choice","options":["metallurgy","meteorology","mythology"],"answer":0}],"mastery":["Describes marvels accurately","Explains engineering problems solved","Connects history and modern engineering"]}]}]},{"stage":"s9","overview":"Engineering disciplines and designing for earthquakes.","goals":["Describe engineering disciplines and careers","Explain earthquake-resistant design","Apply engineering calculations"],"units":[{"id":"engineering.s9.disciplines","title":"Engineering Disciplines","summary":"Many kinds of engineers.","topics":[{"title":"Civil and mechanical","subtopics":["Civil and mechanical"]},{"title":"Electrical and computer","subtopics":["Electrical and computer"]},{"title":"Chemical, biomedical and aerospace","subtopics":["Chemical, biomedical and aerospace"]}],"objectives":["Describe major engineering disciplines","Match real problems to the disciplines that solve them"],"masteryCriteria":["Describes disciplines accurately","Matches problems to disciplines","Explores careers"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"engineering.s9.disciplines.disciplines","title":"Which Engineer Are You?","skillId":"sk.engineering.s9.disciplines.disciplines","minutes":30,"objectives":["Describe major engineering disciplines","Match real problems to the disciplines that solve them"],"prerequisites":["Knows the design process"],"prerequisiteIds":[],"explanation":["Civil engineers design buildings, bridges, roads and water systems. Mechanical engineers design machines, engines and vehicles. Electrical engineers work with power systems and electronics. Computer engineers design hardware and software systems.","Chemical engineers design processes for making medicines, fuels and materials. Biomedical engineers design medical devices like pacemakers and prosthetics. Aerospace engineers design aircraft and spacecraft — like ISRO's Chandrayaan-3, which landed near the Moon's south pole in 2023.","Most big projects need teams from many disciplines working together, plus skills in maths, physics, communication and ethics."],"context":[],"vocabulary":[{"term":"discipline","meaning":"a branch of study or work"},{"term":"civil engineering","meaning":"designing infrastructure"},{"term":"biomedical engineering","meaning":"applying engineering to medicine"},{"term":"aerospace","meaning":"relating to aircraft and spacecraft"}],"examples":["The Jaipur Foot, a low-cost prosthetic limb developed in India.","Chandrayaan-3's Vikram lander."],"story":{"title":"Team Chandrayaan","text":"Landing Chandrayaan-3 needed aerospace engineers for the trajectory, mechanical engineers for the landing legs, electrical engineers for power, computer engineers for the guidance software and materials experts for heat shields. On 23 August 2023, when Vikram touched down, the whole team cheered — every discipline had played its part."},"activities":[{"id":"engineering.s9.disciplines.disciplines.a1","prompt":"Match the engineer to the job","kind":"match","pairs":[["civil","bridges and roads"],["biomedical","prosthetics"],["aerospace","spacecraft"],["chemical","medicine production"]]},{"id":"engineering.s9.disciplines.disciplines.a2","prompt":"Chandrayaan-3 landed in…","kind":"choice","options":["2023","1969","2010"],"answer":0},{"id":"engineering.s9.disciplines.disciplines.a3","prompt":"Big projects need many disciplines working together.","kind":"truefalse","answer":true},{"id":"engineering.s9.disciplines.disciplines.a4","prompt":"Designing machines and engines is…","kind":"choice","options":["mechanical engineering","civil engineering","biology"],"answer":0}],"thinking":["Which discipline interests you most? Why?","Why do engineers need communication skills?"],"speaking":["Interview an engineer (in person or by reading) and present their work."],"project":{"kind":"project","title":"Career Explorer","materials":["reliable career resources","interviews"],"steps":["Research three disciplines","List what they do, skills needed and an Indian example","Interview or read about an engineer","Make a career poster"]},"assessment":[{"id":"engineering.s9.disciplines.disciplines.q1","prompt":"Applying engineering to medicine is…","kind":"choice","options":["biomedical engineering","civil engineering","aerospace"],"answer":0},{"id":"engineering.s9.disciplines.disciplines.q2","prompt":"The Jaipur Foot is a low-cost prosthetic.","kind":"truefalse","answer":true},{"id":"engineering.s9.disciplines.disciplines.q3","prompt":"A branch of study is a…","kind":"choice","options":["discipline","discount","disguise"],"answer":0}],"mastery":["Describes disciplines accurately","Matches problems to disciplines","Explores careers"]}]},{"id":"engineering.s9.earthquakes","title":"Designing for Earthquakes","summary":"Safe buildings.","topics":[{"title":"Seismic zones","subtopics":["Seismic zones"]},{"title":"Base isolation and dampers","subtopics":["Base isolation and dampers"]},{"title":"Building codes","subtopics":["Building codes"]}],"objectives":["Explain how earthquakes affect buildings","Describe earthquake-resistant design techniques"],"masteryCriteria":["Explains earthquake effects","Describes resistant designs","Tests models systematically"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"engineering.s9.earthquakes.seismic","title":"Buildings That Bend, Not Break","skillId":"sk.engineering.s9.earthquakes.seismic","minutes":30,"objectives":["Explain how earthquakes affect buildings","Describe earthquake-resistant design techniques"],"prerequisites":["Knows forces in structures"],"prerequisiteIds":[],"explanation":["Earthquakes shake the ground sideways and up and down. Buildings can crack or collapse if they are too stiff, too weak or poorly connected. India is divided into seismic zones; the Himalayan region is among the most active.","Engineers design for earthquakes using ductile (bendable) reinforced concrete, strong connections, shear walls, and symmetrical shapes. Base isolation places flexible bearings under a building so the ground moves beneath it. Tuned mass dampers — huge weights near the top, as in Taipei 101 — reduce swaying.","Building codes set minimum safety standards; in India, the Bureau of Indian Standards publishes seismic codes such as IS 1893. After the 2001 Bhuj earthquake, stricter enforcement and retrofitting gained importance."],"context":[],"vocabulary":[{"term":"seismic","meaning":"relating to earthquakes"},{"term":"ductile","meaning":"able to bend without breaking"},{"term":"base isolation","meaning":"flexible bearings separating a building from ground motion"},{"term":"building code","meaning":"rules for safe construction"}],"examples":["Base-isolated hospitals that keep working after quakes.","Taipei 101's 660-tonne damper."],"story":{"title":"The Hospital That Kept Working","text":"After the 2001 Bhuj earthquake in Gujarat, a new hospital in Bhuj was built on base isolators — rubber-and-steel pads under the building. Engineers explained that in a future quake, the ground would move but the hospital would glide gently above it, so doctors could keep treating patients when they were needed most."},"activities":[{"id":"engineering.s9.earthquakes.seismic.a1","prompt":"Ductile means…","kind":"choice","options":["able to bend without breaking","very brittle","invisible"],"answer":0},{"id":"engineering.s9.earthquakes.seismic.a2","prompt":"Match the technique","kind":"match","pairs":[["base isolation","flexible bearings under the building"],["tuned mass damper","heavy weight reducing sway"],["shear wall","stiff wall resisting sideways force"]]},{"id":"engineering.s9.earthquakes.seismic.a3","prompt":"Building codes set minimum safety standards.","kind":"truefalse","answer":true},{"id":"engineering.s9.earthquakes.seismic.a4","prompt":"The Indian seismic design code is…","kind":"choice","options":["IS 1893","ISO 9001","IPL 2020"],"answer":0}],"thinking":["Why is a perfectly stiff building not ideal?","Who should pay for retrofitting old buildings?"],"speaking":["Explain base isolation using a model or demonstration."],"project":{"kind":"experiment","title":"Shake Table Challenge","materials":["a tray on marbles or rubber balls","card","straws","clay"],"steps":["Build a small tower","Shake the tray to simulate an earthquake","Add bracing, a wider base or isolation pads","Compare performance and record results"]},"assessment":[{"id":"engineering.s9.earthquakes.seismic.q1","prompt":"Relating to earthquakes is…","kind":"choice","options":["seismic","scenic","solar"],"answer":0},{"id":"engineering.s9.earthquakes.seismic.q2","prompt":"Symmetrical shapes help earthquake resistance.","kind":"truefalse","answer":true},{"id":"engineering.s9.earthquakes.seismic.q3","prompt":"Rules for safe construction are…","kind":"choice","options":["building codes","recipes","passwords"],"answer":0}],"mastery":["Explains earthquake effects","Describes resistant designs","Tests models systematically"]}]}]},{"stage":"s12","overview":"Sustainable engineering, learning from failure and ethics.","goals":["Evaluate sustainability in engineering","Analyse engineering failures","Apply ethical reasoning to engineering decisions"],"units":[{"id":"engineering.s12.sustainable","title":"Sustainable Engineering","summary":"Building for the future.","topics":[{"title":"Embodied carbon","subtopics":["Embodied carbon"]},{"title":"Green buildings","subtopics":["Green buildings"]},{"title":"Life-cycle thinking","subtopics":["Life-cycle thinking"]}],"objectives":["Explain embodied carbon and life-cycle assessment","Evaluate sustainable design strategies"],"masteryCriteria":["Explains carbon concepts","Evaluates strategies with evidence","Proposes sustainable designs"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"engineering.s12.sustainable.green-engineering","title":"Engineering for a Liveable Planet","skillId":"sk.engineering.s12.sustainable.green-engineering","minutes":40,"objectives":["Explain embodied carbon and life-cycle assessment","Evaluate sustainable design strategies"],"prerequisites":["Knows materials and structures"],"prerequisiteIds":[],"explanation":["Construction and buildings account for a large share of global energy use and carbon emissions. Cement production alone is responsible for roughly 7–8% of global CO₂ emissions.","Embodied carbon is the carbon emitted making and transporting materials; operational carbon comes from using a building (cooling, lighting). Life-cycle assessment considers impacts from raw materials to demolition and reuse.","Sustainable strategies include passive cooling (orientation, shading, courtyards and jaalis, like traditional Indian architecture), low-carbon materials (fly-ash concrete, bamboo, mass timber), renewable energy and designing for reuse. Rating systems such as GRIHA and IGBC assess green buildings in India."],"context":[],"vocabulary":[{"term":"embodied carbon","meaning":"emissions from making and transporting materials"},{"term":"life-cycle assessment","meaning":"evaluating impacts over a product's whole life"},{"term":"passive cooling","meaning":"cooling without powered systems"},{"term":"retrofit","meaning":"to upgrade an existing structure"}],"examples":["Jaalis and courtyards in traditional havelis.","Fly ash, a power-plant by-product, used in cement."],"story":{"title":"The Building That Breathes","text":"An architect in Ahmedabad designed an office with thick walls, deep shaded windows, a central courtyard and wind towers drawing hot air out. In summer, it stayed comfortable with very little air conditioning. \"Our grandparents knew this,\" she said. \"We're just measuring it now.\""},"activities":[{"id":"engineering.s12.sustainable.green-engineering.a1","prompt":"Cement production causes roughly what share of global CO₂?","kind":"choice","options":["7–8%","50%","0.1%"],"answer":0},{"id":"engineering.s12.sustainable.green-engineering.a2","prompt":"Match the term","kind":"match","pairs":[["embodied carbon","emissions from making materials"],["operational carbon","emissions from using a building"],["passive cooling","cooling without power"]]},{"id":"engineering.s12.sustainable.green-engineering.a3","prompt":"Traditional Indian architecture used passive cooling.","kind":"truefalse","answer":true},{"id":"engineering.s12.sustainable.green-engineering.a4","prompt":"GRIHA is a…","kind":"choice","options":["green building rating system in India","type of brick","bridge"],"answer":0}],"thinking":["Is it better to renovate or rebuild? When?","How can traditional knowledge improve modern design?"],"speaking":["Present a sustainability assessment of a building you know."],"project":{"kind":"project","title":"Green Redesign Project","materials":["floor plan of your home or school","research sources"],"steps":["Audit energy use and materials","Propose passive and active improvements","Estimate impacts using available data","Write a 1500-word proposal"]},"assessment":[{"id":"engineering.s12.sustainable.green-engineering.q1","prompt":"Upgrading an existing structure is a…","kind":"choice","options":["retrofit","ruin","replica"],"answer":0},{"id":"engineering.s12.sustainable.green-engineering.q2","prompt":"Life-cycle assessment considers demolition and reuse.","kind":"truefalse","answer":true},{"id":"engineering.s12.sustainable.green-engineering.q3","prompt":"Bamboo is considered a…","kind":"choice","options":["low-carbon material","high-carbon material","metal"],"answer":0}],"mastery":["Explains carbon concepts","Evaluates strategies with evidence","Proposes sustainable designs"]}]},{"id":"engineering.s12.failure-ethics","title":"Failure and Ethics","summary":"Learning from what went wrong.","topics":[{"title":"Tacoma Narrows and other failures","subtopics":["Tacoma Narrows and other failures"]},{"title":"Root-cause analysis","subtopics":["Root-cause analysis"]},{"title":"Codes of ethics","subtopics":["Codes of ethics"]}],"objectives":["Analyse engineering failures using root-cause analysis","Apply professional ethics to engineering dilemmas"],"masteryCriteria":["Analyses failures systematically","Applies ethical codes","Draws lessons for practice"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"engineering.s12.failure-ethics.failure-ethics","title":"When Engineering Fails","skillId":"sk.engineering.s12.failure-ethics.failure-ethics","minutes":40,"objectives":["Analyse engineering failures using root-cause analysis","Apply professional ethics to engineering dilemmas"],"prerequisites":["Knows structures and forces"],"prerequisiteIds":[],"explanation":["Engineers learn from failure. The Tacoma Narrows Bridge in the USA collapsed in 1940 just months after opening, when wind caused it to twist violently (aeroelastic flutter). It led to wind-tunnel testing of bridge designs.","Root-cause analysis looks beyond the immediate cause to underlying factors: design errors, material defects, poor maintenance, pressure to cut costs or ignored warnings. The Space Shuttle Challenger disaster (1986) involved a known O-ring problem in cold weather and decision-making failures.","Professional codes of ethics require engineers to hold public safety paramount, be honest and competent, and speak up about risks. Engineers sometimes face difficult choices between employer pressure and public safety."],"context":[],"vocabulary":[{"term":"root cause","meaning":"the underlying reason for a failure"},{"term":"flutter","meaning":"a self-reinforcing vibration caused by wind"},{"term":"whistle-blower","meaning":"a person who reports wrongdoing"},{"term":"paramount","meaning":"most important"}],"examples":["Galloping Gertie, the Tacoma Narrows Bridge.","Engineers warning about O-rings before Challenger."],"story":{"title":"The Night Before Challenger","text":"On the night before the 1986 launch, engineer Roger Boisjoly and colleagues at the contractor warned that the O-ring seals might fail in the freezing cold. Under pressure, managers overruled them. The next morning, Challenger broke apart 73 seconds after launch. Boisjoly later spoke widely about engineering ethics and the duty to speak up."},"activities":[{"id":"engineering.s12.failure-ethics.failure-ethics.a1","prompt":"The Tacoma Narrows Bridge failed because of…","kind":"choice","options":["wind-induced twisting","an earthquake","a ship collision"],"answer":0},{"id":"engineering.s12.failure-ethics.failure-ethics.a2","prompt":"Engineers' codes hold what paramount?","kind":"choice","options":["public safety","profit","speed"],"answer":0},{"id":"engineering.s12.failure-ethics.failure-ethics.a3","prompt":"Root-cause analysis looks beyond the immediate cause.","kind":"truefalse","answer":true},{"id":"engineering.s12.failure-ethics.failure-ethics.a4","prompt":"Match the term","kind":"match","pairs":[["root cause","underlying reason"],["flutter","wind-driven vibration"],["whistle-blower","reports wrongdoing"]]}],"thinking":["What should an engineer do if a manager ignores a safety concern?","Why are failures valuable for learning?"],"speaking":["Lead a discussion on an engineering ethics case study."],"project":{"kind":"project","title":"Failure Case Study","materials":["documented reports","scholarly sources"],"steps":["Choose a well-documented engineering failure","Construct a timeline","Perform a root-cause analysis","Write a 1500-word report with ethical lessons"]},"assessment":[{"id":"engineering.s12.failure-ethics.failure-ethics.q1","prompt":"The underlying reason for a failure is the…","kind":"choice","options":["root cause","surface cause","cover story"],"answer":0},{"id":"engineering.s12.failure-ethics.failure-ethics.q2","prompt":"Tacoma Narrows led to wind-tunnel testing of bridges.","kind":"truefalse","answer":true},{"id":"engineering.s12.failure-ethics.failure-ethics.q3","prompt":"Most important means…","kind":"choice","options":["paramount","parallel","partial"],"answer":0}],"mastery":["Analyses failures systematically","Applies ethical codes","Draws lessons for practice"]}]}]}]}
+{
+  "schemaVersion": 1,
+  "id": "engineering",
+  "worldId": "tinker-town",
+  "title": "Building & Engineering",
+  "icon": "🏗️",
+  "tagline": "Strong, tall, useful",
+  "description": "Building and engineering from block towers to sustainable design: stable bases, strong shapes, materials, bridges, the engineering design process, tension and compression, Indian engineering marvels from stepwells to modern bridges, earthquake-resistant design, engineering disciplines, learning from failure and engineering ethics.",
+  "contentVersion": "1.0.0",
+  "sensitivity": "none",
+  "stages": [
+    {
+      "stage": "s4",
+      "overview": "Building towers and walls that stand up.",
+      "goals": [
+        "Build towers with a wide, stable base",
+        "Test what makes buildings fall",
+        "Talk about building plans"
+      ],
+      "units": [
+        {
+          "id": "engineering.s4.towers",
+          "title": "Tall Towers",
+          "summary": "Making things stand up.",
+          "topics": [
+            {
+              "title": "Wide bases",
+              "subtopics": [
+                "Wide bases"
+              ]
+            },
+            {
+              "title": "Balance",
+              "subtopics": [
+                "Balance"
+              ]
+            },
+            {
+              "title": "Testing and rebuilding",
+              "subtopics": [
+                "Testing and rebuilding"
+              ]
+            }
+          ],
+          "objectives": [
+            "Build a tower that stands up using a wide base",
+            "Test a tower and improve it"
+          ],
+          "masteryCriteria": [
+            "Builds with a stable base",
+            "Tests and improves",
+            "Uses building vocabulary"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s4.towers.stable-towers",
+              "title": "Wide at the Bottom",
+              "skillId": "sk.engineering.s4.towers.stable-towers",
+              "minutes": 8,
+              "objectives": [
+                "Build a tower that stands up using a wide base",
+                "Test a tower and improve it"
+              ],
+              "prerequisites": [
+                "Can stack blocks"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "When we build a tower, a wide, strong bottom (base) helps it stand up. A tower that is wide at the bottom and narrow at the top is stable — hard to knock over.",
+                "If blocks are not lined up straight, the tower leans and may fall. Builders check that things are straight and balanced.",
+                "Engineers are people who design and build things. They test their buildings, see what goes wrong and make them better. Falling down is part of learning!"
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "base",
+                  "meaning": "the bottom part that holds things up"
+                },
+                {
+                  "term": "stable",
+                  "meaning": "steady and hard to knock over"
+                },
+                {
+                  "term": "balance",
+                  "meaning": "staying steady without falling"
+                },
+                {
+                  "term": "engineer",
+                  "meaning": "a person who designs and builds things"
+                }
+              ],
+              "examples": [
+                "A pyramid of blocks.",
+                "A temple tower wide at the bottom."
+              ],
+              "story": {
+                "title": "The Wobbly Tower",
+                "text": "Ivaan stacked blocks one on top of another — tall and thin. Wobble, wobble, CRASH! He tried again with four blocks at the bottom, then three, then two, then one. It stood strong, even when his sister blew on it. \"Wide at the bottom!\" he said. \"That's the engineer's secret.\""
+              },
+              "activities": [
+                {
+                  "id": "engineering.s4.towers.stable-towers.a1",
+                  "prompt": "Which tower is most stable?",
+                  "kind": "choice",
+                  "options": [
+                    "wide at the bottom",
+                    "thin all the way",
+                    "wide at the top"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s4.towers.stable-towers.a2",
+                  "prompt": "A person who designs and builds things is an…",
+                  "kind": "choice",
+                  "options": [
+                    "engineer",
+                    "artist only",
+                    "astronaut"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s4.towers.stable-towers.a3",
+                  "prompt": "Falling down helps us learn how to build better.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s4.towers.stable-towers.a4",
+                  "prompt": "Put the building steps in order",
+                  "kind": "order",
+                  "items": [
+                    "Plan the tower",
+                    "Build it",
+                    "Test it",
+                    "Make it better"
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why do you think a wide base helps?",
+                "What tall buildings have you seen?"
+              ],
+              "speaking": [
+                "Show a grown-up your tower and explain why it stands."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Tower Challenge",
+                "materials": [
+                  "blocks or paper cups"
+                ],
+                "steps": [
+                  "Build the tallest tower you can",
+                  "Test it by blowing gently",
+                  "Rebuild it with a wider base",
+                  "Compare which stood better"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s4.towers.stable-towers.q1",
+                  "prompt": "Steady and hard to knock over is…",
+                  "kind": "choice",
+                  "options": [
+                    "stable",
+                    "wobbly",
+                    "tiny"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s4.towers.stable-towers.q2",
+                  "prompt": "A leaning tower may fall.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s4.towers.stable-towers.q3",
+                  "prompt": "The bottom part that holds things up is the…",
+                  "kind": "choice",
+                  "options": [
+                    "base",
+                    "top",
+                    "roof"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Builds with a stable base",
+                "Tests and improves",
+                "Uses building vocabulary"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "engineering.s4.walls-houses",
+          "title": "Walls and Houses",
+          "summary": "Building like a bricklayer.",
+          "topics": [
+            {
+              "title": "Brick patterns",
+              "subtopics": [
+                "Brick patterns"
+              ]
+            },
+            {
+              "title": "Strong walls",
+              "subtopics": [
+                "Strong walls"
+              ]
+            },
+            {
+              "title": "Houses around the world",
+              "subtopics": [
+                "Houses around the world"
+              ]
+            }
+          ],
+          "objectives": [
+            "Build a wall with overlapping bricks",
+            "Name homes made from different materials"
+          ],
+          "masteryCriteria": [
+            "Builds overlapping walls",
+            "Names building materials",
+            "Links homes to climate"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s4.walls-houses.brick-walls",
+              "title": "Brick by Brick",
+              "skillId": "sk.engineering.s4.walls-houses.brick-walls",
+              "minutes": 8,
+              "objectives": [
+                "Build a wall with overlapping bricks",
+                "Name homes made from different materials"
+              ],
+              "prerequisites": [
+                "Can build a stable tower"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Bricklayers stack bricks so each brick sits across two bricks below, like a staircase pattern. This overlapping pattern makes walls strong; straight stacks split apart easily.",
+                "Houses are built from many materials: bricks, stone, wood, mud, bamboo, ice and even snow.",
+                "People build homes that suit their weather: thick mud walls stay cool in hot places, stilt houses stay dry in flood areas, and igloos made of snow keep warm in the Arctic."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "brick",
+                  "meaning": "a block used for building walls"
+                },
+                {
+                  "term": "overlap",
+                  "meaning": "to lie partly over something"
+                },
+                {
+                  "term": "material",
+                  "meaning": "what something is made of"
+                },
+                {
+                  "term": "stilts",
+                  "meaning": "tall posts that lift a house off the ground"
+                }
+              ],
+              "examples": [
+                "Overlapping bricks on a school wall.",
+                "Bamboo stilt houses in Assam."
+              ],
+              "story": {
+                "title": "The Three Little Builders",
+                "text": "Three little builders each made a wall. The first stacked bricks straight up in towers. The second leaned them against each other. The third overlapped each brick over two below. When the wind blew, only the third wall stood. \"Overlap makes them hold hands,\" the third builder explained."
+              },
+              "activities": [
+                {
+                  "id": "engineering.s4.walls-houses.brick-walls.a1",
+                  "prompt": "Strong walls have bricks that…",
+                  "kind": "choice",
+                  "options": [
+                    "overlap",
+                    "stand in straight stacks",
+                    "are loose"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s4.walls-houses.brick-walls.a2",
+                  "prompt": "Match the home to the material",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "igloo",
+                      "snow"
+                    ],
+                    [
+                      "stilt house",
+                      "bamboo"
+                    ],
+                    [
+                      "cottage",
+                      "bricks"
+                    ]
+                  ]
+                },
+                {
+                  "id": "engineering.s4.walls-houses.brick-walls.a3",
+                  "prompt": "Homes are built to suit the weather.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s4.walls-houses.brick-walls.a4",
+                  "prompt": "Stilts keep a house…",
+                  "kind": "choice",
+                  "options": [
+                    "dry in floods",
+                    "very cold",
+                    "underground"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What is your home made of?",
+                "Why would an igloo be warm inside?"
+              ],
+              "speaking": [
+                "Tell a grown-up why overlapping bricks make a wall stronger."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Strong Wall Test",
+                "materials": [
+                  "blocks",
+                  "a toy car"
+                ],
+                "steps": [
+                  "Build one wall with straight stacks",
+                  "Build one with overlapping bricks",
+                  "Roll a toy car into each",
+                  "See which wall stays strong"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s4.walls-houses.brick-walls.q1",
+                  "prompt": "Tall posts that lift a house are…",
+                  "kind": "choice",
+                  "options": [
+                    "stilts",
+                    "stairs",
+                    "sticks"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s4.walls-houses.brick-walls.q2",
+                  "prompt": "Mud walls can keep homes cool.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s4.walls-houses.brick-walls.q3",
+                  "prompt": "What something is made of is its…",
+                  "kind": "choice",
+                  "options": [
+                    "material",
+                    "colour",
+                    "name"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Builds overlapping walls",
+                "Names building materials",
+                "Links homes to climate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s5",
+      "overview": "Strong shapes and choosing materials.",
+      "goals": [
+        "Discover why triangles are strong",
+        "Choose suitable materials for a job",
+        "Build and test structures"
+      ],
+      "units": [
+        {
+          "id": "engineering.s5.shapes",
+          "title": "Strong Shapes",
+          "summary": "Triangles hold firm.",
+          "topics": [
+            {
+              "title": "Triangles vs squares",
+              "subtopics": [
+                "Triangles vs squares"
+              ]
+            },
+            {
+              "title": "Triangles in buildings",
+              "subtopics": [
+                "Triangles in buildings"
+              ]
+            },
+            {
+              "title": "Building with straws",
+              "subtopics": [
+                "Building with straws"
+              ]
+            }
+          ],
+          "objectives": [
+            "Show that a triangle keeps its shape better than a square",
+            "Find triangles in real structures"
+          ],
+          "masteryCriteria": [
+            "Demonstrates triangle rigidity",
+            "Strengthens shapes with diagonals",
+            "Finds triangles in structures"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s5.shapes.triangles",
+              "title": "The Triangle Trick",
+              "skillId": "sk.engineering.s5.shapes.triangles",
+              "minutes": 10,
+              "objectives": [
+                "Show that a triangle keeps its shape better than a square",
+                "Find triangles in real structures"
+              ],
+              "prerequisites": [
+                "Knows basic shapes"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "If you make a square from straws and push a corner, it squashes into a diamond shape. If you make a triangle and push it, it holds its shape!",
+                "That is why engineers use triangles in bridges, roofs, cranes and towers. Adding a diagonal across a square turns it into two triangles and makes it strong.",
+                "Look for triangles in electricity towers, bicycle frames and roof trusses."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "triangle",
+                  "meaning": "a shape with three sides"
+                },
+                {
+                  "term": "diagonal",
+                  "meaning": "a line joining opposite corners"
+                },
+                {
+                  "term": "rigid",
+                  "meaning": "stiff and keeps its shape"
+                },
+                {
+                  "term": "truss",
+                  "meaning": "a frame made of triangles"
+                }
+              ],
+              "examples": [
+                "Triangles in an electricity pylon.",
+                "A bicycle frame made of two triangles."
+              ],
+              "story": {
+                "title": "Squish or Stay?",
+                "text": "Zuri made a square and a triangle from straws and pipe cleaners. She pushed the square — squish, it went flat. She pushed the triangle — it stayed strong! \"Triangles are stubborn,\" she laughed. She added a straw across the square, and now it was stubborn too."
+              },
+              "activities": [
+                {
+                  "id": "engineering.s5.shapes.triangles.a1",
+                  "prompt": "Which shape keeps its shape when pushed?",
+                  "kind": "choice",
+                  "options": [
+                    "triangle",
+                    "square",
+                    "circle made of straws"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s5.shapes.triangles.a2",
+                  "prompt": "A diagonal turns a square into…",
+                  "kind": "choice",
+                  "options": [
+                    "two triangles",
+                    "a circle",
+                    "a line"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s5.shapes.triangles.a3",
+                  "prompt": "Bicycle frames use triangles.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s5.shapes.triangles.a4",
+                  "prompt": "A frame made of triangles is a…",
+                  "kind": "choice",
+                  "options": [
+                    "truss",
+                    "tent",
+                    "table"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Where can you see triangles in your neighbourhood?",
+                "Why don't all buildings use triangles everywhere?"
+              ],
+              "speaking": [
+                "Show a grown-up the straw square and triangle test."
+              ],
+              "project": {
+                "kind": "experiment",
+                "title": "Straw Structure Test",
+                "materials": [
+                  "straws",
+                  "pipe cleaners or tape"
+                ],
+                "steps": [
+                  "Build a square and a triangle",
+                  "Push each corner gently",
+                  "Add a diagonal to the square",
+                  "Build a tower using triangles"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s5.shapes.triangles.q1",
+                  "prompt": "Stiff and keeps its shape is…",
+                  "kind": "choice",
+                  "options": [
+                    "rigid",
+                    "floppy",
+                    "bendy"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s5.shapes.triangles.q2",
+                  "prompt": "A triangle has three sides.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s5.shapes.triangles.q3",
+                  "prompt": "A line joining opposite corners is a…",
+                  "kind": "choice",
+                  "options": [
+                    "diagonal",
+                    "circle",
+                    "curve"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Demonstrates triangle rigidity",
+                "Strengthens shapes with diagonals",
+                "Finds triangles in structures"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "engineering.s5.materials",
+          "title": "Choosing Materials",
+          "summary": "The right stuff for the job.",
+          "topics": [
+            {
+              "title": "Strong, bendy, waterproof",
+              "subtopics": [
+                "Strong, bendy, waterproof"
+              ]
+            },
+            {
+              "title": "Testing materials",
+              "subtopics": [
+                "Testing materials"
+              ]
+            },
+            {
+              "title": "Matching materials to jobs",
+              "subtopics": [
+                "Matching materials to jobs"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe materials as strong, bendy, waterproof or light",
+            "Choose materials for a purpose and test them"
+          ],
+          "masteryCriteria": [
+            "Describes material properties",
+            "Chooses materials for purpose",
+            "Tests materials fairly"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s5.materials.choose-materials",
+              "title": "The Right Material",
+              "skillId": "sk.engineering.s5.materials.choose-materials",
+              "minutes": 10,
+              "objectives": [
+                "Describe materials as strong, bendy, waterproof or light",
+                "Choose materials for a purpose and test them"
+              ],
+              "prerequisites": [
+                "Can name common materials"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Engineers choose materials by their properties. Steel is strong; rubber is bendy and stretchy; glass is see-through; plastic can be waterproof; wood is strong and light.",
+                "The right material depends on the job. A raincoat must be waterproof. A window must be see-through. A bridge must be strong.",
+                "Engineers test materials before using them — how much weight they hold, whether they bend or break, whether water soaks through."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "property",
+                  "meaning": "what a material is like"
+                },
+                {
+                  "term": "waterproof",
+                  "meaning": "does not let water through"
+                },
+                {
+                  "term": "flexible",
+                  "meaning": "bends easily"
+                },
+                {
+                  "term": "transparent",
+                  "meaning": "see-through"
+                }
+              ],
+              "examples": [
+                "A rubber ball bouncing because it is flexible.",
+                "A plastic raincoat keeping you dry."
+              ],
+              "story": {
+                "title": "The Teddy's Umbrella",
+                "text": "Teddy needed an umbrella. Ivaan tested materials with a cup of water: paper got soggy, cloth dripped through, foil stayed dry, and a plastic bag stayed dry too. He made the umbrella from a plastic bag and a straw handle. Drip, drip — Teddy stayed perfectly dry!"
+              },
+              "activities": [
+                {
+                  "id": "engineering.s5.materials.choose-materials.a1",
+                  "prompt": "Match the material to the property",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "glass",
+                      "transparent"
+                    ],
+                    [
+                      "rubber",
+                      "flexible"
+                    ],
+                    [
+                      "plastic bag",
+                      "waterproof"
+                    ]
+                  ]
+                },
+                {
+                  "id": "engineering.s5.materials.choose-materials.a2",
+                  "prompt": "A raincoat must be…",
+                  "kind": "choice",
+                  "options": [
+                    "waterproof",
+                    "see-through",
+                    "soft as cotton wool"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s5.materials.choose-materials.a3",
+                  "prompt": "Engineers test materials before using them.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s5.materials.choose-materials.a4",
+                  "prompt": "See-through means…",
+                  "kind": "choice",
+                  "options": [
+                    "transparent",
+                    "flexible",
+                    "heavy"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why aren't bridges made of paper?",
+                "What material would you use for a lunchbox?"
+              ],
+              "speaking": [
+                "Explain which material you chose for a job and why."
+              ],
+              "project": {
+                "kind": "experiment",
+                "title": "Teddy Umbrella Test",
+                "materials": [
+                  "paper",
+                  "cloth",
+                  "foil",
+                  "plastic",
+                  "a cup of water",
+                  "a teddy"
+                ],
+                "steps": [
+                  "Drip water onto each material",
+                  "Record which stay dry",
+                  "Make an umbrella from the best one",
+                  "Test it on teddy"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s5.materials.choose-materials.q1",
+                  "prompt": "What a material is like is its…",
+                  "kind": "choice",
+                  "options": [
+                    "property",
+                    "price",
+                    "place"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s5.materials.choose-materials.q2",
+                  "prompt": "Steel is strong.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s5.materials.choose-materials.q3",
+                  "prompt": "Bends easily means…",
+                  "kind": "choice",
+                  "options": [
+                    "flexible",
+                    "rigid",
+                    "transparent"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes material properties",
+                "Chooses materials for purpose",
+                "Tests materials fairly"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s6",
+      "overview": "Bridges and the engineering design process.",
+      "goals": [
+        "Compare beam, arch and suspension bridges",
+        "Follow the engineering design process",
+        "Build and test a model bridge"
+      ],
+      "units": [
+        {
+          "id": "engineering.s6.bridges",
+          "title": "Bridges",
+          "summary": "Crossing gaps.",
+          "topics": [
+            {
+              "title": "Beam bridges",
+              "subtopics": [
+                "Beam bridges"
+              ]
+            },
+            {
+              "title": "Arch bridges",
+              "subtopics": [
+                "Arch bridges"
+              ]
+            },
+            {
+              "title": "Suspension and cable-stayed bridges",
+              "subtopics": [
+                "Suspension and cable-stayed bridges"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe beam, arch and suspension bridges",
+            "Explain how each carries weight"
+          ],
+          "masteryCriteria": [
+            "Describes bridge types",
+            "Explains load paths simply",
+            "Tests model bridges"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s6.bridges.bridge-types",
+              "title": "Beam, Arch and Suspension",
+              "skillId": "sk.engineering.s6.bridges.bridge-types",
+              "minutes": 15,
+              "objectives": [
+                "Describe beam, arch and suspension bridges",
+                "Explain how each carries weight"
+              ],
+              "prerequisites": [
+                "Knows strong shapes"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A beam bridge is a flat deck resting on supports at each end — simple but limited in length. An arch bridge pushes the weight outwards and down into strong supports at each end called abutments; the Romans built many stone arches.",
+                "A suspension bridge hangs the deck from cables slung between tall towers, allowing very long spans — like the Golden Gate Bridge. A cable-stayed bridge connects cables directly from towers to the deck — like the Bandra–Worli Sea Link in Mumbai.",
+                "India's Chenab Rail Bridge in Jammu and Kashmir, opened in 2025, is a steel arch bridge about 359 metres above the river — the highest railway bridge in the world."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "span",
+                  "meaning": "the distance a bridge crosses between supports"
+                },
+                {
+                  "term": "deck",
+                  "meaning": "the surface you travel on"
+                },
+                {
+                  "term": "abutment",
+                  "meaning": "a strong support at the end of an arch"
+                },
+                {
+                  "term": "cable",
+                  "meaning": "a thick, strong wire rope"
+                }
+              ],
+              "examples": [
+                "A plank across a stream (beam).",
+                "The Bandra–Worli Sea Link (cable-stayed)."
+              ],
+              "story": {
+                "title": "A Bridge Above the Clouds",
+                "text": "Engineers building the Chenab Bridge faced deep gorges, strong winds and earthquakes. They designed a huge steel arch, tested it for winds of over 200 km/h and protected it against blasts. When the first trains crossed in 2025, passengers looked down at a river far below — higher than the Eiffel Tower is tall."
+              },
+              "activities": [
+                {
+                  "id": "engineering.s6.bridges.bridge-types.a1",
+                  "prompt": "Match the bridge to its type",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "plank across a stream",
+                      "beam"
+                    ],
+                    [
+                      "Chenab Bridge",
+                      "arch"
+                    ],
+                    [
+                      "Golden Gate",
+                      "suspension"
+                    ],
+                    [
+                      "Bandra–Worli Sea Link",
+                      "cable-stayed"
+                    ]
+                  ]
+                },
+                {
+                  "id": "engineering.s6.bridges.bridge-types.a2",
+                  "prompt": "Which bridge type allows the longest spans?",
+                  "kind": "choice",
+                  "options": [
+                    "suspension",
+                    "beam",
+                    "stepping stones"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s6.bridges.bridge-types.a3",
+                  "prompt": "Arch bridges push weight into abutments.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s6.bridges.bridge-types.a4",
+                  "prompt": "The surface you travel on is the…",
+                  "kind": "choice",
+                  "options": [
+                    "deck",
+                    "cable",
+                    "tower"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why can't a beam bridge be very long?",
+                "Which bridge type would you build over a wide sea?"
+              ],
+              "speaking": [
+                "Explain how one bridge type carries weight, using your hands as a model."
+              ],
+              "project": {
+                "kind": "experiment",
+                "title": "Paper Bridge Challenge",
+                "materials": [
+                  "paper",
+                  "books",
+                  "coins"
+                ],
+                "steps": [
+                  "Place two books apart as banks",
+                  "Make a flat paper beam bridge and add coins until it fails",
+                  "Fold the paper into an arch or zigzag and test again",
+                  "Record which holds the most coins"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s6.bridges.bridge-types.q1",
+                  "prompt": "The distance a bridge crosses is its…",
+                  "kind": "choice",
+                  "options": [
+                    "span",
+                    "deck",
+                    "cable"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s6.bridges.bridge-types.q2",
+                  "prompt": "The Chenab Bridge is a steel arch bridge.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s6.bridges.bridge-types.q3",
+                  "prompt": "A thick, strong wire rope is a…",
+                  "kind": "choice",
+                  "options": [
+                    "cable",
+                    "beam",
+                    "brick"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes bridge types",
+                "Explains load paths simply",
+                "Tests model bridges"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "engineering.s6.design-process",
+          "title": "The Engineering Design Process",
+          "summary": "How engineers solve problems.",
+          "topics": [
+            {
+              "title": "Ask and imagine",
+              "subtopics": [
+                "Ask and imagine"
+              ]
+            },
+            {
+              "title": "Plan and create",
+              "subtopics": [
+                "Plan and create"
+              ]
+            },
+            {
+              "title": "Test and improve",
+              "subtopics": [
+                "Test and improve"
+              ]
+            }
+          ],
+          "objectives": [
+            "Follow the steps of the engineering design process",
+            "Use constraints and criteria in a design challenge"
+          ],
+          "masteryCriteria": [
+            "Follows the design process",
+            "Applies criteria and constraints",
+            "Improves designs from test data"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s6.design-process.edp",
+              "title": "Ask, Imagine, Plan, Create, Improve",
+              "skillId": "sk.engineering.s6.design-process.edp",
+              "minutes": 15,
+              "objectives": [
+                "Follow the steps of the engineering design process",
+                "Use constraints and criteria in a design challenge"
+              ],
+              "prerequisites": [
+                "Can build and test models"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Engineers follow a design process: Ask (what is the problem?), Imagine (brainstorm ideas), Plan (draw and choose materials), Create (build a prototype) and Improve (test and make it better). Then they often repeat.",
+                "Criteria are what the design must do — \"hold 10 coins\". Constraints are the limits — \"use only 10 straws and 50 cm of tape\".",
+                "Engineers work in teams, share ideas and record their tests so they know what worked."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "criteria",
+                  "meaning": "what a design must achieve"
+                },
+                {
+                  "term": "constraint",
+                  "meaning": "a limit on a design"
+                },
+                {
+                  "term": "prototype",
+                  "meaning": "a first model for testing"
+                },
+                {
+                  "term": "iterate",
+                  "meaning": "to repeat the process to improve"
+                }
+              ],
+              "examples": [
+                "Designing an egg protector for a drop test.",
+                "Using only newspaper to build a tower."
+              ],
+              "story": {
+                "title": "Operation Egg Drop",
+                "text": "Zuri's team had to protect an egg dropped from a chair, using only straws, tape and paper. Their first design cracked the egg. They studied the break, added a straw \"crumple zone\" and a paper parachute. The second egg landed softly. \"Engineering is failing forward,\" their teacher grinned."
+              },
+              "activities": [
+                {
+                  "id": "engineering.s6.design-process.edp.a1",
+                  "prompt": "Put the design process in order",
+                  "kind": "order",
+                  "items": [
+                    "Ask",
+                    "Imagine",
+                    "Plan",
+                    "Create",
+                    "Improve"
+                  ]
+                },
+                {
+                  "id": "engineering.s6.design-process.edp.a2",
+                  "prompt": "A limit on a design is a…",
+                  "kind": "choice",
+                  "options": [
+                    "constraint",
+                    "criterion",
+                    "prototype"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s6.design-process.edp.a3",
+                  "prompt": "Engineers often repeat the design process.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s6.design-process.edp.a4",
+                  "prompt": "A first model for testing is a…",
+                  "kind": "choice",
+                  "options": [
+                    "prototype",
+                    "blueprint only",
+                    "final product"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why test a prototype before building the real thing?",
+                "How does working in a team help?"
+              ],
+              "speaking": [
+                "Present your design, test results and improvements."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Egg Drop Challenge",
+                "materials": [
+                  "straws",
+                  "tape",
+                  "paper",
+                  "a raw egg (with an adult)"
+                ],
+                "steps": [
+                  "Write the criteria and constraints",
+                  "Sketch and build a protector",
+                  "Drop it from a safe height and record results",
+                  "Improve and test again"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s6.design-process.edp.q1",
+                  "prompt": "What a design must achieve are its…",
+                  "kind": "choice",
+                  "options": [
+                    "criteria",
+                    "constraints",
+                    "crumbs"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s6.design-process.edp.q2",
+                  "prompt": "Recording tests helps engineers improve.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s6.design-process.edp.q3",
+                  "prompt": "To repeat a process to improve is to…",
+                  "kind": "choice",
+                  "options": [
+                    "iterate",
+                    "imitate",
+                    "ignore"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Follows the design process",
+                "Applies criteria and constraints",
+                "Improves designs from test data"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s7",
+      "overview": "Forces in structures and Indian engineering marvels.",
+      "goals": [
+        "Explain tension, compression and load",
+        "Analyse how structures carry loads",
+        "Describe historic and modern Indian engineering"
+      ],
+      "units": [
+        {
+          "id": "engineering.s7.forces-structures",
+          "title": "Forces in Structures",
+          "summary": "Push and pull inside buildings.",
+          "topics": [
+            {
+              "title": "Tension and compression",
+              "subtopics": [
+                "Tension and compression"
+              ]
+            },
+            {
+              "title": "Loads",
+              "subtopics": [
+                "Loads"
+              ]
+            },
+            {
+              "title": "Beams and columns",
+              "subtopics": [
+                "Beams and columns"
+              ]
+            }
+          ],
+          "objectives": [
+            "Distinguish tension and compression in structures",
+            "Identify dead and live loads"
+          ],
+          "masteryCriteria": [
+            "Distinguishes tension and compression",
+            "Identifies load types",
+            "Explains reinforced concrete"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s7.forces-structures.tension-compression",
+              "title": "Squash and Stretch",
+              "skillId": "sk.engineering.s7.forces-structures.tension-compression",
+              "minutes": 20,
+              "objectives": [
+                "Distinguish tension and compression in structures",
+                "Identify dead and live loads"
+              ],
+              "prerequisites": [
+                "Knows bridge types"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Compression is a squashing force; tension is a stretching force. A column holding up a roof is in compression. A suspension bridge cable is in tension.",
+                "When a beam bends under a load, its top is squashed (compression) and its bottom is stretched (tension). Concrete is strong in compression but weak in tension, so engineers add steel bars inside it — reinforced concrete.",
+                "Structures carry loads. Dead load is the structure's own weight; live load is changing weight such as people, vehicles and furniture. Wind and earthquakes add environmental loads."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "compression",
+                  "meaning": "a squashing force"
+                },
+                {
+                  "term": "tension",
+                  "meaning": "a stretching force"
+                },
+                {
+                  "term": "load",
+                  "meaning": "a force a structure must carry"
+                },
+                {
+                  "term": "reinforced concrete",
+                  "meaning": "concrete strengthened with steel bars"
+                }
+              ],
+              "examples": [
+                "A sponge beam: the top squashes, the bottom stretches.",
+                "Steel rebar in a building's columns."
+              ],
+              "story": {
+                "title": "The Sponge Bridge",
+                "text": "Kiko drew lines across the top and bottom of a sponge, then bent it like a loaded beam. The top lines squeezed together; the bottom lines spread apart. \"Compression on top, tension underneath!\" he said. \"That's why builders put steel in the bottom of concrete beams.\""
+              },
+              "activities": [
+                {
+                  "id": "engineering.s7.forces-structures.tension-compression.a1",
+                  "prompt": "Match the term to its meaning",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "compression",
+                      "squashing force"
+                    ],
+                    [
+                      "tension",
+                      "stretching force"
+                    ],
+                    [
+                      "live load",
+                      "changing weight such as people"
+                    ]
+                  ]
+                },
+                {
+                  "id": "engineering.s7.forces-structures.tension-compression.a2",
+                  "prompt": "Concrete is weak in…",
+                  "kind": "choice",
+                  "options": [
+                    "tension",
+                    "compression",
+                    "colour"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s7.forces-structures.tension-compression.a3",
+                  "prompt": "Live load includes people and vehicles.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s7.forces-structures.tension-compression.a4",
+                  "prompt": "Concrete with steel bars is…",
+                  "kind": "choice",
+                  "options": [
+                    "reinforced concrete",
+                    "plain mud",
+                    "glass"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why do engineers need to know the live load of a stadium?",
+                "Where else might tension be important?"
+              ],
+              "speaking": [
+                "Demonstrate tension and compression with a sponge or ruler."
+              ],
+              "project": {
+                "kind": "experiment",
+                "title": "Beam Investigation",
+                "materials": [
+                  "strips of card",
+                  "books",
+                  "coins",
+                  "a ruler"
+                ],
+                "steps": [
+                  "Make beams from single and folded card",
+                  "Rest them between books",
+                  "Add coins and measure the sag",
+                  "Explain results using tension and compression"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s7.forces-structures.tension-compression.q1",
+                  "prompt": "A stretching force is…",
+                  "kind": "choice",
+                  "options": [
+                    "tension",
+                    "compression",
+                    "friction"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s7.forces-structures.tension-compression.q2",
+                  "prompt": "Dead load is a structure's own weight.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s7.forces-structures.tension-compression.q3",
+                  "prompt": "A squashing force is…",
+                  "kind": "choice",
+                  "options": [
+                    "compression",
+                    "tension",
+                    "gravity only"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Distinguishes tension and compression",
+                "Identifies load types",
+                "Explains reinforced concrete"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "engineering.s7.indian-engineering",
+          "title": "Indian Engineering Marvels",
+          "summary": "From stepwells to sea links.",
+          "topics": [
+            {
+              "title": "Stepwells and Kallanai",
+              "subtopics": [
+                "Stepwells and Kallanai"
+              ]
+            },
+            {
+              "title": "Temples and forts",
+              "subtopics": [
+                "Temples and forts"
+              ]
+            },
+            {
+              "title": "Modern megaprojects",
+              "subtopics": [
+                "Modern megaprojects"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe historic and modern Indian engineering achievements",
+            "Explain the engineering problems they solved"
+          ],
+          "masteryCriteria": [
+            "Describes marvels accurately",
+            "Explains engineering problems solved",
+            "Connects history and modern engineering"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s7.indian-engineering.marvels",
+              "title": "Engineering Through the Ages",
+              "skillId": "sk.engineering.s7.indian-engineering.marvels",
+              "minutes": 20,
+              "objectives": [
+                "Describe historic and modern Indian engineering achievements",
+                "Explain the engineering problems they solved"
+              ],
+              "prerequisites": [
+                "Knows forces in structures"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Ancient engineers solved water problems. Stepwells such as Rani ki Vav in Gujarat (11th century, a UNESCO World Heritage Site) gave access to groundwater through many levels of steps. The Kallanai (Grand Anicut) on the Kaveri, traditionally credited to the Chola king Karikalan around the 2nd century CE, is among the oldest water-diversion structures still in use.",
+                "The Harappan cities had planned streets and covered drains over 4,000 years ago. The Iron Pillar of Delhi, around 1,600 years old, has resisted rust remarkably — studied by metallurgists for its protective layer.",
+                "Modern achievements include the Konkan Railway through the Western Ghats (completed 1998), the Delhi Metro, the Atal Tunnel under the Rohtang Pass (2020) and the Chenab Bridge. Engineer M. Visvesvaraya, whose birthday (15 September) is celebrated as Engineers' Day in India, designed dams and flood-protection systems."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "stepwell",
+                  "meaning": "a well reached by steps descending to the water"
+                },
+                {
+                  "term": "anicut",
+                  "meaning": "a dam or weir across a river"
+                },
+                {
+                  "term": "metallurgy",
+                  "meaning": "the science of metals"
+                },
+                {
+                  "term": "tunnel",
+                  "meaning": "an underground passage"
+                }
+              ],
+              "examples": [
+                "Rani ki Vav's seven levels of sculpted steps.",
+                "The Atal Tunnel, over 9 km long at high altitude."
+              ],
+              "story": {
+                "title": "The Engineer Who Tamed Floods",
+                "text": "In 1908, a terrible flood struck Hyderabad. The Nizam called on engineer M. Visvesvaraya, who designed a flood-protection plan, including reservoirs, to prevent such disasters. Later he built the Krishna Raja Sagara dam in Mysore. India honours him every year on Engineers' Day."
+              },
+              "activities": [
+                {
+                  "id": "engineering.s7.indian-engineering.marvels.a1",
+                  "prompt": "Match the marvel to its place",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Rani ki Vav",
+                      "Gujarat"
+                    ],
+                    [
+                      "Kallanai",
+                      "Kaveri river"
+                    ],
+                    [
+                      "Atal Tunnel",
+                      "Rohtang Pass"
+                    ]
+                  ]
+                },
+                {
+                  "id": "engineering.s7.indian-engineering.marvels.a2",
+                  "prompt": "Engineers' Day in India honours…",
+                  "kind": "choice",
+                  "options": [
+                    "M. Visvesvaraya",
+                    "Aryabhata",
+                    "C. V. Raman"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s7.indian-engineering.marvels.a3",
+                  "prompt": "The Harappans built covered drains.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s7.indian-engineering.marvels.a4",
+                  "prompt": "The Iron Pillar of Delhi is famous for…",
+                  "kind": "choice",
+                  "options": [
+                    "resisting rust",
+                    "being made of gold",
+                    "moving by itself"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What problem did stepwells solve?",
+                "What modern problem would you like to engineer a solution for?"
+              ],
+              "speaking": [
+                "Present one Indian engineering marvel and the problem it solved."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Marvel Model",
+                "materials": [
+                  "card",
+                  "clay or recycled materials",
+                  "research sources"
+                ],
+                "steps": [
+                  "Choose a marvel and research it",
+                  "Build a simple model",
+                  "Label the engineering features",
+                  "Present how it solved a real problem"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s7.indian-engineering.marvels.q1",
+                  "prompt": "A well reached by steps is a…",
+                  "kind": "choice",
+                  "options": [
+                    "stepwell",
+                    "staircase only",
+                    "tunnel"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s7.indian-engineering.marvels.q2",
+                  "prompt": "The Konkan Railway runs through the Western Ghats.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s7.indian-engineering.marvels.q3",
+                  "prompt": "The science of metals is…",
+                  "kind": "choice",
+                  "options": [
+                    "metallurgy",
+                    "meteorology",
+                    "mythology"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes marvels accurately",
+                "Explains engineering problems solved",
+                "Connects history and modern engineering"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s9",
+      "overview": "Engineering disciplines and designing for earthquakes.",
+      "goals": [
+        "Describe engineering disciplines and careers",
+        "Explain earthquake-resistant design",
+        "Apply engineering calculations"
+      ],
+      "units": [
+        {
+          "id": "engineering.s9.disciplines",
+          "title": "Engineering Disciplines",
+          "summary": "Many kinds of engineers.",
+          "topics": [
+            {
+              "title": "Civil and mechanical",
+              "subtopics": [
+                "Civil and mechanical"
+              ]
+            },
+            {
+              "title": "Electrical and computer",
+              "subtopics": [
+                "Electrical and computer"
+              ]
+            },
+            {
+              "title": "Chemical, biomedical and aerospace",
+              "subtopics": [
+                "Chemical, biomedical and aerospace"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe major engineering disciplines",
+            "Match real problems to the disciplines that solve them"
+          ],
+          "masteryCriteria": [
+            "Describes disciplines accurately",
+            "Matches problems to disciplines",
+            "Explores careers"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s9.disciplines.disciplines",
+              "title": "Which Engineer Are You?",
+              "skillId": "sk.engineering.s9.disciplines.disciplines",
+              "minutes": 30,
+              "objectives": [
+                "Describe major engineering disciplines",
+                "Match real problems to the disciplines that solve them"
+              ],
+              "prerequisites": [
+                "Knows the design process"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Civil engineers design buildings, bridges, roads and water systems. Mechanical engineers design machines, engines and vehicles. Electrical engineers work with power systems and electronics. Computer engineers design hardware and software systems.",
+                "Chemical engineers design processes for making medicines, fuels and materials. Biomedical engineers design medical devices like pacemakers and prosthetics. Aerospace engineers design aircraft and spacecraft — like ISRO's Chandrayaan-3, which landed near the Moon's south pole in 2023.",
+                "Most big projects need teams from many disciplines working together, plus skills in maths, physics, communication and ethics."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "discipline",
+                  "meaning": "a branch of study or work"
+                },
+                {
+                  "term": "civil engineering",
+                  "meaning": "designing infrastructure"
+                },
+                {
+                  "term": "biomedical engineering",
+                  "meaning": "applying engineering to medicine"
+                },
+                {
+                  "term": "aerospace",
+                  "meaning": "relating to aircraft and spacecraft"
+                }
+              ],
+              "examples": [
+                "The Jaipur Foot, a low-cost prosthetic limb developed in India.",
+                "Chandrayaan-3's Vikram lander."
+              ],
+              "story": {
+                "title": "Team Chandrayaan",
+                "text": "Landing Chandrayaan-3 needed aerospace engineers for the trajectory, mechanical engineers for the landing legs, electrical engineers for power, computer engineers for the guidance software and materials experts for heat shields. On 23 August 2023, when Vikram touched down, the whole team cheered — every discipline had played its part."
+              },
+              "activities": [
+                {
+                  "id": "engineering.s9.disciplines.disciplines.a1",
+                  "prompt": "Match the engineer to the job",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "civil",
+                      "bridges and roads"
+                    ],
+                    [
+                      "biomedical",
+                      "prosthetics"
+                    ],
+                    [
+                      "aerospace",
+                      "spacecraft"
+                    ],
+                    [
+                      "chemical",
+                      "medicine production"
+                    ]
+                  ]
+                },
+                {
+                  "id": "engineering.s9.disciplines.disciplines.a2",
+                  "prompt": "Chandrayaan-3 landed in…",
+                  "kind": "choice",
+                  "options": [
+                    "2023",
+                    "1969",
+                    "2010"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s9.disciplines.disciplines.a3",
+                  "prompt": "Big projects need many disciplines working together.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s9.disciplines.disciplines.a4",
+                  "prompt": "Designing machines and engines is…",
+                  "kind": "choice",
+                  "options": [
+                    "mechanical engineering",
+                    "civil engineering",
+                    "biology"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Which discipline interests you most? Why?",
+                "Why do engineers need communication skills?"
+              ],
+              "speaking": [
+                "Interview an engineer (in person or by reading) and present their work."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Career Explorer",
+                "materials": [
+                  "reliable career resources",
+                  "interviews"
+                ],
+                "steps": [
+                  "Research three disciplines",
+                  "List what they do, skills needed and an Indian example",
+                  "Interview or read about an engineer",
+                  "Make a career poster"
+                ],
+                "safety": "Ask permission before interviewing an engineer. Do not publish names or contact details without consent; use public career sources and attribute them."
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s9.disciplines.disciplines.q1",
+                  "prompt": "Applying engineering to medicine is…",
+                  "kind": "choice",
+                  "options": [
+                    "biomedical engineering",
+                    "civil engineering",
+                    "aerospace"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s9.disciplines.disciplines.q2",
+                  "prompt": "The Jaipur Foot is a low-cost prosthetic.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s9.disciplines.disciplines.q3",
+                  "prompt": "A branch of study is a…",
+                  "kind": "choice",
+                  "options": [
+                    "discipline",
+                    "discount",
+                    "disguise"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes disciplines accurately",
+                "Matches problems to disciplines",
+                "Explores careers"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "engineering.s9.earthquakes",
+          "title": "Designing for Earthquakes",
+          "summary": "Safe buildings.",
+          "topics": [
+            {
+              "title": "Seismic zones",
+              "subtopics": [
+                "Seismic zones"
+              ]
+            },
+            {
+              "title": "Base isolation and dampers",
+              "subtopics": [
+                "Base isolation and dampers"
+              ]
+            },
+            {
+              "title": "Building codes",
+              "subtopics": [
+                "Building codes"
+              ]
+            }
+          ],
+          "objectives": [
+            "Explain how earthquakes affect buildings",
+            "Describe earthquake-resistant design techniques"
+          ],
+          "masteryCriteria": [
+            "Explains earthquake effects",
+            "Describes resistant designs",
+            "Tests models systematically"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s9.earthquakes.seismic",
+              "title": "Buildings That Bend, Not Break",
+              "skillId": "sk.engineering.s9.earthquakes.seismic",
+              "minutes": 30,
+              "objectives": [
+                "Explain how earthquakes affect buildings",
+                "Describe earthquake-resistant design techniques"
+              ],
+              "prerequisites": [
+                "Knows forces in structures"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Earthquakes shake the ground sideways and up and down. Buildings can crack or collapse if they are too stiff, too weak or poorly connected. India is divided into seismic zones; the Himalayan region is among the most active.",
+                "Engineers design for earthquakes using ductile (bendable) reinforced concrete, strong connections, shear walls, and symmetrical shapes. Base isolation places flexible bearings under a building so the ground moves beneath it. Tuned mass dampers — huge weights near the top, as in Taipei 101 — reduce swaying.",
+                "Building codes set minimum safety standards; in India, the Bureau of Indian Standards publishes seismic codes such as IS 1893. After the 2001 Bhuj earthquake, stricter enforcement and retrofitting gained importance."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "seismic",
+                  "meaning": "relating to earthquakes"
+                },
+                {
+                  "term": "ductile",
+                  "meaning": "able to bend without breaking"
+                },
+                {
+                  "term": "base isolation",
+                  "meaning": "flexible bearings separating a building from ground motion"
+                },
+                {
+                  "term": "building code",
+                  "meaning": "rules for safe construction"
+                }
+              ],
+              "examples": [
+                "Base-isolated hospitals that keep working after quakes.",
+                "Taipei 101's 660-tonne damper."
+              ],
+              "story": {
+                "title": "The Hospital That Kept Working",
+                "text": "After the 2001 Bhuj earthquake in Gujarat, a new hospital in Bhuj was built on base isolators — rubber-and-steel pads under the building. Engineers explained that in a future quake, the ground would move but the hospital would glide gently above it, so doctors could keep treating patients when they were needed most."
+              },
+              "activities": [
+                {
+                  "id": "engineering.s9.earthquakes.seismic.a1",
+                  "prompt": "Ductile means…",
+                  "kind": "choice",
+                  "options": [
+                    "able to bend without breaking",
+                    "very brittle",
+                    "invisible"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s9.earthquakes.seismic.a2",
+                  "prompt": "Match the technique",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "base isolation",
+                      "flexible bearings under the building"
+                    ],
+                    [
+                      "tuned mass damper",
+                      "heavy weight reducing sway"
+                    ],
+                    [
+                      "shear wall",
+                      "stiff wall resisting sideways force"
+                    ]
+                  ]
+                },
+                {
+                  "id": "engineering.s9.earthquakes.seismic.a3",
+                  "prompt": "Building codes set minimum safety standards.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s9.earthquakes.seismic.a4",
+                  "prompt": "The Indian seismic design code is…",
+                  "kind": "choice",
+                  "options": [
+                    "IS 1893",
+                    "ISO 9001",
+                    "IPL 2020"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why is a perfectly stiff building not ideal?",
+                "Who should pay for retrofitting old buildings?"
+              ],
+              "speaking": [
+                "Explain base isolation using a model or demonstration."
+              ],
+              "project": {
+                "kind": "experiment",
+                "title": "Shake Table Challenge",
+                "materials": [
+                  "a tray on marbles or rubber balls",
+                  "card",
+                  "straws",
+                  "clay"
+                ],
+                "steps": [
+                  "Build a small tower",
+                  "Shake the tray to simulate an earthquake",
+                  "Add bracing, a wider base or isolation pads",
+                  "Compare performance and record results"
+                ],
+                "safety": "Use large, sturdy balls that cannot be swallowed and keep the tray on a stable surface. An adult should supervise; keep the setup away from stairs and edges."
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s9.earthquakes.seismic.q1",
+                  "prompt": "Relating to earthquakes is…",
+                  "kind": "choice",
+                  "options": [
+                    "seismic",
+                    "scenic",
+                    "solar"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s9.earthquakes.seismic.q2",
+                  "prompt": "Symmetrical shapes help earthquake resistance.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s9.earthquakes.seismic.q3",
+                  "prompt": "Rules for safe construction are…",
+                  "kind": "choice",
+                  "options": [
+                    "building codes",
+                    "recipes",
+                    "passwords"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Explains earthquake effects",
+                "Describes resistant designs",
+                "Tests models systematically"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s12",
+      "overview": "Sustainable engineering, learning from failure and ethics.",
+      "goals": [
+        "Evaluate sustainability in engineering",
+        "Analyse engineering failures",
+        "Apply ethical reasoning to engineering decisions"
+      ],
+      "units": [
+        {
+          "id": "engineering.s12.sustainable",
+          "title": "Sustainable Engineering",
+          "summary": "Building for the future.",
+          "topics": [
+            {
+              "title": "Embodied carbon",
+              "subtopics": [
+                "Embodied carbon"
+              ]
+            },
+            {
+              "title": "Green buildings",
+              "subtopics": [
+                "Green buildings"
+              ]
+            },
+            {
+              "title": "Life-cycle thinking",
+              "subtopics": [
+                "Life-cycle thinking"
+              ]
+            }
+          ],
+          "objectives": [
+            "Explain embodied carbon and life-cycle assessment",
+            "Evaluate sustainable design strategies"
+          ],
+          "masteryCriteria": [
+            "Explains carbon concepts",
+            "Evaluates strategies with evidence",
+            "Proposes sustainable designs"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s12.sustainable.green-engineering",
+              "title": "Engineering for a Liveable Planet",
+              "skillId": "sk.engineering.s12.sustainable.green-engineering",
+              "minutes": 40,
+              "objectives": [
+                "Explain embodied carbon and life-cycle assessment",
+                "Evaluate sustainable design strategies"
+              ],
+              "prerequisites": [
+                "Knows materials and structures"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Construction and buildings account for a large share of global energy use and carbon emissions. Cement production alone is responsible for roughly 7–8% of global CO₂ emissions.",
+                "Embodied carbon is the carbon emitted making and transporting materials; operational carbon comes from using a building (cooling, lighting). Life-cycle assessment considers impacts from raw materials to demolition and reuse.",
+                "Sustainable strategies include passive cooling (orientation, shading, courtyards and jaalis, like traditional Indian architecture), low-carbon materials (fly-ash concrete, bamboo, mass timber), renewable energy and designing for reuse. Rating systems such as GRIHA and IGBC assess green buildings in India."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "embodied carbon",
+                  "meaning": "emissions from making and transporting materials"
+                },
+                {
+                  "term": "life-cycle assessment",
+                  "meaning": "evaluating impacts over a product's whole life"
+                },
+                {
+                  "term": "passive cooling",
+                  "meaning": "cooling without powered systems"
+                },
+                {
+                  "term": "retrofit",
+                  "meaning": "to upgrade an existing structure"
+                }
+              ],
+              "examples": [
+                "Jaalis and courtyards in traditional havelis.",
+                "Fly ash, a power-plant by-product, used in cement."
+              ],
+              "story": {
+                "title": "The Building That Breathes",
+                "text": "An architect in Ahmedabad designed an office with thick walls, deep shaded windows, a central courtyard and wind towers drawing hot air out. In summer, it stayed comfortable with very little air conditioning. \"Our grandparents knew this,\" she said. \"We're just measuring it now.\""
+              },
+              "activities": [
+                {
+                  "id": "engineering.s12.sustainable.green-engineering.a1",
+                  "prompt": "Cement production causes roughly what share of global CO₂?",
+                  "kind": "choice",
+                  "options": [
+                    "7–8%",
+                    "50%",
+                    "0.1%"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s12.sustainable.green-engineering.a2",
+                  "prompt": "Match the term",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "embodied carbon",
+                      "emissions from making materials"
+                    ],
+                    [
+                      "operational carbon",
+                      "emissions from using a building"
+                    ],
+                    [
+                      "passive cooling",
+                      "cooling without power"
+                    ]
+                  ]
+                },
+                {
+                  "id": "engineering.s12.sustainable.green-engineering.a3",
+                  "prompt": "Traditional Indian architecture used passive cooling.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s12.sustainable.green-engineering.a4",
+                  "prompt": "GRIHA is a…",
+                  "kind": "choice",
+                  "options": [
+                    "green building rating system in India",
+                    "type of brick",
+                    "bridge"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Is it better to renovate or rebuild? When?",
+                "How can traditional knowledge improve modern design?"
+              ],
+              "speaking": [
+                "Present a sustainability assessment of a building you know."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Green Redesign Project",
+                "materials": [
+                  "floor plan of your home or school",
+                  "research sources"
+                ],
+                "steps": [
+                  "Audit energy use and materials",
+                  "Propose passive and active improvements",
+                  "Estimate impacts using available data",
+                  "Write a 1500-word proposal"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s12.sustainable.green-engineering.q1",
+                  "prompt": "Upgrading an existing structure is a…",
+                  "kind": "choice",
+                  "options": [
+                    "retrofit",
+                    "ruin",
+                    "replica"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s12.sustainable.green-engineering.q2",
+                  "prompt": "Life-cycle assessment considers demolition and reuse.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s12.sustainable.green-engineering.q3",
+                  "prompt": "Bamboo is considered a…",
+                  "kind": "choice",
+                  "options": [
+                    "low-carbon material",
+                    "high-carbon material",
+                    "metal"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Explains carbon concepts",
+                "Evaluates strategies with evidence",
+                "Proposes sustainable designs"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "engineering.s12.failure-ethics",
+          "title": "Failure and Ethics",
+          "summary": "Learning from what went wrong.",
+          "topics": [
+            {
+              "title": "Tacoma Narrows and other failures",
+              "subtopics": [
+                "Tacoma Narrows and other failures"
+              ]
+            },
+            {
+              "title": "Root-cause analysis",
+              "subtopics": [
+                "Root-cause analysis"
+              ]
+            },
+            {
+              "title": "Codes of ethics",
+              "subtopics": [
+                "Codes of ethics"
+              ]
+            }
+          ],
+          "objectives": [
+            "Analyse engineering failures using root-cause analysis",
+            "Apply professional ethics to engineering dilemmas"
+          ],
+          "masteryCriteria": [
+            "Analyses failures systematically",
+            "Applies ethical codes",
+            "Draws lessons for practice"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "engineering.s12.failure-ethics.failure-ethics",
+              "title": "When Engineering Fails",
+              "skillId": "sk.engineering.s12.failure-ethics.failure-ethics",
+              "minutes": 40,
+              "objectives": [
+                "Analyse engineering failures using root-cause analysis",
+                "Apply professional ethics to engineering dilemmas"
+              ],
+              "prerequisites": [
+                "Knows structures and forces"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Engineers learn from failure. The Tacoma Narrows Bridge in the USA collapsed in 1940 just months after opening, when wind caused it to twist violently (aeroelastic flutter). It led to wind-tunnel testing of bridge designs.",
+                "Root-cause analysis looks beyond the immediate cause to underlying factors: design errors, material defects, poor maintenance, pressure to cut costs or ignored warnings. The Space Shuttle Challenger disaster (1986) involved a known O-ring problem in cold weather and decision-making failures.",
+                "Professional codes of ethics require engineers to hold public safety paramount, be honest and competent, and speak up about risks. Engineers sometimes face difficult choices between employer pressure and public safety."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "root cause",
+                  "meaning": "the underlying reason for a failure"
+                },
+                {
+                  "term": "flutter",
+                  "meaning": "a self-reinforcing vibration caused by wind"
+                },
+                {
+                  "term": "whistle-blower",
+                  "meaning": "a person who reports wrongdoing"
+                },
+                {
+                  "term": "paramount",
+                  "meaning": "most important"
+                }
+              ],
+              "examples": [
+                "Galloping Gertie, the Tacoma Narrows Bridge.",
+                "Engineers warning about O-rings before Challenger."
+              ],
+              "story": {
+                "title": "The Night Before Challenger",
+                "text": "On the night before the 1986 launch, engineer Roger Boisjoly and colleagues at the contractor warned that the O-ring seals might fail in the freezing cold. Under pressure, managers overruled them. The next morning, Challenger broke apart 73 seconds after launch. Boisjoly later spoke widely about engineering ethics and the duty to speak up."
+              },
+              "activities": [
+                {
+                  "id": "engineering.s12.failure-ethics.failure-ethics.a1",
+                  "prompt": "The Tacoma Narrows Bridge failed because of…",
+                  "kind": "choice",
+                  "options": [
+                    "wind-induced twisting",
+                    "an earthquake",
+                    "a ship collision"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s12.failure-ethics.failure-ethics.a2",
+                  "prompt": "Engineers' codes hold what paramount?",
+                  "kind": "choice",
+                  "options": [
+                    "public safety",
+                    "profit",
+                    "speed"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s12.failure-ethics.failure-ethics.a3",
+                  "prompt": "Root-cause analysis looks beyond the immediate cause.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s12.failure-ethics.failure-ethics.a4",
+                  "prompt": "Match the term",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "root cause",
+                      "underlying reason"
+                    ],
+                    [
+                      "flutter",
+                      "wind-driven vibration"
+                    ],
+                    [
+                      "whistle-blower",
+                      "reports wrongdoing"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "What should an engineer do if a manager ignores a safety concern?",
+                "Why are failures valuable for learning?"
+              ],
+              "speaking": [
+                "Lead a discussion on an engineering ethics case study."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Failure Case Study",
+                "materials": [
+                  "documented reports",
+                  "scholarly sources"
+                ],
+                "steps": [
+                  "Choose a well-documented engineering failure",
+                  "Construct a timeline",
+                  "Perform a root-cause analysis",
+                  "Write a 1500-word report with ethical lessons"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "engineering.s12.failure-ethics.failure-ethics.q1",
+                  "prompt": "The underlying reason for a failure is the…",
+                  "kind": "choice",
+                  "options": [
+                    "root cause",
+                    "surface cause",
+                    "cover story"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "engineering.s12.failure-ethics.failure-ethics.q2",
+                  "prompt": "Tacoma Narrows led to wind-tunnel testing of bridges.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "engineering.s12.failure-ethics.failure-ethics.q3",
+                  "prompt": "Most important means…",
+                  "kind": "choice",
+                  "options": [
+                    "paramount",
+                    "parallel",
+                    "partial"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Analyses failures systematically",
+                "Applies ethical codes",
+                "Draws lessons for practice"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

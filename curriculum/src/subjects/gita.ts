@@ -146,7 +146,7 @@ export default subject({
           ],
           t: ['Which of your duties is the hardest? Why?', 'Why might it be better to do your own duty than copy someone else\'s?'],
           k: ['Tell a grown-up three duties you have and how you do them.'],
-          m: ['Duty Wheel', 'paper plate, crayons, a split pin and arrow', 'Divide a plate into your daily duties | Spin the arrow each morning | Do that duty with extra care | Talk about how it felt'],
+          m: ['Duty Wheel', 'paper plate, crayons, a split pin and arrow', 'Divide a plate into your daily duties | Spin the arrow each morning | Do that duty with extra care | Talk about how it felt', "An adult should attach the split pin and check that no sharp point is exposed. Keep the pin away from mouths and eyes."],
           q: [
             ch('A responsibility is…', '*something you are trusted to do|a toy|a game'),
             tf('The Gita talks about svadharma.', true),

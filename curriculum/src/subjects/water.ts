@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why do you think ponds have so many insects?', 'What might pollute a pond?'],
           k: ['Describe a pond to someone and name five things that live there.'],
-          m: ['Pond in a Tub', 'a large tub, rainwater or pond water, a few water plants, stones (with an adult\'s help)', 'Set up a tub with water and plants in a shady spot | Add stones as steps for insects to climb | Observe it each week | Record any visitors like dragonflies or birds'],
+          m: ['Pond in a Tub', 'a large tub, rainwater or pond water, a few water plants, stones (with an adult\'s help)', 'Set up a tub with water and plants in a shady spot | Add stones as steps for insects to climb | Observe it each week | Record any visitors like dragonflies or birds', "Use a shallow, stable tub with an adult present. Do not drink the water or touch unknown wildlife; wash hands afterwards and empty the tub when finished."],
           q: [
             ch('Lily pads float on…', '*water|sand|trees'),
             ch('Dragonfly young live…', '*underwater|in trees|in the sky only'),
@@ -215,7 +215,7 @@ export default subject({
           ],
           t: ['Why was John Snow\'s map so important?', 'Why are toilets a public health issue, not just a private one?'],
           k: ['Teach a younger child the steps of proper handwashing and explain why.'],
-          m: ['🧪 Make a Water Filter', 'a plastic bottle cut in half (adult help), cotton wool, sand, gravel, charcoal (optional), muddy water', 'Layer cotton, charcoal, sand and gravel in the upside-down bottle | Pour muddy water through | Compare before and after | Explain why this water is still NOT safe to drink without disinfection'],
+          m: ['🧪 Make a Water Filter', 'a plastic bottle cut in half (adult help), cotton wool, sand, gravel, charcoal (optional), muddy water', 'Layer cotton, charcoal, sand and gravel in the upside-down bottle | Pour muddy water through | Compare before and after | Explain why this water is still NOT safe to drink without disinfection', "An adult must cut and prepare the bottle. Do not drink the filtered water; it may still contain germs. Wash hands after handling muddy water and keep it away from mouths."],
           q: [
             ch('Killing germs in water is…', '*disinfection|sedimentation|evaporation'),
             ch('Safe toilets and waste disposal are called…', '*sanitation|irrigation|navigation'),
@@ -244,7 +244,7 @@ export default subject({
           ],
           t: ['Who should be responsible for cleaning polluted rivers?', 'How do your daily choices affect rivers far away?'],
           k: ['Make a short speech to your class or family about one way to reduce river pollution.'],
-          m: ['Litter Audit', 'gloves, bags, a notebook, an adult', 'With an adult, collect litter from a park or roadside for 20 minutes | Sort and count the items by type | Make a bar chart | Suggest three ways to reduce the most common item'],
+          m: ['Litter Audit', 'gloves, bags, a notebook, an adult', 'With an adult, collect litter from a park or roadside for 20 minutes | Sort and count the items by type | Make a bar chart | Suggest three ways to reduce the most common item', "Only do this with an adult in a safe park area away from roads and water. Do not touch sharp, medical, chemical or unknown waste; leave it for an adult or local cleanup service."],
           q: [
             ch('Which is a source of water pollution?', '*untreated sewage|planting trees|rainwater harvesting'),
             ch('Fertilisers washing into lakes can cause…', '*algal blooms|earthquakes|tides'),
@@ -372,7 +372,7 @@ export default subject({
           ],
           t: ['How should coastal cities prepare for sea-level rise?', 'Why does what happens in the ocean matter to people far inland?'],
           k: ['Give a presentation on one threat to oceans and two solutions, with evidence.'],
-          m: ['🧪 Acidification Demonstration', 'two cups, vinegar, water, chalk pieces or eggshell', 'Place chalk in water and in vinegar | Observe over 24 hours | Relate the reaction to shells in more acidic oceans | Write up the experiment and its limits as a model'],
+          m: ['🧪 Acidification Demonstration', 'two cups, vinegar, water, chalk pieces or eggshell', 'Place chalk in water and in vinegar | Observe over 24 hours | Relate the reaction to shells in more acidic oceans | Write up the experiment and its limits as a model', "Use small amounts of vinegar with adult supervision. Do not taste the liquids or touch eyes; wash hands after the activity."],
           q: [
             ch('Coral bleaching is often triggered by…', '*unusually warm water|cold winters|more fish'),
             ch('Sea-level rise is caused by thermal expansion and…', '*melting land ice|more boats|tides'),

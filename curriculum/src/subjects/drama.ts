@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['What story would your puppet tell?', 'Why should the puppeteer look at the puppet?'],
           k: ['Introduce your puppet to a grown-up and let it tell a joke.'],
-          m: ['Sock Puppet Show', 'an old sock, buttons, wool, glue (with an adult), a table as a stage', 'Decorate a sock as a character | Hide behind a table | Make the puppet tell a short story | Take a bow at the end'],
+          m: ['Sock Puppet Show', 'an old sock, buttons, wool, glue (with an adult), a table as a stage', 'Decorate a sock as a character | Hide behind a table | Make the puppet tell a short story | Take a bow at the end', "Avoid loose buttons and other small parts for young children; use large felt shapes securely attached by an adult. Use non-toxic glue and supervise the activity."],
           q: [
             ch('Kathputli comes from…', '*Rajasthan|Kerala|Assam'),
             tf('Puppets can be made from socks.', true),
@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Why might folk theatre be performed outdoors?', 'What makes shadow puppets magical?'],
           k: ['Describe one folk theatre form to your family.'],
-          m: ['🧪 Shadow Puppet Theatre', 'card, sticks, a torch, a white sheet', 'Cut out character shapes from card | Tape them to sticks | Shine a torch behind a sheet | Perform a short story and notice how distance changes shadow size'],
+          m: ['🧪 Shadow Puppet Theatre', 'card, sticks, a torch, a white sheet', 'Cut out character shapes from card | Tape them to sticks | Shine a torch behind a sheet | Perform a short story and notice how distance changes shadow size', "Use child-safe scissors with adult supervision. Keep the torch pointed away from eyes and keep the performance area clear."],
           q: [
             ch('Yakshagana comes from…', '*coastal Karnataka|Punjab|Assam'),
             tf('Putul Nach uses rod puppets.', true),
@@ -242,7 +242,7 @@ export default subject({
           ],
           t: ['How could you show a forest with very few props?', 'Which theatre job would you like? Why?'],
           k: ['Explain your design ideas for a scene.'],
-          m: ['Design a Set in a Shoebox', 'a shoebox, card, fabric, a torch', 'Choose a scene from a play | Build a model set inside the shoebox | Use a torch with coloured paper for lighting | Present your design choices'],
+          m: ['Design a Set in a Shoebox', 'a shoebox, card, fabric, a torch', 'Choose a scene from a play | Build a model set inside the shoebox | Use a torch with coloured paper for lighting | Present your design choices', "Use a cool-running torch and keep it pointed away from eyes. Do not cover the torch or leave it switched on unattended."],
           q: [
             ch('The person who runs the show is the…', '*stage manager|actor|critic'),
             tf('Stage directions use the actor\'s point of view.', true),

@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['How many new words can you make by changing only the middle sound of "hat"?', 'Why are vowels important in almost every word?'],
           k: ['Read five 3-letter words to a grown-up, then explain how you worked out the hardest one.'],
-          m: ['Word Slider', 'card strips, scissors, pen', 'Write a start letter and an end letter on a card with a gap | Make a strip of vowels a e i o u | Slide the strip through the gap | Read each word and decide if it is a real word or a silly word'],
+          m: ['Word Slider', 'card strips, scissors, pen', 'Write a start letter and an end letter on a card with a gap | Make a strip of vowels a e i o u | Slide the strip through the gap | Read each word and decide if it is a real word or a silly word', "Use child-safe scissors with adult supervision. Adults should handle any sharp cutting tools and keep small pieces away from younger children."],
           q: [
             ch('Read: h – e – n', '*hen|hat|hot'),
             ch('Which picture matches "pig"?', '*🐷|🐶|🐮'),
@@ -147,7 +147,7 @@ export default subject({
           ],
           t: ['What do you think Ivu did after eating the hot bun?', 'Why do we point to each word when we read?'],
           k: ['Read a short story to a grown-up, then ask them a question about it.'],
-          m: ['My First Little Book', 'paper, crayons, stapler', 'Fold two sheets into a little book | Write one short sentence on each page, like "The cat sat on a mat." | Draw a picture for each page | Read your book to your family'],
+          m: ['My First Little Book', 'paper, crayons, stapler', 'Fold two sheets into a little book | Write one short sentence on each page, like "The cat sat on a mat." | Draw a picture for each page | Read your book to your family', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from young children."],
           q: [
             ch('In "Ivu and the Red Car", what did Ivu eat?', '*a hot bun|a fish|an egg'),
             ch('Which word starts a sentence with a capital letter?', '*The|the|cat'),
@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Why might English use a silent e instead of a new letter for long sounds?', 'Can you find a word where the "magic e" rule does not work? (Hint: "have", "give")'],
           k: ['Explain the split digraph to a younger child or a toy using cap and cape.'],
-          m: ['Flip Book of Magic e', 'paper strips, stapler, pens', 'Write short words like cap, pin, hop, cub on strips | Add a flap with e that folds over the end | Read each word with and without the flap | Draw a picture for both words'],
+          m: ['Flip Book of Magic e', 'paper strips, stapler, pens', 'Write short words like cap, pin, hop, cub on strips | Add a flap with e that folds over the end | Read each word with and without the flap | Draw a picture for both words', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from young children."],
           q: [
             ch('Read: r-o-b-e', 'rob|*robe|rib'),
             ch('Which is a long "i" word?', 'bit|*bite|bat'),
@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['Why might an author choose compare–contrast instead of cause–effect for the same topic?', 'How can text features sometimes mislead a reader (e.g. a dramatic photo)?'],
           k: ['Explain to someone how you would find one fact in a non-fiction book in under two minutes.'],
-          m: ['Make a Mini Information Book', 'paper, stapler, pencils, reference books', 'Choose a topic you know well | Plan sections with headings | Use at least two structures (e.g. sequence and compare–contrast) | Add captions, a glossary and a contents page | Ask a reader to find a fact using your features'],
+          m: ['Make a Mini Information Book', 'paper, stapler, pencils, reference books', 'Choose a topic you know well | Plan sections with headings | Use at least two structures (e.g. sequence and compare–contrast) | Add captions, a glossary and a contents page | Ask a reader to find a fact using your features', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('"Water heats, then evaporates, then forms clouds." Structure?', '*sequence|problem–solution|compare–contrast'),
             ch('Which signal word suggests cause and effect?', 'similarly|*therefore|first'),

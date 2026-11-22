@@ -308,7 +308,7 @@ export default subject({
           ],
           t: ['Why might it matter to respect a practice\'s original meaning?', 'What do these different practices have in common?'],
           k: ['Present one contemplative tradition respectfully, explaining its practice and meaning to followers.'],
-          m: ['Contemplative Practices Comparison', 'reliable sources, interviews with family or community members (with permission)', 'Research three contemplative practices from different traditions | Note their methods and purposes | Interview someone who practises one (if possible) | Write a respectful comparison'],
+          m: ['Contemplative Practices Comparison', 'reliable sources, interviews with family or community members (with permission)', 'Research three contemplative practices from different traditions | Note their methods and purposes | Interview someone who practises one (if possible) | Write a respectful comparison', "Ask permission before an interview and respect that beliefs and practices are personal. Let people skip questions and do not record or share their words without consent."],
           q: [
             ch('Dhyana is one of the limbs of yoga described by…', '*Patanjali|Darwin|Einstein'),
             tf('People of different faiths can practise attention and calm.', true),

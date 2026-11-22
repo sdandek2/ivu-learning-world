@@ -28,7 +28,7 @@ export default subject({
           ],
           t: ['Why do you think people like lights at festivals?', 'How can we be kind to friends who celebrate different festivals?'],
           k: ['Tell a grown-up about your favourite festival and how your family celebrates it.'],
-          m: ['Festival of Lights Window', 'coloured paper, glue, safety scissors (with an adult)', 'Cut out a diya, a menorah and a star | Glue them on a black paper "window" | Add yellow paper flames | Talk about each festival as you make it'],
+          m: ['Festival of Lights Window', 'coloured paper, glue, safety scissors (with an adult)', 'Cut out a diya, a menorah and a star | Glue them on a black paper "window" | Add yellow paper flames | Talk about each festival as you make it', "Use child-safe scissors with adult supervision and non-toxic glue. This is a paper craft; do not use real candles or flames."],
           q: [
             ch('A diya is…', '*a small clay lamp|a drum|a sweet'),
             tf('Christians celebrate Christmas.', true),
@@ -92,7 +92,7 @@ export default subject({
           ],
           t: ['Why do people have special rules in special places?', 'What questions would you like to ask when visiting?'],
           k: ['Show a grown-up how you would behave politely in a place of worship.'],
-          m: ['Places of Worship Picture Book', 'paper, crayons, stapler', 'Draw six places of worship | Write each name under the picture | Add one custom for each | Staple into a book and share'],
+          m: ['Places of Worship Picture Book', 'paper, crayons, stapler', 'Draw six places of worship | Write each name under the picture | Add one custom for each | Staple into a book and share', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('A Buddhist monastery or temple is often called a…', '*vihara|gurdwara|mosque'),
             tf('In many mosques, people wash before prayer.', true),
@@ -250,7 +250,7 @@ export default subject({
           ],
           t: ['Why do communities mark milestones together?', 'What milestone in your life would you like to celebrate?'],
           k: ['Describe a rite of passage you have seen or learned about.'],
-          m: ['Family Milestone Interview', 'notebook, a relative to interview', 'Ask a relative about a ceremony from their life | Record what happened and what it meant | Compare it with one from another tradition | Share what you learned'],
+          m: ['Family Milestone Interview', 'notebook, a relative to interview', 'Ask a relative about a ceremony from their life | Record what happened and what it meant | Compare it with one from another tradition | Share what you learned', "Ask permission before discussing personal or religious ceremonies. Let the person skip questions and do not share private stories or photographs without consent."],
           q: [
             ch('An initiation is a ceremony of…', '*joining a group|leaving school|cooking'),
             tf('Rites of passage differ within each tradition.', true),
@@ -348,7 +348,7 @@ export default subject({
           ],
           t: ['Can an outsider fully understand a religion?', 'Why might lived religion differ from official teachings?'],
           k: ['Describe a ritual from both emic and etic perspectives.'],
-          m: ['Lived Religion Study', 'consent from participants, notebook', 'Observe or interview (with permission) about a family practice | Record the insider\'s explanation | Analyse it using Smart\'s dimensions | Write a 1500-word reflective report'],
+          m: ['Lived Religion Study', 'consent from participants, notebook', 'Observe or interview (with permission) about a family practice | Record the insider\'s explanation | Analyse it using Smart\'s dimensions | Write a 1500-word reflective report', "Obtain informed consent before observing or interviewing. Respect that religious practices are personal, allow participants to decline, and anonymise notes unless they agree to be identified."],
           q: [
             ch('Methodological neutrality means…', '*not judging truth claims|choosing a side|ignoring evidence'),
             tf('Ninian Smart\'s model includes a material dimension.', true),

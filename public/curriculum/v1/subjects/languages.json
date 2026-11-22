@@ -1,1 +1,2479 @@
-{"schemaVersion":1,"id":"languages","worldId":"mind-galaxy","title":"Languages & Scripts","icon":"🌐","tagline":"Many ways to say hello","description":"Languages and scripts, taught in English as a bridge to Marathi, Sanskrit and the wider world: greetings in many languages, Marathi family, number, colour and animal words, Sanskrit numbers and words, writing systems of the world, the Devanagari script, language families, India's languages, Panini's Sanskrit grammar, words that travel between languages, linguistics, and language, identity and endangered languages. Marathi and Sanskrit words are shown with English pronunciation guides.","contentVersion":"1.0.0","sensitivity":"none","stages":[{"stage":"s4","overview":"Many ways to say hello, and Marathi family words.","goals":["Say hello in several languages","Learn Marathi words for family members","Enjoy the sounds of different languages"],"units":[{"id":"languages.s4.hello","title":"Hello, Namaskar, Hola!","summary":"Greetings around the world.","topics":[{"title":"Hello in Indian languages","subtopics":["Hello in Indian languages"]},{"title":"Hello around the world","subtopics":["Hello around the world"]},{"title":"Polite words","subtopics":["Polite words"]}],"objectives":["Say hello in at least four languages","Know that people around the world speak many languages"],"masteryCriteria":["Greets in several languages","Knows many languages exist","Uses polite words"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"languages.s4.hello.hello-world","title":"Many Ways to Say Hello","skillId":"sk.languages.s4.hello.hello-world","minutes":8,"objectives":["Say hello in at least four languages","Know that people around the world speak many languages"],"prerequisites":["Can say hello in English"],"prerequisiteIds":[],"explanation":["People around the world speak thousands of different languages — more than 7,000! Each language has its own way of saying hello.","In Marathi, we say \"Namaskar\" (nuh-muss-kaar). In Hindi and Sanskrit, \"Namaste\" (nuh-muss-tay). In Spanish, \"Hola\" (oh-la). In French, \"Bonjour\" (bon-zhoor). In Mandarin Chinese, \"Nǐ hǎo\" (nee how). In Japanese, \"Konnichiwa\".","Polite words matter in every language. In Marathi, thank you can be \"Dhanyavaad\" (dhun-ya-vaad), the same word used in Hindi."],"context":[],"vocabulary":[{"term":"language","meaning":"the words people use to talk"},{"term":"greeting","meaning":"a way of saying hello"},{"term":"Namaskar","meaning":"hello in Marathi"},{"term":"polite","meaning":"kind and respectful in how you speak"}],"examples":["Saying \"Namaskar\" to Aaji with folded hands.","Saying \"Hola\" to a Spanish-speaking friend."],"story":{"title":"The Hello Train","text":"Ivaan pretended to drive a train around the world. At the first stop, a teddy waved: \"Namaskar!\" At the next: \"Bonjour!\" Then: \"Hola!\" Then: \"Konnichiwa!\" At the last stop, Aaji was waiting with a smile. \"Namaskar, Ivaan!\" she said, folding her hands. Ivaan folded his hands too. \"Namaskar, Aaji! I said hello all around the world!\""},"activities":[{"id":"languages.s4.hello.hello-world.a1","prompt":"Match hello to the language","kind":"match","pairs":[["Namaskar","Marathi"],["Hola","Spanish"],["Bonjour","French"],["Konnichiwa","Japanese"]]},{"id":"languages.s4.hello.hello-world.a2","prompt":"About how many languages are spoken in the world?","kind":"choice","options":["more than 7,000","ten","one"],"answer":0},{"id":"languages.s4.hello.hello-world.a3","prompt":"Namaste is a greeting in Hindi and Sanskrit.","kind":"truefalse","answer":true},{"id":"languages.s4.hello.hello-world.a4","prompt":"\"Dhanyavaad\" means…","kind":"choice","options":["thank you","goodbye","banana"],"answer":0}],"thinking":["Why do you think people speak different languages?","Which hello do you like the sound of best?"],"speaking":["Greet three family members in three different languages."],"project":{"kind":"project","title":"Hello Around the World Map","materials":["paper","crayons","a simple world map"],"steps":["Draw or colour a map","Write or draw hello in different languages on countries","Practise saying each one","Greet your family with a new hello each day"]},"assessment":[{"id":"languages.s4.hello.hello-world.q1","prompt":"Hello in Marathi is…","kind":"choice","options":["Namaskar","Hola","Bonjour"],"answer":0},{"id":"languages.s4.hello.hello-world.q2","prompt":"Every language has a way to say hello.","kind":"truefalse","answer":true},{"id":"languages.s4.hello.hello-world.q3","prompt":"A way of saying hello is a…","kind":"choice","options":["greeting","garden","game"],"answer":0}],"mastery":["Greets in several languages","Knows many languages exist","Uses polite words"]}]},{"id":"languages.s4.family-words","title":"Marathi Family Words","summary":"Aai, Baba, Aaji, Ajoba.","topics":[{"title":"Parents","subtopics":["Parents"]},{"title":"Grandparents","subtopics":["Grandparents"]},{"title":"Brothers and sisters","subtopics":["Brothers and sisters"]}],"objectives":["Say Marathi words for family members","Use family words in simple sentences"],"masteryCriteria":["Names family members in Marathi","Uses words in sentences","Compares family words across languages"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"languages.s4.family-words.marathi-family","title":"Aai, Baba and Everyone","skillId":"sk.languages.s4.family-words.marathi-family","minutes":8,"objectives":["Say Marathi words for family members","Use family words in simple sentences"],"prerequisites":["Knows English family words"],"prerequisiteIds":[],"explanation":["In Marathi, mother is \"Aai\" (aa-ee) and father is \"Baba\" (baa-baa).","Grandmother is \"Aaji\" (aa-jee) and grandfather is \"Ajoba\" (uh-jo-baa). An elder brother is often called \"Dada\" (daa-daa) and an elder sister \"Tai\" (taa-ee).","Families in different places use different words. In Hindi, mother is often \"Maa\" and grandmother \"Dadi\" or \"Nani\". Knowing family words helps us talk lovingly with our families."],"context":[],"vocabulary":[{"term":"Aai","meaning":"mother in Marathi"},{"term":"Baba","meaning":"father in Marathi"},{"term":"Aaji","meaning":"grandmother in Marathi"},{"term":"Ajoba","meaning":"grandfather in Marathi"}],"examples":["\"Aai, I love you!\"","Calling an elder sister \"Tai\"."],"story":{"title":"Ivaan's Family Tree","text":"Ivaan drew a big tree. At the top, he drew Ajoba with his glasses and Aaji with her bright sari. Below them, Baba and Aai holding hands. At the bottom, himself. \"Aai, Baba, Aaji, Ajoba,\" he said, pointing to each. Aaji clapped. \"Now you know our family in Marathi!\""},"activities":[{"id":"languages.s4.family-words.marathi-family.a1","prompt":"Match the Marathi word","kind":"match","pairs":[["Aai","mother"],["Baba","father"],["Aaji","grandmother"],["Ajoba","grandfather"]]},{"id":"languages.s4.family-words.marathi-family.a2","prompt":"An elder sister in Marathi is often called…","kind":"choice","options":["Tai","Dada","Baba"],"answer":0},{"id":"languages.s4.family-words.marathi-family.a3","prompt":"Different languages have different family words.","kind":"truefalse","answer":true},{"id":"languages.s4.family-words.marathi-family.a4","prompt":"\"Dada\" is often used for an…","kind":"choice","options":["elder brother","elder sister","aunt"],"answer":0}],"thinking":["What do you call your grandparents?","Why might families use special words for each other?"],"speaking":["Point to family photos and name each person in Marathi."],"project":{"kind":"project","title":"Marathi Family Tree","materials":["paper","crayons","family photos (optional)"],"steps":["Draw a tree with branches","Draw or stick your family on it","Label each person with the Marathi word","Show it to your family and say each word"]},"assessment":[{"id":"languages.s4.family-words.marathi-family.q1","prompt":"Mother in Marathi is…","kind":"choice","options":["Aai","Ajoba","Tai"],"answer":0},{"id":"languages.s4.family-words.marathi-family.q2","prompt":"Ajoba means grandfather.","kind":"truefalse","answer":true},{"id":"languages.s4.family-words.marathi-family.q3","prompt":"Father in Marathi is…","kind":"choice","options":["Baba","Aaji","Dada"],"answer":0}],"mastery":["Names family members in Marathi","Uses words in sentences","Compares family words across languages"]}]}]},{"stage":"s5","overview":"Counting in Marathi and Sanskrit; colours and animals.","goals":["Count 1–5 in Marathi and Sanskrit","Name colours in Marathi","Name animals in Marathi and Sanskrit"],"units":[{"id":"languages.s5.numbers","title":"Counting in Marathi and Sanskrit","summary":"Ek, don, teen!","topics":[{"title":"Marathi numbers 1–5","subtopics":["Marathi numbers 1–5"]},{"title":"Sanskrit numbers 1–5","subtopics":["Sanskrit numbers 1–5"]},{"title":"Counting songs","subtopics":["Counting songs"]}],"objectives":["Count from 1 to 5 in Marathi","Count from 1 to 5 in Sanskrit"],"masteryCriteria":["Counts 1–5 in Marathi","Counts 1–5 in Sanskrit","Notices word similarities"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"languages.s5.numbers.count-languages","title":"Ek, Don, Teen","skillId":"sk.languages.s5.numbers.count-languages","minutes":10,"objectives":["Count from 1 to 5 in Marathi","Count from 1 to 5 in Sanskrit"],"prerequisites":["Can count 1–10 in English"],"prerequisiteIds":[],"explanation":["In Marathi, we count: 1 \"ek\", 2 \"don\", 3 \"teen\", 4 \"chaar\", 5 \"paach\".","In Sanskrit, an ancient language of India: 1 \"ekam\", 2 \"dve\", 3 \"trini\", 4 \"chatvari\", 5 \"pancha\".","Notice how similar some words are! Sanskrit is an ancient relative of Marathi and Hindi. Even English is distantly related: Sanskrit \"trini\" and English \"three\" both come from a very old shared ancestor language."],"context":[],"vocabulary":[{"term":"ek","meaning":"one in Marathi"},{"term":"don","meaning":"two in Marathi"},{"term":"pancha","meaning":"five in Sanskrit"},{"term":"Sanskrit","meaning":"an ancient language of India"}],"examples":["Counting stairs: ek, don, teen, chaar, paach!","The word \"Panchatantra\" contains \"pancha\", meaning five."],"story":{"title":"The Staircase Count","text":"Every evening, Ivaan and Ajoba climbed the stairs together, counting in Marathi: \"Ek, don, teen, chaar, paach!\" One day Ajoba said, \"Let's try Sanskrit.\" \"Ekam, dve, trini, chatvari, pancha!\" Ivaan giggled. \"Pancha sounds like paach!\" \"Clever boy,\" said Ajoba. \"They're cousins.\""},"activities":[{"id":"languages.s5.numbers.count-languages.a1","prompt":"Match the Marathi number","kind":"match","pairs":[["ek","1"],["don","2"],["teen","3"],["paach","5"]]},{"id":"languages.s5.numbers.count-languages.a2","prompt":"Five in Sanskrit is…","kind":"choice","options":["pancha","ek","dve"],"answer":0},{"id":"languages.s5.numbers.count-languages.a3","prompt":"Count in Marathi: ek, don, teen, chaar — how many?","kind":"count","answer":4},{"id":"languages.s5.numbers.count-languages.a4","prompt":"Sanskrit \"trini\" and English \"three\" are related.","kind":"truefalse","answer":true}],"thinking":["Which Marathi and Sanskrit numbers sound alike?","Why might languages share similar words?"],"speaking":["Count five toys in Marathi and then in Sanskrit."],"project":{"kind":"project","title":"Counting Cards in Three Languages","materials":["card","crayons"],"steps":["Make cards for 1 to 5","Write the number and draw that many dots","Add the English, Marathi and Sanskrit words","Play a matching game with family"]},"assessment":[{"id":"languages.s5.numbers.count-languages.q1","prompt":"Two in Marathi is…","kind":"choice","options":["don","teen","ek"],"answer":0},{"id":"languages.s5.numbers.count-languages.q2","prompt":"Pancha means five.","kind":"truefalse","answer":true},{"id":"languages.s5.numbers.count-languages.q3","prompt":"Three in Marathi is…","kind":"choice","options":["teen","chaar","paach"],"answer":0}],"mastery":["Counts 1–5 in Marathi","Counts 1–5 in Sanskrit","Notices word similarities"]}]},{"id":"languages.s5.colours-animals","title":"Colours and Animals","summary":"Words for the world around us.","topics":[{"title":"Marathi colour words","subtopics":["Marathi colour words"]},{"title":"Marathi animal words","subtopics":["Marathi animal words"]},{"title":"Sanskrit nature words","subtopics":["Sanskrit nature words"]}],"objectives":["Name colours in Marathi","Name animals in Marathi and some nature words in Sanskrit"],"masteryCriteria":["Names colours in Marathi","Names animals in Marathi","Knows Sanskrit nature words"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"languages.s5.colours-animals.colours-animals","title":"Laal, Hirva and Vagh","skillId":"sk.languages.s5.colours-animals.colours-animals","minutes":10,"objectives":["Name colours in Marathi","Name animals in Marathi and some nature words in Sanskrit"],"prerequisites":["Knows colours and animals in English"],"prerequisiteIds":[],"explanation":["Marathi colours: red is \"laal\", yellow is \"pivla\", green is \"hirva\", blue is \"nila\", white is \"pandhra\" and black is \"kaala\".","Marathi animals: cat is \"manjar\", dog is \"kutra\", cow is \"gaay\", elephant is \"hatti\", tiger is \"vagh\" and fish is \"maasa\".","Some Sanskrit nature words: sun is \"surya\", moon is \"chandra\", water is \"jalam\" and elephant is \"gajah\". You may know \"Ganesh\" is also called \"Gajanan\" — the elephant-faced one!"],"context":[],"vocabulary":[{"term":"laal","meaning":"red in Marathi"},{"term":"hirva","meaning":"green in Marathi"},{"term":"vagh","meaning":"tiger in Marathi"},{"term":"surya","meaning":"sun in Sanskrit"}],"examples":["\"Hirva popat\" — a green parrot.","\"Surya Namaskar\" — saluting the sun in yoga."],"story":{"title":"The Colourful Zoo","text":"At the zoo, Ivaan played a game with Aai. \"What colour is the parrot?\" \"Hirva!\" \"What animal is that?\" \"Vagh!\" — a big orange tiger with kaala stripes. At the elephant enclosure, Aai said, \"In Sanskrit, an elephant is gajah.\" Ivaan trumpeted like a hatti. \"I'm a gajah AND a hatti!\""},"activities":[{"id":"languages.s5.colours-animals.colours-animals.a1","prompt":"Match the Marathi colour","kind":"match","pairs":[["laal","red"],["pivla","yellow"],["hirva","green"],["nila","blue"]]},{"id":"languages.s5.colours-animals.colours-animals.a2","prompt":"Match the Marathi animal","kind":"match","pairs":[["manjar","cat"],["kutra","dog"],["vagh","tiger"],["hatti","elephant"]]},{"id":"languages.s5.colours-animals.colours-animals.a3","prompt":"Sun in Sanskrit is…","kind":"choice","options":["surya","chandra","jalam"],"answer":0},{"id":"languages.s5.colours-animals.colours-animals.a4","prompt":"\"Gajah\" means elephant in Sanskrit.","kind":"truefalse","answer":true}],"thinking":["Which Marathi word is your favourite to say?","What does \"Surya Namaskar\" mean, using the words you know?"],"speaking":["Describe an animal using a Marathi colour and animal word, like \"kaala kutra\"."],"project":{"kind":"project","title":"Marathi Animal Book","materials":["paper","crayons","stapler"],"steps":["Draw six animals","Colour them and write the Marathi colour word","Write the Marathi animal name","Read the book to your family"]},"assessment":[{"id":"languages.s5.colours-animals.colours-animals.q1","prompt":"Moon in Sanskrit is…","kind":"choice","options":["chandra","surya","gajah"],"answer":0},{"id":"languages.s5.colours-animals.colours-animals.q2","prompt":"\"Maasa\" means fish in Marathi.","kind":"truefalse","answer":true},{"id":"languages.s5.colours-animals.colours-animals.q3","prompt":"White in Marathi is…","kind":"choice","options":["pandhra","laal","nila"],"answer":0}],"mastery":["Names colours in Marathi","Names animals in Marathi","Knows Sanskrit nature words"]}]}]},{"stage":"s6","overview":"Writing systems of the world and the Devanagari script.","goals":["Compare alphabets, abugidas and logographic scripts","Recognise Devanagari vowels and consonants","Write their name in Devanagari"],"units":[{"id":"languages.s6.scripts","title":"Scripts of the World","summary":"Many ways to write.","topics":[{"title":"Alphabets","subtopics":["Alphabets"]},{"title":"Abugidas like Devanagari","subtopics":["Abugidas like Devanagari"]},{"title":"Logographic scripts like Chinese","subtopics":["Logographic scripts like Chinese"]}],"objectives":["Describe different types of writing systems","Identify scripts used for different languages"],"masteryCriteria":["Describes script types","Matches scripts to languages","Recognises scripts in the environment"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"languages.s6.scripts.scripts","title":"Letters, Syllables and Symbols","skillId":"sk.languages.s6.scripts.scripts","minutes":15,"objectives":["Describe different types of writing systems","Identify scripts used for different languages"],"prerequisites":["Can read English letters"],"prerequisiteIds":[],"explanation":["A script is a system of writing. An alphabet, like the Latin alphabet used for English, has separate letters for consonants and vowels.","An abugida, like Devanagari (used for Marathi, Hindi, Sanskrit and Nepali), writes each consonant with a built-in \"a\" sound; other vowels are shown with marks added to the consonant. Many Indian scripts — Bengali, Tamil, Telugu, Kannada, Gujarati — are abugidas descended from the ancient Brahmi script.","Chinese uses logograms — characters that represent words or meaningful parts of words. Arabic and Urdu are written from right to left."],"context":[],"vocabulary":[{"term":"script","meaning":"a system of writing"},{"term":"alphabet","meaning":"a set of letters for consonants and vowels"},{"term":"abugida","meaning":"a script where consonants carry a built-in vowel"},{"term":"logogram","meaning":"a character representing a word or meaning"}],"examples":["Devanagari: नमस्कार (namaskar).","Chinese: 山 (shān), meaning mountain."],"story":{"title":"The Mountain Picture","text":"Zuri's teacher drew three peaks: 山. \"This is the Chinese character for mountain,\" she said. \"It started long ago as a picture.\" Then she wrote \"मराठी\" on the board. \"This is Marathi in Devanagari — the line on top joins the letters.\" Zuri traced both in the air. \"Every script is like a secret code!\""},"activities":[{"id":"languages.s6.scripts.scripts.a1","prompt":"Match the script to its type","kind":"match","pairs":[["Latin alphabet","alphabet"],["Devanagari","abugida"],["Chinese characters","logographic"]]},{"id":"languages.s6.scripts.scripts.a2","prompt":"Devanagari is used for…","kind":"choice","options":["Marathi, Hindi and Sanskrit","Chinese","English"],"answer":0},{"id":"languages.s6.scripts.scripts.a3","prompt":"Arabic and Urdu are written right to left.","kind":"truefalse","answer":true},{"id":"languages.s6.scripts.scripts.a4","prompt":"Many Indian scripts descend from…","kind":"choice","options":["Brahmi","Latin","Chinese"],"answer":0}],"thinking":["Why might different languages use different scripts?","What would be hard about writing in logograms?"],"speaking":["Show a grown-up three different scripts and name them."],"project":{"kind":"project","title":"Script Collection","materials":["packaging","newspapers","signs (photos)","a notebook"],"steps":["Find examples of different scripts around you","Stick or copy them into a notebook","Label the language and script","Share your collection"]},"assessment":[{"id":"languages.s6.scripts.scripts.q1","prompt":"A system of writing is a…","kind":"choice","options":["script","scroll","scribble"],"answer":0},{"id":"languages.s6.scripts.scripts.q2","prompt":"Tamil and Telugu scripts descend from Brahmi.","kind":"truefalse","answer":true},{"id":"languages.s6.scripts.scripts.q3","prompt":"A character representing a word is a…","kind":"choice","options":["logogram","letter only","line"],"answer":0}],"mastery":["Describes script types","Matches scripts to languages","Recognises scripts in the environment"]}]},{"id":"languages.s6.devanagari","title":"Devanagari Letters","summary":"Swar and vyanjan.","topics":[{"title":"Vowels (swar)","subtopics":["Vowels (swar)"]},{"title":"Consonants (vyanjan)","subtopics":["Consonants (vyanjan)"]},{"title":"Vowel marks (matra)","subtopics":["Vowel marks (matra)"]}],"objectives":["Recognise some Devanagari vowels and consonants","Explain how vowel marks (matras) change sounds"],"masteryCriteria":["Recognises letters","Uses matras","Writes simple words"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"languages.s6.devanagari.devanagari","title":"अ आ इ — Learning Devanagari","skillId":"sk.languages.s6.devanagari.devanagari","minutes":15,"objectives":["Recognise some Devanagari vowels and consonants","Explain how vowel marks (matras) change sounds"],"prerequisites":["Knows what an abugida is"],"prerequisiteIds":[],"explanation":["Devanagari letters hang from a line on top called the shirorekha. Vowels are called swar: अ (a), आ (aa), इ (i), ई (ee), उ (u), ऊ (oo).","Consonants are called vyanjan: क (ka), ख (kha), ग (ga), म (ma), न (na), र (ra). Each has a built-in \"a\" sound.","To change the vowel, add a mark called a matra: क (ka) + ा = का (kaa); क + ि = कि (ki). Devanagari letters are arranged scientifically by where in the mouth they are pronounced — from the throat to the lips."],"context":[],"vocabulary":[{"term":"swar","meaning":"a vowel in Devanagari"},{"term":"vyanjan","meaning":"a consonant in Devanagari"},{"term":"matra","meaning":"a vowel mark added to a consonant"},{"term":"shirorekha","meaning":"the line on top of Devanagari letters"}],"examples":["म + ा = मा (maa).","आई (Aai), Marathi for mother."],"story":{"title":"Writing Aai","text":"Ivaan wanted to write a card for Aai in Marathi. Aaji showed him: \"आ is 'aa', and ई is 'ee'. Together: आई — Aai!\" Ivaan copied it carefully, drawing the line on top. When Aai opened the card, her eyes filled with happy tears. \"You wrote my name in Marathi!\""},"activities":[{"id":"languages.s6.devanagari.devanagari.a1","prompt":"Match the Devanagari letter to its sound","kind":"match","pairs":[["अ","a"],["क","ka"],["म","ma"],["न","na"]]},{"id":"languages.s6.devanagari.devanagari.a2","prompt":"A vowel mark is called a…","kind":"choice","options":["matra","swar","vyanjan"],"answer":0},{"id":"languages.s6.devanagari.devanagari.a3","prompt":"The line on top of Devanagari letters is called the shirorekha.","kind":"truefalse","answer":true},{"id":"languages.s6.devanagari.devanagari.a4","prompt":"आई spells…","kind":"choice","options":["Aai","Baba","Tai"],"answer":0}],"thinking":["Why might letters be arranged by where they are pronounced?","How is Devanagari different from the English alphabet?"],"speaking":["Write and read aloud one Marathi word in Devanagari."],"project":{"kind":"project","title":"My Name in Devanagari","materials":["paper","pencil","a Devanagari chart"],"steps":["Find the letters for your name with a grown-up","Practise writing each letter","Write your name with the shirorekha","Decorate a name card"]},"assessment":[{"id":"languages.s6.devanagari.devanagari.q1","prompt":"A consonant in Devanagari is a…","kind":"choice","options":["vyanjan","swar","matra"],"answer":0},{"id":"languages.s6.devanagari.devanagari.q2","prompt":"Each Devanagari consonant has a built-in \"a\" sound.","kind":"truefalse","answer":true},{"id":"languages.s6.devanagari.devanagari.q3","prompt":"A vowel in Devanagari is a…","kind":"choice","options":["swar","sitar","star"],"answer":0}],"mastery":["Recognises letters","Uses matras","Writes simple words"]}]}]},{"stage":"s7","overview":"Language families and the languages of India.","goals":["Describe major language families","Explain India's linguistic diversity","Understand classical and scheduled languages"],"units":[{"id":"languages.s7.families","title":"Language Families","summary":"How languages are related.","topics":[{"title":"Indo-European","subtopics":["Indo-European"]},{"title":"Dravidian","subtopics":["Dravidian"]},{"title":"Sino-Tibetan and Austroasiatic","subtopics":["Sino-Tibetan and Austroasiatic"]}],"objectives":["Describe major language families","Use word comparisons to show relationships"],"masteryCriteria":["Describes language families","Identifies cognates","Explains historical relationships"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"languages.s7.families.families","title":"Family Trees of Languages","skillId":"sk.languages.s7.families.families","minutes":20,"objectives":["Describe major language families","Use word comparisons to show relationships"],"prerequisites":["Knows similar number words in different languages"],"prerequisiteIds":[],"explanation":["Like people, languages have families. Languages descended from a common ancestor share words and grammar patterns.","The Indo-European family includes Sanskrit, Marathi, Hindi, Bengali, Persian, Greek, Latin, English and German. Compare \"mother\": Sanskrit \"mātṛ\", Latin \"mater\", English \"mother\". In 1786, William Jones, a judge in Calcutta, noted Sanskrit's striking similarity to Greek and Latin.","The Dravidian family, mainly in South India, includes Tamil, Telugu, Kannada and Malayalam. India also has Austroasiatic languages (such as Santali and Khasi) and Tibeto-Burman languages (such as Manipuri/Meitei and Bodo)."],"context":[],"vocabulary":[{"term":"language family","meaning":"languages descended from a common ancestor"},{"term":"Indo-European","meaning":"a family including Sanskrit, Marathi and English"},{"term":"Dravidian","meaning":"a family including Tamil and Telugu"},{"term":"cognate","meaning":"words in related languages with a shared origin"}],"examples":["Sanskrit \"nava\", Latin \"novem\", English \"nine\" — cognates.","Tamil, one of the world's oldest living literary languages."],"story":{"title":"The Judge Who Noticed","text":"In 1786, Sir William Jones, a British judge in Calcutta who studied Sanskrit, gave a famous lecture. He said Sanskrit, Greek and Latin were so alike that they must have \"sprung from some common source, which, perhaps, no longer exists.\" His idea helped start the scientific study of language families."},"activities":[{"id":"languages.s7.families.families.a1","prompt":"Match the language to its family","kind":"match","pairs":[["Marathi","Indo-European"],["Tamil","Dravidian"],["Santali","Austroasiatic"],["Meitei","Tibeto-Burman"]]},{"id":"languages.s7.families.families.a2","prompt":"Words in related languages with a shared origin are…","kind":"choice","options":["cognates","opposites","rhymes"],"answer":0},{"id":"languages.s7.families.families.a3","prompt":"Sanskrit and Latin are in the same language family.","kind":"truefalse","answer":true},{"id":"languages.s7.families.families.a4","prompt":"Who noted Sanskrit's similarity to Greek and Latin in 1786?","kind":"choice","options":["William Jones","Panini","Aesop"],"answer":0}],"thinking":["Why do related languages share words?","What words in Marathi and English sound similar?"],"speaking":["Present a set of cognates across three languages."],"project":{"kind":"project","title":"Cognate Detective","materials":["a notebook","dictionaries or family members who speak other languages"],"steps":["Choose ten basic words (mother, three, new…)","Find them in Marathi, Sanskrit, English and one more language","Highlight similarities","Make a family-tree poster of the languages"]},"assessment":[{"id":"languages.s7.families.families.q1","prompt":"Kannada belongs to the…","kind":"choice","options":["Dravidian family","Indo-European family","Sino-Tibetan family"],"answer":0},{"id":"languages.s7.families.families.q2","prompt":"English is an Indo-European language.","kind":"truefalse","answer":true},{"id":"languages.s7.families.families.q3","prompt":"Languages from a common ancestor form a…","kind":"choice","options":["language family","alphabet","dictionary"],"answer":0}],"mastery":["Describes language families","Identifies cognates","Explains historical relationships"]}]},{"id":"languages.s7.india-languages","title":"The Languages of India","summary":"A land of many tongues.","topics":[{"title":"The Eighth Schedule","subtopics":["The Eighth Schedule"]},{"title":"Classical languages","subtopics":["Classical languages"]},{"title":"Multilingual India","subtopics":["Multilingual India"]}],"objectives":["Explain India's linguistic diversity and constitutional recognition","Describe classical languages, including Marathi"],"masteryCriteria":["Explains linguistic diversity","Describes constitutional recognition","Knows Marathi's classical status"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"languages.s7.india-languages.india-languages","title":"Unity in Many Languages","skillId":"sk.languages.s7.india-languages.india-languages","minutes":20,"objectives":["Explain India's linguistic diversity and constitutional recognition","Describe classical languages, including Marathi"],"prerequisites":["Knows language families"],"prerequisiteIds":[],"explanation":["India is one of the world's most linguistically diverse countries. The 2011 Census recorded 121 languages spoken by 10,000 or more people, and many more mother tongues.","The Eighth Schedule of the Constitution lists 22 scheduled languages, including Marathi, Hindi, Bengali, Tamil, Telugu, Sanskrit, Urdu, Kannada, Gujarati and Konkani. Hindi in Devanagari is the official language of the Union, with English also used for official purposes.","The government recognises some languages as \"classical\" for their antiquity and rich literature. In October 2024, Marathi received classical language status, along with Pali, Prakrit, Assamese and Bengali, joining Tamil, Sanskrit, Telugu, Kannada, Malayalam and Odia."],"context":[],"vocabulary":[{"term":"scheduled language","meaning":"a language listed in the Constitution's Eighth Schedule"},{"term":"classical language","meaning":"a language recognised for antiquity and rich literature"},{"term":"mother tongue","meaning":"the first language a person learns"},{"term":"multilingual","meaning":"able to use several languages"}],"examples":["A Mumbai child speaking Marathi at home, Hindi with friends and English at school.","Rupee notes printed with text in many languages."],"story":{"title":"The Language Panel","text":"Ivaan looked closely at a banknote with Papa. On the back was a panel with the value written in 15 languages besides Hindi and English! \"Marathi is there,\" Papa pointed. \"And Tamil, Bengali, Kannada…\" Ivaan counted the scripts. \"Our money speaks lots of languages!\""},"activities":[{"id":"languages.s7.india-languages.india-languages.a1","prompt":"How many languages are listed in the Eighth Schedule?","kind":"choice","options":["22","5","100"],"answer":0},{"id":"languages.s7.india-languages.india-languages.a2","prompt":"Marathi received classical language status in…","kind":"choice","options":["2024","1947","1960"],"answer":0},{"id":"languages.s7.india-languages.india-languages.a3","prompt":"Hindi in Devanagari is the official language of the Union.","kind":"truefalse","answer":true},{"id":"languages.s7.india-languages.india-languages.a4","prompt":"The first language a person learns is their…","kind":"choice","options":["mother tongue","second language","script"],"answer":0}],"thinking":["What are the advantages of growing up multilingual?","How can a country with many languages stay united?"],"speaking":["Describe the languages you and your family speak and where you use each."],"project":{"kind":"project","title":"Language Map of India","materials":["an outline map of India","colours","reliable sources"],"steps":["Mark the main language of each state","Colour by language family","Add the 11 classical languages","Present three interesting facts"]},"assessment":[{"id":"languages.s7.india-languages.india-languages.q1","prompt":"Able to use several languages is…","kind":"choice","options":["multilingual","monolingual","musical"],"answer":0},{"id":"languages.s7.india-languages.india-languages.q2","prompt":"Marathi is a scheduled language.","kind":"truefalse","answer":true},{"id":"languages.s7.india-languages.india-languages.q3","prompt":"Which of these is a classical language of India?","kind":"choice","options":["Tamil","English","French"],"answer":0}],"mastery":["Explains linguistic diversity","Describes constitutional recognition","Knows Marathi's classical status"]}]}]},{"stage":"s9","overview":"Sanskrit grammar and words that travel.","goals":["Describe Panini's grammar and sandhi","Trace loanwords between Indian languages and English","Use simple Sanskrit phrases"],"units":[{"id":"languages.s9.sanskrit-grammar","title":"Sanskrit and Panini","summary":"The world's first scientific grammar.","topics":[{"title":"Panini's Ashtadhyayi","subtopics":["Panini's Ashtadhyayi"]},{"title":"Sandhi","subtopics":["joining sounds"]},{"title":"Simple Sanskrit sentences","subtopics":["Simple Sanskrit sentences"]}],"objectives":["Describe Panini's contribution to linguistics","Explain and apply simple sandhi rules"],"masteryCriteria":["Describes Panini's work","Applies sandhi rules","Reads simple Sanskrit sentences"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"languages.s9.sanskrit-grammar.panini","title":"Panini and the Rules of Sanskrit","skillId":"sk.languages.s9.sanskrit-grammar.panini","minutes":30,"objectives":["Describe Panini's contribution to linguistics","Explain and apply simple sandhi rules"],"prerequisites":["Knows Devanagari basics"],"prerequisiteIds":[],"explanation":["Panini, a grammarian from Gandhara in north-west ancient India, composed the Ashtadhyayi (\"eight chapters\"), commonly dated to around the 4th century BCE. In about 4,000 compact rules (sutras), it describes Sanskrit's sounds and word formation with remarkable precision. Modern linguists and computer scientists admire its rule-based system.","Sandhi (\"joining\") describes how sounds change when words meet. For example, \"deva\" + \"indra\" becomes \"devendra\" (a + i → e), and \"sūrya\" + \"udaya\" becomes \"sūryodaya\", sunrise (a + u → o). Marathi words like \"suryoday\" show this too.","A simple Sanskrit sentence: \"Bālakaḥ paṭhati\" — \"The boy reads.\" \"Rāmaḥ vanam gacchati\" — \"Rama goes to the forest.\" Endings show who does what, so word order is flexible."],"context":[],"vocabulary":[{"term":"grammar","meaning":"the rules of a language"},{"term":"sutra","meaning":"a short rule or aphorism"},{"term":"sandhi","meaning":"sound changes when words join"},{"term":"inflection","meaning":"changing word endings to show grammar"}],"examples":["\"Vidya\" + \"alaya\" = \"Vidyalaya\" (school).","\"Mahā\" + \"ātmā\" = \"Mahātmā\" (great soul)."],"story":{"title":"A Grammar Like a Computer Program","text":"In the 20th century, linguists studying Panini's Ashtadhyayi were amazed. Its rules called other rules, had priorities when they conflicted and used special markers — much like a computer program. Written over 2,000 years before computers, it remains one of the most complete grammars of any language ever made."},"activities":[{"id":"languages.s9.sanskrit-grammar.panini.a1","prompt":"Panini's grammar is called the…","kind":"choice","options":["Ashtadhyayi","Ramayana","Arthashastra"],"answer":0},{"id":"languages.s9.sanskrit-grammar.panini.a2","prompt":"\"Vidya\" + \"alaya\" becomes…","kind":"choice","options":["Vidyalaya","Vidyaalaaya","Alayavidya"],"answer":0},{"id":"languages.s9.sanskrit-grammar.panini.a3","prompt":"Sandhi describes sound changes when words join.","kind":"truefalse","answer":true},{"id":"languages.s9.sanskrit-grammar.panini.a4","prompt":"Match the Sanskrit to its meaning","kind":"match","pairs":[["Bālakaḥ paṭhati","The boy reads"],["sūryodaya","sunrise"],["Mahātmā","great soul"]]}],"thinking":["Why might Panini's rule system interest computer scientists?","How do word endings make word order flexible?"],"speaking":["Explain three sandhi examples to your family."],"project":{"kind":"project","title":"Sandhi Word Builder","materials":["card","Sanskrit or Marathi word lists"],"steps":["Collect ten compound words like Vidyalaya and Himalaya","Split each into its parts","Write the sandhi rule used","Create three new correct compounds"]},"assessment":[{"id":"languages.s9.sanskrit-grammar.panini.q1","prompt":"The rules of a language are its…","kind":"choice","options":["grammar","glossary","geography"],"answer":0},{"id":"languages.s9.sanskrit-grammar.panini.q2","prompt":"The Ashtadhyayi has about 4,000 rules.","kind":"truefalse","answer":true},{"id":"languages.s9.sanskrit-grammar.panini.q3","prompt":"A short rule or aphorism is a…","kind":"choice","options":["sutra","sitar","saga"],"answer":0}],"mastery":["Describes Panini's work","Applies sandhi rules","Reads simple Sanskrit sentences"]}]},{"id":"languages.s9.loanwords","title":"Words That Travel","summary":"Borrowing between languages.","topics":[{"title":"Sanskrit words in English","subtopics":["Sanskrit words in English"]},{"title":"English words from Indian languages","subtopics":["English words from Indian languages"]},{"title":"Persian and Portuguese in Marathi","subtopics":["Persian and Portuguese in Marathi"]}],"objectives":["Identify loanwords between Indian languages and English","Explain how trade, rule and culture spread words"],"masteryCriteria":["Identifies loanwords","Explains historical routes of borrowing","Researches etymology"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"languages.s9.loanwords.loanwords","title":"Shampoo, Jungle and Yoga","skillId":"sk.languages.s9.loanwords.loanwords","minutes":30,"objectives":["Identify loanwords between Indian languages and English","Explain how trade, rule and culture spread words"],"prerequisites":["Knows language families"],"prerequisiteIds":[],"explanation":["Languages borrow words. English took \"yoga\", \"karma\", \"guru\", \"avatar\", \"mantra\" and \"nirvana\" from Sanskrit and Pali.","Through trade and colonial contact, English borrowed from Hindi, Urdu, Marathi and other Indian languages: \"shampoo\" (from \"chāmpo\", to press), \"bungalow\" (from Bengali \"bangla\"), \"jungle\" (from \"jangal\"), \"pyjama\" (from Persian via Urdu) and \"thug\".","Marathi itself borrowed many words: from Persian and Arabic during Sultanate and Mughal times (\"kagad\", paper; \"darwaja\", door), and from Portuguese (\"pav\", bread; \"batata\", potato; \"chavi\", key). Borrowed words tell the story of history."],"context":[],"vocabulary":[{"term":"loanword","meaning":"a word borrowed from another language"},{"term":"borrowing","meaning":"taking words from another language"},{"term":"etymology","meaning":"the origin and history of a word"},{"term":"colonial","meaning":"relating to rule by a foreign power"}],"examples":["Marathi \"pav\" (as in vada pav) from Portuguese \"pão\".","English \"loot\" from Hindi \"lūṭ\"."],"story":{"title":"The Vada Pav Story","text":"Eating vada pav at a Mumbai stall, Ivaan asked, \"Why is it called pav?\" His uncle explained: \"Portuguese traders brought bread to Goa and western India centuries ago. Their word was 'pão'. We made it 'pav'!\" Ivaan looked at his snack with new respect. \"My lunch is a history lesson.\""},"activities":[{"id":"languages.s9.loanwords.loanwords.a1","prompt":"Match the word to its source","kind":"match","pairs":[["yoga","Sanskrit"],["pav","Portuguese"],["bungalow","Bengali"],["kagad","Persian"]]},{"id":"languages.s9.loanwords.loanwords.a2","prompt":"\"Shampoo\" comes from a Hindi word meaning…","kind":"choice","options":["to press","to wash hair","bubbles"],"answer":0},{"id":"languages.s9.loanwords.loanwords.a3","prompt":"Marathi \"batata\" comes from Portuguese.","kind":"truefalse","answer":true},{"id":"languages.s9.loanwords.loanwords.a4","prompt":"The origin and history of a word is its…","kind":"choice","options":["etymology","entomology","energy"],"answer":0}],"thinking":["What does a loanword tell us about history?","Should languages try to avoid borrowed words?"],"speaking":["Present five loanwords and their stories."],"project":{"kind":"project","title":"Etymology Notebook","materials":["an etymological dictionary or reliable online source"],"steps":["Collect 15 everyday words in Marathi and English","Research their origins","Group them by source language","Write a short history of borrowing in your notebook"]},"assessment":[{"id":"languages.s9.loanwords.loanwords.q1","prompt":"A word borrowed from another language is a…","kind":"choice","options":["loanword","keyword","password"],"answer":0},{"id":"languages.s9.loanwords.loanwords.q2","prompt":"English borrowed \"jungle\" from an Indian language.","kind":"truefalse","answer":true},{"id":"languages.s9.loanwords.loanwords.q3","prompt":"Marathi \"chavi\" (key) comes from…","kind":"choice","options":["Portuguese","Japanese","Russian"],"answer":0}],"mastery":["Identifies loanwords","Explains historical routes of borrowing","Researches etymology"]}]}]},{"stage":"s12","overview":"Linguistics, language and identity, and endangered languages.","goals":["Apply basic linguistics: phonetics, morphology and syntax","Analyse language, identity and power","Evaluate efforts to protect endangered languages"],"units":[{"id":"languages.s12.linguistics","title":"The Science of Language","summary":"Phonetics, morphology and syntax.","topics":[{"title":"Phonetics and the IPA","subtopics":["Phonetics and the IPA"]},{"title":"Morphology","subtopics":["building words"]},{"title":"Syntax","subtopics":["building sentences"]}],"objectives":["Describe the main branches of linguistics","Use the IPA and analyse word structure"],"masteryCriteria":["Describes branches of linguistics","Uses IPA and morphological analysis","Compares syntax across languages"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"languages.s12.linguistics.linguistics","title":"How Language Works","skillId":"sk.languages.s12.linguistics.linguistics","minutes":40,"objectives":["Describe the main branches of linguistics","Use the IPA and analyse word structure"],"prerequisites":["Knows grammar and sandhi"],"prerequisiteIds":[],"explanation":["Linguistics is the scientific study of language. Phonetics studies speech sounds; the International Phonetic Alphabet (IPA) gives one symbol per sound so any language can be written accurately. Marathi has retroflex sounds like ळ (ḷ), made by curling the tongue back.","Morphology studies how words are built from morphemes — the smallest meaningful units. \"Unhappiness\" = un + happy + ness. Marathi and Sanskrit use rich endings (inflection) to show case and tense.","Syntax studies sentence structure. English is usually Subject–Verb–Object (\"Ivaan reads a book\"), while Marathi is usually Subject–Object–Verb (\"Ivaan pustak vachto\" — Ivaan book reads). Noam Chomsky proposed that humans share an innate capacity for language — a theory still debated."],"context":[],"vocabulary":[{"term":"linguistics","meaning":"the scientific study of language"},{"term":"phonetics","meaning":"the study of speech sounds"},{"term":"morpheme","meaning":"the smallest meaningful unit of language"},{"term":"syntax","meaning":"the structure of sentences"}],"examples":["\"Unhappiness\" as three morphemes.","Marathi's Subject–Object–Verb word order."],"story":{"title":"The Retroflex Sound","text":"A linguistics student from Spain struggled with the Marathi sound \"ḷ\" in \"doḷa\" (eye). Her Marathi friend showed her: curl your tongue back, touch the roof of your mouth, then say \"l\". She tried it ten times, laughing. Finally it came out right. \"Your language has sounds I didn't know existed,\" she said. That's phonetics in action."},"activities":[{"id":"languages.s12.linguistics.linguistics.a1","prompt":"Match the branch to its focus","kind":"match","pairs":[["phonetics","speech sounds"],["morphology","word structure"],["syntax","sentence structure"],["semantics","meaning"]]},{"id":"languages.s12.linguistics.linguistics.a2","prompt":"Marathi's usual word order is…","kind":"choice","options":["Subject–Object–Verb","Subject–Verb–Object","Verb–Subject–Object"],"answer":0},{"id":"languages.s12.linguistics.linguistics.a3","prompt":"How many morphemes in un-happi-ness?","kind":"count","answer":3},{"id":"languages.s12.linguistics.linguistics.a4","prompt":"The IPA gives one symbol per sound.","kind":"truefalse","answer":true}],"thinking":["Why do some sounds in one language seem hard for speakers of another?","Is the ability to learn language innate?"],"speaking":["Analyse a Marathi sentence and its English translation for word order."],"project":{"kind":"project","title":"Mini Linguistics Study","materials":["recordings of family speech (with consent)","an IPA chart"],"steps":["Record short sentences in Marathi and English","Transcribe some sounds in IPA","Analyse word order and morphology","Write a 1500-word comparative report"]},"assessment":[{"id":"languages.s12.linguistics.linguistics.q1","prompt":"The smallest meaningful unit of language is a…","kind":"choice","options":["morpheme","phoneme","sentence"],"answer":0},{"id":"languages.s12.linguistics.linguistics.q2","prompt":"English is usually Subject–Verb–Object.","kind":"truefalse","answer":true},{"id":"languages.s12.linguistics.linguistics.q3","prompt":"The scientific study of language is…","kind":"choice","options":["linguistics","literature","logistics"],"answer":0}],"mastery":["Describes branches of linguistics","Uses IPA and morphological analysis","Compares syntax across languages"]}]},{"id":"languages.s12.identity-endangered","title":"Language, Identity and Survival","summary":"Why languages matter.","topics":[{"title":"Language and identity","subtopics":["Language and identity"]},{"title":"Language and power","subtopics":["Language and power"]},{"title":"Endangered languages and revival","subtopics":["Endangered languages and revival"]}],"objectives":["Analyse the links between language, identity and power","Evaluate efforts to document and revive endangered languages"],"masteryCriteria":["Analyses language and identity","Evaluates revival efforts","Practises ethical documentation"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"languages.s12.identity-endangered.endangered","title":"Saving Languages","skillId":"sk.languages.s12.identity-endangered.endangered","minutes":40,"objectives":["Analyse the links between language, identity and power","Evaluate efforts to document and revive endangered languages"],"prerequisites":["Knows India's languages and linguistics"],"prerequisiteIds":[],"explanation":["Language is closely tied to identity, culture and memory. In India, the 1950s–60s saw states reorganised along linguistic lines; Maharashtra was formed in 1960 after the Samyukta Maharashtra movement. Debates over which languages are used in schools, courts and government reflect questions of power and opportunity.","UNESCO estimates that around 40% of the world's languages are endangered — many with few remaining speakers, often because younger generations shift to dominant languages. When a language disappears, unique knowledge of plants, history and ways of thinking may be lost.","Revival efforts include documentation (recordings, dictionaries), teaching children, and media in the language. Hebrew was revived as an everyday spoken language in the late 19th and 20th centuries; in India, projects document tribal languages, and the People's Linguistic Survey of India (led by G. N. Devy) recorded 780 languages."],"context":[],"vocabulary":[{"term":"endangered language","meaning":"a language at risk of no longer being spoken"},{"term":"language shift","meaning":"a community moving to another language"},{"term":"revitalisation","meaning":"efforts to revive a language"},{"term":"documentation","meaning":"recording a language for the future"}],"examples":["Recording elders telling stories in a tribal language.","The formation of Maharashtra on 1 May 1960."],"story":{"title":"The Last Speakers","text":"A linguist visited a village where only a few elderly people still spoke their ancestral language fluently. Their grandchildren spoke the regional language instead. Together, the elders and the linguist recorded songs, stories and names of medicinal plants. The children helped make a picture dictionary — and began learning words their grandparents had feared would vanish."},"activities":[{"id":"languages.s12.identity-endangered.endangered.a1","prompt":"Maharashtra was formed in…","kind":"choice","options":["1960","1947","1950"],"answer":0},{"id":"languages.s12.identity-endangered.endangered.a2","prompt":"A community moving to another language is…","kind":"choice","options":["language shift","language family","loanword"],"answer":0},{"id":"languages.s12.identity-endangered.endangered.a3","prompt":"UNESCO estimates around 40% of the world's languages are endangered.","kind":"truefalse","answer":true},{"id":"languages.s12.identity-endangered.endangered.a4","prompt":"Match the term","kind":"match","pairs":[["documentation","recording a language"],["revitalisation","reviving a language"],["endangered","at risk of disappearing"]]}],"thinking":["Does it matter if a language disappears? Why?","How should a multilingual country choose languages for schools?"],"speaking":["Lead a discussion on language rights and identity."],"project":{"kind":"project","title":"Language Documentation Project","materials":["a recording device","consent forms","a speaker of a less-documented language or dialect"],"steps":["With consent, record a speaker telling a story or describing daily life","Transcribe and translate it","Create a short glossary","Write a reflection on language, identity and preservation"]},"assessment":[{"id":"languages.s12.identity-endangered.endangered.q1","prompt":"Efforts to revive a language are…","kind":"choice","options":["revitalisation","replacement","repetition"],"answer":0},{"id":"languages.s12.identity-endangered.endangered.q2","prompt":"Hebrew was revived as a spoken language.","kind":"truefalse","answer":true},{"id":"languages.s12.identity-endangered.endangered.q3","prompt":"Recording a language for the future is…","kind":"choice","options":["documentation","decoration","demonstration"],"answer":0}],"mastery":["Analyses language and identity","Evaluates revival efforts","Practises ethical documentation"]}]}]}]}
+{
+  "schemaVersion": 1,
+  "id": "languages",
+  "worldId": "mind-galaxy",
+  "title": "Languages & Scripts",
+  "icon": "🌐",
+  "tagline": "Many ways to say hello",
+  "description": "Languages and scripts, taught in English as a bridge to Marathi, Sanskrit and the wider world: greetings in many languages, Marathi family, number, colour and animal words, Sanskrit numbers and words, writing systems of the world, the Devanagari script, language families, India's languages, Panini's Sanskrit grammar, words that travel between languages, linguistics, and language, identity and endangered languages. Marathi and Sanskrit words are shown with English pronunciation guides.",
+  "contentVersion": "1.0.0",
+  "sensitivity": "none",
+  "stages": [
+    {
+      "stage": "s4",
+      "overview": "Many ways to say hello, and Marathi family words.",
+      "goals": [
+        "Say hello in several languages",
+        "Learn Marathi words for family members",
+        "Enjoy the sounds of different languages"
+      ],
+      "units": [
+        {
+          "id": "languages.s4.hello",
+          "title": "Hello, Namaskar, Hola!",
+          "summary": "Greetings around the world.",
+          "topics": [
+            {
+              "title": "Hello in Indian languages",
+              "subtopics": [
+                "Hello in Indian languages"
+              ]
+            },
+            {
+              "title": "Hello around the world",
+              "subtopics": [
+                "Hello around the world"
+              ]
+            },
+            {
+              "title": "Polite words",
+              "subtopics": [
+                "Polite words"
+              ]
+            }
+          ],
+          "objectives": [
+            "Say hello in at least four languages",
+            "Know that people around the world speak many languages"
+          ],
+          "masteryCriteria": [
+            "Greets in several languages",
+            "Knows many languages exist",
+            "Uses polite words"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "languages.s4.hello.hello-world",
+              "title": "Many Ways to Say Hello",
+              "skillId": "sk.languages.s4.hello.hello-world",
+              "minutes": 8,
+              "objectives": [
+                "Say hello in at least four languages",
+                "Know that people around the world speak many languages"
+              ],
+              "prerequisites": [
+                "Can say hello in English"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "People around the world speak thousands of different languages — more than 7,000! Each language has its own way of saying hello.",
+                "In Marathi, we say \"Namaskar\" (nuh-muss-kaar). In Hindi and Sanskrit, \"Namaste\" (nuh-muss-tay). In Spanish, \"Hola\" (oh-la). In French, \"Bonjour\" (bon-zhoor). In Mandarin Chinese, \"Nǐ hǎo\" (nee how). In Japanese, \"Konnichiwa\".",
+                "Polite words matter in every language. In Marathi, thank you can be \"Dhanyavaad\" (dhun-ya-vaad), the same word used in Hindi."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "language",
+                  "meaning": "the words people use to talk"
+                },
+                {
+                  "term": "greeting",
+                  "meaning": "a way of saying hello"
+                },
+                {
+                  "term": "Namaskar",
+                  "meaning": "hello in Marathi"
+                },
+                {
+                  "term": "polite",
+                  "meaning": "kind and respectful in how you speak"
+                }
+              ],
+              "examples": [
+                "Saying \"Namaskar\" to Aaji with folded hands.",
+                "Saying \"Hola\" to a Spanish-speaking friend."
+              ],
+              "story": {
+                "title": "The Hello Train",
+                "text": "Ivaan pretended to drive a train around the world. At the first stop, a teddy waved: \"Namaskar!\" At the next: \"Bonjour!\" Then: \"Hola!\" Then: \"Konnichiwa!\" At the last stop, Aaji was waiting with a smile. \"Namaskar, Ivaan!\" she said, folding her hands. Ivaan folded his hands too. \"Namaskar, Aaji! I said hello all around the world!\""
+              },
+              "activities": [
+                {
+                  "id": "languages.s4.hello.hello-world.a1",
+                  "prompt": "Match hello to the language",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Namaskar",
+                      "Marathi"
+                    ],
+                    [
+                      "Hola",
+                      "Spanish"
+                    ],
+                    [
+                      "Bonjour",
+                      "French"
+                    ],
+                    [
+                      "Konnichiwa",
+                      "Japanese"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s4.hello.hello-world.a2",
+                  "prompt": "About how many languages are spoken in the world?",
+                  "kind": "choice",
+                  "options": [
+                    "more than 7,000",
+                    "ten",
+                    "one"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s4.hello.hello-world.a3",
+                  "prompt": "Namaste is a greeting in Hindi and Sanskrit.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s4.hello.hello-world.a4",
+                  "prompt": "\"Dhanyavaad\" means…",
+                  "kind": "choice",
+                  "options": [
+                    "thank you",
+                    "goodbye",
+                    "banana"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why do you think people speak different languages?",
+                "Which hello do you like the sound of best?"
+              ],
+              "speaking": [
+                "Greet three family members in three different languages."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Hello Around the World Map",
+                "materials": [
+                  "paper",
+                  "crayons",
+                  "a simple world map"
+                ],
+                "steps": [
+                  "Draw or colour a map",
+                  "Write or draw hello in different languages on countries",
+                  "Practise saying each one",
+                  "Greet your family with a new hello each day"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s4.hello.hello-world.q1",
+                  "prompt": "Hello in Marathi is…",
+                  "kind": "choice",
+                  "options": [
+                    "Namaskar",
+                    "Hola",
+                    "Bonjour"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s4.hello.hello-world.q2",
+                  "prompt": "Every language has a way to say hello.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s4.hello.hello-world.q3",
+                  "prompt": "A way of saying hello is a…",
+                  "kind": "choice",
+                  "options": [
+                    "greeting",
+                    "garden",
+                    "game"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Greets in several languages",
+                "Knows many languages exist",
+                "Uses polite words"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "languages.s4.family-words",
+          "title": "Marathi Family Words",
+          "summary": "Aai, Baba, Aaji, Ajoba.",
+          "topics": [
+            {
+              "title": "Parents",
+              "subtopics": [
+                "Parents"
+              ]
+            },
+            {
+              "title": "Grandparents",
+              "subtopics": [
+                "Grandparents"
+              ]
+            },
+            {
+              "title": "Brothers and sisters",
+              "subtopics": [
+                "Brothers and sisters"
+              ]
+            }
+          ],
+          "objectives": [
+            "Say Marathi words for family members",
+            "Use family words in simple sentences"
+          ],
+          "masteryCriteria": [
+            "Names family members in Marathi",
+            "Uses words in sentences",
+            "Compares family words across languages"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "languages.s4.family-words.marathi-family",
+              "title": "Aai, Baba and Everyone",
+              "skillId": "sk.languages.s4.family-words.marathi-family",
+              "minutes": 8,
+              "objectives": [
+                "Say Marathi words for family members",
+                "Use family words in simple sentences"
+              ],
+              "prerequisites": [
+                "Knows English family words"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "In Marathi, mother is \"Aai\" (aa-ee) and father is \"Baba\" (baa-baa).",
+                "Grandmother is \"Aaji\" (aa-jee) and grandfather is \"Ajoba\" (uh-jo-baa). An elder brother is often called \"Dada\" (daa-daa) and an elder sister \"Tai\" (taa-ee).",
+                "Families in different places use different words. In Hindi, mother is often \"Maa\" and grandmother \"Dadi\" or \"Nani\". Knowing family words helps us talk lovingly with our families."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "Aai",
+                  "meaning": "mother in Marathi"
+                },
+                {
+                  "term": "Baba",
+                  "meaning": "father in Marathi"
+                },
+                {
+                  "term": "Aaji",
+                  "meaning": "grandmother in Marathi"
+                },
+                {
+                  "term": "Ajoba",
+                  "meaning": "grandfather in Marathi"
+                }
+              ],
+              "examples": [
+                "\"Aai, I love you!\"",
+                "Calling an elder sister \"Tai\"."
+              ],
+              "story": {
+                "title": "Ivaan's Family Tree",
+                "text": "Ivaan drew a big tree. At the top, he drew Ajoba with his glasses and Aaji with her bright sari. Below them, Baba and Aai holding hands. At the bottom, himself. \"Aai, Baba, Aaji, Ajoba,\" he said, pointing to each. Aaji clapped. \"Now you know our family in Marathi!\""
+              },
+              "activities": [
+                {
+                  "id": "languages.s4.family-words.marathi-family.a1",
+                  "prompt": "Match the Marathi word",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Aai",
+                      "mother"
+                    ],
+                    [
+                      "Baba",
+                      "father"
+                    ],
+                    [
+                      "Aaji",
+                      "grandmother"
+                    ],
+                    [
+                      "Ajoba",
+                      "grandfather"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s4.family-words.marathi-family.a2",
+                  "prompt": "An elder sister in Marathi is often called…",
+                  "kind": "choice",
+                  "options": [
+                    "Tai",
+                    "Dada",
+                    "Baba"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s4.family-words.marathi-family.a3",
+                  "prompt": "Different languages have different family words.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s4.family-words.marathi-family.a4",
+                  "prompt": "\"Dada\" is often used for an…",
+                  "kind": "choice",
+                  "options": [
+                    "elder brother",
+                    "elder sister",
+                    "aunt"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What do you call your grandparents?",
+                "Why might families use special words for each other?"
+              ],
+              "speaking": [
+                "Point to family photos and name each person in Marathi."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Marathi Family Tree",
+                "materials": [
+                  "paper",
+                  "crayons",
+                  "family photos (optional)"
+                ],
+                "steps": [
+                  "Draw a tree with branches",
+                  "Draw or stick your family on it",
+                  "Label each person with the Marathi word",
+                  "Show it to your family and say each word"
+                ],
+                "safety": "Ask relatives before using their names or photographs. Include only information the family is comfortable sharing and keep the finished tree private unless everyone agrees."
+              },
+              "assessment": [
+                {
+                  "id": "languages.s4.family-words.marathi-family.q1",
+                  "prompt": "Mother in Marathi is…",
+                  "kind": "choice",
+                  "options": [
+                    "Aai",
+                    "Ajoba",
+                    "Tai"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s4.family-words.marathi-family.q2",
+                  "prompt": "Ajoba means grandfather.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s4.family-words.marathi-family.q3",
+                  "prompt": "Father in Marathi is…",
+                  "kind": "choice",
+                  "options": [
+                    "Baba",
+                    "Aaji",
+                    "Dada"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Names family members in Marathi",
+                "Uses words in sentences",
+                "Compares family words across languages"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s5",
+      "overview": "Counting in Marathi and Sanskrit; colours and animals.",
+      "goals": [
+        "Count 1–5 in Marathi and Sanskrit",
+        "Name colours in Marathi",
+        "Name animals in Marathi and Sanskrit"
+      ],
+      "units": [
+        {
+          "id": "languages.s5.numbers",
+          "title": "Counting in Marathi and Sanskrit",
+          "summary": "Ek, don, teen!",
+          "topics": [
+            {
+              "title": "Marathi numbers 1–5",
+              "subtopics": [
+                "Marathi numbers 1–5"
+              ]
+            },
+            {
+              "title": "Sanskrit numbers 1–5",
+              "subtopics": [
+                "Sanskrit numbers 1–5"
+              ]
+            },
+            {
+              "title": "Counting songs",
+              "subtopics": [
+                "Counting songs"
+              ]
+            }
+          ],
+          "objectives": [
+            "Count from 1 to 5 in Marathi",
+            "Count from 1 to 5 in Sanskrit"
+          ],
+          "masteryCriteria": [
+            "Counts 1–5 in Marathi",
+            "Counts 1–5 in Sanskrit",
+            "Notices word similarities"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "languages.s5.numbers.count-languages",
+              "title": "Ek, Don, Teen",
+              "skillId": "sk.languages.s5.numbers.count-languages",
+              "minutes": 10,
+              "objectives": [
+                "Count from 1 to 5 in Marathi",
+                "Count from 1 to 5 in Sanskrit"
+              ],
+              "prerequisites": [
+                "Can count 1–10 in English"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "In Marathi, we count: 1 \"ek\", 2 \"don\", 3 \"teen\", 4 \"chaar\", 5 \"paach\".",
+                "In Sanskrit, an ancient language of India: 1 \"ekam\", 2 \"dve\", 3 \"trini\", 4 \"chatvari\", 5 \"pancha\".",
+                "Notice how similar some words are! Sanskrit is an ancient relative of Marathi and Hindi. Even English is distantly related: Sanskrit \"trini\" and English \"three\" both come from a very old shared ancestor language."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "ek",
+                  "meaning": "one in Marathi"
+                },
+                {
+                  "term": "don",
+                  "meaning": "two in Marathi"
+                },
+                {
+                  "term": "pancha",
+                  "meaning": "five in Sanskrit"
+                },
+                {
+                  "term": "Sanskrit",
+                  "meaning": "an ancient language of India"
+                }
+              ],
+              "examples": [
+                "Counting stairs: ek, don, teen, chaar, paach!",
+                "The word \"Panchatantra\" contains \"pancha\", meaning five."
+              ],
+              "story": {
+                "title": "The Staircase Count",
+                "text": "Every evening, Ivaan and Ajoba climbed the stairs together, counting in Marathi: \"Ek, don, teen, chaar, paach!\" One day Ajoba said, \"Let's try Sanskrit.\" \"Ekam, dve, trini, chatvari, pancha!\" Ivaan giggled. \"Pancha sounds like paach!\" \"Clever boy,\" said Ajoba. \"They're cousins.\""
+              },
+              "activities": [
+                {
+                  "id": "languages.s5.numbers.count-languages.a1",
+                  "prompt": "Match the Marathi number",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "ek",
+                      "1"
+                    ],
+                    [
+                      "don",
+                      "2"
+                    ],
+                    [
+                      "teen",
+                      "3"
+                    ],
+                    [
+                      "paach",
+                      "5"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s5.numbers.count-languages.a2",
+                  "prompt": "Five in Sanskrit is…",
+                  "kind": "choice",
+                  "options": [
+                    "pancha",
+                    "ek",
+                    "dve"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s5.numbers.count-languages.a3",
+                  "prompt": "Count in Marathi: ek, don, teen, chaar — how many?",
+                  "kind": "count",
+                  "answer": 4
+                },
+                {
+                  "id": "languages.s5.numbers.count-languages.a4",
+                  "prompt": "Sanskrit \"trini\" and English \"three\" are related.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Which Marathi and Sanskrit numbers sound alike?",
+                "Why might languages share similar words?"
+              ],
+              "speaking": [
+                "Count five toys in Marathi and then in Sanskrit."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Counting Cards in Three Languages",
+                "materials": [
+                  "card",
+                  "crayons"
+                ],
+                "steps": [
+                  "Make cards for 1 to 5",
+                  "Write the number and draw that many dots",
+                  "Add the English, Marathi and Sanskrit words",
+                  "Play a matching game with family"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s5.numbers.count-languages.q1",
+                  "prompt": "Two in Marathi is…",
+                  "kind": "choice",
+                  "options": [
+                    "don",
+                    "teen",
+                    "ek"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s5.numbers.count-languages.q2",
+                  "prompt": "Pancha means five.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s5.numbers.count-languages.q3",
+                  "prompt": "Three in Marathi is…",
+                  "kind": "choice",
+                  "options": [
+                    "teen",
+                    "chaar",
+                    "paach"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Counts 1–5 in Marathi",
+                "Counts 1–5 in Sanskrit",
+                "Notices word similarities"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "languages.s5.colours-animals",
+          "title": "Colours and Animals",
+          "summary": "Words for the world around us.",
+          "topics": [
+            {
+              "title": "Marathi colour words",
+              "subtopics": [
+                "Marathi colour words"
+              ]
+            },
+            {
+              "title": "Marathi animal words",
+              "subtopics": [
+                "Marathi animal words"
+              ]
+            },
+            {
+              "title": "Sanskrit nature words",
+              "subtopics": [
+                "Sanskrit nature words"
+              ]
+            }
+          ],
+          "objectives": [
+            "Name colours in Marathi",
+            "Name animals in Marathi and some nature words in Sanskrit"
+          ],
+          "masteryCriteria": [
+            "Names colours in Marathi",
+            "Names animals in Marathi",
+            "Knows Sanskrit nature words"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "languages.s5.colours-animals.colours-animals",
+              "title": "Laal, Hirva and Vagh",
+              "skillId": "sk.languages.s5.colours-animals.colours-animals",
+              "minutes": 10,
+              "objectives": [
+                "Name colours in Marathi",
+                "Name animals in Marathi and some nature words in Sanskrit"
+              ],
+              "prerequisites": [
+                "Knows colours and animals in English"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Marathi colours: red is \"laal\", yellow is \"pivla\", green is \"hirva\", blue is \"nila\", white is \"pandhra\" and black is \"kaala\".",
+                "Marathi animals: cat is \"manjar\", dog is \"kutra\", cow is \"gaay\", elephant is \"hatti\", tiger is \"vagh\" and fish is \"maasa\".",
+                "Some Sanskrit nature words: sun is \"surya\", moon is \"chandra\", water is \"jalam\" and elephant is \"gajah\". You may know \"Ganesh\" is also called \"Gajanan\" — the elephant-faced one!"
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "laal",
+                  "meaning": "red in Marathi"
+                },
+                {
+                  "term": "hirva",
+                  "meaning": "green in Marathi"
+                },
+                {
+                  "term": "vagh",
+                  "meaning": "tiger in Marathi"
+                },
+                {
+                  "term": "surya",
+                  "meaning": "sun in Sanskrit"
+                }
+              ],
+              "examples": [
+                "\"Hirva popat\" — a green parrot.",
+                "\"Surya Namaskar\" — saluting the sun in yoga."
+              ],
+              "story": {
+                "title": "The Colourful Zoo",
+                "text": "At the zoo, Ivaan played a game with Aai. \"What colour is the parrot?\" \"Hirva!\" \"What animal is that?\" \"Vagh!\" — a big orange tiger with kaala stripes. At the elephant enclosure, Aai said, \"In Sanskrit, an elephant is gajah.\" Ivaan trumpeted like a hatti. \"I'm a gajah AND a hatti!\""
+              },
+              "activities": [
+                {
+                  "id": "languages.s5.colours-animals.colours-animals.a1",
+                  "prompt": "Match the Marathi colour",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "laal",
+                      "red"
+                    ],
+                    [
+                      "pivla",
+                      "yellow"
+                    ],
+                    [
+                      "hirva",
+                      "green"
+                    ],
+                    [
+                      "nila",
+                      "blue"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s5.colours-animals.colours-animals.a2",
+                  "prompt": "Match the Marathi animal",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "manjar",
+                      "cat"
+                    ],
+                    [
+                      "kutra",
+                      "dog"
+                    ],
+                    [
+                      "vagh",
+                      "tiger"
+                    ],
+                    [
+                      "hatti",
+                      "elephant"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s5.colours-animals.colours-animals.a3",
+                  "prompt": "Sun in Sanskrit is…",
+                  "kind": "choice",
+                  "options": [
+                    "surya",
+                    "chandra",
+                    "jalam"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s5.colours-animals.colours-animals.a4",
+                  "prompt": "\"Gajah\" means elephant in Sanskrit.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Which Marathi word is your favourite to say?",
+                "What does \"Surya Namaskar\" mean, using the words you know?"
+              ],
+              "speaking": [
+                "Describe an animal using a Marathi colour and animal word, like \"kaala kutra\"."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Marathi Animal Book",
+                "materials": [
+                  "paper",
+                  "crayons",
+                  "stapler"
+                ],
+                "steps": [
+                  "Draw six animals",
+                  "Colour them and write the Marathi colour word",
+                  "Write the Marathi animal name",
+                  "Read the book to your family"
+                ],
+                "safety": "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."
+              },
+              "assessment": [
+                {
+                  "id": "languages.s5.colours-animals.colours-animals.q1",
+                  "prompt": "Moon in Sanskrit is…",
+                  "kind": "choice",
+                  "options": [
+                    "chandra",
+                    "surya",
+                    "gajah"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s5.colours-animals.colours-animals.q2",
+                  "prompt": "\"Maasa\" means fish in Marathi.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s5.colours-animals.colours-animals.q3",
+                  "prompt": "White in Marathi is…",
+                  "kind": "choice",
+                  "options": [
+                    "pandhra",
+                    "laal",
+                    "nila"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Names colours in Marathi",
+                "Names animals in Marathi",
+                "Knows Sanskrit nature words"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s6",
+      "overview": "Writing systems of the world and the Devanagari script.",
+      "goals": [
+        "Compare alphabets, abugidas and logographic scripts",
+        "Recognise Devanagari vowels and consonants",
+        "Write their name in Devanagari"
+      ],
+      "units": [
+        {
+          "id": "languages.s6.scripts",
+          "title": "Scripts of the World",
+          "summary": "Many ways to write.",
+          "topics": [
+            {
+              "title": "Alphabets",
+              "subtopics": [
+                "Alphabets"
+              ]
+            },
+            {
+              "title": "Abugidas like Devanagari",
+              "subtopics": [
+                "Abugidas like Devanagari"
+              ]
+            },
+            {
+              "title": "Logographic scripts like Chinese",
+              "subtopics": [
+                "Logographic scripts like Chinese"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe different types of writing systems",
+            "Identify scripts used for different languages"
+          ],
+          "masteryCriteria": [
+            "Describes script types",
+            "Matches scripts to languages",
+            "Recognises scripts in the environment"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "languages.s6.scripts.scripts",
+              "title": "Letters, Syllables and Symbols",
+              "skillId": "sk.languages.s6.scripts.scripts",
+              "minutes": 15,
+              "objectives": [
+                "Describe different types of writing systems",
+                "Identify scripts used for different languages"
+              ],
+              "prerequisites": [
+                "Can read English letters"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A script is a system of writing. An alphabet, like the Latin alphabet used for English, has separate letters for consonants and vowels.",
+                "An abugida, like Devanagari (used for Marathi, Hindi, Sanskrit and Nepali), writes each consonant with a built-in \"a\" sound; other vowels are shown with marks added to the consonant. Many Indian scripts — Bengali, Tamil, Telugu, Kannada, Gujarati — are abugidas descended from the ancient Brahmi script.",
+                "Chinese uses logograms — characters that represent words or meaningful parts of words. Arabic and Urdu are written from right to left."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "script",
+                  "meaning": "a system of writing"
+                },
+                {
+                  "term": "alphabet",
+                  "meaning": "a set of letters for consonants and vowels"
+                },
+                {
+                  "term": "abugida",
+                  "meaning": "a script where consonants carry a built-in vowel"
+                },
+                {
+                  "term": "logogram",
+                  "meaning": "a character representing a word or meaning"
+                }
+              ],
+              "examples": [
+                "Devanagari: नमस्कार (namaskar).",
+                "Chinese: 山 (shān), meaning mountain."
+              ],
+              "story": {
+                "title": "The Mountain Picture",
+                "text": "Zuri's teacher drew three peaks: 山. \"This is the Chinese character for mountain,\" she said. \"It started long ago as a picture.\" Then she wrote \"मराठी\" on the board. \"This is Marathi in Devanagari — the line on top joins the letters.\" Zuri traced both in the air. \"Every script is like a secret code!\""
+              },
+              "activities": [
+                {
+                  "id": "languages.s6.scripts.scripts.a1",
+                  "prompt": "Match the script to its type",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Latin alphabet",
+                      "alphabet"
+                    ],
+                    [
+                      "Devanagari",
+                      "abugida"
+                    ],
+                    [
+                      "Chinese characters",
+                      "logographic"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s6.scripts.scripts.a2",
+                  "prompt": "Devanagari is used for…",
+                  "kind": "choice",
+                  "options": [
+                    "Marathi, Hindi and Sanskrit",
+                    "Chinese",
+                    "English"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s6.scripts.scripts.a3",
+                  "prompt": "Arabic and Urdu are written right to left.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s6.scripts.scripts.a4",
+                  "prompt": "Many Indian scripts descend from…",
+                  "kind": "choice",
+                  "options": [
+                    "Brahmi",
+                    "Latin",
+                    "Chinese"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why might different languages use different scripts?",
+                "What would be hard about writing in logograms?"
+              ],
+              "speaking": [
+                "Show a grown-up three different scripts and name them."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Script Collection",
+                "materials": [
+                  "packaging",
+                  "newspapers",
+                  "signs (photos)",
+                  "a notebook"
+                ],
+                "steps": [
+                  "Find examples of different scripts around you",
+                  "Stick or copy them into a notebook",
+                  "Label the language and script",
+                  "Share your collection"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s6.scripts.scripts.q1",
+                  "prompt": "A system of writing is a…",
+                  "kind": "choice",
+                  "options": [
+                    "script",
+                    "scroll",
+                    "scribble"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s6.scripts.scripts.q2",
+                  "prompt": "Tamil and Telugu scripts descend from Brahmi.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s6.scripts.scripts.q3",
+                  "prompt": "A character representing a word is a…",
+                  "kind": "choice",
+                  "options": [
+                    "logogram",
+                    "letter only",
+                    "line"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes script types",
+                "Matches scripts to languages",
+                "Recognises scripts in the environment"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "languages.s6.devanagari",
+          "title": "Devanagari Letters",
+          "summary": "Swar and vyanjan.",
+          "topics": [
+            {
+              "title": "Vowels (swar)",
+              "subtopics": [
+                "Vowels (swar)"
+              ]
+            },
+            {
+              "title": "Consonants (vyanjan)",
+              "subtopics": [
+                "Consonants (vyanjan)"
+              ]
+            },
+            {
+              "title": "Vowel marks (matra)",
+              "subtopics": [
+                "Vowel marks (matra)"
+              ]
+            }
+          ],
+          "objectives": [
+            "Recognise some Devanagari vowels and consonants",
+            "Explain how vowel marks (matras) change sounds"
+          ],
+          "masteryCriteria": [
+            "Recognises letters",
+            "Uses matras",
+            "Writes simple words"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "languages.s6.devanagari.devanagari",
+              "title": "अ आ इ — Learning Devanagari",
+              "skillId": "sk.languages.s6.devanagari.devanagari",
+              "minutes": 15,
+              "objectives": [
+                "Recognise some Devanagari vowels and consonants",
+                "Explain how vowel marks (matras) change sounds"
+              ],
+              "prerequisites": [
+                "Knows what an abugida is"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Devanagari letters hang from a line on top called the shirorekha. Vowels are called swar: अ (a), आ (aa), इ (i), ई (ee), उ (u), ऊ (oo).",
+                "Consonants are called vyanjan: क (ka), ख (kha), ग (ga), म (ma), न (na), र (ra). Each has a built-in \"a\" sound.",
+                "To change the vowel, add a mark called a matra: क (ka) + ा = का (kaa); क + ि = कि (ki). Devanagari letters are arranged scientifically by where in the mouth they are pronounced — from the throat to the lips."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "swar",
+                  "meaning": "a vowel in Devanagari"
+                },
+                {
+                  "term": "vyanjan",
+                  "meaning": "a consonant in Devanagari"
+                },
+                {
+                  "term": "matra",
+                  "meaning": "a vowel mark added to a consonant"
+                },
+                {
+                  "term": "shirorekha",
+                  "meaning": "the line on top of Devanagari letters"
+                }
+              ],
+              "examples": [
+                "म + ा = मा (maa).",
+                "आई (Aai), Marathi for mother."
+              ],
+              "story": {
+                "title": "Writing Aai",
+                "text": "Ivaan wanted to write a card for Aai in Marathi. Aaji showed him: \"आ is 'aa', and ई is 'ee'. Together: आई — Aai!\" Ivaan copied it carefully, drawing the line on top. When Aai opened the card, her eyes filled with happy tears. \"You wrote my name in Marathi!\""
+              },
+              "activities": [
+                {
+                  "id": "languages.s6.devanagari.devanagari.a1",
+                  "prompt": "Match the Devanagari letter to its sound",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "अ",
+                      "a"
+                    ],
+                    [
+                      "क",
+                      "ka"
+                    ],
+                    [
+                      "म",
+                      "ma"
+                    ],
+                    [
+                      "न",
+                      "na"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s6.devanagari.devanagari.a2",
+                  "prompt": "A vowel mark is called a…",
+                  "kind": "choice",
+                  "options": [
+                    "matra",
+                    "swar",
+                    "vyanjan"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s6.devanagari.devanagari.a3",
+                  "prompt": "The line on top of Devanagari letters is called the shirorekha.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s6.devanagari.devanagari.a4",
+                  "prompt": "आई spells…",
+                  "kind": "choice",
+                  "options": [
+                    "Aai",
+                    "Baba",
+                    "Tai"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why might letters be arranged by where they are pronounced?",
+                "How is Devanagari different from the English alphabet?"
+              ],
+              "speaking": [
+                "Write and read aloud one Marathi word in Devanagari."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "My Name in Devanagari",
+                "materials": [
+                  "paper",
+                  "pencil",
+                  "a Devanagari chart"
+                ],
+                "steps": [
+                  "Find the letters for your name with a grown-up",
+                  "Practise writing each letter",
+                  "Write your name with the shirorekha",
+                  "Decorate a name card"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s6.devanagari.devanagari.q1",
+                  "prompt": "A consonant in Devanagari is a…",
+                  "kind": "choice",
+                  "options": [
+                    "vyanjan",
+                    "swar",
+                    "matra"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s6.devanagari.devanagari.q2",
+                  "prompt": "Each Devanagari consonant has a built-in \"a\" sound.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s6.devanagari.devanagari.q3",
+                  "prompt": "A vowel in Devanagari is a…",
+                  "kind": "choice",
+                  "options": [
+                    "swar",
+                    "sitar",
+                    "star"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Recognises letters",
+                "Uses matras",
+                "Writes simple words"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s7",
+      "overview": "Language families and the languages of India.",
+      "goals": [
+        "Describe major language families",
+        "Explain India's linguistic diversity",
+        "Understand classical and scheduled languages"
+      ],
+      "units": [
+        {
+          "id": "languages.s7.families",
+          "title": "Language Families",
+          "summary": "How languages are related.",
+          "topics": [
+            {
+              "title": "Indo-European",
+              "subtopics": [
+                "Indo-European"
+              ]
+            },
+            {
+              "title": "Dravidian",
+              "subtopics": [
+                "Dravidian"
+              ]
+            },
+            {
+              "title": "Sino-Tibetan and Austroasiatic",
+              "subtopics": [
+                "Sino-Tibetan and Austroasiatic"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe major language families",
+            "Use word comparisons to show relationships"
+          ],
+          "masteryCriteria": [
+            "Describes language families",
+            "Identifies cognates",
+            "Explains historical relationships"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "languages.s7.families.families",
+              "title": "Family Trees of Languages",
+              "skillId": "sk.languages.s7.families.families",
+              "minutes": 20,
+              "objectives": [
+                "Describe major language families",
+                "Use word comparisons to show relationships"
+              ],
+              "prerequisites": [
+                "Knows similar number words in different languages"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Like people, languages have families. Languages descended from a common ancestor share words and grammar patterns.",
+                "The Indo-European family includes Sanskrit, Marathi, Hindi, Bengali, Persian, Greek, Latin, English and German. Compare \"mother\": Sanskrit \"mātṛ\", Latin \"mater\", English \"mother\". In 1786, William Jones, a judge in Calcutta, noted Sanskrit's striking similarity to Greek and Latin.",
+                "The Dravidian family, mainly in South India, includes Tamil, Telugu, Kannada and Malayalam. India also has Austroasiatic languages (such as Santali and Khasi) and Tibeto-Burman languages (such as Manipuri/Meitei and Bodo)."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "language family",
+                  "meaning": "languages descended from a common ancestor"
+                },
+                {
+                  "term": "Indo-European",
+                  "meaning": "a family including Sanskrit, Marathi and English"
+                },
+                {
+                  "term": "Dravidian",
+                  "meaning": "a family including Tamil and Telugu"
+                },
+                {
+                  "term": "cognate",
+                  "meaning": "words in related languages with a shared origin"
+                }
+              ],
+              "examples": [
+                "Sanskrit \"nava\", Latin \"novem\", English \"nine\" — cognates.",
+                "Tamil, one of the world's oldest living literary languages."
+              ],
+              "story": {
+                "title": "The Judge Who Noticed",
+                "text": "In 1786, Sir William Jones, a British judge in Calcutta who studied Sanskrit, gave a famous lecture. He said Sanskrit, Greek and Latin were so alike that they must have \"sprung from some common source, which, perhaps, no longer exists.\" His idea helped start the scientific study of language families."
+              },
+              "activities": [
+                {
+                  "id": "languages.s7.families.families.a1",
+                  "prompt": "Match the language to its family",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Marathi",
+                      "Indo-European"
+                    ],
+                    [
+                      "Tamil",
+                      "Dravidian"
+                    ],
+                    [
+                      "Santali",
+                      "Austroasiatic"
+                    ],
+                    [
+                      "Meitei",
+                      "Tibeto-Burman"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s7.families.families.a2",
+                  "prompt": "Words in related languages with a shared origin are…",
+                  "kind": "choice",
+                  "options": [
+                    "cognates",
+                    "opposites",
+                    "rhymes"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s7.families.families.a3",
+                  "prompt": "Sanskrit and Latin are in the same language family.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s7.families.families.a4",
+                  "prompt": "Who noted Sanskrit's similarity to Greek and Latin in 1786?",
+                  "kind": "choice",
+                  "options": [
+                    "William Jones",
+                    "Panini",
+                    "Aesop"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why do related languages share words?",
+                "What words in Marathi and English sound similar?"
+              ],
+              "speaking": [
+                "Present a set of cognates across three languages."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Cognate Detective",
+                "materials": [
+                  "a notebook",
+                  "dictionaries or family members who speak other languages"
+                ],
+                "steps": [
+                  "Choose ten basic words (mother, three, new…)",
+                  "Find them in Marathi, Sanskrit, English and one more language",
+                  "Highlight similarities",
+                  "Make a family-tree poster of the languages"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s7.families.families.q1",
+                  "prompt": "Kannada belongs to the…",
+                  "kind": "choice",
+                  "options": [
+                    "Dravidian family",
+                    "Indo-European family",
+                    "Sino-Tibetan family"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s7.families.families.q2",
+                  "prompt": "English is an Indo-European language.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s7.families.families.q3",
+                  "prompt": "Languages from a common ancestor form a…",
+                  "kind": "choice",
+                  "options": [
+                    "language family",
+                    "alphabet",
+                    "dictionary"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes language families",
+                "Identifies cognates",
+                "Explains historical relationships"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "languages.s7.india-languages",
+          "title": "The Languages of India",
+          "summary": "A land of many tongues.",
+          "topics": [
+            {
+              "title": "The Eighth Schedule",
+              "subtopics": [
+                "The Eighth Schedule"
+              ]
+            },
+            {
+              "title": "Classical languages",
+              "subtopics": [
+                "Classical languages"
+              ]
+            },
+            {
+              "title": "Multilingual India",
+              "subtopics": [
+                "Multilingual India"
+              ]
+            }
+          ],
+          "objectives": [
+            "Explain India's linguistic diversity and constitutional recognition",
+            "Describe classical languages, including Marathi"
+          ],
+          "masteryCriteria": [
+            "Explains linguistic diversity",
+            "Describes constitutional recognition",
+            "Knows Marathi's classical status"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "languages.s7.india-languages.india-languages",
+              "title": "Unity in Many Languages",
+              "skillId": "sk.languages.s7.india-languages.india-languages",
+              "minutes": 20,
+              "objectives": [
+                "Explain India's linguistic diversity and constitutional recognition",
+                "Describe classical languages, including Marathi"
+              ],
+              "prerequisites": [
+                "Knows language families"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "India is one of the world's most linguistically diverse countries. The 2011 Census recorded 121 languages spoken by 10,000 or more people, and many more mother tongues.",
+                "The Eighth Schedule of the Constitution lists 22 scheduled languages, including Marathi, Hindi, Bengali, Tamil, Telugu, Sanskrit, Urdu, Kannada, Gujarati and Konkani. Hindi in Devanagari is the official language of the Union, with English also used for official purposes.",
+                "The government recognises some languages as \"classical\" for their antiquity and rich literature. In October 2024, Marathi received classical language status, along with Pali, Prakrit, Assamese and Bengali, joining Tamil, Sanskrit, Telugu, Kannada, Malayalam and Odia."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "scheduled language",
+                  "meaning": "a language listed in the Constitution's Eighth Schedule"
+                },
+                {
+                  "term": "classical language",
+                  "meaning": "a language recognised for antiquity and rich literature"
+                },
+                {
+                  "term": "mother tongue",
+                  "meaning": "the first language a person learns"
+                },
+                {
+                  "term": "multilingual",
+                  "meaning": "able to use several languages"
+                }
+              ],
+              "examples": [
+                "A Mumbai child speaking Marathi at home, Hindi with friends and English at school.",
+                "Rupee notes printed with text in many languages."
+              ],
+              "story": {
+                "title": "The Language Panel",
+                "text": "Ivaan looked closely at a banknote with Papa. On the back was a panel with the value written in 15 languages besides Hindi and English! \"Marathi is there,\" Papa pointed. \"And Tamil, Bengali, Kannada…\" Ivaan counted the scripts. \"Our money speaks lots of languages!\""
+              },
+              "activities": [
+                {
+                  "id": "languages.s7.india-languages.india-languages.a1",
+                  "prompt": "How many languages are listed in the Eighth Schedule?",
+                  "kind": "choice",
+                  "options": [
+                    "22",
+                    "5",
+                    "100"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s7.india-languages.india-languages.a2",
+                  "prompt": "Marathi received classical language status in…",
+                  "kind": "choice",
+                  "options": [
+                    "2024",
+                    "1947",
+                    "1960"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s7.india-languages.india-languages.a3",
+                  "prompt": "Hindi in Devanagari is the official language of the Union.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s7.india-languages.india-languages.a4",
+                  "prompt": "The first language a person learns is their…",
+                  "kind": "choice",
+                  "options": [
+                    "mother tongue",
+                    "second language",
+                    "script"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What are the advantages of growing up multilingual?",
+                "How can a country with many languages stay united?"
+              ],
+              "speaking": [
+                "Describe the languages you and your family speak and where you use each."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Language Map of India",
+                "materials": [
+                  "an outline map of India",
+                  "colours",
+                  "reliable sources"
+                ],
+                "steps": [
+                  "Mark the main language of each state",
+                  "Colour by language family",
+                  "Add the 11 classical languages",
+                  "Present three interesting facts"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s7.india-languages.india-languages.q1",
+                  "prompt": "Able to use several languages is…",
+                  "kind": "choice",
+                  "options": [
+                    "multilingual",
+                    "monolingual",
+                    "musical"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s7.india-languages.india-languages.q2",
+                  "prompt": "Marathi is a scheduled language.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s7.india-languages.india-languages.q3",
+                  "prompt": "Which of these is a classical language of India?",
+                  "kind": "choice",
+                  "options": [
+                    "Tamil",
+                    "English",
+                    "French"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Explains linguistic diversity",
+                "Describes constitutional recognition",
+                "Knows Marathi's classical status"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s9",
+      "overview": "Sanskrit grammar and words that travel.",
+      "goals": [
+        "Describe Panini's grammar and sandhi",
+        "Trace loanwords between Indian languages and English",
+        "Use simple Sanskrit phrases"
+      ],
+      "units": [
+        {
+          "id": "languages.s9.sanskrit-grammar",
+          "title": "Sanskrit and Panini",
+          "summary": "The world's first scientific grammar.",
+          "topics": [
+            {
+              "title": "Panini's Ashtadhyayi",
+              "subtopics": [
+                "Panini's Ashtadhyayi"
+              ]
+            },
+            {
+              "title": "Sandhi",
+              "subtopics": [
+                "joining sounds"
+              ]
+            },
+            {
+              "title": "Simple Sanskrit sentences",
+              "subtopics": [
+                "Simple Sanskrit sentences"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe Panini's contribution to linguistics",
+            "Explain and apply simple sandhi rules"
+          ],
+          "masteryCriteria": [
+            "Describes Panini's work",
+            "Applies sandhi rules",
+            "Reads simple Sanskrit sentences"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "languages.s9.sanskrit-grammar.panini",
+              "title": "Panini and the Rules of Sanskrit",
+              "skillId": "sk.languages.s9.sanskrit-grammar.panini",
+              "minutes": 30,
+              "objectives": [
+                "Describe Panini's contribution to linguistics",
+                "Explain and apply simple sandhi rules"
+              ],
+              "prerequisites": [
+                "Knows Devanagari basics"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Panini, a grammarian from Gandhara in north-west ancient India, composed the Ashtadhyayi (\"eight chapters\"), commonly dated to around the 4th century BCE. In about 4,000 compact rules (sutras), it describes Sanskrit's sounds and word formation with remarkable precision. Modern linguists and computer scientists admire its rule-based system.",
+                "Sandhi (\"joining\") describes how sounds change when words meet. For example, \"deva\" + \"indra\" becomes \"devendra\" (a + i → e), and \"sūrya\" + \"udaya\" becomes \"sūryodaya\", sunrise (a + u → o). Marathi words like \"suryoday\" show this too.",
+                "A simple Sanskrit sentence: \"Bālakaḥ paṭhati\" — \"The boy reads.\" \"Rāmaḥ vanam gacchati\" — \"Rama goes to the forest.\" Endings show who does what, so word order is flexible."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "grammar",
+                  "meaning": "the rules of a language"
+                },
+                {
+                  "term": "sutra",
+                  "meaning": "a short rule or aphorism"
+                },
+                {
+                  "term": "sandhi",
+                  "meaning": "sound changes when words join"
+                },
+                {
+                  "term": "inflection",
+                  "meaning": "changing word endings to show grammar"
+                }
+              ],
+              "examples": [
+                "\"Vidya\" + \"alaya\" = \"Vidyalaya\" (school).",
+                "\"Mahā\" + \"ātmā\" = \"Mahātmā\" (great soul)."
+              ],
+              "story": {
+                "title": "A Grammar Like a Computer Program",
+                "text": "In the 20th century, linguists studying Panini's Ashtadhyayi were amazed. Its rules called other rules, had priorities when they conflicted and used special markers — much like a computer program. Written over 2,000 years before computers, it remains one of the most complete grammars of any language ever made."
+              },
+              "activities": [
+                {
+                  "id": "languages.s9.sanskrit-grammar.panini.a1",
+                  "prompt": "Panini's grammar is called the…",
+                  "kind": "choice",
+                  "options": [
+                    "Ashtadhyayi",
+                    "Ramayana",
+                    "Arthashastra"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s9.sanskrit-grammar.panini.a2",
+                  "prompt": "\"Vidya\" + \"alaya\" becomes…",
+                  "kind": "choice",
+                  "options": [
+                    "Vidyalaya",
+                    "Vidyaalaaya",
+                    "Alayavidya"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s9.sanskrit-grammar.panini.a3",
+                  "prompt": "Sandhi describes sound changes when words join.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s9.sanskrit-grammar.panini.a4",
+                  "prompt": "Match the Sanskrit to its meaning",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Bālakaḥ paṭhati",
+                      "The boy reads"
+                    ],
+                    [
+                      "sūryodaya",
+                      "sunrise"
+                    ],
+                    [
+                      "Mahātmā",
+                      "great soul"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why might Panini's rule system interest computer scientists?",
+                "How do word endings make word order flexible?"
+              ],
+              "speaking": [
+                "Explain three sandhi examples to your family."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Sandhi Word Builder",
+                "materials": [
+                  "card",
+                  "Sanskrit or Marathi word lists"
+                ],
+                "steps": [
+                  "Collect ten compound words like Vidyalaya and Himalaya",
+                  "Split each into its parts",
+                  "Write the sandhi rule used",
+                  "Create three new correct compounds"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s9.sanskrit-grammar.panini.q1",
+                  "prompt": "The rules of a language are its…",
+                  "kind": "choice",
+                  "options": [
+                    "grammar",
+                    "glossary",
+                    "geography"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s9.sanskrit-grammar.panini.q2",
+                  "prompt": "The Ashtadhyayi has about 4,000 rules.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s9.sanskrit-grammar.panini.q3",
+                  "prompt": "A short rule or aphorism is a…",
+                  "kind": "choice",
+                  "options": [
+                    "sutra",
+                    "sitar",
+                    "saga"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes Panini's work",
+                "Applies sandhi rules",
+                "Reads simple Sanskrit sentences"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "languages.s9.loanwords",
+          "title": "Words That Travel",
+          "summary": "Borrowing between languages.",
+          "topics": [
+            {
+              "title": "Sanskrit words in English",
+              "subtopics": [
+                "Sanskrit words in English"
+              ]
+            },
+            {
+              "title": "English words from Indian languages",
+              "subtopics": [
+                "English words from Indian languages"
+              ]
+            },
+            {
+              "title": "Persian and Portuguese in Marathi",
+              "subtopics": [
+                "Persian and Portuguese in Marathi"
+              ]
+            }
+          ],
+          "objectives": [
+            "Identify loanwords between Indian languages and English",
+            "Explain how trade, rule and culture spread words"
+          ],
+          "masteryCriteria": [
+            "Identifies loanwords",
+            "Explains historical routes of borrowing",
+            "Researches etymology"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "languages.s9.loanwords.loanwords",
+              "title": "Shampoo, Jungle and Yoga",
+              "skillId": "sk.languages.s9.loanwords.loanwords",
+              "minutes": 30,
+              "objectives": [
+                "Identify loanwords between Indian languages and English",
+                "Explain how trade, rule and culture spread words"
+              ],
+              "prerequisites": [
+                "Knows language families"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Languages borrow words. English took \"yoga\", \"karma\", \"guru\", \"avatar\", \"mantra\" and \"nirvana\" from Sanskrit and Pali.",
+                "Through trade and colonial contact, English borrowed from Hindi, Urdu, Marathi and other Indian languages: \"shampoo\" (from \"chāmpo\", to press), \"bungalow\" (from Bengali \"bangla\"), \"jungle\" (from \"jangal\"), \"pyjama\" (from Persian via Urdu) and \"thug\".",
+                "Marathi itself borrowed many words: from Persian and Arabic during Sultanate and Mughal times (\"kagad\", paper; \"darwaja\", door), and from Portuguese (\"pav\", bread; \"batata\", potato; \"chavi\", key). Borrowed words tell the story of history."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "loanword",
+                  "meaning": "a word borrowed from another language"
+                },
+                {
+                  "term": "borrowing",
+                  "meaning": "taking words from another language"
+                },
+                {
+                  "term": "etymology",
+                  "meaning": "the origin and history of a word"
+                },
+                {
+                  "term": "colonial",
+                  "meaning": "relating to rule by a foreign power"
+                }
+              ],
+              "examples": [
+                "Marathi \"pav\" (as in vada pav) from Portuguese \"pão\".",
+                "English \"loot\" from Hindi \"lūṭ\"."
+              ],
+              "story": {
+                "title": "The Vada Pav Story",
+                "text": "Eating vada pav at a Mumbai stall, Ivaan asked, \"Why is it called pav?\" His uncle explained: \"Portuguese traders brought bread to Goa and western India centuries ago. Their word was 'pão'. We made it 'pav'!\" Ivaan looked at his snack with new respect. \"My lunch is a history lesson.\""
+              },
+              "activities": [
+                {
+                  "id": "languages.s9.loanwords.loanwords.a1",
+                  "prompt": "Match the word to its source",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "yoga",
+                      "Sanskrit"
+                    ],
+                    [
+                      "pav",
+                      "Portuguese"
+                    ],
+                    [
+                      "bungalow",
+                      "Bengali"
+                    ],
+                    [
+                      "kagad",
+                      "Persian"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s9.loanwords.loanwords.a2",
+                  "prompt": "\"Shampoo\" comes from a Hindi word meaning…",
+                  "kind": "choice",
+                  "options": [
+                    "to press",
+                    "to wash hair",
+                    "bubbles"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s9.loanwords.loanwords.a3",
+                  "prompt": "Marathi \"batata\" comes from Portuguese.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s9.loanwords.loanwords.a4",
+                  "prompt": "The origin and history of a word is its…",
+                  "kind": "choice",
+                  "options": [
+                    "etymology",
+                    "entomology",
+                    "energy"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What does a loanword tell us about history?",
+                "Should languages try to avoid borrowed words?"
+              ],
+              "speaking": [
+                "Present five loanwords and their stories."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Etymology Notebook",
+                "materials": [
+                  "an etymological dictionary or reliable online source"
+                ],
+                "steps": [
+                  "Collect 15 everyday words in Marathi and English",
+                  "Research their origins",
+                  "Group them by source language",
+                  "Write a short history of borrowing in your notebook"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s9.loanwords.loanwords.q1",
+                  "prompt": "A word borrowed from another language is a…",
+                  "kind": "choice",
+                  "options": [
+                    "loanword",
+                    "keyword",
+                    "password"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s9.loanwords.loanwords.q2",
+                  "prompt": "English borrowed \"jungle\" from an Indian language.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s9.loanwords.loanwords.q3",
+                  "prompt": "Marathi \"chavi\" (key) comes from…",
+                  "kind": "choice",
+                  "options": [
+                    "Portuguese",
+                    "Japanese",
+                    "Russian"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Identifies loanwords",
+                "Explains historical routes of borrowing",
+                "Researches etymology"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s12",
+      "overview": "Linguistics, language and identity, and endangered languages.",
+      "goals": [
+        "Apply basic linguistics: phonetics, morphology and syntax",
+        "Analyse language, identity and power",
+        "Evaluate efforts to protect endangered languages"
+      ],
+      "units": [
+        {
+          "id": "languages.s12.linguistics",
+          "title": "The Science of Language",
+          "summary": "Phonetics, morphology and syntax.",
+          "topics": [
+            {
+              "title": "Phonetics and the IPA",
+              "subtopics": [
+                "Phonetics and the IPA"
+              ]
+            },
+            {
+              "title": "Morphology",
+              "subtopics": [
+                "building words"
+              ]
+            },
+            {
+              "title": "Syntax",
+              "subtopics": [
+                "building sentences"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe the main branches of linguistics",
+            "Use the IPA and analyse word structure"
+          ],
+          "masteryCriteria": [
+            "Describes branches of linguistics",
+            "Uses IPA and morphological analysis",
+            "Compares syntax across languages"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "languages.s12.linguistics.linguistics",
+              "title": "How Language Works",
+              "skillId": "sk.languages.s12.linguistics.linguistics",
+              "minutes": 40,
+              "objectives": [
+                "Describe the main branches of linguistics",
+                "Use the IPA and analyse word structure"
+              ],
+              "prerequisites": [
+                "Knows grammar and sandhi"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Linguistics is the scientific study of language. Phonetics studies speech sounds; the International Phonetic Alphabet (IPA) gives one symbol per sound so any language can be written accurately. Marathi has retroflex sounds like ळ (ḷ), made by curling the tongue back.",
+                "Morphology studies how words are built from morphemes — the smallest meaningful units. \"Unhappiness\" = un + happy + ness. Marathi and Sanskrit use rich endings (inflection) to show case and tense.",
+                "Syntax studies sentence structure. English is usually Subject–Verb–Object (\"Ivaan reads a book\"), while Marathi is usually Subject–Object–Verb (\"Ivaan pustak vachto\" — Ivaan book reads). Noam Chomsky proposed that humans share an innate capacity for language — a theory still debated."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "linguistics",
+                  "meaning": "the scientific study of language"
+                },
+                {
+                  "term": "phonetics",
+                  "meaning": "the study of speech sounds"
+                },
+                {
+                  "term": "morpheme",
+                  "meaning": "the smallest meaningful unit of language"
+                },
+                {
+                  "term": "syntax",
+                  "meaning": "the structure of sentences"
+                }
+              ],
+              "examples": [
+                "\"Unhappiness\" as three morphemes.",
+                "Marathi's Subject–Object–Verb word order."
+              ],
+              "story": {
+                "title": "The Retroflex Sound",
+                "text": "A linguistics student from Spain struggled with the Marathi sound \"ḷ\" in \"doḷa\" (eye). Her Marathi friend showed her: curl your tongue back, touch the roof of your mouth, then say \"l\". She tried it ten times, laughing. Finally it came out right. \"Your language has sounds I didn't know existed,\" she said. That's phonetics in action."
+              },
+              "activities": [
+                {
+                  "id": "languages.s12.linguistics.linguistics.a1",
+                  "prompt": "Match the branch to its focus",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "phonetics",
+                      "speech sounds"
+                    ],
+                    [
+                      "morphology",
+                      "word structure"
+                    ],
+                    [
+                      "syntax",
+                      "sentence structure"
+                    ],
+                    [
+                      "semantics",
+                      "meaning"
+                    ]
+                  ]
+                },
+                {
+                  "id": "languages.s12.linguistics.linguistics.a2",
+                  "prompt": "Marathi's usual word order is…",
+                  "kind": "choice",
+                  "options": [
+                    "Subject–Object–Verb",
+                    "Subject–Verb–Object",
+                    "Verb–Subject–Object"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s12.linguistics.linguistics.a3",
+                  "prompt": "How many morphemes in un-happi-ness?",
+                  "kind": "count",
+                  "answer": 3
+                },
+                {
+                  "id": "languages.s12.linguistics.linguistics.a4",
+                  "prompt": "The IPA gives one symbol per sound.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Why do some sounds in one language seem hard for speakers of another?",
+                "Is the ability to learn language innate?"
+              ],
+              "speaking": [
+                "Analyse a Marathi sentence and its English translation for word order."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Mini Linguistics Study",
+                "materials": [
+                  "recordings of family speech (with consent)",
+                  "an IPA chart"
+                ],
+                "steps": [
+                  "Record short sentences in Marathi and English",
+                  "Transcribe some sounds in IPA",
+                  "Analyse word order and morphology",
+                  "Write a 1500-word comparative report"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "languages.s12.linguistics.linguistics.q1",
+                  "prompt": "The smallest meaningful unit of language is a…",
+                  "kind": "choice",
+                  "options": [
+                    "morpheme",
+                    "phoneme",
+                    "sentence"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s12.linguistics.linguistics.q2",
+                  "prompt": "English is usually Subject–Verb–Object.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s12.linguistics.linguistics.q3",
+                  "prompt": "The scientific study of language is…",
+                  "kind": "choice",
+                  "options": [
+                    "linguistics",
+                    "literature",
+                    "logistics"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes branches of linguistics",
+                "Uses IPA and morphological analysis",
+                "Compares syntax across languages"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "languages.s12.identity-endangered",
+          "title": "Language, Identity and Survival",
+          "summary": "Why languages matter.",
+          "topics": [
+            {
+              "title": "Language and identity",
+              "subtopics": [
+                "Language and identity"
+              ]
+            },
+            {
+              "title": "Language and power",
+              "subtopics": [
+                "Language and power"
+              ]
+            },
+            {
+              "title": "Endangered languages and revival",
+              "subtopics": [
+                "Endangered languages and revival"
+              ]
+            }
+          ],
+          "objectives": [
+            "Analyse the links between language, identity and power",
+            "Evaluate efforts to document and revive endangered languages"
+          ],
+          "masteryCriteria": [
+            "Analyses language and identity",
+            "Evaluates revival efforts",
+            "Practises ethical documentation"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "languages.s12.identity-endangered.endangered",
+              "title": "Saving Languages",
+              "skillId": "sk.languages.s12.identity-endangered.endangered",
+              "minutes": 40,
+              "objectives": [
+                "Analyse the links between language, identity and power",
+                "Evaluate efforts to document and revive endangered languages"
+              ],
+              "prerequisites": [
+                "Knows India's languages and linguistics"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Language is closely tied to identity, culture and memory. In India, the 1950s–60s saw states reorganised along linguistic lines; Maharashtra was formed in 1960 after the Samyukta Maharashtra movement. Debates over which languages are used in schools, courts and government reflect questions of power and opportunity.",
+                "UNESCO estimates that around 40% of the world's languages are endangered — many with few remaining speakers, often because younger generations shift to dominant languages. When a language disappears, unique knowledge of plants, history and ways of thinking may be lost.",
+                "Revival efforts include documentation (recordings, dictionaries), teaching children, and media in the language. Hebrew was revived as an everyday spoken language in the late 19th and 20th centuries; in India, projects document tribal languages, and the People's Linguistic Survey of India (led by G. N. Devy) recorded 780 languages."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "endangered language",
+                  "meaning": "a language at risk of no longer being spoken"
+                },
+                {
+                  "term": "language shift",
+                  "meaning": "a community moving to another language"
+                },
+                {
+                  "term": "revitalisation",
+                  "meaning": "efforts to revive a language"
+                },
+                {
+                  "term": "documentation",
+                  "meaning": "recording a language for the future"
+                }
+              ],
+              "examples": [
+                "Recording elders telling stories in a tribal language.",
+                "The formation of Maharashtra on 1 May 1960."
+              ],
+              "story": {
+                "title": "The Last Speakers",
+                "text": "A linguist visited a village where only a few elderly people still spoke their ancestral language fluently. Their grandchildren spoke the regional language instead. Together, the elders and the linguist recorded songs, stories and names of medicinal plants. The children helped make a picture dictionary — and began learning words their grandparents had feared would vanish."
+              },
+              "activities": [
+                {
+                  "id": "languages.s12.identity-endangered.endangered.a1",
+                  "prompt": "Maharashtra was formed in…",
+                  "kind": "choice",
+                  "options": [
+                    "1960",
+                    "1947",
+                    "1950"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s12.identity-endangered.endangered.a2",
+                  "prompt": "A community moving to another language is…",
+                  "kind": "choice",
+                  "options": [
+                    "language shift",
+                    "language family",
+                    "loanword"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s12.identity-endangered.endangered.a3",
+                  "prompt": "UNESCO estimates around 40% of the world's languages are endangered.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s12.identity-endangered.endangered.a4",
+                  "prompt": "Match the term",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "documentation",
+                      "recording a language"
+                    ],
+                    [
+                      "revitalisation",
+                      "reviving a language"
+                    ],
+                    [
+                      "endangered",
+                      "at risk of disappearing"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Does it matter if a language disappears? Why?",
+                "How should a multilingual country choose languages for schools?"
+              ],
+              "speaking": [
+                "Lead a discussion on language rights and identity."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Language Documentation Project",
+                "materials": [
+                  "a recording device",
+                  "consent forms",
+                  "a speaker of a less-documented language or dialect"
+                ],
+                "steps": [
+                  "With consent, record a speaker telling a story or describing daily life",
+                  "Transcribe and translate it",
+                  "Create a short glossary",
+                  "Write a reflection on language, identity and preservation"
+                ],
+                "safety": "Get informed consent from the speaker and explain how the recording will be used. Do not publish names, voices or personal stories without explicit permission; allow the speaker to stop or withdraw."
+              },
+              "assessment": [
+                {
+                  "id": "languages.s12.identity-endangered.endangered.q1",
+                  "prompt": "Efforts to revive a language are…",
+                  "kind": "choice",
+                  "options": [
+                    "revitalisation",
+                    "replacement",
+                    "repetition"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "languages.s12.identity-endangered.endangered.q2",
+                  "prompt": "Hebrew was revived as a spoken language.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "languages.s12.identity-endangered.endangered.q3",
+                  "prompt": "Recording a language for the future is…",
+                  "kind": "choice",
+                  "options": [
+                    "documentation",
+                    "decoration",
+                    "demonstration"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Analyses language and identity",
+                "Evaluates revival efforts",
+                "Practises ethical documentation"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

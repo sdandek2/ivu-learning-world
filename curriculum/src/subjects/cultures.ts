@@ -58,7 +58,7 @@ export default subject({
           ],
           t: ['What food from another region would you like to try?', 'Why do you think foods are different in different places?'],
           k: ['Describe your family\'s favourite festival food to a grown-up.'],
-          m: ['India Food Map', 'an outline map of India, food pictures or drawings, glue', 'Draw or cut out pictures of foods from different states | Stick them on the map in the right regions | Taste one new regional food with your family | Add a smiley if you liked it'],
+          m: ['India Food Map', 'an outline map of India, food pictures or drawings, glue', 'Draw or cut out pictures of foods from different states | Stick them on the map in the right regions | Taste one new regional food with your family | Add a smiley if you liked it', "Check food allergies, dietary needs and family preferences with a grown-up before tasting anything. Never pressure anyone to try a food."],
           q: [
             ch('Which is a garment?', '*kurta|dosa|tabla'),
             tf('All regions of India eat exactly the same food.', false),
@@ -92,7 +92,7 @@ export default subject({
           ],
           t: ['Why might the same festival have different stories?', 'What values do many festivals share?'],
           k: ['Retell the story behind a festival your family celebrates.'],
-          m: ['Festival Story Book', 'paper, crayons, stapler', 'Choose four festivals from different traditions | Ask family or friends about their meaning | Draw one page for each with its story | Read your book to someone'],
+          m: ['Festival Story Book', 'paper, crayons, stapler', 'Choose four festivals from different traditions | Ask family or friends about their meaning | Draw one page for each with its story | Read your book to someone', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('Bandi Chhor Divas is celebrated by…', '*Sikhs|Christians|Buddhists'),
             tf('Charity is an important part of Eid.', true),
@@ -186,7 +186,7 @@ export default subject({
           ],
           t: ['Why might simple shapes be powerful in art?', 'What would a home designed for your city\'s climate look like?'],
           k: ['Show someone a Warli or Madhubani-style drawing you made and explain the style.'],
-          m: ['Warli Art Painting', 'brown or red paper, white paint or chalk, a thin brush or cotton bud', 'Practise drawing people with two triangles and a circle | Plan a scene from daily life (dancing, farming, a festival) | Paint it in white | Explain the tradition behind it'],
+          m: ['Warli Art Painting', 'brown or red paper, white paint or chalk, a thin brush or cotton bud', 'Practise drawing people with two triangles and a circle | Plan a scene from daily life (dancing, farming, a festival) | Paint it in white | Explain the tradition behind it', "Use non-toxic, washable paint and protect clothing and surfaces. Do not taste paint; wash hands after the activity."],
           q: [
             ch('Madhubani art is from…', '*Bihar|Kerala|Punjab'),
             tf('Folk art traditions are passed down through communities.', true),
@@ -284,7 +284,7 @@ export default subject({
           ],
           t: ['What parts of your culture would a visitor not notice at first?', 'How do your identities change in different places?'],
           k: ['Describe your own "identity layers" to someone.'],
-          m: ['My Culture Iceberg', 'paper, pens', 'Draw an iceberg with a waterline | Above: things others can see about your culture | Below: values and beliefs | Interview a friend from a different background and compare icebergs respectfully'],
+          m: ['My Culture Iceberg', 'paper, pens', 'Draw an iceberg with a waterline | Above: things others can see about your culture | Below: values and beliefs | Interview a friend from a different background and compare icebergs respectfully', "Share only what you feel comfortable sharing. Ask permission before discussing another person's background and do not record or publish private details."],
           q: [
             ch('Which is below the surface of the iceberg?', '*values|clothing|food'),
             tf('Identity can be layered.', true),
@@ -378,7 +378,7 @@ export default subject({
           ],
           t: ['How can a society balance shared identity with diverse cultures?', 'What should communities do to keep languages alive?'],
           k: ['Debate the effects of globalisation on Indian culture, presenting both benefits and concerns.'],
-          m: ['Pluralism Case Study', 'research sources, interviews (with consent)', 'Choose a syncretic tradition, shared shrine or multicultural neighbourhood | Research its history and present practice | Interview community members if possible | Write a report on how diversity is lived there'],
+          m: ['Pluralism Case Study', 'research sources, interviews (with consent)', 'Choose a syncretic tradition, shared shrine or multicultural neighbourhood | Research its history and present practice | Interview community members if possible | Write a report on how diversity is lived there', "Obtain consent before interviews, explain the purpose, and respect requests not to answer. Do not identify participants or present one person's views as representing an entire community."],
           q: [
             ch('The word "secular" was added to the Preamble in…', '1950|*1976|2001'),
             tf('Globalisation can bring both opportunities and challenges for culture.', true),

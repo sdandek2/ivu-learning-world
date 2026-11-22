@@ -152,7 +152,7 @@ export default subject({
           ],
           t: ['Why can\'t we see anything in total darkness?', 'Why do some people need glasses only for reading?'],
           k: ['Show someone how their pupils change size in bright and dim light.'],
-          m: ['🧪 Pupil Watch and Eye Model', 'a mirror, a torch (not pointed directly into eyes for long), a paper eye diagram', 'Look in a mirror in dim light, then turn on a room light and watch your pupils | Draw before and after | Label a diagram of the eye | Explain each part to someone'],
+          m: ['🧪 Pupil Watch and Eye Model', 'a mirror, a torch (not pointed directly into eyes for long), a paper eye diagram', 'Look in a mirror in dim light, then turn on a room light and watch your pupils | Draw before and after | Label a diagram of the eye | Explain each part to someone', "Never shine a torch directly into anyone's eyes. Use ordinary room lighting and observe briefly; stop if anyone feels discomfort."],
           q: [
             ch('The coloured part of the eye is the…', 'pupil|*iris|retina'),
             ch('The retina is at the…', '*back of the eye|front of the eye|ear'),
@@ -181,7 +181,7 @@ export default subject({
           ],
           t: ['Why might people who listen to loud music often have hearing problems later?', 'How do hearing aids help?'],
           k: ['Explain to someone how a sound gets from a bell to their brain.'],
-          m: ['🧪 Tin-Can Telephone', 'two paper cups or tins, a long string, a pin (adult help)', 'Make a hole in each cup and tie the string between them | Pull the string tight and talk | Try with a loose string | Explain how vibrations carry the sound'],
+          m: ['🧪 Tin-Can Telephone', 'two paper cups or tins, a long string, a pin (adult help)', 'Make a hole in each cup and tie the string between them | Pull the string tight and talk | Try with a loose string | Explain how vibrations carry the sound', "An adult must make the holes and handle the pin. Use paper cups rather than sharp-edged tins, and check that the string is secure."],
           q: [
             ch('Which vibrates when sound enters the ear?', '*eardrum|tongue|eyelid'),
             ch('The cochlea is shaped like a…', '*snail shell|star|square'),

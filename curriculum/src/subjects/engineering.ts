@@ -275,7 +275,7 @@ export default subject({
           ],
           t: ['Which discipline interests you most? Why?', 'Why do engineers need communication skills?'],
           k: ['Interview an engineer (in person or by reading) and present their work.'],
-          m: ['Career Explorer', 'reliable career resources, interviews', 'Research three disciplines | List what they do, skills needed and an Indian example | Interview or read about an engineer | Make a career poster'],
+          m: ['Career Explorer', 'reliable career resources, interviews', 'Research three disciplines | List what they do, skills needed and an Indian example | Interview or read about an engineer | Make a career poster', "Ask permission before interviewing an engineer. Do not publish names or contact details without consent; use public career sources and attribute them."],
           q: [
             ch('Applying engineering to medicine is…', '*biomedical engineering|civil engineering|aerospace'),
             tf('The Jaipur Foot is a low-cost prosthetic.', true),
@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['Why is a perfectly stiff building not ideal?', 'Who should pay for retrofitting old buildings?'],
           k: ['Explain base isolation using a model or demonstration.'],
-          m: ['🧪 Shake Table Challenge', 'a tray on marbles or rubber balls, card, straws, clay', 'Build a small tower | Shake the tray to simulate an earthquake | Add bracing, a wider base or isolation pads | Compare performance and record results'],
+          m: ['🧪 Shake Table Challenge', 'a tray on marbles or rubber balls, card, straws, clay', 'Build a small tower | Shake the tray to simulate an earthquake | Add bracing, a wider base or isolation pads | Compare performance and record results', "Use large, sturdy balls that cannot be swallowed and keep the tray on a stable surface. An adult should supervise; keep the setup away from stairs and edges."],
           q: [
             ch('Relating to earthquakes is…', '*seismic|scenic|solar'),
             tf('Symmetrical shapes help earthquake resistance.', true),

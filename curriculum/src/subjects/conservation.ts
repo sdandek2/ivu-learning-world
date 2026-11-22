@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['Why is reducing better than recycling?', 'What is hard to recycle? Why?'],
           k: ['Explain the 3 Rs to someone, giving your own example of each.'],
-          m: ['Recycled Paper Making', 'old newspaper, water, a blender (adult), a wire mesh or strainer, a cloth', 'Tear paper into small pieces and soak overnight | An adult blends it into pulp | Spread the pulp thinly on a mesh and press out water | Dry it on a cloth and write a message on your new paper'],
+          m: ['Recycled Paper Making', 'old newspaper, water, a blender (adult), a wire mesh or strainer, a cloth', 'Tear paper into small pieces and soak overnight | An adult blends it into pulp | Spread the pulp thinly on a mesh and press out water | Dry it on a cloth and write a message on your new paper', "Only an adult may operate the blender. Keep hands and tools away from the blades, unplug it before opening or cleaning, and let the pulp cool if it becomes warm."],
           q: [
             ch('Saying no to a plastic bag is…', '*reduce|recycle|reuse'),
             ch('Old glass bottles can be…', '*recycled into new glass|turned into fruit|planted'),
@@ -214,7 +214,7 @@ export default subject({
           ],
           t: ['Why doesn\'t India switch to 100% renewable energy overnight?', 'Which renewable source would suit your area best?'],
           k: ['Explain to someone the pros and cons of solar power.'],
-          m: ['🧪 Solar Oven', 'a pizza box or shoebox, foil, black paper, cling film, a snack like a biscuit with chocolate', 'Line the box with foil and put black paper at the bottom | Cover the opening with cling film | Angle the foil flap to reflect sunlight in | Put the snack inside and record the temperature or melting time'],
+          m: ['🧪 Solar Oven', 'a pizza box or shoebox, foil, black paper, cling film, a snack like a biscuit with chocolate', 'Line the box with foil and put black paper at the bottom | Cover the opening with cling film | Angle the foil flap to reflect sunlight in | Put the snack inside and record the temperature or melting time', "Use sunlight only and have an adult check the box and food temperature before touching or eating. Do not look at reflected sunlight, and do not leave the oven unattended."],
           q: [
             ch('Which is renewable?', 'oil|natural gas|*hydroelectric'),
             ch('Storing solar energy for night uses…', '*batteries|more coal|candles'),
@@ -243,7 +243,7 @@ export default subject({
           ],
           t: ['Should people with bigger footprints do more to reduce them?', 'What is easy to change, and what is hard?'],
           k: ['Present your family\'s biggest footprint item and a realistic plan to reduce it.'],
-          m: ['Household Footprint Audit', 'electricity bill, a travel log, a food waste tally, an online or printed calculator (offline estimates are fine)', 'Record a week of travel, electricity and food waste | Estimate emissions using simple factors | Identify the biggest source | Make a family action plan and check again in a month'],
+          m: ['Household Footprint Audit', 'electricity bill, a travel log, a food waste tally, an online or printed calculator (offline estimates are fine)', 'Record a week of travel, electricity and food waste | Estimate emissions using simple factors | Identify the biggest source | Make a family action plan and check again in a month', "Use only information your family agrees to share. Do not upload or show bills, travel details, addresses or other personal information; use approximate totals where possible."],
           q: [
             ch('Which reduces emissions?', '*taking a train instead of a car|leaving lights on|throwing away food'),
             ch('Per capita means…', '*per person|per country|per day'),

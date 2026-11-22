@@ -101,7 +101,7 @@ export default subject({
           ],
           t: ['Why do you think light is used to celebrate goodness?', 'How does your family celebrate Diwali (or another festival of light)?'],
           k: ['Tell a grown-up the story of the lamps in Ayodhya.'],
-          m: ['Paint a Diya', 'a clay diya or paper cut-out, paints, a grown-up', 'Paint and decorate a diya | Make a small rangoli with coloured paper or chalk | Retell the homecoming story | Light the diya safely with a grown-up on Diwali'],
+          m: ['Paint a Diya', 'a clay diya or paper cut-out, paints, a grown-up', 'Paint and decorate a diya | Make a small rangoli with coloured paper or chalk | Retell the homecoming story | Light the diya safely with a grown-up on Diwali', "An adult alone should light and handle any real flame. Place the diya on a stable, heat-safe surface away from curtains, paper and clothing, and never leave it unattended; a paper diya is a flame-free alternative."],
           q: [
             ch('Diwali is called the festival of…', '*lights|kites|rain'),
             tf('Rangoli is a colourful floor design.', true),
@@ -417,7 +417,7 @@ export default subject({
           ],
           t: ['Why might a story stay popular in a country where most people follow a different religion?', 'What does the spread of the Ramayana tell us about Asian history?'],
           k: ['Present how one Southeast Asian country tells the Ramayana.'],
-          m: ['Shadow Puppet Show', 'card, sticks, a torch, a white sheet', 'Make shadow puppets of three characters in wayang style | Practise a short scene | Perform for your family | Explain the Indonesian tradition'],
+          m: ['Shadow Puppet Show', 'card, sticks, a torch, a white sheet', 'Make shadow puppets of three characters in wayang style | Practise a short scene | Perform for your family | Explain the Indonesian tradition', "Use a cool-running torch pointed at the sheet, never into anyone's eyes. Keep the performance area clear and use child-safe materials."],
           q: [
             ch('Wayang is a form of…', '*puppet theatre|cooking|navigation'),
             tf('The Ramayana is valued as cultural heritage in Indonesia.', true),

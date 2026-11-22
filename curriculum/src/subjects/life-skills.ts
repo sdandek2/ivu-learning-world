@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why should grown-ups help with knives and stoves?', 'What other simple snack could you make?'],
           k: ['Explain your recipe to someone step by step.'],
-          m: ['Make and Share a Snack', 'fruits or bread and spread, a safe knife, a bowl, an adult', 'Choose a simple recipe | Gather ingredients | Make it with an adult supervising | Serve it to your family and clean up'],
+          m: ['Make and Share a Snack', 'fruits or bread and spread, a safe knife, a bowl, an adult', 'Choose a simple recipe | Gather ingredients | Make it with an adult supervising | Serve it to your family and clean up', "An adult must handle the knife and supervise food preparation. Wash fruit and hands first, check for food allergies and choking hazards, and keep raw foods separate from ready-to-eat foods."],
           q: [
             ch('First step in cooking:', '*wash your hands|eat the ingredients|turn on the stove alone'),
             tf('Fruit peels go in the wet-waste bin.', true),
@@ -337,7 +337,7 @@ export default subject({
           ],
           t: ['What would you do if you couldn\'t fail?', 'How might technology change jobs by the time you start working?'],
           k: ['Conduct and present an informational interview with someone in a career that interests you.'],
-          m: ['Career Exploration Portfolio', 'notebook, interviews, research', 'Complete an interests–strengths–values reflection | Research three careers (tasks, education, pay range, future demand) | Interview one professional | Write a plan for the next two years'],
+          m: ['Career Exploration Portfolio', 'notebook, interviews, research', 'Complete an interests–strengths–values reflection | Research three careers (tasks, education, pay range, future demand) | Interview one professional | Write a plan for the next two years', "Ask permission before interviewing a professional. Do not share contact details or private salary information; use public sources for pay ranges and share the portfolio only with permission."],
           q: [
             ch('Temporary work experience is an…', '*internship|interest|interview only'),
             tf('Self-knowledge helps with career choices.', true),
