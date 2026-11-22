@@ -7,7 +7,7 @@ const STOP_WORDS = new Set([
 ]);
 
 function tokens(value: string): string[] {
-  return (value.toLocaleLowerCase().match(/[\\p{L}\\p{N}]+/gu) ?? [])
+  return (value.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [])
     .filter((word) => word.length > 1 && !STOP_WORDS.has(word));
 }
 
