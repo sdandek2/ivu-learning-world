@@ -19,6 +19,7 @@
  *                            printing the estimate, so nothing is spent by accident)
  *     --stages s4,s5         only lines used at these stages (Buddy's lines are always included)
  *     --tier human|rendered  only lines in this tier of the hybrid plan (default: both)
+ *     --lessons a,b          only lines used in these lessons (lesson IDs; Buddy's lines included)
  *     --limit N              stop after N new files (for samples)
  *     --jobs N               parallel renders (default 4)
  *     --force                re-render everything (e.g. after changing voice)
@@ -73,6 +74,7 @@ if (PAID && argv.includes('--list-voices')) {
 }
 if (PAID && !VOICE && !DRY) { console.error('Choose the IVU Reads voice: --voice <voice id>, or ELEVENLABS_VOICE_ID in .env.local (find it with --list-voices).'); process.exit(2); }
 const STAGES = opt('stages')?.split(',');
+const LESSONS = opt('lessons')?.split(',');
 const TIER = opt('tier') as Tier | undefined;
 const LIMIT = Number(opt('limit', 'Infinity'));
 const JOBS = Number(opt('jobs', opt('engine') === 'elevenlabs' ? '2' : '4'));
@@ -102,8 +104,11 @@ setNarrationCatalogs(read<NarrationCatalogFile | null>(humanPath, null), null);
 const lexicon: Record<string, string> = read(join(root, 'curriculum/narration-lexicon.json'), { words: {} }).words ?? {};
 const forEngine = (text: string) => Object.entries(lexicon).reduce((t, [w, say]) => t.replace(new RegExp(`\\b${w}\\b`, 'g'), say), text);
 
-const all = distinctLines(collectLines(root));
+const occurrences = collectLines(root);
+const all = distinctLines(occurrences);
+const inLessons = LESSONS ? new Set(occurrences.filter((o) => LESSONS.includes(o.lesson)).map((o) => o.text)) : null;
 const todo = all.filter((l) =>
+  (!inLessons || l.kind === 'buddy' || inLessons.has(l.text)) &&
   (!TIER || l.tier === TIER) &&
   (!STAGES || l.kind === 'buddy' || l.stages.some((s) => STAGES.includes(s))) &&
   resolveNarration(l.text)?.source !== 'recorded');
