@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:26:58.270Z",
+ "generatedAt": "2026-11-22T12:31:14.669Z",
  "stages": [
   {
    "id": "s4",
@@ -676,18 +676,18 @@
      "title": "Coding & Algorithms",
      "icon": "🧩",
      "tagline": "Step-by-step instructions",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/coding.json"
     },
     {
      "id": "engineering",
      "title": "Building & Engineering",
      "icon": "🏗️",
      "tagline": "Strong, tall, useful",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/engineering.json"
     },
     {
      "id": "machines",
