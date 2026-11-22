@@ -166,3 +166,14 @@
 .parent-mastery-guide > .small { margin:12px 0 0; }
 @media(max-width:800px) { .parent-mastery-guide__grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:480px) { .parent-mastery-guide__grid { grid-template-columns:1fr; } }
+
+/* Listen-first story mode supports listening comprehension without changing lesson content. */
+.storycard--listening { display:grid;gap:14px; }
+.storycard__listen-prompt { margin:0;color:var(--p-soft,#5B6475);font-weight:700; }
+.storycard__text-toggle { justify-self:start; }
+.storycard__listen-hint { margin:0;padding:12px 14px;border-radius:10px;background:var(--p-bg);color:var(--p-soft); }
+.voice-offline { border-top:1px solid var(--p-line);margin-top:14px;padding-top:10px; }
+@media(max-width:600px) {
+  .ivureads__levels li { grid-template-columns:1fr 54px;gap:6px; }
+  .ivureads__levels .meter { grid-column:1/-1;grid-row:2; }
+}
