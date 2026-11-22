@@ -103,7 +103,7 @@ export function ExploreMap() {
             <button key={w.id} className="island" style={{ ['--world' as string]: w.colors.land, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink, animationDelay: `${(i % 4) * 0.4}s` }} onClick={() => navigate(`/world/${w.id}`)}>
               <WorldArt world={w} className="island__art" />
               <span className="island__label"><span className="island__name">{w.title}</span><span className="island__domain">{w.domain}</span><span className="island__explore">Enter world <span aria-hidden="true">↗</span></span></span>
-              {started > 0 && <span className="island__badge" aria-label={`${started} lessons started`}>⭐ {started}</span>}
+              {started > 0 && <span className="island__badge" aria-label={`${started} learning skills started`}>⭐ {started}</span>}
             </button>
           );
         })}
@@ -119,7 +119,7 @@ export function WorldPage({ worldId }: { worldId: string }) {
   if (!w) return <ErrorBox error="This world does not exist." />;
   return (
     <div className="world" style={{ ['--world' as string]: w.colors.land, ['--sky' as string]: w.colors.sky, ['--accent' as string]: w.colors.accent, ['--ink' as string]: w.colors.ink }}>
-      <TopBar title={w.title} back="/" color={w.colors.land} />
+      <TopBar title={w.title} back="/explore" color={w.colors.land} />
       <div className="world__banner">
         <WorldArt world={w} className="world__art" />
         <div className="world__intro">
