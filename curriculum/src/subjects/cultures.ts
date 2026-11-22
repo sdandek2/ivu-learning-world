@@ -378,7 +378,7 @@ export default subject({
           ],
           t: ['How can a society balance shared identity with diverse cultures?', 'What should communities do to keep languages alive?'],
           k: ['Debate the effects of globalisation on Indian culture, presenting both benefits and concerns.'],
-          m: ['Pluralism Case Study', 'research sources, interviews (with consent)', 'Choose a syncretic tradition, shared shrine or multicultural neighbourhood | Research its history and present practice | Interview community members if possible | Write a report on how diversity is lived there'],
+          m: ['Pluralism Case Study', 'research sources, interviews (with consent)', 'Choose a syncretic tradition, shared shrine or multicultural neighbourhood | Research its history and present practice | Interview community members if possible | Write a report on how diversity is lived there', "Obtain consent before interviews, explain the purpose, and respect requests not to answer. Do not identify participants or present one person's views as representing an entire community."],
           q: [
             ch('The word "secular" was added to the Preamble in…', '1950|*1976|2001'),
             tf('Globalisation can bring both opportunities and challenges for culture.', true),
