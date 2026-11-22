@@ -97,7 +97,7 @@ async function main() {
             }
             const safetyMatch = projectText.match(SAFETY_RISK);
             if (safetyMatch && !projectSafety) {
-              add('project-safety', \`Project mentions “\${safetyMatch[0]}” but has no explicit safety guidance. Add age-appropriate adult-supervision and handling instructions.\`);
+              add('project-safety', 'Project mentions "' + safetyMatch[0] + '" but has no explicit safety guidance. Add age-appropriate adult-supervision and handling instructions.');
             }
             if (PRIVACY_RISK.test(projectText) && !projectSafety) {
               add('project-privacy', 'Project uses personal, family, interview or survey information but has no explicit consent and privacy guidance.');
