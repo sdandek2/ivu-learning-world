@@ -43,6 +43,8 @@ const step = async (name, fn) => {
 const browser = await chromium.launch();
 const context = await browser.newContext({ viewport: { width: 1280, height: 860 }, deviceScaleFactor: 1 });
 const page = await context.newPage();
+page.setDefaultTimeout(12000);
+page.setDefaultNavigationTimeout(12000);
 const errors = [];
 page.on('pageerror', (e) => errors.push(String(e)));
 page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
@@ -195,9 +197,9 @@ try {
 
   await step('works offline after first load (service worker)', async () => {
     await page.goto(BASE);
-    await page.evaluate(() => navigator.serviceWorker.ready);
+    await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error('service worker did not become ready')), 12000))]));
     await page.reload();
-    await page.evaluate(() => navigator.serviceWorker.ready);
+    await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error('service worker did not become ready')), 12000))]));
     await context.setOffline(true);
     await page.reload();
     await page.locator('.island').first().waitFor({ timeout: 8000 });
