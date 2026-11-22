@@ -1112,3 +1112,16 @@ html:not(.reduce-motion) .owl-hero__buddy:active > svg { transform:scale(.95); }
   .swatches,.sizes,.stamps { gap:8px; }
   .creative .tab { min-height:48px;padding:8px 15px;font-size:.92rem; }
 }
+
+
+/* Classification activity — tap an object, then tap its home group. */
+.classify { display:grid;gap:18px; }
+.classify__items,.classify__categories { display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:12px; }
+.classify__items .tile,.classify__categories .tile { min-height:76px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap; }
+.classify__items .tile.is-selected { outline:3px solid var(--accent);outline-offset:2px; }
+.classify__items .tile.is-done { opacity:.58;text-decoration:line-through; }
+.classify__count { display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 6px;border-radius:99px;background:rgba(255,255,255,.72);font-size:.82em;font-weight:800; }
+@media(max-width:600px) {
+  .classify__items,.classify__categories { grid-template-columns:repeat(2,minmax(0,1fr));gap:9px; }
+  .classify__items .tile,.classify__categories .tile { min-height:64px;padding:10px; }
+}
