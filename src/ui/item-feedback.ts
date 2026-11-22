@@ -19,7 +19,9 @@ function answerFor(item: Item): string {
     case 'count': return String(item.answer);
     case 'order': return item.items.join(' ');
     case 'match': return item.pairs.map(([left, right]) => `${left} ${right}`).join(' ');
+    case 'classify': return item.items.map((entry) => `${entry.label} ${item.categories[entry.category] ?? ''}`).join(' ');
   }
+  return '';
 }
 
 /**
