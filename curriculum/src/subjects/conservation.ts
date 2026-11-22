@@ -243,7 +243,7 @@ export default subject({
           ],
           t: ['Should people with bigger footprints do more to reduce them?', 'What is easy to change, and what is hard?'],
           k: ['Present your family\'s biggest footprint item and a realistic plan to reduce it.'],
-          m: ['Household Footprint Audit', 'electricity bill, a travel log, a food waste tally, an online or printed calculator (offline estimates are fine)', 'Record a week of travel, electricity and food waste | Estimate emissions using simple factors | Identify the biggest source | Make a family action plan and check again in a month'],
+          m: ['Household Footprint Audit', 'electricity bill, a travel log, a food waste tally, an online or printed calculator (offline estimates are fine)', 'Record a week of travel, electricity and food waste | Estimate emissions using simple factors | Identify the biggest source | Make a family action plan and check again in a month', "Use only information your family agrees to share. Do not upload or show bills, travel details, addresses or other personal information; use approximate totals where possible."],
           q: [
             ch('Which reduces emissions?', '*taking a train instead of a car|leaving lights on|throwing away food'),
             ch('Per capita means…', '*per person|per country|per day'),
