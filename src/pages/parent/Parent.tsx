@@ -1,5 +1,5 @@
 import '../../styles/parent.css';
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { useStore } from '../../state/store.tsx';
 import { navigate } from '../../lib/router.ts';
 import { MASTERY_STAGES, type MasteryStage, type SkillRecord } from '../../engine/types.ts';
@@ -12,6 +12,7 @@ import { cx, pct, relativeDay } from '../../lib/util.ts';
 import { backupFileName, createBackup, downloadJSON, parseBackup, restoreBackup, type Backup } from '../../lib/backup.ts';
 import * as db from '../../db/db.ts';
 import { englishVoices, readNarrationCoverage, resetNarrationCoverage } from '../../lib/speech.ts';
+import { offlineVoiceStatus, saveVoiceOffline } from '../../lib/narrationCatalog.ts';
 import { IVU_READS_URL, loadLevels, readIvuReadsState, summarise, type IvuReadsSummary } from '../../lib/ivuReads.ts';
 import { PLANNED_LOCALES } from '../../i18n/index.ts';
 import { useSubject } from '../child/Explore.tsx';
@@ -443,25 +444,45 @@ function ItemList({ items }: { items: Item[] }) {
 
 // ---------------- Settings ----------------
 
-/** What the child has actually heard on this device: recorded human voice vs computer voice. */
+/** What the child has actually heard on this device, and saving the IVU voice for offline use. */
 function VoiceCoverage() {
+  const { settings, index } = useStore();
   const [c, setC] = useState(() => readNarrationCoverage());
-  const total = c.recorded + c.synth;
+  const total = c.recorded + c.rendered + c.synth;
   const top = Object.entries(c.misses).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const stages = useMemo(() => [...new Set([settings.defaultStage, ...(index?.worlds.flatMap((w) => w.subjects.map((s) => placement(settings, s.id))) ?? [])])], [settings, index]);
+  const [offline, setOffline] = useState<{ saved: number; total: number } | null>(null);
+  const [saving, setSaving] = useState<string | null>(null);
+  useEffect(() => { let live = true; offlineVoiceStatus(stages).then((s) => live && setOffline(s)); return () => { live = false; }; }, [stages]);
+  const stageNames = stages.map((s) => index?.stages.find((x) => x.id === s)?.label ?? s).join(', ');
   return (
     <section className="pcard">
-      <h2>Voice coverage</h2>
+      <h2>Voice</h2>
+      <p className="muted small">IVU speaks in a human voice where a recording exists, otherwise in the prepared IVU voice, and only as a last resort in this device's own voice.</p>
       {total === 0 ? <p className="muted small">Nothing has been read aloud on this device yet.</p> : (
         <>
-          <p>On this device, <b>{pct(c.recorded / total)}</b> of the lines read aloud used the recorded voice ({c.recorded} recorded, {c.synth} computer voice).</p>
+          <p>Read aloud on this device: <b>{pct(c.recorded / total)}</b> human voice, <b>{pct(c.rendered / total)}</b> prepared IVU voice, <b>{pct(c.synth / total)}</b> device voice ({total} lines).</p>
           {top.length > 0 && (
             <>
-              <p className="muted small">Most-heard lines that still use the computer voice — these are the best ones to record next:</p>
+              <p className="muted small">Most-heard lines that still used the device voice:</p>
               <ol className="small">{top.map(([line, n]) => <li key={line}>{line} <span className="muted">×{n}</span></li>)}</ol>
             </>
           )}
           <button className="pbtn" onClick={() => { resetNarrationCoverage(); setC(readNarrationCoverage()); }}>Clear these counts</button>
         </>
+      )}
+      {offline && offline.total > 0 && (
+        <div className="voice-offline">
+          <p><b>Offline voice</b> for {stageNames}: {offline.saved === offline.total ? 'saved on this device ✓' : `${offline.saved} of ${offline.total} lines saved.`} Lines are also saved automatically the first time they are played.</p>
+          {offline.saved < offline.total && (
+            <button className="pbtn" disabled={!!saving} onClick={async () => {
+              setSaving('Starting…');
+              const r = await saveVoiceOffline(stages, (d, t) => setSaving(`Saving ${d} of ${t}…`));
+              setSaving(r.failed ? `${r.failed} could not be saved — try again when online.` : null);
+              setOffline(await offlineVoiceStatus(stages));
+            }}>{saving ?? 'Save the voice for offline use'}</button>
+          )}
+        </div>
       )}
     </section>
   );

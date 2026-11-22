@@ -1,154 +1,137 @@
 /**
- * Audio coverage report: how much of what IVU says can be heard in the recorded (human) voice.
+ * Audio coverage report: what a child hears for every spoken line, under the hybrid plan
+ * (human recording → pre-rendered IVU voice → device voice). See docs/NARRATION.md.
  *
- *   node scripts/audit-audio-coverage.ts                 write docs/AUDIO_COVERAGE.md
- *   node scripts/audit-audio-coverage.ts --check         also fail if the clip catalogue is broken
- *                                                       or a Buddy line marked "recorded" has no clip
- *   node scripts/audit-audio-coverage.ts --missing out.csv
- *                                                       write every unrecorded line, in recording
- *                                                       priority order, for a narration session
+ *   node scripts/audit-audio-coverage.ts            write docs/AUDIO_COVERAGE.md
+ *   node scripts/audit-audio-coverage.ts --check    also fail if a catalogue points at a missing
+ *                                                   file, or a Buddy line marked "recorded" has no
+ *                                                   human recording
+ *   node scripts/audit-audio-coverage.ts --script recording-script.csv [--tier human|rendered|all]
+ *                                                   export lines with no human recording yet, by
+ *                                                   ID and priority, for a narration session
+ *                                                   (default tier: human)
  *
- * The matching rules are the app's own (src/lib/ivuReads.ts clipsForPassage), so the report shows
- * exactly what a child would hear.
+ * Matching uses the app's own resolver (src/lib/narrationCatalog.ts), so the report shows
+ * exactly what the app would play. The rendered catalogue is generated and not committed, so the
+ * committed report is produced without it unless it exists locally; the "rendered" column then
+ * shows what the current checkout has rendered.
  */
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { clipsForPassage, setClipMap } from '../src/lib/ivuReads.ts';
-import { speakable } from '../src/lib/speech.ts';
+import { setClipMap } from '../src/lib/ivuReads.ts';
+import { resolveNarration, setNarrationCatalogs, type NarrationCatalogFile } from '../src/lib/narrationCatalog.ts';
 import { allBuddyLines } from '../src/lib/buddyLines.ts';
+import { collectLines, distinctLines, STAGE_ORDER, type Kind, type NarrationLine } from './narration/lines.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const args = process.argv.slice(2);
-const CHECK = args.includes('--check');
-const missingOut = args.includes('--missing') ? args[args.indexOf('--missing') + 1] : null;
+const argv = process.argv.slice(2);
+const CHECK = argv.includes('--check');
+const scriptOut = argv.includes('--script') ? argv[argv.indexOf('--script') + 1] : null;
+const scriptTier = argv.includes('--tier') ? argv[argv.indexOf('--tier') + 1] : 'human';
+const WITH_RENDERED = !argv.includes('--no-rendered');
 
-const clipsDoc = JSON.parse(readFileSync(join(root, 'public/ivu-reads/clips.json'), 'utf8')) as { clips: Record<string, string> };
-setClipMap(clipsDoc.clips);
-const has = (t: string) => !!clipsForPassage(speakable(t));
+const read = <T,>(p: string): T | null => (existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null);
+const reads = read<{ clips: Record<string, string> }>(join(root, 'public/ivu-reads/clips.json'))!;
+const human = read<NarrationCatalogFile>(join(root, 'public/narration/human.json'));
+const rendered = WITH_RENDERED ? read<NarrationCatalogFile>(join(root, 'public/narration/rendered.json')) : null;
+setClipMap(reads.clips);
+setNarrationCatalogs(human, rendered);
 
 // ---- Catalogue integrity ----
 const problems: string[] = [];
-const files = Object.values(clipsDoc.clips);
+const readsFiles = Object.values(reads.clips);
 const onDisk = new Set(readdirSync(join(root, 'public/ivu-reads/audio')).map((f) => 'audio/' + f));
-for (const f of new Set(files)) if (!onDisk.has(f)) problems.push(`clips.json points at a missing file: ${f}`);
-const orphans = [...onDisk].filter((f) => !files.includes(f));
-for (const l of allBuddyLines()) if (l.recorded && !has(l.text)) problems.push(`Buddy line "${l.id}" is marked recorded but has no clip: "${l.text}"`);
-
-// ---- Curriculum lines ----
-// Priority = what a child hears most, and earliest: Buddy, then prompts, explanations, stories...
-const CATS = [
-  ['prompt', 'Questions and instructions (activity + check prompts)'],
-  ['explanation', 'Lesson explanations (Learn step)'],
-  ['story', 'Stories'],
-  ['example', 'Examples'],
-  ['vocab', 'Vocabulary (word + meaning)'],
-  ['thinking', 'Think & talk questions'],
-  ['option', 'Answer choices'],
-] as const;
-type Cat = (typeof CATS)[number][0];
-const STAGE_ORDER = ['s4', 's5', 's6', 's7', 's9', 's12'];
-interface Line { cat: Cat; text: string; world: string; subject: string; stage: string; lesson: string }
-
-const idx = JSON.parse(readFileSync(join(root, 'public/curriculum/v1/index.json'), 'utf8'));
-const lines: Line[] = [];
-for (const w of idx.worlds) for (const s of w.subjects) {
-  if (!s.file) continue;
-  const sub = JSON.parse(readFileSync(join(root, 'public/curriculum/v1', s.file), 'utf8'));
-  for (const st of sub.stages) for (const u of st.units) for (const l of u.lessons) {
-    const add = (cat: Cat, text: string) => lines.push({ cat, text, world: w.id, subject: s.id, stage: st.stage, lesson: l.id });
-    l.explanation.forEach((x: string) => add('explanation', x));
-    add('story', `${l.story.title}. ${l.story.text}`);
-    for (const it of [...l.activities, ...l.assessment]) {
-      add('prompt', it.prompt);
-      if (it.kind === 'choice') it.options.forEach((o: string) => add('option', o));
-    }
-    l.vocabulary.forEach((v: { term: string; meaning: string }) => add('vocab', `${v.term}. ${v.meaning}`));
-    l.examples.forEach((x: string) => add('example', x));
-    l.thinking.forEach((x: string) => add('thinking', x));
-  }
+for (const f of new Set(readsFiles)) if (!onDisk.has(f)) problems.push(`ivu-reads/clips.json points at a missing file: ${f}`);
+for (const [name, cat] of [['human', human], ['rendered', rendered]] as const) {
+  if (cat) for (const f of new Set(Object.values(cat.clips))) if (!existsSync(join(root, 'public/narration', f))) problems.push(`narration/${name}.json points at a missing file: ${f}`);
 }
-const hit = new Map(lines.map((l) => [l, has(l.text)]));
+const orphans = [...onDisk].filter((f) => !readsFiles.includes(f));
+for (const l of allBuddyLines()) if (l.recorded && resolveNarration(l.text)?.source !== 'recorded') problems.push(`Buddy line "${l.id}" is marked recorded but has no human recording: "${l.text}"`);
+
+// ---- Lines ----
+const lines = collectLines(root);
+const src = new Map<string, 'recorded' | 'rendered' | 'device'>();
+const sourceOf = (t: string) => { let s = src.get(t); if (!s) { s = resolveNarration(t)?.source ?? 'device'; src.set(t, s); } return s; };
 const pct = (a: number, b: number) => (b ? ((100 * a) / b).toFixed(1) + '%' : '—');
-const tally = (ls: Line[]) => { const r = ls.filter((l) => hit.get(l)).length; return [ls.length, r, pct(r, ls.length)] as const; };
-const unique = (ls: Line[]) => new Set(ls.map((l) => speakable(l.text))).size;
-
+const n = (x: number) => x.toLocaleString('en');
+const row = (label: string, ls: NarrationLine[]) => {
+  const h = ls.filter((l) => sourceOf(l.text) === 'recorded').length;
+  const r = ls.filter((l) => sourceOf(l.text) === 'rendered').length;
+  return `| ${label} | ${n(ls.length)} | ${n(h)} (${pct(h, ls.length)}) | ${n(r)} (${pct(r, ls.length)}) | ${pct(ls.length - h - r, ls.length)} |`;
+};
+const HEAD = '| | Lines | Human voice | Rendered voice | Device voice |\n|---|---|---|---|---|';
+const KIND_LABEL: Record<Kind, string> = {
+  buddy: "Buddy's lines", prompt: 'Questions and instructions', explanation: 'Lesson explanations', story: 'Stories',
+  example: 'Examples', vocab: 'Vocabulary', thinking: 'Think & talk questions', option: 'Answer choices',
+};
+const distinct = distinctLines(lines);
+const humanPlan = distinct.filter((l) => l.tier === 'human');
+const humanDone = humanPlan.filter((l) => sourceOf(l.text) === 'recorded').length;
+const words = (ls: { text: string }[]) => ls.reduce((a, l) => a + l.text.split(/\s+/).length, 0);
+const humanTodo = humanPlan.filter((l) => sourceOf(l.text) !== 'recorded');
+const idx = JSON.parse(readFileSync(join(root, 'public/curriculum/v1/index.json'), 'utf8'));
 const buddy = allBuddyLines();
-const bRec = buddy.filter((l) => l.recorded).length;
-const [tN, tR, tP] = tally(lines);
-const missingUnique = unique(lines.filter((l) => !hit.get(l)));
 
-let md = `# Audio coverage report
+const md = `# Audio coverage report
 
-*Generated by \`npm run audit:audio\` from the curriculum and \`public/ivu-reads/clips.json\`. Do not edit by hand.*
+*Generated by \`npm run audit:audio\`. Do not edit by hand.*
 
-"Recorded" means a child hears the IVU Reads human voice for that line (the whole line, or every
-sentence of it). Everything else plays in the device's computer voice, which varies by browser and
-operating system. See [NARRATION.md](NARRATION.md) for the rules.
+What a child hears for each line read aloud, under the hybrid plan in [NARRATION.md](NARRATION.md):
+a **human** recording (IVU Reads or the IVU narrator) if there is one, otherwise the **rendered**
+IVU voice (pre-rendered once by \`npm run narration:render\`), otherwise the **device** voice.
+Counts are per occurrence; the plan section counts distinct lines.
+
+Rendered voice in this report: ${rendered ? `\`${rendered.voice}\`, ${n(Object.keys(rendered.clips).length)} lines` : 'none rendered in this checkout (rendered audio is generated, not committed)'}.
 
 ## Summary
 
-| Measure | Value |
-|---|---|
-| Recordings in the catalogue | ${files.length} (${orphans.length} audio files not referenced) |
-| Buddy's own lines (feedback, celebrations, guidance) | ${bRec} of ${buddy.length} recorded |
-| Curriculum lines read aloud | ${tN.toLocaleString('en')} (${unique(lines).toLocaleString('en')} distinct) |
-| Curriculum lines in the recorded voice | ${tR.toLocaleString('en')} (${tP}) |
-| Distinct curriculum lines still to record | ${missingUnique.toLocaleString('en')} |
-| Catalogue problems | ${problems.length} |
+${HEAD}
+${row('**All lines**', lines)}
+
+## Hybrid plan progress
+
+| Plan | Distinct lines | Words | Done |
+|---|---|---|---|
+| Human voice (Buddy + ages 4–6 questions, explanations, stories) | ${n(humanPlan.length)} | ${n(words(humanPlan))} | ${n(humanDone)} recorded (${pct(humanDone, humanPlan.length)}) |
+| Human recording still to do | ${n(humanTodo.length)} | ${n(words(humanTodo))} (≈${Math.round(words(humanTodo) / 150 / 60 * 10) / 10} h at 150 wpm) | — |
+| Rendered voice (everything else) | ${n(distinct.length - humanPlan.length)} | ${n(words(distinct) - words(humanPlan))} | rendered when \`npm run narration:render\` runs |
+
+IVU Reads recordings: ${readsFiles.length} (${orphans.length} audio files not referenced). IVU narrator recordings: ${human ? Object.keys(human.clips).length : 0}.
 
 ## Buddy's lines
 
-| Line | Used for | Recorded |
+| Line | Used for | Human recording |
 |---|---|---|
-${buddy.map((l) => `| ${l.text.replace(/\|/g, '\\|')} | ${l.use} | ${l.recorded ? 'yes' : '**to record**'} |`).join('\n')}
+${buddy.map((l) => `| ${l.text.replace(/\|/g, '\\|')} | ${l.use} | ${resolveNarration(l.text)?.source === 'recorded' ? 'yes' : '**to record**'} |`).join('\n')}
 
-## Curriculum by kind of line
+## By kind of line
 
-| Kind | Lines | Recorded | Coverage |
-|---|---|---|---|
-${CATS.map(([c, label]) => { const [n, r, p] = tally(lines.filter((l) => l.cat === c)); return `| ${label} | ${n.toLocaleString('en')} | ${r.toLocaleString('en')} | ${p} |`; }).join('\n')}
+${HEAD}
+${(Object.keys(KIND_LABEL) as Kind[]).map((k) => row(KIND_LABEL[k], lines.filter((l) => l.kind === k))).join('\n')}
 
-## Curriculum by world
+## By world
 
-| World | Lines | Recorded | Coverage |
-|---|---|---|---|
-${idx.worlds.map((w: { id: string; title: string }) => { const [n, r, p] = tally(lines.filter((l) => l.world === w.id)); return `| ${w.title} | ${n.toLocaleString('en')} | ${r.toLocaleString('en')} | ${p} |`; }).join('\n')}
+${HEAD}
+${idx.worlds.map((w: { id: string; title: string }) => row(w.title, lines.filter((l) => l.world === w.id))).join('\n')}
 
-## Curriculum by stage
+## By stage
 
-| Stage | Lines | Recorded | Coverage |
-|---|---|---|---|
-${STAGE_ORDER.map((s) => { const [n, r, p] = tally(lines.filter((l) => l.stage === s)); return `| ${idx.stages.find((x: { id: string }) => x.id === s)?.label ?? s} | ${n.toLocaleString('en')} | ${r.toLocaleString('en')} | ${p} |`; }).join('\n')}
-
-## Recording priority
-
-1. Buddy's unrecorded lines (table above) — heard on every visit.
-2. Ages 4–5 and 5–6 prompts and explanations — the youngest children read least.
-3. Stories for ages 4–7.
-4. Everything else by stage, youngest first.
-
-Run \`node scripts/audit-audio-coverage.ts --missing recording-script.csv\` to get every unrecorded
-line in this order, de-duplicated, for a narration session.
+${HEAD}
+${STAGE_ORDER.map((s) => row(idx.stages.find((x: { id: string }) => x.id === s)?.label ?? s, lines.filter((l) => l.stage === s))).join('\n')}
 ${problems.length ? `\n## Problems\n\n${problems.map((p) => `- ${p}`).join('\n')}\n` : ''}`;
 
 writeFileSync(join(root, 'docs/AUDIO_COVERAGE.md'), md);
-console.log(`Audio coverage: Buddy ${bRec}/${buddy.length} recorded; curriculum ${tR}/${tN} lines (${tP}); ${missingUnique} distinct lines to record; ${problems.length} problems.`);
+const all = lines.length, hum = lines.filter((l) => sourceOf(l.text) === 'recorded').length, ren = lines.filter((l) => sourceOf(l.text) === 'rendered').length;
+console.log(`Audio coverage: human ${pct(hum, all)}, rendered ${pct(ren, all)}, device ${pct(all - hum - ren, all)} of ${n(all)} lines; human plan ${humanDone}/${humanPlan.length}; ${problems.length} problems.`);
 
-if (missingOut) {
-  const rank = (l: Line) => STAGE_ORDER.indexOf(l.stage) * 10 + ['prompt', 'explanation', 'story', 'example', 'vocab', 'thinking', 'option'].indexOf(l.cat);
-  const seen = new Set<string>();
-  const rows = [['priority', 'kind', 'stage', 'world', 'subject', 'lesson', 'text']];
-  buddy.filter((l) => !l.recorded).forEach((l) => { seen.add(l.text); rows.push(['0', 'buddy', '', '', '', l.id, l.text]); });
-  for (const l of lines.filter((x) => !hit.get(x)).sort((a, b) => rank(a) - rank(b))) {
-    const t = speakable(l.text);
-    if (seen.has(t)) continue;
-    seen.add(t);
-    rows.push([String(rank(l) + 1), l.cat, l.stage, l.world, l.subject, l.lesson, t]);
-  }
-  writeFileSync(missingOut, rows.map((r) => r.map((c) => `"${c.replace(/"/g, '""')}"`).join(',')).join('\n') + '\n');
-  console.log(`Wrote ${rows.length - 1} lines to ${missingOut}`);
+if (scriptOut) {
+  const pick = distinct.filter((l) => (scriptTier === 'all' || l.tier === scriptTier) && sourceOf(l.text) !== 'recorded');
+  const q = (c: string) => `"${c.replace(/"/g, '""')}"`;
+  const rows = [['id', 'tier', 'kind', 'stages', 'world', 'subject', 'first_used_in', 'text'].join(',')];
+  for (const l of pick) rows.push([l.id, l.tier, l.kind, l.stages.join(' '), l.world, l.subject, l.lesson, l.text].map(q).join(','));
+  writeFileSync(scriptOut, rows.join('\n') + '\n');
+  console.log(`Recording script: ${pick.length} lines (${n(words(pick))} words) → ${scriptOut}`);
 }
 
 if (CHECK && problems.length) { for (const p of problems) console.error('✗ ' + p); process.exit(1); }
-if (!existsSync(join(root, 'docs/NARRATION.md'))) console.warn('note: docs/NARRATION.md is missing');

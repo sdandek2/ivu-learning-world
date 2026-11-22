@@ -115,8 +115,7 @@ decision is needed (§8, D2).
   audio), most natural, slow and costs money; (b) offline neural TTS rendered once at build time
   to MP3 (e.g. an open-source local model), one consistent voice, free, near-instant, not human;
   (c) hybrid: human for Buddy + ages 4–6 prompts/stories, rendered voice for the rest.
-  *Recommendation: (c).* The narrator and catalogue already support any of these with no code
-  change — only `clips.json` grows.
+  **Decided 22 Nov 2026: (c) hybrid.** Implemented in increment 2 (§9b).
 - **D2 — One guide or twelve?** Keep Buddy as the only speaking character and treat world
   guides as Buddy's friends who appear in art only (recommended: one voice, one relationship), or
   give each world guide a voice.
@@ -136,14 +135,26 @@ decision is needed (§8, D2).
 | Narration guidelines (`docs/NARRATION.md`) | Written |
 | Node ≥ 25 test fix | Tested |
 
+## 9b. Increment 2: hybrid narration pipeline
+
+| Change | Level |
+|---|---|
+| Source order human (IVU Reads → IVU narrator) → rendered IVU voice → device voice; passages never mix voices | Implemented, Tested |
+| Line inventory with stable 12-character IDs and the human/rendered plan (`scripts/narration/lines.ts`) | Implemented, Tested |
+| `npm run narration:render`: `say` engine works now, `piper` adapter ready; resumable; 24 kbit/s AAC | Implemented, run on ages 4–5 |
+| `npm run narration:script` / `narration:import`: recording script by ID, import of human takes | Implemented, script exported; import not yet run on real recordings |
+| Rendered audio left out of precache; own persistent cache; Settings → Voice → save a stage offline | Implemented, Seen |
+| Three-way coverage report and on-device counts (human / rendered / device) | Implemented, Tested |
+
 ## 10. Prioritised backlog
 
 1. **Lesson player v2 (Phase 4)** — Buddy-led lesson start (topic intro + spoken instruction),
    child-sized step indicator (icons/dots, no text wizard), lighter Learn step (vocabulary and
    grown-up notes collapsed), consistent replay. Stays on top of the existing items, mastery and
    revision calls.
-2. **D1 narration decision, then first recording tranche** — Buddy's 6 lines, then ages 4–6
-   prompts/explanations/stories from the `--missing` export.
+2. **Narration production.** Pick the rendered engine (Piper neural voice recommended; needs a
+   one-time download), render all stages, then human sessions for Buddy's 6 lines and the
+   2,650-line ages 4–6 script (≈40,500 words).
 3. **Design-system pass (Phase 1)** — extract tokens (colour, type, spacing, radius, shadow,
    motion) and shared components (Button, Card, Bubble, ProgressDots) so world, subject, lesson,
    play and journey pages adopt the owl language without per-page rewrites.

@@ -1,18 +1,19 @@
 /**
  * The IVU narrator — one voice, one queue, for the whole app.
  *
- *  - Recorded first: IVU Reads' human recordings play whenever there is one for the exact text
- *    (or for every sentence of a passage — two voices are never mixed in one passage).
- *  - Computer voice is the explicit fallback (browser speech synthesis), used only when no
- *    recording exists or a recording fails to play.
+ *  - Hybrid voice (src/lib/narrationCatalog.ts): a human recording if one exists, else the
+ *    pre-rendered IVU voice, for the whole line or every sentence of it (never mixed).
+ *  - The device's computer voice (browser speech synthesis) is the explicit last fallback, used
+ *    only when neither exists or the audio file fails to play.
  *  - Only one thing speaks at a time: every new line stops the previous one.
  *  - Pause, resume and replay work for both recorded and synthetic narration.
  *  - Every line spoken is counted as recorded or synthetic; lines that fell back to the computer
  *    voice are kept (bounded, on this device only) so grown-ups can see what still needs recording.
  */
-import { clipsForPassage, loadClips } from './ivuReads.ts';
+import { loadNarration, resolveNarration } from './narrationCatalog.ts';
 
-export type NarrationSource = 'recorded' | 'synth';
+/** recorded = human voice · rendered = pre-rendered IVU voice · synth = this device's voice. */
+export type NarrationSource = 'recorded' | 'rendered' | 'synth';
 export interface NarrationState { status: 'idle' | 'playing' | 'paused'; text: string | null; source: NarrationSource | null }
 export interface SpeakOptions { rate?: number; voiceURI?: string | null; recorded?: boolean; onEnd?: () => void }
 
@@ -22,7 +23,7 @@ let playToken = 0;
 let state: NarrationState = { status: 'idle', text: null, source: null };
 let last: { text: string; opts: SpeakOptions } | null = null;
 const listeners = new Set<(s: NarrationState) => void>();
-if (typeof window !== 'undefined') void loadClips();
+if (typeof window !== 'undefined') void loadNarration();
 
 function setState(s: NarrationState) { state = s; for (const f of listeners) f(s); }
 export function getNarration(): NarrationState { return state; }
@@ -37,17 +38,18 @@ export function speakable(text: string): string {
 
 /** Which source a line would use right now (no sound is played). */
 export function narrationSourceFor(text: string, recorded = true): NarrationSource {
-  return recorded && clipsForPassage(speakable(text)) ? 'recorded' : 'synth';
+  return (recorded && resolveNarration(speakable(text))?.source) || 'synth';
 }
 
 export function speak(text: string, opts: SpeakOptions = {}): void {
   stopSpeaking();
   last = { text, opts };
-  const clips = opts.recorded === false || typeof Audio === 'undefined' ? null : clipsForPassage(speakable(text));
-  if (clips) {
+  const found = opts.recorded === false || typeof Audio === 'undefined' ? null : resolveNarration(speakable(text));
+  if (found) {
+    const clips = found.urls;
     const token = ++playToken;
-    noteCoverage(text, 'recorded');
-    setState({ status: 'playing', text, source: 'recorded' });
+    noteCoverage(text, found.source);
+    setState({ status: 'playing', text, source: found.source });
     const playAt = (i: number) => {
       if (token !== playToken) return; // stopped or replaced
       if (i >= clips.length) { currentAudio = null; setState({ status: 'idle', text: null, source: null }); opts.onEnd?.(); return; }
@@ -121,15 +123,15 @@ export function englishVoices(): SpeechSynthesisVoice[] {
 
 export const NARRATION_COVERAGE_KEY = 'ivu_narration_coverage_v1';
 const MAX_MISSES = 150;
-export interface NarrationCoverage { recorded: number; synth: number; misses: Record<string, number> }
+export interface NarrationCoverage { recorded: number; rendered: number; synth: number; misses: Record<string, number> }
 
 export function readNarrationCoverage(storage: Storage | undefined = globalThis.localStorage): NarrationCoverage {
   try {
     const raw = storage?.getItem(NARRATION_COVERAGE_KEY);
     const c = raw ? (JSON.parse(raw) as NarrationCoverage) : null;
-    if (c && typeof c.recorded === 'number' && typeof c.synth === 'number' && c.misses && typeof c.misses === 'object') return c;
+    if (c && typeof c.recorded === 'number' && typeof c.synth === 'number' && c.misses && typeof c.misses === 'object') return { ...c, rendered: c.rendered ?? 0 };
   } catch { /* ignore */ }
-  return { recorded: 0, synth: 0, misses: {} };
+  return { recorded: 0, rendered: 0, synth: 0, misses: {} };
 }
 
 export function noteCoverage(text: string, source: NarrationSource, storage: Storage | undefined = globalThis.localStorage): void {
@@ -137,6 +139,7 @@ export function noteCoverage(text: string, source: NarrationSource, storage: Sto
   try {
     const c = readNarrationCoverage(storage);
     if (source === 'recorded') c.recorded++;
+    else if (source === 'rendered') c.rendered++;
     else {
       c.synth++;
       const line = speakable(text).slice(0, 160);

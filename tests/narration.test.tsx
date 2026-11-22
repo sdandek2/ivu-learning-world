@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { setClipMap } from '../src/lib/ivuReads.ts';
+import { resolveNarration, setNarrationCatalogs, renderedFilesFor } from '../src/lib/narrationCatalog.ts';
 import { allBuddyLines, BUDDY_LINES, pick } from '../src/lib/buddyLines.ts';
 import {
   speak, stopSpeaking, pauseSpeaking, resumeSpeaking, replaySpeaking, getNarration, narrationSourceFor,
@@ -129,5 +130,38 @@ describe('spoken feedback in activities', () => {
     expect(getNarration().status).toBe('paused');
     fireEvent.click(screen.getByRole('button', { name: /Carry on reading/ }));
     expect(getNarration().status).toBe('playing');
+  });
+});
+
+describe('hybrid narration sources', () => {
+  const human = { source: 'human' as const, voice: 'IVU narrator', clips: { 'Plants need light.': 'human/aaa.m4a', 'They grow tall.': 'human/bbb.m4a' } };
+  const rendered = {
+    source: 'rendered' as const, voice: 'say:Tara@165/aac24',
+    clips: { 'Plants need light.': 'rendered/r1.m4a', 'Water helps too.': 'rendered/r2.m4a', 'They grow tall.': 'rendered/r3.m4a', 'Hi, explorer!': 'rendered/r4.m4a' },
+    stageFiles: { s4: ['rendered/r1.m4a', 'rendered/r2.m4a'], s5: ['rendered/r3.m4a'], all: ['rendered/r4.m4a'] },
+  };
+  beforeEach(() => { setClipMap({ 'p:Wow!': 'audio/w.mp3' }); setNarrationCatalogs(human, rendered); });
+  afterEach(() => { setClipMap(null); setNarrationCatalogs(null, null); });
+
+  it('prefers IVU Reads, then the IVU narrator, then the rendered voice', () => {
+    expect(resolveNarration('Wow!')).toEqual({ urls: ['./ivu-reads/audio/w.mp3'], source: 'recorded' });
+    expect(resolveNarration('Plants need light.')).toEqual({ urls: ['./narration/human/aaa.m4a'], source: 'recorded' });
+    expect(resolveNarration('Water helps too.')).toEqual({ urls: ['./narration/rendered/r2.m4a'], source: 'rendered' });
+    expect(resolveNarration('Never heard of this.')).toBeNull();
+  });
+  it('plays a passage sentence by sentence from one source, never mixing voices', () => {
+    expect(resolveNarration('Plants need light. They grow tall.')?.source).toBe('recorded');
+    // One sentence only rendered → the whole passage uses the rendered voice, not a mix.
+    expect(resolveNarration('Plants need light. Water helps too.')).toEqual({ urls: ['./narration/rendered/r1.m4a', './narration/rendered/r2.m4a'], source: 'rendered' });
+  });
+  it('lists the files to save offline per stage, always including Buddy', () => {
+    expect(renderedFilesFor(['s4']).sort()).toEqual(['./narration/rendered/r1.m4a', './narration/rendered/r2.m4a', './narration/rendered/r4.m4a']);
+  });
+  it('the narrator plays rendered audio and counts it separately', () => {
+    vi.stubGlobal('Audio', FakeAudio); FakeAudio.played = []; localStorage.clear();
+    speak('Water helps too.');
+    expect(getNarration().source).toBe('rendered');
+    expect(readNarrationCoverage()).toMatchObject({ recorded: 0, rendered: 1, synth: 0 });
+    stopSpeaking(); vi.unstubAllGlobals();
   });
 });

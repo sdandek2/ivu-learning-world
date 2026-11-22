@@ -3,3 +3,8 @@ dist
 *.log
 .DS_Store
 coverage
+
+# Generated narration (npm run narration:render) — large, rebuilt from the curriculum
+public/narration/rendered/
+public/narration/rendered.json
+recording-script.csv
