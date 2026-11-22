@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['Why is a perfectly stiff building not ideal?', 'Who should pay for retrofitting old buildings?'],
           k: ['Explain base isolation using a model or demonstration.'],
-          m: ['🧪 Shake Table Challenge', 'a tray on marbles or rubber balls, card, straws, clay', 'Build a small tower | Shake the tray to simulate an earthquake | Add bracing, a wider base or isolation pads | Compare performance and record results'],
+          m: ['🧪 Shake Table Challenge', 'a tray on marbles or rubber balls, card, straws, clay', 'Build a small tower | Shake the tray to simulate an earthquake | Add bracing, a wider base or isolation pads | Compare performance and record results', "Use large, sturdy balls that cannot be swallowed and keep the tray on a stable surface. An adult should supervise; keep the setup away from stairs and edges."],
           q: [
             ch('Relating to earthquakes is…', '*seismic|scenic|solar'),
             tf('Symmetrical shapes help earthquake resistance.', true),
