@@ -556,3 +556,8 @@ body {
   .island__art,.bob,.loading__dot { animation: none !important; }
   *,*::before,*::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+.home-grownups { display:flex; justify-content:space-between; align-items:center; gap:16px; max-width:1180px; margin:28px auto 4px; padding:14px 4px; color:#7b817c; font-size:.82rem; }
+.home-grownups__link { border:0; background:transparent; color:#536a70; font:800 .82rem var(--font-body); padding:10px 12px; border-radius:999px; }
+.home-grownups__link:hover { background:rgba(65,91,98,.08); }
+@media(max-width:520px) { .home-grownups { padding:12px 2px; } }
