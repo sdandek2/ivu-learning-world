@@ -366,7 +366,7 @@ export default subject({
           ],
           t: ['Should some jobs never be automated?', 'How can society share the benefits of automation fairly?'],
           k: ['Debate the motion: "Automation will create more good jobs than it destroys."'],
-          m: ['Automation Impact Report', 'economic data, interviews, scholarly sources', 'Choose an industry in India | Research how automation has changed it | Interview a worker if possible (with consent) | Write a 2000-word report with recommendations'],
+          m: ['Automation Impact Report', 'economic data, interviews, scholarly sources', 'Choose an industry in India | Research how automation has changed it | Interview a worker if possible (with consent) | Write a 2000-word report with recommendations', "Obtain consent before interviewing a worker, explain the purpose, and allow them to decline or remain anonymous. Do not share workplace-confidential or identifying information."],
           q: [
             ch('Output per worker or hour is…', '*productivity|profit|population'),
             tf('Ford\'s moving assembly line began in 1913.', true),
