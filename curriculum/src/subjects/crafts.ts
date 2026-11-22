@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['What else can you make by tearing paper?', 'Why should scissors only cut paper?'],
           k: ['Show a grown-up how to hold and carry scissors safely.'],
-          m: ['Torn Paper Garden', 'coloured paper, safety scissors, glue stick, card', 'Tear green strips for grass | Cut a circle for the sun | Glue everything onto card | Tell someone about your garden'],
+          m: ['Torn Paper Garden', 'coloured paper, safety scissors, glue stick, card', 'Tear green strips for grass | Cut a circle for the sun | Glue everything onto card | Tell someone about your garden', "Use child-safe scissors with adult supervision and non-toxic glue. Adults should handle any sharp tools."],
           q: [
             ch('Rounded-tip scissors are called…', '*safety scissors|garden shears|knives'),
             tf('We cut away from our fingers.', true),
@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why should you press creases firmly?', 'What would happen if your boat was made of tissue paper?'],
           k: ['Teach someone how to make a valley fold and a mountain fold.'],
-          m: ['🧪 Paper Boat Float Test', 'rectangular paper, a tub of water', 'Fold a paper boat step by step | Float it in a tub of water | Time how long it floats | Try a different paper and compare'],
+          m: ['🧪 Paper Boat Float Test', 'rectangular paper, a tub of water', 'Fold a paper boat step by step | Float it in a tub of water | Time how long it floats | Try a different paper and compare', "Use a shallow tub and supervise children around water. Empty the tub immediately afterwards and wipe up spills."],
           q: [
             ch('A fold away from you is a…', '*mountain fold|valley fold|cut'),
             tf('Lining up edges helps neat folding.', true),
@@ -275,7 +275,7 @@ export default subject({
           ],
           t: ['Why was khadi a powerful symbol?', 'What are the pros and cons of synthetic fibres?'],
           k: ['Explain the journey from fibre to fabric with samples.'],
-          m: ['🧪 Fibre Investigation', 'samples of cotton, wool, silk and polyester fabric, magnifier, water', 'Examine each fabric with a magnifier | Test how quickly a drop of water absorbs | Compare warmth and stretch | Record results in a table'],
+          m: ['🧪 Fibre Investigation', 'samples of cotton, wool, silk and polyester fabric, magnifier, water', 'Examine each fabric with a magnifier | Test how quickly a drop of water absorbs | Compare warmth and stretch | Record results in a table', "Use clean fabric samples and a small amount of water. Do not taste materials; wash hands after handling samples."],
           q: [
             ch('Spun fibres ready for weaving are…', '*yarn|dye|fibreglass'),
             tf('Indigo is a natural dye.', true),
