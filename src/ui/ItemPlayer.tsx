@@ -46,7 +46,7 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
   const lessonFeedback = useMemo(() => selectTeachingContext(item, teachingContext), [item, teachingContext]);
   const hintCopy: Partial<Record<Item['kind'], string>> = { choice: 'Look at each answer carefully. Which one matches what Buddy taught you?', order: 'Think about what happens first. Build the sequence one step at a time.', match: 'Look for a connection between the two things. Say each pair aloud.', count: 'Touch each picture once as you count. Keep track as you go.', classify: 'Think about what the items in each group have in common.' };
   const canHint = allowHints && item.kind !== 'truefalse';
-  const showHintButton = canHint && !usedHint && (ageBand === 'early' || wrong > 0);
+  const showHintButton = canHint && (usedHint || ageBand === 'early' || wrong > 0);
 
   return (
     <div className={cx('item', `item--${ageBand}`)} data-kind={item.kind} data-age-band={ageBand}>
@@ -69,7 +69,7 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
       {finished === null && wrong > 0 && <p className="item__nudge" role="status">Not quite — try again! {allowHints && !usedHint && item.kind !== 'truefalse' && item.kind !== 'match' ? 'You can ask for a hint.' : ''}</p>}
       {finished === null && showHintButton && (
         <div className="item__hint-wrap">
-          <button className="btn btn--ghost item__hint" onClick={hint}>💡 {ageBand === 'early' ? 'Let Buddy help' : 'Ask Buddy for a hint'}</button>
+          {!usedHint && <button className="btn btn--ghost item__hint" onClick={hint}>💡 {ageBand === 'early' ? 'Let Buddy help' : 'Ask Buddy for a hint'}</button>}
           {usedHint && hintCopy[item.kind] && <p className="item__hint-copy" role="status">{hintCopy[item.kind]}</p>}
         </div>
       )}
