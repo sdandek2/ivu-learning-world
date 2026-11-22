@@ -151,7 +151,7 @@ export default subject({
           ],
           t: ['How could you find directions without a compass?', 'Why do maps usually put north at the top?'],
           k: ['Stand outside and point to north, south, east and west, explaining how you know.'],
-          m: ['🧪 Make a Compass', 'a needle, a magnet, a cork slice or leaf, a bowl of water', 'Stroke a needle with a magnet 30 times in one direction (adult help) | Float it on a cork in water | Watch it turn to point north–south | Check with the sunrise or a real compass'],
+          m: ['🧪 Make a Compass', 'a needle, a magnet, a cork slice or leaf, a bowl of water', 'Stroke a needle with a magnet 30 times in one direction (adult help) | Float it on a cork in water | Watch it turn to point north–south | Check with the sunrise or a real compass', "An adult must handle the sharp needle and magnetise it. Keep the needle pointed away from people, do not touch the point, and store it safely after the activity."],
           q: [
             ch('The Sun sets in the…', 'east|*west|south'),
             ch('Opposite of north:', '*south|east|west'),
@@ -181,7 +181,7 @@ export default subject({
           ],
           t: ['Why do you think countries are divided into states?', 'What can you learn about a state from a map?'],
           k: ['Point to your state on a map of India and name its capital and two neighbouring states.'],
-          m: ['India Puzzle Map', 'a printed outline map of India with states, card, scissors, glue', 'Stick the map on card | Colour and label states | Cut along state borders to make a puzzle | Put it together, naming states and capitals'],
+          m: ['India Puzzle Map', 'a printed outline map of India with states, card, scissors, glue', 'Stick the map on card | Colour and label states | Cut along state borders to make a puzzle | Put it together, naming states and capitals', "Use child-safe scissors with adult supervision. Adults should handle any sharp cutting tools and keep small cut-out pieces away from younger children."],
           q: [
             ch('A book of maps is an…', '*atlas|album|almanac only'),
             ch('Nepal is to the ___ of India.', '*north|south|west'),
