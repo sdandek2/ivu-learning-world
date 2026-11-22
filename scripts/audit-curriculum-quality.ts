@@ -16,7 +16,8 @@ import type { RawItem, RawSubject, RawLesson } from '../curriculum/src/dsl.ts';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sourceDir = join(root, 'curriculum/src/subjects');
 const stageOrder = ['s4', 's5', 's6', 's7', 's9', 's12'] as const;
-const SAFETY_RISK = /\b(coin battery|button cell|batter(?:y|ies)|wall socket|mains power|plug|live wire|hot water|boiling|flame|fire|knife|needle|scissors?|cut in half|cut out|carve|split pin|pins?|pinholes?|sharp tool|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|marbles?|pebbles?)\b/i;
+const SAFETY_RISK = /\b(wall socket|mains power|live wire|hot water|boiling|flame|fire|knife|needle|scissors?|cut in half|cut out|split pin|pins?|pinholes?|sharp tool|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|marbles?|pebbles?)\b/i;
+const BATTERY_RISK = /\b(coin battery|button cell|battery pack|batter(?:y|ies))\b/i;
 const PRIVACY_RISK = /\b(full address|family photos|family tree|recording device|interview|survey|personal details|travel log|electricity bill)\b/i;
 
 type Finding = {
@@ -95,7 +96,9 @@ async function main() {
             if (assessments.length >= 3 && kindCount(assessments) === 1) {
               add('assessment-variety', `All ${assessments.length} assessment items use the same interaction type (${assessments[0].kind}). Consider another way to demonstrate understanding.`);
             }
-            const safetyMatch = projectText.match(SAFETY_RISK);
+            const batteryInMaterials = BATTERY_RISK.test(projectMaterials);
+            const batteryHandlingInSteps = BATTERY_RISK.test(projectSteps) && /\b(connect|install|attach|insert|remove|wire|test|measure|build|circuit|switch)\b/i.test(projectSteps);
+            const safetyMatch = projectText.match(SAFETY_RISK) ?? ((batteryInMaterials || batteryHandlingInSteps) ? projectText.match(BATTERY_RISK) : null);
             if (safetyMatch && !projectSafety) {
               add('project-safety', 'Project mentions "' + safetyMatch[0] + '" but has no explicit safety guidance. Add age-appropriate adult-supervision and handling instructions.');
             }
