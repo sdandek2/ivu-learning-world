@@ -48,7 +48,10 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
   return (
     <div className="item" data-kind={item.kind}>
       <div className="item__prompt">
-        <p className="item__text">{item.kind === 'count' && (item.prompt.match(EMOJI)?.length ?? 0) > 1 ? item.prompt.replace(EMOJI, '').trim() : item.prompt}</p>
+        <div className="item__prompt-copy">
+          <span className="item__kind">{({ choice: 'PICK AN ANSWER', truefalse: 'TRUE OR FALSE', order: 'PUT IN ORDER', match: 'FIND THE PAIRS', count: 'COUNT TOGETHER' })[item.kind]}</span>
+          <p className="item__text">{item.kind === 'count' && (item.prompt.match(EMOJI)?.length ?? 0) > 1 ? item.prompt.replace(EMOJI, '').trim() : item.prompt}</p>
+        </div>
         <SpeakButton text={item.prompt} auto small />
       </div>
       <div key={shake} className={cx('item__body', shake > 0 && finished === null && 'shake')}>
@@ -61,7 +64,7 @@ export function ItemPlayer({ item, onDone, allowHints = true, seed, teachingCont
 
       {finished === null && wrong > 0 && <p className="item__nudge" role="status">Not quite — try again! {allowHints && !usedHint && item.kind !== 'truefalse' && item.kind !== 'match' ? 'You can ask for a hint.' : ''}</p>}
       {finished === null && allowHints && !usedHint && (item.kind === 'choice' || item.kind === 'order' || item.kind === 'count') && (
-        <button className="btn btn--ghost item__hint" onClick={hint}>💡 Hint</button>
+        <button className="btn btn--ghost item__hint" onClick={hint}>💡 Ask Buddy for a hint</button>
       )}
 
       {finished !== null && (
