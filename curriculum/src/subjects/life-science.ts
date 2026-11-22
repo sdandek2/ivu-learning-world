@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['What would happen to the tigers if all the grass disappeared?', 'Why do food chains almost always start with plants?'],
           k: ['Tell someone a food chain from the sea or forest and explain what the arrows mean.'],
-          m: ['Food Chain Paper Links', 'paper strips, glue or stapler, pens', 'Write a living thing on each strip (start with a plant) | Link strips into a chain in order | Make two different chains | Join them where an animal appears in both to make a mini food web'],
+          m: ['Food Chain Paper Links', 'paper strips, glue or stapler, pens', 'Write a living thing on each strip (start with a plant) | Link strips into a chain in order | Make two different chains | Join them where an animal appears in both to make a mini food web', "An adult should operate the stapler and check that staples are fully closed. Use glue as a safer alternative for younger children; keep loose staples away."],
           q: [
             ch('A deer is a…', '*herbivore|carnivore|producer'),
             od('Order', 'leaves|caterpillar|bird'),
