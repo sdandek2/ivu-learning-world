@@ -81,6 +81,13 @@ jobs:
       - name: Build production application
         run: npm run build
 
+      - name: Check generated curriculum files are committed and up to date
+        run: |
+          if ! git diff --exit-code --stat -- public/curriculum curriculum/MANIFEST.json docs/CURRICULUM_MANIFEST.md; then
+            echo "::error::Generated curriculum files are out of date. Run 'npm run build' locally and commit the changes."
+            exit 1
+          fi
+
       - name: Install Playwright for browser smoke test
         run: npm install --no-save --package-lock=false playwright
 

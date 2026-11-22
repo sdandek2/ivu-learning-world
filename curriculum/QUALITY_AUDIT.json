@@ -1,0 +1,470 @@
+{
+  "reportVersion": 2,
+  "method": "Deterministic structural and coverage screen. Metrics such as word counts are descriptive, not quality thresholds. Findings are human-review prompts, not expert judgments or factuality certification.",
+  "totals": {
+    "subjects": 60,
+    "lessons": 730,
+    "interactiveItems": 5111,
+    "findings": 0,
+    "findingsByCode": {},
+    "itemSpecificFeedbackCoveragePercent": 1,
+    "lessonsWithoutItemSpecificRationale": 680,
+    "lessonContextFallbackCoveragePercent": 100
+  },
+  "stages": {
+    "s4": {
+      "lessons": 123,
+      "averageExplanationWords": 72,
+      "minExplanationWords": 49,
+      "averageStoryWords": 48,
+      "minStoryWords": 33,
+      "interactiveItems": 862,
+      "itemsWithItemSpecificRationale": 10,
+      "itemSpecificFeedbackCoveragePercent": 1,
+      "lessonsWithItemSpecificRationale": 8,
+      "lessonsWithoutItemSpecificRationale": 115,
+      "lessonContextFallbackCoveragePercent": 100
+    },
+    "s5": {
+      "lessons": 121,
+      "averageExplanationWords": 75,
+      "minExplanationWords": 49,
+      "averageStoryWords": 48,
+      "minStoryWords": 34,
+      "interactiveItems": 847,
+      "itemsWithItemSpecificRationale": 6,
+      "itemSpecificFeedbackCoveragePercent": 1,
+      "lessonsWithItemSpecificRationale": 5,
+      "lessonsWithoutItemSpecificRationale": 116,
+      "lessonContextFallbackCoveragePercent": 100
+    },
+    "s6": {
+      "lessons": 121,
+      "averageExplanationWords": 83,
+      "minExplanationWords": 48,
+      "averageStoryWords": 49,
+      "minStoryWords": 38,
+      "interactiveItems": 847,
+      "itemsWithItemSpecificRationale": 7,
+      "itemSpecificFeedbackCoveragePercent": 1,
+      "lessonsWithItemSpecificRationale": 7,
+      "lessonsWithoutItemSpecificRationale": 114,
+      "lessonContextFallbackCoveragePercent": 100
+    },
+    "s7": {
+      "lessons": 123,
+      "averageExplanationWords": 88,
+      "minExplanationWords": 54,
+      "averageStoryWords": 48,
+      "minStoryWords": 35,
+      "interactiveItems": 861,
+      "itemsWithItemSpecificRationale": 15,
+      "itemSpecificFeedbackCoveragePercent": 2,
+      "lessonsWithItemSpecificRationale": 12,
+      "lessonsWithoutItemSpecificRationale": 111,
+      "lessonContextFallbackCoveragePercent": 100
+    },
+    "s9": {
+      "lessons": 122,
+      "averageExplanationWords": 91,
+      "minExplanationWords": 58,
+      "averageStoryWords": 48,
+      "minStoryWords": 37,
+      "interactiveItems": 854,
+      "itemsWithItemSpecificRationale": 9,
+      "itemSpecificFeedbackCoveragePercent": 1,
+      "lessonsWithItemSpecificRationale": 8,
+      "lessonsWithoutItemSpecificRationale": 114,
+      "lessonContextFallbackCoveragePercent": 100
+    },
+    "s12": {
+      "lessons": 120,
+      "averageExplanationWords": 97,
+      "minExplanationWords": 62,
+      "averageStoryWords": 49,
+      "minStoryWords": 35,
+      "interactiveItems": 840,
+      "itemsWithItemSpecificRationale": 10,
+      "itemSpecificFeedbackCoveragePercent": 1,
+      "lessonsWithItemSpecificRationale": 10,
+      "lessonsWithoutItemSpecificRationale": 110,
+      "lessonContextFallbackCoveragePercent": 100
+    }
+  },
+  "overall": {
+    "lessons": 730,
+    "averageExplanationWords": 84,
+    "minExplanationWords": 48,
+    "averageStoryWords": 48,
+    "minStoryWords": 33,
+    "interactiveItems": 5111,
+    "itemsWithItemSpecificRationale": 57,
+    "itemSpecificFeedbackCoveragePercent": 1,
+    "lessonsWithItemSpecificRationale": 50,
+    "lessonsWithoutItemSpecificRationale": 680,
+    "lessonContextFallbackCoveragePercent": 100
+  },
+  "subjects": [
+    {
+      "subject": "phonics",
+      "lessons": 13,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "4% of interactive items"
+    },
+    {
+      "subject": "writing",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "1% of interactive items"
+    },
+    {
+      "subject": "vocabulary",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "stories",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "speaking",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "number-sense",
+      "lessons": 13,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "15% of interactive items"
+    },
+    {
+      "subject": "operations",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "11% of interactive items"
+    },
+    {
+      "subject": "shapes",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "4% of interactive items"
+    },
+    {
+      "subject": "measurement",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "5% of interactive items"
+    },
+    {
+      "subject": "patterns",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "7% of interactive items"
+    },
+    {
+      "subject": "life-science",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "4% of interactive items"
+    },
+    {
+      "subject": "forces",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "2% of interactive items"
+    },
+    {
+      "subject": "materials",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "1% of interactive items"
+    },
+    {
+      "subject": "earth",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "space",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "5% of interactive items"
+    },
+    {
+      "subject": "plants",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "1% of interactive items"
+    },
+    {
+      "subject": "animals",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "1% of interactive items"
+    },
+    {
+      "subject": "ecosystems",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "water",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "conservation",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "body",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "1% of interactive items"
+    },
+    {
+      "subject": "senses",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "nutrition",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "hygiene-safety",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "1% of interactive items"
+    },
+    {
+      "subject": "fitness",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "feelings",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "friendship",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "values",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "mindfulness",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "life-skills",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "geography",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "1% of interactive items"
+    },
+    {
+      "subject": "communities",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "cultures",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "money",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "civics",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "historical-thinking",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "early-humans",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "1% of interactive items"
+    },
+    {
+      "subject": "indian-history",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "world-history",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "inventions",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "ramayana",
+      "lessons": 16,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "mahabharata",
+      "lessons": 15,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "gita",
+      "lessons": 13,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "folk-tales",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "world-traditions",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "art",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "music",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "dance",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "crafts",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "drama",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "coding",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "engineering",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "machines",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "electricity",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "digital",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "logic",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "puzzles",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "philosophy",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "study-skills",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    },
+    {
+      "subject": "languages",
+      "lessons": 12,
+      "reviewFindings": 0,
+      "itemSpecificFeedbackCoverage": "0% of interactive items"
+    }
+  ],
+  "findings": []
+}
