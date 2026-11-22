@@ -148,6 +148,7 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
 function StoryStep({ title, text, ageBand, onNext }: { title: string; text: string; ageBand: AgeBand; onNext: () => void }) {
   const [showText, setShowText] = useState(ageBand !== 'early');
   const [listened, setListened] = useState(false);
+  const [recallOpen, setRecallOpen] = useState(false);
   return (
     <section className={cx('card storycard', 'storycard--listening', !showText && 'storycard--listen-first')} data-age-band={ageBand}>
       <h2>📖 {title}</h2>
@@ -158,6 +159,15 @@ function StoryStep({ title, text, ageBand, onNext }: { title: string; text: stri
       </button>
       {showText && <p className="storycard__text">{text}</p>}
       {!showText && <p className="storycard__listen-hint" role="status">You can listen again or reveal the words whenever you’re ready.</p>}
+      <button type="button" className="btn btn--ghost" onClick={() => { setListened(true); setRecallOpen((v) => !v); }} aria-expanded={recallOpen}>{recallOpen ? 'Hide listening reflection' : 'I’ve listened — let’s remember'}</button>
+      {recallOpen && (
+        <div className="storycard__recall" aria-live="polite">
+          <h3>{ageBand === 'early' ? 'Tell Buddy what you remember' : 'Pause and recall'}</h3>
+          <p>What happened in the story?</p>
+          <p>Can you remember one detail, character or event?</p>
+          <p className="storycard__listen-hint">There is no score here. Retell it in your own words, and look back at the story if you need help.</p>
+        </div>
+      )}
       <button className="btn btn--primary btn--big" onClick={onNext}>Let’s play →</button>
     </section>
   );
