@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['Why do you think the root grows first?', 'What would happen to a seed kept in a dry box?'],
           k: ['Show a grown-up your seed pot and explain what you will do to help it grow.'],
-          m: ['🧪 Bean in a Jar', 'a clear jar, paper towel, water, 2–3 mung or rajma beans', 'Line the jar with damp paper towel | Push beans between the towel and glass | Keep the towel damp and the jar in light | Draw what you see every day for a week'],
+          m: ['🧪 Bean in a Jar', 'a clear jar, paper towel, water, 2–3 mung or rajma beans', 'Line the jar with damp paper towel | Push beans between the towel and glass | Keep the towel damp and the jar in light | Draw what you see every day for a week', "Use a sturdy plastic jar rather than glass. Do not eat raw seeds from the experiment; wash hands after handling soil, seeds and water."],
           q: [
             ch('The first green part that grows up is the…', '*shoot|root|seed'),
             tf('Too much water can harm a plant.', true),
@@ -56,7 +56,7 @@ export default subject({
           ],
           t: ['Why should we be gentle with bees?', 'Is a weed a bad plant? What do you think?'],
           k: ['Tell a grown-up which garden helper you like best and why.'],
-          m: ['Bug Hotel', 'a plastic bottle cut in half or a small box, sticks, dry leaves, pine cones, bamboo pieces', 'Fill the container with sticks, leaves and hollow stems | Place it in a quiet corner of the garden or balcony | Check it gently every few days | Draw any creatures that move in'],
+          m: ['Bug Hotel', 'a plastic bottle cut in half or a small box, sticks, dry leaves, pine cones, bamboo pieces', 'Fill the container with sticks, leaves and hollow stems | Place it in a quiet corner of the garden or balcony | Check it gently every few days | Draw any creatures that move in', "An adult must cut the bottle and cover sharp edges. Use clean natural materials, avoid sharp sticks, and observe insects without touching or disturbing them."],
           q: [
             ch('Which creature carries pollen?', '*🐝|🐌|🐟'),
             ch('Pulling out weeds helps plants get more…', '*water and space|music|toys'),
@@ -181,7 +181,7 @@ export default subject({
           ],
           t: ['Which method do you think spreads seeds the furthest?', 'How might humans spread seeds without meaning to?'],
           k: ['Show someone a seed and explain how you think it travels, based on its shape.'],
-          m: ['🧪 Paper Helicopter Seeds', 'paper, scissors, paper clips, a stopwatch', 'Make paper "helicopter seeds" with different wing lengths | Drop each from the same height | Time how long they take to fall and how far they drift | Explain which design would spread seeds best'],
+          m: ['🧪 Paper Helicopter Seeds', 'paper, scissors, paper clips, a stopwatch', 'Make paper "helicopter seeds" with different wing lengths | Drop each from the same height | Time how long they take to fall and how far they drift | Explain which design would spread seeds best', "Use child-safe scissors with adult supervision. Keep paper clips away from mouths and eyes; an adult should check that clips are secure."],
           q: [
             ch('A fluffy parachute seed travels by…', '*wind|water|bursting'),
             ch('Hooked seeds stick to…', '*animal fur|water|rocks'),
