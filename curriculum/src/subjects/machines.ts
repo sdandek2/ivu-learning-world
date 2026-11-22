@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['If three gears are in a row, which way does the third turn?', 'Why do clocks need gears?'],
           k: ['Show how two gears turn using cardboard gears.'],
-          m: ['🧪 Cardboard Gears', 'corrugated cardboard, pins, a board (with an adult)', 'Cut circles and add teeth with cardboard strips | Pin them on a board so they mesh | Turn one and watch the others | Mark directions and count turns'],
+          m: ['🧪 Cardboard Gears', 'corrugated cardboard, pins, a board (with an adult)', 'Cut circles and add teeth with cardboard strips | Pin them on a board so they mesh | Turn one and watch the others | Mark directions and count turns', "An adult should prepare the board and secure the pins. Keep sharp pin points covered and use child-safe scissors with supervision."],
           q: [
             ch('When gear teeth fit together they…', '*mesh|melt|mix'),
             tf('A chain connects bicycle gears.', true),
@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['Are electric vehicles always cleaner? What does it depend on?', 'How did steam engines change society?'],
           k: ['Explain the four-stroke cycle with a diagram.'],
-          m: ['🧪 Build a Simple Motor', 'a battery, copper wire, a magnet, safety pins (with an adult)', 'Wind a coil of wire and strip the ends | Support it on safety pins attached to a battery | Place a magnet underneath | Observe and explain why it spins'],
+          m: ['🧪 Build a Simple Motor', 'a battery, copper wire, a magnet, safety pins (with an adult)', 'Wind a coil of wire and strip the ends | Support it on safety pins attached to a battery | Place a magnet underneath | Observe and explain why it spins', "An adult must assemble and supervise the battery circuit. Use only a low-voltage battery, disconnect it between tests, and stop if the wire or battery becomes warm. Never connect to a wall socket."],
           q: [
             ch('Burning is…', '*combustion|condensation|conduction'),
             tf('James Watt improved the steam engine.', true),
