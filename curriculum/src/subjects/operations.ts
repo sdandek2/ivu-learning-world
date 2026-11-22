@@ -153,7 +153,7 @@ export default subject({
           k: ['Explain how you would add 45 + 33 to someone, using the words "tens" and "ones".'],
           m: ['Shop and Add', 'pretend price tags, play money (₹10 notes and ₹1 coins)', 'Label toys with prices between ₹11 and ₹49 | Pick two items | Pay using tens and ones | Write the addition and check your total'],
           q: [
-            ch('52 + 36 = ?', '78|*88|98'),
+            tf('52 + 36 = 88.', true, 'Add tens and ones: 52 + 36 = 88.'),
             ch('39 + 4 = ?', '42|*43|44'),
             ch('60 + 20 = ?', '62|*80|8'),
           ],
@@ -217,7 +217,7 @@ export default subject({
           q: [
             ch('35 ÷ 5 = ?', '6|*7|8'),
             ch('9 × 6 = ?', '45|*54|56'),
-            ch('A class of 26 in teams of 4 makes…', '6 teams exactly|*6 teams with 2 left over|7 teams exactly'),
+            tf('26 students in teams of 4 make 6 full teams with 2 students left over.', true, '4 × 6 = 24, so 2 students remain after making 6 full teams.'),
           ],
           ms: ['Recalls multiplication facts to 10 × 10', 'Solves sharing and grouping divisions', 'Interprets remainders in context'],
         }),
@@ -244,8 +244,8 @@ export default subject({
           k: ['Teach someone column subtraction for 72 − 38, explaining the exchange step.'],
           m: ['Base-Ten Bank', 'paper strips (hundreds), sticks (tens), dots or beans (ones)', 'Make paper "base ten" pieces | Model 342 − 167 with the pieces, exchanging physically | Write the column method alongside | Check with addition'],
           q: [
-            ch('91 − 46 = ?', '55|*45|35'),
-            ch('Check for 120 − 75 = 45:', '*45 + 75 = 120|45 − 75|120 + 45'),
+            ct('91 − 46 = ?', 45, 'Exchange one ten: 91 − 46 = 45.'),
+            tf('45 + 75 = 120 is a correct check for 120 − 75 = 45.', true, 'Addition reverses subtraction: 45 + 75 = 120.'),
             ch('346 − 129 = ?', '227|*217|223'),
           ],
           ms: ['Uses column subtraction with exchanging accurately', 'Explains exchanging with place value language', 'Checks answers with inverse operations'],
@@ -277,7 +277,7 @@ export default subject({
           k: ['Explain to someone why 8 − 2 × 3 is not 18.'],
           m: ['Four Fours Challenge', 'paper, pencil', 'Use exactly four 4s and any operations and brackets | Make expressions for every number from 0 to 10 (e.g. 4 ÷ 4 + 4 ÷ 4 = 2) | Record each one | Find the hardest number and share your solution'],
           q: [
-            ch('5 × (2 + 3) = ?', '13|*25|30'),
+            tf('5 × (2 + 3) = 25.', true, 'Calculate the brackets first: 2 + 3 = 5, then 5 × 5 = 25.'),
             ch('18 − 6 ÷ 3 = ?', '4|*16|12'),
             ch('2² + 3 × 2 = ?', '*10|14|16'),
           ],
@@ -308,7 +308,7 @@ export default subject({
           q: [
             ch('⅖ + ⅕ = ?', '3/10|*⅗|⅖'),
             ch('⅔ × ¾ = ?', '*½|6/7|5/12'),
-            ch('Common denominator of ¼ and ⅙?', '10|*12|24'),
+            ct('Common denominator of ¼ and ⅙?', 12, '12 is the least common multiple of 4 and 6.'),
           ],
           ms: ['Adds and subtracts fractions with unlike denominators', 'Multiplies fractions and simplifies', 'Explains procedures with models'],
         }),
@@ -331,7 +331,7 @@ export default subject({
           x: ['−7 + 10 = 3.', '(−6) × 5 = −30.'],
           s: ['Brahmagupta\'s Fortunes and Debts', 'Over 1,300 years ago, the mathematician Brahmagupta described numbers as "fortunes" and "debts". A debt minus zero is a debt; a fortune minus a debt becomes a bigger fortune. Students who imagine owing and being owed money often find his rules surprisingly natural.'],
           a: [
-            ch('−4 + 9 = ?', '−13|*5|−5'),
+            ct('−4 + 9 = ?', 5, 'Starting at −4 and moving 9 steps right lands on 5.'),
             ch('6 − (−2) = ?', '4|*8|−8'),
             ch('(−5) × (−3) = ?', '−15|*15|−8'),
             ch('(−20) ÷ 4 = ?', '5|*−5|−80'),
@@ -370,7 +370,7 @@ export default subject({
           m: ['Area Model Investigation', 'squared paper, colours', 'Draw a rectangle for 23 × 14 split into 20 + 3 and 10 + 4 | Find the four partial areas | Repeat for (x + 3)(x + 2) | Write a short explanation linking arithmetic and algebra'],
           q: [
             ch('Expand 3(2x − 1)', '*6x − 3|6x − 1|5x − 3'),
-            ch('15 × 12 = 15 × 10 + 15 × 2 = ?', '170|*180|190'),
+            tf('15 × 12 = 180.', true, 'Distribute 15: 15 × 10 + 15 × 2 = 150 + 30 = 180.'),
             ch('Factorise 10a − 25', '*5(2a − 5)|10(a − 25)|5(2a − 25)'),
           ],
           ms: ['Applies the distributive law for mental calculation', 'Expands and factorises linear expressions', 'Explains the law with area models'],
