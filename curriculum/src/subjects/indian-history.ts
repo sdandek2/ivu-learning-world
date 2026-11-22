@@ -348,7 +348,7 @@ export default subject({
           ],
           t: ['Why is it important to hear Partition stories from different communities?', 'How should a nation remember painful events?'],
           k: ['Present a Partition oral history (from a family member or an archive) with care and context.'],
-          m: ['Oral History Project on 1947', 'recorder or notebook, informed consent, archive sources', 'Interview an elder (or use published testimonies) about 1947 | Place their story in historical context | Compare with other accounts | Write a respectful 1500-word essay'],
+          m: ['Oral History Project on 1947', 'recorder or notebook, informed consent, archive sources', 'Interview an elder (or use published testimonies) about 1947 | Place their story in historical context | Compare with other accounts | Write a respectful 1500-word essay', "Partition memories may be painful. Never pressure anyone to recount trauma; use published testimonies if preferred, obtain informed consent, allow people to stop, and anonymise personal details unless they explicitly agree to attribution."],
           q: [
             ch('About how many people were displaced by Partition?', '1,000|*12–15 million|1 billion'),
             tf('Historians in different countries debate responsibility for Partition.', true),
