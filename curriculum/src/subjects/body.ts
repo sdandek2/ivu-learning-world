@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Why do you think animals like tigers have big canines?', 'Why is it important to brush at night?'],
           k: ['Teach a younger child how to brush teeth for two minutes.'],
-          m: ['🧪 Egg Tooth Experiment', 'two hard-boiled eggs, vinegar, cola, water, cups (eggshell is like tooth enamel)', 'Put eggs in vinegar, cola and water for a day | Observe changes to the shells | Try brushing one stained egg with toothpaste | Explain what this shows about teeth'],
+          m: ['🧪 Egg Tooth Experiment', 'two hard-boiled eggs, vinegar, cola, water, cups (eggshell is like tooth enamel)', 'Put eggs in vinegar, cola and water for a day | Observe changes to the shells | Try brushing one stained egg with toothpaste | Explain what this shows about teeth', "An adult should prepare and label the cups. Do not drink the liquids or eat the eggs after the experiment; wash hands and clean the area afterwards."],
           q: [
             ch('Back teeth for grinding are…', 'incisors|canines|*molars'),
             ch('Fluoride toothpaste helps…', '*keep teeth strong|make teeth fall out|change teeth colour'),
@@ -243,7 +243,7 @@ export default subject({
           ],
           t: ['Why do athletes train to improve their breathing?', 'Why might air pollution be especially harmful for children?'],
           k: ['Use a model or drawing to explain to someone how the diaphragm makes us breathe.'],
-          m: ['🧪 Bottle Lung Model', 'a plastic bottle (cut by an adult), two balloons, a straw or Y-connector, a rubber glove or balloon sheet, tape', 'Insert balloons into the bottle via a straw | Stretch a sheet over the cut bottom | Pull the sheet down and watch the balloons inflate | Label the parts and explain the model\'s limits'],
+          m: ['🧪 Bottle Lung Model', 'a plastic bottle (cut by an adult), two balloons, a straw or Y-connector, a rubber glove or balloon sheet, tape', 'Insert balloons into the bottle via a straw | Stretch a sheet over the cut bottom | Pull the sheet down and watch the balloons inflate | Label the parts and explain the model\'s limits', "An adult must cut and smooth the bottle. Check for sharp edges before use and let the child handle only the prepared model."],
           q: [
             ch('The windpipe is the…', '*trachea|oesophagus|diaphragm'),
             ch('Exercise makes breathing muscles…', '*stronger|weaker|disappear'),
@@ -306,7 +306,7 @@ export default subject({
           ],
           t: ['Why do some vaccines need booster doses?', 'Why is vaccinating many people important even for those who can\'t be vaccinated?'],
           k: ['Explain to someone how a vaccine works using the idea of a "wanted poster".'],
-          m: ['🧪 Glitter Germ Handwashing Test', 'glitter or a little flour, soap, water, a timer', 'Rub glitter on your hands as pretend germs | Rinse with water only for 5 seconds and observe | Wash properly with soap for 20 seconds | Compare and explain why technique matters'],
+          m: ['🧪 Glitter Germ Handwashing Test', 'glitter or a little flour, soap, water, a timer', 'Rub glitter on your hands as pretend germs | Rinse with water only for 5 seconds and observe | Wash properly with soap for 20 seconds | Compare and explain why technique matters', "Use a small amount of washable, non-toxic material; keep it away from eyes and mouths and do not breathe it in. Wash hands and clean the surface afterwards."],
           q: [
             ch('Proteins that lock onto specific pathogens are…', '*antibodies|hormones|platelets'),
             ch('Vaccines work by…', '*training the immune system safely|killing all bacteria in the body|replacing blood'),
