@@ -304,7 +304,7 @@ export default subject({
           ],
           t: ['How could your family reduce its electricity use?', 'Why is balancing the grid harder with lots of solar power?'],
           k: ['Read an electricity bill and explain its units and charges.'],
-          m: ['Home Energy Audit', 'appliance labels, a notebook, an electricity bill', 'List appliances with their power ratings | Estimate daily hours of use | Calculate monthly kWh for each | Suggest three ways to save energy'],
+          m: ['Home Energy Audit', 'appliance labels, a notebook, an electricity bill', 'List appliances with their power ratings | Estimate daily hours of use | Calculate monthly kWh for each | Suggest three ways to save energy', "Use the bill only with the household's permission. Do not photograph, upload or share account numbers, addresses or other private details; use approximate readings in the report."],
           q: [
             ch('A device that changes voltage is a…', '*transformer|transistor|turbine'),
             tf('Higher voltage means lower current for the same power.', true),
