@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why does a fact family have four facts and not three?', 'What happens in a fact family with two numbers the same, like 5, 5, 10?'],
           k: ['Explain to someone how knowing 8 + 5 = 13 helps you solve 13 − 5.'],
-          m: ['Fact Family Houses', 'paper, scissors, pencils', 'Draw a house with a triangle roof | Write three family numbers in the roof | Write the four facts in the windows | Make houses for five different families'],
+          m: ['Fact Family Houses', 'paper, scissors, pencils', 'Draw a house with a triangle roof | Write three family numbers in the roof | Write the four facts in the windows | Make houses for five different families', "Use child-safe scissors with adult supervision and keep small paper pieces away from younger children."],
           q: [
             ch('If 9 + 6 = 15, then 15 − 9 = ?', '5|*6|24'),
             ct('Difference between 20 and 14?', 6),
