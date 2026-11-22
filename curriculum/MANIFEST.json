@@ -1,13 +1,13 @@
 {
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:20:25.302Z",
+ "generatedAt": "2026-11-22T12:26:58.270Z",
  "totals": {
-  "units": 573,
-  "lessons": 573,
-  "items": 4012,
-  "subjectsComplete": 47,
+  "units": 609,
+  "lessons": 609,
+  "items": 4264,
+  "subjectsComplete": 50,
   "subjectsInvalid": 0,
-  "subjectsRemaining": 13
+  "subjectsRemaining": 10
  },
  "subjects": [
   {
@@ -1658,31 +1658,106 @@
   {
    "subject": "dance",
    "world": "rainbow-studio",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "crafts",
    "world": "rainbow-studio",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "drama",
    "world": "rainbow-studio",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {

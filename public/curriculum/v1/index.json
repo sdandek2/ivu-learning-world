@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:20:25.302Z",
+ "generatedAt": "2026-11-22T12:26:58.270Z",
  "stages": [
   {
    "id": "s4",
@@ -633,27 +633,27 @@
      "title": "Dance & Movement",
      "icon": "💃",
      "tagline": "Tell it with your body",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/dance.json"
     },
     {
      "id": "crafts",
      "title": "Crafts & Making",
      "icon": "✂️",
      "tagline": "Fold, cut, build",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/crafts.json"
     },
     {
      "id": "drama",
      "title": "Drama & Puppetry",
      "icon": "🎭",
      "tagline": "Pretend and perform",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/drama.json"
     }
    ]
   },
