@@ -27,7 +27,7 @@ export default subject({
           ],
           t: ['What do you like doing with your family?', 'How do family members help each other?'],
           k: ['Tell a grown-up about everyone in your family and one thing you love about each.'],
-          m: ['Family Tree Picture', 'paper, crayons, photos (optional)', 'Draw a tree | Put yourself on the trunk | Add family members on the branches | Ask grown-ups about relatives you haven\'t met'],
+          m: ['Family Tree Picture', 'paper, crayons, photos (optional)', 'Draw a tree | Put yourself on the trunk | Add family members on the branches | Ask grown-ups about relatives you haven\'t met', "Ask family members before using their names or photographs. Share the finished tree only with people your family is comfortable sharing it with."],
           q: [
             ch('Your father\'s sister is your…', '*aunt|cousin|niece'),
             tf('All families must look the same.', false),
@@ -308,7 +308,7 @@ export default subject({
           ],
           t: ['Is equal opportunity enough, or do some people need extra support?', 'How can we measure whether a policy works?'],
           k: ['Present an analysis of one government scheme: aims, results and improvements.'],
-          m: ['Service Access Survey', 'a short questionnaire, notebook', 'Survey 10 families about access to schools, clinics and water (with permission) | Map the results | Identify inequalities | Suggest one evidence-based improvement'],
+          m: ['Service Access Survey', 'a short questionnaire, notebook', 'Survey 10 families about access to schools, clinics and water (with permission) | Map the results | Identify inequalities | Suggest one evidence-based improvement', "Get permission from an adult before speaking with families. Do not record names, addresses or identifying details; report only anonymous totals."],
           q: [
             ch('The ability to use a service is…', '*access|inequality|policy'),
             tf('People debate the best ways to reduce inequality.', true),
