@@ -42,3 +42,20 @@ describe('ItemPlayer', () => {
     expect(done).toHaveBeenCalledWith({ itemId: 'x.a4', correct: true, wrongTries: 0, usedHint: false });
   });
 });
+
+
+describe('age-aware activity scaffolding', () => {
+  it('offers immediate Buddy coaching to early-stage learners', () => {
+    const item: Item = { id: 'x.early', kind: 'classify', prompt: 'Sort the things.', categories: ['Fruit', 'Vegetables'], items: [{ label: 'Apple', category: 0 }, { label: 'Pear', category: 0 }, { label: 'Carrot', category: 1 }] };
+    render(<ItemPlayer item={item} ageBand="early" onDone={vi.fn()} />);
+    expect(screen.getByText('One little step at a time. You can do it!')).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: /Let Buddy help/ }));
+    expect(screen.getByText(/Think about what the items in each group/)).toBeTruthy();
+  });
+  it('keeps the assessment hint-free for advanced learners', () => {
+    const item: Item = { id: 'x.advanced', kind: 'choice', prompt: 'Which is 3?', options: ['2', '3', '4'], answer: 1 };
+    render(<ItemPlayer item={item} ageBand="advanced" allowHints={false} onDone={vi.fn()} />);
+    expect(screen.queryByRole('button', { name: /hint/i })).toBeNull();
+    expect(screen.queryByText(/One little step at a time/)).toBeNull();
+  });
+});
