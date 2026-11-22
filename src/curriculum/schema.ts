@@ -275,3 +275,21 @@ export function semanticCheck(subject: Subject): string[] {
 export function* allLessons(subject: Subject): Generator<{ stage: StageSyllabus; unit: Unit; lesson: Lesson }> {
   for (const stage of subject.stages) for (const unit of stage.units) for (const lesson of unit.lessons) yield { stage, unit, lesson };
 }
+
+// ---------- Outline (lightweight map of every lesson; used by the adaptive engine & parent views) ----------
+
+export const OutlineLessonSchema = z.object({
+  id,
+  title: text,
+  unitId: id,
+  unitTitle: text,
+  prereq: z.array(id),
+  intervals: z.array(z.number().int().positive()),
+  minutes: z.number().int(),
+});
+export type OutlineLesson = z.infer<typeof OutlineLessonSchema>;
+export const OutlineSchema = z.object({
+  contentVersion: z.string(),
+  subjects: z.record(z.string(), z.object({ worldId: id, stages: z.record(z.string(), z.array(OutlineLessonSchema)) })),
+});
+export type Outline = z.infer<typeof OutlineSchema>;

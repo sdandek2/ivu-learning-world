@@ -14,8 +14,8 @@ import { existsSync, mkdirSync, writeFileSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
-  SCHEMA_VERSION, STAGE_IDS, SubjectSchema, CurriculumIndexSchema, semanticCheck,
-  type Subject, type Item, type StageId, type CurriculumIndex,
+  SCHEMA_VERSION, STAGE_IDS, SubjectSchema, CurriculumIndexSchema, OutlineSchema, semanticCheck,
+  type Subject, type Item, type StageId, type CurriculumIndex, type Outline,
 } from '../src/curriculum/schema.ts';
 import { WORLDS, STAGES, CONTENT_VERSION, SENSITIVITY } from '../curriculum/src/catalog.ts';
 import type { RawSubject, RawItem, RawLesson } from '../curriculum/src/dsl.ts';
@@ -183,6 +183,17 @@ async function main() {
       }),
     })),
   };
+  const outline: Outline = {
+    contentVersion: CONTENT_VERSION,
+    subjects: Object.fromEntries(built.map((s) => [s.id, {
+      worldId: s.worldId,
+      stages: Object.fromEntries(s.stages.map((st) => [st.stage, st.units.flatMap((u) => u.lessons.map((l) => ({
+        id: l.id, title: l.title, unitId: u.id, unitTitle: u.title, prereq: l.prerequisiteIds, intervals: u.revision.intervalsDays, minutes: l.minutes,
+      })))])),
+    }])),
+  };
+  const ol = OutlineSchema.safeParse(outline);
+  if (!ol.success) { console.error(ol.error.issues.slice(0, 5)); failed = true; }
   const idx = CurriculumIndexSchema.safeParse(index);
   if (!idx.success) { console.error(idx.error.issues); failed = true; }
 
@@ -198,6 +209,7 @@ async function main() {
     mkdirSync(join(outDir, 'subjects'), { recursive: true });
     for (const s of built) writeFileSync(join(outDir, 'subjects', `${s.id}.json`), JSON.stringify(s));
     writeFileSync(join(outDir, 'index.json'), JSON.stringify(index, null, 1));
+    writeFileSync(join(outDir, 'outline.json'), JSON.stringify(outline));
     writeFileSync(join(root, 'curriculum/MANIFEST.json'), JSON.stringify({ contentVersion: CONTENT_VERSION, generatedAt: index.generatedAt, totals: { ...totals, subjectsComplete: done.length, subjectsInvalid: bad.length, subjectsRemaining: 60 - done.length }, subjects: manifest }, null, 1));
     mkdirSync(join(root, 'docs'), { recursive: true });
     const lines = [

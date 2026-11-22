@@ -8,8 +8,8 @@
     "dev": "vite",
     "build:curriculum": "node scripts/build-curriculum.ts",
     "validate": "node scripts/build-curriculum.ts --check",
-    "typecheck": "tsc -b --noEmit",
-    "build": "npm run build:curriculum && tsc -b && vite build",
+    "typecheck": "tsc --noEmit -p .",
+    "build": "npm run build:curriculum && tsc --noEmit -p . && vite build",
     "preview": "vite preview --port 4173",
     "test": "vitest run",
     "e2e": "node scripts/e2e-smoke.mjs"
