@@ -145,7 +145,7 @@ export function LessonStudio({ lessonId }: { lessonId: string }) {
 }
 
 
-function StoryStep({ title, text, ageBand, onNext }: { title: string; text: string; ageBand: AgeBand; onNext: () => void }) {
+export function StoryStep({ title, text, ageBand, onNext }: { title: string; text: string; ageBand: AgeBand; onNext: () => void }) {
   const [showText, setShowText] = useState(ageBand !== 'early');
   const [listened, setListened] = useState(false);
   const [recallOpen, setRecallOpen] = useState(false);
