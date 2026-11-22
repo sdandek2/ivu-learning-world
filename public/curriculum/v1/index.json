@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T09:35:11.277Z",
+ "generatedAt": "2026-11-22T09:46:03.437Z",
  "stages": [
   {
    "id": "s4",
@@ -249,45 +249,45 @@
      "title": "Plants & Gardening",
      "icon": "🌱",
      "tagline": "Seeds, roots and blooms",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/plants.json"
     },
     {
      "id": "animals",
      "title": "Animals & Habitats",
      "icon": "🦁",
      "tagline": "Who lives where, and how",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/animals.json"
     },
     {
      "id": "ecosystems",
      "title": "Ecosystems & Food Chains",
      "icon": "🕸️",
      "tagline": "Who eats whom",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/ecosystems.json"
     },
     {
      "id": "water",
      "title": "Oceans, Rivers & Water",
      "icon": "🌊",
      "tagline": "Every drop travels",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/water.json"
     },
     {
      "id": "conservation",
      "title": "Caring for the Earth",
      "icon": "♻️",
      "tagline": "Small actions, big change",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/conservation.json"
     }
    ]
   },
