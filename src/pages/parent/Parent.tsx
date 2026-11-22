@@ -232,6 +232,16 @@ function ProgressPage() {
     <div className="dash">
       <h1>How {settings.learnerName} is learning</h1>
       <p className="muted">Mastery here is never just a quiz score: each skill moves through five stages using accuracy, independence, practice, retention after a gap, and the ability to explain and apply the idea.</p>
+      <section className="pcard parent-mastery-guide">
+        <h2>What these numbers mean</h2>
+        <div className="parent-mastery-guide__grid">
+          <div><strong>Accuracy</strong><p>How often answers are correct, including supported retries.</p></div>
+          <div><strong>Independence</strong><p>How often the learner succeeds on the first try without a hint.</p></div>
+          <div><strong>Retention</strong><p>How well a skill is remembered during a later spaced-revision check.</p></div>
+          <div><strong>Explain and apply</strong><p>Whether the learner can describe an idea and use it in a project or real task.</p></div>
+        </div>
+        <p className="muted small">These are learning signals, not a diagnosis or a comparison with other children. Use them alongside conversation, observation and the child's confidence.</p>
+      </section>
 
       <div className="kpis">
         <Kpi n={all.length} label="skills explored" />
