@@ -28,7 +28,7 @@ describe('ItemPlayer', () => {
     const item: Item = { id: 'x.a3', kind: 'count', prompt: 'How many? 🍎🍎', answer: 2 };
     const done = vi.fn();
     render(<ItemPlayer item={item} onDone={done} />);
-    fireEvent.click(screen.getByRole('button', { name: /Hint/ }));
+    fireEvent.click(screen.getByRole('button', { name: /hint/i }));
     fireEvent.click(screen.getByRole('button', { name: '2' }));
     fireEvent.click(screen.getByRole('button', { name: /Next/ }));
     expect(done).toHaveBeenCalledWith({ itemId: 'x.a3', correct: true, wrongTries: 0, usedHint: true });
