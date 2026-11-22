@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['Was the hare a bad animal, or did he just make a mistake?', 'When in your life is "slow and steady" a good idea?'],
           k: ['Tell the fable from the tortoise\'s point of view to someone.'],
-          m: ['Fable Finger Puppets', 'paper, crayons, tape, scissors (with a grown-up)', 'Draw a hare and a tortoise and cut them out | Tape them into rings for your fingers | Act out the race | Say the moral at the end'],
+          m: ['Fable Finger Puppets', 'paper, crayons, tape, scissors (with a grown-up)', 'Draw a hare and a tortoise and cut them out | Tape them into rings for your fingers | Act out the race | Say the moral at the end', "Use child-safe scissors with adult supervision. Keep small paper pieces away from younger children who may put them in their mouths."],
           q: [
             ch('A fable usually teaches a…', 'recipe|*lesson|song'),
             ch('Who won the race?', 'the hare|*the tortoise|nobody'),
