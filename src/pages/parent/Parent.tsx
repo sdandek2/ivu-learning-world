@@ -460,6 +460,8 @@ function VoiceCoverage() {
   const [c, setC] = useState(() => readNarrationCoverage());
   const total = c.recorded + c.rendered + c.synth;
   const top = Object.entries(c.misses).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const refresh = () => setC(readNarrationCoverage());
+  const misses = Object.keys(c.misses).length;
   const stages = useMemo(() => [...new Set([settings.defaultStage, ...(index?.worlds.flatMap((w) => w.subjects.map((s) => placement(settings, s.id))) ?? [])])], [settings, index]);
   const [offline, setOffline] = useState<{ saved: number; total: number } | null>(null);
   const [saving, setSaving] = useState<string | null>(null);
@@ -467,18 +469,18 @@ function VoiceCoverage() {
   const stageNames = stages.map((s) => index?.stages.find((x) => x.id === s)?.label ?? s).join(', ');
   return (
     <section className="pcard">
-      <h2>Voice</h2>
-      <p className="muted small">IVU speaks in a human voice where a recording exists, otherwise in the prepared IVU voice, and only as a last resort in this device's own voice.</p>
+      <div className="pcard__head"><h2>Voice & listening coverage</h2><button className="pbtn" onClick={refresh}>Refresh counts</button></div>
+      <p className="muted small">These are playback events observed on this device, not a measure of how much of the full curriculum has recorded audio. Counts stay in this browser and reset if its site data is cleared.</p>
       {total === 0 ? <p className="muted small">Nothing has been read aloud on this device yet.</p> : (
         <>
-          <p>Read aloud on this device: <b>{pct(c.recorded / total)}</b> human voice, <b>{pct(c.rendered / total)}</b> prepared IVU voice, <b>{pct(c.synth / total)}</b> device voice ({total} lines).</p>
+          <p>Observed playback: <b>{pct(c.recorded / total)}</b> human recordings ({c.recorded}), <b>{pct(c.rendered / total)}</b> prepared IVU voice ({c.rendered}), and <b>{pct(c.synth / total)}</b> device voice ({c.synth}) across {total} playback events. There are {misses} distinct device-voice lines in the sample.</p>
           {top.length > 0 && (
             <>
-              <p className="muted small">Most-heard lines that still used the device voice:</p>
+              <p className="muted small">Most-heard lines that used the device voice (useful candidates for future recording):</p>
               <ol className="small">{top.map(([line, n]) => <li key={line}>{line} <span className="muted">×{n}</span></li>)}</ol>
             </>
           )}
-          <button className="pbtn" onClick={() => { resetNarrationCoverage(); setC(readNarrationCoverage()); }}>Clear these counts</button>
+          <button className="pbtn" onClick={() => { resetNarrationCoverage(); refresh(); }}>Clear these counts</button>
         </>
       )}
       {offline && offline.total > 0 && (
