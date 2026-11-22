@@ -78,6 +78,7 @@ export const ItemSchema = z.discriminatedUnion('kind', [
   OrderItemSchema,
   MatchItemSchema,
   CountItemSchema,
+  ClassifyItemSchema,
 ]);
 export type Item = z.infer<typeof ItemSchema>;
 export type ItemKind = Item['kind'];
@@ -248,7 +249,12 @@ export function semanticCheck(subject: Subject): string[] {
       if (new Set(it.options).size !== it.options.length) problems.push(`${where}: duplicate options`);
     }
     if (it.kind === 'order' && new Set(it.items).size !== it.items.length) problems.push(`${where}: duplicate order items`);
-    if (it.kind === 'classify') {\n      if (it.items.some((entry) => entry.category >= it.categories.length)) problems.push(`${where}: classify category index out of range`);\n      if (new Set(it.items.map((entry) => entry.label)).size !== it.items.length) problems.push(`${where}: duplicate classify items`);\n      if (new Set(it.categories).size !== it.categories.length) problems.push(`${where}: duplicate classify categories`);\n    }\n    if (it.kind === 'match') {
+    if (it.kind === 'classify') {
+      if (it.items.some((entry) => entry.category >= it.categories.length)) problems.push(`${where}: classify category index out of range`);
+      if (new Set(it.items.map((entry) => entry.label)).size !== it.items.length) problems.push(`${where}: duplicate classify items`);
+      if (new Set(it.categories).size !== it.categories.length) problems.push(`${where}: duplicate classify categories`);
+    }
+    if (it.kind === 'match') {
       const l = it.pairs.map((p) => p[0]);
       const r = it.pairs.map((p) => p[1]);
       if (new Set(l).size !== l.length || new Set(r).size !== r.length) problems.push(`${where}: duplicate match sides`);
