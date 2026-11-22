@@ -85,6 +85,13 @@ Rendering can be resumed: files already made with the same voice are kept. Chang
 - `piper`: a local neural voice model (`--engine piper --model voice.onnx`). Needs the Piper
   program and a voice model to be installed first. Free and offline, with more natural speech.
 
+- `elevenlabs`: the service the IVU Reads voice was made with, so it matches IVU Reads. Paid and
+  online. Copy `.env.local.example` to `.env.local` (git-ignored) and fill in your API key, the
+  IVU Reads voice ID (`npm run narration:render -- --engine elevenlabs --list-voices`) and model.
+  `--dry-run` shows the character count, which is roughly the credits it will use. Paid renders
+  over 2,000 characters stop before spending anything unless you add `--yes`. About 158,000
+  characters for ages 4–5, about 1.09 million for everything.
+
 Pronunciation fixes go in `curriculum/narration-lexicon.json` and change only what the engine
 hears, not what is shown. Listen to any fix before you commit it.
 

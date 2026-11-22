@@ -8,3 +8,6 @@ coverage
 public/narration/rendered/
 public/narration/rendered.json
 recording-script.csv
+
+# Local secrets (ElevenLabs key etc.) — never commit
+.env.local
