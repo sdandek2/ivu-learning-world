@@ -1,13 +1,13 @@
 {
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T11:41:47.384Z",
+ "generatedAt": "2026-11-22T11:48:20.842Z",
  "totals": {
-  "units": 385,
-  "lessons": 385,
-  "items": 2696,
-  "subjectsComplete": 32,
+  "units": 421,
+  "lessons": 421,
+  "items": 2948,
+  "subjectsComplete": 35,
   "subjectsInvalid": 0,
-  "subjectsRemaining": 28
+  "subjectsRemaining": 25
  },
  "subjects": [
   {
@@ -1133,31 +1133,106 @@
   {
    "subject": "cultures",
    "world": "globe-garden",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "money",
    "world": "globe-garden",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "civics",
    "world": "globe-garden",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {

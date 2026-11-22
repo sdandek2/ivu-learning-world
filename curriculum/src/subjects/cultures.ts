@@ -1,0 +1,392 @@
+import { subject, S, U, L, ch, tf, mt } from '../dsl.ts';
+
+export default subject({
+  id: 'cultures',
+  description: 'Celebrating the diversity of India and the world: festivals, food, clothing, languages, music, homes and customs. Festivals are presented as people in each tradition understand them, clearly labelled as tradition or belief, alongside historical and cultural context. Every child\'s background is respected.',
+  stages: [
+    S('s4', 'Festivals we celebrate and festivals our friends celebrate.', [
+      'Name some festivals celebrated in India', 'Describe how festivals are celebrated', 'Show respect for friends\' celebrations',
+    ], [
+      U('festival-fun', 'Festival Time!', 'Festivals bring people together.', 'Diwali, Eid, Christmas, Gurpurab, Pongal, Holi; Lights, sweets, new clothes, visiting family; Greeting friends', [
+        L('many-festivals', 'Many Festivals, Many Friends', {
+          o: ['Name several festivals celebrated in India', 'Describe one way each is celebrated'],
+          p: ['Can talk about special days'],
+          e: [
+            'Festivals are special days when people celebrate together. In India, people of many religions and regions celebrate many festivals.',
+            'Diwali is a festival of lights with diyas and sweets. Eid al-Fitr comes after the month of Ramadan, with prayers, sheer khurma and visiting family. Christmas celebrates the birth of Jesus with carols and a decorated tree. Gurpurab celebrates the Sikh Gurus. Holi is a spring festival of colours.',
+            'We can wish friends on their festivals: "Happy Diwali!", "Eid Mubarak!", "Merry Christmas!" Sharing joy makes everyone feel welcome.',
+          ],
+          c: [['belief', 'Each festival has religious meaning for those who celebrate it; for example, Christians celebrate Christmas as the birth of Jesus, and Sikhs celebrate Gurpurab to honour the Gurus.'], ['tradition', 'Many families also have their own festival customs passed down through generations.']],
+          v: 'festival = a special day of celebration; celebrate = do happy things for a special day; diya = a small clay oil lamp; greeting = friendly words we say to someone',
+          x: ['Diwali: diyas and rangoli.', 'Eid: new clothes and sheer khurma.'],
+          s: ['The Festival Calendar', 'Ivaan\'s class made a big calendar. Asha drew diyas for Diwali, Ayaan drew a crescent moon for Eid, Maria drew a star for Christmas, and Harpreet drew a langar meal for Gurpurab. "We celebrate all year!" laughed the teacher. "And we can wish each other on every one."'],
+          a: [
+            mt('Match the festival to something from it', 'Diwali=🪔 diya lamps|Christmas=🎄 decorated tree|Holi=🎨 colours|Eid=🌙 crescent moon'),
+            ch('What do we say to a friend on Eid?', '*"Eid Mubarak!"|"Happy Birthday!"|"Good night!"'),
+            tf('People of many religions celebrate festivals in India.', true),
+            ch('A festival is…', '*a special day of celebration|a school test|a type of fruit'),
+          ],
+          t: ['What is your favourite festival and why?', 'How can we make a friend feel happy on their festival?'],
+          k: ['Tell a grown-up about a festival your family celebrates and one about a friend\'s festival.'],
+          m: ['Festival Greeting Cards', 'card, crayons, glitter (optional)', 'Choose festivals celebrated by your family and friends | Make a greeting card for each | Write or say the right greeting | Give them on the festival day'],
+          q: [
+            ch('Diyas are…', '*small clay lamps|sweets|kites'),
+            tf('We can wish friends on their festivals.', true),
+            ch('Holi is known as a festival of…', '*colours|snow|silence'),
+          ],
+          ms: ['Names several festivals', 'Describes celebrations', 'Uses greetings respectfully'],
+        }),
+      ]),
+      U('foods-clothes', 'Foods and Clothes Around India', 'Different regions, different traditions.', 'Regional foods: idli, poha, roti, fish curry; Clothes: sari, kurta, dhoti, salwar; Same country, many styles', [
+        L('regional-things', 'Different Places, Different Ways', {
+          o: ['Name foods and clothes from different parts of India', 'Understand that people in one country can have different customs'],
+          p: ['Knows their own family food and clothes'],
+          e: [
+            'India is a big country with many regions. People in different places eat different foods: idli and dosa are popular in the south, poha in Maharashtra and Madhya Pradesh, makki roti in Punjab, fish and rice in Bengal and Kerala.',
+            'Clothes are different too: saris worn in many styles, kurtas, dhotis, salwar kameez, and special clothes for festivals and weddings.',
+            'These differences are what make India colourful. All of them are part of being Indian.',
+          ],
+          c: [['tradition', 'Regional foods and dress styles have developed over centuries, shaped by climate, crops and local traditions; many are now enjoyed across the country.']],
+          v: 'region = a part of a country; tradition = a custom passed down over time; sari = a long cloth draped as a garment; custom = the usual way of doing something',
+          x: ['A Maharashtrian nauvari sari is draped differently from a Bengali sari.', 'Rice is a main food in the south and east; wheat in the north.'],
+          s: ['The Lunchbox Swap', 'At school, children opened their tiffins: idli, poha, aloo paratha, fish curry with rice, and dhokla. "Can we taste each other\'s?" asked Ravi. They shared a little of each. "India is like one big lunch party," giggled Meera.'],
+          a: [
+            mt('Match the food to the region where it is popular', 'idli=south India|poha=Maharashtra|dhokla=Gujarat'),
+            ch('A sari is a…', '*long cloth worn as a garment|a type of rice|a musical instrument'),
+            tf('People in different parts of India have different customs.', true),
+            ch('Different customs in one country make it…', '*colourful and rich|boring|wrong'),
+          ],
+          t: ['What food from another region would you like to try?', 'Why do you think foods are different in different places?'],
+          k: ['Describe your family\'s favourite festival food to a grown-up.'],
+          m: ['India Food Map', 'an outline map of India, food pictures or drawings, glue', 'Draw or cut out pictures of foods from different states | Stick them on the map in the right regions | Taste one new regional food with your family | Add a smiley if you liked it'],
+          q: [
+            ch('Which is a garment?', '*kurta|dosa|tabla'),
+            tf('All regions of India eat exactly the same food.', false),
+            ch('A tradition is…', '*a custom passed down over time|a new invention|a rule in maths'),
+          ],
+          ms: ['Names regional foods and clothes', 'Appreciates diversity within India', 'Shares own traditions'],
+        }),
+      ]),
+    ]),
+    S('s5', 'Festivals through the year and their stories.', [
+      'Order major festivals through the year', 'Retell the traditional story behind a festival', 'Describe harvest festivals',
+    ], [
+      U('festival-stories', 'Stories Behind Festivals', 'Why people celebrate.', 'Diwali stories; Eid al-Fitr and Ramadan; Christmas; Gurpurab; Buddha Purnima; Mahavir Jayanti', [
+        L('why-celebrate', 'Why Do We Celebrate?', {
+          o: ['Retell the traditional story or meaning of several festivals', 'Recognise that one festival can have different stories in different regions'],
+          p: ['Names several festivals'],
+          e: [
+            'Many festivals remember important stories. In many parts of North India, Diwali celebrates Rama\'s return to Ayodhya; in other places it honours Lakshmi, or Krishna\'s victory over Narakasura; Jains mark it as Mahavira\'s nirvana, and Sikhs celebrate Bandi Chhor Divas.',
+            'Eid al-Fitr marks the end of Ramadan, a month of fasting, prayer and charity for Muslims. Christmas celebrates the birth of Jesus for Christians. Buddha Purnima remembers the birth, enlightenment and passing of the Buddha. Mahavir Jayanti celebrates the birth of Mahavira.',
+            'So one festival can carry different stories, and different festivals share values like light, kindness, charity and family.',
+          ],
+          c: [['tradition', 'The stories connected with festivals are traditional narratives, told and understood in different ways across communities and regions.'], ['belief', 'For followers, these festivals have religious significance, such as Ramadan as a month of fasting commanded in Islam.']],
+          v: 'Ramadan = the Islamic month of fasting; nirvana = in Jain and Buddhist belief, liberation from the cycle of rebirth; enlightenment = deep spiritual understanding; charity = giving to those in need',
+          x: ['Zakat al-Fitr: charity given before Eid prayers.', 'Bandi Chhor Divas: Sikhs remember Guru Hargobind\'s release from prison.'],
+          s: ['One Night, Many Lamps', 'On Diwali night, Ivaan\'s friends shared their family stories. Riya\'s family lit lamps to welcome Rama home. Rohan\'s family prayed to Lakshmi. Jasleen\'s family celebrated Bandi Chhor Divas at the gurdwara. Kunal\'s Jain family remembered Mahavira. "So many stories," said Ivaan, "all lighting lamps together."'],
+          a: [
+            mt('Match the festival to its meaning', 'Eid al-Fitr=end of Ramadan|Christmas=birth of Jesus|Buddha Purnima=life of the Buddha|Mahavir Jayanti=birth of Mahavira'),
+            ch('For Jains, Diwali marks…', '*Mahavira\'s nirvana|a harvest only|a new year in winter'),
+            tf('One festival can have different stories in different places.', true),
+            ch('Ramadan is a month of…', '*fasting, prayer and charity|kite flying|snow'),
+          ],
+          t: ['Why might the same festival have different stories?', 'What values do many festivals share?'],
+          k: ['Retell the story behind a festival your family celebrates.'],
+          m: ['Festival Story Book', 'paper, crayons, stapler', 'Choose four festivals from different traditions | Ask family or friends about their meaning | Draw one page for each with its story | Read your book to someone'],
+          q: [
+            ch('Bandi Chhor Divas is celebrated by…', '*Sikhs|Christians|Buddhists'),
+            tf('Charity is an important part of Eid.', true),
+            ch('Buddha Purnima remembers…', '*the Buddha|Rama|Jesus'),
+          ],
+          ms: ['Retells festival stories accurately', 'Labels stories as traditional', 'Identifies shared values'],
+        }),
+      ]),
+      U('harvest', 'Harvest Festivals', 'Thanking nature for food.', 'Pongal, Makar Sankranti, Lohri, Bihu, Onam, Baisakhi; Thanksgiving around the world', [
+        L('harvest-time', 'Thank You, Harvest!', {
+          o: ['Name harvest festivals from different regions', 'Explain why farming communities celebrate harvests'],
+          p: ['Knows farming seasons'],
+          e: [
+            'For farming communities, a good harvest means food for the year. Many festivals celebrate the harvest and give thanks.',
+            'In mid-January, around the Sun\'s shift towards the north, people celebrate Pongal in Tamil Nadu, Makar Sankranti across many states, Lohri in Punjab and Magh Bihu in Assam. Onam in Kerala and Baisakhi in Punjab are other harvest-time festivals.',
+            'Harvest festivals often include cooking the first rice, bonfires, kite flying, dancing and sharing food. Many countries have similar festivals, like Thanksgiving.',
+          ],
+          c: [['tradition', 'Pongal is named after a dish of newly harvested rice boiled with milk and jaggery; families let it boil over as a sign of abundance.'], ['evidence', 'Makar Sankranti is one of the few Indian festivals tied to the solar calendar, so it falls on about the same date (14 or 15 January) each year.']],
+          v: 'harvest = gathering ripe crops; Pongal = a Tamil harvest festival and a sweet rice dish; Sankranti = the Sun\'s movement into a new zodiac sign in the traditional calendar; bonfire = a big outdoor fire for celebration',
+          x: ['Flying kites on Makar Sankranti in Gujarat.', 'Onam\'s sadya feast on a banana leaf.'],
+          s: ['The Pot That Boiled Over', 'On Pongal morning, Meenakshi\'s grandmother put a clay pot of new rice, milk and jaggery on the fire. Everyone watched. When it bubbled over the top, they all shouted, "Pongalo Pongal!" "When it overflows," Grandmother explained, "we wish for a year overflowing with plenty."'],
+          a: [
+            mt('Match the harvest festival to the state', 'Pongal=Tamil Nadu|Lohri=Punjab|Bihu=Assam|Onam=Kerala'),
+            ch('Harvest festivals give thanks for…', '*crops and food|snowfall|exams'),
+            tf('Makar Sankranti falls on about the same date each year.', true),
+            ch('On Makar Sankranti many people fly…', '*kites|planes|balloons into space'),
+          ],
+          t: ['Why would farmers want to celebrate after a harvest?', 'Are there harvest festivals in your family\'s tradition?'],
+          k: ['Describe a harvest festival to someone and explain why it is celebrated.'],
+          m: ['Harvest Thank-You Project', 'paper, crayons, a family meal', 'Find out which crops your family eats most | Make a "thank-you" poster for farmers | Cook or help with a harvest-festival dish | Share it and say thank you'],
+          q: [
+            ch('Onam is celebrated in…', '*Kerala|Punjab|Assam'),
+            tf('Many countries have harvest festivals.', true),
+            ch('Pongal is also the name of a…', '*rice dish|dance|kite'),
+          ],
+          ms: ['Names regional harvest festivals', 'Explains links to farming', 'Distinguishes tradition and calendar facts'],
+        }),
+      ]),
+    ]),
+    S('s6', 'Languages, arts and homes across India.', [
+      'Name major Indian languages and scripts', 'Describe folk arts and traditional crafts', 'Compare traditional homes in different climates',
+    ], [
+      U('languages', 'Many Languages, One Country', 'India\'s linguistic diversity.', 'Scheduled languages; Scripts: Devanagari, Tamil, Bengali, Gurmukhi, Urdu; Greetings in many languages', [
+        L('hello-india', 'Namaste, Vanakkam, Sat Sri Akal', {
+          o: ['Name several Indian languages and their scripts', 'Use greetings in different languages'],
+          p: ['Knows Indian states'],
+          e: [
+            'India has hundreds of languages. The Constitution\'s Eighth Schedule lists 22 languages, including Hindi, Marathi, Bengali, Tamil, Telugu, Kannada, Malayalam, Gujarati, Punjabi, Odia, Urdu, Assamese and Sanskrit.',
+            'Languages use different scripts. Hindi, Marathi and Sanskrit use Devanagari. Tamil, Bengali, Gurmukhi (for Punjabi) and the Urdu script (written right to left) look very different.',
+            'Greetings change too: namaste or namaskar, vanakkam (Tamil), sat sri akal (Punjabi), as-salamu alaykum or adaab, nomoshkar (Bengali). Learning a greeting is a way to show respect.',
+          ],
+          c: [['evidence', 'The Eighth Schedule of the Constitution of India lists 22 languages; the Census records many more mother tongues.'], ['tradition', 'Greetings often carry cultural or religious meaning; for example, "Sat Sri Akal" is a Sikh greeting meaning "Truth is the timeless Lord".']],
+          v: 'language = a system of words people use to communicate; script = a writing system; Devanagari = the script used for Hindi, Marathi and Sanskrit; mother tongue = the first language you learn at home',
+          x: ['Marathi and Hindi share the Devanagari script.', 'Urdu is written from right to left.'],
+          s: ['The Greetings Game', 'In Ivaan\'s class, each child taught a greeting from home. Anjali said "Namaskar" in Marathi. Kavin said "Vanakkam" in Tamil. Gurleen said "Sat Sri Akal". Imran said "Adaab". By the end of the week, everyone greeted each other in four languages.'],
+          a: [
+            mt('Match the greeting to the language', 'Vanakkam=Tamil|Sat Sri Akal=Punjabi|Namaskar=Marathi|Nomoshkar=Bengali'),
+            ch('Hindi, Marathi and Sanskrit use the…', '*Devanagari script|Roman script only|Tamil script'),
+            tf('Urdu is written from right to left.', true),
+            ch('How many languages are in the Eighth Schedule?', '2|*22|222'),
+          ],
+          t: ['Why might people feel proud of their mother tongue?', 'What is gained by learning more than one language?'],
+          k: ['Greet a family member in three Indian languages and explain each one.'],
+          m: ['Script Explorer Poster', 'paper, examples of different scripts (books, signs, packaging)', 'Find the word for "water" or "hello" in five scripts | Copy them carefully | Label the language and script | Display your poster'],
+          q: [
+            ch('The first language you learn at home is your…', '*mother tongue|second language|script'),
+            tf('Different Indian languages can use different scripts.', true),
+            ch('Gurmukhi is used to write…', '*Punjabi|Tamil|Malayalam'),
+          ],
+          ms: ['Names languages and scripts', 'Uses greetings respectfully', 'Appreciates linguistic diversity'],
+        }),
+      ]),
+      U('folk-arts', 'Folk Arts and Homes', 'Art and architecture shaped by place.', 'Folk art: Warli, Madhubani, Gond, Pattachitra; Crafts: weaving, pottery; Homes: stilt houses, havelis, mud houses, houseboats', [
+        L('warli-madhubani', 'Painting Traditions', {
+          o: ['Identify several Indian folk art styles', 'Explain how homes suit their climate and materials'],
+          p: ['Knows regions of India'],
+          e: [
+            'India has many folk painting traditions. Warli art from Maharashtra uses simple white shapes — circles, triangles and lines — to show daily life. Madhubani (Mithila) art from Bihar uses bold lines and bright colours filled with patterns. Gond art from Madhya Pradesh uses dots and lines to bring animals and trees to life.',
+            'These arts were often painted on walls and floors for festivals and weddings, and many are now painted on paper and cloth too.',
+            'Traditional homes suit their environment: houses on stilts in flood-prone Assam, thick mud walls that stay cool in Rajasthan, sloping roofs for heavy rain in Kerala, and houseboats on Kashmir\'s lakes.',
+          ],
+          c: [['tradition', 'Folk art styles are passed down within communities, such as the Warli people of Maharashtra and Mithila women in Bihar; many themes come from local traditions and beliefs.']],
+          v: 'folk art = traditional art made by communities; Warli = a Maharashtrian art style using simple white shapes; Madhubani = a Bihar art style with bold lines and patterns; stilt house = a house raised on poles',
+          x: ['Warli paintings of a tarpa dance in a circle.', 'Stilt houses keeping homes dry during floods.'],
+          s: ['The Painted Wall', 'In a Warli village, Ivaan watched an elder paint a white circle of dancers around a musician on a red-brown wall, using a bamboo stick as a brush. "Two triangles make a person," she explained. "Circles for the sun and moon. Our stories have been painted like this for generations."'],
+          a: [
+            mt('Match the art to the state', 'Warli=Maharashtra|Madhubani=Bihar|Gond=Madhya Pradesh'),
+            ch('Warli art uses mostly…', '*simple white shapes|photographs|oil paint portraits'),
+            ch('Houses on stilts help in places with…', '*floods|deserts|snow only'),
+            tf('Traditional homes are often designed for their climate.', true),
+          ],
+          t: ['Why might simple shapes be powerful in art?', 'What would a home designed for your city\'s climate look like?'],
+          k: ['Show someone a Warli or Madhubani-style drawing you made and explain the style.'],
+          m: ['Warli Art Painting', 'brown or red paper, white paint or chalk, a thin brush or cotton bud', 'Practise drawing people with two triangles and a circle | Plan a scene from daily life (dancing, farming, a festival) | Paint it in white | Explain the tradition behind it'],
+          q: [
+            ch('Madhubani art is from…', '*Bihar|Kerala|Punjab'),
+            tf('Folk art traditions are passed down through communities.', true),
+            ch('Thick mud walls help homes stay…', '*cool in hot places|wet|noisy'),
+          ],
+          ms: ['Identifies folk art styles', 'Creates art respectfully in a tradition\'s style', 'Links homes to climate'],
+        }),
+      ]),
+    ]),
+    S('s7', 'Cultures of the world and cultural exchange.', [
+      'Compare festivals and customs across countries', 'Explain how cultures exchange ideas', 'Avoid stereotypes when describing cultures',
+    ], [
+      U('world-festivals', 'Festivals Around the World', 'How people celebrate across the globe.', 'Lunar New Year; Hanukkah; Día de los Muertos; Nowruz; Carnival', [
+        L('world-celebrations', 'Celebrations Across the World', {
+          o: ['Describe festivals from several countries', 'Compare them with Indian festivals'],
+          p: ['Knows Indian festivals'],
+          e: [
+            'Around the world, people celebrate with lights, food, family and music. Lunar New Year, celebrated in China and many East Asian communities, features red decorations, dumplings and dragon dances.',
+            'Hanukkah is the Jewish festival of lights, when families light a menorah for eight nights. Nowruz, the Persian New Year at the spring equinox, is celebrated in Iran and Central Asia — and by Parsi communities in India. Día de los Muertos in Mexico honours family members who have died, with flowers and altars.',
+            'Comparing festivals shows both differences and shared human themes: new beginnings, remembering ancestors, light over darkness and gratitude.',
+          ],
+          c: [['belief', 'Hanukkah commemorates, in Jewish tradition, the rededication of the Temple in Jerusalem and the miracle of the oil lasting eight days.'], ['tradition', 'Día de los Muertos blends Indigenous Mexican and Catholic traditions.']],
+          v: 'menorah = a candle holder lit during Hanukkah; equinox = when day and night are about equal length; ancestor = a family member from long ago; lunar = based on the Moon',
+          x: ['Parsi families celebrate Navroz (Nowruz) in Mumbai.', 'Lunar New Year dates shift each year because it follows a lunar calendar.'],
+          s: ['The Festival Pen-Friends', 'Ivaan exchanged letters with pen-friends: Mei in Singapore described Lunar New Year red envelopes; Daniel in Israel sent a drawing of a menorah; Sofia in Mexico wrote about marigold altars for Día de los Muertos. Ivaan replied with a photo of his family\'s Diwali rangoli. "We all love lights and marigolds!" he noticed.'],
+          a: [
+            mt('Match the festival to the place or community', 'Lunar New Year=China and East Asia|Hanukkah=Jewish communities|Día de los Muertos=Mexico|Nowruz=Iran and Parsi communities'),
+            ch('Hanukkah is known as a festival of…', '*lights|colours|kites'),
+            tf('Many festivals share themes like light and new beginnings.', true),
+            ch('Día de los Muertos honours…', '*family members who have died|crops only|the Moon landing'),
+          ],
+          t: ['Why do so many cultures have festivals of light?', 'Which world festival would you like to experience?'],
+          k: ['Compare an Indian festival with a festival from another country for someone.'],
+          m: ['Festivals of Light Comparison Chart', 'poster paper, research books', 'Choose three festivals of light from different cultures | Compare when, why and how they are celebrated | Note differences and similarities | Present your chart'],
+          q: [
+            ch('Lunar New Year dates change because the festival follows…', '*a lunar calendar|the solar calendar exactly|a random draw'),
+            tf('Parsi communities in India celebrate Nowruz.', true),
+            ch('A menorah is lit during…', '*Hanukkah|Holi|Christmas'),
+          ],
+          ms: ['Describes world festivals accurately', 'Compares with Indian festivals', 'Identifies shared human themes'],
+        }),
+      ]),
+      U('exchange', 'Cultural Exchange and Stereotypes', 'Cultures meet, mix and grow.', 'Silk Road and spice trade; Food journeys: chilli, tomato, potato; Stereotypes vs real understanding', [
+        L('food-journeys', 'The Chilli\'s Journey', {
+          o: ['Give examples of cultural exchange through trade', 'Recognise and avoid cultural stereotypes'],
+          p: ['Knows world continents'],
+          e: [
+            'Cultures have always exchanged ideas, goods and foods. Chillies, tomatoes and potatoes — now central to Indian cooking — came from the Americas and reached India after the 1500s, largely through Portuguese trade.',
+            'Indian spices, textiles, mathematics (like the decimal place-value system with zero) and stories travelled the other way, along sea routes and the Silk Road.',
+            'A stereotype is an oversimplified idea about a group ("everyone from X is Y"). Real understanding means learning from people themselves and recognising that every culture contains great variety.',
+          ],
+          c: [['evidence', 'Historians trace the introduction of chillies to India to the Portuguese in the 16th century; the Hindu–Arabic numeral system spread from India to the Islamic world and then to Europe.']],
+          v: 'cultural exchange = sharing ideas and customs between cultures; trade = buying and selling goods; stereotype = an oversimplified idea about a group; Silk Road = ancient trade routes linking Asia and Europe',
+          x: ['Samosas likely have roots in Central Asian or Middle Eastern pastries.', 'Indian numerals became the digits used worldwide.'],
+          s: ['A Kitchen Without Chillies', 'Ivaan\'s grandmother asked: "Imagine cooking without chillies, tomatoes or potatoes." The children gasped — no aloo sabzi! "Five hundred years ago, Indian kitchens didn\'t have them," she said. "They came from across the oceans. Every kitchen is a little museum of world history."'],
+          a: [
+            ch('Chillies originally came from…', '*the Americas|Antarctica|the Moon'),
+            ch('Which travelled from India to the world?', '*the decimal system with zero|potatoes|tomatoes'),
+            tf('Cultures have always exchanged ideas and foods.', true),
+            ch('"Everyone from that country is lazy" is a…', '*stereotype|fact|greeting'),
+          ],
+          t: ['Why might stereotypes be harmful?', 'What food in your home has travelled from far away?'],
+          k: ['Tell someone the journey of one ingredient in your kitchen.'],
+          m: ['Kitchen History Investigation', 'notebook, reliable books or sources', 'Choose five ingredients from your kitchen | Research where each originated | Mark their journeys on a world map | Present your "kitchen museum"'],
+          q: [
+            ch('Potatoes reached India from…', '*the Americas, via European traders|Australia only|nowhere, they always grew here'),
+            tf('Real understanding of a culture recognises its variety.', true),
+            ch('Ancient trade routes linking Asia and Europe:', '*the Silk Road|the Highway of Ice|the Moon Path'),
+          ],
+          ms: ['Gives accurate examples of cultural exchange', 'Identifies and avoids stereotypes', 'Uses evidence about origins'],
+        }),
+      ]),
+    ]),
+    S('s9', 'Culture, identity and heritage conservation.', [
+      'Explain what culture includes', 'Discuss multiple identities', 'Describe heritage sites and their protection',
+    ], [
+      U('what-culture', 'What Is Culture?', 'Visible and invisible culture.', 'Culture iceberg: food, dress, festivals (visible); values, beliefs, norms (invisible); Multiple identities', [
+        L('iceberg', 'The Culture Iceberg', {
+          o: ['Distinguish visible and less visible aspects of culture', 'Reflect on their own multiple identities'],
+          p: ['Compares cultures'],
+          e: [
+            'Culture is the shared way of life of a group: language, food, dress, arts, festivals, beliefs, values and ways of behaving.',
+            'The "culture iceberg" image shows that some parts are easy to see (food, clothing, festivals) while bigger parts lie below the surface (values, ideas of respect, family roles, ideas about time and communication).',
+            'Each person belongs to many groups — family, region, language, religion or none, school, interests — so identity is layered. Respecting others means being curious about their whole iceberg.',
+          ],
+          c: [['interpretation', 'The iceberg model is a teaching metaphor used in intercultural education; it simplifies how culture works.']],
+          v: 'culture = the shared way of life of a group; identity = who you are and the groups you belong to; norm = an expected behaviour; value = an idea a group considers important',
+          x: ['Touching elders\' feet as a sign of respect — a norm with deeper values.', 'Being Marathi, Indian, a cricket fan and a student all at once.'],
+          s: ['The Misunderstanding', 'When Ivaan\'s new classmate from Japan bowed instead of shaking hands, some children laughed. The teacher explained that bowing shows respect in Japanese culture, like namaste or touching elders\' feet in India. Soon the class was greeting each other in three different ways.'],
+          a: [
+            mt('Visible or below the surface?', 'festival food=visible|ideas about respect=below the surface|traditional clothing=visible, easy to see'),
+            ch('Culture includes…', '*language, food, beliefs and values|only clothes|only buildings'),
+            tf('A person can have many identities at once.', true),
+            ch('The culture iceberg shows that…', '*much of culture is not immediately visible|culture is frozen|only food matters'),
+          ],
+          t: ['What parts of your culture would a visitor not notice at first?', 'How do your identities change in different places?'],
+          k: ['Describe your own "identity layers" to someone.'],
+          m: ['My Culture Iceberg', 'paper, pens', 'Draw an iceberg with a waterline | Above: things others can see about your culture | Below: values and beliefs | Interview a friend from a different background and compare icebergs respectfully'],
+          q: [
+            ch('Which is below the surface of the iceberg?', '*values|clothing|food'),
+            tf('Identity can be layered.', true),
+            ch('A norm is…', '*an expected way of behaving|a festival|a building'),
+          ],
+          ms: ['Explains visible and invisible culture', 'Reflects on identity', 'Shows intercultural respect'],
+        }),
+      ]),
+      U('heritage-sites', 'Heritage Sites', 'Protecting the past for the future.', 'UNESCO World Heritage Sites in India; Tangible and intangible heritage; Threats and conservation', [
+        L('world-heritage', 'India\'s World Heritage', {
+          o: ['Describe tangible and intangible heritage', 'Discuss threats to heritage and how to protect it'],
+          p: ['Knows Indian history basics'],
+          e: [
+            'Heritage is what we inherit from the past and want to pass on. Tangible heritage includes monuments and places, like the Ajanta and Ellora caves, the Taj Mahal, Hampi and the Sun Temple at Konark — all UNESCO World Heritage Sites.',
+            'Intangible heritage includes living traditions: Yoga, Kumbh Mela, Durga Puja in Kolkata, Ramlila, Garba of Gujarat and Vedic chanting are on UNESCO\'s intangible heritage lists.',
+            'Heritage faces threats: pollution, unplanned tourism, neglect and climate change. Protecting it requires careful conservation, responsible tourism and community involvement.',
+          ],
+          c: [['evidence', 'UNESCO has inscribed over 40 sites in India on the World Heritage List; Durga Puja in Kolkata was added to the intangible cultural heritage list in 2021 and Garba in 2023.']],
+          v: 'heritage = traditions and places inherited from the past; tangible = something you can touch; intangible = something you cannot touch, like music or festivals; conservation = protecting and preserving',
+          x: ['Ellora contains Hindu, Buddhist and Jain cave temples side by side.', 'Ramlila performances passed down for generations.'],
+          s: ['The Fading Paintings', 'At the Ajanta caves, ancient paintings had faded over centuries. Conservators worked slowly with special tools, controlling light and visitor numbers to protect them. "These paintings survived 1,500 years," said a guide, "and with care they can survive many more."'],
+          a: [
+            mt('Tangible or intangible?', 'Taj Mahal=tangible|Garba dance=intangible|Hampi ruins=tangible, you can visit them'),
+            ch('Ellora has temples of…', '*Hindu, Buddhist and Jain traditions|only one tradition|no traditions'),
+            tf('Too many visitors can harm heritage sites.', true),
+            ch('Conservation means…', '*protecting and preserving|destroying|ignoring'),
+          ],
+          t: ['Should tourists be limited at fragile sites?', 'What living heritage does your family practise?'],
+          k: ['Present a heritage site or living tradition and how it can be protected.'],
+          m: ['Heritage Guide Brochure', 'paper, research sources, pictures', 'Choose a heritage site or tradition in your state | Research its history and significance | Note threats and conservation efforts | Make a visitor brochure with responsible tourism tips'],
+          q: [
+            ch('Yoga is listed by UNESCO as…', '*intangible heritage|a monument|a city'),
+            tf('Heritage can be tangible or intangible.', true),
+            ch('Which is a threat to heritage?', '*pollution|careful conservation|responsible tourism'),
+          ],
+          ms: ['Distinguishes heritage types', 'Describes sites accurately', 'Proposes conservation actions'],
+        }),
+      ]),
+    ]),
+    S('s12', 'Anthropology, pluralism and cultural change.', [
+      'Apply anthropological concepts', 'Analyse religious and cultural pluralism in India', 'Evaluate globalisation\'s effects on culture',
+    ], [
+      U('anthropology', 'Thinking Like an Anthropologist', 'Studying cultures with respect.', 'Ethnocentrism vs cultural relativism; Participant observation; Ethics of studying communities', [
+        L('relativism', 'Seeing From the Inside', {
+          o: ['Explain ethnocentrism and cultural relativism', 'Describe anthropological methods and ethics'],
+          p: ['Understands culture and identity'],
+          e: [
+            'Ethnocentrism means judging other cultures by the standards of your own, often assuming your own is "normal" or superior. Cultural relativism means trying to understand practices in their own context before judging.',
+            'Anthropologists use participant observation: living with a community, learning its language and taking part in daily life, while recording carefully.',
+            'Ethics matter: informed consent, respecting privacy, avoiding harm, and sharing benefits with communities. Relativism doesn\'t mean accepting everything — human rights provide shared standards — but it encourages understanding before judging.',
+          ],
+          c: [['interpretation', 'Scholars debate how to balance cultural relativism with universal human rights; this lesson presents that debate rather than resolving it.']],
+          v: 'ethnocentrism = judging other cultures by your own standards; cultural relativism = understanding practices in their own context; participant observation = studying a group by taking part in its life; informed consent = agreement given with full understanding',
+          x: ['Assuming eating with hands is "messy" is ethnocentric.', 'Verrier Elwin\'s and later anthropologists\' studies of tribal communities in India.'],
+          s: ['The Visitor\'s Notebook', 'A student visiting a tribal village first wrote, "They have no proper houses." After living there for a week, learning about forest materials and climate, she rewrote her notes: "Homes are built from local bamboo and mud, cool in summer and easy to repair." Understanding had changed her words.'],
+          a: [
+            mt('Match the term', 'ethnocentrism=judging by your own culture\'s standards|cultural relativism=understanding in context|participant observation=learning by taking part'),
+            ch('Informed consent means…', '*people agree with full understanding|people are not told anything|researchers decide alone'),
+            tf('Cultural relativism encourages understanding before judging.', true),
+            ch('"Their way of eating is wrong because it isn\'t ours" is…', '*ethnocentric|relativist|scientific'),
+          ],
+          t: ['Is it ever right to criticise another culture\'s practice? On what grounds?', 'How can a researcher avoid harming a community?'],
+          k: ['Explain ethnocentrism to someone using an everyday example from food or greetings.'],
+          m: ['Mini Ethnography', 'notebook, consent from participants', 'Choose a community you belong to (a club, a market, a festival) | Observe and participate for several sessions | Record practices and meanings carefully with consent | Write a respectful 1000-word ethnographic account'],
+          q: [
+            ch('Living with a community to study it is…', '*participant observation|ethnocentrism|tourism'),
+            tf('Research ethics include avoiding harm.', true),
+            ch('Cultural relativism means…', '*understanding practices in context|everything is equally good automatically|ignoring other cultures'),
+          ],
+          ms: ['Explains key anthropological concepts', 'Applies ethical research practice', 'Writes respectful cultural descriptions'],
+        }),
+      ]),
+      U('pluralism', 'Pluralism and Globalisation', 'Living with diversity in a connected world.', 'India\'s constitutional secularism; Syncretic traditions: Bhakti, Sufi; Globalisation and cultural change', [
+        L('unity-diversity', 'Unity in Diversity', {
+          o: ['Analyse religious and cultural pluralism in India', 'Evaluate effects of globalisation on culture'],
+          p: ['Understands identity and heritage'],
+          e: [
+            'India is home to followers of Hinduism, Islam, Christianity, Sikhism, Buddhism, Jainism, Zoroastrianism, Judaism, tribal religions and people of no religion. The Constitution guarantees freedom of religion and describes India as a secular state, treating all religions with equal respect.',
+            'Indian history includes syncretic traditions that blended ideas: Bhakti saints like Kabir and Sufi saints like Nizamuddin Auliya drew followers across communities; Hindustani classical music grew from many influences.',
+            'Globalisation spreads films, foods, brands and ideas worldwide. It can bring opportunity and creative mixing, but some worry about loss of local languages and traditions. Communities respond by adapting, reviving and sharing their cultures.',
+          ],
+          c: [['evidence', 'The word "secular" was added to the Preamble by the 42nd Amendment in 1976; Articles 25–28 guarantee freedom of religion.'], ['belief', 'Followers of each tradition understand their beliefs in their own terms; teachings of saints like Kabir and Nizamuddin Auliya are revered by their followers.'], ['interpretation', 'Scholars and citizens debate the meaning and practice of secularism in India.']],
+          v: 'pluralism = many groups living together with mutual respect; secular = not favouring any religion; syncretic = blending different traditions; globalisation = increasing worldwide connections',
+          x: ['Ajmer Sharif dargah visited by people of many faiths.', 'Indian films and food popular worldwide.'],
+          s: ['Kabir\'s Couplets', 'In the 15th century, the poet-saint Kabir wrote simple couplets (dohas) questioning empty rituals and celebrating devotion. Both Hindus and Muslims claimed him. Today, his verses are sung by folk singers in villages, quoted in schools and set to music in films — a voice still crossing boundaries.'],
+          a: [
+            mt('Match the term', 'pluralism=many groups living with respect|secular=not favouring any religion|syncretic=blending traditions|globalisation=worldwide connections'),
+            ch('Freedom of religion in India is guaranteed by…', '*the Constitution|a film|a company'),
+            tf('Kabir\'s poetry is valued across communities.', true),
+            ch('A worry about globalisation is…', '*loss of local languages and traditions|more local diversity always|less travel'),
+          ],
+          t: ['How can a society balance shared identity with diverse cultures?', 'What should communities do to keep languages alive?'],
+          k: ['Debate the effects of globalisation on Indian culture, presenting both benefits and concerns.'],
+          m: ['Pluralism Case Study', 'research sources, interviews (with consent)', 'Choose a syncretic tradition, shared shrine or multicultural neighbourhood | Research its history and present practice | Interview community members if possible | Write a report on how diversity is lived there'],
+          q: [
+            ch('The word "secular" was added to the Preamble in…', '1950|*1976|2001'),
+            tf('Globalisation can bring both opportunities and challenges for culture.', true),
+            ch('Bhakti and Sufi traditions are examples of…', '*traditions that drew followers across communities|space missions|sports leagues'),
+          ],
+          ms: ['Analyses pluralism with constitutional and historical evidence', 'Evaluates globalisation\'s cultural effects', 'Discusses religion respectfully and accurately'],
+        }),
+      ]),
+    ]),
+  ],
+});
