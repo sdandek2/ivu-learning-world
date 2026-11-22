@@ -1144,3 +1144,20 @@ html:not(.reduce-motion) .owl-hero__buddy:active > svg { transform:scale(.95); }
   .order__reorder button,.order__remove { min-width:40px;min-height:40px; }
   .order__value { font-size:.94rem; }
 }
+
+
+/* Developmental-stage activity scaffolding and focused word listening. */
+.item--early .item__text { font-size:clamp(1.15rem,2.8vw,1.5rem);line-height:1.45; }
+.item--early .choice,.item--early .tile,.item--early .numpad__key { min-height:64px;font-size:1.08rem; }
+.item--early .item__coach { margin:14px 0 0;padding:12px 16px;border-radius:16px;background:rgba(255,214,107,.22);text-align:center;font-weight:800; }
+.item__hint-wrap { display:grid;justify-items:center;gap:8px;margin-top:12px; }
+.item__hint-copy { max-width:42rem;margin:0;padding:12px 16px;border-radius:14px;background:rgba(255,214,107,.2);text-align:center;font-weight:700; }
+.item--advanced .item__text { font-weight:800; }
+.itemsrun--early .itemsrun__encouragement { font-size:1.02rem; }
+.itemsrun--advanced .itemsrun__encouragement { font-size:.92rem; }
+.vocab__audio { display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px; }
+.vocab__audio .speak { min-height:40px; }
+@media(max-width:600px) {
+  .item--early .choice,.item--early .tile,.item--early .numpad__key { min-height:68px; }
+  .vocab__audio { gap:6px; }
+}
