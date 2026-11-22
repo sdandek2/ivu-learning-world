@@ -139,13 +139,13 @@ try {
   await step('parent navigation separates progress and recommendations', async () => {
     await page.locator('.pnav').getByRole('button', { name: 'Progress' }).click();
     await page.locator('.dash h1').waitFor();
-    await page.getByRole('button', { name: 'Recommendations' }).click();
+    await page.locator('.pnav').getByRole('button', { name: 'Recommendations' }).click();
     await page.getByRole('heading', { name: 'Recommended next steps' }).waitFor();
     await shot('08-parent-recommendations');
   });
 
   await step('curriculum guide shows full lesson detail', async () => {
-    await page.getByRole('button', { name: 'Curriculum' }).click();
+    await page.locator('.pnav').getByRole('button', { name: 'Curriculum' }).click();
     await page.locator('.cbrowser__nav button', { hasText: firstSubject.title }).click();
     await page.locator('.plesson').first().click();
     await page.getByText('Critical-thinking questions').first().waitFor();
@@ -153,7 +153,7 @@ try {
   });
 
   await step('backup export downloads a valid file', async () => {
-    await page.getByRole('button', { name: 'Settings & Backup' }).click();
+    await page.locator('.pnav').getByRole('button', { name: 'Settings & Backup' }).click();
     const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download backup/ }).click()]);
     const path = await dl.path();
     const { readFileSync } = await import('node:fs');
