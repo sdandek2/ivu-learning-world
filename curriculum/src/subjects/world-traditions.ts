@@ -1,0 +1,392 @@
+import { subject, S, U, L, ch, tf, od, mt, ct } from '../dsl.ts';
+
+export default subject({
+  id: 'world-traditions',
+  description: 'A respectful, balanced introduction to the world\'s religious and cultural traditions: festivals, special places, founders and teachers, sacred texts, rites of passage, shared values, and the academic study of religion and freedom of belief. Each tradition is described as its followers understand it, with beliefs, traditions and historical evidence clearly labelled. Learners are invited to understand, not asked to adopt any belief.',
+  stages: [
+    S('s4', 'Celebrations around the world: lights, harvests and sharing.', [
+      'Name festivals from different traditions', 'Notice that many festivals share light, food and family', 'Show respect for how others celebrate',
+    ], [
+      U('festivals-light', 'Festivals of Light', 'Diwali, Hanukkah and Christmas.', 'Diwali lamps; Hanukkah candles; Christmas lights', [
+        L('lights', 'Lamps, Candles and Lights', {
+          o: ['Name three festivals that use lights', 'Say one way each festival is celebrated'],
+          p: ['Knows that families celebrate special days'],
+          e: [
+            'Many people around the world celebrate festivals with lights in the darkest or coldest time of year.',
+            'At Diwali, Hindus, Sikhs, Jains and some Buddhists light small clay lamps called diyas. Many Hindus remember Rama coming home to Ayodhya. At Hanukkah, Jewish families light one more candle each night for eight nights on a special candle-holder called a menorah (hanukkiah).',
+            'At Christmas, Christians celebrate the birth of Jesus, and many homes are decorated with lights and stars. Different festivals, different stories — but lots of families enjoy light, food and being together.',
+          ],
+          c: [['tradition', 'Diwali, Hanukkah and Christmas each have their own stories and customs, celebrated in many different ways by different families.'], ['belief', 'For believers, these festivals remember sacred events: Rama\'s return for many Hindus, the rededication of the Temple for Jews, and the birth of Jesus for Christians.']],
+          v: 'festival = a special day or time of celebration; diya = a small clay oil lamp; menorah = a candle-holder used at Hanukkah; celebrate = to do something happy for a special day',
+          x: ['Lighting diyas and making rangoli at Diwali.', 'Spinning a dreidel at Hanukkah.'],
+          s: ['Three Windows', 'On one street, Ivaan saw three glowing windows. In the first, his family\'s diyas flickered in a row. In the second, his neighbour Sarah lit the fifth candle on her menorah. In the third, the Fernandes family switched on their star lantern. "Everybody\'s window is bright!" Ivaan said. Sarah waved and smiled.'],
+          a: [
+            mt('Match the festival to its light', 'Diwali=diyas|Hanukkah=menorah candles|Christmas=star and tree lights'),
+            ch('How many nights is Hanukkah?', '*eight|two|one'),
+            tf('Different families can celebrate different festivals.', true),
+            ct('Count the diyas: 🪔🪔🪔🪔', 4),
+          ],
+          t: ['Why do you think people like lights at festivals?', 'How can we be kind to friends who celebrate different festivals?'],
+          k: ['Tell a grown-up about your favourite festival and how your family celebrates it.'],
+          m: ['Festival of Lights Window', 'coloured paper, glue, safety scissors (with an adult)', 'Cut out a diya, a menorah and a star | Glue them on a black paper "window" | Add yellow paper flames | Talk about each festival as you make it'],
+          q: [
+            ch('A diya is…', '*a small clay lamp|a drum|a sweet'),
+            tf('Christians celebrate Christmas.', true),
+            ch('A menorah is used at…', '*Hanukkah|Holi|Eid'),
+          ],
+          ms: ['Names three festivals of light', 'Describes a custom from each', 'Shows respect for differences'],
+        }),
+      ]),
+      U('harvests', 'Harvest Festivals', 'Saying thank you for food.', 'Pongal and Makar Sankranti; Thanksgiving; Chuseok and Sukkot', [
+        L('harvest-thanks', 'Thank You for the Harvest', {
+          o: ['Explain what a harvest festival is', 'Name harvest festivals from different places'],
+          p: ['Knows food comes from farms'],
+          e: [
+            'A harvest is when farmers gather the crops they have grown. Many people hold festivals to say thank you for the food.',
+            'In Tamil Nadu, Pongal is celebrated by cooking sweet rice in a new pot until it boils over — a sign of plenty. Across India, Makar Sankranti is celebrated with kites and sesame sweets. In Korea, families celebrate Chuseok with rice cakes called songpyeon.',
+            'In the United States and Canada, families gather for Thanksgiving dinner. Jewish families build a hut called a sukkah for Sukkot. All these festivals remember that food is a gift to be grateful for.',
+          ],
+          c: [['tradition', 'Harvest festivals are celebrated at different times of year depending on local crops and calendars.']],
+          v: 'harvest = gathering ripe crops; grateful = feeling thankful; crop = a plant grown for food; plenty = more than enough',
+          x: ['Flying kites and eating til-gul at Makar Sankranti.', 'Saying thank you before a meal.'],
+          s: ['The Pot Boils Over', 'Grandma placed the new clay pot on the fire. Rice, milk and jaggery bubbled inside. "Watch!" she said. The milk foamed higher and higher until — whoosh — it spilled over the top. "Pongalo pongal!" everyone cheered. "When it boils over, it means a year full of good things," Grandma explained.'],
+          a: [
+            mt('Match the festival to its place', 'Pongal=Tamil Nadu|Chuseok=Korea|Thanksgiving=United States and Canada'),
+            ch('A harvest is when farmers…', '*gather the crops|plant seeds|sleep'),
+            tf('At Pongal, sweet rice boils over the pot.', true),
+            ch('At Makar Sankranti, many people fly…', '*kites|planes|balloons'),
+          ],
+          t: ['What foods are you thankful for?', 'Why should we thank farmers?'],
+          k: ['Name three foods and say thank you to the people who grow them.'],
+          m: ['Thank-You Harvest Basket', 'a basket, paper, crayons', 'Draw or collect pictures of foods you love | Put them in the basket | Say thank you for each one | Make a thank-you card for a farmer or cook'],
+          q: [
+            ch('Being thankful is being…', '*grateful|grumpy|greedy'),
+            tf('Many cultures have harvest festivals.', true),
+            ch('Songpyeon are rice cakes from…', '*Korea|Egypt|Mexico'),
+          ],
+          ms: ['Explains harvest festivals', 'Names festivals from several places', 'Expresses gratitude'],
+        }),
+      ]),
+    ]),
+    S('s5', 'Special places and sharing food together.', [
+      'Name places of worship of different traditions', 'Describe respectful behaviour when visiting', 'Explain the tradition of sharing food',
+    ], [
+      U('special-places', 'Special Places', 'Places of worship.', 'Temple and gurdwara; Mosque and church; Synagogue and vihara', [
+        L('worship-places', 'Where People Pray', {
+          o: ['Match traditions to their places of worship', 'Describe how to show respect when visiting'],
+          p: ['Knows different families celebrate different festivals'],
+          e: [
+            'Many traditions have special buildings where people gather to pray, sing, learn and meet. Hindus visit a mandir (temple), Sikhs a gurdwara, Muslims a mosque (masjid), Christians a church, Jews a synagogue and Buddhists a vihara or temple.',
+            'Each place has its own customs. In many mandirs, gurdwaras and mosques, people take off their shoes. In a gurdwara, everyone covers their head. In a mosque, people wash before prayer.',
+            'When we visit someone else\'s special place, we follow its customs, speak quietly and ask questions politely.',
+          ],
+          c: [['tradition', 'Customs vary between communities and buildings; it is always best to ask what is expected.']],
+          v: 'worship = showing love and respect to God or what is holy; mandir = a Hindu temple; gurdwara = a Sikh place of worship; mosque = a Muslim place of worship',
+          x: ['Covering your head in a gurdwara.', 'Removing shoes before entering a mandir.'],
+          s: ['The Visit', 'Ivaan\'s class visited a gurdwara. At the door, everyone took off their shoes and tied on orange head-scarves. Inside, beautiful music filled the hall. Ivaan sat quietly on the carpet. Afterwards, a kind uncle explained the holy book, the Guru Granth Sahib, and invited them to share a meal. "Thank you," Ivaan whispered politely.'],
+          a: [
+            mt('Match the tradition to its place', 'Sikh=gurdwara|Muslim=mosque|Christian=church|Jewish=synagogue'),
+            ch('When visiting a special place, we should…', '*follow its customs and be quiet|run around|shout'),
+            tf('In a gurdwara, everyone covers their head.', true),
+            ch('A Hindu temple is called a…', '*mandir|church|synagogue'),
+          ],
+          t: ['Why do people have special rules in special places?', 'What questions would you like to ask when visiting?'],
+          k: ['Show a grown-up how you would behave politely in a place of worship.'],
+          m: ['Places of Worship Picture Book', 'paper, crayons, stapler', 'Draw six places of worship | Write each name under the picture | Add one custom for each | Staple into a book and share'],
+          q: [
+            ch('A Buddhist monastery or temple is often called a…', '*vihara|gurdwara|mosque'),
+            tf('In many mosques, people wash before prayer.', true),
+            ch('Showing respect means…', '*being polite and following customs|ignoring rules|laughing at others'),
+          ],
+          ms: ['Matches traditions and places', 'Describes respectful behaviour', 'Asks questions politely'],
+        }),
+      ]),
+      U('sharing-food', 'Sharing Food', 'Langar, Eid and community meals.', 'The langar; Sharing at Eid; Prasad', [
+        L('langar', 'Everyone Eats Together', {
+          o: ['Explain the Sikh langar', 'Describe sharing food in different traditions'],
+          p: ['Knows about the gurdwara'],
+          e: [
+            'In every gurdwara there is a free kitchen called the langar. Anyone can eat there, whatever their religion or background. Everyone sits together on the floor as equals. Volunteers cook, serve and wash up.',
+            'The langar was started by Guru Nanak, the founder of Sikhism, more than 500 years ago. The Golden Temple in Amritsar serves free meals to many thousands of people every day.',
+            'Other traditions share food too: at Eid al-Adha, many Muslims share meat with family, friends and people in need. In Hindu temples, food offered in worship, called prasad, is shared with everyone.',
+          ],
+          c: [['tradition', 'The langar is a central Sikh institution expressing equality and selfless service (seva).'], ['evidence', 'The Golden Temple\'s langar is widely reported to serve tens of thousands of people a day, and more on festival days.']],
+          v: 'langar = a free community kitchen in a gurdwara; seva = selfless service; equal = the same in value; prasad = blessed food shared after worship',
+          x: ['Volunteers rolling rotis in the langar.', 'Sharing sweets with neighbours at a festival.'],
+          s: ['Ten Thousand Rotis', 'At the Golden Temple, Ivaan watched volunteers rolling rotis faster than he could count. A grandmother, a businessman, a student and a tourist all sat side by side on long mats. A boy his age poured him dal. "Who pays?" Ivaan asked. "Nobody," his mother smiled. "Here, everyone is a guest, and everyone can help."'],
+          a: [
+            ch('Who can eat at a langar?', '*anyone|only Sikhs|only kings'),
+            ch('Who started the langar?', '*Guru Nanak|Akbar|Aesop'),
+            tf('At the langar, people sit together as equals.', true),
+            mt('Match the food tradition', 'langar=Sikh free kitchen|prasad=blessed food in Hindu temples|Eid sharing=Muslim tradition of sharing meat'),
+          ],
+          t: ['Why is it special that everyone sits together?', 'How can your family share food with others?'],
+          k: ['Explain the langar to a grown-up and why it matters.'],
+          m: ['Family Sharing Meal', 'a simple snack, family members', 'Prepare a simple snack together | Everyone helps with a job | Sit together and share | Talk about how sharing feels'],
+          q: [
+            ch('Seva means…', '*selfless service|a dessert|a festival'),
+            tf('Langar meals are free.', true),
+            ch('Blessed food shared in Hindu temples is…', '*prasad|langar|pizza'),
+          ],
+          ms: ['Explains the langar accurately', 'Describes food-sharing traditions', 'Connects sharing to equality'],
+        }),
+      ]),
+    ]),
+    S('s6', 'Founders, teachers and shared values.', [
+      'Describe the lives of key founders and teachers', 'Find the golden rule across traditions', 'Separate historical evidence from belief',
+    ], [
+      U('founders', 'Founders and Teachers', 'The Buddha, Mahavira and Guru Nanak.', 'Siddhartha Gautama; Mahavira; Guru Nanak', [
+        L('three-teachers', 'Three Teachers from India', {
+          o: ['Describe the lives and key teachings of the Buddha, Mahavira and Guru Nanak', 'Distinguish historical evidence from tradition'],
+          p: ['Knows places of worship'],
+          e: [
+            'Siddhartha Gautama, who became the Buddha ("the awakened one"), lived in northern India about 2,500 years ago. Tradition says he left his palace to understand suffering, meditated under a Bodhi tree and taught the Middle Way between extremes.',
+            'Mahavira, a teacher of the same era, is the 24th Tirthankara of Jainism. He taught ahimsa — non-violence towards all living beings — so strictly that some Jain monks sweep the path to avoid harming insects.',
+            'Guru Nanak (1469–1539), born in Talwandi (now Nankana Sahib, Pakistan), founded Sikhism. He taught that there is one God, that all people are equal, and that people should work honestly, share and remember God.',
+          ],
+          c: [['evidence', 'Historians accept the Buddha, Mahavira and Guru Nanak as historical figures; the Buddha\'s and Mahavira\'s exact dates are debated.'], ['tradition', 'Many details of their lives, such as the Buddha\'s four sights, come from later traditional accounts.'], ['belief', 'Followers regard their teachings as paths to liberation or union with God.']],
+          v: 'enlightenment = in Buddhism, awakening to the truth; ahimsa = non-violence; Tirthankara = in Jainism, a great teacher who shows the way to liberation; Guru = a spiritual teacher',
+          x: ['The Bodhi tree at Bodh Gaya.', 'Guru Nanak\'s teaching "Kirat karo, naam japo, vand chhako" — work honestly, remember God, share.'],
+          s: ['The Four Sights', 'According to tradition, young Prince Siddhartha had never seen suffering. One day, riding outside the palace, he saw an old man, a sick man, a funeral and a calm wandering monk. Deeply moved, he left his comfortable life to search for an answer to suffering. Years later, under a tree at Bodh Gaya, he found the peace he had been seeking.'],
+          a: [
+            mt('Match the teacher to the tradition', 'the Buddha=Buddhism|Mahavira=Jainism|Guru Nanak=Sikhism'),
+            ch('Ahimsa means…', '*non-violence|wealth|music'),
+            tf('Historians accept Guru Nanak as a historical person.', true),
+            ch('The Buddha taught a path called…', '*the Middle Way|the High Road|the Fast Lane'),
+          ],
+          t: ['What do these three teachers have in common?', 'Why is it important to separate evidence from later stories?'],
+          k: ['Present one teacher\'s life and teachings, labelling tradition and evidence.'],
+          m: ['Teacher Fact Files', 'card, reliable books or websites', 'Make one card for each teacher | Add dates, places and key teachings | Mark facts as "evidence" or "tradition" | Display them as a timeline'],
+          q: [
+            ch('Guru Nanak was born in…', '*1469|1947|2000 BCE'),
+            tf('Mahavira is the 24th Tirthankara of Jainism.', true),
+            ch('Buddha means…', '*the awakened one|the king|the warrior'),
+          ],
+          ms: ['Describes three teachers accurately', 'Labels evidence and tradition', 'Compares key teachings'],
+        }),
+      ]),
+      U('golden-rule', 'The Golden Rule', 'Shared values across traditions.', 'Treat others as you wish to be treated; Versions across traditions; Values in action', [
+        L('golden-rule', 'Treat Others as You Would Like to Be Treated', {
+          o: ['Find versions of the golden rule in several traditions', 'Apply the golden rule to real situations'],
+          p: ['Knows several traditions'],
+          e: [
+            'Many traditions teach a version of the "golden rule": treat others the way you would want to be treated.',
+            'The Mahabharata says one should not do to others what would be hurtful to oneself. Confucius said, "Do not impose on others what you do not wish for yourself." Jesus taught, "Do to others as you would have them do to you." Rabbi Hillel said, "What is hateful to you, do not do to your neighbour." A hadith says none truly believes until they wish for their brother what they wish for themselves.',
+            'The golden rule is a simple test: before acting, imagine being the other person.',
+          ],
+          c: [['tradition', 'Versions of the golden rule appear in the Mahabharata, the Analects of Confucius, the Gospels, the Talmud and the hadith, among others.'], ['interpretation', 'Philosophers note limits: people may want different things, so some prefer "treat others as they would wish to be treated".']],
+          v: 'golden rule = treat others as you want to be treated; empathy = imagining how someone else feels; value = an idea about what is important; reciprocity = treating each other in the same way',
+          x: ['Sharing because you would like others to share with you.', 'Not teasing because you would not like to be teased.'],
+          s: ['The Swap Test', 'Kiko wanted to grab the best swing. Then he remembered his teacher\'s "swap test": imagine you are the other person. He pictured himself waiting while someone else hogged the swing. Kiko stepped back. "You go first, then me?" The other boy grinned. They took turns all break and became friends.'],
+          a: [
+            mt('Match the teacher to the tradition', 'Confucius=Chinese philosophy|Hillel=Judaism|Jesus=Christianity'),
+            ch('The golden rule says…', '*treat others as you want to be treated|always win|keep everything'),
+            tf('The golden rule appears in many traditions.', true),
+            ch('Imagining how someone else feels is…', '*empathy|envy|energy'),
+          ],
+          t: ['Is the golden rule always enough? What if people want different things?', 'Why might so many traditions share this idea?'],
+          k: ['Give an example of using the golden rule at school.'],
+          m: ['Golden Rule Poster', 'poster paper, gold crayon', 'Write the golden rule in the centre | Add five versions from different traditions with sources | Draw an example of each | Display it in your room or class'],
+          q: [
+            ch('Reciprocity means…', '*treating each other in the same way|winning prizes|eating sweets'),
+            tf('The Mahabharata contains a version of the golden rule.', true),
+            ch('Who said "What is hateful to you, do not do to your neighbour"?', '*Hillel|Aesop|Birbal'),
+          ],
+          ms: ['Finds the rule across traditions', 'Applies it to situations', 'Considers its limits'],
+        }),
+      ]),
+    ]),
+    S('s7', 'Sacred texts and rites of passage.', [
+      'Identify major sacred texts and their traditions', 'Compare rites of passage', 'Describe beliefs accurately from an insider perspective',
+    ], [
+      U('sacred-texts', 'Sacred Texts', 'Books and teachings held holy.', 'Vedas and Upanishads; Torah, Bible and Quran; Tripitaka and Guru Granth Sahib', [
+        L('holy-books', 'Books Held Holy', {
+          o: ['Match sacred texts to their traditions', 'Describe how different traditions treat their sacred texts'],
+          p: ['Knows several traditions'],
+          e: [
+            'Most religions have sacred texts. Hinduism has many, including the Vedas, Upanishads and Bhagavad Gita. Judaism has the Torah and the wider Hebrew Bible (Tanakh). Christianity has the Bible, including the Old and New Testaments. Islam has the Quran, which Muslims believe was revealed to the Prophet Muhammad.',
+            'Buddhism has collections such as the Pali Canon (Tipitaka). Sikhism has the Guru Granth Sahib, which Sikhs treat as their living Guru — it is placed on a raised platform, covered with cloth and fanned with a chauri.',
+            'Many texts were passed on orally before being written down. The Vedas, for example, were memorised with remarkable accuracy for centuries.',
+          ],
+          c: [['belief', 'Followers often regard their texts as revealed, inspired or authoritative.'], ['evidence', 'Scholars study when and how texts were composed; for example, the Rigveda is commonly dated to roughly 1500–1000 BCE.'], ['tradition', 'Vedic chanting has been recognised by UNESCO as an Intangible Cultural Heritage of Humanity.']],
+          v: 'scripture = a sacred text; revelation = a message believed to come from God; canon = an accepted collection of texts; recitation = speaking a text aloud from memory',
+          x: ['The Guru Granth Sahib carried on the head with great respect.', 'Muslims learning to recite the Quran in Arabic.'],
+          s: ['The Memory Keepers', 'For centuries, before printing, families of Vedic reciters trained their children to memorise thousands of verses using clever patterns — reciting words forwards, in pairs and in loops — so not a single sound would change. Even today, some students train for years, keeping alive one of the oldest continuous oral traditions on Earth.'],
+          a: [
+            mt('Match the text to the tradition', 'Quran=Islam|Torah=Judaism|Guru Granth Sahib=Sikhism|Tipitaka=Buddhism'),
+            ch('Sikhs treat the Guru Granth Sahib as…', '*their living Guru|a storybook|a dictionary'),
+            tf('Many sacred texts were passed on orally before being written.', true),
+            ch('A sacred text is called…', '*scripture|a script|a scroll only'),
+          ],
+          t: ['Why might people memorise texts instead of writing them?', 'How do different traditions show respect for their texts?'],
+          k: ['Explain how one tradition treats its sacred text, using respectful language.'],
+          m: ['Sacred Texts Table', 'paper, reliable sources', 'Make a table of six traditions and their texts | Add the original language of each | Note one custom for treating the text | Label belief and evidence'],
+          q: [
+            ch('The Rigveda is part of…', '*the Vedas|the Bible|the Quran'),
+            tf('The Bible includes the Old and New Testaments for Christians.', true),
+            ch('A message believed to come from God is a…', '*revelation|recipe|riddle'),
+          ],
+          ms: ['Matches texts and traditions', 'Describes respectful practices', 'Labels belief and scholarship'],
+        }),
+      ]),
+      U('rites', 'Rites of Passage', 'Marking life\'s milestones.', 'Birth and naming; Coming of age; Weddings and remembrance', [
+        L('milestones', 'Marking Life\'s Milestones', {
+          o: ['Compare rites of passage in different traditions', 'Explain why communities mark milestones'],
+          p: ['Knows several traditions'],
+          e: [
+            'Rites of passage are ceremonies that mark important changes in a person\'s life: birth, growing up, marriage and death.',
+            'Many Hindu families hold a naamkaran (naming ceremony) and the upanayana (sacred thread ceremony) for some children. Jewish young people celebrate a bar or bat mitzvah at 13 (or 12 for girls in some communities). Many Christians are baptised. Sikhs may take amrit in an initiation ceremony.',
+            'Weddings and funerals differ widely, but all help people celebrate, grieve and feel supported by their community.',
+          ],
+          c: [['tradition', 'Practices differ greatly within each tradition, between regions and between families.'], ['interpretation', 'Anthropologist Arnold van Gennep (1909) described rites of passage as having three stages: separation, transition and incorporation.']],
+          v: 'rite of passage = a ceremony marking a life change; initiation = a ceremony of joining a group; milestone = an important point in life; ceremony = a formal event with special actions',
+          x: ['A first haircut ceremony (mundan) in some Hindu families.', 'A quinceañera at 15 in many Latin American communities.'],
+          s: ['Leah\'s Big Day', 'Leah practised for months to read from the Torah scroll in Hebrew for her bat mitzvah. On the day, her hands trembled as she began, but her voice grew steadier with each line. When she finished, her family and friends cheered and threw soft sweets. "Now you\'re responsible for your own choices," her grandfather said proudly.'],
+          a: [
+            mt('Match the rite to the tradition', 'bar or bat mitzvah=Judaism|baptism=Christianity|naamkaran=Hinduism|amrit sanskar=Sikhism'),
+            ch('A rite of passage marks…', '*an important life change|a sports match|a meal'),
+            tf('Van Gennep described three stages of rites of passage.', true),
+            od('Put van Gennep\'s stages in order', 'separation|transition|incorporation'),
+          ],
+          t: ['Why do communities mark milestones together?', 'What milestone in your life would you like to celebrate?'],
+          k: ['Describe a rite of passage you have seen or learned about.'],
+          m: ['Family Milestone Interview', 'notebook, a relative to interview', 'Ask a relative about a ceremony from their life | Record what happened and what it meant | Compare it with one from another tradition | Share what you learned'],
+          q: [
+            ch('An initiation is a ceremony of…', '*joining a group|leaving school|cooking'),
+            tf('Rites of passage differ within each tradition.', true),
+            ch('A quinceañera marks the age of…', '*15|5|50'),
+          ],
+          ms: ['Compares rites accurately', 'Explains their social purpose', 'Uses van Gennep\'s model'],
+        }),
+      ]),
+    ]),
+    S('s9', 'The world\'s traditions in overview, including indigenous and folk traditions.', [
+      'Summarise the beliefs and practices of major traditions', 'Interpret data on world religions', 'Appreciate indigenous and folk traditions',
+    ], [
+      U('world-religions', 'Major World Traditions', 'An overview with data.', 'Abrahamic traditions; Dharmic traditions; East Asian traditions; The non-religious', [
+        L('overview', 'A Map of World Traditions', {
+          o: ['Summarise key beliefs of major traditions accurately', 'Interpret data on religious affiliation'],
+          p: ['Knows founders and sacred texts'],
+          e: [
+            'Scholars often group traditions into families. Abrahamic traditions — Judaism, Christianity and Islam — trace their roots to Abraham and believe in one God. Dharmic traditions from India — Hinduism, Buddhism, Jainism and Sikhism — share ideas such as karma and dharma, though they interpret them differently.',
+            'East Asian traditions include Confucianism, Daoism and Shinto, often practised alongside Buddhism. According to Pew Research Center estimates for 2020, Christians made up about 29% of the world population, Muslims about 26%, Hindus about 15%, Buddhists about 4%, and the religiously unaffiliated about 24%.',
+            'Data have limits: people may belong to several traditions, practise without "believing", or identify culturally. Categories invented by outsiders do not always match how people describe themselves.',
+          ],
+          c: [['evidence', 'Figures are estimates from the Pew Research Center\'s analysis of global religious composition (2010–2020).'], ['interpretation', 'Groupings such as "Abrahamic" and "Dharmic" are scholarly categories, useful but simplified.']],
+          v: 'monotheism = belief in one God; affiliation = belonging to a group; karma = in Indian traditions, the principle that actions have consequences; unaffiliated = not identifying with any religion',
+          x: ['A Japanese family visiting a Shinto shrine and a Buddhist temple.', 'People identifying as "spiritual but not religious".'],
+          s: ['The Census Question', 'A researcher in Japan asked people, "What is your religion?" Many said "none". Yet the same people visited shrines at New Year and held Buddhist funerals. "Religion" for them meant joining a group, not practising customs. The researcher realised that a single question could not capture how people really live their traditions.'],
+          a: [
+            mt('Match the tradition to the family', 'Islam=Abrahamic|Jainism=Dharmic|Shinto=East Asian'),
+            ch('Monotheism means belief in…', '*one God|many gods|no god'),
+            tf('Religious data are estimates with limitations.', true),
+            ch('According to Pew\'s 2020 estimates, the largest religious group was…', '*Christians|Buddhists|Jains'),
+          ],
+          t: ['Why can it be hard to count religious followers?', 'What are the strengths and weaknesses of grouping traditions into families?'],
+          k: ['Present a chart of world religions and explain two limitations of the data.'],
+          m: ['World Traditions Data Project', 'Pew Research data, graph paper or spreadsheet', 'Find recent estimates for major traditions | Make a pie chart | Write three observations | Write a paragraph on data limitations'],
+          q: [
+            ch('Hinduism, Buddhism, Jainism and Sikhism are often called…', '*Dharmic traditions|Abrahamic traditions|Greek traditions'),
+            tf('Some people practise more than one tradition.', true),
+            ch('Belonging to a group is called…', '*affiliation|affection|aviation'),
+          ],
+          ms: ['Summarises traditions accurately', 'Interprets data critically', 'Recognises category limits'],
+        }),
+      ]),
+      U('indigenous', 'Indigenous and Folk Traditions', 'Traditions rooted in land and community.', 'Adivasi traditions; Aboriginal Australian Dreaming; Sacred groves', [
+        L('land-traditions', 'Traditions of Land and Community', {
+          o: ['Describe features of indigenous traditions', 'Explain the link between indigenous traditions and the environment'],
+          p: ['Knows major traditions'],
+          e: [
+            'Indigenous traditions belong to particular peoples and lands. They are often passed on orally through stories, songs, dances and rituals, and connect people with ancestors, animals and the land.',
+            'In India, many Adivasi communities, such as the Bhil, Gond and Santhal, have their own deities, festivals and art forms. Sacred groves — patches of forest protected by communities for generations, such as the devrai of Maharashtra and the kavu of Kerala — have preserved rare plants and animals.',
+            'Aboriginal Australian peoples speak of the Dreaming, which connects law, land, ancestors and creation. These traditions are diverse and should be described in their communities\' own words where possible.',
+          ],
+          c: [['tradition', 'Indigenous traditions are diverse; no single description fits all.'], ['evidence', 'Ecologists have documented higher biodiversity in many protected sacred groves in India.'], ['interpretation', 'Terms like "Dreaming" are English translations that only partly capture Aboriginal concepts.']],
+          v: 'indigenous = belonging naturally to a place; Adivasi = a term used by many indigenous communities of India; sacred grove = a forest protected for religious reasons; ancestor = a family member from long ago',
+          x: ['Warli and Gond art telling community stories.', 'A devrai in the Western Ghats protecting old trees.'],
+          s: ['The Grove No One Cuts', 'In a village in the Sahyadri hills, there was a dark green grove where no one cut even a twig. "It belongs to the goddess," the elders said. When scientists visited, they found trees hundreds of years old, rare frogs and medicinal plants that had vanished elsewhere. Belief and tradition had protected a treasure for science.'],
+          a: [
+            ch('Sacred groves in Maharashtra are called…', '*devrai|kavu|gurdwara'),
+            tf('Indigenous traditions are all the same.', false),
+            mt('Match the term', 'Adivasi=indigenous communities of India|Dreaming=Aboriginal Australian concept|sacred grove=protected forest'),
+            ch('Many sacred groves have preserved…', '*rare plants and animals|factories|highways'),
+          ],
+          t: ['How can traditions help protect the environment?', 'Why should communities describe their own traditions?'],
+          k: ['Explain how sacred groves link tradition and conservation.'],
+          m: ['Sacred Grove Study', 'books or articles on sacred groves, map', 'Find three sacred groves in India on a map | Research the plants, animals and traditions in one | Note how the community protects it | Present a short report'],
+          q: [
+            ch('Indigenous means…', '*belonging naturally to a place|from outer space|very new'),
+            tf('Many indigenous traditions are passed on orally.', true),
+            ch('Kavu are sacred groves in…', '*Kerala|Punjab|Ladakh'),
+          ],
+          ms: ['Describes indigenous traditions respectfully', 'Links tradition and ecology', 'Recognises diversity'],
+        }),
+      ]),
+    ]),
+    S('s12', 'The academic study of religion, pluralism and freedom of belief.', [
+      'Use academic approaches to study religion', 'Analyse secularism and religious freedom', 'Discuss pluralism with rigour and respect',
+    ], [
+      U('study-religion', 'Studying Religion', 'Academic approaches.', 'Insider and outsider views; Comparative religion; Lived religion', [
+        L('approaches', 'How Scholars Study Religion', {
+          o: ['Compare insider and outsider approaches', 'Apply the concept of lived religion'],
+          p: ['Knows world traditions'],
+          e: [
+            'Religious studies aims to understand religions without promoting or attacking them. Scholars distinguish insider (emic) perspectives — how followers describe their own beliefs — from outsider (etic) perspectives that use analytical categories.',
+            'Ninian Smart proposed seven dimensions of religion: ritual, narrative and mythic, experiential and emotional, social and institutional, ethical and legal, doctrinal and philosophical, and material. Max Müller, a 19th-century pioneer of comparative religion, famously said, "He who knows one, knows none."',
+            'Recent scholars study "lived religion" — what ordinary people actually do and feel in daily life, which may differ from official teachings.',
+          ],
+          c: [['interpretation', 'Scholars debate whether "religion" is a universal category or a concept shaped by Western history.'], ['evidence', 'Smart\'s dimensions appear in works such as "The World\'s Religions" (1989) and "Dimensions of the Sacred" (1996).']],
+          v: 'emic = an insider\'s perspective; etic = an outsider\'s analytical perspective; lived religion = religion as practised in daily life; methodological neutrality = studying without judging truth claims',
+          x: ['Studying how families actually celebrate a festival.', 'Comparing official doctrine with personal practice.'],
+          s: ['Two Descriptions of One Ritual', 'A student described a family\'s Lakshmi puja two ways. First, as the grandmother explained it: welcoming the goddess of prosperity into a clean, lamp-lit home. Then, as an anthropologist might: a ritual reinforcing family bonds and economic hopes at the start of the financial year. "Both are true in different ways," her teacher said.'],
+          a: [
+            mt('Match the term', 'emic=insider perspective|etic=outsider perspective|lived religion=daily practice|neutrality=not judging truth claims'),
+            ch('Who proposed seven dimensions of religion?', '*Ninian Smart|Charles Darwin|Aesop'),
+            tf('Scholars debate whether "religion" is a universal category.', true),
+            ch('"He who knows one, knows none" was said by…', '*Max Müller|Guru Nanak|Akbar'),
+          ],
+          t: ['Can an outsider fully understand a religion?', 'Why might lived religion differ from official teachings?'],
+          k: ['Describe a ritual from both emic and etic perspectives.'],
+          m: ['Lived Religion Study', 'consent from participants, notebook', 'Observe or interview (with permission) about a family practice | Record the insider\'s explanation | Analyse it using Smart\'s dimensions | Write a 1500-word reflective report'],
+          q: [
+            ch('Methodological neutrality means…', '*not judging truth claims|choosing a side|ignoring evidence'),
+            tf('Ninian Smart\'s model includes a material dimension.', true),
+            ch('An insider\'s perspective is…', '*emic|etic|ethic'),
+          ],
+          ms: ['Applies emic and etic analysis', 'Uses Smart\'s dimensions', 'Studies lived practice ethically'],
+        }),
+      ]),
+      U('pluralism', 'Pluralism and Freedom of Belief', 'Living together with difference.', 'Freedom of religion; Indian secularism; Interfaith dialogue', [
+        L('freedom-belief', 'Freedom of Thought, Conscience and Religion', {
+          o: ['Explain legal protections for freedom of belief', 'Compare models of secularism'],
+          p: ['Knows academic approaches to religion'],
+          e: [
+            'Article 18 of the Universal Declaration of Human Rights (1948) protects freedom of thought, conscience and religion, including the freedom to change one\'s religion or belief and to practise it.',
+            'India\'s Constitution guarantees freedom of conscience and the right to profess, practise and propagate religion (Article 25), subject to public order, morality and health. The word "secular" was added to the Preamble in 1976. Indian secularism is often described as "principled distance" — the state may engage with all religions equally — while French laïcité emphasises strict separation.',
+            'Pluralism goes beyond tolerance: actively engaging with difference. Historical examples include Ashoka\'s edicts urging respect for all sects and Akbar\'s Ibadat Khana debates. Debates continue over how to balance religious freedom with equality and other rights.',
+          ],
+          c: [['evidence', 'Article 18 UDHR (1948); Constitution of India Articles 25–28; the 42nd Amendment (1976) added "secular" to the Preamble.'], ['interpretation', 'Scholars such as Rajeev Bhargava describe Indian secularism as "principled distance"; its practice is widely debated.']],
+          v: 'secularism = keeping state and religion separate or neutral; pluralism = actively engaging with diversity; conscience = a person\'s inner sense of right and wrong; laïcité = the French model of secularism',
+          x: ['Ashoka\'s Rock Edict XII on respect for other sects.', 'Interfaith dialogue groups in many cities.'],
+          s: ['The House of Worship Debates', 'In the 1570s, Emperor Akbar built the Ibadat Khana at Fatehpur Sikri, where scholars of different faiths — Muslim, Hindu, Jain, Zoroastrian and Christian — debated questions of belief. The discussions were sometimes heated, but they reflected a remarkable curiosity about other traditions.'],
+          a: [
+            ch('Article 18 of the UDHR protects…', '*freedom of thought, conscience and religion|the right to drive|free education only'),
+            mt('Match the concept', 'principled distance=Indian secularism model|laïcité=French secularism|pluralism=engaging with diversity'),
+            tf('"Secular" was added to India\'s Preamble in 1976.', true),
+            ch('Article 25 of India\'s Constitution concerns…', '*freedom of religion|taxes|elections'),
+          ],
+          t: ['How should a society balance religious freedom and other rights?', 'Is tolerance enough, or is pluralism needed?'],
+          k: ['Lead a respectful discussion on different models of secularism.'],
+          m: ['Comparative Secularism Essay', 'constitutions, scholarly articles', 'Compare Indian, French and US approaches to religion and state | Use primary legal texts | Evaluate strengths and weaknesses | Write a 2000-word balanced essay'],
+          q: [
+            ch('Pluralism means…', '*actively engaging with diversity|ignoring others|having one view'),
+            tf('Ashoka urged respect for all sects.', true),
+            ch('Akbar\'s debate hall was the…', '*Ibadat Khana|Red Fort|Taj Mahal'),
+          ],
+          ms: ['Explains legal protections accurately', 'Compares secular models', 'Discusses pluralism with nuance'],
+        }),
+      ]),
+    ]),
+  ],
+});

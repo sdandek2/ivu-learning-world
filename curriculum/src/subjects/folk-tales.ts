@@ -1,0 +1,392 @@
+import { subject, S, U, L, ch, tf, od, mt, ct } from '../dsl.ts';
+
+export default subject({
+  id: 'folk-tales',
+  description: 'Folk tales, fables and trickster stories from India and around the world: the Panchatantra, Jataka tales, Aesop, Tenali Raman, Akbar and Birbal, Anansi and many more. Young children enjoy, retell and act out the stories and talk about their lessons; older learners study how tales travel between cultures, recurring motifs, story frames and the scholarly study of folklore. Traditional attributions and dates are labelled as tradition where evidence is uncertain.',
+  stages: [
+    S('s4', 'Animal friends and clever thinking: short fables to enjoy, retell and act out.', [
+      'Listen to and retell short fables', 'Talk about what a character learned', 'Act out a story with simple props',
+    ], [
+      U('animal-fables', 'Animal Fables', 'Panchatantra animal stories.', 'The monkey and the crocodile; Clever thinking; Friendship and trust', [
+        L('monkey-crocodile', 'The Monkey and the Crocodile', {
+          o: ['Retell the story of the monkey and the crocodile in order', 'Say how the monkey used clever thinking to stay safe'],
+          p: ['Can listen to a short story'],
+          e: [
+            'The Panchatantra is a very old collection of animal stories from India. The stories were told to teach young princes how to be wise.',
+            'In one story, a monkey shares sweet rose-apples (jamun) with a crocodile and they become friends. But the crocodile\'s wife wants to eat the monkey\'s heart!',
+            'The crocodile carries the monkey on his back across the river and tells him the plan. The clever monkey says, "Oh! I left my heart in the tree. Take me back to get it!" Back at the tree, he jumps to safety. Thinking calmly helped him.',
+          ],
+          c: [['tradition', 'The Panchatantra is traditionally credited to a teacher named Vishnu Sharma; its exact age is uncertain, but it is more than 1,500 years old.']],
+          v: 'fable = a short story, often with animals, that teaches a lesson; clever = good at thinking of ideas; trust = believing someone will be good to you; jamun = a purple fruit, also called rose-apple or Java plum',
+          x: ['Staying calm and thinking when something goes wrong.', 'Telling a grown-up if someone asks you to go somewhere unsafe.'],
+          s: ['Back to the Tree', 'Halfway across the river, the crocodile said, "My wife wants your heart!" The monkey\'s tummy flipped, but he took a deep breath. "Silly me, I keep my heart up in the tree. Let\'s go back and fetch it." The crocodile turned around. As soon as they reached the bank, the monkey leapt up the tree. "My heart stays with me," he laughed, "and so does my good sense!"'],
+          a: [
+            ch('What did the monkey share with the crocodile?', '*sweet fruit|his house|a boat'),
+            od('Put the story in order', 'They become friends|The crocodile carries the monkey|The monkey says his heart is in the tree|The monkey jumps to safety'),
+            tf('The monkey stayed calm and thought of a clever idea.', true),
+            ch('Where did the monkey say he left his heart?', '*in the tree|in the river|at school'),
+          ],
+          t: ['Was the crocodile a good friend? Why or why not?', 'What can you do when you feel scared?'],
+          k: ['Tell the story to a grown-up using a monkey voice and a crocodile voice.'],
+          m: ['River Story Puppets', 'paper, crayons, two sticks, tape', 'Draw a monkey and a crocodile | Tape each to a stick | Use a blue cloth as the river | Act out the story for your family'],
+          q: [
+            ch('The Panchatantra stories come from…', '*India|the Moon|Antarctica'),
+            tf('A fable often has animals and teaches a lesson.', true),
+            ch('What helped the monkey stay safe?', '*clever, calm thinking|running into the river|crying loudly'),
+          ],
+          ms: ['Retells the story in order', 'Explains the monkey\'s clever idea', 'Connects calm thinking to own life'],
+        }),
+      ]),
+      U('clever-thinkers', 'Clever Thinkers', 'Small creatures solve big problems.', 'The thirsty crow; Never giving up; Using what you have', [
+        L('thirsty-crow', 'The Thirsty Crow', {
+          o: ['Retell the story of the thirsty crow', 'Explain how the crow solved its problem step by step'],
+          p: ['Can retell a short story'],
+          e: [
+            'On a very hot day, a thirsty crow found a pot with a little water at the bottom. Its beak could not reach the water.',
+            'The crow did not give up. It picked up small pebbles and dropped them into the pot, one by one. Slowly, the water rose higher and higher.',
+            'At last the crow could drink! This story is told in India and in Aesop\'s fables from Greece. It teaches that thinking and patience can solve problems. Scientists have even seen real crows and rooks drop stones into water to raise it!',
+          ],
+          c: [['tradition', 'The thirsty crow appears in Aesop\'s fables and is a favourite in Indian storytelling.'], ['evidence', 'In experiments, rooks and New Caledonian crows dropped stones into water tubes to bring floating food within reach.']],
+          v: 'thirsty = needing a drink; pebble = a small round stone; patience = waiting calmly and keeping on trying; problem = something that needs to be solved',
+          x: ['Standing on a step stool to reach a high shelf (with a grown-up).', 'Trying a puzzle piece in different ways until it fits.'],
+          s: ['Plop, Plop, Plop', 'Kaka the crow peered into the pot. The water glimmered far below. "Hmm," thought Kaka, tilting his head. He spotted pebbles on the ground. Plop! went the first pebble. Plop! Plop! The water crept up. Twenty pebbles later, Kaka dipped his beak and drank the cool water. "Little by little," he cawed happily.'],
+          a: [
+            ch('What was the crow\'s problem?', '*it could not reach the water|it was lost|it was cold'),
+            od('Put the crow\'s steps in order', 'It finds the pot|It drops in pebbles|The water rises|It drinks'),
+            ct('Count the pebbles: 🪨🪨🪨🪨🪨', 5),
+            tf('The crow gave up quickly.', false),
+          ],
+          t: ['What else could the crow have tried?', 'When did you keep trying until you solved something?'],
+          k: ['Show a grown-up how the crow solved the problem using a cup and pebbles.'],
+          m: ['🧪 Crow\'s Pebble Experiment', 'a clear cup, a little water, clean pebbles or marbles (with an adult)', 'Mark the water level with tape | Drop in pebbles one at a time | Watch the water rise | Count how many pebbles it took'],
+          q: [
+            ch('What made the water rise?', '*pebbles|wind|sugar'),
+            tf('Patience means keeping on trying calmly.', true),
+            ch('The crow was…', '*clever and patient|lazy|angry'),
+          ],
+          ms: ['Retells the story', 'Explains the solution step by step', 'Shows patience in a task'],
+        }),
+      ]),
+    ]),
+    S('s5', 'Fables with morals from Aesop and the Jataka tales.', [
+      'Identify the moral of a fable', 'Compare characters and their choices', 'Retell stories with a beginning, middle and end',
+    ], [
+      U('aesop', 'Aesop\'s Fables', 'Short Greek fables with morals.', 'The tortoise and the hare; The lion and the mouse; What is a moral?', [
+        L('tortoise-hare', 'Slow and Steady', {
+          o: ['Explain what a moral is', 'Identify the morals of two Aesop fables'],
+          p: ['Can retell a short fable'],
+          e: [
+            'Aesop\'s fables are short stories said to come from ancient Greece. Each one ends with a moral — the lesson of the story.',
+            'In "The Tortoise and the Hare", the speedy hare is so sure he will win a race that he takes a nap. The tortoise keeps walking steadily and wins! Moral: slow and steady wins the race.',
+            'In "The Lion and the Mouse", a lion lets a tiny mouse go free. Later, the mouse nibbles through a hunter\'s net to save the lion. Moral: even small friends can be a big help, and kindness comes back.',
+          ],
+          c: [['tradition', 'Aesop is traditionally said to have been a storyteller in ancient Greece about 2,500 years ago; historians are unsure about the details of his life, and many fables were added later.']],
+          v: 'moral = the lesson a story teaches; steady = keeping on at the same pace; boast = to show off; kindness = being gentle and helpful',
+          x: ['Practising a little each day instead of rushing.', 'Helping someone smaller than you.'],
+          s: ['The Nap Under the Tree', 'Hare zoomed ahead, looked back and saw Tortoise far behind. "Plenty of time for a nap," he yawned. Tortoise kept going: step, step, step. When Hare woke up, he heard cheering. Tortoise was crossing the finish line! Hare learned that showing off doesn\'t win races — keeping going does.'],
+          a: [
+            ch('A moral is…', '*the lesson of a story|a type of animal|a race'),
+            ch('Why did the hare lose?', '*he showed off and took a nap|he was slow|he got lost'),
+            mt('Match the fable to its moral', 'tortoise and hare=slow and steady wins|lion and mouse=small friends can help|thirsty crow=thinking solves problems'),
+            tf('The mouse saved the lion by nibbling the net.', true),
+          ],
+          t: ['Have you ever been like the hare or the tortoise?', 'Why did the lion\'s kindness matter later?'],
+          k: ['Tell a grown-up your favourite fable and its moral.'],
+          m: ['Fable Race Play', 'chalk or tape for a race line, a friend or family member', 'Mark a start and finish line | Act out the race: one hops fast and naps, one walks steadily | Swap roles | Say the moral together at the end'],
+          q: [
+            ch('Aesop\'s fables are said to come from…', '*ancient Greece|Japan|Brazil'),
+            tf('Every Aesop fable has a moral.', true),
+            ch('Who won the race?', '*the tortoise|the hare|the lion'),
+          ],
+          ms: ['Defines moral', 'Identifies morals of fables', 'Relates morals to own life'],
+        }),
+      ]),
+      U('jataka', 'Jataka Tales', 'Stories of kindness and wisdom.', 'The monkey king; Sacrifice for others; Buddhist storytelling', [
+        L('monkey-king', 'The Monkey King\'s Bridge', {
+          o: ['Retell the Jataka tale of the monkey king', 'Explain why the monkey king is a good leader'],
+          p: ['Knows what a moral is'],
+          e: [
+            'The Jataka tales are very old stories from Buddhist tradition. They tell of the earlier lives of the Buddha, often as an animal who acts with great kindness and wisdom.',
+            'In one tale, a king\'s soldiers chase a troop of monkeys living in a mango tree. The monkey king stretches his own body across the river, like a bridge, so all the monkeys can run across to safety.',
+            'The human king is so moved that he learns a lesson: a true leader cares for those he leads more than for himself.',
+          ],
+          c: [['belief', 'In Buddhist tradition, the Jataka tales tell of the Buddha\'s previous lives.'], ['evidence', 'Jataka scenes are carved on ancient stupas such as those at Bharhut and Sanchi, more than 2,000 years old.']],
+          v: 'Jataka = a Buddhist story about the Buddha\'s earlier lives; leader = someone who guides a group; troop = a group of monkeys; sacrifice = giving up something for others',
+          x: ['A class monitor helping everyone line up safely.', 'An older sibling sharing the last piece of food.'],
+          s: ['The Living Bridge', 'Arrows flew towards the mango tree. "Follow me!" called the monkey king. He leapt to the far bank, tied a vine to his foot and stretched back across the river, holding a branch. "Run across my back!" Eighty monkeys scampered over him to safety. Watching, the human king lowered his bow. "I have much to learn from this monkey," he said.'],
+          a: [
+            ch('How did the monkey king save his troop?', '*he made a bridge with his body|he hid them in a cave|he fought the soldiers'),
+            tf('Jataka tales come from Buddhist tradition.', true),
+            ch('What did the human king learn?', '*a leader cares for others|mangoes are tasty|monkeys are noisy'),
+            od('Put the story in order', 'Soldiers chase the monkeys|The king makes a bridge|The monkeys cross|The human king learns'),
+          ],
+          t: ['What makes someone a good leader?', 'How can you help your group or class?'],
+          k: ['Explain to a grown-up why the monkey king is a hero.'],
+          m: ['Bridge of Helpers', 'blocks or cardboard, small toy animals', 'Build a river with a blue cloth | Make a bridge for toy animals to cross | Tell the monkey king story as they cross | Talk about ways you can help others'],
+          q: [
+            ch('Jataka tales are about…', '*the Buddha\'s earlier lives|space travel|cooking'),
+            tf('The monkey king put others before himself.', true),
+            ch('A group of monkeys is called a…', '*troop|flock|school'),
+          ],
+          ms: ['Retells the tale', 'Explains good leadership', 'Labels the tale\'s religious tradition'],
+        }),
+      ]),
+    ]),
+    S('s6', 'Tricksters and wits: clever heroes from many cultures.', [
+      'Identify a trickster character', 'Compare tricksters from different cultures', 'Discuss when cleverness is fair or unfair',
+    ], [
+      U('tricksters', 'Tricksters Around the World', 'Anansi, Br\'er Rabbit and more.', 'Anansi the spider; What makes a trickster; Tricks that teach', [
+        L('anansi', 'Anansi and the Stories', {
+          o: ['Describe what a trickster is', 'Retell an Anansi story and discuss the trick'],
+          p: ['Knows fables and morals'],
+          e: [
+            'A trickster is a clever character who uses tricks, rather than strength, to get what he wants. Tricksters can be heroes or troublemakers — sometimes both!',
+            'Anansi the spider comes from the stories of the Akan people of Ghana in West Africa. In one tale, Anansi wants to own all the stories in the world, kept by the sky god Nyame. Nyame asks for a very hard price: a python, a leopard, hornets and a fairy.',
+            'Using clever tricks, tiny Anansi captures them all. Nyame gives him the stories — which is why, in that tradition, stories are called "Anansi stories". These tales travelled to the Caribbean and the Americas, where they are still told.',
+          ],
+          c: [['tradition', 'Anansi stories come from the Akan people of Ghana and spread to the Caribbean and the Americas.'], ['interpretation', 'Scholars note that trickster tales often show weaker characters outwitting the powerful, which gave hope to enslaved people who carried these stories across the Atlantic.']],
+          v: 'trickster = a clever character who uses tricks; outwit = to beat someone by being cleverer; Akan = a people of Ghana and Ivory Coast; price = what you must give to get something',
+          x: ['Anansi in Ghana and Jamaica.', 'Br\'er Rabbit in stories from the southern United States.'],
+          s: ['The Python\'s Measure', 'Anansi walked past Onini the python, arguing loudly with himself. "He IS longer than this palm branch! No, he isn\'t!" Onini, curious and proud, said, "Measure me!" Anansi laid the branch beside him. "Stretch straight so I can see." As Onini stretched, Anansi quickly tied him to the branch. "The first part of my price," Anansi grinned.'],
+          a: [
+            ch('A trickster wins by…', '*being clever|being the biggest|being lucky only'),
+            ch('Anansi stories come from…', '*Ghana in West Africa|Norway|Australia'),
+            tf('Anansi stories travelled to the Caribbean.', true),
+            mt('Match the trickster to its home', 'Anansi=Ghana|Br\'er Rabbit=southern United States|Tenali Raman=South India'),
+          ],
+          t: ['Is it fair to trick someone? When might it be okay?', 'Why do people love stories where small characters win?'],
+          k: ['Retell how Anansi tricked the python, with actions.'],
+          m: ['Trickster Comic Strip', 'paper folded into four boxes, pencils', 'Choose a trickster tale | Draw the problem, the trick, the result and the lesson | Add speech bubbles | Share your comic and ask readers if the trick was fair'],
+          q: [
+            ch('Anansi is a…', '*spider|lion|crow'),
+            tf('Tricksters always use strength.', false),
+            ch('To beat someone by being cleverer is to…', '*outwit|outrun|outgrow'),
+          ],
+          ms: ['Defines a trickster', 'Retells an Anansi tale', 'Discusses the fairness of tricks'],
+        }),
+      ]),
+      U('court-wits', 'Wise Wits of the Court', 'Tenali Raman, Birbal and Gopal Bhar.', 'Tenali Raman; Akbar and Birbal; Humour and wisdom', [
+        L('birbal', 'Birbal\'s Clever Answers', {
+          o: ['Retell a Birbal or Tenali Raman tale', 'Explain how humour and wisdom work together in these stories'],
+          p: ['Knows what a trickster is'],
+          e: [
+            'In India, many stories tell of clever advisers at royal courts. Birbal was a real minister at the court of the Mughal emperor Akbar in the 1500s, and Tenali Ramakrishna was a poet at the court of Krishnadevaraya of Vijayanagara.',
+            'In one story, Akbar draws a line on the floor and asks, "Make this line shorter without erasing it." Birbal simply draws a longer line next to it — now the first line looks shorter!',
+            'The real people were historical, but most of the funny stories about them were added by storytellers over many years. They teach that thinking in a new way can solve a puzzle.',
+          ],
+          c: [['evidence', 'Birbal (Raja Birbal) was a historical courtier of Akbar; Tenali Ramakrishna was a historical Telugu poet of the 16th century.'], ['tradition', 'Most popular Birbal and Tenali Raman stories are folk tales that grew up around these figures and are not historical records.']],
+          v: 'courtier = a person who works at a royal court; minister = an adviser to a ruler; wit = the ability to say clever, funny things; legend = a story about a real person that may not be fully true',
+          x: ['Gopal Bhar, the witty jester of Bengal stories.', 'Solving a riddle by looking at it differently.'],
+          s: ['The Shorter Line', 'The courtiers scratched their heads. How could a line become shorter without being touched? Birbal smiled, picked up the chalk and drew a much longer line beside it. "Your Majesty, your line is now the shorter one." Akbar laughed and clapped. "Once again, Birbal, you have shown us that the answer lies in how we look."'],
+          a: [
+            ch('How did Birbal make the line shorter?', '*he drew a longer line beside it|he erased part of it|he hid it'),
+            tf('Birbal was a real person at Akbar\'s court.', true),
+            tf('Every Birbal story is a true historical event.', false),
+            mt('Match the wit to the ruler', 'Birbal=Akbar|Tenali Raman=Krishnadevaraya|Gopal Bhar=Krishnachandra of Nadia'),
+          ],
+          t: ['Why do you think people made up stories about real clever people?', 'Can you think of a puzzle you solved by looking at it differently?'],
+          k: ['Tell a Birbal or Tenali Raman story and ask your listener to guess the answer before you reveal it.'],
+          m: ['Puzzle Court', 'paper, a family audience', 'Play the emperor and give a tricky challenge | Let family members be Birbal and solve it | Try the line puzzle and one you invent | Award a paper crown for the best answer'],
+          q: [
+            ch('Birbal served the emperor…', '*Akbar|Ashoka|Shivaji'),
+            tf('A legend can be about a real person but include made-up events.', true),
+            ch('Tenali Ramakrishna was at the court of…', '*Vijayanagara|Rome|China'),
+          ],
+          ms: ['Retells a court-wit tale', 'Separates historical figures from legend', 'Explains lateral thinking in the story'],
+        }),
+      ]),
+    ]),
+    S('s7', 'Fairy tales across cultures and stories within stories.', [
+      'Compare versions of the same tale from different cultures', 'Explain frame narratives', 'Analyse story structure',
+    ], [
+      U('fairy-tales', 'One Tale, Many Lands', 'Cinderella-type stories worldwide.', 'Ye Xian from China; Rhodopis from Egypt; Common patterns', [
+        L('cinderella-world', 'Cinderella Around the World', {
+          o: ['Compare at least three versions of a Cinderella-type tale', 'Identify what stays the same and what changes across cultures'],
+          p: ['Can retell stories and identify morals'],
+          e: [
+            'Many cultures have stories like Cinderella: a kind, mistreated young person, magical help, and a lost object that leads to a happy ending.',
+            'One of the oldest written versions is "Ye Xian" from China, recorded in the 9th century by Duan Chengshi: a magical fish helps her, and she loses a golden slipper. The Greek writer Strabo recorded the tale of Rhodopis, whose sandal was carried off by an eagle and dropped in front of the king of Egypt.',
+            'The French version by Charles Perrault (1697) added the fairy godmother and glass slipper; the Brothers Grimm version (1812) has a magic tree instead. Comparing versions shows what each culture valued.',
+          ],
+          c: [['evidence', 'Ye Xian was written down by Duan Chengshi around 850 CE; Perrault published "Cendrillon" in 1697.'], ['interpretation', 'Folklorists classify these as one tale type, but debate whether similar tales spread from one source or arose independently.']],
+          v: 'version = one form of a story that exists in several forms; motif = a repeated element in stories, such as a lost slipper; culture = the beliefs and customs of a group; variant = a slightly different version',
+          x: ['Ye Xian\'s magical fish bones.', 'Perrault\'s pumpkin coach.'],
+          s: ['The Fish in the Pond', 'Ye Xian\'s stepmother made her fetch water from the deepest wells. Her only friend was a golden-eyed fish in the pond. When the stepmother killed the fish, a wise man told Ye Xian to keep its bones, which granted her wishes. Dressed in a kingfisher-feather cloak and golden shoes, she went to the festival — and left behind a single tiny shoe.'],
+          a: [
+            mt('Match the version to its magical helper', 'Ye Xian=fish bones|Perrault\'s Cinderella=fairy godmother|Grimm\'s Aschenputtel=a magic tree'),
+            ch('Which version is among the oldest written?', '*Ye Xian from China|a 2020 film|a modern cartoon'),
+            tf('A motif is a repeated element that appears in many stories.', true),
+            ch('Rhodopis\'s sandal was carried by…', '*an eagle|a mouse|the wind'),
+          ],
+          t: ['Why might the same story appear in so many places?', 'What does each version\'s magical helper tell us about its culture?'],
+          k: ['Present a comparison of two Cinderella versions to your family.'],
+          m: ['Comparison Chart', 'chart paper, versions of the tale from a library', 'Read or listen to three versions | Make a chart: hero, helper, lost object, ending | Circle what is the same | Write a paragraph about the differences'],
+          q: [
+            ch('Ye Xian was recorded in…', '*China|France|Germany'),
+            tf('Perrault added the glass slipper and fairy godmother.', true),
+            ch('A slightly different version of a story is a…', '*variant|verb|volcano'),
+          ],
+          ms: ['Compares versions systematically', 'Identifies shared motifs', 'Considers cultural differences'],
+        }),
+      ]),
+      U('story-frames', 'Stories Within Stories', 'Frame narratives.', 'Panchatantra frame; One Thousand and One Nights; Vikram and Betal', [
+        L('frame-narrative', 'The Story That Holds Other Stories', {
+          o: ['Explain what a frame narrative is', 'Analyse the frames of the Panchatantra, the Nights and Vikram-Betal'],
+          p: ['Knows the Panchatantra'],
+          e: [
+            'A frame narrative is a main story that contains other stories inside it, like boxes inside a box.',
+            'In the Panchatantra, the frame is about a teacher, Vishnu Sharma, teaching three foolish princes through fables. In "One Thousand and One Nights", Scheherazade tells the king a new story each night, stopping at an exciting moment so he will keep her alive to hear the end.',
+            'In "Vikram and Betal" (Baital Pachisi), King Vikramaditya carries a spirit, Betal, who tells him a riddle-story on the way. If Vikram knows the answer, he must speak — and then Betal flies back to his tree! This frame comes from the Sanskrit "Vetalapanchavimshati".',
+          ],
+          c: [['tradition', 'The Panchatantra, Vetalapanchavimshati and One Thousand and One Nights developed over centuries with many storytellers and editors.'], ['evidence', 'Some famous "Nights" stories, such as Aladdin, were added by the French translator Antoine Galland in the early 1700s from a Syrian storyteller, Hanna Diyab.']],
+          v: 'frame narrative = a story that contains other stories; cliffhanger = an exciting point where a story stops; riddle = a puzzling question; nested = placed one inside another',
+          x: ['Scheherazade stopping each night at a cliffhanger.', 'Betal\'s riddle at the end of each tale.'],
+          s: ['Betal\'s Riddle', 'Vikram trudged through the dark forest with Betal on his shoulder. "Listen, king," said Betal, "to a tale of three suitors..." At the end he asked, "Which one deserves to marry the princess? If you know and stay silent, your head will burst!" Vikram sighed and answered wisely. "You spoke!" cackled Betal, and whoosh — he flew back to his tree.'],
+          a: [
+            mt('Match the frame to its storyteller', 'Panchatantra=Vishnu Sharma|One Thousand and One Nights=Scheherazade|Vikram and Betal=Betal'),
+            ch('A frame narrative is…', '*a story that contains other stories|a picture frame|a poem'),
+            tf('Aladdin was added to the Nights by a French translator.', true),
+            ch('Why did Scheherazade stop at exciting moments?', '*so the king would keep her alive to hear more|she was tired|she forgot'),
+          ],
+          t: ['Why do you think storytellers used frames?', 'How does a cliffhanger make you feel?'],
+          k: ['Tell a short story inside a frame story of your own.'],
+          m: ['Nested Story Booklet', 'paper, stapler, colours', 'Write a frame story about a storyteller | Add two short tales inside it | End each tale with a riddle or cliffhanger | Bind it into a booklet and share it'],
+          q: [
+            ch('Vikram and Betal comes from the Sanskrit…', '*Vetalapanchavimshati|Ramayana|Rigveda'),
+            tf('A cliffhanger stops at an exciting point.', true),
+            ch('The Panchatantra frame is about teaching…', '*three princes|a monkey|a dragon'),
+          ],
+          ms: ['Defines frame narrative', 'Analyses three frames', 'Uses a frame in own writing'],
+        }),
+      ]),
+    ]),
+    S('s9', 'How tales travel, change and are classified.', [
+      'Trace how folk tales spread between cultures', 'Use motif and tale-type classification', 'Evaluate theories of folk-tale origin',
+    ], [
+      U('travelling-tales', 'Tales on the Move', 'The Panchatantra\'s journey.', 'Kalila wa Dimna; Translation chains; Oral and written transmission', [
+        L('kalila-dimna', 'From Sanskrit to the World', {
+          o: ['Trace the Panchatantra\'s journey through translations', 'Explain the difference between oral and written transmission'],
+          p: ['Knows the Panchatantra and frame narratives'],
+          e: [
+            'The Panchatantra may be the most widely travelled story collection in history. Around the 6th century CE it was translated into Middle Persian (Pahlavi) by the physician Burzoe for the Persian king Khosrow I.',
+            'In the 8th century, Ibn al-Muqaffa translated it into Arabic as "Kalila wa Dimna", named after two jackals in the first book. From Arabic it passed into Hebrew, Latin, Spanish, Greek and many other languages. Elements of it may have influenced later European fables, including those of La Fontaine, who mentioned the Indian sage "Pilpay".',
+            'Stories also travel orally — by traders, travellers and families — changing as they go. Written versions give us dated evidence; oral versions are harder to trace.',
+          ],
+          c: [['evidence', 'Ibn al-Muqaffa\'s Arabic Kalila wa Dimna (8th century) is well documented; the Pahlavi version is lost but known through later translations.'], ['interpretation', 'Scholars debate how much of the European fable tradition was directly influenced by the Panchatantra.']],
+          v: 'transmission = passing something on; translation = changing words from one language into another; oral = spoken, not written; manuscript = a hand-written book',
+          x: ['Kalila and Dimna, the two jackals.', 'La Fontaine acknowledging "Pilpay" in his second collection of fables.'],
+          s: ['Burzoe\'s Quest', 'According to the story in Kalila wa Dimna\'s preface, the physician Burzoe travelled from Persia to India searching for a herb said to bring the dead to life. A wise man told him the "herb" was a book of wisdom, and the "dead" were the ignorant. Burzoe returned with the stories and translated them for his king.'],
+          a: [
+            od('Put the Panchatantra\'s journey in order', 'Sanskrit Panchatantra|Middle Persian translation|Arabic Kalila wa Dimna|European translations'),
+            ch('Kalila and Dimna are…', '*two jackals|two kings|two rivers'),
+            tf('Oral transmission is easy to trace precisely.', false),
+            ch('Who translated the collection into Arabic?', '*Ibn al-Muqaffa|Aesop|Perrault'),
+          ],
+          t: ['Why might a story change as it is translated?', 'What is lost and gained when stories are written down?'],
+          k: ['Explain the Panchatantra\'s journey using a map.'],
+          m: ['Story Journey Map', 'a world map print-out, coloured pens', 'Mark India, Persia, Baghdad and Europe | Draw arrows for each translation with dates | Add one fact at each stop | Present the map'],
+          q: [
+            ch('Kalila wa Dimna is in…', '*Arabic|Japanese|Latin'),
+            tf('The Panchatantra was translated into many languages.', true),
+            ch('Spoken transmission is called…', '*oral|written|digital'),
+          ],
+          ms: ['Traces transmission with dates', 'Distinguishes oral and written evidence', 'Evaluates claims of influence'],
+        }),
+      ]),
+      U('tale-types', 'Motifs and Tale Types', 'How folklorists classify tales.', 'The ATU index; Motifs; Origin theories', [
+        L('atu-index', 'Sorting the World\'s Stories', {
+          o: ['Explain the tale-type index and motif classification', 'Compare theories of why similar tales appear worldwide'],
+          p: ['Knows Cinderella variants'],
+          e: [
+            'Folklorists sort tales by their plots. The Aarne–Thompson–Uther (ATU) index, first published by Antti Aarne in 1910 and expanded by Stith Thompson and Hans-Jörg Uther (2004), gives each tale type a number — Cinderella is ATU 510A.',
+            'Stith Thompson also created a Motif-Index of smaller elements, such as magic objects or tests.',
+            'Why are tales similar worldwide? Diffusion theory says they spread from place to place; independent invention says people everywhere create similar stories because they share human experiences. In the 1800s, Theodor Benfey even argued many European tales came from India. Recent studies using methods borrowed from biology suggest some tale types may be thousands of years old.',
+          ],
+          c: [['evidence', 'A 2016 study by Sara Graça da Silva and Jamshid Tehrani used phylogenetic methods to estimate that some tale types, such as "The Smith and the Devil", may date back thousands of years.'], ['interpretation', 'Diffusion and independent invention are competing explanations; many folklorists think both play a part.']],
+          v: 'tale type = a category of stories with the same basic plot; motif = a small recurring element; diffusion = spreading from one place to another; folklorist = a person who studies folklore',
+          x: ['ATU 510A: Cinderella.', 'The motif of a magic object that grants wishes.'],
+          s: ['The Folklorist\'s Card Box', 'Before computers, folklorists kept boxes of index cards, each with a summary of a tale collected from a village storyteller. When Antti Aarne sorted thousands of Finnish tales in 1910, he noticed the same plots again and again. His numbered list grew into a system used by researchers around the world.'],
+          a: [
+            ch('ATU 510A is the tale type for…', '*Cinderella|the tortoise and the hare|Anansi'),
+            mt('Match the term', 'tale type=a category of plots|motif=a small recurring element|diffusion=spreading between places|independent invention=arising separately'),
+            tf('Many folklorists think both diffusion and independent invention play a part.', true),
+            ch('Who first published the tale-type index?', '*Antti Aarne|Aesop|Birbal'),
+          ],
+          t: ['Which theory seems more convincing to you, and why?', 'Can sorting stories by number miss something important?'],
+          k: ['Explain diffusion and independent invention with examples.'],
+          m: ['Mini Motif Index', 'a notebook, at least eight folk tales', 'Read eight tales from different cultures | List motifs in each | Group tales by shared motifs | Write a short report on patterns you found'],
+          q: [
+            ch('A small recurring element in stories is a…', '*motif|tale type|translation'),
+            tf('Stith Thompson created a Motif-Index.', true),
+            ch('The idea that stories spread from place to place is…', '*diffusion|invention|evaporation'),
+          ],
+          ms: ['Explains classification systems', 'Compares origin theories', 'Applies motif analysis'],
+        }),
+      ]),
+    ]),
+    S('s12', 'The scholarly study of folklore and the ethics of retelling.', [
+      'Apply structural analysis to folk tales', 'Evaluate how collectors shaped published tales', 'Consider ethics and representation in retelling',
+    ], [
+      U('folklore-studies', 'Analysing Tales', 'Propp, the Grimms and collectors.', 'Propp\'s functions; The Grimms\' editing; Collectors in India', [
+        L('propp', 'Propp\'s Functions and the Collectors', {
+          o: ['Apply Propp\'s functions to a folk tale', 'Evaluate how collectors edited the tales they published'],
+          p: ['Knows tale types and motifs'],
+          e: [
+            'In "Morphology of the Folktale" (1928), Vladimir Propp analysed Russian fairy tales and found 31 recurring "functions" — such as the hero leaving home, being tested, receiving a magic helper and returning — that tend to occur in a fixed order, along with character roles like hero, villain, donor and helper.',
+            'Collectors shaped the tales we read. The Brothers Grimm published their first edition in 1812 and revised it many times, adding Christian morals, softening some content and making the style more literary. Many of their sources were educated middle-class informants, not only peasants.',
+            'In India, collectors such as Lal Behari Day (Folk-Tales of Bengal, 1883) and A. K. Ramanujan (Folktales from India, 1991) recorded tales; Ramanujan argued that folk tales are a living, regional tradition, often voiced by women storytellers.',
+          ],
+          c: [['evidence', 'The Grimms\' collection went through seven major editions between 1812 and 1857, with documented changes.'], ['interpretation', 'Structural models like Propp\'s are powerful but criticised for ignoring performance, context and meaning.']],
+          v: 'morphology = the study of form and structure; function = in Propp\'s theory, a basic plot action; informant = a person who provides material to a researcher; edition = one published version of a book',
+          x: ['The donor who gives a hero a magic object.', 'The Grimms making Snow White\'s villain a stepmother instead of her mother in later editions.'],
+          s: ['Dortchen\'s Tales', 'Many of the Grimms\' stories came from Dorothea "Dortchen" Wild, a young woman from a pharmacist\'s family in Kassel who later married Wilhelm Grimm. Her tales, told in the family kitchen, were written down, edited and polished — reminding us that "folk" tales often passed through many hands before reaching print.'],
+          a: [
+            ch('Propp analysed tales from…', '*Russia|Japan|Peru'),
+            od('Put these Proppian functions in a typical order', 'Hero leaves home|Hero is tested|Hero receives a magic helper|Hero returns'),
+            tf('The Grimms revised their collection several times.', true),
+            mt('Match the collector to the work', 'Lal Behari Day=Folk-Tales of Bengal|A. K. Ramanujan=Folktales from India|Brothers Grimm=Children\'s and Household Tales'),
+          ],
+          t: ['Is a structural model like Propp\'s more useful for some tales than others?', 'Should collectors edit tales to suit their readers?'],
+          k: ['Present a Proppian analysis of an Indian folk tale.'],
+          m: ['Field Collection Project', 'a recording device, consent from interviewees, notebook', 'Ask an older relative or neighbour (with permission) to tell a traditional tale | Transcribe it faithfully | Analyse it using Propp\'s functions and motifs | Write a 1500-word report reflecting on what changed in transcription'],
+          q: [
+            ch('Propp found how many functions?', '*31|7|100'),
+            tf('Structural models have been criticised for ignoring context.', true),
+            ch('A person who provides material to a researcher is an…', '*informant|editor|author'),
+          ],
+          ms: ['Applies Propp accurately', 'Evaluates editorial influence', 'Practises ethical field collection'],
+        }),
+      ]),
+      U('retelling', 'Retelling and Responsibility', 'Old tales in new times.', 'Stereotypes in old tales; Adaptation; Cultural ownership', [
+        L('ethics-retelling', 'Retelling Old Tales Responsibly', {
+          o: ['Analyse stereotypes and values in traditional tales', 'Evaluate choices made in modern adaptations'],
+          p: ['Knows how collectors shaped tales'],
+          e: [
+            'Traditional tales carry the values of their times. Some contain stereotypes — about women, stepmothers, disability, or particular groups — that modern readers question.',
+            'Retellers make choices: keep the original, change it, or add a note. Some modern adaptations reimagine tales from another character\'s point of view or give passive heroines more agency.',
+            'Questions of cultural ownership also arise: when a story from one community is retold by outsiders or used commercially, who should benefit, and how should its origins be respected? Folklorists emphasise crediting sources and communities.',
+          ],
+          c: [['interpretation', 'There is no single agreed answer on how to adapt traditional tales; writers, communities and scholars hold different views.'], ['tradition', 'Many oral traditions have always changed tales to suit new audiences; adaptation itself is part of folklore.']],
+          v: 'stereotype = an oversimplified idea about a group; adaptation = a new version made for a different time or medium; agency = the ability to act and make choices; attribution = crediting the source',
+          x: ['Retelling a tale from the "villain\'s" point of view.', 'Crediting the community a story comes from in a picture book.'],
+          s: ['The Storyteller\'s Choice', 'A young author wanted to retell a folk tale from her grandmother\'s village. The original heroine simply waited to be rescued. She wondered: should she change it? She asked her grandmother, who laughed, "Every teller changes the story a little. Just remember where it came from." The author wrote a braver heroine — and dedicated the book to the village storytellers.'],
+          a: [
+            ch('A stereotype is…', '*an oversimplified idea about a group|a type of story|a musical instrument'),
+            tf('Adapting tales is itself part of folklore tradition.', true),
+            ch('Crediting a story\'s source is called…', '*attribution|adaptation|agency'),
+            mt('Match the reteller\'s choice', 'keep the original=preserve historical form|change the plot=suit modern values|add a note=explain the context'),
+          ],
+          t: ['Should old tales be changed to fit modern values?', 'Who should benefit when a community\'s stories are published?'],
+          k: ['Debate whether a specific traditional tale should be adapted, presenting both sides.'],
+          m: ['Responsible Retelling', 'a traditional tale, writing materials', 'Choose a tale and analyse its values and stereotypes | Decide what to keep and what to change | Write your retelling | Add an author\'s note explaining your choices and crediting the source'],
+          q: [
+            ch('The ability to act and make choices is…', '*agency|attribution|adaptation'),
+            tf('There is one agreed rule for adapting folk tales.', false),
+            ch('A new version for a different time is an…', '*adaptation|accident|address'),
+          ],
+          ms: ['Analyses values critically', 'Evaluates adaptation choices', 'Credits sources responsibly'],
+        }),
+      ]),
+    ]),
+  ],
+});

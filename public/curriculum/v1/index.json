@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T12:10:43.122Z",
+ "generatedAt": "2026-11-22T12:16:03.500Z",
  "stages": [
   {
    "id": "s4",
@@ -581,18 +581,18 @@
      "title": "Panchatantra, Jataka & Folk Tales",
      "icon": "🐒",
      "tagline": "Clever animals, wise lessons",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/folk-tales.json"
     },
     {
      "id": "world-traditions",
      "title": "World Religions & Wisdom",
      "icon": "🕊️",
      "tagline": "How people find meaning",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/world-traditions.json"
     }
    ]
   },
