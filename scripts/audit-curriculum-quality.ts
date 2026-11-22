@@ -1,11 +1,11 @@
 /**
- * Heuristic curriculum quality audit.
+ * Reproducible curriculum quality screen.
  *
  * Run: npm run audit:curriculum
  *
- * This is deliberately separate from schema validation: it surfaces review
- * candidates without declaring a lesson pedagogically incorrect. It never
- * rewrites curriculum content or changes stable lesson IDs.
+ * The report separates measurable coverage metrics from review findings.
+ * It never rewrites authored lessons or stable IDs. Automated flags are
+ * prompts for human review, not judgments of pedagogical correctness.
  */
 import { existsSync, mkdirSync, readdirSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -16,12 +16,7 @@ import type { RawItem, RawSubject, RawLesson } from '../curriculum/src/dsl.ts';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sourceDir = join(root, 'curriculum/src/subjects');
 const stageOrder = ['s4', 's5', 's6', 's7', 's9', 's12'] as const;
-const storyWordFloor: Record<(typeof stageOrder)[number], number> = {
-  s4: 25, s5: 35, s6: 45, s7: 55, s9: 65, s12: 75,
-};
-const explanationWordFloor: Record<(typeof stageOrder)[number], number> = {
-  s4: 35, s5: 45, s6: 60, s7: 80, s9: 105, s12: 130,
-};
+const SAFETY_RISK = /\\b(coin battery|button cell|batter(?:y|ies)|electric(?:ity)?|wall socket|plug|hot water|hot|boil|flame|fire|knife|needle|scissors?|cut|glass|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|mirror|marbles?|pebbles?)\\b/i;
 
 type Finding = {
   subject: string;
@@ -29,115 +24,128 @@ type Finding = {
   lessonId: string;
   lessonTitle: string;
   code: string;
-  severity: 'review' | 'suggestion';
+  severity: 'review';
   detail: string;
 };
 
-const wordCount = (value: string) => (value.match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu) ?? []).length;
-const kindCounts = (items: RawItem[]) => {
-  const counts: Record<string, number> = {};
-  for (const item of items) counts[item.kind] = (counts[item.kind] ?? 0) + 1;
-  return counts;
-};
-const uniqueKinds = (items: RawItem[]) => new Set(items.map((item) => item.kind)).size;
-const dominantRatio = (counts: Record<string, number>, total: number) =>
-  total ? Math.max(...Object.values(counts)) / total : 0;
+type Metric = { lessons: number; explanationWords: number[]; storyWords: number[]; items: number; itemsWithWhy: number; lessonsWithWhy: number; lessonsWithoutWhy: number };
+
+const wordCount = (value: string) => (value.match(/[\\p{L}\\p{N}]+(?:['’-][\\p{L}\\p{N}]+)*/gu) ?? []).length;
+const kindCount = (items: RawItem[]) => new Set(items.map((item) => item.kind)).size;
+const average = (values: number[]) => values.length ? Math.round(values.reduce((sum, n) => sum + n, 0) / values.length) : 0;
+const emptyMetric = (): Metric => ({ lessons: 0, explanationWords: [], storyWords: [], items: 0, itemsWithWhy: 0, lessonsWithWhy: 0, lessonsWithoutWhy: 0 });
 
 async function main() {
   if (!existsSync(sourceDir)) throw new Error(`Curriculum source directory not found: ${sourceDir}`);
-  const available = new Set(readdirSync(sourceDir).filter((file) => file.endsWith('.ts')).map((file) => file.replace(/\.ts$/, '')));
+  const available = new Set(readdirSync(sourceDir).filter((file) => file.endsWith('.ts')).map((file) => file.replace(/\\.ts$/, '')));
   const findings: Finding[] = [];
-  const subjectStats: { subject: string; lessons: number; review: number; suggestions: number }[] = [];
-  const stageStats = Object.fromEntries(stageOrder.map((stage) => [stage, { lessons: 0, findings: 0 }])) as Record<string, { lessons: number; findings: number }>;
-  let lessonCount = 0;
+  const subjectStats: { subject: string; lessons: number; reviewFindings: number; feedbackCoverage: string }[] = [];
+  const stageStats = Object.fromEntries(stageOrder.map((stage) => [stage, emptyMetric()])) as Record<(typeof stageOrder)[number], Metric>;
+  const total = emptyMetric();
 
   for (const world of WORLDS) {
     for (const meta of world.subjects) {
-      if (!available.has(meta.id)) continue;
+      if (!available.has(meta.id)) {
+        findings.push({ subject: meta.id, stage: 'all', lessonId: meta.id, lessonTitle: meta.title, code: 'missing-source', severity: 'review', detail: 'Subject is listed in the catalog but its authored source file is missing.' });
+        continue;
+      }
       const module = await import(pathToFileURL(join(sourceDir, `${meta.id}.ts`)).href);
       const subject: RawSubject = module.default;
-      let subjectLessons = 0;
       const before = findings.length;
+      let subjectLessons = 0;
+      let subjectItems = 0;
+      let subjectItemsWithWhy = 0;
 
       for (const stage of subject.stages) {
         const stageId = stage.stage;
         for (const unit of stage.units) {
           for (const lesson of unit.lessons as RawLesson[]) {
-            lessonCount += 1;
-            subjectLessons += 1;
-            stageStats[stageId].lessons += 1;
-            const add = (code: string, severity: Finding['severity'], detail: string) => {
-              findings.push({
-                subject: meta.id, stage: stageId, lessonId: `${meta.id}.${stageId}.${unit.slug}.${lesson.slug}`,
-                lessonTitle: lesson.title, code, severity, detail,
-              });
-              stageStats[stageId].findings += 1;
-            };
-
+            const lessonId = `${meta.id}.${stageId}.${unit.slug}.${lesson.slug}`;
             const activities = lesson.a ?? [];
             const assessments = lesson.q ?? [];
-            const allItems = [...activities, ...assessments];
-            const activityKinds = kindCounts(activities);
-            const activityRatio = dominantRatio(activityKinds, activities.length);
-            const activityKindsLabel = Object.keys(activityKinds).join(', ') || 'none';
-
-            if (uniqueKinds(activities) < 2) {
-              add('activity-variety', 'review', `Activities use only ${activityKindsLabel}; consider adding a different interaction such as ordering, matching, counting or a hands-on response.`);
-            } else if (activityRatio >= 0.8) {
-              add('activity-concentration', 'suggestion', `One activity type makes up ${Math.round(activityRatio * 100)}% of activities (${activityKindsLabel}); consider a more balanced mix.`);
-            }
-
-            if (uniqueKinds(assessments) < 2) {
-              add('assessment-variety', 'suggestion', 'Assessment uses a single interaction type; consider checking understanding in a second way.');
-            }
-
-            const withFeedback = allItems.filter((item) => Boolean(item.why?.trim())).length;
-            if (allItems.length > 0 && withFeedback === 0) {
-              add('answer-feedback', 'review', 'No activity or assessment item has an explanatory “why” response; add feedback that teaches the idea, not only whether the answer is right.');
-            } else if (allItems.length > 0 && withFeedback / allItems.length < 0.25) {
-              add('answer-feedback-coverage', 'suggestion', `Only ${withFeedback} of ${allItems.length} interactive items include explanatory feedback.`);
-            }
-
-            const storyWords = wordCount(lesson.s?.[1] ?? '');
-            if (storyWords < storyWordFloor[stageId]) {
-              add('story-depth', 'suggestion', `Story is ${storyWords} words; the stage review guide uses ${storyWordFloor[stageId]} words as a prompt to check for a meaningful setup, choice or discovery.`);
-            }
-
+            const items = [...activities, ...assessments];
+            const explained = items.filter((item) => Boolean(item.why?.trim())).length;
             const explanationWords = wordCount((lesson.e ?? []).join(' '));
-            if (explanationWords < explanationWordFloor[stageId]) {
-              add('explanation-depth', 'review', `Explanation is ${explanationWords} words; check whether it provides enough teaching, examples and reasoning for ${stageId}.`);
+            const storyWords = wordCount(lesson.s?.[1] ?? '');
+            const projectMaterials = lesson.m?.[1] ?? '';
+            const projectSteps = lesson.m?.[2] ?? '';
+            const projectSafety = lesson.m?.[3]?.trim() ?? '';
+            const projectText = `${projectMaterials} ${projectSteps}`;
+            const add = (code: string, detail: string) => findings.push({
+              subject: meta.id, stage: stageId, lessonId, lessonTitle: lesson.title, code, severity: 'review', detail,
+            });
+
+            subjectLessons += 1;
+            subjectItems += items.length;
+            subjectItemsWithWhy += explained;
+            for (const metric of [total, stageStats[stageId]]) {
+              metric.lessons += 1;
+              metric.explanationWords.push(explanationWords);
+              metric.storyWords.push(storyWords);
+              metric.items += items.length;
+              metric.itemsWithWhy += explained;
+              if (explained > 0) metric.lessonsWithWhy += 1;
+              else metric.lessonsWithoutWhy += 1;
             }
 
-            const steps = (lesson.m?.[2] ?? '').split('|').map((step) => step.trim()).filter(Boolean);
+            if (activities.length >= 3 && kindCount(activities) === 1) {
+              add('activity-variety', `All ${activities.length} practice activities use the same interaction type (${activities[0].kind}). Review whether a different mode would deepen learning.`);
+            }
+            if (assessments.length >= 3 && kindCount(assessments) === 1) {
+              add('assessment-variety', `All ${assessments.length} assessment items use the same interaction type (${assessments[0].kind}). Consider another way to demonstrate understanding.`);
+            }
+            if (SAFETY_RISK.test(projectText) && !projectSafety) {
+              add('project-safety', 'Project materials or steps mention a potential hazard but have no explicit safety guidance. Add age-appropriate adult-supervision and handling instructions.');
+            }
+            const steps = projectSteps.split('|').map((step) => step.trim()).filter(Boolean);
             if (steps.length < 3) {
-              add('project-steps', 'suggestion', `Project/experiment has ${steps.length} steps; consider a clearer sequence with at least three actionable steps.`);
+              add('project-steps', `Project/experiment has only ${steps.length} actionable steps; check that a child or caregiver can follow it.`);
             }
-
-            const normalizedPrompts = allItems.map((item) => item.prompt.trim().toLowerCase());
-            if (new Set(normalizedPrompts).size !== normalizedPrompts.length) {
-              add('repeated-prompt', 'suggestion', 'An activity and assessment reuse the same prompt; consider assessing transfer rather than repeating the practice question.');
+            const prompts = items.map((item) => item.prompt.trim().toLowerCase());
+            if (new Set(prompts).size !== prompts.length) {
+              add('repeated-prompt', 'An activity and assessment repeat the same prompt. Consider assessing transfer rather than repeating the practice question.');
             }
           }
         }
       }
 
-      const subjectFindings = findings.slice(before);
       subjectStats.push({
         subject: meta.id,
         lessons: subjectLessons,
-        review: subjectFindings.filter((finding) => finding.severity === 'review').length,
-        suggestions: subjectFindings.filter((finding) => finding.severity === 'suggestion').length,
+        reviewFindings: findings.length - before,
+        feedbackCoverage: subjectItems ? `${Math.round(subjectItemsWithWhy / subjectItems * 100)}% of interactive items` : 'no items',
       });
     }
   }
 
-  const reviewCount = findings.filter((finding) => finding.severity === 'review').length;
-  const suggestionCount = findings.length - reviewCount;
+  const metricSummary = (metric: Metric) => ({
+    lessons: metric.lessons,
+    averageExplanationWords: average(metric.explanationWords),
+    minExplanationWords: metric.explanationWords.length ? Math.min(...metric.explanationWords) : 0,
+    averageStoryWords: average(metric.storyWords),
+    minStoryWords: metric.storyWords.length ? Math.min(...metric.storyWords) : 0,
+    interactiveItems: metric.items,
+    itemsWithExplanatoryFeedback: metric.itemsWithWhy,
+    feedbackCoveragePercent: metric.items ? Math.round(metric.itemsWithWhy / metric.items * 100) : 0,
+    lessonsWithAnyExplanatoryFeedback: metric.lessonsWithWhy,
+    lessonsWithNoExplanatoryFeedback: metric.lessonsWithoutWhy,
+  });
+
+  const countsByCode = Object.fromEntries([...new Set(findings.map((finding) => finding.code))].sort().map((code) => [code, findings.filter((finding) => finding.code === code).length]));
   const report = {
-    generatedAt: new Date().toISOString(),
-    method: 'Heuristic screening only; findings are review prompts, not automated judgments of pedagogical correctness.',
-    totals: { subjects: subjectStats.length, lessons: lessonCount, findings: findings.length, review: reviewCount, suggestions: suggestionCount },
-    stages: stageStats,
+    reportVersion: 2,
+    method: 'Deterministic structural and coverage screen. Metrics such as word counts are descriptive, not quality thresholds. Findings are human-review prompts, not expert judgments or factuality certification.',
+    totals: {
+      subjects: subjectStats.length,
+      lessons: total.lessons,
+      interactiveItems: total.items,
+      findings: findings.length,
+      findingsByCode: countsByCode,
+      feedbackCoveragePercent: total.items ? Math.round(total.itemsWithWhy / total.items * 100) : 0,
+      lessonsWithNoExplanatoryFeedback: total.lessonsWithoutWhy,
+    },
+    stages: Object.fromEntries(stageOrder.map((stage) => [stage, metricSummary(stageStats[stage])])),
+    overall: metricSummary(total),
     subjects: subjectStats,
     findings,
   };
@@ -145,37 +153,43 @@ async function main() {
   const docsDir = join(root, 'docs');
   const dataDir = join(root, 'curriculum');
   mkdirSync(docsDir, { recursive: true });
-  writeFileSync(join(dataDir, 'QUALITY_AUDIT.json'), JSON.stringify(report, null, 2) + '\n');
+  writeFileSync(join(dataDir, 'QUALITY_AUDIT.json'), JSON.stringify(report, null, 2) + '\\n');
 
   const lines = [
     '# Curriculum Quality Audit', '',
-    `Generated: ${report.generatedAt}`, '',
-    '> This is a heuristic screening report, not an expert review or a factuality certification. Findings identify lessons worth examining; they do not prove a lesson is wrong. The audit does not modify curriculum content or IDs.', '',
-    `**${subjectStats.length} subjects · ${lessonCount} lessons · ${reviewCount} review flags · ${suggestionCount} suggestions**`, '',
-    '## What is checked', '',
-    '- Activity interaction variety and over-concentration in one interaction type.',
-    '- Variety of assessment interaction types.',
-    '- Explanatory feedback (“why”) attached to interactive items.',
-    '- Story and explanation depth relative to the authored age stage.',
-    '- Project/experiment step clarity.',
-    '- Repeated activity/assessment prompts that may test recall twice instead of transfer.', '',
-    '## Stage summary', '',
-    '| Stage | Lessons | Findings |', '|---|---:|---:|',
-    ...stageOrder.map((stage) => `| ${stage} | ${stageStats[stage].lessons} | ${stageStats[stage].findings} |`), '',
-    '## Subject summary', '',
-    '| Subject | Lessons | Review flags | Suggestions |', '|---|---:|---:|---:|',
-    ...subjectStats.map((row) => `| ${row.subject} | ${row.lessons} | ${row.review} | ${row.suggestions} |`), '',
+    '> Reproducible report. Word counts and feedback coverage are descriptive metrics, not pass/fail judgments. Findings are human-review prompts; they do not certify factual accuracy or pedagogical quality.', '',
+    `**${subjectStats.length} subjects · ${total.lessons} lessons · ${total.items} interactive items · ${findings.length} review findings**`, '',
+    '## Review findings by category', '',
+    '| Category | Count |', '|---|---:|',
+    ...Object.entries(countsByCode).map(([code, count]) => `| ${code} | ${count} |`), '',
+    '## Curriculum-wide metrics', '',
+    `- Explanatory feedback is present on ${report.totals.feedbackCoveragePercent}% of interactive items.`,
+    `- ${total.lessonsWithoutWhy} lessons have no item-level explanatory feedback.`,
+    `- Average explanation length: ${report.overall.averageExplanationWords} words; average story length: ${report.overall.averageStoryWords} words.`, '',
+    '## Developmental-stage metrics', '',
+    '| Stage | Lessons | Avg explanation words | Avg story words | Feedback coverage |', '|---|---:|---:|---:|---:|',
+    ...stageOrder.map((stage) => {
+      const m = report.stages[stage];
+      return `| ${stage} | ${m.lessons} | ${m.averageExplanationWords} | ${m.averageStoryWords} | ${m.feedbackCoveragePercent}% |`;
+    }), '',
+    '## Subject metrics', '',
+    '| Subject | Lessons | Review findings | Feedback coverage |', '|---|---:|---:|---:|',
+    ...subjectStats.map((row) => `| ${row.subject} | ${row.lessons} | ${row.reviewFindings} | ${row.feedbackCoverage} |`), '',
     '## Findings', '',
     ...(findings.length
-      ? findings.map((finding) => `- **[${finding.severity}] ${finding.subject} / ${finding.stage} — ${finding.lessonTitle}** (${finding.lessonId}) — ${finding.code}: ${finding.detail}`)
-      : ['No heuristic findings. This does not replace educator review.']),
+      ? findings.map((finding) => `- **[${finding.code}] ${finding.subject} / ${finding.stage} — ${finding.lessonTitle}** (${finding.lessonId}): ${finding.detail}`)
+      : ['No structural review findings. Educator and factual review are still required.']),
     '',
-    '## Review policy', '',
-    'Prioritize review flags first, then suggestions. Before changing a lesson, check factual accuracy, age appropriateness, cultural context, accessibility, and whether the activity actually measures the stated objective. Preserve all stable IDs and prerequisite relationships. Use qualified educator review for science, health, history, heritage, and safety content.', '',
+    '## Required human review', '',
+    '- Verify factual claims against authoritative, current sources, especially science, health, safety, history, economics and cultural/religious material.',
+    '- Check developmental appropriateness, cognitive load, reading demand and lesson duration for each age stage.',
+    '- Review stories for meaningful context, agency and connection to the lesson objective; do not pad to a word-count target.',
+    '- Check whether practice and assessment test understanding and transfer, not only repeated recall.',
+    '- Check all project risks and accessibility, including allergies, choking hazards, tools, heat, water, electricity and privacy.',
+    '- Preserve stable lesson/item IDs and prerequisite relationships for all content edits.', '',
   ];
-  writeFileSync(join(docsDir, 'CURRICULUM_QUALITY_AUDIT.md'), lines.join('\n'));
-  console.log(`Curriculum quality audit: ${subjectStats.length} subjects, ${lessonCount} lessons, ${reviewCount} review flags, ${suggestionCount} suggestions.`);
-  console.log(`Reports written to docs/CURRICULUM_QUALITY_AUDIT.md and curriculum/QUALITY_AUDIT.json`);
+  writeFileSync(join(docsDir, 'CURRICULUM_QUALITY_AUDIT.md'), lines.join('\\n'));
+  console.log(`Curriculum quality screen: ${subjectStats.length} subjects, ${total.lessons} lessons, ${total.items} items, ${findings.length} review findings.`);
 }
 
 main().catch((error) => {
