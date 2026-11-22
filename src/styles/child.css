@@ -1161,3 +1161,20 @@ html:not(.reduce-motion) .owl-hero__buddy:active > svg { transform:scale(.95); }
   .item--early .choice,.item--early .tile,.item--early .numpad__key { min-height:68px; }
   .vocab__audio { gap:6px; }
 }
+
+/* Phonics word rehearsal — a light-touch companion to the curriculum's own vocabulary. */
+.phonics-practice { margin:24px 0;padding:clamp(16px,3vw,24px);border:2px solid color-mix(in srgb,var(--accent) 28%,white);border-radius:22px;background:color-mix(in srgb,var(--sky) 30%,white); }
+.phonics-practice__head { display:flex;align-items:flex-start;gap:12px;margin-bottom:14px; }
+.phonics-practice__head > span { font-size:2rem; }
+.phonics-practice__head h3 { margin:0 0 4px;font-size:1.2rem; }
+.phonics-practice__head p,.phonics-practice__word p { margin:0; }
+.phonics-practice__words { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:10px; }
+.phonics-practice__word { min-width:0;padding:14px;border-radius:15px;background:#fff;border:1px solid rgba(30,40,80,.1); }
+.phonics-practice__wordtop { display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px; }
+.phonics-practice__wordtop strong { font-size:1.1rem; }
+.phonics-practice__concealed { color:var(--muted,#69708b);font-style:italic; }
+.phonics-practice__actions { display:flex;flex-wrap:wrap;gap:8px;margin-top:12px; }
+.phonics-practice__actions .btn { min-height:42px; }
+.phonics-practice__actions .is-selected { background:color-mix(in srgb,var(--accent) 16%,white); }
+.phonics-practice__note { margin:14px 0 0;font-size:.88rem;opacity:.82; }
+@media(prefers-reduced-motion:reduce) { .phonics-practice * { scroll-behavior:auto;transition:none!important; } }
