@@ -275,7 +275,7 @@ export default subject({
           ],
           t: ['Which discipline interests you most? Why?', 'Why do engineers need communication skills?'],
           k: ['Interview an engineer (in person or by reading) and present their work.'],
-          m: ['Career Explorer', 'reliable career resources, interviews', 'Research three disciplines | List what they do, skills needed and an Indian example | Interview or read about an engineer | Make a career poster'],
+          m: ['Career Explorer', 'reliable career resources, interviews', 'Research three disciplines | List what they do, skills needed and an Indian example | Interview or read about an engineer | Make a career poster', "Ask permission before interviewing an engineer. Do not publish names or contact details without consent; use public career sources and attribute them."],
           q: [
             ch('Applying engineering to medicine is…', '*biomedical engineering|civil engineering|aerospace'),
             tf('The Jaipur Foot is a low-cost prosthetic.', true),
