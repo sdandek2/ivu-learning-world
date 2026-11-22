@@ -1,1 +1,2341 @@
-{"schemaVersion":1,"id":"puzzles","worldId":"mind-galaxy","title":"Puzzles & Problem Solving","icon":"🎲","tagline":"Stuck is where learning starts","description":"Puzzles and problem solving from jigsaws to game theory: shape and jigsaw puzzles, mazes, memory and spot-the-difference games, tangrams, mini sudoku and magic squares, riddles, Polya's problem-solving steps, river-crossing and logic grid puzzles, the Tower of Hanoi and Königsberg bridges, lateral thinking, game theory, and the famous open problems and puzzle-solvers of mathematics.","contentVersion":"1.0.0","sensitivity":"none","stages":[{"stage":"s4","overview":"Jigsaws, shapes and mazes.","goals":["Complete simple jigsaws and shape puzzles","Find a path through a maze","Keep trying when stuck"],"units":[{"id":"puzzles.s4.jigsaws","title":"Jigsaws and Shape Puzzles","summary":"Fitting pieces together.","topics":[{"title":"Edges and corners","subtopics":["Edges and corners"]},{"title":"Matching colours","subtopics":["Matching colours"]},{"title":"Shape sorters","subtopics":["Shape sorters"]}],"objectives":["Use strategies to complete a simple jigsaw","Keep trying calmly when a piece doesn't fit"],"masteryCriteria":["Uses corners-and-edges strategy","Persists calmly","Matches colours and shapes"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"puzzles.s4.jigsaws.jigsaw","title":"Corners First!","skillId":"sk.puzzles.s4.jigsaws.jigsaw","minutes":8,"objectives":["Use strategies to complete a simple jigsaw","Keep trying calmly when a piece doesn't fit"],"prerequisites":["Knows shapes and colours"],"prerequisiteIds":[],"explanation":["A jigsaw puzzle is a picture cut into pieces that fit together. A good strategy is to find the corner pieces first — they have two straight edges.","Next, find the edge pieces with one straight side and build the frame. Then fill the middle by matching colours and shapes.","If a piece doesn't fit, turn it around or try another spot. Being stuck is part of solving puzzles. Puzzle solvers stay calm and keep trying!"],"context":[],"vocabulary":[{"term":"jigsaw","meaning":"a picture cut into fitting pieces"},{"term":"corner","meaning":"where two edges meet"},{"term":"edge","meaning":"the outside side"},{"term":"strategy","meaning":"a plan for solving"}],"examples":["Finding the four corner pieces first.","Matching blue sky pieces together."],"story":{"title":"The Last Piece","text":"Ivaan and Aaji worked on a jungle jigsaw. Corners first, then edges, then the tiger in the middle. But one piece wouldn't fit anywhere! Ivaan felt grumpy. Aaji said, \"Let's turn it.\" He turned it once... twice... CLICK! It fit perfectly — the tiger's eye. \"Stuck just means not yet,\" Aaji smiled."},"activities":[{"id":"puzzles.s4.jigsaws.jigsaw.a1","prompt":"Which pieces should you find first?","kind":"choice","options":["corners","middle pieces","any piece"],"answer":0},{"id":"puzzles.s4.jigsaws.jigsaw.a2","prompt":"How many corner pieces does a rectangle jigsaw have? 🧩🧩🧩🧩","kind":"count","answer":4},{"id":"puzzles.s4.jigsaws.jigsaw.a3","prompt":"If a piece doesn't fit, you can turn it.","kind":"truefalse","answer":true},{"id":"puzzles.s4.jigsaws.jigsaw.a4","prompt":"Put the jigsaw strategy in order","kind":"order","items":["Find the corners","Build the edges","Fill the middle"]}],"thinking":["How do you feel when you're stuck?","What helps you keep trying?"],"speaking":["Show a grown-up your jigsaw strategy."],"project":{"kind":"project","title":"Make Your Own Jigsaw","materials":["an old greeting card or your drawing","safety scissors"],"steps":["Draw a picture or use an old card","Cut it into 6–8 pieces with wavy lines","Mix them up","Solve it and give it to someone else"]},"assessment":[{"id":"puzzles.s4.jigsaws.jigsaw.q1","prompt":"A plan for solving is a…","kind":"choice","options":["strategy","sticker","story"],"answer":0},{"id":"puzzles.s4.jigsaws.jigsaw.q2","prompt":"Corner pieces have two straight edges.","kind":"truefalse","answer":true},{"id":"puzzles.s4.jigsaws.jigsaw.q3","prompt":"Edge pieces have…","kind":"choice","options":["one straight side","no straight sides","four straight sides"],"answer":0}],"mastery":["Uses corners-and-edges strategy","Persists calmly","Matches colours and shapes"]}]},{"id":"puzzles.s4.mazes","title":"Mazes","summary":"Finding the way.","topics":[{"title":"Following paths","subtopics":["Following paths"]},{"title":"Dead ends","subtopics":["Dead ends"]},{"title":"Going back and trying again","subtopics":["Going back and trying again"]}],"objectives":["Find a path through a simple maze","Go back and try again at a dead end"],"masteryCriteria":["Navigates simple mazes","Backtracks at dead ends","Designs a maze"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"puzzles.s4.mazes.mazes","title":"Through the Maze","skillId":"sk.puzzles.s4.mazes.mazes","minutes":8,"objectives":["Find a path through a simple maze","Go back and try again at a dead end"],"prerequisites":["Can follow a line with a finger"],"prerequisiteIds":[],"explanation":["A maze is a puzzle made of paths. You start at one place and try to reach the finish.","Some paths lead to dead ends, where you can't go any further. When that happens, go back to the last place you had a choice and try another way.","A clever trick: try starting from the finish and working backwards! People have built mazes in gardens and hedges for hundreds of years."],"context":[],"vocabulary":[{"term":"maze","meaning":"a puzzle made of paths"},{"term":"path","meaning":"a way to go"},{"term":"dead end","meaning":"a path that stops"},{"term":"finish","meaning":"the end of the maze"}],"examples":["A pencil maze in a puzzle book.","A hedge maze in a garden."],"story":{"title":"The Mouse and the Cheese","text":"In the puzzle book, a little mouse wanted to reach the cheese. Ivaan traced the path with his finger — left, down... dead end! He went back to the last turn and tried right. Up, around, down... CHEESE! \"Want to know a trick?\" asked Papa. \"Start at the cheese and go backwards.\" Ivaan tried the next maze that way. It was super quick!"},"activities":[{"id":"puzzles.s4.mazes.mazes.a1","prompt":"A path that stops is a…","kind":"choice","options":["dead end","finish","start"],"answer":0},{"id":"puzzles.s4.mazes.mazes.a2","prompt":"At a dead end, you should…","kind":"choice","options":["go back and try another way","give up","cry"],"answer":0},{"id":"puzzles.s4.mazes.mazes.a3","prompt":"You can solve some mazes by starting at the finish.","kind":"truefalse","answer":true},{"id":"puzzles.s4.mazes.mazes.a4","prompt":"A maze is made of…","kind":"choice","options":["paths","blocks of cheese","songs"],"answer":0}],"thinking":["Why might starting from the finish help?","How could you make a maze harder?"],"speaking":["Trace a maze and tell a grown-up where the dead ends are."],"project":{"kind":"project","title":"Draw-a-Maze","materials":["paper","pencil","crayons"],"steps":["Draw a start and finish","Draw one path that connects them","Add extra paths with dead ends","Ask a grown-up to solve it"]},"assessment":[{"id":"puzzles.s4.mazes.mazes.q1","prompt":"The end of the maze is the…","kind":"choice","options":["finish","start","middle"],"answer":0},{"id":"puzzles.s4.mazes.mazes.q2","prompt":"Hedge mazes are found in gardens.","kind":"truefalse","answer":true},{"id":"puzzles.s4.mazes.mazes.q3","prompt":"A way to go is a…","kind":"choice","options":["path","puddle","pancake"],"answer":0}],"mastery":["Navigates simple mazes","Backtracks at dead ends","Designs a maze"]}]}]},{"stage":"s5","overview":"Memory games, spot the difference and tangrams.","goals":["Improve visual memory with games","Spot differences by looking carefully","Make shapes with tangram pieces"],"units":[{"id":"puzzles.s5.memory-games","title":"Look Carefully","summary":"Memory and attention.","topics":[{"title":"Pairs game","subtopics":["Pairs game"]},{"title":"Spot the difference","subtopics":["Spot the difference"]},{"title":"What's missing?","subtopics":["What's missing?"]}],"objectives":["Find differences between two pictures by scanning carefully","Use strategies to remember where cards are"],"masteryCriteria":["Scans systematically","Uses memory strategies","Sustains attention"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"puzzles.s5.memory-games.spot","title":"Spot the Difference","skillId":"sk.puzzles.s5.memory-games.spot","minutes":10,"objectives":["Find differences between two pictures by scanning carefully","Use strategies to remember where cards are"],"prerequisites":["Can match pictures"],"prerequisiteIds":[],"explanation":["In spot-the-difference puzzles, two pictures look the same but have small changes. Good spotters scan carefully, part by part — top left, top right, bottom left, bottom right.","In the pairs (memory) game, cards are placed face down. You turn two over; if they match, you keep them. Remembering where cards are helps you win.","Saying things to yourself can help memory: \"The cat is in the corner, the car is next to it.\" Paying attention is a skill we can practise."],"context":[],"vocabulary":[{"term":"difference","meaning":"a way two things are not the same"},{"term":"scan","meaning":"to look over something carefully"},{"term":"memory","meaning":"remembering things"},{"term":"attention","meaning":"focusing on something"}],"examples":["Finding the missing button in the second picture.","Remembering where the two elephants are in a memory game."],"story":{"title":"The Twin Gardens","text":"Ivaan looked at two garden pictures. They looked exactly the same! Then he scanned slowly: top left — the sun was the same; top right — one picture had a bird, the other didn't! Bottom left — a missing flower! He found all five differences. \"Slow looking is fast finding,\" he told his sister."},"activities":[{"id":"puzzles.s5.memory-games.spot.a1","prompt":"A good way to spot differences is to…","kind":"choice","options":["scan part by part","glance quickly","close your eyes"],"answer":0},{"id":"puzzles.s5.memory-games.spot.a2","prompt":"In the pairs game, you win by…","kind":"choice","options":["remembering where cards are","guessing only","hiding cards"],"answer":0},{"id":"puzzles.s5.memory-games.spot.a3","prompt":"Attention is a skill we can practise.","kind":"truefalse","answer":true},{"id":"puzzles.s5.memory-games.spot.a4","prompt":"Count the differences found: ✅✅✅✅✅","kind":"count","answer":5}],"thinking":["What helps you remember where things are?","Why does slow looking help?"],"speaking":["Play a pairs game with a grown-up and explain your memory trick."],"project":{"kind":"project","title":"Homemade Memory Game","materials":["card","crayons","scissors"],"steps":["Cut 12 equal cards","Draw 6 pairs of matching pictures","Shuffle and lay them face down","Play with family and share memory tricks"]},"assessment":[{"id":"puzzles.s5.memory-games.spot.q1","prompt":"Focusing on something is…","kind":"choice","options":["attention","allergy","arithmetic"],"answer":0},{"id":"puzzles.s5.memory-games.spot.q2","prompt":"Scanning part by part helps find differences.","kind":"truefalse","answer":true},{"id":"puzzles.s5.memory-games.spot.q3","prompt":"Remembering things uses your…","kind":"choice","options":["memory","muscles only","shoes"],"answer":0}],"mastery":["Scans systematically","Uses memory strategies","Sustains attention"]}]},{"id":"puzzles.s5.tangrams","title":"Tangrams","summary":"Seven pieces, many shapes.","topics":[{"title":"Tangram pieces","subtopics":["Tangram pieces"]},{"title":"Making animals and objects","subtopics":["Making animals and objects"]},{"title":"Turning and flipping","subtopics":["Turning and flipping"]}],"objectives":["Name the seven tangram pieces","Make pictures by turning and flipping pieces"],"masteryCriteria":["Names tangram pieces","Rotates and flips shapes","Creates figures"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"puzzles.s5.tangrams.tangram","title":"Seven Magic Pieces","skillId":"sk.puzzles.s5.tangrams.tangram","minutes":10,"objectives":["Name the seven tangram pieces","Make pictures by turning and flipping pieces"],"prerequisites":["Knows triangles, squares"],"prerequisiteIds":[],"explanation":["A tangram is a Chinese puzzle made of seven flat pieces: five triangles (two big, one medium, two small), one square and one parallelogram.","Together, the seven pieces make a big square. But you can rearrange them to make hundreds of shapes — cats, boats, people, houses — using all seven pieces without overlapping.","To fit pieces, try turning (rotating) or flipping them over. Tangrams became popular around the world in the 1800s."],"context":[],"vocabulary":[{"term":"tangram","meaning":"a seven-piece shape puzzle"},{"term":"parallelogram","meaning":"a slanted four-sided shape"},{"term":"rotate","meaning":"to turn around"},{"term":"flip","meaning":"to turn over"}],"examples":["A tangram cat with a triangle tail.","A tangram boat with a triangle sail."],"story":{"title":"The Tangram Swan","text":"Zuri tipped out seven pieces. \"Make a swan,\" said her uncle, showing a picture. She tried and tried — the neck wouldn't work. Then she flipped the parallelogram over, and suddenly it made a perfect curved neck! \"Seven pieces, one swan,\" she smiled, and then made a cat, a rocket and a dancing person."},"activities":[{"id":"puzzles.s5.tangrams.tangram.a1","prompt":"How many pieces in a tangram? 🔺🔺🔺🔺🔺◼️▱","kind":"count","answer":7},{"id":"puzzles.s5.tangrams.tangram.a2","prompt":"How many triangles are in a tangram?","kind":"choice","options":["five","two","seven"],"answer":0},{"id":"puzzles.s5.tangrams.tangram.a3","prompt":"You can flip and rotate tangram pieces.","kind":"truefalse","answer":true},{"id":"puzzles.s5.tangrams.tangram.a4","prompt":"Tangrams come from…","kind":"choice","options":["China","Brazil","Egypt"],"answer":0}],"thinking":["Why do you think one puzzle can make so many shapes?","Which piece is hardest to place?"],"speaking":["Show a grown-up a tangram animal you made."],"project":{"kind":"project","title":"Make a Tangram","materials":["a square of card","ruler","scissors (with an adult)"],"steps":["Draw the tangram cutting lines on the square","Cut out the seven pieces","Make the big square again","Create three animals of your own"]},"assessment":[{"id":"puzzles.s5.tangrams.tangram.q1","prompt":"To turn something around is to…","kind":"choice","options":["rotate","repeat","remove"],"answer":0},{"id":"puzzles.s5.tangrams.tangram.q2","prompt":"A tangram has one square.","kind":"truefalse","answer":true},{"id":"puzzles.s5.tangrams.tangram.q3","prompt":"A slanted four-sided shape is a…","kind":"choice","options":["parallelogram","circle","triangle"],"answer":0}],"mastery":["Names tangram pieces","Rotates and flips shapes","Creates figures"]}]}]},{"stage":"s6","overview":"Mini sudoku, magic squares and riddles.","goals":["Solve 4×4 sudoku","Explore magic squares","Solve and create riddles"],"units":[{"id":"puzzles.s6.number-puzzles","title":"Number Puzzles","summary":"Sudoku and magic squares.","topics":[{"title":"4×4 sudoku","subtopics":["4×4 sudoku"]},{"title":"Magic squares","subtopics":["Magic squares"]},{"title":"The Lo Shu legend","subtopics":["The Lo Shu legend"]}],"objectives":["Solve a 4×4 sudoku using logic","Check and complete a 3×3 magic square"],"masteryCriteria":["Solves 4×4 sudoku logically","Verifies magic squares","Creates puzzles"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"puzzles.s6.number-puzzles.sudoku","title":"Sudoku and Magic Squares","skillId":"sk.puzzles.s6.number-puzzles.sudoku","minutes":15,"objectives":["Solve a 4×4 sudoku using logic","Check and complete a 3×3 magic square"],"prerequisites":["Can add numbers to 20"],"prerequisiteIds":[],"explanation":["In a 4×4 sudoku, each row, each column and each 2×2 box must contain the numbers 1, 2, 3 and 4 exactly once. You use logic, not guessing: \"This row already has 1, 2 and 4, so the empty square must be 3.\"","A magic square is a grid where every row, column and diagonal adds up to the same number. In the classic 3×3 magic square using 1 to 9, the magic sum is 15.","The Lo Shu square from ancient Chinese legend is a 3×3 magic square. Magic squares also appear in India — a 4×4 magic square is carved at the Parshvanath temple in Khajuraho, dated to around the 10th century."],"context":[],"vocabulary":[{"term":"sudoku","meaning":"a number placement puzzle"},{"term":"row","meaning":"a line across"},{"term":"column","meaning":"a line up and down"},{"term":"magic square","meaning":"a grid where all lines add to the same sum"}],"examples":["Rows of the Lo Shu: 4 9 2, 3 5 7, 8 1 6.","The Khajuraho magic square, where every row and column adds to 34."],"story":{"title":"The Turtle's Shell","text":"An old Chinese legend tells that during a great flood, a turtle emerged from the river with a strange pattern of dots on its shell. The dots formed numbers 1 to 9 in a square where every line added to 15. People saw it as a sign of order and harmony, and named it the Lo Shu."},"activities":[{"id":"puzzles.s6.number-puzzles.sudoku.a1","prompt":"A row has 1, 2 and 4. The missing number in a 4×4 sudoku is…","kind":"choice","options":["3","5","1"],"answer":0},{"id":"puzzles.s6.number-puzzles.sudoku.a2","prompt":"In the classic 3×3 magic square, each line adds to…","kind":"choice","options":["15","10","20"],"answer":0},{"id":"puzzles.s6.number-puzzles.sudoku.a3","prompt":"Sudoku is solved with logic, not guessing.","kind":"truefalse","answer":true},{"id":"puzzles.s6.number-puzzles.sudoku.a4","prompt":"Add the middle row of the Lo Shu: 3 + 5 + 7","kind":"count","answer":15}],"thinking":["Why does the middle of the 3×3 magic square have to be 5?","What strategies help in sudoku?"],"speaking":["Explain how you solved one square in a sudoku."],"project":{"kind":"project","title":"Puzzle Maker","materials":["grid paper","pencil"],"steps":["Solve two 4×4 sudoku puzzles","Complete a 3×3 magic square with 1–9","Create your own 4×4 sudoku","Swap with a friend to solve"]},"assessment":[{"id":"puzzles.s6.number-puzzles.sudoku.q1","prompt":"A line up and down is a…","kind":"choice","options":["column","row","diagonal"],"answer":0},{"id":"puzzles.s6.number-puzzles.sudoku.q2","prompt":"The Khajuraho magic square is 4×4.","kind":"truefalse","answer":true},{"id":"puzzles.s6.number-puzzles.sudoku.q3","prompt":"A line across is a…","kind":"choice","options":["row","column","circle"],"answer":0}],"mastery":["Solves 4×4 sudoku logically","Verifies magic squares","Creates puzzles"]}]},{"id":"puzzles.s6.riddles","title":"Riddles","summary":"Word puzzles.","topics":[{"title":"What am I? riddles","subtopics":["What am I? riddles"]},{"title":"Double meanings","subtopics":["Double meanings"]},{"title":"Riddles in stories","subtopics":["Riddles in stories"]}],"objectives":["Solve riddles by thinking about clues and double meanings","Create original riddles"],"masteryCriteria":["Solves riddles","Identifies double meanings","Creates original riddles"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"puzzles.s6.riddles.riddles","title":"What Am I?","skillId":"sk.puzzles.s6.riddles.riddles","minutes":15,"objectives":["Solve riddles by thinking about clues and double meanings","Create original riddles"],"prerequisites":["Has good vocabulary"],"prerequisiteIds":[],"explanation":["A riddle is a question or statement that needs clever thinking to solve. Many riddles describe something in a surprising way: \"I have hands but cannot clap. What am I?\" (A clock!)","Riddles often use double meanings — words that mean two things. A clock's \"hands\" are not real hands.","Riddles appear in stories everywhere: the Sphinx's riddle in Greek myth, Betal's riddles to King Vikramaditya, and the Yaksha's questions to Yudhishthira in the Mahabharata."],"context":[],"vocabulary":[{"term":"riddle","meaning":"a puzzling question needing clever thinking"},{"term":"double meaning","meaning":"a word that means two things"},{"term":"clue","meaning":"a hint"},{"term":"solve","meaning":"to find the answer"}],"examples":["\"What has keys but can't open locks?\" — a piano.","\"What gets wetter the more it dries?\" — a towel."],"story":{"title":"The Yaksha's Questions","text":"In the Mahabharata, a Yaksha guarding a lake asked Yudhishthira many riddles before letting him drink. \"What is faster than the wind?\" \"The mind.\" \"What is more numerous than grass?\" \"Thoughts.\" Yudhishthira answered wisely, and the Yaksha restored his brothers to life."},"activities":[{"id":"puzzles.s6.riddles.riddles.a1","prompt":"\"I have hands but cannot clap.\" What am I?","kind":"choice","options":["a clock","a glove","a tree"],"answer":0},{"id":"puzzles.s6.riddles.riddles.a2","prompt":"\"What has keys but can't open locks?\"","kind":"choice","options":["a piano","a door","a car"],"answer":0},{"id":"puzzles.s6.riddles.riddles.a3","prompt":"Riddles often use double meanings.","kind":"truefalse","answer":true},{"id":"puzzles.s6.riddles.riddles.a4","prompt":"\"What gets wetter the more it dries?\"","kind":"choice","options":["a towel","the sun","a stone"],"answer":0}],"thinking":["What makes a riddle clever?","Can you think of a word with two meanings?"],"speaking":["Tell a grown-up a riddle you made up."],"project":{"kind":"project","title":"Riddle Book","materials":["small booklet","pencils"],"steps":["Choose five objects","Write a \"What am I?\" riddle for each using double meanings","Put answers under flaps","Share your riddle book"]},"assessment":[{"id":"puzzles.s6.riddles.riddles.q1","prompt":"A hint is a…","kind":"choice","options":["clue","cloud","clock"],"answer":0},{"id":"puzzles.s6.riddles.riddles.q2","prompt":"The Yaksha asked Yudhishthira riddles.","kind":"truefalse","answer":true},{"id":"puzzles.s6.riddles.riddles.q3","prompt":"To find the answer is to…","kind":"choice","options":["solve","sell","sail"],"answer":0}],"mastery":["Solves riddles","Identifies double meanings","Creates original riddles"]}]}]},{"stage":"s7","overview":"Problem-solving strategies and logic puzzles.","goals":["Use Polya's four steps","Solve river-crossing puzzles","Use logic grids"],"units":[{"id":"puzzles.s7.polya","title":"How to Solve It","summary":"Polya's four steps.","topics":[{"title":"Understand the problem","subtopics":["Understand the problem"]},{"title":"Make a plan","subtopics":["Make a plan"]},{"title":"Carry out and look back","subtopics":["Carry out and look back"]}],"objectives":["Apply Polya's four steps to a problem","Choose strategies like drawing, working backwards and simplifying"],"masteryCriteria":["Applies Polya's steps","Chooses strategies","Reflects on solutions"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"puzzles.s7.polya.polya","title":"Four Steps to Solving","skillId":"sk.puzzles.s7.polya.polya","minutes":20,"objectives":["Apply Polya's four steps to a problem","Choose strategies like drawing, working backwards and simplifying"],"prerequisites":["Has solved simple puzzles"],"prerequisiteIds":[],"explanation":["Mathematician George Polya, in \"How to Solve It\" (1945), described four steps: Understand the problem; Devise a plan; Carry out the plan; Look back (check and reflect).","Useful strategies include: draw a diagram, make a table, look for a pattern, work backwards, try a simpler version, and guess and check.","Looking back is often skipped but powerful: Does the answer make sense? Could I solve it another way? Can I use this method again?"],"context":[],"vocabulary":[{"term":"strategy","meaning":"a method for solving"},{"term":"work backwards","meaning":"start from the goal"},{"term":"simplify","meaning":"make an easier version"},{"term":"reflect","meaning":"think back on what you did"}],"examples":["Drawing a diagram for a handshake problem.","Working backwards from the end of a story problem."],"story":{"title":"The Handshake Problem","text":"Ten friends each shake hands once with every other friend. How many handshakes? Kiko started counting and got confused. Then he tried a simpler version: 2 friends — 1. 3 friends — 3. 4 friends — 6. A pattern! 1, 3, 6, 10... For 10 friends: 45. He checked with a formula: 10 × 9 ÷ 2 = 45. Looking back, he grinned."},"activities":[{"id":"puzzles.s7.polya.polya.a1","prompt":"Put Polya's steps in order","kind":"order","items":["Understand the problem","Devise a plan","Carry out the plan","Look back"]},{"id":"puzzles.s7.polya.polya.a2","prompt":"Trying an easier version is…","kind":"choice","options":["simplifying","guessing","giving up"],"answer":0},{"id":"puzzles.s7.polya.polya.a3","prompt":"How many handshakes among 4 friends?","kind":"count","answer":6},{"id":"puzzles.s7.polya.polya.a4","prompt":"Looking back helps check and learn.","kind":"truefalse","answer":true}],"thinking":["Which strategy do you use most? Why?","Why do people skip \"look back\"?"],"speaking":["Solve a problem aloud, naming each Polya step."],"project":{"kind":"project","title":"Strategy Journal","materials":["a notebook","a set of puzzles"],"steps":["Solve five puzzles using Polya's steps","Record the strategy you used","Note what you learned looking back","Share your favourite strategy"]},"assessment":[{"id":"puzzles.s7.polya.polya.q1","prompt":"Starting from the goal is…","kind":"choice","options":["working backwards","working forwards","walking"],"answer":0},{"id":"puzzles.s7.polya.polya.q2","prompt":"Polya wrote \"How to Solve It\".","kind":"truefalse","answer":true},{"id":"puzzles.s7.polya.polya.q3","prompt":"Thinking back on what you did is to…","kind":"choice","options":["reflect","reject","repeat"],"answer":0}],"mastery":["Applies Polya's steps","Chooses strategies","Reflects on solutions"]}]},{"id":"puzzles.s7.logic-puzzles","title":"Logic Puzzles","summary":"River crossings and grids.","topics":[{"title":"River-crossing puzzles","subtopics":["River-crossing puzzles"]},{"title":"Logic grids","subtopics":["Logic grids"]},{"title":"Knights and knaves","subtopics":["Knights and knaves"]}],"objectives":["Solve a river-crossing puzzle systematically","Use a logic grid to solve clue puzzles"],"masteryCriteria":["Solves river-crossing puzzles","Uses logic grids","Explains key insights"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"puzzles.s7.logic-puzzles.river-crossing","title":"Wolf, Goat and Cabbage","skillId":"sk.puzzles.s7.logic-puzzles.river-crossing","minutes":20,"objectives":["Solve a river-crossing puzzle systematically","Use a logic grid to solve clue puzzles"],"prerequisites":["Knows Polya's steps"],"prerequisiteIds":[],"explanation":["In a classic river-crossing puzzle, a farmer must take a wolf, a goat and a cabbage across a river in a boat that holds only the farmer and one item. The wolf can't be left alone with the goat, nor the goat with the cabbage.","The solution: take the goat across; return; take the wolf across; bring the goat back; take the cabbage across; return; take the goat across. The key insight is that you can bring something back! Such puzzles appear in a manuscript attributed to Alcuin of York, around 800 CE.","Logic grid puzzles give clues about people and their choices; you mark a grid with ✓ and ✗ to eliminate possibilities until only one answer remains."],"context":[],"vocabulary":[{"term":"constraint","meaning":"a rule that limits choices"},{"term":"eliminate","meaning":"to rule out"},{"term":"logic grid","meaning":"a table for tracking possibilities"},{"term":"insight","meaning":"a sudden understanding"}],"examples":["The farmer bringing the goat back across.","A grid showing who owns which pet."],"story":{"title":"The Farmer's Puzzle","text":"Zuri tried the wolf-goat-cabbage puzzle with toys. Every time, something got eaten! Frustrated, she asked, \"Does the farmer have to always carry something forwards?\" Her teacher smiled. Zuri's eyes lit up — she brought the goat back across, and suddenly the puzzle solved itself. \"Going backwards was the answer!\""},"activities":[{"id":"puzzles.s7.logic-puzzles.river-crossing.a1","prompt":"What does the farmer take across first?","kind":"choice","options":["the goat","the wolf","the cabbage"],"answer":0},{"id":"puzzles.s7.logic-puzzles.river-crossing.a2","prompt":"The key insight is that…","kind":"choice","options":["the farmer can bring something back","the wolf can row","the cabbage can swim"],"answer":0},{"id":"puzzles.s7.logic-puzzles.river-crossing.a3","prompt":"Logic grids help eliminate possibilities.","kind":"truefalse","answer":true},{"id":"puzzles.s7.logic-puzzles.river-crossing.a4","prompt":"Put the first three moves in order","kind":"order","items":["Take the goat across","Return alone","Take the wolf across"]}],"thinking":["Why is it tempting to only move forwards?","How does a logic grid help with many clues?"],"speaking":["Act out the river-crossing solution with toys and explain each move."],"project":{"kind":"project","title":"Logic Grid Challenge","materials":["printed or drawn logic grids"],"steps":["Solve two logic grid puzzles","Write your own with three people and three pets","Test that it has exactly one answer","Swap with a friend"]},"assessment":[{"id":"puzzles.s7.logic-puzzles.river-crossing.q1","prompt":"To rule out is to…","kind":"choice","options":["eliminate","estimate","elevate"],"answer":0},{"id":"puzzles.s7.logic-puzzles.river-crossing.q2","prompt":"River-crossing puzzles are over 1,000 years old.","kind":"truefalse","answer":true},{"id":"puzzles.s7.logic-puzzles.river-crossing.q3","prompt":"A rule that limits choices is a…","kind":"choice","options":["constraint","celebration","calendar"],"answer":0}],"mastery":["Solves river-crossing puzzles","Uses logic grids","Explains key insights"]}]}]},{"stage":"s9","overview":"Classic mathematical puzzles and lateral thinking.","goals":["Solve and generalise the Tower of Hanoi","Understand the Königsberg bridges and graph theory","Use lateral thinking"],"units":[{"id":"puzzles.s9.classic-puzzles","title":"Classic Puzzles","summary":"Hanoi and Königsberg.","topics":[{"title":"Tower of Hanoi","subtopics":["Tower of Hanoi"]},{"title":"Königsberg bridges","subtopics":["Königsberg bridges"]},{"title":"Euler paths","subtopics":["Euler paths"]}],"objectives":["Find and explain the minimum moves for the Tower of Hanoi","Use Euler's reasoning about the Königsberg bridges"],"masteryCriteria":["Generalises Hanoi","Applies Euler's criterion","Explains graph ideas"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"puzzles.s9.classic-puzzles.hanoi-bridges","title":"Towers and Bridges","skillId":"sk.puzzles.s9.classic-puzzles.hanoi-bridges","minutes":30,"objectives":["Find and explain the minimum moves for the Tower of Hanoi","Use Euler's reasoning about the Königsberg bridges"],"prerequisites":["Knows problem-solving strategies"],"prerequisiteIds":[],"explanation":["The Tower of Hanoi, invented by Édouard Lucas in 1883, has discs on one peg to be moved to another, one at a time, never placing a larger disc on a smaller one. With n discs, the minimum number of moves is 2ⁿ − 1: 3 discs take 7 moves; 4 discs take 15.","In 1736, Leonhard Euler studied the seven bridges of Königsberg: could you walk across each bridge exactly once? He proved it was impossible, founding graph theory.","Euler showed that a path crossing every edge once exists only if zero or two points (vertices) have an odd number of connections. Königsberg had four land areas, all with an odd number of bridges."],"context":[],"vocabulary":[{"term":"vertex","meaning":"a point in a graph"},{"term":"edge","meaning":"a line joining two vertices"},{"term":"graph theory","meaning":"the study of networks of points and lines"},{"term":"Euler path","meaning":"a path using every edge exactly once"}],"examples":["Tower of Hanoi with 3 discs in 7 moves.","Drawing an envelope shape without lifting your pen."],"story":{"title":"The Bridges of Königsberg","text":"Citizens of Königsberg loved Sunday walks across the seven bridges of their river. They wondered whether anyone could cross each bridge exactly once. Nobody succeeded. In 1736, Leonhard Euler turned the map into dots and lines and proved it impossible. A puzzle about a Sunday walk became a new branch of mathematics."},"activities":[{"id":"puzzles.s9.classic-puzzles.hanoi-bridges.a1","prompt":"Minimum moves for a 3-disc Tower of Hanoi?","kind":"choice","options":["7","3","9"],"answer":0},{"id":"puzzles.s9.classic-puzzles.hanoi-bridges.a2","prompt":"Minimum moves for a 4-disc Tower of Hanoi?","kind":"choice","options":["15","8","16"],"answer":0},{"id":"puzzles.s9.classic-puzzles.hanoi-bridges.a3","prompt":"Euler proved the Königsberg walk was impossible.","kind":"truefalse","answer":true},{"id":"puzzles.s9.classic-puzzles.hanoi-bridges.a4","prompt":"Match the term","kind":"match","pairs":[["vertex","a point"],["edge","a connecting line"],["Euler path","uses every edge once"]]}],"thinking":["Why is the formula 2ⁿ − 1?","Where are graphs used today?"],"speaking":["Demonstrate the Tower of Hanoi with 3 discs and explain the recursive idea."],"project":{"kind":"project","title":"Puzzle Investigation","materials":["coins of different sizes or a Hanoi set","paper"],"steps":["Solve Hanoi with 1, 2, 3 and 4 discs","Record minimum moves and find the pattern","Draw five shapes and test for Euler paths","Write up your findings"]},"assessment":[{"id":"puzzles.s9.classic-puzzles.hanoi-bridges.q1","prompt":"A point in a graph is a…","kind":"choice","options":["vertex","vortex","vector"],"answer":0},{"id":"puzzles.s9.classic-puzzles.hanoi-bridges.q2","prompt":"Graph theory began with Euler's bridge problem.","kind":"truefalse","answer":true},{"id":"puzzles.s9.classic-puzzles.hanoi-bridges.q3","prompt":"A line joining two vertices is an…","kind":"choice","options":["edge","angle","arc only"],"answer":0}],"mastery":["Generalises Hanoi","Applies Euler's criterion","Explains graph ideas"]}]},{"id":"puzzles.s9.lateral","title":"Lateral Thinking","summary":"Thinking outside the box.","topics":[{"title":"The nine dots puzzle","subtopics":["The nine dots puzzle"]},{"title":"Questioning assumptions","subtopics":["Questioning assumptions"]},{"title":"Creative problem solving","subtopics":["Creative problem solving"]}],"objectives":["Solve lateral thinking puzzles by questioning assumptions","Apply creative thinking techniques"],"masteryCriteria":["Questions assumptions","Solves lateral puzzles","Applies creative techniques"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"puzzles.s9.lateral.lateral","title":"Thinking Outside the Box","skillId":"sk.puzzles.s9.lateral.lateral","minutes":30,"objectives":["Solve lateral thinking puzzles by questioning assumptions","Apply creative thinking techniques"],"prerequisites":["Has used logical strategies"],"prerequisiteIds":[],"explanation":["Lateral thinking, a term coined by Edward de Bono in 1967, means solving problems by approaching them from unexpected angles rather than step-by-step logic alone.","The nine dots puzzle asks you to join nine dots in a 3×3 grid with four straight lines without lifting your pen. Most people fail because they assume lines must stay inside the square. Going outside the dots solves it — possibly the origin of \"thinking outside the box\".","Techniques include questioning assumptions, reversing the problem, using random prompts and asking \"what if?\". Good problem solvers combine logical and lateral thinking."],"context":[],"vocabulary":[{"term":"lateral thinking","meaning":"solving problems from unexpected angles"},{"term":"assumption","meaning":"something taken for granted"},{"term":"reverse","meaning":"to turn the other way"},{"term":"creativity","meaning":"making new and useful ideas"}],"examples":["The nine dots puzzle.","Asking \"How could we make this problem worse?\" to find solutions."],"story":{"title":"The Man in the Lift","text":"A classic puzzle: a man lives on the 10th floor. Every morning he takes the lift down. In the evening, he takes the lift to the 7th floor and walks up — unless it's raining or others are in the lift. Why? Meera puzzled over it, then questioned her assumption that he was tall. \"He's too short to reach the 10th button — unless he has an umbrella!\""},"activities":[{"id":"puzzles.s9.lateral.lateral.a1","prompt":"Lateral thinking was named by…","kind":"choice","options":["Edward de Bono","Euler","Polya"],"answer":0},{"id":"puzzles.s9.lateral.lateral.a2","prompt":"The nine dots puzzle is solved by…","kind":"choice","options":["drawing lines outside the dots","using curved lines","lifting the pen"],"answer":0},{"id":"puzzles.s9.lateral.lateral.a3","prompt":"Questioning assumptions helps lateral thinking.","kind":"truefalse","answer":true},{"id":"puzzles.s9.lateral.lateral.a4","prompt":"Something taken for granted is an…","kind":"choice","options":["assumption","answer","angle"],"answer":0}],"thinking":["What assumptions do people make about problems at school?","When is step-by-step logic better than lateral thinking?"],"speaking":["Present a lateral thinking puzzle and guide others to the answer."],"project":{"kind":"project","title":"Creative Problem Lab","materials":["sticky notes","a real problem (e.g. reducing waste at home)"],"steps":["List assumptions about the problem","Use reversal: \"How could we make it worse?\"","Flip those ideas into solutions","Test one idea for a week"]},"assessment":[{"id":"puzzles.s9.lateral.lateral.q1","prompt":"Making new and useful ideas is…","kind":"choice","options":["creativity","calculation","copying"],"answer":0},{"id":"puzzles.s9.lateral.lateral.q2","prompt":"The nine dots puzzle uses four straight lines.","kind":"truefalse","answer":true},{"id":"puzzles.s9.lateral.lateral.q3","prompt":"To turn the other way is to…","kind":"choice","options":["reverse","repair","rest"],"answer":0}],"mastery":["Questions assumptions","Solves lateral puzzles","Applies creative techniques"]}]}]},{"stage":"s12","overview":"Game theory and the great unsolved problems.","goals":["Analyse strategic games with game theory","Describe famous open problems and puzzle-solvers","Engage with mathematical research culture"],"units":[{"id":"puzzles.s12.game-theory","title":"Game Theory","summary":"The mathematics of strategy.","topics":[{"title":"Prisoner's dilemma","subtopics":["Prisoner's dilemma"]},{"title":"Nash equilibrium","subtopics":["Nash equilibrium"]},{"title":"Cooperation and repeated games","subtopics":["Cooperation and repeated games"]}],"objectives":["Analyse the prisoner's dilemma and Nash equilibrium","Evaluate how cooperation can emerge in repeated games"],"masteryCriteria":["Analyses games formally","Explains Nash equilibrium","Evaluates cooperation"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"puzzles.s12.game-theory.game-theory","title":"The Prisoner's Dilemma","skillId":"sk.puzzles.s12.game-theory.game-theory","minutes":40,"objectives":["Analyse the prisoner's dilemma and Nash equilibrium","Evaluate how cooperation can emerge in repeated games"],"prerequisites":["Knows logic and probability"],"prerequisiteIds":[],"explanation":["Game theory studies strategic decisions where each person's outcome depends on others' choices. It was developed by John von Neumann and Oskar Morgenstern (1944) and extended by John Nash.","In the prisoner's dilemma, two suspects are questioned separately. If both stay silent, both get short sentences. If one betrays the other, the betrayer goes free and the other gets a long sentence. If both betray, both get medium sentences. Each is individually better off betraying — so both betray, though both would be better off cooperating. Mutual betrayal is a Nash equilibrium: no one gains by changing strategy alone.","In repeated games, cooperation can emerge. In Robert Axelrod's computer tournaments (around 1980), the simple strategy \"tit for tat\" — cooperate first, then copy the opponent's last move — performed remarkably well."],"context":[],"vocabulary":[{"term":"game theory","meaning":"the study of strategic decision-making"},{"term":"Nash equilibrium","meaning":"a state where no player benefits from changing strategy alone"},{"term":"dilemma","meaning":"a difficult choice"},{"term":"tit for tat","meaning":"cooperate first, then copy the other player"}],"examples":["Two shops in a price war.","Countries negotiating climate agreements."],"story":{"title":"The Tournament","text":"In 1980, political scientist Robert Axelrod invited experts to submit computer programs to play repeated prisoner's dilemma against each other. Complex, clever strategies entered. The winner was the shortest program: tit for tat, submitted by Anatol Rapoport. Nice, retaliatory, forgiving and clear — it suggested how cooperation might evolve."},"activities":[{"id":"puzzles.s12.game-theory.game-theory.a1","prompt":"In a one-shot prisoner's dilemma, the Nash equilibrium is…","kind":"choice","options":["both betray","both stay silent","one is freed"],"answer":0},{"id":"puzzles.s12.game-theory.game-theory.a2","prompt":"Tit for tat starts by…","kind":"choice","options":["cooperating","betraying","doing nothing"],"answer":0},{"id":"puzzles.s12.game-theory.game-theory.a3","prompt":"Cooperation can emerge in repeated games.","kind":"truefalse","answer":true},{"id":"puzzles.s12.game-theory.game-theory.a4","prompt":"Match the thinker","kind":"match","pairs":[["John Nash","equilibrium concept"],["Robert Axelrod","cooperation tournaments"],["von Neumann","founded game theory with Morgenstern"]]}],"thinking":["Where do you see prisoner's dilemmas in real life?","Is tit for tat a good strategy for friendships?"],"speaking":["Run a classroom prisoner's dilemma game and explain the results."],"project":{"kind":"project","title":"Strategy Tournament","materials":["Python or a spreadsheet"],"steps":["Code strategies like always cooperate, always betray and tit for tat","Run a round-robin tournament over many rounds","Analyse which strategies score best","Write a 1500-word report"]},"assessment":[{"id":"puzzles.s12.game-theory.game-theory.q1","prompt":"The study of strategic decisions is…","kind":"choice","options":["game theory","geometry","geology"],"answer":0},{"id":"puzzles.s12.game-theory.game-theory.q2","prompt":"Mutual betrayal is a Nash equilibrium in the prisoner's dilemma.","kind":"truefalse","answer":true},{"id":"puzzles.s12.game-theory.game-theory.q3","prompt":"A difficult choice is a…","kind":"choice","options":["dilemma","diagram","dialogue"],"answer":0}],"mastery":["Analyses games formally","Explains Nash equilibrium","Evaluates cooperation"]}]},{"id":"puzzles.s12.open-problems","title":"The Great Problems","summary":"Puzzles mathematicians are still solving.","topics":[{"title":"Famous solved problems","subtopics":["Famous solved problems"]},{"title":"Open problems","subtopics":["Open problems"]},{"title":"Ramanujan and puzzle-solvers","subtopics":["Ramanujan and puzzle-solvers"]}],"objectives":["Describe famous solved and unsolved mathematical problems","Evaluate what drives mathematical discovery"],"masteryCriteria":["Describes famous problems accurately","Distinguishes conjecture and theorem","Explores problems computationally"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"puzzles.s12.open-problems.open-problems","title":"Unsolved Mysteries of Mathematics","skillId":"sk.puzzles.s12.open-problems.open-problems","minutes":40,"objectives":["Describe famous solved and unsolved mathematical problems","Evaluate what drives mathematical discovery"],"prerequisites":["Has solved many puzzles"],"prerequisiteIds":[],"explanation":["Some problems take centuries. Fermat's Last Theorem (that aⁿ + bⁿ = cⁿ has no whole-number solutions for n > 2) was stated around 1637 and proved by Andrew Wiles in 1994. The Four Colour Theorem was proved in 1976 with computer help.","Many puzzles remain open. The Collatz conjecture: start with any positive whole number; if even, halve it; if odd, multiply by 3 and add 1. Does every number eventually reach 1? Nobody knows. The Riemann Hypothesis, about prime numbers, is one of the Clay Millennium Prize Problems, each carrying a one-million-dollar prize.","Srinivasa Ramanujan (1887–1920), largely self-taught, filled notebooks with remarkable formulas; mathematicians are still exploring them. His story with G. H. Hardy, and the \"taxicab number\" 1729, show the joy of puzzles at the highest level. India celebrates National Mathematics Day on his birthday, 22 December."],"context":[],"vocabulary":[{"term":"conjecture","meaning":"a statement believed true but not yet proved"},{"term":"theorem","meaning":"a proven mathematical statement"},{"term":"proof","meaning":"a logical argument showing something is true"},{"term":"prime number","meaning":"a number with exactly two factors"}],"examples":["Collatz from 6: 6, 3, 10, 5, 16, 8, 4, 2, 1.","1729 = 1³ + 12³ = 9³ + 10³."],"story":{"title":"The Taxicab Number","text":"When G. H. Hardy visited Ramanujan in hospital, he said his taxi's number, 1729, seemed dull. \"No,\" Ramanujan replied at once, \"it is a very interesting number. It is the smallest number expressible as the sum of two cubes in two different ways.\" 1729 = 1³ + 12³ = 9³ + 10³. Numbers, for Ramanujan, were old friends."},"activities":[{"id":"puzzles.s12.open-problems.open-problems.a1","prompt":"Fermat's Last Theorem was proved by…","kind":"choice","options":["Andrew Wiles","Ramanujan","Euler"],"answer":0},{"id":"puzzles.s12.open-problems.open-problems.a2","prompt":"A statement believed true but not proved is a…","kind":"choice","options":["conjecture","theorem","fact"],"answer":0},{"id":"puzzles.s12.open-problems.open-problems.a3","prompt":"The Collatz conjecture is still unsolved.","kind":"truefalse","answer":true},{"id":"puzzles.s12.open-problems.open-problems.a4","prompt":"Continue Collatz from 5","kind":"order","items":["5","16","8","4","2","1"]}],"thinking":["Why do mathematicians spend years on problems with no obvious use?","What can Ramanujan's story teach about talent and opportunity?"],"speaking":["Present one famous problem, solved or unsolved, to a group."],"project":{"kind":"project","title":"Collatz Exploration","materials":["Python or a spreadsheet"],"steps":["Compute Collatz sequences for numbers 1 to 1,000","Find which number takes the most steps","Graph the step counts","Write about why proof is harder than checking"]},"assessment":[{"id":"puzzles.s12.open-problems.open-problems.q1","prompt":"A proven mathematical statement is a…","kind":"choice","options":["theorem","conjecture","guess"],"answer":0},{"id":"puzzles.s12.open-problems.open-problems.q2","prompt":"National Mathematics Day honours Ramanujan.","kind":"truefalse","answer":true},{"id":"puzzles.s12.open-problems.open-problems.q3","prompt":"1729 is known as the…","kind":"choice","options":["taxicab number","prime number","perfect number"],"answer":0}],"mastery":["Describes famous problems accurately","Distinguishes conjecture and theorem","Explores problems computationally"]}]}]}]}
+{
+  "schemaVersion": 1,
+  "id": "puzzles",
+  "worldId": "mind-galaxy",
+  "title": "Puzzles & Problem Solving",
+  "icon": "🎲",
+  "tagline": "Stuck is where learning starts",
+  "description": "Puzzles and problem solving from jigsaws to game theory: shape and jigsaw puzzles, mazes, memory and spot-the-difference games, tangrams, mini sudoku and magic squares, riddles, Polya's problem-solving steps, river-crossing and logic grid puzzles, the Tower of Hanoi and Königsberg bridges, lateral thinking, game theory, and the famous open problems and puzzle-solvers of mathematics.",
+  "contentVersion": "1.0.0",
+  "sensitivity": "none",
+  "stages": [
+    {
+      "stage": "s4",
+      "overview": "Jigsaws, shapes and mazes.",
+      "goals": [
+        "Complete simple jigsaws and shape puzzles",
+        "Find a path through a maze",
+        "Keep trying when stuck"
+      ],
+      "units": [
+        {
+          "id": "puzzles.s4.jigsaws",
+          "title": "Jigsaws and Shape Puzzles",
+          "summary": "Fitting pieces together.",
+          "topics": [
+            {
+              "title": "Edges and corners",
+              "subtopics": [
+                "Edges and corners"
+              ]
+            },
+            {
+              "title": "Matching colours",
+              "subtopics": [
+                "Matching colours"
+              ]
+            },
+            {
+              "title": "Shape sorters",
+              "subtopics": [
+                "Shape sorters"
+              ]
+            }
+          ],
+          "objectives": [
+            "Use strategies to complete a simple jigsaw",
+            "Keep trying calmly when a piece doesn't fit"
+          ],
+          "masteryCriteria": [
+            "Uses corners-and-edges strategy",
+            "Persists calmly",
+            "Matches colours and shapes"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s4.jigsaws.jigsaw",
+              "title": "Corners First!",
+              "skillId": "sk.puzzles.s4.jigsaws.jigsaw",
+              "minutes": 8,
+              "objectives": [
+                "Use strategies to complete a simple jigsaw",
+                "Keep trying calmly when a piece doesn't fit"
+              ],
+              "prerequisites": [
+                "Knows shapes and colours"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A jigsaw puzzle is a picture cut into pieces that fit together. A good strategy is to find the corner pieces first — they have two straight edges.",
+                "Next, find the edge pieces with one straight side and build the frame. Then fill the middle by matching colours and shapes.",
+                "If a piece doesn't fit, turn it around or try another spot. Being stuck is part of solving puzzles. Puzzle solvers stay calm and keep trying!"
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "jigsaw",
+                  "meaning": "a picture cut into fitting pieces"
+                },
+                {
+                  "term": "corner",
+                  "meaning": "where two edges meet"
+                },
+                {
+                  "term": "edge",
+                  "meaning": "the outside side"
+                },
+                {
+                  "term": "strategy",
+                  "meaning": "a plan for solving"
+                }
+              ],
+              "examples": [
+                "Finding the four corner pieces first.",
+                "Matching blue sky pieces together."
+              ],
+              "story": {
+                "title": "The Last Piece",
+                "text": "Ivaan and Aaji worked on a jungle jigsaw. Corners first, then edges, then the tiger in the middle. But one piece wouldn't fit anywhere! Ivaan felt grumpy. Aaji said, \"Let's turn it.\" He turned it once... twice... CLICK! It fit perfectly — the tiger's eye. \"Stuck just means not yet,\" Aaji smiled."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s4.jigsaws.jigsaw.a1",
+                  "prompt": "Which pieces should you find first?",
+                  "kind": "choice",
+                  "options": [
+                    "corners",
+                    "middle pieces",
+                    "any piece"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s4.jigsaws.jigsaw.a2",
+                  "prompt": "How many corner pieces does a rectangle jigsaw have? 🧩🧩🧩🧩",
+                  "kind": "count",
+                  "answer": 4
+                },
+                {
+                  "id": "puzzles.s4.jigsaws.jigsaw.a3",
+                  "prompt": "If a piece doesn't fit, you can turn it.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s4.jigsaws.jigsaw.a4",
+                  "prompt": "Put the jigsaw strategy in order",
+                  "kind": "order",
+                  "items": [
+                    "Find the corners",
+                    "Build the edges",
+                    "Fill the middle"
+                  ]
+                }
+              ],
+              "thinking": [
+                "How do you feel when you're stuck?",
+                "What helps you keep trying?"
+              ],
+              "speaking": [
+                "Show a grown-up your jigsaw strategy."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Make Your Own Jigsaw",
+                "materials": [
+                  "an old greeting card or your drawing",
+                  "safety scissors"
+                ],
+                "steps": [
+                  "Draw a picture or use an old card",
+                  "Cut it into 6–8 pieces with wavy lines",
+                  "Mix them up",
+                  "Solve it and give it to someone else"
+                ],
+                "safety": "Use child-safe scissors with adult supervision. Adults should handle any sharp cutting tools and keep small pieces away from younger children."
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s4.jigsaws.jigsaw.q1",
+                  "prompt": "A plan for solving is a…",
+                  "kind": "choice",
+                  "options": [
+                    "strategy",
+                    "sticker",
+                    "story"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s4.jigsaws.jigsaw.q2",
+                  "prompt": "Corner pieces have two straight edges.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s4.jigsaws.jigsaw.q3",
+                  "prompt": "Edge pieces have…",
+                  "kind": "choice",
+                  "options": [
+                    "one straight side",
+                    "no straight sides",
+                    "four straight sides"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Uses corners-and-edges strategy",
+                "Persists calmly",
+                "Matches colours and shapes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "puzzles.s4.mazes",
+          "title": "Mazes",
+          "summary": "Finding the way.",
+          "topics": [
+            {
+              "title": "Following paths",
+              "subtopics": [
+                "Following paths"
+              ]
+            },
+            {
+              "title": "Dead ends",
+              "subtopics": [
+                "Dead ends"
+              ]
+            },
+            {
+              "title": "Going back and trying again",
+              "subtopics": [
+                "Going back and trying again"
+              ]
+            }
+          ],
+          "objectives": [
+            "Find a path through a simple maze",
+            "Go back and try again at a dead end"
+          ],
+          "masteryCriteria": [
+            "Navigates simple mazes",
+            "Backtracks at dead ends",
+            "Designs a maze"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s4.mazes.mazes",
+              "title": "Through the Maze",
+              "skillId": "sk.puzzles.s4.mazes.mazes",
+              "minutes": 8,
+              "objectives": [
+                "Find a path through a simple maze",
+                "Go back and try again at a dead end"
+              ],
+              "prerequisites": [
+                "Can follow a line with a finger"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A maze is a puzzle made of paths. You start at one place and try to reach the finish.",
+                "Some paths lead to dead ends, where you can't go any further. When that happens, go back to the last place you had a choice and try another way.",
+                "A clever trick: try starting from the finish and working backwards! People have built mazes in gardens and hedges for hundreds of years."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "maze",
+                  "meaning": "a puzzle made of paths"
+                },
+                {
+                  "term": "path",
+                  "meaning": "a way to go"
+                },
+                {
+                  "term": "dead end",
+                  "meaning": "a path that stops"
+                },
+                {
+                  "term": "finish",
+                  "meaning": "the end of the maze"
+                }
+              ],
+              "examples": [
+                "A pencil maze in a puzzle book.",
+                "A hedge maze in a garden."
+              ],
+              "story": {
+                "title": "The Mouse and the Cheese",
+                "text": "In the puzzle book, a little mouse wanted to reach the cheese. Ivaan traced the path with his finger — left, down... dead end! He went back to the last turn and tried right. Up, around, down... CHEESE! \"Want to know a trick?\" asked Papa. \"Start at the cheese and go backwards.\" Ivaan tried the next maze that way. It was super quick!"
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s4.mazes.mazes.a1",
+                  "prompt": "A path that stops is a…",
+                  "kind": "choice",
+                  "options": [
+                    "dead end",
+                    "finish",
+                    "start"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s4.mazes.mazes.a2",
+                  "prompt": "At a dead end, you should…",
+                  "kind": "choice",
+                  "options": [
+                    "go back and try another way",
+                    "give up",
+                    "cry"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s4.mazes.mazes.a3",
+                  "prompt": "You can solve some mazes by starting at the finish.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s4.mazes.mazes.a4",
+                  "prompt": "A maze is made of…",
+                  "kind": "choice",
+                  "options": [
+                    "paths",
+                    "blocks of cheese",
+                    "songs"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why might starting from the finish help?",
+                "How could you make a maze harder?"
+              ],
+              "speaking": [
+                "Trace a maze and tell a grown-up where the dead ends are."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Draw-a-Maze",
+                "materials": [
+                  "paper",
+                  "pencil",
+                  "crayons"
+                ],
+                "steps": [
+                  "Draw a start and finish",
+                  "Draw one path that connects them",
+                  "Add extra paths with dead ends",
+                  "Ask a grown-up to solve it"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s4.mazes.mazes.q1",
+                  "prompt": "The end of the maze is the…",
+                  "kind": "choice",
+                  "options": [
+                    "finish",
+                    "start",
+                    "middle"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s4.mazes.mazes.q2",
+                  "prompt": "Hedge mazes are found in gardens.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s4.mazes.mazes.q3",
+                  "prompt": "A way to go is a…",
+                  "kind": "choice",
+                  "options": [
+                    "path",
+                    "puddle",
+                    "pancake"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Navigates simple mazes",
+                "Backtracks at dead ends",
+                "Designs a maze"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s5",
+      "overview": "Memory games, spot the difference and tangrams.",
+      "goals": [
+        "Improve visual memory with games",
+        "Spot differences by looking carefully",
+        "Make shapes with tangram pieces"
+      ],
+      "units": [
+        {
+          "id": "puzzles.s5.memory-games",
+          "title": "Look Carefully",
+          "summary": "Memory and attention.",
+          "topics": [
+            {
+              "title": "Pairs game",
+              "subtopics": [
+                "Pairs game"
+              ]
+            },
+            {
+              "title": "Spot the difference",
+              "subtopics": [
+                "Spot the difference"
+              ]
+            },
+            {
+              "title": "What's missing?",
+              "subtopics": [
+                "What's missing?"
+              ]
+            }
+          ],
+          "objectives": [
+            "Find differences between two pictures by scanning carefully",
+            "Use strategies to remember where cards are"
+          ],
+          "masteryCriteria": [
+            "Scans systematically",
+            "Uses memory strategies",
+            "Sustains attention"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s5.memory-games.spot",
+              "title": "Spot the Difference",
+              "skillId": "sk.puzzles.s5.memory-games.spot",
+              "minutes": 10,
+              "objectives": [
+                "Find differences between two pictures by scanning carefully",
+                "Use strategies to remember where cards are"
+              ],
+              "prerequisites": [
+                "Can match pictures"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "In spot-the-difference puzzles, two pictures look the same but have small changes. Good spotters scan carefully, part by part — top left, top right, bottom left, bottom right.",
+                "In the pairs (memory) game, cards are placed face down. You turn two over; if they match, you keep them. Remembering where cards are helps you win.",
+                "Saying things to yourself can help memory: \"The cat is in the corner, the car is next to it.\" Paying attention is a skill we can practise."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "difference",
+                  "meaning": "a way two things are not the same"
+                },
+                {
+                  "term": "scan",
+                  "meaning": "to look over something carefully"
+                },
+                {
+                  "term": "memory",
+                  "meaning": "remembering things"
+                },
+                {
+                  "term": "attention",
+                  "meaning": "focusing on something"
+                }
+              ],
+              "examples": [
+                "Finding the missing button in the second picture.",
+                "Remembering where the two elephants are in a memory game."
+              ],
+              "story": {
+                "title": "The Twin Gardens",
+                "text": "Ivaan looked at two garden pictures. They looked exactly the same! Then he scanned slowly: top left — the sun was the same; top right — one picture had a bird, the other didn't! Bottom left — a missing flower! He found all five differences. \"Slow looking is fast finding,\" he told his sister."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s5.memory-games.spot.a1",
+                  "prompt": "A good way to spot differences is to…",
+                  "kind": "choice",
+                  "options": [
+                    "scan part by part",
+                    "glance quickly",
+                    "close your eyes"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s5.memory-games.spot.a2",
+                  "prompt": "In the pairs game, you win by…",
+                  "kind": "choice",
+                  "options": [
+                    "remembering where cards are",
+                    "guessing only",
+                    "hiding cards"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s5.memory-games.spot.a3",
+                  "prompt": "Attention is a skill we can practise.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s5.memory-games.spot.a4",
+                  "prompt": "Count the differences found: ✅✅✅✅✅",
+                  "kind": "count",
+                  "answer": 5
+                }
+              ],
+              "thinking": [
+                "What helps you remember where things are?",
+                "Why does slow looking help?"
+              ],
+              "speaking": [
+                "Play a pairs game with a grown-up and explain your memory trick."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Homemade Memory Game",
+                "materials": [
+                  "card",
+                  "crayons",
+                  "scissors"
+                ],
+                "steps": [
+                  "Cut 12 equal cards",
+                  "Draw 6 pairs of matching pictures",
+                  "Shuffle and lay them face down",
+                  "Play with family and share memory tricks"
+                ],
+                "safety": "Use child-safe scissors with adult supervision and keep small cards away from children who may put them in their mouths."
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s5.memory-games.spot.q1",
+                  "prompt": "Focusing on something is…",
+                  "kind": "choice",
+                  "options": [
+                    "attention",
+                    "allergy",
+                    "arithmetic"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s5.memory-games.spot.q2",
+                  "prompt": "Scanning part by part helps find differences.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s5.memory-games.spot.q3",
+                  "prompt": "Remembering things uses your…",
+                  "kind": "choice",
+                  "options": [
+                    "memory",
+                    "muscles only",
+                    "shoes"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Scans systematically",
+                "Uses memory strategies",
+                "Sustains attention"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "puzzles.s5.tangrams",
+          "title": "Tangrams",
+          "summary": "Seven pieces, many shapes.",
+          "topics": [
+            {
+              "title": "Tangram pieces",
+              "subtopics": [
+                "Tangram pieces"
+              ]
+            },
+            {
+              "title": "Making animals and objects",
+              "subtopics": [
+                "Making animals and objects"
+              ]
+            },
+            {
+              "title": "Turning and flipping",
+              "subtopics": [
+                "Turning and flipping"
+              ]
+            }
+          ],
+          "objectives": [
+            "Name the seven tangram pieces",
+            "Make pictures by turning and flipping pieces"
+          ],
+          "masteryCriteria": [
+            "Names tangram pieces",
+            "Rotates and flips shapes",
+            "Creates figures"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s5.tangrams.tangram",
+              "title": "Seven Magic Pieces",
+              "skillId": "sk.puzzles.s5.tangrams.tangram",
+              "minutes": 10,
+              "objectives": [
+                "Name the seven tangram pieces",
+                "Make pictures by turning and flipping pieces"
+              ],
+              "prerequisites": [
+                "Knows triangles, squares"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A tangram is a Chinese puzzle made of seven flat pieces: five triangles (two big, one medium, two small), one square and one parallelogram.",
+                "Together, the seven pieces make a big square. But you can rearrange them to make hundreds of shapes — cats, boats, people, houses — using all seven pieces without overlapping.",
+                "To fit pieces, try turning (rotating) or flipping them over. Tangrams became popular around the world in the 1800s."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "tangram",
+                  "meaning": "a seven-piece shape puzzle"
+                },
+                {
+                  "term": "parallelogram",
+                  "meaning": "a slanted four-sided shape"
+                },
+                {
+                  "term": "rotate",
+                  "meaning": "to turn around"
+                },
+                {
+                  "term": "flip",
+                  "meaning": "to turn over"
+                }
+              ],
+              "examples": [
+                "A tangram cat with a triangle tail.",
+                "A tangram boat with a triangle sail."
+              ],
+              "story": {
+                "title": "The Tangram Swan",
+                "text": "Zuri tipped out seven pieces. \"Make a swan,\" said her uncle, showing a picture. She tried and tried — the neck wouldn't work. Then she flipped the parallelogram over, and suddenly it made a perfect curved neck! \"Seven pieces, one swan,\" she smiled, and then made a cat, a rocket and a dancing person."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s5.tangrams.tangram.a1",
+                  "prompt": "How many pieces in a tangram? 🔺🔺🔺🔺🔺◼️▱",
+                  "kind": "count",
+                  "answer": 7
+                },
+                {
+                  "id": "puzzles.s5.tangrams.tangram.a2",
+                  "prompt": "How many triangles are in a tangram?",
+                  "kind": "choice",
+                  "options": [
+                    "five",
+                    "two",
+                    "seven"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s5.tangrams.tangram.a3",
+                  "prompt": "You can flip and rotate tangram pieces.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s5.tangrams.tangram.a4",
+                  "prompt": "Tangrams come from…",
+                  "kind": "choice",
+                  "options": [
+                    "China",
+                    "Brazil",
+                    "Egypt"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why do you think one puzzle can make so many shapes?",
+                "Which piece is hardest to place?"
+              ],
+              "speaking": [
+                "Show a grown-up a tangram animal you made."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Make a Tangram",
+                "materials": [
+                  "a square of card",
+                  "ruler",
+                  "scissors (with an adult)"
+                ],
+                "steps": [
+                  "Draw the tangram cutting lines on the square",
+                  "Cut out the seven pieces",
+                  "Make the big square again",
+                  "Create three animals of your own"
+                ],
+                "safety": "An adult should supervise cutting and use child-safe scissors. Keep the seven pieces away from younger children who may mouth small objects."
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s5.tangrams.tangram.q1",
+                  "prompt": "To turn something around is to…",
+                  "kind": "choice",
+                  "options": [
+                    "rotate",
+                    "repeat",
+                    "remove"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s5.tangrams.tangram.q2",
+                  "prompt": "A tangram has one square.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s5.tangrams.tangram.q3",
+                  "prompt": "A slanted four-sided shape is a…",
+                  "kind": "choice",
+                  "options": [
+                    "parallelogram",
+                    "circle",
+                    "triangle"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Names tangram pieces",
+                "Rotates and flips shapes",
+                "Creates figures"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s6",
+      "overview": "Mini sudoku, magic squares and riddles.",
+      "goals": [
+        "Solve 4×4 sudoku",
+        "Explore magic squares",
+        "Solve and create riddles"
+      ],
+      "units": [
+        {
+          "id": "puzzles.s6.number-puzzles",
+          "title": "Number Puzzles",
+          "summary": "Sudoku and magic squares.",
+          "topics": [
+            {
+              "title": "4×4 sudoku",
+              "subtopics": [
+                "4×4 sudoku"
+              ]
+            },
+            {
+              "title": "Magic squares",
+              "subtopics": [
+                "Magic squares"
+              ]
+            },
+            {
+              "title": "The Lo Shu legend",
+              "subtopics": [
+                "The Lo Shu legend"
+              ]
+            }
+          ],
+          "objectives": [
+            "Solve a 4×4 sudoku using logic",
+            "Check and complete a 3×3 magic square"
+          ],
+          "masteryCriteria": [
+            "Solves 4×4 sudoku logically",
+            "Verifies magic squares",
+            "Creates puzzles"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s6.number-puzzles.sudoku",
+              "title": "Sudoku and Magic Squares",
+              "skillId": "sk.puzzles.s6.number-puzzles.sudoku",
+              "minutes": 15,
+              "objectives": [
+                "Solve a 4×4 sudoku using logic",
+                "Check and complete a 3×3 magic square"
+              ],
+              "prerequisites": [
+                "Can add numbers to 20"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "In a 4×4 sudoku, each row, each column and each 2×2 box must contain the numbers 1, 2, 3 and 4 exactly once. You use logic, not guessing: \"This row already has 1, 2 and 4, so the empty square must be 3.\"",
+                "A magic square is a grid where every row, column and diagonal adds up to the same number. In the classic 3×3 magic square using 1 to 9, the magic sum is 15.",
+                "The Lo Shu square from ancient Chinese legend is a 3×3 magic square. Magic squares also appear in India — a 4×4 magic square is carved at the Parshvanath temple in Khajuraho, dated to around the 10th century."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "sudoku",
+                  "meaning": "a number placement puzzle"
+                },
+                {
+                  "term": "row",
+                  "meaning": "a line across"
+                },
+                {
+                  "term": "column",
+                  "meaning": "a line up and down"
+                },
+                {
+                  "term": "magic square",
+                  "meaning": "a grid where all lines add to the same sum"
+                }
+              ],
+              "examples": [
+                "Rows of the Lo Shu: 4 9 2, 3 5 7, 8 1 6.",
+                "The Khajuraho magic square, where every row and column adds to 34."
+              ],
+              "story": {
+                "title": "The Turtle's Shell",
+                "text": "An old Chinese legend tells that during a great flood, a turtle emerged from the river with a strange pattern of dots on its shell. The dots formed numbers 1 to 9 in a square where every line added to 15. People saw it as a sign of order and harmony, and named it the Lo Shu."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s6.number-puzzles.sudoku.a1",
+                  "prompt": "A row has 1, 2 and 4. The missing number in a 4×4 sudoku is…",
+                  "kind": "choice",
+                  "options": [
+                    "3",
+                    "5",
+                    "1"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s6.number-puzzles.sudoku.a2",
+                  "prompt": "In the classic 3×3 magic square, each line adds to…",
+                  "kind": "choice",
+                  "options": [
+                    "15",
+                    "10",
+                    "20"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s6.number-puzzles.sudoku.a3",
+                  "prompt": "Sudoku is solved with logic, not guessing.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s6.number-puzzles.sudoku.a4",
+                  "prompt": "Add the middle row of the Lo Shu: 3 + 5 + 7",
+                  "kind": "count",
+                  "answer": 15
+                }
+              ],
+              "thinking": [
+                "Why does the middle of the 3×3 magic square have to be 5?",
+                "What strategies help in sudoku?"
+              ],
+              "speaking": [
+                "Explain how you solved one square in a sudoku."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Puzzle Maker",
+                "materials": [
+                  "grid paper",
+                  "pencil"
+                ],
+                "steps": [
+                  "Solve two 4×4 sudoku puzzles",
+                  "Complete a 3×3 magic square with 1–9",
+                  "Create your own 4×4 sudoku",
+                  "Swap with a friend to solve"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s6.number-puzzles.sudoku.q1",
+                  "prompt": "A line up and down is a…",
+                  "kind": "choice",
+                  "options": [
+                    "column",
+                    "row",
+                    "diagonal"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s6.number-puzzles.sudoku.q2",
+                  "prompt": "The Khajuraho magic square is 4×4.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s6.number-puzzles.sudoku.q3",
+                  "prompt": "A line across is a…",
+                  "kind": "choice",
+                  "options": [
+                    "row",
+                    "column",
+                    "circle"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Solves 4×4 sudoku logically",
+                "Verifies magic squares",
+                "Creates puzzles"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "puzzles.s6.riddles",
+          "title": "Riddles",
+          "summary": "Word puzzles.",
+          "topics": [
+            {
+              "title": "What am I? riddles",
+              "subtopics": [
+                "What am I? riddles"
+              ]
+            },
+            {
+              "title": "Double meanings",
+              "subtopics": [
+                "Double meanings"
+              ]
+            },
+            {
+              "title": "Riddles in stories",
+              "subtopics": [
+                "Riddles in stories"
+              ]
+            }
+          ],
+          "objectives": [
+            "Solve riddles by thinking about clues and double meanings",
+            "Create original riddles"
+          ],
+          "masteryCriteria": [
+            "Solves riddles",
+            "Identifies double meanings",
+            "Creates original riddles"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s6.riddles.riddles",
+              "title": "What Am I?",
+              "skillId": "sk.puzzles.s6.riddles.riddles",
+              "minutes": 15,
+              "objectives": [
+                "Solve riddles by thinking about clues and double meanings",
+                "Create original riddles"
+              ],
+              "prerequisites": [
+                "Has good vocabulary"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A riddle is a question or statement that needs clever thinking to solve. Many riddles describe something in a surprising way: \"I have hands but cannot clap. What am I?\" (A clock!)",
+                "Riddles often use double meanings — words that mean two things. A clock's \"hands\" are not real hands.",
+                "Riddles appear in stories everywhere: the Sphinx's riddle in Greek myth, Betal's riddles to King Vikramaditya, and the Yaksha's questions to Yudhishthira in the Mahabharata."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "riddle",
+                  "meaning": "a puzzling question needing clever thinking"
+                },
+                {
+                  "term": "double meaning",
+                  "meaning": "a word that means two things"
+                },
+                {
+                  "term": "clue",
+                  "meaning": "a hint"
+                },
+                {
+                  "term": "solve",
+                  "meaning": "to find the answer"
+                }
+              ],
+              "examples": [
+                "\"What has keys but can't open locks?\" — a piano.",
+                "\"What gets wetter the more it dries?\" — a towel."
+              ],
+              "story": {
+                "title": "The Yaksha's Questions",
+                "text": "In the Mahabharata, a Yaksha guarding a lake asked Yudhishthira many riddles before letting him drink. \"What is faster than the wind?\" \"The mind.\" \"What is more numerous than grass?\" \"Thoughts.\" Yudhishthira answered wisely, and the Yaksha restored his brothers to life."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s6.riddles.riddles.a1",
+                  "prompt": "\"I have hands but cannot clap.\" What am I?",
+                  "kind": "choice",
+                  "options": [
+                    "a clock",
+                    "a glove",
+                    "a tree"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s6.riddles.riddles.a2",
+                  "prompt": "\"What has keys but can't open locks?\"",
+                  "kind": "choice",
+                  "options": [
+                    "a piano",
+                    "a door",
+                    "a car"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s6.riddles.riddles.a3",
+                  "prompt": "Riddles often use double meanings.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s6.riddles.riddles.a4",
+                  "prompt": "\"What gets wetter the more it dries?\"",
+                  "kind": "choice",
+                  "options": [
+                    "a towel",
+                    "the sun",
+                    "a stone"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What makes a riddle clever?",
+                "Can you think of a word with two meanings?"
+              ],
+              "speaking": [
+                "Tell a grown-up a riddle you made up."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Riddle Book",
+                "materials": [
+                  "small booklet",
+                  "pencils"
+                ],
+                "steps": [
+                  "Choose five objects",
+                  "Write a \"What am I?\" riddle for each using double meanings",
+                  "Put answers under flaps",
+                  "Share your riddle book"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s6.riddles.riddles.q1",
+                  "prompt": "A hint is a…",
+                  "kind": "choice",
+                  "options": [
+                    "clue",
+                    "cloud",
+                    "clock"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s6.riddles.riddles.q2",
+                  "prompt": "The Yaksha asked Yudhishthira riddles.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s6.riddles.riddles.q3",
+                  "prompt": "To find the answer is to…",
+                  "kind": "choice",
+                  "options": [
+                    "solve",
+                    "sell",
+                    "sail"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Solves riddles",
+                "Identifies double meanings",
+                "Creates original riddles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s7",
+      "overview": "Problem-solving strategies and logic puzzles.",
+      "goals": [
+        "Use Polya's four steps",
+        "Solve river-crossing puzzles",
+        "Use logic grids"
+      ],
+      "units": [
+        {
+          "id": "puzzles.s7.polya",
+          "title": "How to Solve It",
+          "summary": "Polya's four steps.",
+          "topics": [
+            {
+              "title": "Understand the problem",
+              "subtopics": [
+                "Understand the problem"
+              ]
+            },
+            {
+              "title": "Make a plan",
+              "subtopics": [
+                "Make a plan"
+              ]
+            },
+            {
+              "title": "Carry out and look back",
+              "subtopics": [
+                "Carry out and look back"
+              ]
+            }
+          ],
+          "objectives": [
+            "Apply Polya's four steps to a problem",
+            "Choose strategies like drawing, working backwards and simplifying"
+          ],
+          "masteryCriteria": [
+            "Applies Polya's steps",
+            "Chooses strategies",
+            "Reflects on solutions"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s7.polya.polya",
+              "title": "Four Steps to Solving",
+              "skillId": "sk.puzzles.s7.polya.polya",
+              "minutes": 20,
+              "objectives": [
+                "Apply Polya's four steps to a problem",
+                "Choose strategies like drawing, working backwards and simplifying"
+              ],
+              "prerequisites": [
+                "Has solved simple puzzles"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Mathematician George Polya, in \"How to Solve It\" (1945), described four steps: Understand the problem; Devise a plan; Carry out the plan; Look back (check and reflect).",
+                "Useful strategies include: draw a diagram, make a table, look for a pattern, work backwards, try a simpler version, and guess and check.",
+                "Looking back is often skipped but powerful: Does the answer make sense? Could I solve it another way? Can I use this method again?"
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "strategy",
+                  "meaning": "a method for solving"
+                },
+                {
+                  "term": "work backwards",
+                  "meaning": "start from the goal"
+                },
+                {
+                  "term": "simplify",
+                  "meaning": "make an easier version"
+                },
+                {
+                  "term": "reflect",
+                  "meaning": "think back on what you did"
+                }
+              ],
+              "examples": [
+                "Drawing a diagram for a handshake problem.",
+                "Working backwards from the end of a story problem."
+              ],
+              "story": {
+                "title": "The Handshake Problem",
+                "text": "Ten friends each shake hands once with every other friend. How many handshakes? Kiko started counting and got confused. Then he tried a simpler version: 2 friends — 1. 3 friends — 3. 4 friends — 6. A pattern! 1, 3, 6, 10... For 10 friends: 45. He checked with a formula: 10 × 9 ÷ 2 = 45. Looking back, he grinned."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s7.polya.polya.a1",
+                  "prompt": "Put Polya's steps in order",
+                  "kind": "order",
+                  "items": [
+                    "Understand the problem",
+                    "Devise a plan",
+                    "Carry out the plan",
+                    "Look back"
+                  ]
+                },
+                {
+                  "id": "puzzles.s7.polya.polya.a2",
+                  "prompt": "Trying an easier version is…",
+                  "kind": "choice",
+                  "options": [
+                    "simplifying",
+                    "guessing",
+                    "giving up"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s7.polya.polya.a3",
+                  "prompt": "How many handshakes among 4 friends?",
+                  "kind": "count",
+                  "answer": 6
+                },
+                {
+                  "id": "puzzles.s7.polya.polya.a4",
+                  "prompt": "Looking back helps check and learn.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Which strategy do you use most? Why?",
+                "Why do people skip \"look back\"?"
+              ],
+              "speaking": [
+                "Solve a problem aloud, naming each Polya step."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Strategy Journal",
+                "materials": [
+                  "a notebook",
+                  "a set of puzzles"
+                ],
+                "steps": [
+                  "Solve five puzzles using Polya's steps",
+                  "Record the strategy you used",
+                  "Note what you learned looking back",
+                  "Share your favourite strategy"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s7.polya.polya.q1",
+                  "prompt": "Starting from the goal is…",
+                  "kind": "choice",
+                  "options": [
+                    "working backwards",
+                    "working forwards",
+                    "walking"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s7.polya.polya.q2",
+                  "prompt": "Polya wrote \"How to Solve It\".",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s7.polya.polya.q3",
+                  "prompt": "Thinking back on what you did is to…",
+                  "kind": "choice",
+                  "options": [
+                    "reflect",
+                    "reject",
+                    "repeat"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Applies Polya's steps",
+                "Chooses strategies",
+                "Reflects on solutions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "puzzles.s7.logic-puzzles",
+          "title": "Logic Puzzles",
+          "summary": "River crossings and grids.",
+          "topics": [
+            {
+              "title": "River-crossing puzzles",
+              "subtopics": [
+                "River-crossing puzzles"
+              ]
+            },
+            {
+              "title": "Logic grids",
+              "subtopics": [
+                "Logic grids"
+              ]
+            },
+            {
+              "title": "Knights and knaves",
+              "subtopics": [
+                "Knights and knaves"
+              ]
+            }
+          ],
+          "objectives": [
+            "Solve a river-crossing puzzle systematically",
+            "Use a logic grid to solve clue puzzles"
+          ],
+          "masteryCriteria": [
+            "Solves river-crossing puzzles",
+            "Uses logic grids",
+            "Explains key insights"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s7.logic-puzzles.river-crossing",
+              "title": "Wolf, Goat and Cabbage",
+              "skillId": "sk.puzzles.s7.logic-puzzles.river-crossing",
+              "minutes": 20,
+              "objectives": [
+                "Solve a river-crossing puzzle systematically",
+                "Use a logic grid to solve clue puzzles"
+              ],
+              "prerequisites": [
+                "Knows Polya's steps"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "In a classic river-crossing puzzle, a farmer must take a wolf, a goat and a cabbage across a river in a boat that holds only the farmer and one item. The wolf can't be left alone with the goat, nor the goat with the cabbage.",
+                "The solution: take the goat across; return; take the wolf across; bring the goat back; take the cabbage across; return; take the goat across. The key insight is that you can bring something back! Such puzzles appear in a manuscript attributed to Alcuin of York, around 800 CE.",
+                "Logic grid puzzles give clues about people and their choices; you mark a grid with ✓ and ✗ to eliminate possibilities until only one answer remains."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "constraint",
+                  "meaning": "a rule that limits choices"
+                },
+                {
+                  "term": "eliminate",
+                  "meaning": "to rule out"
+                },
+                {
+                  "term": "logic grid",
+                  "meaning": "a table for tracking possibilities"
+                },
+                {
+                  "term": "insight",
+                  "meaning": "a sudden understanding"
+                }
+              ],
+              "examples": [
+                "The farmer bringing the goat back across.",
+                "A grid showing who owns which pet."
+              ],
+              "story": {
+                "title": "The Farmer's Puzzle",
+                "text": "Zuri tried the wolf-goat-cabbage puzzle with toys. Every time, something got eaten! Frustrated, she asked, \"Does the farmer have to always carry something forwards?\" Her teacher smiled. Zuri's eyes lit up — she brought the goat back across, and suddenly the puzzle solved itself. \"Going backwards was the answer!\""
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s7.logic-puzzles.river-crossing.a1",
+                  "prompt": "What does the farmer take across first?",
+                  "kind": "choice",
+                  "options": [
+                    "the goat",
+                    "the wolf",
+                    "the cabbage"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s7.logic-puzzles.river-crossing.a2",
+                  "prompt": "The key insight is that…",
+                  "kind": "choice",
+                  "options": [
+                    "the farmer can bring something back",
+                    "the wolf can row",
+                    "the cabbage can swim"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s7.logic-puzzles.river-crossing.a3",
+                  "prompt": "Logic grids help eliminate possibilities.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s7.logic-puzzles.river-crossing.a4",
+                  "prompt": "Put the first three moves in order",
+                  "kind": "order",
+                  "items": [
+                    "Take the goat across",
+                    "Return alone",
+                    "Take the wolf across"
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why is it tempting to only move forwards?",
+                "How does a logic grid help with many clues?"
+              ],
+              "speaking": [
+                "Act out the river-crossing solution with toys and explain each move."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Logic Grid Challenge",
+                "materials": [
+                  "printed or drawn logic grids"
+                ],
+                "steps": [
+                  "Solve two logic grid puzzles",
+                  "Write your own with three people and three pets",
+                  "Test that it has exactly one answer",
+                  "Swap with a friend"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s7.logic-puzzles.river-crossing.q1",
+                  "prompt": "To rule out is to…",
+                  "kind": "choice",
+                  "options": [
+                    "eliminate",
+                    "estimate",
+                    "elevate"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s7.logic-puzzles.river-crossing.q2",
+                  "prompt": "River-crossing puzzles are over 1,000 years old.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s7.logic-puzzles.river-crossing.q3",
+                  "prompt": "A rule that limits choices is a…",
+                  "kind": "choice",
+                  "options": [
+                    "constraint",
+                    "celebration",
+                    "calendar"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Solves river-crossing puzzles",
+                "Uses logic grids",
+                "Explains key insights"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s9",
+      "overview": "Classic mathematical puzzles and lateral thinking.",
+      "goals": [
+        "Solve and generalise the Tower of Hanoi",
+        "Understand the Königsberg bridges and graph theory",
+        "Use lateral thinking"
+      ],
+      "units": [
+        {
+          "id": "puzzles.s9.classic-puzzles",
+          "title": "Classic Puzzles",
+          "summary": "Hanoi and Königsberg.",
+          "topics": [
+            {
+              "title": "Tower of Hanoi",
+              "subtopics": [
+                "Tower of Hanoi"
+              ]
+            },
+            {
+              "title": "Königsberg bridges",
+              "subtopics": [
+                "Königsberg bridges"
+              ]
+            },
+            {
+              "title": "Euler paths",
+              "subtopics": [
+                "Euler paths"
+              ]
+            }
+          ],
+          "objectives": [
+            "Find and explain the minimum moves for the Tower of Hanoi",
+            "Use Euler's reasoning about the Königsberg bridges"
+          ],
+          "masteryCriteria": [
+            "Generalises Hanoi",
+            "Applies Euler's criterion",
+            "Explains graph ideas"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s9.classic-puzzles.hanoi-bridges",
+              "title": "Towers and Bridges",
+              "skillId": "sk.puzzles.s9.classic-puzzles.hanoi-bridges",
+              "minutes": 30,
+              "objectives": [
+                "Find and explain the minimum moves for the Tower of Hanoi",
+                "Use Euler's reasoning about the Königsberg bridges"
+              ],
+              "prerequisites": [
+                "Knows problem-solving strategies"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "The Tower of Hanoi, invented by Édouard Lucas in 1883, has discs on one peg to be moved to another, one at a time, never placing a larger disc on a smaller one. With n discs, the minimum number of moves is 2ⁿ − 1: 3 discs take 7 moves; 4 discs take 15.",
+                "In 1736, Leonhard Euler studied the seven bridges of Königsberg: could you walk across each bridge exactly once? He proved it was impossible, founding graph theory.",
+                "Euler showed that a path crossing every edge once exists only if zero or two points (vertices) have an odd number of connections. Königsberg had four land areas, all with an odd number of bridges."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "vertex",
+                  "meaning": "a point in a graph"
+                },
+                {
+                  "term": "edge",
+                  "meaning": "a line joining two vertices"
+                },
+                {
+                  "term": "graph theory",
+                  "meaning": "the study of networks of points and lines"
+                },
+                {
+                  "term": "Euler path",
+                  "meaning": "a path using every edge exactly once"
+                }
+              ],
+              "examples": [
+                "Tower of Hanoi with 3 discs in 7 moves.",
+                "Drawing an envelope shape without lifting your pen."
+              ],
+              "story": {
+                "title": "The Bridges of Königsberg",
+                "text": "Citizens of Königsberg loved Sunday walks across the seven bridges of their river. They wondered whether anyone could cross each bridge exactly once. Nobody succeeded. In 1736, Leonhard Euler turned the map into dots and lines and proved it impossible. A puzzle about a Sunday walk became a new branch of mathematics."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s9.classic-puzzles.hanoi-bridges.a1",
+                  "prompt": "Minimum moves for a 3-disc Tower of Hanoi?",
+                  "kind": "choice",
+                  "options": [
+                    "7",
+                    "3",
+                    "9"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s9.classic-puzzles.hanoi-bridges.a2",
+                  "prompt": "Minimum moves for a 4-disc Tower of Hanoi?",
+                  "kind": "choice",
+                  "options": [
+                    "15",
+                    "8",
+                    "16"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s9.classic-puzzles.hanoi-bridges.a3",
+                  "prompt": "Euler proved the Königsberg walk was impossible.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s9.classic-puzzles.hanoi-bridges.a4",
+                  "prompt": "Match the term",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "vertex",
+                      "a point"
+                    ],
+                    [
+                      "edge",
+                      "a connecting line"
+                    ],
+                    [
+                      "Euler path",
+                      "uses every edge once"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why is the formula 2ⁿ − 1?",
+                "Where are graphs used today?"
+              ],
+              "speaking": [
+                "Demonstrate the Tower of Hanoi with 3 discs and explain the recursive idea."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Puzzle Investigation",
+                "materials": [
+                  "coins of different sizes or a Hanoi set",
+                  "paper"
+                ],
+                "steps": [
+                  "Solve Hanoi with 1, 2, 3 and 4 discs",
+                  "Record minimum moves and find the pattern",
+                  "Draw five shapes and test for Euler paths",
+                  "Write up your findings"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s9.classic-puzzles.hanoi-bridges.q1",
+                  "prompt": "A point in a graph is a…",
+                  "kind": "choice",
+                  "options": [
+                    "vertex",
+                    "vortex",
+                    "vector"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s9.classic-puzzles.hanoi-bridges.q2",
+                  "prompt": "Graph theory began with Euler's bridge problem.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s9.classic-puzzles.hanoi-bridges.q3",
+                  "prompt": "A line joining two vertices is an…",
+                  "kind": "choice",
+                  "options": [
+                    "edge",
+                    "angle",
+                    "arc only"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Generalises Hanoi",
+                "Applies Euler's criterion",
+                "Explains graph ideas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "puzzles.s9.lateral",
+          "title": "Lateral Thinking",
+          "summary": "Thinking outside the box.",
+          "topics": [
+            {
+              "title": "The nine dots puzzle",
+              "subtopics": [
+                "The nine dots puzzle"
+              ]
+            },
+            {
+              "title": "Questioning assumptions",
+              "subtopics": [
+                "Questioning assumptions"
+              ]
+            },
+            {
+              "title": "Creative problem solving",
+              "subtopics": [
+                "Creative problem solving"
+              ]
+            }
+          ],
+          "objectives": [
+            "Solve lateral thinking puzzles by questioning assumptions",
+            "Apply creative thinking techniques"
+          ],
+          "masteryCriteria": [
+            "Questions assumptions",
+            "Solves lateral puzzles",
+            "Applies creative techniques"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s9.lateral.lateral",
+              "title": "Thinking Outside the Box",
+              "skillId": "sk.puzzles.s9.lateral.lateral",
+              "minutes": 30,
+              "objectives": [
+                "Solve lateral thinking puzzles by questioning assumptions",
+                "Apply creative thinking techniques"
+              ],
+              "prerequisites": [
+                "Has used logical strategies"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Lateral thinking, a term coined by Edward de Bono in 1967, means solving problems by approaching them from unexpected angles rather than step-by-step logic alone.",
+                "The nine dots puzzle asks you to join nine dots in a 3×3 grid with four straight lines without lifting your pen. Most people fail because they assume lines must stay inside the square. Going outside the dots solves it — possibly the origin of \"thinking outside the box\".",
+                "Techniques include questioning assumptions, reversing the problem, using random prompts and asking \"what if?\". Good problem solvers combine logical and lateral thinking."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "lateral thinking",
+                  "meaning": "solving problems from unexpected angles"
+                },
+                {
+                  "term": "assumption",
+                  "meaning": "something taken for granted"
+                },
+                {
+                  "term": "reverse",
+                  "meaning": "to turn the other way"
+                },
+                {
+                  "term": "creativity",
+                  "meaning": "making new and useful ideas"
+                }
+              ],
+              "examples": [
+                "The nine dots puzzle.",
+                "Asking \"How could we make this problem worse?\" to find solutions."
+              ],
+              "story": {
+                "title": "The Man in the Lift",
+                "text": "A classic puzzle: a man lives on the 10th floor. Every morning he takes the lift down. In the evening, he takes the lift to the 7th floor and walks up — unless it's raining or others are in the lift. Why? Meera puzzled over it, then questioned her assumption that he was tall. \"He's too short to reach the 10th button — unless he has an umbrella!\""
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s9.lateral.lateral.a1",
+                  "prompt": "Lateral thinking was named by…",
+                  "kind": "choice",
+                  "options": [
+                    "Edward de Bono",
+                    "Euler",
+                    "Polya"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s9.lateral.lateral.a2",
+                  "prompt": "The nine dots puzzle is solved by…",
+                  "kind": "choice",
+                  "options": [
+                    "drawing lines outside the dots",
+                    "using curved lines",
+                    "lifting the pen"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s9.lateral.lateral.a3",
+                  "prompt": "Questioning assumptions helps lateral thinking.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s9.lateral.lateral.a4",
+                  "prompt": "Something taken for granted is an…",
+                  "kind": "choice",
+                  "options": [
+                    "assumption",
+                    "answer",
+                    "angle"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What assumptions do people make about problems at school?",
+                "When is step-by-step logic better than lateral thinking?"
+              ],
+              "speaking": [
+                "Present a lateral thinking puzzle and guide others to the answer."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Creative Problem Lab",
+                "materials": [
+                  "sticky notes",
+                  "a real problem (e.g. reducing waste at home)"
+                ],
+                "steps": [
+                  "List assumptions about the problem",
+                  "Use reversal: \"How could we make it worse?\"",
+                  "Flip those ideas into solutions",
+                  "Test one idea for a week"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s9.lateral.lateral.q1",
+                  "prompt": "Making new and useful ideas is…",
+                  "kind": "choice",
+                  "options": [
+                    "creativity",
+                    "calculation",
+                    "copying"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s9.lateral.lateral.q2",
+                  "prompt": "The nine dots puzzle uses four straight lines.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s9.lateral.lateral.q3",
+                  "prompt": "To turn the other way is to…",
+                  "kind": "choice",
+                  "options": [
+                    "reverse",
+                    "repair",
+                    "rest"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Questions assumptions",
+                "Solves lateral puzzles",
+                "Applies creative techniques"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s12",
+      "overview": "Game theory and the great unsolved problems.",
+      "goals": [
+        "Analyse strategic games with game theory",
+        "Describe famous open problems and puzzle-solvers",
+        "Engage with mathematical research culture"
+      ],
+      "units": [
+        {
+          "id": "puzzles.s12.game-theory",
+          "title": "Game Theory",
+          "summary": "The mathematics of strategy.",
+          "topics": [
+            {
+              "title": "Prisoner's dilemma",
+              "subtopics": [
+                "Prisoner's dilemma"
+              ]
+            },
+            {
+              "title": "Nash equilibrium",
+              "subtopics": [
+                "Nash equilibrium"
+              ]
+            },
+            {
+              "title": "Cooperation and repeated games",
+              "subtopics": [
+                "Cooperation and repeated games"
+              ]
+            }
+          ],
+          "objectives": [
+            "Analyse the prisoner's dilemma and Nash equilibrium",
+            "Evaluate how cooperation can emerge in repeated games"
+          ],
+          "masteryCriteria": [
+            "Analyses games formally",
+            "Explains Nash equilibrium",
+            "Evaluates cooperation"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s12.game-theory.game-theory",
+              "title": "The Prisoner's Dilemma",
+              "skillId": "sk.puzzles.s12.game-theory.game-theory",
+              "minutes": 40,
+              "objectives": [
+                "Analyse the prisoner's dilemma and Nash equilibrium",
+                "Evaluate how cooperation can emerge in repeated games"
+              ],
+              "prerequisites": [
+                "Knows logic and probability"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Game theory studies strategic decisions where each person's outcome depends on others' choices. It was developed by John von Neumann and Oskar Morgenstern (1944) and extended by John Nash.",
+                "In the prisoner's dilemma, two suspects are questioned separately. If both stay silent, both get short sentences. If one betrays the other, the betrayer goes free and the other gets a long sentence. If both betray, both get medium sentences. Each is individually better off betraying — so both betray, though both would be better off cooperating. Mutual betrayal is a Nash equilibrium: no one gains by changing strategy alone.",
+                "In repeated games, cooperation can emerge. In Robert Axelrod's computer tournaments (around 1980), the simple strategy \"tit for tat\" — cooperate first, then copy the opponent's last move — performed remarkably well."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "game theory",
+                  "meaning": "the study of strategic decision-making"
+                },
+                {
+                  "term": "Nash equilibrium",
+                  "meaning": "a state where no player benefits from changing strategy alone"
+                },
+                {
+                  "term": "dilemma",
+                  "meaning": "a difficult choice"
+                },
+                {
+                  "term": "tit for tat",
+                  "meaning": "cooperate first, then copy the other player"
+                }
+              ],
+              "examples": [
+                "Two shops in a price war.",
+                "Countries negotiating climate agreements."
+              ],
+              "story": {
+                "title": "The Tournament",
+                "text": "In 1980, political scientist Robert Axelrod invited experts to submit computer programs to play repeated prisoner's dilemma against each other. Complex, clever strategies entered. The winner was the shortest program: tit for tat, submitted by Anatol Rapoport. Nice, retaliatory, forgiving and clear — it suggested how cooperation might evolve."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s12.game-theory.game-theory.a1",
+                  "prompt": "In a one-shot prisoner's dilemma, the Nash equilibrium is…",
+                  "kind": "choice",
+                  "options": [
+                    "both betray",
+                    "both stay silent",
+                    "one is freed"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s12.game-theory.game-theory.a2",
+                  "prompt": "Tit for tat starts by…",
+                  "kind": "choice",
+                  "options": [
+                    "cooperating",
+                    "betraying",
+                    "doing nothing"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s12.game-theory.game-theory.a3",
+                  "prompt": "Cooperation can emerge in repeated games.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s12.game-theory.game-theory.a4",
+                  "prompt": "Match the thinker",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "John Nash",
+                      "equilibrium concept"
+                    ],
+                    [
+                      "Robert Axelrod",
+                      "cooperation tournaments"
+                    ],
+                    [
+                      "von Neumann",
+                      "founded game theory with Morgenstern"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Where do you see prisoner's dilemmas in real life?",
+                "Is tit for tat a good strategy for friendships?"
+              ],
+              "speaking": [
+                "Run a classroom prisoner's dilemma game and explain the results."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Strategy Tournament",
+                "materials": [
+                  "Python or a spreadsheet"
+                ],
+                "steps": [
+                  "Code strategies like always cooperate, always betray and tit for tat",
+                  "Run a round-robin tournament over many rounds",
+                  "Analyse which strategies score best",
+                  "Write a 1500-word report"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s12.game-theory.game-theory.q1",
+                  "prompt": "The study of strategic decisions is…",
+                  "kind": "choice",
+                  "options": [
+                    "game theory",
+                    "geometry",
+                    "geology"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s12.game-theory.game-theory.q2",
+                  "prompt": "Mutual betrayal is a Nash equilibrium in the prisoner's dilemma.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s12.game-theory.game-theory.q3",
+                  "prompt": "A difficult choice is a…",
+                  "kind": "choice",
+                  "options": [
+                    "dilemma",
+                    "diagram",
+                    "dialogue"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Analyses games formally",
+                "Explains Nash equilibrium",
+                "Evaluates cooperation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "puzzles.s12.open-problems",
+          "title": "The Great Problems",
+          "summary": "Puzzles mathematicians are still solving.",
+          "topics": [
+            {
+              "title": "Famous solved problems",
+              "subtopics": [
+                "Famous solved problems"
+              ]
+            },
+            {
+              "title": "Open problems",
+              "subtopics": [
+                "Open problems"
+              ]
+            },
+            {
+              "title": "Ramanujan and puzzle-solvers",
+              "subtopics": [
+                "Ramanujan and puzzle-solvers"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe famous solved and unsolved mathematical problems",
+            "Evaluate what drives mathematical discovery"
+          ],
+          "masteryCriteria": [
+            "Describes famous problems accurately",
+            "Distinguishes conjecture and theorem",
+            "Explores problems computationally"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "puzzles.s12.open-problems.open-problems",
+              "title": "Unsolved Mysteries of Mathematics",
+              "skillId": "sk.puzzles.s12.open-problems.open-problems",
+              "minutes": 40,
+              "objectives": [
+                "Describe famous solved and unsolved mathematical problems",
+                "Evaluate what drives mathematical discovery"
+              ],
+              "prerequisites": [
+                "Has solved many puzzles"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Some problems take centuries. Fermat's Last Theorem (that aⁿ + bⁿ = cⁿ has no whole-number solutions for n > 2) was stated around 1637 and proved by Andrew Wiles in 1994. The Four Colour Theorem was proved in 1976 with computer help.",
+                "Many puzzles remain open. The Collatz conjecture: start with any positive whole number; if even, halve it; if odd, multiply by 3 and add 1. Does every number eventually reach 1? Nobody knows. The Riemann Hypothesis, about prime numbers, is one of the Clay Millennium Prize Problems, each carrying a one-million-dollar prize.",
+                "Srinivasa Ramanujan (1887–1920), largely self-taught, filled notebooks with remarkable formulas; mathematicians are still exploring them. His story with G. H. Hardy, and the \"taxicab number\" 1729, show the joy of puzzles at the highest level. India celebrates National Mathematics Day on his birthday, 22 December."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "conjecture",
+                  "meaning": "a statement believed true but not yet proved"
+                },
+                {
+                  "term": "theorem",
+                  "meaning": "a proven mathematical statement"
+                },
+                {
+                  "term": "proof",
+                  "meaning": "a logical argument showing something is true"
+                },
+                {
+                  "term": "prime number",
+                  "meaning": "a number with exactly two factors"
+                }
+              ],
+              "examples": [
+                "Collatz from 6: 6, 3, 10, 5, 16, 8, 4, 2, 1.",
+                "1729 = 1³ + 12³ = 9³ + 10³."
+              ],
+              "story": {
+                "title": "The Taxicab Number",
+                "text": "When G. H. Hardy visited Ramanujan in hospital, he said his taxi's number, 1729, seemed dull. \"No,\" Ramanujan replied at once, \"it is a very interesting number. It is the smallest number expressible as the sum of two cubes in two different ways.\" 1729 = 1³ + 12³ = 9³ + 10³. Numbers, for Ramanujan, were old friends."
+              },
+              "activities": [
+                {
+                  "id": "puzzles.s12.open-problems.open-problems.a1",
+                  "prompt": "Fermat's Last Theorem was proved by…",
+                  "kind": "choice",
+                  "options": [
+                    "Andrew Wiles",
+                    "Ramanujan",
+                    "Euler"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s12.open-problems.open-problems.a2",
+                  "prompt": "A statement believed true but not proved is a…",
+                  "kind": "choice",
+                  "options": [
+                    "conjecture",
+                    "theorem",
+                    "fact"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s12.open-problems.open-problems.a3",
+                  "prompt": "The Collatz conjecture is still unsolved.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s12.open-problems.open-problems.a4",
+                  "prompt": "Continue Collatz from 5",
+                  "kind": "order",
+                  "items": [
+                    "5",
+                    "16",
+                    "8",
+                    "4",
+                    "2",
+                    "1"
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why do mathematicians spend years on problems with no obvious use?",
+                "What can Ramanujan's story teach about talent and opportunity?"
+              ],
+              "speaking": [
+                "Present one famous problem, solved or unsolved, to a group."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Collatz Exploration",
+                "materials": [
+                  "Python or a spreadsheet"
+                ],
+                "steps": [
+                  "Compute Collatz sequences for numbers 1 to 1,000",
+                  "Find which number takes the most steps",
+                  "Graph the step counts",
+                  "Write about why proof is harder than checking"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "puzzles.s12.open-problems.open-problems.q1",
+                  "prompt": "A proven mathematical statement is a…",
+                  "kind": "choice",
+                  "options": [
+                    "theorem",
+                    "conjecture",
+                    "guess"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "puzzles.s12.open-problems.open-problems.q2",
+                  "prompt": "National Mathematics Day honours Ramanujan.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "puzzles.s12.open-problems.open-problems.q3",
+                  "prompt": "1729 is known as the…",
+                  "kind": "choice",
+                  "options": [
+                    "taxicab number",
+                    "prime number",
+                    "perfect number"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes famous problems accurately",
+                "Distinguishes conjecture and theorem",
+                "Explores problems computationally"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

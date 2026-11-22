@@ -1,1 +1,2464 @@
-{"schemaVersion":1,"id":"life-skills","worldId":"heart-harbor","title":"Life Skills & Responsibility","icon":"🧺","tagline":"I can do it myself","description":"Practical independence: dressing and tidying, helping at home, simple cooking, time management, organisation, decision-making, planning, budgeting basics, and preparing for adult life. Builds confidence through real responsibility.","contentVersion":"1.0.0","sensitivity":"none","stages":[{"stage":"s4","overview":"Doing things by myself: dressing, tidying, and helping.","goals":["Dress and undress with little help","Tidy toys away","Help with small jobs at home"],"units":[{"id":"life-skills.s4.by-myself","title":"I Can Do It Myself!","summary":"Building independence step by step.","topics":[{"title":"Getting dressed","subtopics":["buttons","zips","shoes"]},{"title":"Washing up after meals","subtopics":["Washing up after meals"]},{"title":"Packing a bag","subtopics":["Packing a bag"]}],"objectives":["Put on clothes in the right order","Try fastenings like buttons, zips and velcro"],"masteryCriteria":["Dresses with minimal help","Sequences dressing","Persists with fastenings"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"life-skills.s4.by-myself.get-dressed","title":"Getting Dressed by Myself","skillId":"sk.life-skills.s4.by-myself.get-dressed","minutes":8,"objectives":["Put on clothes in the right order","Try fastenings like buttons, zips and velcro"],"prerequisites":["Can name clothes"],"prerequisiteIds":[],"explanation":["Getting dressed by yourself is a big step! Clothes go on in an order: underwear first, then trousers or skirt, then a top, then socks, then shoes.","Buttons, zips and velcro take practice. Start with big buttons and practise on a shirt lying on the table before trying it on.","If something is tricky, try again slowly, and it's okay to ask for a little help."],"context":[],"vocabulary":[{"term":"dress","meaning":"put on clothes"},{"term":"button","meaning":"a small disc that fastens clothes"},{"term":"zip","meaning":"a fastener that slides up and down"},{"term":"velcro","meaning":"fuzzy strips that stick together"}],"examples":["Socks before shoes!","Tops with the label at the back."],"story":{"title":"Kiko's Upside-Down Morning","text":"Kiko wanted to dress without help and put shoes on first, then tried to pull socks over them! Everyone giggled — Kiko too. Tara drew a picture chart: underwear, trousers, top, socks, shoes. The next morning, Kiko followed it and walked out proudly, all by myself!"},"activities":[{"id":"life-skills.s4.by-myself.get-dressed.a1","prompt":"Getting dressed order","kind":"order","items":["underwear","trousers","top","socks","shoes 👟"]},{"id":"life-skills.s4.by-myself.get-dressed.a2","prompt":"What goes on before shoes?","kind":"choice","options":["socks 🧦","a hat","a coat on top"],"answer":0},{"id":"life-skills.s4.by-myself.get-dressed.a3","prompt":"Buttons get easier with practice.","kind":"truefalse","answer":true},{"id":"life-skills.s4.by-myself.get-dressed.a4","prompt":"If something is tricky, you can…","kind":"choice","options":["try again slowly or ask for help","give up forever","cry"],"answer":0}],"thinking":["Which fastening is the hardest for you?","How do you feel when you do something by yourself?"],"speaking":["Tell a grown-up the order you put your clothes on."],"project":{"kind":"project","title":"Dressing Picture Chart","materials":["paper","crayons","tape"],"steps":["Draw each clothing item in order","Stick the chart near your clothes","Follow it every morning for a week","Add a sticker each day you dress by yourself"]},"assessment":[{"id":"life-skills.s4.by-myself.get-dressed.q1","prompt":"Shoes go on…","kind":"choice","options":["first","last","never"],"answer":1},{"id":"life-skills.s4.by-myself.get-dressed.q2","prompt":"Asking for a little help is okay.","kind":"truefalse","answer":true},{"id":"life-skills.s4.by-myself.get-dressed.q3","prompt":"Velcro fastens by…","kind":"choice","options":["sticking together","tying","buttoning"],"answer":0}],"mastery":["Dresses with minimal help","Sequences dressing","Persists with fastenings"]}]},{"id":"life-skills.s4.tidy-help","title":"Tidy Up and Help Out","summary":"Everyone helps at home.","topics":[{"title":"Tidying toys into boxes","subtopics":["Tidying toys into boxes"]},{"title":"Setting the table","subtopics":["Setting the table"]},{"title":"Watering plants","subtopics":["Watering plants"]},{"title":"Folding small clothes","subtopics":["Folding small clothes"]}],"objectives":["Tidy toys into the right places","Do a small helping job at home"],"masteryCriteria":["Tidies toys independently","Completes small household jobs","Uses organisation systems"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"life-skills.s4.tidy-help.tidy-time","title":"Tidy-Up Time","skillId":"sk.life-skills.s4.tidy-help.tidy-time","minutes":8,"objectives":["Tidy toys into the right places","Do a small helping job at home"],"prerequisites":["Can sort objects"],"prerequisiteIds":[],"explanation":["When everything has a home, it's easy to find. Blocks go in the block box, books on the shelf, crayons in the crayon tin.","Tidying after play is part of being a good helper. A tidy-up song makes it fun!","You can help at home in other ways: setting spoons on the table, watering plants, putting socks in pairs, and feeding a pet with a grown-up."],"context":[],"vocabulary":[{"term":"tidy","meaning":"put things back where they belong"},{"term":"helper","meaning":"someone who does useful jobs"},{"term":"sort","meaning":"put things into groups"},{"term":"chore","meaning":"a regular job at home"}],"examples":["Matching socks into pairs.","Putting all the toy cars in one box."],"story":{"title":"The Missing Puzzle Piece","text":"Momo couldn't finish a puzzle because one piece was missing. After searching everywhere, Momo found it under a pile of toys. \"If everything had a home,\" said Mama Bear, \"it would be easy to find.\" So Momo made labels for each box — and never lost a puzzle piece again."},"activities":[{"id":"life-skills.s4.tidy-help.tidy-time.a1","prompt":"Where should books go?","kind":"choice","options":["on the bookshelf","on the floor","in the bath"],"answer":0},{"id":"life-skills.s4.tidy-help.tidy-time.a2","prompt":"A helping job you can do:","kind":"choice","options":["setting spoons on the table","cooking on the stove alone","driving"],"answer":0},{"id":"life-skills.s4.tidy-help.tidy-time.a3","prompt":"Tidying helps us find things easily.","kind":"truefalse","answer":true},{"id":"life-skills.s4.tidy-help.tidy-time.a4","prompt":"Match the item to its home","kind":"match","pairs":[["crayons","crayon tin"],["books","bookshelf"],["blocks","block box"]]}],"thinking":["Why is it easier to play when your room is tidy?","What jobs do grown-ups in your home do every day?"],"speaking":["Show a grown-up how you tidied your toys and where each thing lives."],"project":{"kind":"project","title":"Toy Home Labels","materials":["boxes or baskets","paper","crayons","tape"],"steps":["Draw a picture label for each toy box","Stick labels on the boxes","Tidy all toys into the right boxes","Time yourself with a tidy-up song"]},"assessment":[{"id":"life-skills.s4.tidy-help.tidy-time.q1","prompt":"After playing, we should…","kind":"choice","options":["tidy up","leave everything out","hide toys under the bed"],"answer":0},{"id":"life-skills.s4.tidy-help.tidy-time.q2","prompt":"Pairs of socks: 🧦🧦 🧦🧦 🧦🧦 — how many pairs?","kind":"count","answer":3},{"id":"life-skills.s4.tidy-help.tidy-time.q3","prompt":"Helping at home is part of being a family.","kind":"truefalse","answer":true}],"mastery":["Tidies toys independently","Completes small household jobs","Uses organisation systems"]}]}]},{"stage":"s5","overview":"Daily routines, simple food preparation and caring for belongings.","goals":["Follow a morning and evening routine","Make a simple snack safely","Look after belongings"],"units":[{"id":"life-skills.s5.routines","title":"My Daily Routine","summary":"Routines make days smoother.","topics":[{"title":"Morning routine","subtopics":["Morning routine"]},{"title":"Evening routine","subtopics":["Evening routine"]},{"title":"Picture schedules","subtopics":["Picture schedules"]}],"objectives":["Follow a morning routine with a picture schedule","Explain why routines help"],"masteryCriteria":["Follows a routine independently","Explains benefits of routines","Uses a visual schedule"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"life-skills.s5.routines.morning-routine","title":"Ready for the Day","skillId":"sk.life-skills.s5.routines.morning-routine","minutes":10,"objectives":["Follow a morning routine with a picture schedule","Explain why routines help"],"prerequisites":["Dresses independently"],"prerequisiteIds":[],"explanation":["A routine is a set of things we do in the same order every day. A morning routine might be: wake up, use the toilet, brush teeth, wash face, get dressed, eat breakfast, pack bag.","Routines help us remember what to do, save time and feel calm because we know what comes next.","A picture schedule shows each step. Tick each one as you finish it."],"context":[],"vocabulary":[{"term":"routine","meaning":"things done in the same order every day"},{"term":"schedule","meaning":"a plan showing when things happen"},{"term":"morning","meaning":"the start of the day"},{"term":"evening","meaning":"the end of the day"}],"examples":["Evening routine: bath, pyjamas, story, brush teeth, sleep.","Packing your school bag the night before."],"story":{"title":"The Rushed Morning","text":"One morning Zuri overslept, couldn't find her shoes, forgot her water bottle and was late. That evening, she made a picture schedule and packed her bag before bed. The next morning, she followed the pictures, step by step, and had time for an extra cuddle before school."},"activities":[{"id":"life-skills.s5.routines.morning-routine.a1","prompt":"A morning routine","kind":"order","items":["wake up","brush teeth","get dressed","eat breakfast","pack bag"]},{"id":"life-skills.s5.routines.morning-routine.a2","prompt":"Routines help us…","kind":"choice","options":["remember what to do","forget everything","be late"],"answer":0},{"id":"life-skills.s5.routines.morning-routine.a3","prompt":"Packing your bag the night before saves time.","kind":"truefalse","answer":true},{"id":"life-skills.s5.routines.morning-routine.a4","prompt":"A picture schedule shows…","kind":"choice","options":["the steps in order","cartoons","the weather"],"answer":0}],"thinking":["What happens when you skip a step in your routine?","Which part of your day do you like best?"],"speaking":["Tell a grown-up your evening routine in order."],"project":{"kind":"project","title":"Picture Schedule","materials":["card","crayons","a clothes peg"],"steps":["Draw each step of your morning routine on a strip","Stick it on the wall","Move a peg along as you finish each step","Try it for a week and see if mornings feel easier"]},"assessment":[{"id":"life-skills.s5.routines.morning-routine.q1","prompt":"Which comes first?","kind":"choice","options":["wake up","eat breakfast","go to school"],"answer":0},{"id":"life-skills.s5.routines.morning-routine.q2","prompt":"Routines can make us feel calm.","kind":"truefalse","answer":true},{"id":"life-skills.s5.routines.morning-routine.q3","prompt":"A routine is…","kind":"choice","options":["things done in the same order every day","a type of food","a game"],"answer":0}],"mastery":["Follows a routine independently","Explains benefits of routines","Uses a visual schedule"]}]},{"id":"life-skills.s5.little-chef","title":"Little Chef","summary":"Making simple snacks safely.","topics":[{"title":"Kitchen safety","subtopics":["knives and heat with adults"]},{"title":"Washing produce","subtopics":["Washing produce"]},{"title":"Simple recipes","subtopics":["fruit chaat","sandwich","lemonade"]}],"objectives":["Follow a simple recipe step by step","Follow kitchen safety rules"],"masteryCriteria":["Follows a simple recipe","Applies kitchen safety","Cleans up after cooking"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"life-skills.s5.little-chef.fruit-chaat","title":"Making Fruit Chaat","skillId":"sk.life-skills.s5.little-chef.fruit-chaat","minutes":10,"objectives":["Follow a simple recipe step by step","Follow kitchen safety rules"],"prerequisites":["Washes hands correctly"],"prerequisiteIds":[],"explanation":["Cooking starts with safety: wash hands, ask a grown-up before using knives or anything hot, and use a child-safe knife for soft foods.","A recipe tells us what we need (ingredients) and what to do (steps). Fruit chaat: wash fruits, have a grown-up help cut them, put them in a bowl, sprinkle a little chaat masala or lemon juice, and mix.","Cleaning up is part of cooking: put peels in the wet-waste bin and wash your bowl."],"context":[],"vocabulary":[{"term":"recipe","meaning":"instructions for making food"},{"term":"ingredient","meaning":"a food item used in a recipe"},{"term":"peel","meaning":"the outer skin of fruit"},{"term":"safe","meaning":"not dangerous"}],"examples":["Banana, apple and papaya make a colourful chaat.","Spreading butter on bread with a blunt knife."],"story":{"title":"Rangi's Rainbow Chaat","text":"Rangi wanted to make something for the family picnic. With Grandma watching, Rangi washed the fruits, peeled a banana and used a safe knife to slice it. Grandma cut the apple. Rangi added pomegranate seeds and a squeeze of lemon. \"A rainbow in a bowl!\" everyone cheered."},"activities":[{"id":"life-skills.s5.little-chef.fruit-chaat.a1","prompt":"Fruit chaat steps","kind":"order","items":["wash your hands","wash the fruit","cut with a grown-up's help","mix in a bowl","clean up"]},{"id":"life-skills.s5.little-chef.fruit-chaat.a2","prompt":"Before using a sharp knife, you should…","kind":"choice","options":["ask a grown-up","grab it quickly","use it on your hand"],"answer":0},{"id":"life-skills.s5.little-chef.fruit-chaat.a3","prompt":"Cleaning up is part of cooking.","kind":"truefalse","answer":true},{"id":"life-skills.s5.little-chef.fruit-chaat.a4","prompt":"A list of foods needed for a recipe is the…","kind":"choice","options":["ingredients","weather","game rules"],"answer":0}],"thinking":["Why should grown-ups help with knives and stoves?","What other simple snack could you make?"],"speaking":["Explain your recipe to someone step by step."],"project":{"kind":"project","title":"Make and Share a Snack","materials":["fruits or bread and spread","a safe knife","a bowl","an adult"],"steps":["Choose a simple recipe","Gather ingredients","Make it with an adult supervising","Serve it to your family and clean up"]},"assessment":[{"id":"life-skills.s5.little-chef.fruit-chaat.q1","prompt":"First step in cooking:","kind":"choice","options":["wash your hands","eat the ingredients","turn on the stove alone"],"answer":0},{"id":"life-skills.s5.little-chef.fruit-chaat.q2","prompt":"Fruit peels go in the wet-waste bin.","kind":"truefalse","answer":true},{"id":"life-skills.s5.little-chef.fruit-chaat.q3","prompt":"A recipe gives…","kind":"choice","options":["ingredients and steps","only pictures","a map"],"answer":0}],"mastery":["Follows a simple recipe","Applies kitchen safety","Cleans up after cooking"]}]}]},{"stage":"s6","overview":"Time management, organisation and money basics.","goals":["Plan time for homework and play","Organise school things","Understand saving and spending"],"units":[{"id":"life-skills.s6.time","title":"Managing My Time","summary":"Planning so there's time for everything.","topics":[{"title":"Estimating time","subtopics":["Estimating time"]},{"title":"To-do lists","subtopics":["To-do lists"]},{"title":"Homework first, then play","subtopics":["Homework first, then play"]},{"title":"Using a timer","subtopics":["Using a timer"]}],"objectives":["Make and use a to-do list","Estimate how long tasks take"],"masteryCriteria":["Creates and uses to-do lists","Estimates task duration","Prioritises tasks"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"life-skills.s6.time.to-do-list","title":"My To-Do List","skillId":"sk.life-skills.s6.time.to-do-list","minutes":15,"objectives":["Make and use a to-do list","Estimate how long tasks take"],"prerequisites":["Reads time to the hour"],"prerequisiteIds":[],"explanation":["A to-do list helps you remember what needs doing and lets you tick things off — which feels great!","Put important things first. Estimate how long each takes: reading 15 minutes, maths 20 minutes, tidying 10 minutes.","A timer can help you focus: work for 20 minutes, then take a 5-minute break. Planning time means there's still time left to play."],"context":[],"vocabulary":[{"term":"to-do list","meaning":"a list of tasks to complete"},{"term":"estimate","meaning":"make a sensible guess"},{"term":"priority","meaning":"the most important thing"},{"term":"break","meaning":"a short rest"}],"examples":["Doing homework before playing outside.","Setting a timer for 20 minutes of reading."],"story":{"title":"The Very Busy Saturday","text":"Kiko wanted to play, help Grandma, finish a project and practise the flute — all on Saturday! Kiko wrote a list, numbered the most important first, and guessed how long each would take. By evening, everything was ticked off, and there was still time to play."},"activities":[{"id":"life-skills.s6.time.to-do-list.a1","prompt":"A to-do list helps you…","kind":"choice","options":["remember tasks and plan","forget everything","sleep"],"answer":0},{"id":"life-skills.s6.time.to-do-list.a2","prompt":"Most important tasks should go…","kind":"choice","options":["first","last","nowhere"],"answer":0},{"id":"life-skills.s6.time.to-do-list.a3","prompt":"Estimating time helps with planning.","kind":"truefalse","answer":true},{"id":"life-skills.s6.time.to-do-list.a4","prompt":"A focused work session","kind":"order","items":["set a timer for 20 minutes","work on one task","take a 5-minute break","start the next task"]}],"thinking":["Why does time sometimes feel short or long?","What happens when we leave important things to the end?"],"speaking":["Show someone your to-do list for tomorrow and explain the order."],"project":{"kind":"project","title":"Weekly Planner","materials":["a weekly planner page","coloured pens"],"steps":["List your regular activities (school, classes, play)","Add homework and chores","Colour-code types of activity","Check each evening what you completed"]},"assessment":[{"id":"life-skills.s6.time.to-do-list.q1","prompt":"A priority is…","kind":"choice","options":["the most important thing","the least important thing","a type of toy"],"answer":0},{"id":"life-skills.s6.time.to-do-list.q2","prompt":"Short breaks can help focus.","kind":"truefalse","answer":true},{"id":"life-skills.s6.time.to-do-list.q3","prompt":"Estimate means…","kind":"choice","options":["make a sensible guess","measure exactly","forget"],"answer":0}],"mastery":["Creates and uses to-do lists","Estimates task duration","Prioritises tasks"]}]},{"id":"life-skills.s6.money-basics","title":"Saving and Spending","summary":"Making choices with money.","topics":[{"title":"Needs and wants","subtopics":["Needs and wants"]},{"title":"Saving in a piggy bank","subtopics":["Saving in a piggy bank"]},{"title":"Waiting to buy","subtopics":["Waiting to buy"]}],"objectives":["Distinguish needs and wants","Make a plan to save for something"],"masteryCriteria":["Distinguishes needs and wants","Plans savings","Practises delayed gratification"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"life-skills.s6.money-basics.save-spend","title":"Save, Spend or Share?","skillId":"sk.life-skills.s6.money-basics.save-spend","minutes":15,"objectives":["Distinguish needs and wants","Make a plan to save for something"],"prerequisites":["Recognises coins and notes"],"prerequisiteIds":[],"explanation":["Needs are things we must have, like food, water, clothes and a home. Wants are nice to have, like toys and sweets.","Money can be spent, saved or shared. Saving means keeping money to buy something bigger later. Sharing means using some to help others.","Waiting to buy something you really want, instead of spending on small things now, is a powerful skill."],"context":[],"vocabulary":[{"term":"need","meaning":"something we must have"},{"term":"want","meaning":"something nice to have"},{"term":"save","meaning":"keep money for later"},{"term":"budget","meaning":"a plan for using money"}],"examples":["Saving ₹10 a week for 10 weeks to buy a ₹100 book.","Sharing pocket money with a charity drive."],"story":{"title":"The Three Jars","text":"Grandpa gave Zuri three jars labelled SAVE, SPEND and SHARE. Each time she got pocket money, she split it between them. After two months, her SAVE jar bought the paint set she wanted, her SHARE jar bought food for the animal shelter, and her SPEND jar had paid for a few treats along the way."},"activities":[{"id":"life-skills.s6.money-basics.save-spend.a1","prompt":"Need or want?","kind":"match","pairs":[["food","need"],["toy car","want"],["clothes","need, to stay warm and covered"]]},{"id":"life-skills.s6.money-basics.save-spend.a2","prompt":"Saving means…","kind":"choice","options":["keeping money for later","spending it all now","losing it"],"answer":0},{"id":"life-skills.s6.money-basics.save-spend.a3","prompt":"Save ₹10 a week. How many weeks to save ₹50?","kind":"count","answer":5},{"id":"life-skills.s6.money-basics.save-spend.a4","prompt":"Sharing money can help others.","kind":"truefalse","answer":true}],"thinking":["Is it always easy to tell a need from a want?","How does it feel to wait and save for something?"],"speaking":["Tell a grown-up something you would save for and how you would do it."],"project":{"kind":"project","title":"Save–Spend–Share Jars","materials":["three jars or envelopes","labels","coins or play money"],"steps":["Label three jars","Decide how to split any pocket money or play money","Track your savings goal on a chart","Celebrate when you reach it"]},"assessment":[{"id":"life-skills.s6.money-basics.save-spend.q1","prompt":"Which is a need?","kind":"choice","options":["water","a video game","candy"],"answer":0},{"id":"life-skills.s6.money-basics.save-spend.q2","prompt":"Waiting to buy can help you get something you really want.","kind":"truefalse","answer":true},{"id":"life-skills.s6.money-basics.save-spend.q3","prompt":"A plan for using money is a…","kind":"choice","options":["budget","bucket","bicycle"],"answer":0}],"mastery":["Distinguishes needs and wants","Plans savings","Practises delayed gratification"]}]}]},{"stage":"s7","overview":"Decision-making, problem-solving and household skills.","goals":["Use a decision-making process","Plan and carry out a household project","Develop basic sewing, cooking and repair skills"],"units":[{"id":"life-skills.s7.decisions","title":"Making Good Decisions","summary":"Thinking before choosing.","topics":[{"title":"Steps","subtopics":["identify","options","consequences","choose","review"]},{"title":"Pros and cons","subtopics":["Pros and cons"]},{"title":"Influences on decisions","subtopics":["Influences on decisions"]}],"objectives":["Use a step-by-step process to make decisions","Weigh pros and cons of options"],"masteryCriteria":["Applies decision steps","Weighs pros and cons","Reflects on outcomes"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"life-skills.s7.decisions.decision-steps","title":"Decision Steps","skillId":"sk.life-skills.s7.decisions.decision-steps","minutes":20,"objectives":["Use a step-by-step process to make decisions","Weigh pros and cons of options"],"prerequisites":["Plans time"],"prerequisiteIds":[],"explanation":["Good decisions follow steps: identify the decision, list options, think about consequences (good and bad) for each, choose, then review how it went.","A pros-and-cons list helps compare options. Some pros or cons matter more than others — think about your values and the people affected.","Decisions are influenced by feelings, friends, adverts and habits. Pausing helps you notice these influences."],"context":[],"vocabulary":[{"term":"decision","meaning":"a choice"},{"term":"option","meaning":"a possible choice"},{"term":"consequence","meaning":"what happens as a result"},{"term":"pros and cons","meaning":"advantages and disadvantages"}],"examples":["Choosing between football club and art club.","Deciding how to spend a birthday gift of money."],"story":{"title":"The Club Choice","text":"Arjun could join only one club: football or coding. He listed pros and cons. Football: friends, exercise, but late evenings. Coding: he loved puzzles, but none of his friends were joining. He chose coding, then reviewed after a month. He'd made new friends and loved it."},"activities":[{"id":"life-skills.s7.decisions.decision-steps.a1","prompt":"Decision steps","kind":"order","items":["identify the decision","list options","think about consequences","choose","review"]},{"id":"life-skills.s7.decisions.decision-steps.a2","prompt":"Pros are…","kind":"choice","options":["advantages","disadvantages","prizes"],"answer":0},{"id":"life-skills.s7.decisions.decision-steps.a3","prompt":"Adverts can influence decisions.","kind":"truefalse","answer":true},{"id":"life-skills.s7.decisions.decision-steps.a4","prompt":"Reviewing a decision means…","kind":"choice","options":["checking how it went","never thinking about it","blaming others"],"answer":0}],"thinking":["Can a good decision still turn out badly? Why?","How do friends influence your decisions?"],"speaking":["Talk someone through a real decision using the steps."],"project":{"kind":"project","title":"Decision Journal","materials":["a notebook"],"steps":["Record three real decisions over two weeks","For each, write options, pros and cons, and your choice","Review the outcome later","Note what you learned"]},"assessment":[{"id":"life-skills.s7.decisions.decision-steps.q1","prompt":"Cons are…","kind":"choice","options":["disadvantages","advantages","options"],"answer":0},{"id":"life-skills.s7.decisions.decision-steps.q2","prompt":"Pausing can help you notice influences.","kind":"truefalse","answer":true},{"id":"life-skills.s7.decisions.decision-steps.q3","prompt":"Thinking about what will happen is considering…","kind":"choice","options":["consequences","colours","weather"],"answer":0}],"mastery":["Applies decision steps","Weighs pros and cons","Reflects on outcomes"]}]},{"id":"life-skills.s7.household","title":"Household Skills","summary":"Practical skills for independence.","topics":[{"title":"Sewing a button","subtopics":["Sewing a button"]},{"title":"Simple cooking","subtopics":["chai","poha","omelette"]},{"title":"Basic repairs","subtopics":["Basic repairs"]},{"title":"Laundry","subtopics":["Laundry"]}],"objectives":["Sew on a button","Cook a simple dish safely with supervision"],"masteryCriteria":["Sews a button","Cooks a simple dish safely","Completes household tasks"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"life-skills.s7.household.sew-a-button","title":"Sew a Button and Cook a Meal","skillId":"sk.life-skills.s7.household.sew-a-button","minutes":20,"objectives":["Sew on a button","Cook a simple dish safely with supervision"],"prerequisites":["Follows recipes and safety rules"],"prerequisiteIds":[],"explanation":["Sewing a button: thread a needle and knot the end, push the needle up through the fabric and a buttonhole, down through the opposite hole, repeat several times, then knot underneath.","Simple cooking with supervision builds independence: making chai, poha or a vegetable upma involves measuring, chopping, heating and timing. Learn stove safety: handles turned in, sleeves rolled up, never leave the stove unattended.","Other useful skills: sorting laundry, folding clothes, changing a bulb (with power off and an adult), and tightening a loose screw."],"context":[],"vocabulary":[{"term":"needle","meaning":"a thin pointed tool for sewing"},{"term":"thread","meaning":"thin string for sewing"},{"term":"supervision","meaning":"an adult watching to keep you safe"},{"term":"measure","meaning":"find the amount needed"}],"examples":["Making chai: water, tea leaves, milk, sugar, boiled and strained.","Folding T-shirts neatly into drawers."],"story":{"title":"The Loose Button","text":"Before a school function, Kavya's shirt button fell off. Everyone was busy. She remembered what Grandma taught her: thread, knot, up and down, up and down, knot underneath. Five minutes later, the button was back. \"I fixed it myself!\" she told Grandma that evening."},"activities":[{"id":"life-skills.s7.household.sew-a-button.a1","prompt":"Sewing a button","kind":"order","items":["thread the needle and knot it","push up through fabric and buttonhole","go down through the opposite hole","repeat several times","knot underneath"]},{"id":"life-skills.s7.household.sew-a-button.a2","prompt":"Stove safety includes…","kind":"choice","options":["turning pan handles inward","leaving the stove alone","wearing loose sleeves"],"answer":0},{"id":"life-skills.s7.household.sew-a-button.a3","prompt":"Cooking should be supervised until you are experienced.","kind":"truefalse","answer":true},{"id":"life-skills.s7.household.sew-a-button.a4","prompt":"Match the skill to the tool","kind":"match","pairs":[["sewing","needle and thread"],["measuring flour","measuring cup"],["tightening a screw","screwdriver"]]}],"thinking":["Why are practical skills useful even if you can pay someone else?","Which skill would you like to learn next?"],"speaking":["Teach someone a household skill you have learned."],"project":{"kind":"project","title":"Household Skills Passport","materials":["a small booklet","an adult mentor"],"steps":["List 8 household skills","Learn and practise one each week with supervision","Get a \"stamp\" when you can do it independently","Reflect on your progress"]},"assessment":[{"id":"life-skills.s7.household.sew-a-button.q1","prompt":"Before changing a bulb you must…","kind":"choice","options":["switch off the power with an adult","touch the socket","stand on a wobbly chair"],"answer":0},{"id":"life-skills.s7.household.sew-a-button.q2","prompt":"Practical skills build independence.","kind":"truefalse","answer":true},{"id":"life-skills.s7.household.sew-a-button.q3","prompt":"When sewing, you finish by…","kind":"choice","options":["knotting underneath","cutting the button off","pulling the thread out"],"answer":0}],"mastery":["Sews a button","Cooks a simple dish safely","Completes household tasks"]}]}]},{"stage":"s9","overview":"Personal finance, goal-setting and study organisation.","goals":["Make a simple budget","Set SMART goals","Organise study and projects"],"units":[{"id":"life-skills.s9.budget","title":"Budgeting","summary":"Planning income and spending.","topics":[{"title":"Income and expenses","subtopics":["Income and expenses"]},{"title":"Fixed and variable costs","subtopics":["Fixed and variable costs"]},{"title":"Saving goals","subtopics":["Saving goals"]},{"title":"Avoiding impulse buys","subtopics":["Avoiding impulse buys"]}],"objectives":["Create a simple personal budget","Distinguish fixed and variable expenses"],"masteryCriteria":["Creates a budget","Classifies expenses","Tracks and adjusts spending"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"life-skills.s9.budget.make-budget","title":"Making a Budget","skillId":"sk.life-skills.s9.budget.make-budget","minutes":30,"objectives":["Create a simple personal budget","Distinguish fixed and variable expenses"],"prerequisites":["Distinguishes needs and wants"],"prerequisiteIds":[],"explanation":["A budget is a plan for money: income (money coming in) and expenses (money going out). The goal is to spend less than you earn and save the difference.","Fixed expenses stay the same (like a bus pass); variable expenses change (like snacks). Tracking spending shows where money really goes.","Impulse buying — buying without planning — can drain savings. A useful rule: wait 24 hours before buying non-essential items."],"context":[],"vocabulary":[{"term":"income","meaning":"money received"},{"term":"expense","meaning":"money spent"},{"term":"fixed expense","meaning":"a cost that stays the same"},{"term":"impulse buy","meaning":"an unplanned purchase"}],"examples":["Monthly pocket money ₹500: bus ₹200 (fixed), snacks ₹150 (variable), save ₹150.","Waiting a day before buying a new gadget."],"story":{"title":"Where Did It Go?","text":"Riya got ₹500 pocket money and had nothing left by the 15th. She tracked every rupee next month: ₹250 had gone on small snacks! She made a budget, set ₹150 aside for savings first, and by the end of term had saved enough for a book set she wanted."},"activities":[{"id":"life-skills.s9.budget.make-budget.a1","prompt":"Income or expense?","kind":"match","pairs":[["pocket money","income"],["bus fare","expense"],["birthday gift money","income too"]]},{"id":"life-skills.s9.budget.make-budget.a2","prompt":"A fixed expense:","kind":"choice","options":["a monthly bus pass","snacks","gifts"],"answer":0},{"id":"life-skills.s9.budget.make-budget.a3","prompt":"Income ₹600, expenses ₹450. Savings?","kind":"choice","options":["₹50","₹150","₹1,050"],"answer":1},{"id":"life-skills.s9.budget.make-budget.a4","prompt":"Waiting before buying can reduce impulse spending.","kind":"truefalse","answer":true}],"thinking":["Why might \"pay yourself first\" (saving before spending) work well?","How do adverts encourage impulse buying?"],"speaking":["Present your monthly budget to a parent and explain your choices."],"project":{"kind":"project","title":"One-Month Budget Challenge","materials":["a notebook or spreadsheet"],"steps":["List your income for a month","Plan expenses and a savings goal","Track every expense","Compare plan vs actual and adjust"]},"assessment":[{"id":"life-skills.s9.budget.make-budget.q1","prompt":"Money coming in is…","kind":"choice","options":["income","expense","debt"],"answer":0},{"id":"life-skills.s9.budget.make-budget.q2","prompt":"Snacks are usually a…","kind":"choice","options":["variable expense","fixed expense","income"],"answer":0},{"id":"life-skills.s9.budget.make-budget.q3","prompt":"A budget helps plan money.","kind":"truefalse","answer":true}],"mastery":["Creates a budget","Classifies expenses","Tracks and adjusts spending"]}]},{"id":"life-skills.s9.goals","title":"Setting and Reaching Goals","summary":"SMART goals and planning.","topics":[{"title":"SMART goals","subtopics":["SMART goals"]},{"title":"Breaking goals into milestones","subtopics":["Breaking goals into milestones"]},{"title":"Tracking progress","subtopics":["Tracking progress"]},{"title":"Handling setbacks","subtopics":["Handling setbacks"]}],"objectives":["Write SMART goals","Plan milestones and track progress"],"masteryCriteria":["Writes SMART goals","Plans milestones","Tracks and adjusts"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"life-skills.s9.goals.smart-goals","title":"SMART Goals","skillId":"sk.life-skills.s9.goals.smart-goals","minutes":30,"objectives":["Write SMART goals","Plan milestones and track progress"],"prerequisites":["Uses decision steps"],"prerequisiteIds":[],"explanation":["SMART goals are Specific, Measurable, Achievable, Relevant and Time-bound. \"Get better at maths\" is vague; \"Complete 10 practice problems every weekday for 4 weeks to improve my test score\" is SMART.","Break big goals into milestones — smaller steps with dates — and track progress on a chart.","Setbacks are normal. Review what happened, adjust the plan, and keep going."],"context":[],"vocabulary":[{"term":"SMART","meaning":"specific, measurable, achievable, relevant, time-bound"},{"term":"milestone","meaning":"a step towards a goal"},{"term":"track","meaning":"record progress"},{"term":"adjust","meaning":"change to improve"}],"examples":["\"Read 4 books by the end of the month.\"","\"Run 2 km without stopping by 1 March.\""],"story":{"title":"The Swimming Goal","text":"Ravi wanted to \"learn swimming\". His coach helped him write a SMART goal: \"Swim 25 m without stopping by the end of the summer holidays, practising three times a week.\" He set milestones: float, kick, 5 m, 10 m. He missed one week when he was ill, adjusted, and reached 25 m with a week to spare."},"activities":[{"id":"life-skills.s9.goals.smart-goals.a1","prompt":"Match the SMART letter","kind":"match","pairs":[["S","specific"],["M","measurable"],["T","time-bound"]]},{"id":"life-skills.s9.goals.smart-goals.a2","prompt":"Which is SMART?","kind":"choice","options":["\"Read 20 pages every day for 2 weeks.\"","\"Read more.\"","\"Be a better reader someday.\""],"answer":0},{"id":"life-skills.s9.goals.smart-goals.a3","prompt":"Setbacks are a normal part of reaching goals.","kind":"truefalse","answer":true},{"id":"life-skills.s9.goals.smart-goals.a4","prompt":"A milestone is…","kind":"choice","options":["a smaller step towards a goal","the final prize","a stone"],"answer":0}],"thinking":["Why do vague goals often fail?","How do you stay motivated over a long goal?"],"speaking":["Share a SMART goal with someone and ask them to check in with you."],"project":{"kind":"project","title":"Goal Tracker","materials":["a chart or notebook"],"steps":["Write one SMART goal","List 4–5 milestones with dates","Track progress weekly","Reflect at the end on what helped and what to change"]},"assessment":[{"id":"life-skills.s9.goals.smart-goals.q1","prompt":"\"By Friday\" makes a goal…","kind":"choice","options":["time-bound","vague","impossible"],"answer":0},{"id":"life-skills.s9.goals.smart-goals.q2","prompt":"Breaking goals into milestones helps.","kind":"truefalse","answer":true},{"id":"life-skills.s9.goals.smart-goals.q3","prompt":"\"A\" in SMART stands for…","kind":"choice","options":["achievable","angry","always"],"answer":0}],"mastery":["Writes SMART goals","Plans milestones","Tracks and adjusts"]}]}]},{"stage":"s12","overview":"Preparing for adulthood: careers, financial literacy and civic life.","goals":["Explore career pathways","Understand banking, interest and scams","Develop independent living skills"],"units":[{"id":"life-skills.s12.careers","title":"Exploring Careers","summary":"Interests, skills and pathways.","topics":[{"title":"Self-assessment","subtopics":["interests","strengths","values"]},{"title":"Career clusters","subtopics":["Career clusters"]},{"title":"Education pathways","subtopics":["Education pathways"]},{"title":"Informational interviews","subtopics":["Informational interviews"]}],"objectives":["Assess personal interests, strengths and values","Research career pathways and requirements"],"masteryCriteria":["Completes self-assessment","Researches pathways accurately","Plans next steps"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"life-skills.s12.careers.career-explore","title":"Finding Your Path","skillId":"sk.life-skills.s12.careers.career-explore","minutes":40,"objectives":["Assess personal interests, strengths and values","Research career pathways and requirements"],"prerequisites":["Sets SMART goals"],"prerequisiteIds":[],"explanation":["Choosing a career starts with knowing yourself: what you enjoy (interests), what you're good at (strengths), and what matters to you (values, like helping others or creativity).","Careers can be grouped into clusters: health, engineering and technology, arts and design, business, education, law, agriculture, skilled trades and more. Each has different education pathways — university degrees, diplomas, apprenticeships and vocational training.","Talking to people in a career (informational interviews), job shadowing, and internships help you learn what work is really like. Careers often change over a lifetime, so learning to learn matters most."],"context":[],"vocabulary":[{"term":"career","meaning":"a path of work over time"},{"term":"vocational training","meaning":"education for a specific trade or skill"},{"term":"internship","meaning":"temporary work experience"},{"term":"informational interview","meaning":"a conversation to learn about someone's job"}],"examples":["An ITI course leading to an electrician's career.","Interviewing a nurse about her daily work."],"story":{"title":"The Unexpected Path","text":"Meera thought she wanted to be a doctor. After shadowing at a clinic, she realised what she loved most was explaining things to patients. She explored and found public health communication — combining science, writing and helping people. \"Knowing myself mattered more than picking a famous job,\" she said."},"activities":[{"id":"life-skills.s12.careers.career-explore.a1","prompt":"Match","kind":"match","pairs":[["interests","what you enjoy"],["strengths","what you are good at"],["values","what matters to you"]]},{"id":"life-skills.s12.careers.career-explore.a2","prompt":"An informational interview is…","kind":"choice","options":["a conversation to learn about someone's job","a job exam","a TV show"],"answer":0},{"id":"life-skills.s12.careers.career-explore.a3","prompt":"Careers often change over a lifetime.","kind":"truefalse","answer":true},{"id":"life-skills.s12.careers.career-explore.a4","prompt":"Vocational training prepares people for…","kind":"choice","options":["specific trades or skills","only university","nothing"],"answer":0}],"thinking":["What would you do if you couldn't fail?","How might technology change jobs by the time you start working?"],"speaking":["Conduct and present an informational interview with someone in a career that interests you."],"project":{"kind":"project","title":"Career Exploration Portfolio","materials":["notebook","interviews","research"],"steps":["Complete an interests–strengths–values reflection","Research three careers (tasks, education, pay range, future demand)","Interview one professional","Write a plan for the next two years"]},"assessment":[{"id":"life-skills.s12.careers.career-explore.q1","prompt":"Temporary work experience is an…","kind":"choice","options":["internship","interest","interview only"],"answer":0},{"id":"life-skills.s12.careers.career-explore.q2","prompt":"Self-knowledge helps with career choices.","kind":"truefalse","answer":true},{"id":"life-skills.s12.careers.career-explore.q3","prompt":"Learning to learn matters because…","kind":"choice","options":["careers and technologies change","nothing changes","school ends forever"],"answer":0}],"mastery":["Completes self-assessment","Researches pathways accurately","Plans next steps"]}]},{"id":"life-skills.s12.financial-literacy","title":"Financial Literacy","summary":"Banking, interest, credit and scams.","topics":[{"title":"Bank accounts and UPI safety","subtopics":["Bank accounts and UPI safety"]},{"title":"Simple and compound interest","subtopics":["Simple and compound interest"]},{"title":"Credit and debt","subtopics":["Credit and debt"]},{"title":"Spotting scams","subtopics":["Spotting scams"]}],"objectives":["Calculate simple and compound interest","Recognise and avoid common financial scams"],"masteryCriteria":["Calculates interest correctly","Explains credit responsibly","Recognises and reports scams"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"life-skills.s12.financial-literacy.interest-scams","title":"Interest, Credit and Scams","skillId":"sk.life-skills.s12.financial-literacy.interest-scams","minutes":40,"objectives":["Calculate simple and compound interest","Recognise and avoid common financial scams"],"prerequisites":["Makes budgets"],"prerequisiteIds":[],"explanation":["Banks pay interest on savings and charge interest on loans. Simple interest is calculated on the original amount; compound interest is calculated on the amount plus interest already added, so it grows faster over time — \"interest on interest\".","Credit (borrowing) can be useful but costly: high interest debt (like unpaid credit card balances) grows quickly. Borrow only what you can repay.","Scams try to trick people: never share OTPs, PINs or passwords; banks never ask for them by phone. Be suspicious of offers that sound too good to be true, urgent threats, and unknown links. In India, cyber fraud can be reported at the national helpline 1930."],"context":[{"kind":"evidence","text":"India's national cybercrime helpline 1930 and the cybercrime.gov.in portal are used to report online financial fraud."}],"vocabulary":[{"term":"interest","meaning":"money paid for using or lending money"},{"term":"compound interest","meaning":"interest calculated on principal plus earlier interest"},{"term":"credit","meaning":"borrowed money"},{"term":"OTP","meaning":"one-time password used to confirm transactions"}],"examples":["₹1,000 at 10% simple interest for 2 years → ₹200 interest.","At 10% compound annually for 2 years → ₹210 interest."],"story":{"title":"The Urgent Call","text":"Riya's grandfather got a call: \"Your bank account will be blocked today! Share the OTP to verify.\" He nearly did, but remembered Riya's advice: banks never ask for OTPs. He hung up and called his bank directly. It was a scam. Riya helped him report it to 1930."},"activities":[{"id":"life-skills.s12.financial-literacy.interest-scams.a1","prompt":"₹2,000 at 5% simple interest for 3 years. Interest?","kind":"choice","options":["₹100","₹300","₹600"],"answer":1},{"id":"life-skills.s12.financial-literacy.interest-scams.a2","prompt":"Compound interest grows faster because…","kind":"choice","options":["interest is earned on interest","banks are generous","it is free money"],"answer":0},{"id":"life-skills.s12.financial-literacy.interest-scams.a3","prompt":"Banks never ask for your OTP over the phone.","kind":"truefalse","answer":true},{"id":"life-skills.s12.financial-literacy.interest-scams.a4","prompt":"Match the warning sign","kind":"match","pairs":[["urgent threats","pressure tactic"],["unknown links","possible phishing"],["too-good-to-be-true offer","likely scam"]]}],"thinking":["Why does starting to save early matter so much with compound interest?","Why do scams work even on smart people?"],"speaking":["Teach an elderly relative three rules for avoiding phone and online scams."],"project":{"kind":"project","title":"Compound Interest Explorer","materials":["calculator or spreadsheet","notebook"],"steps":["Calculate savings of ₹1,000 a year at 7% compound interest over 10, 20 and 40 years","Compare with simple interest","Graph the results","Write a short guide on scams and safe banking for your family"]},"assessment":[{"id":"life-skills.s12.financial-literacy.interest-scams.q1","prompt":"Interest on the original amount only:","kind":"choice","options":["simple interest","compound interest","credit"],"answer":0},{"id":"life-skills.s12.financial-literacy.interest-scams.q2","prompt":"Never share your…","kind":"choice","options":["OTP or PIN","favourite colour","name of your school subject"],"answer":0},{"id":"life-skills.s12.financial-literacy.interest-scams.q3","prompt":"High-interest debt can grow quickly.","kind":"truefalse","answer":true}],"mastery":["Calculates interest correctly","Explains credit responsibly","Recognises and reports scams"]}]}]}]}
+{
+  "schemaVersion": 1,
+  "id": "life-skills",
+  "worldId": "heart-harbor",
+  "title": "Life Skills & Responsibility",
+  "icon": "🧺",
+  "tagline": "I can do it myself",
+  "description": "Practical independence: dressing and tidying, helping at home, simple cooking, time management, organisation, decision-making, planning, budgeting basics, and preparing for adult life. Builds confidence through real responsibility.",
+  "contentVersion": "1.0.0",
+  "sensitivity": "none",
+  "stages": [
+    {
+      "stage": "s4",
+      "overview": "Doing things by myself: dressing, tidying, and helping.",
+      "goals": [
+        "Dress and undress with little help",
+        "Tidy toys away",
+        "Help with small jobs at home"
+      ],
+      "units": [
+        {
+          "id": "life-skills.s4.by-myself",
+          "title": "I Can Do It Myself!",
+          "summary": "Building independence step by step.",
+          "topics": [
+            {
+              "title": "Getting dressed",
+              "subtopics": [
+                "buttons",
+                "zips",
+                "shoes"
+              ]
+            },
+            {
+              "title": "Washing up after meals",
+              "subtopics": [
+                "Washing up after meals"
+              ]
+            },
+            {
+              "title": "Packing a bag",
+              "subtopics": [
+                "Packing a bag"
+              ]
+            }
+          ],
+          "objectives": [
+            "Put on clothes in the right order",
+            "Try fastenings like buttons, zips and velcro"
+          ],
+          "masteryCriteria": [
+            "Dresses with minimal help",
+            "Sequences dressing",
+            "Persists with fastenings"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s4.by-myself.get-dressed",
+              "title": "Getting Dressed by Myself",
+              "skillId": "sk.life-skills.s4.by-myself.get-dressed",
+              "minutes": 8,
+              "objectives": [
+                "Put on clothes in the right order",
+                "Try fastenings like buttons, zips and velcro"
+              ],
+              "prerequisites": [
+                "Can name clothes"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Getting dressed by yourself is a big step! Clothes go on in an order: underwear first, then trousers or skirt, then a top, then socks, then shoes.",
+                "Buttons, zips and velcro take practice. Start with big buttons and practise on a shirt lying on the table before trying it on.",
+                "If something is tricky, try again slowly, and it's okay to ask for a little help."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "dress",
+                  "meaning": "put on clothes"
+                },
+                {
+                  "term": "button",
+                  "meaning": "a small disc that fastens clothes"
+                },
+                {
+                  "term": "zip",
+                  "meaning": "a fastener that slides up and down"
+                },
+                {
+                  "term": "velcro",
+                  "meaning": "fuzzy strips that stick together"
+                }
+              ],
+              "examples": [
+                "Socks before shoes!",
+                "Tops with the label at the back."
+              ],
+              "story": {
+                "title": "Kiko's Upside-Down Morning",
+                "text": "Kiko wanted to dress without help and put shoes on first, then tried to pull socks over them! Everyone giggled — Kiko too. Tara drew a picture chart: underwear, trousers, top, socks, shoes. The next morning, Kiko followed it and walked out proudly, all by myself!"
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s4.by-myself.get-dressed.a1",
+                  "prompt": "Getting dressed order",
+                  "kind": "order",
+                  "items": [
+                    "underwear",
+                    "trousers",
+                    "top",
+                    "socks",
+                    "shoes 👟"
+                  ]
+                },
+                {
+                  "id": "life-skills.s4.by-myself.get-dressed.a2",
+                  "prompt": "What goes on before shoes?",
+                  "kind": "choice",
+                  "options": [
+                    "socks 🧦",
+                    "a hat",
+                    "a coat on top"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s4.by-myself.get-dressed.a3",
+                  "prompt": "Buttons get easier with practice.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s4.by-myself.get-dressed.a4",
+                  "prompt": "If something is tricky, you can…",
+                  "kind": "choice",
+                  "options": [
+                    "try again slowly or ask for help",
+                    "give up forever",
+                    "cry"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Which fastening is the hardest for you?",
+                "How do you feel when you do something by yourself?"
+              ],
+              "speaking": [
+                "Tell a grown-up the order you put your clothes on."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Dressing Picture Chart",
+                "materials": [
+                  "paper",
+                  "crayons",
+                  "tape"
+                ],
+                "steps": [
+                  "Draw each clothing item in order",
+                  "Stick the chart near your clothes",
+                  "Follow it every morning for a week",
+                  "Add a sticker each day you dress by yourself"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s4.by-myself.get-dressed.q1",
+                  "prompt": "Shoes go on…",
+                  "kind": "choice",
+                  "options": [
+                    "first",
+                    "last",
+                    "never"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "life-skills.s4.by-myself.get-dressed.q2",
+                  "prompt": "Asking for a little help is okay.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s4.by-myself.get-dressed.q3",
+                  "prompt": "Velcro fastens by…",
+                  "kind": "choice",
+                  "options": [
+                    "sticking together",
+                    "tying",
+                    "buttoning"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Dresses with minimal help",
+                "Sequences dressing",
+                "Persists with fastenings"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "life-skills.s4.tidy-help",
+          "title": "Tidy Up and Help Out",
+          "summary": "Everyone helps at home.",
+          "topics": [
+            {
+              "title": "Tidying toys into boxes",
+              "subtopics": [
+                "Tidying toys into boxes"
+              ]
+            },
+            {
+              "title": "Setting the table",
+              "subtopics": [
+                "Setting the table"
+              ]
+            },
+            {
+              "title": "Watering plants",
+              "subtopics": [
+                "Watering plants"
+              ]
+            },
+            {
+              "title": "Folding small clothes",
+              "subtopics": [
+                "Folding small clothes"
+              ]
+            }
+          ],
+          "objectives": [
+            "Tidy toys into the right places",
+            "Do a small helping job at home"
+          ],
+          "masteryCriteria": [
+            "Tidies toys independently",
+            "Completes small household jobs",
+            "Uses organisation systems"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s4.tidy-help.tidy-time",
+              "title": "Tidy-Up Time",
+              "skillId": "sk.life-skills.s4.tidy-help.tidy-time",
+              "minutes": 8,
+              "objectives": [
+                "Tidy toys into the right places",
+                "Do a small helping job at home"
+              ],
+              "prerequisites": [
+                "Can sort objects"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "When everything has a home, it's easy to find. Blocks go in the block box, books on the shelf, crayons in the crayon tin.",
+                "Tidying after play is part of being a good helper. A tidy-up song makes it fun!",
+                "You can help at home in other ways: setting spoons on the table, watering plants, putting socks in pairs, and feeding a pet with a grown-up."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "tidy",
+                  "meaning": "put things back where they belong"
+                },
+                {
+                  "term": "helper",
+                  "meaning": "someone who does useful jobs"
+                },
+                {
+                  "term": "sort",
+                  "meaning": "put things into groups"
+                },
+                {
+                  "term": "chore",
+                  "meaning": "a regular job at home"
+                }
+              ],
+              "examples": [
+                "Matching socks into pairs.",
+                "Putting all the toy cars in one box."
+              ],
+              "story": {
+                "title": "The Missing Puzzle Piece",
+                "text": "Momo couldn't finish a puzzle because one piece was missing. After searching everywhere, Momo found it under a pile of toys. \"If everything had a home,\" said Mama Bear, \"it would be easy to find.\" So Momo made labels for each box — and never lost a puzzle piece again."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s4.tidy-help.tidy-time.a1",
+                  "prompt": "Where should books go?",
+                  "kind": "choice",
+                  "options": [
+                    "on the bookshelf",
+                    "on the floor",
+                    "in the bath"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s4.tidy-help.tidy-time.a2",
+                  "prompt": "A helping job you can do:",
+                  "kind": "choice",
+                  "options": [
+                    "setting spoons on the table",
+                    "cooking on the stove alone",
+                    "driving"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s4.tidy-help.tidy-time.a3",
+                  "prompt": "Tidying helps us find things easily.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s4.tidy-help.tidy-time.a4",
+                  "prompt": "Match the item to its home",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "crayons",
+                      "crayon tin"
+                    ],
+                    [
+                      "books",
+                      "bookshelf"
+                    ],
+                    [
+                      "blocks",
+                      "block box"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why is it easier to play when your room is tidy?",
+                "What jobs do grown-ups in your home do every day?"
+              ],
+              "speaking": [
+                "Show a grown-up how you tidied your toys and where each thing lives."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Toy Home Labels",
+                "materials": [
+                  "boxes or baskets",
+                  "paper",
+                  "crayons",
+                  "tape"
+                ],
+                "steps": [
+                  "Draw a picture label for each toy box",
+                  "Stick labels on the boxes",
+                  "Tidy all toys into the right boxes",
+                  "Time yourself with a tidy-up song"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s4.tidy-help.tidy-time.q1",
+                  "prompt": "After playing, we should…",
+                  "kind": "choice",
+                  "options": [
+                    "tidy up",
+                    "leave everything out",
+                    "hide toys under the bed"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s4.tidy-help.tidy-time.q2",
+                  "prompt": "Pairs of socks: 🧦🧦 🧦🧦 🧦🧦 — how many pairs?",
+                  "kind": "count",
+                  "answer": 3
+                },
+                {
+                  "id": "life-skills.s4.tidy-help.tidy-time.q3",
+                  "prompt": "Helping at home is part of being a family.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Tidies toys independently",
+                "Completes small household jobs",
+                "Uses organisation systems"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s5",
+      "overview": "Daily routines, simple food preparation and caring for belongings.",
+      "goals": [
+        "Follow a morning and evening routine",
+        "Make a simple snack safely",
+        "Look after belongings"
+      ],
+      "units": [
+        {
+          "id": "life-skills.s5.routines",
+          "title": "My Daily Routine",
+          "summary": "Routines make days smoother.",
+          "topics": [
+            {
+              "title": "Morning routine",
+              "subtopics": [
+                "Morning routine"
+              ]
+            },
+            {
+              "title": "Evening routine",
+              "subtopics": [
+                "Evening routine"
+              ]
+            },
+            {
+              "title": "Picture schedules",
+              "subtopics": [
+                "Picture schedules"
+              ]
+            }
+          ],
+          "objectives": [
+            "Follow a morning routine with a picture schedule",
+            "Explain why routines help"
+          ],
+          "masteryCriteria": [
+            "Follows a routine independently",
+            "Explains benefits of routines",
+            "Uses a visual schedule"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s5.routines.morning-routine",
+              "title": "Ready for the Day",
+              "skillId": "sk.life-skills.s5.routines.morning-routine",
+              "minutes": 10,
+              "objectives": [
+                "Follow a morning routine with a picture schedule",
+                "Explain why routines help"
+              ],
+              "prerequisites": [
+                "Dresses independently"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A routine is a set of things we do in the same order every day. A morning routine might be: wake up, use the toilet, brush teeth, wash face, get dressed, eat breakfast, pack bag.",
+                "Routines help us remember what to do, save time and feel calm because we know what comes next.",
+                "A picture schedule shows each step. Tick each one as you finish it."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "routine",
+                  "meaning": "things done in the same order every day"
+                },
+                {
+                  "term": "schedule",
+                  "meaning": "a plan showing when things happen"
+                },
+                {
+                  "term": "morning",
+                  "meaning": "the start of the day"
+                },
+                {
+                  "term": "evening",
+                  "meaning": "the end of the day"
+                }
+              ],
+              "examples": [
+                "Evening routine: bath, pyjamas, story, brush teeth, sleep.",
+                "Packing your school bag the night before."
+              ],
+              "story": {
+                "title": "The Rushed Morning",
+                "text": "One morning Zuri overslept, couldn't find her shoes, forgot her water bottle and was late. That evening, she made a picture schedule and packed her bag before bed. The next morning, she followed the pictures, step by step, and had time for an extra cuddle before school."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s5.routines.morning-routine.a1",
+                  "prompt": "A morning routine",
+                  "kind": "order",
+                  "items": [
+                    "wake up",
+                    "brush teeth",
+                    "get dressed",
+                    "eat breakfast",
+                    "pack bag"
+                  ]
+                },
+                {
+                  "id": "life-skills.s5.routines.morning-routine.a2",
+                  "prompt": "Routines help us…",
+                  "kind": "choice",
+                  "options": [
+                    "remember what to do",
+                    "forget everything",
+                    "be late"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s5.routines.morning-routine.a3",
+                  "prompt": "Packing your bag the night before saves time.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s5.routines.morning-routine.a4",
+                  "prompt": "A picture schedule shows…",
+                  "kind": "choice",
+                  "options": [
+                    "the steps in order",
+                    "cartoons",
+                    "the weather"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What happens when you skip a step in your routine?",
+                "Which part of your day do you like best?"
+              ],
+              "speaking": [
+                "Tell a grown-up your evening routine in order."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Picture Schedule",
+                "materials": [
+                  "card",
+                  "crayons",
+                  "a clothes peg"
+                ],
+                "steps": [
+                  "Draw each step of your morning routine on a strip",
+                  "Stick it on the wall",
+                  "Move a peg along as you finish each step",
+                  "Try it for a week and see if mornings feel easier"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s5.routines.morning-routine.q1",
+                  "prompt": "Which comes first?",
+                  "kind": "choice",
+                  "options": [
+                    "wake up",
+                    "eat breakfast",
+                    "go to school"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s5.routines.morning-routine.q2",
+                  "prompt": "Routines can make us feel calm.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s5.routines.morning-routine.q3",
+                  "prompt": "A routine is…",
+                  "kind": "choice",
+                  "options": [
+                    "things done in the same order every day",
+                    "a type of food",
+                    "a game"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Follows a routine independently",
+                "Explains benefits of routines",
+                "Uses a visual schedule"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "life-skills.s5.little-chef",
+          "title": "Little Chef",
+          "summary": "Making simple snacks safely.",
+          "topics": [
+            {
+              "title": "Kitchen safety",
+              "subtopics": [
+                "knives and heat with adults"
+              ]
+            },
+            {
+              "title": "Washing produce",
+              "subtopics": [
+                "Washing produce"
+              ]
+            },
+            {
+              "title": "Simple recipes",
+              "subtopics": [
+                "fruit chaat",
+                "sandwich",
+                "lemonade"
+              ]
+            }
+          ],
+          "objectives": [
+            "Follow a simple recipe step by step",
+            "Follow kitchen safety rules"
+          ],
+          "masteryCriteria": [
+            "Follows a simple recipe",
+            "Applies kitchen safety",
+            "Cleans up after cooking"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s5.little-chef.fruit-chaat",
+              "title": "Making Fruit Chaat",
+              "skillId": "sk.life-skills.s5.little-chef.fruit-chaat",
+              "minutes": 10,
+              "objectives": [
+                "Follow a simple recipe step by step",
+                "Follow kitchen safety rules"
+              ],
+              "prerequisites": [
+                "Washes hands correctly"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Cooking starts with safety: wash hands, ask a grown-up before using knives or anything hot, and use a child-safe knife for soft foods.",
+                "A recipe tells us what we need (ingredients) and what to do (steps). Fruit chaat: wash fruits, have a grown-up help cut them, put them in a bowl, sprinkle a little chaat masala or lemon juice, and mix.",
+                "Cleaning up is part of cooking: put peels in the wet-waste bin and wash your bowl."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "recipe",
+                  "meaning": "instructions for making food"
+                },
+                {
+                  "term": "ingredient",
+                  "meaning": "a food item used in a recipe"
+                },
+                {
+                  "term": "peel",
+                  "meaning": "the outer skin of fruit"
+                },
+                {
+                  "term": "safe",
+                  "meaning": "not dangerous"
+                }
+              ],
+              "examples": [
+                "Banana, apple and papaya make a colourful chaat.",
+                "Spreading butter on bread with a blunt knife."
+              ],
+              "story": {
+                "title": "Rangi's Rainbow Chaat",
+                "text": "Rangi wanted to make something for the family picnic. With Grandma watching, Rangi washed the fruits, peeled a banana and used a safe knife to slice it. Grandma cut the apple. Rangi added pomegranate seeds and a squeeze of lemon. \"A rainbow in a bowl!\" everyone cheered."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s5.little-chef.fruit-chaat.a1",
+                  "prompt": "Fruit chaat steps",
+                  "kind": "order",
+                  "items": [
+                    "wash your hands",
+                    "wash the fruit",
+                    "cut with a grown-up's help",
+                    "mix in a bowl",
+                    "clean up"
+                  ]
+                },
+                {
+                  "id": "life-skills.s5.little-chef.fruit-chaat.a2",
+                  "prompt": "Before using a sharp knife, you should…",
+                  "kind": "choice",
+                  "options": [
+                    "ask a grown-up",
+                    "grab it quickly",
+                    "use it on your hand"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s5.little-chef.fruit-chaat.a3",
+                  "prompt": "Cleaning up is part of cooking.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s5.little-chef.fruit-chaat.a4",
+                  "prompt": "A list of foods needed for a recipe is the…",
+                  "kind": "choice",
+                  "options": [
+                    "ingredients",
+                    "weather",
+                    "game rules"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why should grown-ups help with knives and stoves?",
+                "What other simple snack could you make?"
+              ],
+              "speaking": [
+                "Explain your recipe to someone step by step."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Make and Share a Snack",
+                "materials": [
+                  "fruits or bread and spread",
+                  "a safe knife",
+                  "a bowl",
+                  "an adult"
+                ],
+                "steps": [
+                  "Choose a simple recipe",
+                  "Gather ingredients",
+                  "Make it with an adult supervising",
+                  "Serve it to your family and clean up"
+                ],
+                "safety": "An adult must handle the knife and supervise food preparation. Wash fruit and hands first, check for food allergies and choking hazards, and keep raw foods separate from ready-to-eat foods."
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s5.little-chef.fruit-chaat.q1",
+                  "prompt": "First step in cooking:",
+                  "kind": "choice",
+                  "options": [
+                    "wash your hands",
+                    "eat the ingredients",
+                    "turn on the stove alone"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s5.little-chef.fruit-chaat.q2",
+                  "prompt": "Fruit peels go in the wet-waste bin.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s5.little-chef.fruit-chaat.q3",
+                  "prompt": "A recipe gives…",
+                  "kind": "choice",
+                  "options": [
+                    "ingredients and steps",
+                    "only pictures",
+                    "a map"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Follows a simple recipe",
+                "Applies kitchen safety",
+                "Cleans up after cooking"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s6",
+      "overview": "Time management, organisation and money basics.",
+      "goals": [
+        "Plan time for homework and play",
+        "Organise school things",
+        "Understand saving and spending"
+      ],
+      "units": [
+        {
+          "id": "life-skills.s6.time",
+          "title": "Managing My Time",
+          "summary": "Planning so there's time for everything.",
+          "topics": [
+            {
+              "title": "Estimating time",
+              "subtopics": [
+                "Estimating time"
+              ]
+            },
+            {
+              "title": "To-do lists",
+              "subtopics": [
+                "To-do lists"
+              ]
+            },
+            {
+              "title": "Homework first, then play",
+              "subtopics": [
+                "Homework first, then play"
+              ]
+            },
+            {
+              "title": "Using a timer",
+              "subtopics": [
+                "Using a timer"
+              ]
+            }
+          ],
+          "objectives": [
+            "Make and use a to-do list",
+            "Estimate how long tasks take"
+          ],
+          "masteryCriteria": [
+            "Creates and uses to-do lists",
+            "Estimates task duration",
+            "Prioritises tasks"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s6.time.to-do-list",
+              "title": "My To-Do List",
+              "skillId": "sk.life-skills.s6.time.to-do-list",
+              "minutes": 15,
+              "objectives": [
+                "Make and use a to-do list",
+                "Estimate how long tasks take"
+              ],
+              "prerequisites": [
+                "Reads time to the hour"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A to-do list helps you remember what needs doing and lets you tick things off — which feels great!",
+                "Put important things first. Estimate how long each takes: reading 15 minutes, maths 20 minutes, tidying 10 minutes.",
+                "A timer can help you focus: work for 20 minutes, then take a 5-minute break. Planning time means there's still time left to play."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "to-do list",
+                  "meaning": "a list of tasks to complete"
+                },
+                {
+                  "term": "estimate",
+                  "meaning": "make a sensible guess"
+                },
+                {
+                  "term": "priority",
+                  "meaning": "the most important thing"
+                },
+                {
+                  "term": "break",
+                  "meaning": "a short rest"
+                }
+              ],
+              "examples": [
+                "Doing homework before playing outside.",
+                "Setting a timer for 20 minutes of reading."
+              ],
+              "story": {
+                "title": "The Very Busy Saturday",
+                "text": "Kiko wanted to play, help Grandma, finish a project and practise the flute — all on Saturday! Kiko wrote a list, numbered the most important first, and guessed how long each would take. By evening, everything was ticked off, and there was still time to play."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s6.time.to-do-list.a1",
+                  "prompt": "A to-do list helps you…",
+                  "kind": "choice",
+                  "options": [
+                    "remember tasks and plan",
+                    "forget everything",
+                    "sleep"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s6.time.to-do-list.a2",
+                  "prompt": "Most important tasks should go…",
+                  "kind": "choice",
+                  "options": [
+                    "first",
+                    "last",
+                    "nowhere"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s6.time.to-do-list.a3",
+                  "prompt": "Estimating time helps with planning.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s6.time.to-do-list.a4",
+                  "prompt": "A focused work session",
+                  "kind": "order",
+                  "items": [
+                    "set a timer for 20 minutes",
+                    "work on one task",
+                    "take a 5-minute break",
+                    "start the next task"
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why does time sometimes feel short or long?",
+                "What happens when we leave important things to the end?"
+              ],
+              "speaking": [
+                "Show someone your to-do list for tomorrow and explain the order."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Weekly Planner",
+                "materials": [
+                  "a weekly planner page",
+                  "coloured pens"
+                ],
+                "steps": [
+                  "List your regular activities (school, classes, play)",
+                  "Add homework and chores",
+                  "Colour-code types of activity",
+                  "Check each evening what you completed"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s6.time.to-do-list.q1",
+                  "prompt": "A priority is…",
+                  "kind": "choice",
+                  "options": [
+                    "the most important thing",
+                    "the least important thing",
+                    "a type of toy"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s6.time.to-do-list.q2",
+                  "prompt": "Short breaks can help focus.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s6.time.to-do-list.q3",
+                  "prompt": "Estimate means…",
+                  "kind": "choice",
+                  "options": [
+                    "make a sensible guess",
+                    "measure exactly",
+                    "forget"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Creates and uses to-do lists",
+                "Estimates task duration",
+                "Prioritises tasks"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "life-skills.s6.money-basics",
+          "title": "Saving and Spending",
+          "summary": "Making choices with money.",
+          "topics": [
+            {
+              "title": "Needs and wants",
+              "subtopics": [
+                "Needs and wants"
+              ]
+            },
+            {
+              "title": "Saving in a piggy bank",
+              "subtopics": [
+                "Saving in a piggy bank"
+              ]
+            },
+            {
+              "title": "Waiting to buy",
+              "subtopics": [
+                "Waiting to buy"
+              ]
+            }
+          ],
+          "objectives": [
+            "Distinguish needs and wants",
+            "Make a plan to save for something"
+          ],
+          "masteryCriteria": [
+            "Distinguishes needs and wants",
+            "Plans savings",
+            "Practises delayed gratification"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s6.money-basics.save-spend",
+              "title": "Save, Spend or Share?",
+              "skillId": "sk.life-skills.s6.money-basics.save-spend",
+              "minutes": 15,
+              "objectives": [
+                "Distinguish needs and wants",
+                "Make a plan to save for something"
+              ],
+              "prerequisites": [
+                "Recognises coins and notes"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Needs are things we must have, like food, water, clothes and a home. Wants are nice to have, like toys and sweets.",
+                "Money can be spent, saved or shared. Saving means keeping money to buy something bigger later. Sharing means using some to help others.",
+                "Waiting to buy something you really want, instead of spending on small things now, is a powerful skill."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "need",
+                  "meaning": "something we must have"
+                },
+                {
+                  "term": "want",
+                  "meaning": "something nice to have"
+                },
+                {
+                  "term": "save",
+                  "meaning": "keep money for later"
+                },
+                {
+                  "term": "budget",
+                  "meaning": "a plan for using money"
+                }
+              ],
+              "examples": [
+                "Saving ₹10 a week for 10 weeks to buy a ₹100 book.",
+                "Sharing pocket money with a charity drive."
+              ],
+              "story": {
+                "title": "The Three Jars",
+                "text": "Grandpa gave Zuri three jars labelled SAVE, SPEND and SHARE. Each time she got pocket money, she split it between them. After two months, her SAVE jar bought the paint set she wanted, her SHARE jar bought food for the animal shelter, and her SPEND jar had paid for a few treats along the way."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s6.money-basics.save-spend.a1",
+                  "prompt": "Need or want?",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "food",
+                      "need"
+                    ],
+                    [
+                      "toy car",
+                      "want"
+                    ],
+                    [
+                      "clothes",
+                      "need, to stay warm and covered"
+                    ]
+                  ]
+                },
+                {
+                  "id": "life-skills.s6.money-basics.save-spend.a2",
+                  "prompt": "Saving means…",
+                  "kind": "choice",
+                  "options": [
+                    "keeping money for later",
+                    "spending it all now",
+                    "losing it"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s6.money-basics.save-spend.a3",
+                  "prompt": "Save ₹10 a week. How many weeks to save ₹50?",
+                  "kind": "count",
+                  "answer": 5
+                },
+                {
+                  "id": "life-skills.s6.money-basics.save-spend.a4",
+                  "prompt": "Sharing money can help others.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Is it always easy to tell a need from a want?",
+                "How does it feel to wait and save for something?"
+              ],
+              "speaking": [
+                "Tell a grown-up something you would save for and how you would do it."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Save–Spend–Share Jars",
+                "materials": [
+                  "three jars or envelopes",
+                  "labels",
+                  "coins or play money"
+                ],
+                "steps": [
+                  "Label three jars",
+                  "Decide how to split any pocket money or play money",
+                  "Track your savings goal on a chart",
+                  "Celebrate when you reach it"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s6.money-basics.save-spend.q1",
+                  "prompt": "Which is a need?",
+                  "kind": "choice",
+                  "options": [
+                    "water",
+                    "a video game",
+                    "candy"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s6.money-basics.save-spend.q2",
+                  "prompt": "Waiting to buy can help you get something you really want.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s6.money-basics.save-spend.q3",
+                  "prompt": "A plan for using money is a…",
+                  "kind": "choice",
+                  "options": [
+                    "budget",
+                    "bucket",
+                    "bicycle"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Distinguishes needs and wants",
+                "Plans savings",
+                "Practises delayed gratification"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s7",
+      "overview": "Decision-making, problem-solving and household skills.",
+      "goals": [
+        "Use a decision-making process",
+        "Plan and carry out a household project",
+        "Develop basic sewing, cooking and repair skills"
+      ],
+      "units": [
+        {
+          "id": "life-skills.s7.decisions",
+          "title": "Making Good Decisions",
+          "summary": "Thinking before choosing.",
+          "topics": [
+            {
+              "title": "Steps",
+              "subtopics": [
+                "identify",
+                "options",
+                "consequences",
+                "choose",
+                "review"
+              ]
+            },
+            {
+              "title": "Pros and cons",
+              "subtopics": [
+                "Pros and cons"
+              ]
+            },
+            {
+              "title": "Influences on decisions",
+              "subtopics": [
+                "Influences on decisions"
+              ]
+            }
+          ],
+          "objectives": [
+            "Use a step-by-step process to make decisions",
+            "Weigh pros and cons of options"
+          ],
+          "masteryCriteria": [
+            "Applies decision steps",
+            "Weighs pros and cons",
+            "Reflects on outcomes"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s7.decisions.decision-steps",
+              "title": "Decision Steps",
+              "skillId": "sk.life-skills.s7.decisions.decision-steps",
+              "minutes": 20,
+              "objectives": [
+                "Use a step-by-step process to make decisions",
+                "Weigh pros and cons of options"
+              ],
+              "prerequisites": [
+                "Plans time"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Good decisions follow steps: identify the decision, list options, think about consequences (good and bad) for each, choose, then review how it went.",
+                "A pros-and-cons list helps compare options. Some pros or cons matter more than others — think about your values and the people affected.",
+                "Decisions are influenced by feelings, friends, adverts and habits. Pausing helps you notice these influences."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "decision",
+                  "meaning": "a choice"
+                },
+                {
+                  "term": "option",
+                  "meaning": "a possible choice"
+                },
+                {
+                  "term": "consequence",
+                  "meaning": "what happens as a result"
+                },
+                {
+                  "term": "pros and cons",
+                  "meaning": "advantages and disadvantages"
+                }
+              ],
+              "examples": [
+                "Choosing between football club and art club.",
+                "Deciding how to spend a birthday gift of money."
+              ],
+              "story": {
+                "title": "The Club Choice",
+                "text": "Arjun could join only one club: football or coding. He listed pros and cons. Football: friends, exercise, but late evenings. Coding: he loved puzzles, but none of his friends were joining. He chose coding, then reviewed after a month. He'd made new friends and loved it."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s7.decisions.decision-steps.a1",
+                  "prompt": "Decision steps",
+                  "kind": "order",
+                  "items": [
+                    "identify the decision",
+                    "list options",
+                    "think about consequences",
+                    "choose",
+                    "review"
+                  ]
+                },
+                {
+                  "id": "life-skills.s7.decisions.decision-steps.a2",
+                  "prompt": "Pros are…",
+                  "kind": "choice",
+                  "options": [
+                    "advantages",
+                    "disadvantages",
+                    "prizes"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s7.decisions.decision-steps.a3",
+                  "prompt": "Adverts can influence decisions.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s7.decisions.decision-steps.a4",
+                  "prompt": "Reviewing a decision means…",
+                  "kind": "choice",
+                  "options": [
+                    "checking how it went",
+                    "never thinking about it",
+                    "blaming others"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Can a good decision still turn out badly? Why?",
+                "How do friends influence your decisions?"
+              ],
+              "speaking": [
+                "Talk someone through a real decision using the steps."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Decision Journal",
+                "materials": [
+                  "a notebook"
+                ],
+                "steps": [
+                  "Record three real decisions over two weeks",
+                  "For each, write options, pros and cons, and your choice",
+                  "Review the outcome later",
+                  "Note what you learned"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s7.decisions.decision-steps.q1",
+                  "prompt": "Cons are…",
+                  "kind": "choice",
+                  "options": [
+                    "disadvantages",
+                    "advantages",
+                    "options"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s7.decisions.decision-steps.q2",
+                  "prompt": "Pausing can help you notice influences.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s7.decisions.decision-steps.q3",
+                  "prompt": "Thinking about what will happen is considering…",
+                  "kind": "choice",
+                  "options": [
+                    "consequences",
+                    "colours",
+                    "weather"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Applies decision steps",
+                "Weighs pros and cons",
+                "Reflects on outcomes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "life-skills.s7.household",
+          "title": "Household Skills",
+          "summary": "Practical skills for independence.",
+          "topics": [
+            {
+              "title": "Sewing a button",
+              "subtopics": [
+                "Sewing a button"
+              ]
+            },
+            {
+              "title": "Simple cooking",
+              "subtopics": [
+                "chai",
+                "poha",
+                "omelette"
+              ]
+            },
+            {
+              "title": "Basic repairs",
+              "subtopics": [
+                "Basic repairs"
+              ]
+            },
+            {
+              "title": "Laundry",
+              "subtopics": [
+                "Laundry"
+              ]
+            }
+          ],
+          "objectives": [
+            "Sew on a button",
+            "Cook a simple dish safely with supervision"
+          ],
+          "masteryCriteria": [
+            "Sews a button",
+            "Cooks a simple dish safely",
+            "Completes household tasks"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s7.household.sew-a-button",
+              "title": "Sew a Button and Cook a Meal",
+              "skillId": "sk.life-skills.s7.household.sew-a-button",
+              "minutes": 20,
+              "objectives": [
+                "Sew on a button",
+                "Cook a simple dish safely with supervision"
+              ],
+              "prerequisites": [
+                "Follows recipes and safety rules"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Sewing a button: thread a needle and knot the end, push the needle up through the fabric and a buttonhole, down through the opposite hole, repeat several times, then knot underneath.",
+                "Simple cooking with supervision builds independence: making chai, poha or a vegetable upma involves measuring, chopping, heating and timing. Learn stove safety: handles turned in, sleeves rolled up, never leave the stove unattended.",
+                "Other useful skills: sorting laundry, folding clothes, changing a bulb (with power off and an adult), and tightening a loose screw."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "needle",
+                  "meaning": "a thin pointed tool for sewing"
+                },
+                {
+                  "term": "thread",
+                  "meaning": "thin string for sewing"
+                },
+                {
+                  "term": "supervision",
+                  "meaning": "an adult watching to keep you safe"
+                },
+                {
+                  "term": "measure",
+                  "meaning": "find the amount needed"
+                }
+              ],
+              "examples": [
+                "Making chai: water, tea leaves, milk, sugar, boiled and strained.",
+                "Folding T-shirts neatly into drawers."
+              ],
+              "story": {
+                "title": "The Loose Button",
+                "text": "Before a school function, Kavya's shirt button fell off. Everyone was busy. She remembered what Grandma taught her: thread, knot, up and down, up and down, knot underneath. Five minutes later, the button was back. \"I fixed it myself!\" she told Grandma that evening."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s7.household.sew-a-button.a1",
+                  "prompt": "Sewing a button",
+                  "kind": "order",
+                  "items": [
+                    "thread the needle and knot it",
+                    "push up through fabric and buttonhole",
+                    "go down through the opposite hole",
+                    "repeat several times",
+                    "knot underneath"
+                  ]
+                },
+                {
+                  "id": "life-skills.s7.household.sew-a-button.a2",
+                  "prompt": "Stove safety includes…",
+                  "kind": "choice",
+                  "options": [
+                    "turning pan handles inward",
+                    "leaving the stove alone",
+                    "wearing loose sleeves"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s7.household.sew-a-button.a3",
+                  "prompt": "Cooking should be supervised until you are experienced.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s7.household.sew-a-button.a4",
+                  "prompt": "Match the skill to the tool",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "sewing",
+                      "needle and thread"
+                    ],
+                    [
+                      "measuring flour",
+                      "measuring cup"
+                    ],
+                    [
+                      "tightening a screw",
+                      "screwdriver"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why are practical skills useful even if you can pay someone else?",
+                "Which skill would you like to learn next?"
+              ],
+              "speaking": [
+                "Teach someone a household skill you have learned."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Household Skills Passport",
+                "materials": [
+                  "a small booklet",
+                  "an adult mentor"
+                ],
+                "steps": [
+                  "List 8 household skills",
+                  "Learn and practise one each week with supervision",
+                  "Get a \"stamp\" when you can do it independently",
+                  "Reflect on your progress"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s7.household.sew-a-button.q1",
+                  "prompt": "Before changing a bulb you must…",
+                  "kind": "choice",
+                  "options": [
+                    "switch off the power with an adult",
+                    "touch the socket",
+                    "stand on a wobbly chair"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s7.household.sew-a-button.q2",
+                  "prompt": "Practical skills build independence.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s7.household.sew-a-button.q3",
+                  "prompt": "When sewing, you finish by…",
+                  "kind": "choice",
+                  "options": [
+                    "knotting underneath",
+                    "cutting the button off",
+                    "pulling the thread out"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Sews a button",
+                "Cooks a simple dish safely",
+                "Completes household tasks"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s9",
+      "overview": "Personal finance, goal-setting and study organisation.",
+      "goals": [
+        "Make a simple budget",
+        "Set SMART goals",
+        "Organise study and projects"
+      ],
+      "units": [
+        {
+          "id": "life-skills.s9.budget",
+          "title": "Budgeting",
+          "summary": "Planning income and spending.",
+          "topics": [
+            {
+              "title": "Income and expenses",
+              "subtopics": [
+                "Income and expenses"
+              ]
+            },
+            {
+              "title": "Fixed and variable costs",
+              "subtopics": [
+                "Fixed and variable costs"
+              ]
+            },
+            {
+              "title": "Saving goals",
+              "subtopics": [
+                "Saving goals"
+              ]
+            },
+            {
+              "title": "Avoiding impulse buys",
+              "subtopics": [
+                "Avoiding impulse buys"
+              ]
+            }
+          ],
+          "objectives": [
+            "Create a simple personal budget",
+            "Distinguish fixed and variable expenses"
+          ],
+          "masteryCriteria": [
+            "Creates a budget",
+            "Classifies expenses",
+            "Tracks and adjusts spending"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s9.budget.make-budget",
+              "title": "Making a Budget",
+              "skillId": "sk.life-skills.s9.budget.make-budget",
+              "minutes": 30,
+              "objectives": [
+                "Create a simple personal budget",
+                "Distinguish fixed and variable expenses"
+              ],
+              "prerequisites": [
+                "Distinguishes needs and wants"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A budget is a plan for money: income (money coming in) and expenses (money going out). The goal is to spend less than you earn and save the difference.",
+                "Fixed expenses stay the same (like a bus pass); variable expenses change (like snacks). Tracking spending shows where money really goes.",
+                "Impulse buying — buying without planning — can drain savings. A useful rule: wait 24 hours before buying non-essential items."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "income",
+                  "meaning": "money received"
+                },
+                {
+                  "term": "expense",
+                  "meaning": "money spent"
+                },
+                {
+                  "term": "fixed expense",
+                  "meaning": "a cost that stays the same"
+                },
+                {
+                  "term": "impulse buy",
+                  "meaning": "an unplanned purchase"
+                }
+              ],
+              "examples": [
+                "Monthly pocket money ₹500: bus ₹200 (fixed), snacks ₹150 (variable), save ₹150.",
+                "Waiting a day before buying a new gadget."
+              ],
+              "story": {
+                "title": "Where Did It Go?",
+                "text": "Riya got ₹500 pocket money and had nothing left by the 15th. She tracked every rupee next month: ₹250 had gone on small snacks! She made a budget, set ₹150 aside for savings first, and by the end of term had saved enough for a book set she wanted."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s9.budget.make-budget.a1",
+                  "prompt": "Income or expense?",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "pocket money",
+                      "income"
+                    ],
+                    [
+                      "bus fare",
+                      "expense"
+                    ],
+                    [
+                      "birthday gift money",
+                      "income too"
+                    ]
+                  ]
+                },
+                {
+                  "id": "life-skills.s9.budget.make-budget.a2",
+                  "prompt": "A fixed expense:",
+                  "kind": "choice",
+                  "options": [
+                    "a monthly bus pass",
+                    "snacks",
+                    "gifts"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s9.budget.make-budget.a3",
+                  "prompt": "Income ₹600, expenses ₹450. Savings?",
+                  "kind": "choice",
+                  "options": [
+                    "₹50",
+                    "₹150",
+                    "₹1,050"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "life-skills.s9.budget.make-budget.a4",
+                  "prompt": "Waiting before buying can reduce impulse spending.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Why might \"pay yourself first\" (saving before spending) work well?",
+                "How do adverts encourage impulse buying?"
+              ],
+              "speaking": [
+                "Present your monthly budget to a parent and explain your choices."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "One-Month Budget Challenge",
+                "materials": [
+                  "a notebook or spreadsheet"
+                ],
+                "steps": [
+                  "List your income for a month",
+                  "Plan expenses and a savings goal",
+                  "Track every expense",
+                  "Compare plan vs actual and adjust"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s9.budget.make-budget.q1",
+                  "prompt": "Money coming in is…",
+                  "kind": "choice",
+                  "options": [
+                    "income",
+                    "expense",
+                    "debt"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s9.budget.make-budget.q2",
+                  "prompt": "Snacks are usually a…",
+                  "kind": "choice",
+                  "options": [
+                    "variable expense",
+                    "fixed expense",
+                    "income"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s9.budget.make-budget.q3",
+                  "prompt": "A budget helps plan money.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Creates a budget",
+                "Classifies expenses",
+                "Tracks and adjusts spending"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "life-skills.s9.goals",
+          "title": "Setting and Reaching Goals",
+          "summary": "SMART goals and planning.",
+          "topics": [
+            {
+              "title": "SMART goals",
+              "subtopics": [
+                "SMART goals"
+              ]
+            },
+            {
+              "title": "Breaking goals into milestones",
+              "subtopics": [
+                "Breaking goals into milestones"
+              ]
+            },
+            {
+              "title": "Tracking progress",
+              "subtopics": [
+                "Tracking progress"
+              ]
+            },
+            {
+              "title": "Handling setbacks",
+              "subtopics": [
+                "Handling setbacks"
+              ]
+            }
+          ],
+          "objectives": [
+            "Write SMART goals",
+            "Plan milestones and track progress"
+          ],
+          "masteryCriteria": [
+            "Writes SMART goals",
+            "Plans milestones",
+            "Tracks and adjusts"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s9.goals.smart-goals",
+              "title": "SMART Goals",
+              "skillId": "sk.life-skills.s9.goals.smart-goals",
+              "minutes": 30,
+              "objectives": [
+                "Write SMART goals",
+                "Plan milestones and track progress"
+              ],
+              "prerequisites": [
+                "Uses decision steps"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "SMART goals are Specific, Measurable, Achievable, Relevant and Time-bound. \"Get better at maths\" is vague; \"Complete 10 practice problems every weekday for 4 weeks to improve my test score\" is SMART.",
+                "Break big goals into milestones — smaller steps with dates — and track progress on a chart.",
+                "Setbacks are normal. Review what happened, adjust the plan, and keep going."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "SMART",
+                  "meaning": "specific, measurable, achievable, relevant, time-bound"
+                },
+                {
+                  "term": "milestone",
+                  "meaning": "a step towards a goal"
+                },
+                {
+                  "term": "track",
+                  "meaning": "record progress"
+                },
+                {
+                  "term": "adjust",
+                  "meaning": "change to improve"
+                }
+              ],
+              "examples": [
+                "\"Read 4 books by the end of the month.\"",
+                "\"Run 2 km without stopping by 1 March.\""
+              ],
+              "story": {
+                "title": "The Swimming Goal",
+                "text": "Ravi wanted to \"learn swimming\". His coach helped him write a SMART goal: \"Swim 25 m without stopping by the end of the summer holidays, practising three times a week.\" He set milestones: float, kick, 5 m, 10 m. He missed one week when he was ill, adjusted, and reached 25 m with a week to spare."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s9.goals.smart-goals.a1",
+                  "prompt": "Match the SMART letter",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "S",
+                      "specific"
+                    ],
+                    [
+                      "M",
+                      "measurable"
+                    ],
+                    [
+                      "T",
+                      "time-bound"
+                    ]
+                  ]
+                },
+                {
+                  "id": "life-skills.s9.goals.smart-goals.a2",
+                  "prompt": "Which is SMART?",
+                  "kind": "choice",
+                  "options": [
+                    "\"Read 20 pages every day for 2 weeks.\"",
+                    "\"Read more.\"",
+                    "\"Be a better reader someday.\""
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s9.goals.smart-goals.a3",
+                  "prompt": "Setbacks are a normal part of reaching goals.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s9.goals.smart-goals.a4",
+                  "prompt": "A milestone is…",
+                  "kind": "choice",
+                  "options": [
+                    "a smaller step towards a goal",
+                    "the final prize",
+                    "a stone"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why do vague goals often fail?",
+                "How do you stay motivated over a long goal?"
+              ],
+              "speaking": [
+                "Share a SMART goal with someone and ask them to check in with you."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Goal Tracker",
+                "materials": [
+                  "a chart or notebook"
+                ],
+                "steps": [
+                  "Write one SMART goal",
+                  "List 4–5 milestones with dates",
+                  "Track progress weekly",
+                  "Reflect at the end on what helped and what to change"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s9.goals.smart-goals.q1",
+                  "prompt": "\"By Friday\" makes a goal…",
+                  "kind": "choice",
+                  "options": [
+                    "time-bound",
+                    "vague",
+                    "impossible"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s9.goals.smart-goals.q2",
+                  "prompt": "Breaking goals into milestones helps.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s9.goals.smart-goals.q3",
+                  "prompt": "\"A\" in SMART stands for…",
+                  "kind": "choice",
+                  "options": [
+                    "achievable",
+                    "angry",
+                    "always"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Writes SMART goals",
+                "Plans milestones",
+                "Tracks and adjusts"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s12",
+      "overview": "Preparing for adulthood: careers, financial literacy and civic life.",
+      "goals": [
+        "Explore career pathways",
+        "Understand banking, interest and scams",
+        "Develop independent living skills"
+      ],
+      "units": [
+        {
+          "id": "life-skills.s12.careers",
+          "title": "Exploring Careers",
+          "summary": "Interests, skills and pathways.",
+          "topics": [
+            {
+              "title": "Self-assessment",
+              "subtopics": [
+                "interests",
+                "strengths",
+                "values"
+              ]
+            },
+            {
+              "title": "Career clusters",
+              "subtopics": [
+                "Career clusters"
+              ]
+            },
+            {
+              "title": "Education pathways",
+              "subtopics": [
+                "Education pathways"
+              ]
+            },
+            {
+              "title": "Informational interviews",
+              "subtopics": [
+                "Informational interviews"
+              ]
+            }
+          ],
+          "objectives": [
+            "Assess personal interests, strengths and values",
+            "Research career pathways and requirements"
+          ],
+          "masteryCriteria": [
+            "Completes self-assessment",
+            "Researches pathways accurately",
+            "Plans next steps"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s12.careers.career-explore",
+              "title": "Finding Your Path",
+              "skillId": "sk.life-skills.s12.careers.career-explore",
+              "minutes": 40,
+              "objectives": [
+                "Assess personal interests, strengths and values",
+                "Research career pathways and requirements"
+              ],
+              "prerequisites": [
+                "Sets SMART goals"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Choosing a career starts with knowing yourself: what you enjoy (interests), what you're good at (strengths), and what matters to you (values, like helping others or creativity).",
+                "Careers can be grouped into clusters: health, engineering and technology, arts and design, business, education, law, agriculture, skilled trades and more. Each has different education pathways — university degrees, diplomas, apprenticeships and vocational training.",
+                "Talking to people in a career (informational interviews), job shadowing, and internships help you learn what work is really like. Careers often change over a lifetime, so learning to learn matters most."
+              ],
+              "context": [],
+              "vocabulary": [
+                {
+                  "term": "career",
+                  "meaning": "a path of work over time"
+                },
+                {
+                  "term": "vocational training",
+                  "meaning": "education for a specific trade or skill"
+                },
+                {
+                  "term": "internship",
+                  "meaning": "temporary work experience"
+                },
+                {
+                  "term": "informational interview",
+                  "meaning": "a conversation to learn about someone's job"
+                }
+              ],
+              "examples": [
+                "An ITI course leading to an electrician's career.",
+                "Interviewing a nurse about her daily work."
+              ],
+              "story": {
+                "title": "The Unexpected Path",
+                "text": "Meera thought she wanted to be a doctor. After shadowing at a clinic, she realised what she loved most was explaining things to patients. She explored and found public health communication — combining science, writing and helping people. \"Knowing myself mattered more than picking a famous job,\" she said."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s12.careers.career-explore.a1",
+                  "prompt": "Match",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "interests",
+                      "what you enjoy"
+                    ],
+                    [
+                      "strengths",
+                      "what you are good at"
+                    ],
+                    [
+                      "values",
+                      "what matters to you"
+                    ]
+                  ]
+                },
+                {
+                  "id": "life-skills.s12.careers.career-explore.a2",
+                  "prompt": "An informational interview is…",
+                  "kind": "choice",
+                  "options": [
+                    "a conversation to learn about someone's job",
+                    "a job exam",
+                    "a TV show"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s12.careers.career-explore.a3",
+                  "prompt": "Careers often change over a lifetime.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s12.careers.career-explore.a4",
+                  "prompt": "Vocational training prepares people for…",
+                  "kind": "choice",
+                  "options": [
+                    "specific trades or skills",
+                    "only university",
+                    "nothing"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What would you do if you couldn't fail?",
+                "How might technology change jobs by the time you start working?"
+              ],
+              "speaking": [
+                "Conduct and present an informational interview with someone in a career that interests you."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Career Exploration Portfolio",
+                "materials": [
+                  "notebook",
+                  "interviews",
+                  "research"
+                ],
+                "steps": [
+                  "Complete an interests–strengths–values reflection",
+                  "Research three careers (tasks, education, pay range, future demand)",
+                  "Interview one professional",
+                  "Write a plan for the next two years"
+                ],
+                "safety": "Ask permission before interviewing a professional. Do not share contact details or private salary information; use public sources for pay ranges and share the portfolio only with permission."
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s12.careers.career-explore.q1",
+                  "prompt": "Temporary work experience is an…",
+                  "kind": "choice",
+                  "options": [
+                    "internship",
+                    "interest",
+                    "interview only"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s12.careers.career-explore.q2",
+                  "prompt": "Self-knowledge helps with career choices.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s12.careers.career-explore.q3",
+                  "prompt": "Learning to learn matters because…",
+                  "kind": "choice",
+                  "options": [
+                    "careers and technologies change",
+                    "nothing changes",
+                    "school ends forever"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Completes self-assessment",
+                "Researches pathways accurately",
+                "Plans next steps"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "life-skills.s12.financial-literacy",
+          "title": "Financial Literacy",
+          "summary": "Banking, interest, credit and scams.",
+          "topics": [
+            {
+              "title": "Bank accounts and UPI safety",
+              "subtopics": [
+                "Bank accounts and UPI safety"
+              ]
+            },
+            {
+              "title": "Simple and compound interest",
+              "subtopics": [
+                "Simple and compound interest"
+              ]
+            },
+            {
+              "title": "Credit and debt",
+              "subtopics": [
+                "Credit and debt"
+              ]
+            },
+            {
+              "title": "Spotting scams",
+              "subtopics": [
+                "Spotting scams"
+              ]
+            }
+          ],
+          "objectives": [
+            "Calculate simple and compound interest",
+            "Recognise and avoid common financial scams"
+          ],
+          "masteryCriteria": [
+            "Calculates interest correctly",
+            "Explains credit responsibly",
+            "Recognises and reports scams"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "life-skills.s12.financial-literacy.interest-scams",
+              "title": "Interest, Credit and Scams",
+              "skillId": "sk.life-skills.s12.financial-literacy.interest-scams",
+              "minutes": 40,
+              "objectives": [
+                "Calculate simple and compound interest",
+                "Recognise and avoid common financial scams"
+              ],
+              "prerequisites": [
+                "Makes budgets"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Banks pay interest on savings and charge interest on loans. Simple interest is calculated on the original amount; compound interest is calculated on the amount plus interest already added, so it grows faster over time — \"interest on interest\".",
+                "Credit (borrowing) can be useful but costly: high interest debt (like unpaid credit card balances) grows quickly. Borrow only what you can repay.",
+                "Scams try to trick people: never share OTPs, PINs or passwords; banks never ask for them by phone. Be suspicious of offers that sound too good to be true, urgent threats, and unknown links. In India, cyber fraud can be reported at the national helpline 1930."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "India's national cybercrime helpline 1930 and the cybercrime.gov.in portal are used to report online financial fraud."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "interest",
+                  "meaning": "money paid for using or lending money"
+                },
+                {
+                  "term": "compound interest",
+                  "meaning": "interest calculated on principal plus earlier interest"
+                },
+                {
+                  "term": "credit",
+                  "meaning": "borrowed money"
+                },
+                {
+                  "term": "OTP",
+                  "meaning": "one-time password used to confirm transactions"
+                }
+              ],
+              "examples": [
+                "₹1,000 at 10% simple interest for 2 years → ₹200 interest.",
+                "At 10% compound annually for 2 years → ₹210 interest."
+              ],
+              "story": {
+                "title": "The Urgent Call",
+                "text": "Riya's grandfather got a call: \"Your bank account will be blocked today! Share the OTP to verify.\" He nearly did, but remembered Riya's advice: banks never ask for OTPs. He hung up and called his bank directly. It was a scam. Riya helped him report it to 1930."
+              },
+              "activities": [
+                {
+                  "id": "life-skills.s12.financial-literacy.interest-scams.a1",
+                  "prompt": "₹2,000 at 5% simple interest for 3 years. Interest?",
+                  "kind": "choice",
+                  "options": [
+                    "₹100",
+                    "₹300",
+                    "₹600"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "life-skills.s12.financial-literacy.interest-scams.a2",
+                  "prompt": "Compound interest grows faster because…",
+                  "kind": "choice",
+                  "options": [
+                    "interest is earned on interest",
+                    "banks are generous",
+                    "it is free money"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s12.financial-literacy.interest-scams.a3",
+                  "prompt": "Banks never ask for your OTP over the phone.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "life-skills.s12.financial-literacy.interest-scams.a4",
+                  "prompt": "Match the warning sign",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "urgent threats",
+                      "pressure tactic"
+                    ],
+                    [
+                      "unknown links",
+                      "possible phishing"
+                    ],
+                    [
+                      "too-good-to-be-true offer",
+                      "likely scam"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Why does starting to save early matter so much with compound interest?",
+                "Why do scams work even on smart people?"
+              ],
+              "speaking": [
+                "Teach an elderly relative three rules for avoiding phone and online scams."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Compound Interest Explorer",
+                "materials": [
+                  "calculator or spreadsheet",
+                  "notebook"
+                ],
+                "steps": [
+                  "Calculate savings of ₹1,000 a year at 7% compound interest over 10, 20 and 40 years",
+                  "Compare with simple interest",
+                  "Graph the results",
+                  "Write a short guide on scams and safe banking for your family"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "life-skills.s12.financial-literacy.interest-scams.q1",
+                  "prompt": "Interest on the original amount only:",
+                  "kind": "choice",
+                  "options": [
+                    "simple interest",
+                    "compound interest",
+                    "credit"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s12.financial-literacy.interest-scams.q2",
+                  "prompt": "Never share your…",
+                  "kind": "choice",
+                  "options": [
+                    "OTP or PIN",
+                    "favourite colour",
+                    "name of your school subject"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "life-skills.s12.financial-literacy.interest-scams.q3",
+                  "prompt": "High-interest debt can grow quickly.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "mastery": [
+                "Calculates interest correctly",
+                "Explains credit responsibly",
+                "Recognises and reports scams"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

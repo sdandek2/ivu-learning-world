@@ -1,1 +1,2501 @@
-{"schemaVersion":1,"id":"historical-thinking","worldId":"time-tunnel","title":"Thinking Like a Historian","icon":"🔎","tagline":"Clues from the past","description":"How we know about the past: then and now, timelines, sources and evidence, archaeology, primary and secondary sources, bias and perspective, causation and change, and historiography. The skills that make all other history trustworthy.","contentVersion":"1.0.0","sensitivity":"history","stages":[{"stage":"s4","overview":"Then and now, old and new.","goals":["Talk about past and present","Compare old and new objects","Sequence events in their own life"],"units":[{"id":"historical-thinking.s4.then-now","title":"Then and Now","summary":"Things change over time.","topics":[{"title":"Old and new toys, phones, transport","subtopics":["Old and new toys, phones, transport"]},{"title":"Past, present, future","subtopics":["Past, present, future"]},{"title":"Grandparents' memories","subtopics":["Grandparents' memories"]}],"objectives":["Sort objects into old and new","Use the words past, present and future"],"masteryCriteria":["Uses past/present/future","Compares old and new","Asks elders about the past"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"historical-thinking.s4.then-now.old-new","title":"Old Things, New Things","skillId":"sk.historical-thinking.s4.then-now.old-new","minutes":8,"objectives":["Sort objects into old and new","Use the words past, present and future"],"prerequisites":["Can talk about yesterday and today"],"prerequisiteIds":[],"explanation":["The past is everything that has already happened. The present is now. The future is what hasn't happened yet.","Things change over time. Long ago, people listened to music on radios and record players; now we use phones. Grandparents wrote letters; now we send messages.","Old things are clues about the past. When we look at them, we learn how people used to live."],"context":[{"kind":"evidence","text":"Objects from the past, such as old photographs and tools, are a kind of evidence that helps us learn about how people lived."}],"vocabulary":[{"term":"past","meaning":"what has already happened"},{"term":"present","meaning":"now"},{"term":"future","meaning":"what will happen"},{"term":"old","meaning":"made a long time ago"}],"examples":["An old rotary telephone and a new smartphone.","A bullock cart and a car."],"story":{"title":"Grandpa's Treasure Box","text":"Grandpa opened a dusty box: a black-and-white photo, a heavy old radio, coins with holes in them. \"These are from when I was young,\" he said. Ivaan held up his tablet. \"And this is from now!\" Grandpa laughed. \"One day, your tablet will be in someone's treasure box.\""},"activities":[{"id":"historical-thinking.s4.then-now.old-new.a1","prompt":"Old or new?","kind":"match","pairs":[["📻 old radio","long ago"],["📱 smartphone","now"],["🐂 bullock cart","long ago, still used in some villages"]]},{"id":"historical-thinking.s4.then-now.old-new.a2","prompt":"Yesterday is in the…","kind":"choice","options":["past","present","future"],"answer":0},{"id":"historical-thinking.s4.then-now.old-new.a3","prompt":"Tomorrow is in the…","kind":"choice","options":["past","present","future"],"answer":2},{"id":"historical-thinking.s4.then-now.old-new.a4","prompt":"Old objects can teach us about the past.","kind":"truefalse","answer":true}],"thinking":["What do you think will look old-fashioned in 50 years?","What would you put in a box to show children of the future?"],"speaking":["Ask a grandparent or older person about one toy they had and tell a grown-up about it."],"project":{"kind":"project","title":"Then-and-Now Display","materials":["old and new objects from home (with permission)","labels"],"steps":["Collect pairs of old and new objects (or photos)","Label each \"then\" or \"now\"","Ask an elder about the old ones","Show your display to the family"]},"assessment":[{"id":"historical-thinking.s4.then-now.old-new.q1","prompt":"Now is the…","kind":"choice","options":["past","present","future"],"answer":1},{"id":"historical-thinking.s4.then-now.old-new.q2","prompt":"Things change over time.","kind":"truefalse","answer":true},{"id":"historical-thinking.s4.then-now.old-new.q3","prompt":"Which is older?","kind":"choice","options":["a letter in an envelope","a video call"],"answer":0}],"mastery":["Uses past/present/future","Compares old and new","Asks elders about the past"]}]},{"id":"historical-thinking.s4.my-story","title":"My Own History","summary":"Everyone has a history.","topics":[{"title":"Baby to now","subtopics":["Baby to now"]},{"title":"Photos as clues","subtopics":["Photos as clues"]},{"title":"Ordering events in my life","subtopics":["Ordering events in my life"]}],"objectives":["Order events from their own life","Use photos as clues about the past"],"masteryCriteria":["Sequences personal events","Uses evidence like photos","Understands a timeline"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."},"lessons":[{"id":"historical-thinking.s4.my-story.my-timeline","title":"My Timeline","skillId":"sk.historical-thinking.s4.my-story.my-timeline","minutes":8,"objectives":["Order events from their own life","Use photos as clues about the past"],"prerequisites":["Knows past and present"],"prerequisiteIds":[],"explanation":["You have a history too! It started when you were born. Things happened in order: you were a baby, you learned to walk, you started school.","Photos are clues. A baby photo shows what you looked like long ago.","A timeline is a line that shows events in the order they happened, from earliest to latest."],"context":[{"kind":"evidence","text":"Photos, birth certificates and family memories are evidence of a person's own history."}],"vocabulary":[{"term":"history","meaning":"the story of the past"},{"term":"timeline","meaning":"a line showing events in order"},{"term":"event","meaning":"something that happens"},{"term":"clue","meaning":"something that helps us find out"}],"examples":["Born → first steps → first word → started school.","A photo of your first birthday cake."],"story":{"title":"Momo's Photo Line","text":"Momo laid out photos on the floor: a tiny baby bear, a bear taking first wobbly steps, a bear on a tricycle, a bear in a school uniform. \"That's my whole history!\" said Momo. \"And there's lots more still to come.\""},"activities":[{"id":"historical-thinking.s4.my-story.my-timeline.a1","prompt":"Put your life in order","kind":"order","items":["born 👶","learned to walk","started school 🎒","now"]},{"id":"historical-thinking.s4.my-story.my-timeline.a2","prompt":"A timeline shows events…","kind":"choice","options":["in order","in a jumble","in colours only"],"answer":0},{"id":"historical-thinking.s4.my-story.my-timeline.a3","prompt":"Photos are clues about the past.","kind":"truefalse","answer":true},{"id":"historical-thinking.s4.my-story.my-timeline.a4","prompt":"Which happened first in your life?","kind":"choice","options":["being a baby","going to school"],"answer":0}],"thinking":["How do you know what happened when you were a baby if you can't remember?","What would you like to add to your timeline next year?"],"speaking":["Tell a grown-up about three events on your timeline in order."],"project":{"kind":"project","title":"My Life Timeline","materials":["a long paper strip","photos or drawings","glue"],"steps":["Collect 4–5 photos or draw pictures of your life","Put them in order on a strip","Ask a grown-up about events you don't remember","Add labels and share"]},"assessment":[{"id":"historical-thinking.s4.my-story.my-timeline.q1","prompt":"Things that happened are…","kind":"choice","options":["events","colours","toys"],"answer":0},{"id":"historical-thinking.s4.my-story.my-timeline.q2","prompt":"A timeline goes from earliest to latest.","kind":"truefalse","answer":true},{"id":"historical-thinking.s4.my-story.my-timeline.q3","prompt":"We can learn about when we were babies from…","kind":"choice","options":["photos and family stories","dreams only","nothing"],"answer":0}],"mastery":["Sequences personal events","Uses evidence like photos","Understands a timeline"]}]}]},{"stage":"s5","overview":"Timelines and how we find out about the past.","goals":["Use a simple timeline with years","Know that we learn about the past from evidence","Ask questions about old objects"],"units":[{"id":"historical-thinking.s5.timelines","title":"Timelines","summary":"Putting events in order with years.","topics":[{"title":"Years and decades","subtopics":["Years and decades"]},{"title":"Long ago, not so long ago","subtopics":["Long ago, not so long ago"]},{"title":"Family timeline","subtopics":["Family timeline"]}],"objectives":["Place family events on a timeline with years","Use words like decade and long ago"],"masteryCriteria":["Uses years and periods","Constructs family timelines","Interprets chronology"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"historical-thinking.s5.timelines.family-timeline","title":"Family Timeline","skillId":"sk.historical-thinking.s5.timelines.family-timeline","minutes":10,"objectives":["Place family events on a timeline with years","Use words like decade and long ago"],"prerequisites":["Makes a personal timeline"],"prerequisiteIds":[],"explanation":["We measure time in years. Ten years is a decade. A hundred years is a century.","A family timeline can show when grandparents were born, when parents married, when you were born.","Things far to the left of a timeline happened long ago; things on the right happened recently."],"context":[{"kind":"evidence","text":"Family records, documents and the memories of relatives help us place events on a family timeline."}],"vocabulary":[{"term":"year","meaning":"12 months"},{"term":"decade","meaning":"10 years"},{"term":"century","meaning":"100 years"},{"term":"long ago","meaning":"a long time in the past"}],"examples":["Grandma born 1960 → Mama born 1990 → Ivaan born 2022.","2020 to 2030 is a decade."],"story":{"title":"Zuri's Family Line","text":"Zuri asked everyone their birth years and drew a long line on the wall. Great-Grandpa: 1935. Grandma: 1962. Mama: 1991. Zuri: 2021. \"Great-Grandpa was born almost 90 years before me!\" she gasped. \"He's seen so much history.\""},"activities":[{"id":"historical-thinking.s5.timelines.family-timeline.a1","prompt":"A decade is…","kind":"choice","options":["10 years","100 years","1 year"],"answer":0},{"id":"historical-thinking.s5.timelines.family-timeline.a2","prompt":"Order these years","kind":"order","items":["1935","1962","1991","2021"]},{"id":"historical-thinking.s5.timelines.family-timeline.a3","prompt":"A century is…","kind":"choice","options":["10 years","100 years","1,000 years"],"answer":1},{"id":"historical-thinking.s5.timelines.family-timeline.a4","prompt":"The left side of a timeline usually shows older events.","kind":"truefalse","answer":true}],"thinking":["What big changes might your grandparents have seen?","Why do historians use timelines?"],"speaking":["Show your family timeline to someone and explain it."],"project":{"kind":"project","title":"Family Timeline Wall","materials":["a long paper strip","family photos or drawings","markers"],"steps":["Ask family members for important dates","Mark years along a strip","Add events and photos","Note one world event near each family event"]},"assessment":[{"id":"historical-thinking.s5.timelines.family-timeline.q1","prompt":"Which year is earliest?","kind":"choice","options":["1950","2000","2024"],"answer":0},{"id":"historical-thinking.s5.timelines.family-timeline.q2","prompt":"A century is 100 years.","kind":"truefalse","answer":true},{"id":"historical-thinking.s5.timelines.family-timeline.q3","prompt":"Ten years is a…","kind":"choice","options":["decade","week","century"],"answer":0}],"mastery":["Uses years and periods","Constructs family timelines","Interprets chronology"]}]},{"id":"historical-thinking.s5.evidence","title":"How Do We Know?","summary":"Evidence about the past.","topics":[{"title":"Objects, buildings, photos, writing, memories","subtopics":["Objects, buildings, photos, writing, memories"]},{"title":"Asking questions","subtopics":["Asking questions"]}],"objectives":["Name kinds of evidence about the past","Ask questions about an old object"],"masteryCriteria":["Identifies evidence types","Asks investigative questions","Links evidence to confidence"],"revision":{"intervalsDays":[1,2,4,7,14,30],"notes":"Short playful recall: replay activities, retell in own words, spot the idea in daily life."},"lessons":[{"id":"historical-thinking.s5.evidence.detective","title":"History Detectives","skillId":"sk.historical-thinking.s5.evidence.detective","minutes":10,"objectives":["Name kinds of evidence about the past","Ask questions about an old object"],"prerequisites":["Knows old objects are clues"],"prerequisiteIds":[],"explanation":["Historians are like detectives. They look for evidence: old objects, buildings, photos, letters, diaries, coins and people's memories.","When you find an old object, ask questions: What is it made of? What was it for? Who used it? How old is it?","The more evidence we have, the more confident we can be about what happened."],"context":[{"kind":"evidence","text":"Historians use many kinds of sources together; where evidence is limited, they say so rather than guessing."}],"vocabulary":[{"term":"evidence","meaning":"information that shows what happened"},{"term":"historian","meaning":"a person who studies the past"},{"term":"source","meaning":"where information comes from"},{"term":"artefact","meaning":"an object made by people long ago"}],"examples":["An old coin showing a king's face.","A grandparent's memory of their school days."],"story":{"title":"The Mystery Object","text":"Professor Hoot showed the class a strange brass object with a long handle and holes. \"What is it?\" The children asked questions: \"Is it for cooking? For light?\" They examined it and asked an elder, who smiled: \"It's an old oil lamp holder from my grandmother's house!\""},"activities":[{"id":"historical-thinking.s5.evidence.detective.a1","prompt":"Which is evidence about the past?","kind":"choice","options":["an old coin","a dream","a cartoon"],"answer":0},{"id":"historical-thinking.s5.evidence.detective.a2","prompt":"A historian is like a…","kind":"choice","options":["detective","chef","pilot"],"answer":0},{"id":"historical-thinking.s5.evidence.detective.a3","prompt":"More evidence makes us more confident.","kind":"truefalse","answer":true},{"id":"historical-thinking.s5.evidence.detective.a4","prompt":"Match the evidence","kind":"match","pairs":[["letter","writing"],["coin","object"],["grandparent's story","memory"]]}],"thinking":["Can memories ever be wrong?","What evidence of your life might historians find in 100 years?"],"speaking":["Ask four questions about an old object to a grown-up."],"project":{"kind":"project","title":"Mystery Object Investigation","materials":["an old object from home or a museum photo","a question sheet"],"steps":["Look closely at the object","Write or draw answers to: what, who, when, why","Ask an elder or check a book","Present your findings"]},"assessment":[{"id":"historical-thinking.s5.evidence.detective.q1","prompt":"An object made by people long ago is an…","kind":"choice","options":["artefact","astronaut","animal"],"answer":0},{"id":"historical-thinking.s5.evidence.detective.q2","prompt":"Historians use evidence.","kind":"truefalse","answer":true},{"id":"historical-thinking.s5.evidence.detective.q3","prompt":"Where information comes from is a…","kind":"choice","options":["source","toy","road"],"answer":0}],"mastery":["Identifies evidence types","Asks investigative questions","Links evidence to confidence"]}]}]},{"stage":"s6","overview":"Primary and secondary sources, and archaeology.","goals":["Distinguish primary and secondary sources","Explain what archaeologists do","Use dates BCE and CE"],"units":[{"id":"historical-thinking.s6.sources","title":"Primary and Secondary Sources","summary":"Sources from the time and sources about the time.","topics":[{"title":"Primary","subtopics":["diaries","photos","inscriptions"]},{"title":"Secondary","subtopics":["textbooks","documentaries"]},{"title":"Using both","subtopics":["Using both"]}],"objectives":["Classify sources as primary or secondary","Explain why historians use both"],"masteryCriteria":["Classifies sources correctly","Explains uses of each","Recognises limits of sources"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"historical-thinking.s6.sources.primary-secondary","title":"From the Time or About the Time?","skillId":"sk.historical-thinking.s6.sources.primary-secondary","minutes":15,"objectives":["Classify sources as primary or secondary","Explain why historians use both"],"prerequisites":["Knows kinds of evidence"],"prerequisiteIds":[],"explanation":["A primary source was made at the time being studied: a diary, a photograph, a letter, an inscription, a coin.","A secondary source was made later by someone studying the past: a textbook, an encyclopedia, a documentary.","Historians use primary sources as evidence and secondary sources to learn what others have found. Both have strengths and limits."],"context":[{"kind":"evidence","text":"Ashoka's rock edicts (3rd century BCE) are primary sources; modern history books about Ashoka are secondary sources."}],"vocabulary":[{"term":"primary source","meaning":"a source from the time being studied"},{"term":"secondary source","meaning":"a source made later about the past"},{"term":"inscription","meaning":"writing carved on stone or metal"},{"term":"edict","meaning":"an official order"}],"examples":["Gandhi's letters: primary. A biography of Gandhi: secondary.","A photo of the 1947 Independence Day: primary."],"story":{"title":"The Emperor's Rock","text":"Over 2,200 years ago, Emperor Ashoka had his messages carved into rocks and pillars across his empire. Centuries later, people could no longer read the script. In 1837, James Prinsep deciphered the Brahmi script, and Ashoka's own words could be read again — a primary source speaking across time."},"activities":[{"id":"historical-thinking.s6.sources.primary-secondary.a1","prompt":"Primary or secondary?","kind":"match","pairs":[["Ashoka's rock edict","primary"],["a history textbook","secondary"],["a soldier's diary from 1857","primary, from the time"]]},{"id":"historical-thinking.s6.sources.primary-secondary.a2","prompt":"A documentary made today about the Mughals is…","kind":"choice","options":["primary","secondary"],"answer":1},{"id":"historical-thinking.s6.sources.primary-secondary.a3","prompt":"Historians use both primary and secondary sources.","kind":"truefalse","answer":true},{"id":"historical-thinking.s6.sources.primary-secondary.a4","prompt":"Writing carved on stone is an…","kind":"choice","options":["inscription","email","poster"],"answer":0}],"thinking":["Why might a diary not tell the whole story?","Can a secondary source become a primary source for later historians?"],"speaking":["Show someone one primary and one secondary source about your family and explain the difference."],"project":{"kind":"project","title":"Source Sorting Activity","materials":["a mix of items: old letters","photos","a textbook","a newspaper","a printed web article"],"steps":["Sort items into primary and secondary for a chosen topic","Explain each choice","Note one strength and one limit of each","Present to family"]},"assessment":[{"id":"historical-thinking.s6.sources.primary-secondary.q1","prompt":"A photograph taken in 1947 of a 1947 event is…","kind":"choice","options":["primary","secondary"],"answer":0},{"id":"historical-thinking.s6.sources.primary-secondary.q2","prompt":"Ashoka's edicts were deciphered after the Brahmi script was decoded.","kind":"truefalse","answer":true},{"id":"historical-thinking.s6.sources.primary-secondary.q3","prompt":"A biography written today is…","kind":"choice","options":["primary","secondary"],"answer":1}],"mastery":["Classifies sources correctly","Explains uses of each","Recognises limits of sources"]}]},{"id":"historical-thinking.s6.archaeology","title":"Archaeology","summary":"Digging up the past.","topics":[{"title":"Excavation","subtopics":["Excavation"]},{"title":"Layers (stratigraphy)","subtopics":["Layers (stratigraphy)"]},{"title":"Dating","subtopics":["BCE and CE"]},{"title":"Archaeological sites in India","subtopics":["Archaeological sites in India"]}],"objectives":["Explain how archaeologists excavate and record finds","Use BCE and CE dates correctly"],"masteryCriteria":["Explains excavation methods","Applies stratigraphy","Uses BCE/CE correctly"],"revision":{"intervalsDays":[1,3,7,14,30],"notes":"Mixed recall: answer without looking back, explain to a family member, then re-check weak items."},"lessons":[{"id":"historical-thinking.s6.archaeology.dig","title":"The Archaeologist's Dig","skillId":"sk.historical-thinking.s6.archaeology.dig","minutes":15,"objectives":["Explain how archaeologists excavate and record finds","Use BCE and CE dates correctly"],"prerequisites":["Knows primary sources"],"prerequisiteIds":[],"explanation":["Archaeologists study the past through objects and remains left behind. They excavate carefully, layer by layer, recording exactly where each find is.","Usually, deeper layers are older — like a pile of newspapers where the oldest are at the bottom. This is called stratigraphy.","Dates are written BCE (Before Common Era) and CE (Common Era). 2500 BCE is earlier than 500 BCE. Counting goes backwards in BCE: the bigger the number, the older."],"context":[{"kind":"evidence","text":"Excavations at sites like Harappa and Mohenjo-daro in the 1920s revealed the Indus (Harappan) Civilisation, flourishing around 2600–1900 BCE."}],"vocabulary":[{"term":"archaeologist","meaning":"a person who studies the past from objects and remains"},{"term":"excavate","meaning":"dig carefully"},{"term":"stratigraphy","meaning":"the study of layers in the ground"},{"term":"BCE","meaning":"Before Common Era"}],"examples":["Pottery shards found in a deep layer are usually older than those above.","326 BCE is earlier than 26 CE."],"story":{"title":"The Buried City","text":"In the 1920s, archaeologists digging at Mohenjo-daro uncovered brick streets, drains and houses — a planned city more than 4,000 years old. No one had known it was there. Layer by layer, they revealed a whole civilisation that had been forgotten."},"activities":[{"id":"historical-thinking.s6.archaeology.dig.a1","prompt":"Deeper layers are usually…","kind":"choice","options":["older","newer","the same age"],"answer":0},{"id":"historical-thinking.s6.archaeology.dig.a2","prompt":"Order from earliest to latest","kind":"order","items":["2500 BCE","1000 BCE","100 CE","1947 CE"]},{"id":"historical-thinking.s6.archaeology.dig.a3","prompt":"Archaeologists dig…","kind":"choice","options":["carefully, recording where things are found","as fast as possible","without notes"],"answer":0},{"id":"historical-thinking.s6.archaeology.dig.a4","prompt":"Mohenjo-daro was excavated in the 1920s.","kind":"truefalse","answer":true}],"thinking":["Why must archaeologists record exactly where things are found?","Why is it wrong to dig up sites without permission?"],"speaking":["Explain BCE and CE to someone with an example."],"project":{"kind":"experiment","title":"Layer Cake Dig","materials":["a clear container","layers of sand","soil and gravel","small \"artefacts\" (buttons","coins)","a spoon and brush"],"steps":["A grown-up builds layers with hidden objects","Dig carefully, one layer at a time","Record each find's layer","Decide which objects are \"oldest\" and explain why"]},"assessment":[{"id":"historical-thinking.s6.archaeology.dig.q1","prompt":"Which is earlier?","kind":"choice","options":["500 BCE","500 CE"],"answer":0},{"id":"historical-thinking.s6.archaeology.dig.q2","prompt":"Stratigraphy studies layers.","kind":"truefalse","answer":true},{"id":"historical-thinking.s6.archaeology.dig.q3","prompt":"Archaeologists study…","kind":"choice","options":["objects and remains from the past","future weather","space"],"answer":0}],"mastery":["Explains excavation methods","Applies stratigraphy","Uses BCE/CE correctly"]}]}]},{"stage":"s7","overview":"Perspectives, bias and reliability.","goals":["Compare different accounts of the same event","Identify bias and perspective","Evaluate the reliability of sources"],"units":[{"id":"historical-thinking.s7.perspective","title":"Different Perspectives","summary":"The same event seen differently.","topics":[{"title":"Eyewitness accounts","subtopics":["Eyewitness accounts"]},{"title":"Perspective","subtopics":["Perspective"]},{"title":"Whose voices are missing?","subtopics":["Whose voices are missing?"]}],"objectives":["Compare two accounts of the same event","Identify whose voices may be missing"],"masteryCriteria":["Compares accounts systematically","Identifies perspectives","Seeks missing voices"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"historical-thinking.s7.perspective.two-accounts","title":"Two Accounts of One Event","skillId":"sk.historical-thinking.s7.perspective.two-accounts","minutes":20,"objectives":["Compare two accounts of the same event","Identify whose voices may be missing"],"prerequisites":["Distinguishes primary and secondary sources"],"prerequisiteIds":[],"explanation":["People experience events differently depending on who they are and where they stand. A battle looks different to a soldier, a general, a farmer whose field was crossed, and a historian centuries later.","Comparing accounts helps us build a fuller picture. Where they agree, we can be more confident; where they differ, we ask why.","Many past records were written by rulers, officials or the wealthy. Historians ask: whose voices are missing — women, workers, children, enslaved people? They look for other sources like songs, oral histories and archaeology."],"context":[{"kind":"interpretation","text":"Historians reconstruct the past by comparing perspectives; their accounts are interpretations based on evidence."}],"vocabulary":[{"term":"perspective","meaning":"a point of view"},{"term":"account","meaning":"a description of events"},{"term":"eyewitness","meaning":"a person who saw something happen"},{"term":"oral history","meaning":"history passed on by speaking"}],"examples":["British and Indian accounts of 1857 described it very differently.","Folk songs preserving memories of famines."],"story":{"title":"The School Sports Day","text":"After sports day, the winning team wrote: \"A brilliant day of fair competition!\" The losing team wrote: \"The track was uneven and the referee missed a foul.\" A parent wrote about the heat. Professor Hoot said, \"Each account is true from where they stood. A historian uses all three.\""},"activities":[{"id":"historical-thinking.s7.perspective.two-accounts.a1","prompt":"Why might two accounts of an event differ?","kind":"choice","options":["people see it from different perspectives","one must always be a lie","events never happen"],"answer":0},{"id":"historical-thinking.s7.perspective.two-accounts.a2","prompt":"Whose voices are often missing from old official records?","kind":"choice","options":["ordinary people like workers and women","kings","officials"],"answer":0},{"id":"historical-thinking.s7.perspective.two-accounts.a3","prompt":"Where accounts agree, historians can be more confident.","kind":"truefalse","answer":true},{"id":"historical-thinking.s7.perspective.two-accounts.a4","prompt":"History passed on by speaking is…","kind":"choice","options":["oral history","archaeology","a coin"],"answer":0}],"thinking":["Is any account completely neutral?","How can historians learn about people who didn't write records?"],"speaking":["Retell a family event from two different family members' perspectives."],"project":{"kind":"project","title":"Oral History Interview","materials":["questions","a recorder or notebook","consent"],"steps":["Interview an elder about an event they remember","Interview a second person about the same event","Compare accounts","Write what agrees, what differs and why"]},"assessment":[{"id":"historical-thinking.s7.perspective.two-accounts.q1","prompt":"A point of view is a…","kind":"choice","options":["perspective","source","date"],"answer":0},{"id":"historical-thinking.s7.perspective.two-accounts.q2","prompt":"Comparing accounts helps build a fuller picture.","kind":"truefalse","answer":true},{"id":"historical-thinking.s7.perspective.two-accounts.q3","prompt":"A person who saw an event is an…","kind":"choice","options":["eyewitness","archaeologist","artefact"],"answer":0}],"mastery":["Compares accounts systematically","Identifies perspectives","Seeks missing voices"]}]},{"id":"historical-thinking.s7.reliability","title":"Can We Trust This Source?","summary":"Bias, purpose and reliability.","topics":[{"title":"Bias","subtopics":["Bias"]},{"title":"Purpose and audience","subtopics":["Purpose and audience"]},{"title":"Corroboration","subtopics":["Corroboration"]},{"title":"Propaganda","subtopics":["Propaganda"]}],"objectives":["Identify bias in a source","Use the 5 Ws to evaluate reliability"],"masteryCriteria":["Identifies bias and purpose","Uses corroboration","Evaluates reliability"],"revision":{"intervalsDays":[1,3,7,21,45],"notes":"Retrieval first, then review notes; interleave with other units; apply in a new example."},"lessons":[{"id":"historical-thinking.s7.reliability.bias-check","title":"Checking for Bias","skillId":"sk.historical-thinking.s7.reliability.bias-check","minutes":20,"objectives":["Identify bias in a source","Use the 5 Ws to evaluate reliability"],"prerequisites":["Compares perspectives"],"prerequisiteIds":[],"explanation":["Bias is a one-sided view that may leave out or twist information. Every source has some perspective; biased sources aren't useless, but we must read them carefully.","Ask: Who made it? When? Why (purpose)? For whom (audience)? What does it leave out? A king's inscription may exaggerate his victories to impress his subjects.","Corroboration means checking a claim against other independent sources. Propaganda is deliberately misleading information spread to influence people."],"context":[{"kind":"interpretation","text":"Royal inscriptions in many cultures, such as prashastis (praise poems) in Indian history, praised rulers; historians read them as valuable but partial evidence."}],"vocabulary":[{"term":"bias","meaning":"a one-sided view"},{"term":"purpose","meaning":"why a source was made"},{"term":"corroboration","meaning":"checking with other sources"},{"term":"propaganda","meaning":"misleading information spread to influence people"}],"examples":["A victory inscription by a king, checked against coins and other records.","Wartime posters exaggerating the enemy's cruelty."],"story":{"title":"The Boastful Inscription","text":"An ancient inscription claimed a king had conquered \"the whole world\". Historians compared it with coins found only in a small region and records from neighbouring kingdoms. \"He was powerful,\" they concluded, \"but the whole world? That's the poet praising his patron.\""},"activities":[{"id":"historical-thinking.s7.reliability.bias-check.a1","prompt":"Questions to check a source","kind":"order","items":["Who made it?","When?","Why?","For whom?","What is left out?"]},{"id":"historical-thinking.s7.reliability.bias-check.a2","prompt":"Checking a claim against other sources is…","kind":"choice","options":["corroboration","bias","propaganda"],"answer":0},{"id":"historical-thinking.s7.reliability.bias-check.a3","prompt":"A biased source can still be useful evidence.","kind":"truefalse","answer":true},{"id":"historical-thinking.s7.reliability.bias-check.a4","prompt":"A praise poem written for a king may…","kind":"choice","options":["exaggerate his achievements","always be completely accurate","have no author"],"answer":0}],"thinking":["How can a biased source still teach us something true?","Where do you see propaganda today?"],"speaking":["Analyse an advertisement or old poster with someone, identifying its purpose and bias."],"project":{"kind":"project","title":"Source Reliability Report","materials":["two sources on the same historical event (e.g. a textbook and a contemporary account)"],"steps":["Apply the five questions to each source","Identify possible bias","Corroborate one claim with a third source","Write a short reliability report"]},"assessment":[{"id":"historical-thinking.s7.reliability.bias-check.q1","prompt":"Misleading information spread to influence people is…","kind":"choice","options":["propaganda","corroboration","archaeology"],"answer":0},{"id":"historical-thinking.s7.reliability.bias-check.q2","prompt":"Every source has a perspective.","kind":"truefalse","answer":true},{"id":"historical-thinking.s7.reliability.bias-check.q3","prompt":"Why a source was made is its…","kind":"choice","options":["purpose","date","material"],"answer":0}],"mastery":["Identifies bias and purpose","Uses corroboration","Evaluates reliability"]}]}]},{"stage":"s9","overview":"Causation, change and continuity, and significance.","goals":["Analyse causes and consequences","Distinguish change and continuity","Judge historical significance"],"units":[{"id":"historical-thinking.s9.causes","title":"Cause and Consequence","summary":"Why things happened and what followed.","topics":[{"title":"Long-term and short-term causes","subtopics":["Long-term and short-term causes"]},{"title":"Triggers","subtopics":["Triggers"]},{"title":"Intended and unintended consequences","subtopics":["Intended and unintended consequences"]}],"objectives":["Distinguish long-term causes, short-term causes and triggers","Analyse intended and unintended consequences"],"masteryCriteria":["Categorises causes","Analyses consequences","Weighs causes with evidence"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"historical-thinking.s9.causes.why-it-happened","title":"Why Did It Happen?","skillId":"sk.historical-thinking.s9.causes.why-it-happened","minutes":30,"objectives":["Distinguish long-term causes, short-term causes and triggers","Analyse intended and unintended consequences"],"prerequisites":["Evaluates sources"],"prerequisiteIds":[],"explanation":["Historical events usually have many causes. Long-term causes build up over years (economic hardship, resentment); short-term causes appear close to the event; a trigger is the spark that sets it off.","The 1857 uprising had long-term causes (annexation of states, economic grievances, disrespect for traditions), and a trigger (rumours that new rifle cartridges were greased with animal fat offensive to Hindu and Muslim soldiers).","Consequences can be intended or unintended, short- or long-term. After 1857, the British Crown took direct control of India from the East India Company in 1858 — a major long-term consequence."],"context":[{"kind":"interpretation","text":"Historians debate how to name 1857 — mutiny, revolt, uprising, or First War of Independence — and how to weigh its causes."},{"kind":"evidence","text":"The Government of India Act 1858 transferred rule from the East India Company to the British Crown."}],"vocabulary":[{"term":"cause","meaning":"a reason something happened"},{"term":"consequence","meaning":"a result"},{"term":"trigger","meaning":"the immediate spark of an event"},{"term":"unintended","meaning":"not planned"}],"examples":["Long-term: drought. Short-term: rising grain prices. Trigger: a new tax. Event: a protest.","Unintended consequence: a new road changing trade routes."],"story":{"title":"The Cartridge Rumour","text":"In 1857, sepoys heard that the cartridges for their new Enfield rifles, which had to be bitten open, were greased with cow and pig fat. Whether or not every rumour was true, it combined with years of grievances. In Meerut, soldiers rose up — and the revolt spread across northern India."},"activities":[{"id":"historical-thinking.s9.causes.why-it-happened.a1","prompt":"Match the type of cause","kind":"match","pairs":[["years of economic hardship","long-term cause"],["rising prices that month","short-term cause"],["a sudden new tax","trigger"]]},{"id":"historical-thinking.s9.causes.why-it-happened.a2","prompt":"After 1857, India came under the direct rule of…","kind":"choice","options":["the British Crown","the Mughals","Portugal"],"answer":0},{"id":"historical-thinking.s9.causes.why-it-happened.a3","prompt":"Historical events usually have several causes.","kind":"truefalse","answer":true},{"id":"historical-thinking.s9.causes.why-it-happened.a4","prompt":"A result that was not planned is an…","kind":"choice","options":["unintended consequence","trigger","primary source"],"answer":0}],"thinking":["Is one cause ever the \"most important\"? How would you decide?","Why do historians argue about what to call 1857?"],"speaking":["Explain the causes of an event (historical or personal) using long-term, short-term and trigger."],"project":{"kind":"project","title":"Causation Diagram","materials":["large paper","research sources"],"steps":["Choose a historical event","Map long-term causes, short-term causes and the trigger","Add consequences (intended and unintended)","Write a paragraph judging the most significant cause"]},"assessment":[{"id":"historical-thinking.s9.causes.why-it-happened.q1","prompt":"The immediate spark of an event is the…","kind":"choice","options":["trigger","long-term cause","consequence"],"answer":0},{"id":"historical-thinking.s9.causes.why-it-happened.q2","prompt":"Historians debate names for the events of 1857.","kind":"truefalse","answer":true},{"id":"historical-thinking.s9.causes.why-it-happened.q3","prompt":"A consequence is a…","kind":"choice","options":["result","cause","source"],"answer":0}],"mastery":["Categorises causes","Analyses consequences","Weighs causes with evidence"]}]},{"id":"historical-thinking.s9.change-continuity","title":"Change, Continuity and Significance","summary":"What changed, what stayed, and what mattered.","topics":[{"title":"Change and continuity over time","subtopics":["Change and continuity over time"]},{"title":"Turning points","subtopics":["Turning points"]},{"title":"Criteria for significance","subtopics":["Criteria for significance"]}],"objectives":["Identify change and continuity across a period","Apply criteria to judge historical significance"],"masteryCriteria":["Identifies change and continuity","Applies significance criteria","Defends judgements with evidence"],"revision":{"intervalsDays":[2,7,21,60],"notes":"Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."},"lessons":[{"id":"historical-thinking.s9.change-continuity.significance","title":"What Makes Something Significant?","skillId":"sk.historical-thinking.s9.change-continuity.significance","minutes":30,"objectives":["Identify change and continuity across a period","Apply criteria to judge historical significance"],"prerequisites":["Analyses causation"],"prerequisiteIds":[],"explanation":["History isn't only change. Continuity means things that stayed the same. Village life, family structures or festivals may continue for centuries while governments change.","A turning point is a moment when the direction of change shifted significantly — like independence in 1947.","Historians judge significance using criteria: How many people did it affect? How deeply? For how long? Does it help explain the present? Different criteria can lead to different judgements."],"context":[{"kind":"interpretation","text":"Judgements of significance are reasoned interpretations; historians may rank events differently using different criteria."}],"vocabulary":[{"term":"continuity","meaning":"things staying the same over time"},{"term":"change","meaning":"things becoming different"},{"term":"turning point","meaning":"a moment of major change"},{"term":"significance","meaning":"how important something is"}],"examples":["Railways in the 19th century: major change in travel.","Monsoon farming: strong continuity over centuries."],"story":{"title":"The Printing Press Debate","text":"A class debated: which was more significant — the printing press or the internet? One group argued the press spread knowledge to millions over centuries; another argued the internet connected billions in decades. The teacher smiled: \"You're both using criteria — scale, depth, duration. That's how historians think.\""},"activities":[{"id":"historical-thinking.s9.change-continuity.significance.a1","prompt":"Change or continuity?","kind":"match","pairs":[["railways replacing bullock carts for long journeys","change"],["families celebrating the same festival for centuries","continuity"],["independence in 1947","turning point"]]},{"id":"historical-thinking.s9.change-continuity.significance.a2","prompt":"A criterion for significance:","kind":"choice","options":["how many people it affected","its colour","its spelling"],"answer":0},{"id":"historical-thinking.s9.change-continuity.significance.a3","prompt":"Historians may disagree about significance.","kind":"truefalse","answer":true},{"id":"historical-thinking.s9.change-continuity.significance.a4","prompt":"Things staying the same over time is…","kind":"choice","options":["continuity","revolution","trigger"],"answer":0}],"thinking":["What is the most significant event of the last 100 years? Justify with criteria.","Why is continuity often overlooked?"],"speaking":["Present a significance ranking of three events, explaining your criteria."],"project":{"kind":"project","title":"Significance Ranking Debate","materials":["event cards","criteria list","a group"],"steps":["Choose 5 events from Indian or world history","Score each on scale, depth, duration and relevance today","Rank them","Debate rankings with others"]},"assessment":[{"id":"historical-thinking.s9.change-continuity.significance.q1","prompt":"A moment of major change is a…","kind":"choice","options":["turning point","continuity","source"],"answer":0},{"id":"historical-thinking.s9.change-continuity.significance.q2","prompt":"Continuity is part of history too.","kind":"truefalse","answer":true},{"id":"historical-thinking.s9.change-continuity.significance.q3","prompt":"Judging significance uses…","kind":"choice","options":["criteria","guesswork only","coin tosses"],"answer":0}],"mastery":["Identifies change and continuity","Applies significance criteria","Defends judgements with evidence"]}]}]},{"stage":"s12","overview":"Historiography and the uses of history.","goals":["Compare historians' interpretations","Analyse how history is used and misused","Conduct independent historical research"],"units":[{"id":"historical-thinking.s12.historiography","title":"Historiography","summary":"The history of history-writing.","topics":[{"title":"Schools of interpretation","subtopics":["colonial","nationalist","Marxist","subaltern"]},{"title":"Why interpretations change","subtopics":["Why interpretations change"]}],"objectives":["Describe major schools of Indian historiography","Explain why interpretations change over time"],"masteryCriteria":["Describes historiographical schools","Compares interpretations critically","Explains why history is rewritten"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"historical-thinking.s12.historiography.schools","title":"Schools of Historical Interpretation","skillId":"sk.historical-thinking.s12.historiography.schools","minutes":40,"objectives":["Describe major schools of Indian historiography","Explain why interpretations change over time"],"prerequisites":["Judges significance and causation"],"prerequisiteIds":[],"explanation":["Historiography is the study of how history has been written. Interpretations change as new evidence appears and as historians ask new questions.","Colonial historians (like James Mill, 1817) often portrayed India's past in ways that justified British rule. Nationalist historians emphasised India's achievements and resistance. Marxist historians focused on economic structures and class.","The Subaltern Studies group (from the 1980s) focused on ordinary people — peasants, workers, tribal communities — often absent from elite records. Today, historians also write gender, environmental and global histories. No school has the final word."],"context":[{"kind":"interpretation","text":"Each school offers insights and has been criticised; this lesson presents them for comparison, not endorsement."},{"kind":"evidence","text":"James Mill's \"The History of British India\" (1817) divided Indian history into \"Hindu\", \"Muslim\" and \"British\" periods, a framework later historians have widely criticised."}],"vocabulary":[{"term":"historiography","meaning":"the study of how history is written"},{"term":"interpretation","meaning":"an explanation of the past based on evidence"},{"term":"subaltern","meaning":"a person or group outside the ruling elite"},{"term":"framework","meaning":"a structure for organising ideas"}],"examples":["Mill's religious periodisation versus \"ancient, medieval, modern\".","Environmental histories of forests and famines."],"story":{"title":"The Changing Textbook","text":"A student compared history textbooks from the 1950s, 1980s and today about the same period. The emphasis, the heroes and even the names of events shifted. \"Did the past change?\" she asked. Her teacher replied, \"No — but our questions, evidence and perspectives did.\""},"activities":[{"id":"historical-thinking.s12.historiography.schools.a1","prompt":"Match the school to its focus","kind":"match","pairs":[["colonial","often justified British rule"],["nationalist","India's achievements and resistance"],["Marxist","economic structures and class"],["subaltern","ordinary people outside the elite"]]},{"id":"historical-thinking.s12.historiography.schools.a2","prompt":"Historiography is…","kind":"choice","options":["the study of how history is written","the study of rocks","a type of map"],"answer":0},{"id":"historical-thinking.s12.historiography.schools.a3","prompt":"Interpretations of history change over time.","kind":"truefalse","answer":true},{"id":"historical-thinking.s12.historiography.schools.a4","prompt":"James Mill's periodisation has been…","kind":"choice","options":["widely criticised by later historians","universally accepted","never discussed"],"answer":0}],"thinking":["Can history ever be completely objective?","How should we decide between competing interpretations?"],"speaking":["Present two interpretations of the same event and evaluate them."],"project":{"kind":"project","title":"Historiographical Essay","materials":["secondary sources from different periods or schools"],"steps":["Choose a historical topic","Find two or three interpretations from different schools","Compare their evidence, questions and conclusions","Write a 1500-word historiographical essay"]},"assessment":[{"id":"historical-thinking.s12.historiography.schools.q1","prompt":"Subaltern Studies focused on…","kind":"choice","options":["ordinary people outside the elite","kings only","space travel"],"answer":0},{"id":"historical-thinking.s12.historiography.schools.q2","prompt":"New evidence can change interpretations.","kind":"truefalse","answer":true},{"id":"historical-thinking.s12.historiography.schools.q3","prompt":"An explanation of the past based on evidence is an…","kind":"choice","options":["interpretation","artefact","inscription"],"answer":0}],"mastery":["Describes historiographical schools","Compares interpretations critically","Explains why history is rewritten"]}]},{"id":"historical-thinking.s12.uses-of-history","title":"Uses and Misuses of History","summary":"History in public life.","topics":[{"title":"Memory and monuments","subtopics":["Memory and monuments"]},{"title":"Myth vs history in politics","subtopics":["Myth vs history in politics"]},{"title":"Misinformation about the past","subtopics":["Misinformation about the past"]},{"title":"Ethical research","subtopics":["Ethical research"]}],"objectives":["Analyse how history is used in public life","Detect and respond to historical misinformation"],"masteryCriteria":["Analyses uses of history","Fact-checks historical claims","Conducts independent research ethically"],"revision":{"intervalsDays":[3,10,30,90],"notes":"Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."},"lessons":[{"id":"historical-thinking.s12.uses-of-history.history-today","title":"History in Public Life","skillId":"sk.historical-thinking.s12.uses-of-history.history-today","minutes":40,"objectives":["Analyse how history is used in public life","Detect and respond to historical misinformation"],"prerequisites":["Understands historiography"],"prerequisiteIds":[],"explanation":["History shapes identity: monuments, museums, festivals and textbooks tell stories about who we are. Choices about what to remember — and forget — matter.","History can be misused: selectively quoted, mixed with myth presented as fact, or used to spread hatred between groups. Viral posts often claim \"hidden history\" without evidence.","Responsible citizens check claims: Is there a primary source? What do professional historians say? Is a traditional story being presented as documented fact? Respecting both evidence and people's traditions requires care and honesty."],"context":[{"kind":"interpretation","text":"Debates about monuments, names and textbooks involve values as well as evidence; reasonable people can disagree about commemoration while agreeing on facts."},{"kind":"tradition","text":"Traditional narratives are valuable cultural heritage; problems arise when they are presented as documented history without evidence or used to demean others."}],"vocabulary":[{"term":"commemoration","meaning":"honouring the memory of events or people"},{"term":"misinformation","meaning":"false or misleading information"},{"term":"myth (in this sense)","meaning":"a widely believed but unsupported story"},{"term":"collective memory","meaning":"how a group remembers its past"}],"examples":["A viral claim about an ancient invention with no source.","Debates over renaming streets and cities."],"story":{"title":"The Viral Message","text":"Ivaan's uncle forwarded a message claiming an ancient king had invented aeroplanes, with a dramatic picture. Ivaan checked: the picture was a modern digital artwork, and historians found no evidence of the claim. He replied kindly with links to museum sources. His uncle wrote back, \"Thank you — I'll check before forwarding next time.\""},"activities":[{"id":"historical-thinking.s12.uses-of-history.history-today.a1","prompt":"A responsible response to a viral history claim:","kind":"choice","options":["check primary sources and historians' views","forward it immediately","believe it because it's exciting"],"answer":0},{"id":"historical-thinking.s12.uses-of-history.history-today.a2","prompt":"Match","kind":"match","pairs":[["commemoration","honouring memory"],["misinformation","false or misleading information"],["collective memory","how a group remembers"]]},{"id":"historical-thinking.s12.uses-of-history.history-today.a3","prompt":"Traditional stories should be distinguished from documented history.","kind":"truefalse","answer":true},{"id":"historical-thinking.s12.uses-of-history.history-today.a4","prompt":"History can be misused to…","kind":"choice","options":["spread hatred between groups","teach evidence-based thinking","preserve archives"],"answer":0}],"thinking":["Who should decide what a country remembers?","How can we respect traditions while insisting on evidence?"],"speaking":["Fact-check a historical claim with someone and explain your process respectfully."],"project":{"kind":"project","title":"Independent Research Project","materials":["archives","libraries","interviews (with consent)"],"steps":["Choose a local historical question","Gather primary and secondary sources","Evaluate reliability and interpretations","Present findings in a 2000-word report or exhibition with full citations"]},"assessment":[{"id":"historical-thinking.s12.uses-of-history.history-today.q1","prompt":"Honouring the memory of events or people is…","kind":"choice","options":["commemoration","propaganda","stratigraphy"],"answer":0},{"id":"historical-thinking.s12.uses-of-history.history-today.q2","prompt":"Claims about the past should be checked against evidence.","kind":"truefalse","answer":true},{"id":"historical-thinking.s12.uses-of-history.history-today.q3","prompt":"A \"hidden history\" post with no sources is likely…","kind":"choice","options":["unreliable","automatically true","a primary source"],"answer":0}],"mastery":["Analyses uses of history","Fact-checks historical claims","Conducts independent research ethically"]}]}]}]}
+{
+  "schemaVersion": 1,
+  "id": "historical-thinking",
+  "worldId": "time-tunnel",
+  "title": "Thinking Like a Historian",
+  "icon": "🔎",
+  "tagline": "Clues from the past",
+  "description": "How we know about the past: then and now, timelines, sources and evidence, archaeology, primary and secondary sources, bias and perspective, causation and change, and historiography. The skills that make all other history trustworthy.",
+  "contentVersion": "1.0.0",
+  "sensitivity": "history",
+  "stages": [
+    {
+      "stage": "s4",
+      "overview": "Then and now, old and new.",
+      "goals": [
+        "Talk about past and present",
+        "Compare old and new objects",
+        "Sequence events in their own life"
+      ],
+      "units": [
+        {
+          "id": "historical-thinking.s4.then-now",
+          "title": "Then and Now",
+          "summary": "Things change over time.",
+          "topics": [
+            {
+              "title": "Old and new toys, phones, transport",
+              "subtopics": [
+                "Old and new toys, phones, transport"
+              ]
+            },
+            {
+              "title": "Past, present, future",
+              "subtopics": [
+                "Past, present, future"
+              ]
+            },
+            {
+              "title": "Grandparents' memories",
+              "subtopics": [
+                "Grandparents' memories"
+              ]
+            }
+          ],
+          "objectives": [
+            "Sort objects into old and new",
+            "Use the words past, present and future"
+          ],
+          "masteryCriteria": [
+            "Uses past/present/future",
+            "Compares old and new",
+            "Asks elders about the past"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s4.then-now.old-new",
+              "title": "Old Things, New Things",
+              "skillId": "sk.historical-thinking.s4.then-now.old-new",
+              "minutes": 8,
+              "objectives": [
+                "Sort objects into old and new",
+                "Use the words past, present and future"
+              ],
+              "prerequisites": [
+                "Can talk about yesterday and today"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "The past is everything that has already happened. The present is now. The future is what hasn't happened yet.",
+                "Things change over time. Long ago, people listened to music on radios and record players; now we use phones. Grandparents wrote letters; now we send messages.",
+                "Old things are clues about the past. When we look at them, we learn how people used to live."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Objects from the past, such as old photographs and tools, are a kind of evidence that helps us learn about how people lived."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "past",
+                  "meaning": "what has already happened"
+                },
+                {
+                  "term": "present",
+                  "meaning": "now"
+                },
+                {
+                  "term": "future",
+                  "meaning": "what will happen"
+                },
+                {
+                  "term": "old",
+                  "meaning": "made a long time ago"
+                }
+              ],
+              "examples": [
+                "An old rotary telephone and a new smartphone.",
+                "A bullock cart and a car."
+              ],
+              "story": {
+                "title": "Grandpa's Treasure Box",
+                "text": "Grandpa opened a dusty box: a black-and-white photo, a heavy old radio, coins with holes in them. \"These are from when I was young,\" he said. Ivaan held up his tablet. \"And this is from now!\" Grandpa laughed. \"One day, your tablet will be in someone's treasure box.\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s4.then-now.old-new.a1",
+                  "prompt": "Old or new?",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "📻 old radio",
+                      "long ago"
+                    ],
+                    [
+                      "📱 smartphone",
+                      "now"
+                    ],
+                    [
+                      "🐂 bullock cart",
+                      "long ago, still used in some villages"
+                    ]
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s4.then-now.old-new.a2",
+                  "prompt": "Yesterday is in the…",
+                  "kind": "choice",
+                  "options": [
+                    "past",
+                    "present",
+                    "future"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s4.then-now.old-new.a3",
+                  "prompt": "Tomorrow is in the…",
+                  "kind": "choice",
+                  "options": [
+                    "past",
+                    "present",
+                    "future"
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "historical-thinking.s4.then-now.old-new.a4",
+                  "prompt": "Old objects can teach us about the past.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "What do you think will look old-fashioned in 50 years?",
+                "What would you put in a box to show children of the future?"
+              ],
+              "speaking": [
+                "Ask a grandparent or older person about one toy they had and tell a grown-up about it."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Then-and-Now Display",
+                "materials": [
+                  "old and new objects from home (with permission)",
+                  "labels"
+                ],
+                "steps": [
+                  "Collect pairs of old and new objects (or photos)",
+                  "Label each \"then\" or \"now\"",
+                  "Ask an elder about the old ones",
+                  "Show your display to the family"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s4.then-now.old-new.q1",
+                  "prompt": "Now is the…",
+                  "kind": "choice",
+                  "options": [
+                    "past",
+                    "present",
+                    "future"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "historical-thinking.s4.then-now.old-new.q2",
+                  "prompt": "Things change over time.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s4.then-now.old-new.q3",
+                  "prompt": "Which is older?",
+                  "kind": "choice",
+                  "options": [
+                    "a letter in an envelope",
+                    "a video call"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Uses past/present/future",
+                "Compares old and new",
+                "Asks elders about the past"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "historical-thinking.s4.my-story",
+          "title": "My Own History",
+          "summary": "Everyone has a history.",
+          "topics": [
+            {
+              "title": "Baby to now",
+              "subtopics": [
+                "Baby to now"
+              ]
+            },
+            {
+              "title": "Photos as clues",
+              "subtopics": [
+                "Photos as clues"
+              ]
+            },
+            {
+              "title": "Ordering events in my life",
+              "subtopics": [
+                "Ordering events in my life"
+              ]
+            }
+          ],
+          "objectives": [
+            "Order events from their own life",
+            "Use photos as clues about the past"
+          ],
+          "masteryCriteria": [
+            "Sequences personal events",
+            "Uses evidence like photos",
+            "Understands a timeline"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Revisit through play: replay one activity, retell the story, and do one hands-on task. Keep revision under 5 minutes."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s4.my-story.my-timeline",
+              "title": "My Timeline",
+              "skillId": "sk.historical-thinking.s4.my-story.my-timeline",
+              "minutes": 8,
+              "objectives": [
+                "Order events from their own life",
+                "Use photos as clues about the past"
+              ],
+              "prerequisites": [
+                "Knows past and present"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "You have a history too! It started when you were born. Things happened in order: you were a baby, you learned to walk, you started school.",
+                "Photos are clues. A baby photo shows what you looked like long ago.",
+                "A timeline is a line that shows events in the order they happened, from earliest to latest."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Photos, birth certificates and family memories are evidence of a person's own history."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "history",
+                  "meaning": "the story of the past"
+                },
+                {
+                  "term": "timeline",
+                  "meaning": "a line showing events in order"
+                },
+                {
+                  "term": "event",
+                  "meaning": "something that happens"
+                },
+                {
+                  "term": "clue",
+                  "meaning": "something that helps us find out"
+                }
+              ],
+              "examples": [
+                "Born → first steps → first word → started school.",
+                "A photo of your first birthday cake."
+              ],
+              "story": {
+                "title": "Momo's Photo Line",
+                "text": "Momo laid out photos on the floor: a tiny baby bear, a bear taking first wobbly steps, a bear on a tricycle, a bear in a school uniform. \"That's my whole history!\" said Momo. \"And there's lots more still to come.\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s4.my-story.my-timeline.a1",
+                  "prompt": "Put your life in order",
+                  "kind": "order",
+                  "items": [
+                    "born 👶",
+                    "learned to walk",
+                    "started school 🎒",
+                    "now"
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s4.my-story.my-timeline.a2",
+                  "prompt": "A timeline shows events…",
+                  "kind": "choice",
+                  "options": [
+                    "in order",
+                    "in a jumble",
+                    "in colours only"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s4.my-story.my-timeline.a3",
+                  "prompt": "Photos are clues about the past.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s4.my-story.my-timeline.a4",
+                  "prompt": "Which happened first in your life?",
+                  "kind": "choice",
+                  "options": [
+                    "being a baby",
+                    "going to school"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "How do you know what happened when you were a baby if you can't remember?",
+                "What would you like to add to your timeline next year?"
+              ],
+              "speaking": [
+                "Tell a grown-up about three events on your timeline in order."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "My Life Timeline",
+                "materials": [
+                  "a long paper strip",
+                  "photos or drawings",
+                  "glue"
+                ],
+                "steps": [
+                  "Collect 4–5 photos or draw pictures of your life",
+                  "Put them in order on a strip",
+                  "Ask a grown-up about events you don't remember",
+                  "Add labels and share"
+                ],
+                "safety": "Use only photos and details your family agrees to share. Do not include private information or post the timeline publicly without permission."
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s4.my-story.my-timeline.q1",
+                  "prompt": "Things that happened are…",
+                  "kind": "choice",
+                  "options": [
+                    "events",
+                    "colours",
+                    "toys"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s4.my-story.my-timeline.q2",
+                  "prompt": "A timeline goes from earliest to latest.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s4.my-story.my-timeline.q3",
+                  "prompt": "We can learn about when we were babies from…",
+                  "kind": "choice",
+                  "options": [
+                    "photos and family stories",
+                    "dreams only",
+                    "nothing"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Sequences personal events",
+                "Uses evidence like photos",
+                "Understands a timeline"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s5",
+      "overview": "Timelines and how we find out about the past.",
+      "goals": [
+        "Use a simple timeline with years",
+        "Know that we learn about the past from evidence",
+        "Ask questions about old objects"
+      ],
+      "units": [
+        {
+          "id": "historical-thinking.s5.timelines",
+          "title": "Timelines",
+          "summary": "Putting events in order with years.",
+          "topics": [
+            {
+              "title": "Years and decades",
+              "subtopics": [
+                "Years and decades"
+              ]
+            },
+            {
+              "title": "Long ago, not so long ago",
+              "subtopics": [
+                "Long ago, not so long ago"
+              ]
+            },
+            {
+              "title": "Family timeline",
+              "subtopics": [
+                "Family timeline"
+              ]
+            }
+          ],
+          "objectives": [
+            "Place family events on a timeline with years",
+            "Use words like decade and long ago"
+          ],
+          "masteryCriteria": [
+            "Uses years and periods",
+            "Constructs family timelines",
+            "Interprets chronology"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s5.timelines.family-timeline",
+              "title": "Family Timeline",
+              "skillId": "sk.historical-thinking.s5.timelines.family-timeline",
+              "minutes": 10,
+              "objectives": [
+                "Place family events on a timeline with years",
+                "Use words like decade and long ago"
+              ],
+              "prerequisites": [
+                "Makes a personal timeline"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "We measure time in years. Ten years is a decade. A hundred years is a century.",
+                "A family timeline can show when grandparents were born, when parents married, when you were born.",
+                "Things far to the left of a timeline happened long ago; things on the right happened recently."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Family records, documents and the memories of relatives help us place events on a family timeline."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "year",
+                  "meaning": "12 months"
+                },
+                {
+                  "term": "decade",
+                  "meaning": "10 years"
+                },
+                {
+                  "term": "century",
+                  "meaning": "100 years"
+                },
+                {
+                  "term": "long ago",
+                  "meaning": "a long time in the past"
+                }
+              ],
+              "examples": [
+                "Grandma born 1960 → Mama born 1990 → Ivaan born 2022.",
+                "2020 to 2030 is a decade."
+              ],
+              "story": {
+                "title": "Zuri's Family Line",
+                "text": "Zuri asked everyone their birth years and drew a long line on the wall. Great-Grandpa: 1935. Grandma: 1962. Mama: 1991. Zuri: 2021. \"Great-Grandpa was born almost 90 years before me!\" she gasped. \"He's seen so much history.\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s5.timelines.family-timeline.a1",
+                  "prompt": "A decade is…",
+                  "kind": "choice",
+                  "options": [
+                    "10 years",
+                    "100 years",
+                    "1 year"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s5.timelines.family-timeline.a2",
+                  "prompt": "Order these years",
+                  "kind": "order",
+                  "items": [
+                    "1935",
+                    "1962",
+                    "1991",
+                    "2021"
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s5.timelines.family-timeline.a3",
+                  "prompt": "A century is…",
+                  "kind": "choice",
+                  "options": [
+                    "10 years",
+                    "100 years",
+                    "1,000 years"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "historical-thinking.s5.timelines.family-timeline.a4",
+                  "prompt": "The left side of a timeline usually shows older events.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "What big changes might your grandparents have seen?",
+                "Why do historians use timelines?"
+              ],
+              "speaking": [
+                "Show your family timeline to someone and explain it."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Family Timeline Wall",
+                "materials": [
+                  "a long paper strip",
+                  "family photos or drawings",
+                  "markers"
+                ],
+                "steps": [
+                  "Ask family members for important dates",
+                  "Mark years along a strip",
+                  "Add events and photos",
+                  "Note one world event near each family event"
+                ],
+                "safety": "Ask relatives before using their names, dates or photographs. Share the timeline only with people your family is comfortable sharing it with."
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s5.timelines.family-timeline.q1",
+                  "prompt": "Which year is earliest?",
+                  "kind": "choice",
+                  "options": [
+                    "1950",
+                    "2000",
+                    "2024"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s5.timelines.family-timeline.q2",
+                  "prompt": "A century is 100 years.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s5.timelines.family-timeline.q3",
+                  "prompt": "Ten years is a…",
+                  "kind": "choice",
+                  "options": [
+                    "decade",
+                    "week",
+                    "century"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Uses years and periods",
+                "Constructs family timelines",
+                "Interprets chronology"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "historical-thinking.s5.evidence",
+          "title": "How Do We Know?",
+          "summary": "Evidence about the past.",
+          "topics": [
+            {
+              "title": "Objects, buildings, photos, writing, memories",
+              "subtopics": [
+                "Objects, buildings, photos, writing, memories"
+              ]
+            },
+            {
+              "title": "Asking questions",
+              "subtopics": [
+                "Asking questions"
+              ]
+            }
+          ],
+          "objectives": [
+            "Name kinds of evidence about the past",
+            "Ask questions about an old object"
+          ],
+          "masteryCriteria": [
+            "Identifies evidence types",
+            "Asks investigative questions",
+            "Links evidence to confidence"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              2,
+              4,
+              7,
+              14,
+              30
+            ],
+            "notes": "Short playful recall: replay activities, retell in own words, spot the idea in daily life."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s5.evidence.detective",
+              "title": "History Detectives",
+              "skillId": "sk.historical-thinking.s5.evidence.detective",
+              "minutes": 10,
+              "objectives": [
+                "Name kinds of evidence about the past",
+                "Ask questions about an old object"
+              ],
+              "prerequisites": [
+                "Knows old objects are clues"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Historians are like detectives. They look for evidence: old objects, buildings, photos, letters, diaries, coins and people's memories.",
+                "When you find an old object, ask questions: What is it made of? What was it for? Who used it? How old is it?",
+                "The more evidence we have, the more confident we can be about what happened."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Historians use many kinds of sources together; where evidence is limited, they say so rather than guessing."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "evidence",
+                  "meaning": "information that shows what happened"
+                },
+                {
+                  "term": "historian",
+                  "meaning": "a person who studies the past"
+                },
+                {
+                  "term": "source",
+                  "meaning": "where information comes from"
+                },
+                {
+                  "term": "artefact",
+                  "meaning": "an object made by people long ago"
+                }
+              ],
+              "examples": [
+                "An old coin showing a king's face.",
+                "A grandparent's memory of their school days."
+              ],
+              "story": {
+                "title": "The Mystery Object",
+                "text": "Professor Hoot showed the class a strange brass object with a long handle and holes. \"What is it?\" The children asked questions: \"Is it for cooking? For light?\" They examined it and asked an elder, who smiled: \"It's an old oil lamp holder from my grandmother's house!\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s5.evidence.detective.a1",
+                  "prompt": "Which is evidence about the past?",
+                  "kind": "choice",
+                  "options": [
+                    "an old coin",
+                    "a dream",
+                    "a cartoon"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s5.evidence.detective.a2",
+                  "prompt": "A historian is like a…",
+                  "kind": "choice",
+                  "options": [
+                    "detective",
+                    "chef",
+                    "pilot"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s5.evidence.detective.a3",
+                  "prompt": "More evidence makes us more confident.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s5.evidence.detective.a4",
+                  "prompt": "Match the evidence",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "letter",
+                      "writing"
+                    ],
+                    [
+                      "coin",
+                      "object"
+                    ],
+                    [
+                      "grandparent's story",
+                      "memory"
+                    ]
+                  ]
+                }
+              ],
+              "thinking": [
+                "Can memories ever be wrong?",
+                "What evidence of your life might historians find in 100 years?"
+              ],
+              "speaking": [
+                "Ask four questions about an old object to a grown-up."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Mystery Object Investigation",
+                "materials": [
+                  "an old object from home or a museum photo",
+                  "a question sheet"
+                ],
+                "steps": [
+                  "Look closely at the object",
+                  "Write or draw answers to: what, who, when, why",
+                  "Ask an elder or check a book",
+                  "Present your findings"
+                ],
+                "safety": "Choose a clean, sturdy object with no sharp edges, loose parts, batteries or breakable pieces. An adult should check it before the child handles it."
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s5.evidence.detective.q1",
+                  "prompt": "An object made by people long ago is an…",
+                  "kind": "choice",
+                  "options": [
+                    "artefact",
+                    "astronaut",
+                    "animal"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s5.evidence.detective.q2",
+                  "prompt": "Historians use evidence.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s5.evidence.detective.q3",
+                  "prompt": "Where information comes from is a…",
+                  "kind": "choice",
+                  "options": [
+                    "source",
+                    "toy",
+                    "road"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Identifies evidence types",
+                "Asks investigative questions",
+                "Links evidence to confidence"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s6",
+      "overview": "Primary and secondary sources, and archaeology.",
+      "goals": [
+        "Distinguish primary and secondary sources",
+        "Explain what archaeologists do",
+        "Use dates BCE and CE"
+      ],
+      "units": [
+        {
+          "id": "historical-thinking.s6.sources",
+          "title": "Primary and Secondary Sources",
+          "summary": "Sources from the time and sources about the time.",
+          "topics": [
+            {
+              "title": "Primary",
+              "subtopics": [
+                "diaries",
+                "photos",
+                "inscriptions"
+              ]
+            },
+            {
+              "title": "Secondary",
+              "subtopics": [
+                "textbooks",
+                "documentaries"
+              ]
+            },
+            {
+              "title": "Using both",
+              "subtopics": [
+                "Using both"
+              ]
+            }
+          ],
+          "objectives": [
+            "Classify sources as primary or secondary",
+            "Explain why historians use both"
+          ],
+          "masteryCriteria": [
+            "Classifies sources correctly",
+            "Explains uses of each",
+            "Recognises limits of sources"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s6.sources.primary-secondary",
+              "title": "From the Time or About the Time?",
+              "skillId": "sk.historical-thinking.s6.sources.primary-secondary",
+              "minutes": 15,
+              "objectives": [
+                "Classify sources as primary or secondary",
+                "Explain why historians use both"
+              ],
+              "prerequisites": [
+                "Knows kinds of evidence"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "A primary source was made at the time being studied: a diary, a photograph, a letter, an inscription, a coin.",
+                "A secondary source was made later by someone studying the past: a textbook, an encyclopedia, a documentary.",
+                "Historians use primary sources as evidence and secondary sources to learn what others have found. Both have strengths and limits."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Ashoka's rock edicts (3rd century BCE) are primary sources; modern history books about Ashoka are secondary sources."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "primary source",
+                  "meaning": "a source from the time being studied"
+                },
+                {
+                  "term": "secondary source",
+                  "meaning": "a source made later about the past"
+                },
+                {
+                  "term": "inscription",
+                  "meaning": "writing carved on stone or metal"
+                },
+                {
+                  "term": "edict",
+                  "meaning": "an official order"
+                }
+              ],
+              "examples": [
+                "Gandhi's letters: primary. A biography of Gandhi: secondary.",
+                "A photo of the 1947 Independence Day: primary."
+              ],
+              "story": {
+                "title": "The Emperor's Rock",
+                "text": "Over 2,200 years ago, Emperor Ashoka had his messages carved into rocks and pillars across his empire. Centuries later, people could no longer read the script. In 1837, James Prinsep deciphered the Brahmi script, and Ashoka's own words could be read again — a primary source speaking across time."
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s6.sources.primary-secondary.a1",
+                  "prompt": "Primary or secondary?",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "Ashoka's rock edict",
+                      "primary"
+                    ],
+                    [
+                      "a history textbook",
+                      "secondary"
+                    ],
+                    [
+                      "a soldier's diary from 1857",
+                      "primary, from the time"
+                    ]
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s6.sources.primary-secondary.a2",
+                  "prompt": "A documentary made today about the Mughals is…",
+                  "kind": "choice",
+                  "options": [
+                    "primary",
+                    "secondary"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "historical-thinking.s6.sources.primary-secondary.a3",
+                  "prompt": "Historians use both primary and secondary sources.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s6.sources.primary-secondary.a4",
+                  "prompt": "Writing carved on stone is an…",
+                  "kind": "choice",
+                  "options": [
+                    "inscription",
+                    "email",
+                    "poster"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Why might a diary not tell the whole story?",
+                "Can a secondary source become a primary source for later historians?"
+              ],
+              "speaking": [
+                "Show someone one primary and one secondary source about your family and explain the difference."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Source Sorting Activity",
+                "materials": [
+                  "a mix of items: old letters",
+                  "photos",
+                  "a textbook",
+                  "a newspaper",
+                  "a printed web article"
+                ],
+                "steps": [
+                  "Sort items into primary and secondary for a chosen topic",
+                  "Explain each choice",
+                  "Note one strength and one limit of each",
+                  "Present to family"
+                ],
+                "safety": "Use public or family-approved copies of sources. Do not share private letters, personal details or photographs without permission."
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s6.sources.primary-secondary.q1",
+                  "prompt": "A photograph taken in 1947 of a 1947 event is…",
+                  "kind": "choice",
+                  "options": [
+                    "primary",
+                    "secondary"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s6.sources.primary-secondary.q2",
+                  "prompt": "Ashoka's edicts were deciphered after the Brahmi script was decoded.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s6.sources.primary-secondary.q3",
+                  "prompt": "A biography written today is…",
+                  "kind": "choice",
+                  "options": [
+                    "primary",
+                    "secondary"
+                  ],
+                  "answer": 1
+                }
+              ],
+              "mastery": [
+                "Classifies sources correctly",
+                "Explains uses of each",
+                "Recognises limits of sources"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "historical-thinking.s6.archaeology",
+          "title": "Archaeology",
+          "summary": "Digging up the past.",
+          "topics": [
+            {
+              "title": "Excavation",
+              "subtopics": [
+                "Excavation"
+              ]
+            },
+            {
+              "title": "Layers (stratigraphy)",
+              "subtopics": [
+                "Layers (stratigraphy)"
+              ]
+            },
+            {
+              "title": "Dating",
+              "subtopics": [
+                "BCE and CE"
+              ]
+            },
+            {
+              "title": "Archaeological sites in India",
+              "subtopics": [
+                "Archaeological sites in India"
+              ]
+            }
+          ],
+          "objectives": [
+            "Explain how archaeologists excavate and record finds",
+            "Use BCE and CE dates correctly"
+          ],
+          "masteryCriteria": [
+            "Explains excavation methods",
+            "Applies stratigraphy",
+            "Uses BCE/CE correctly"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              14,
+              30
+            ],
+            "notes": "Mixed recall: answer without looking back, explain to a family member, then re-check weak items."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s6.archaeology.dig",
+              "title": "The Archaeologist's Dig",
+              "skillId": "sk.historical-thinking.s6.archaeology.dig",
+              "minutes": 15,
+              "objectives": [
+                "Explain how archaeologists excavate and record finds",
+                "Use BCE and CE dates correctly"
+              ],
+              "prerequisites": [
+                "Knows primary sources"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Archaeologists study the past through objects and remains left behind. They excavate carefully, layer by layer, recording exactly where each find is.",
+                "Usually, deeper layers are older — like a pile of newspapers where the oldest are at the bottom. This is called stratigraphy.",
+                "Dates are written BCE (Before Common Era) and CE (Common Era). 2500 BCE is earlier than 500 BCE. Counting goes backwards in BCE: the bigger the number, the older."
+              ],
+              "context": [
+                {
+                  "kind": "evidence",
+                  "text": "Excavations at sites like Harappa and Mohenjo-daro in the 1920s revealed the Indus (Harappan) Civilisation, flourishing around 2600–1900 BCE."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "archaeologist",
+                  "meaning": "a person who studies the past from objects and remains"
+                },
+                {
+                  "term": "excavate",
+                  "meaning": "dig carefully"
+                },
+                {
+                  "term": "stratigraphy",
+                  "meaning": "the study of layers in the ground"
+                },
+                {
+                  "term": "BCE",
+                  "meaning": "Before Common Era"
+                }
+              ],
+              "examples": [
+                "Pottery shards found in a deep layer are usually older than those above.",
+                "326 BCE is earlier than 26 CE."
+              ],
+              "story": {
+                "title": "The Buried City",
+                "text": "In the 1920s, archaeologists digging at Mohenjo-daro uncovered brick streets, drains and houses — a planned city more than 4,000 years old. No one had known it was there. Layer by layer, they revealed a whole civilisation that had been forgotten."
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s6.archaeology.dig.a1",
+                  "prompt": "Deeper layers are usually…",
+                  "kind": "choice",
+                  "options": [
+                    "older",
+                    "newer",
+                    "the same age"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s6.archaeology.dig.a2",
+                  "prompt": "Order from earliest to latest",
+                  "kind": "order",
+                  "items": [
+                    "2500 BCE",
+                    "1000 BCE",
+                    "100 CE",
+                    "1947 CE"
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s6.archaeology.dig.a3",
+                  "prompt": "Archaeologists dig…",
+                  "kind": "choice",
+                  "options": [
+                    "carefully, recording where things are found",
+                    "as fast as possible",
+                    "without notes"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s6.archaeology.dig.a4",
+                  "prompt": "Mohenjo-daro was excavated in the 1920s.",
+                  "kind": "truefalse",
+                  "answer": true
+                }
+              ],
+              "thinking": [
+                "Why must archaeologists record exactly where things are found?",
+                "Why is it wrong to dig up sites without permission?"
+              ],
+              "speaking": [
+                "Explain BCE and CE to someone with an example."
+              ],
+              "project": {
+                "kind": "experiment",
+                "title": "Layer Cake Dig",
+                "materials": [
+                  "a clear container",
+                  "layers of sand",
+                  "soil and gravel",
+                  "small \"artefacts\" (buttons",
+                  "coins)",
+                  "a spoon and brush"
+                ],
+                "steps": [
+                  "A grown-up builds layers with hidden objects",
+                  "Dig carefully, one layer at a time",
+                  "Record each find's layer",
+                  "Decide which objects are \"oldest\" and explain why"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s6.archaeology.dig.q1",
+                  "prompt": "Which is earlier?",
+                  "kind": "choice",
+                  "options": [
+                    "500 BCE",
+                    "500 CE"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s6.archaeology.dig.q2",
+                  "prompt": "Stratigraphy studies layers.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s6.archaeology.dig.q3",
+                  "prompt": "Archaeologists study…",
+                  "kind": "choice",
+                  "options": [
+                    "objects and remains from the past",
+                    "future weather",
+                    "space"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Explains excavation methods",
+                "Applies stratigraphy",
+                "Uses BCE/CE correctly"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s7",
+      "overview": "Perspectives, bias and reliability.",
+      "goals": [
+        "Compare different accounts of the same event",
+        "Identify bias and perspective",
+        "Evaluate the reliability of sources"
+      ],
+      "units": [
+        {
+          "id": "historical-thinking.s7.perspective",
+          "title": "Different Perspectives",
+          "summary": "The same event seen differently.",
+          "topics": [
+            {
+              "title": "Eyewitness accounts",
+              "subtopics": [
+                "Eyewitness accounts"
+              ]
+            },
+            {
+              "title": "Perspective",
+              "subtopics": [
+                "Perspective"
+              ]
+            },
+            {
+              "title": "Whose voices are missing?",
+              "subtopics": [
+                "Whose voices are missing?"
+              ]
+            }
+          ],
+          "objectives": [
+            "Compare two accounts of the same event",
+            "Identify whose voices may be missing"
+          ],
+          "masteryCriteria": [
+            "Compares accounts systematically",
+            "Identifies perspectives",
+            "Seeks missing voices"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s7.perspective.two-accounts",
+              "title": "Two Accounts of One Event",
+              "skillId": "sk.historical-thinking.s7.perspective.two-accounts",
+              "minutes": 20,
+              "objectives": [
+                "Compare two accounts of the same event",
+                "Identify whose voices may be missing"
+              ],
+              "prerequisites": [
+                "Distinguishes primary and secondary sources"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "People experience events differently depending on who they are and where they stand. A battle looks different to a soldier, a general, a farmer whose field was crossed, and a historian centuries later.",
+                "Comparing accounts helps us build a fuller picture. Where they agree, we can be more confident; where they differ, we ask why.",
+                "Many past records were written by rulers, officials or the wealthy. Historians ask: whose voices are missing — women, workers, children, enslaved people? They look for other sources like songs, oral histories and archaeology."
+              ],
+              "context": [
+                {
+                  "kind": "interpretation",
+                  "text": "Historians reconstruct the past by comparing perspectives; their accounts are interpretations based on evidence."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "perspective",
+                  "meaning": "a point of view"
+                },
+                {
+                  "term": "account",
+                  "meaning": "a description of events"
+                },
+                {
+                  "term": "eyewitness",
+                  "meaning": "a person who saw something happen"
+                },
+                {
+                  "term": "oral history",
+                  "meaning": "history passed on by speaking"
+                }
+              ],
+              "examples": [
+                "British and Indian accounts of 1857 described it very differently.",
+                "Folk songs preserving memories of famines."
+              ],
+              "story": {
+                "title": "The School Sports Day",
+                "text": "After sports day, the winning team wrote: \"A brilliant day of fair competition!\" The losing team wrote: \"The track was uneven and the referee missed a foul.\" A parent wrote about the heat. Professor Hoot said, \"Each account is true from where they stood. A historian uses all three.\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s7.perspective.two-accounts.a1",
+                  "prompt": "Why might two accounts of an event differ?",
+                  "kind": "choice",
+                  "options": [
+                    "people see it from different perspectives",
+                    "one must always be a lie",
+                    "events never happen"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s7.perspective.two-accounts.a2",
+                  "prompt": "Whose voices are often missing from old official records?",
+                  "kind": "choice",
+                  "options": [
+                    "ordinary people like workers and women",
+                    "kings",
+                    "officials"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s7.perspective.two-accounts.a3",
+                  "prompt": "Where accounts agree, historians can be more confident.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s7.perspective.two-accounts.a4",
+                  "prompt": "History passed on by speaking is…",
+                  "kind": "choice",
+                  "options": [
+                    "oral history",
+                    "archaeology",
+                    "a coin"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Is any account completely neutral?",
+                "How can historians learn about people who didn't write records?"
+              ],
+              "speaking": [
+                "Retell a family event from two different family members' perspectives."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Oral History Interview",
+                "materials": [
+                  "questions",
+                  "a recorder or notebook",
+                  "consent"
+                ],
+                "steps": [
+                  "Interview an elder about an event they remember",
+                  "Interview a second person about the same event",
+                  "Compare accounts",
+                  "Write what agrees, what differs and why"
+                ],
+                "safety": "Obtain informed consent, explain how the interview will be used, and allow the person to skip questions or stop. Keep recordings private and do not publish identifying details without permission."
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s7.perspective.two-accounts.q1",
+                  "prompt": "A point of view is a…",
+                  "kind": "choice",
+                  "options": [
+                    "perspective",
+                    "source",
+                    "date"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s7.perspective.two-accounts.q2",
+                  "prompt": "Comparing accounts helps build a fuller picture.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s7.perspective.two-accounts.q3",
+                  "prompt": "A person who saw an event is an…",
+                  "kind": "choice",
+                  "options": [
+                    "eyewitness",
+                    "archaeologist",
+                    "artefact"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Compares accounts systematically",
+                "Identifies perspectives",
+                "Seeks missing voices"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "historical-thinking.s7.reliability",
+          "title": "Can We Trust This Source?",
+          "summary": "Bias, purpose and reliability.",
+          "topics": [
+            {
+              "title": "Bias",
+              "subtopics": [
+                "Bias"
+              ]
+            },
+            {
+              "title": "Purpose and audience",
+              "subtopics": [
+                "Purpose and audience"
+              ]
+            },
+            {
+              "title": "Corroboration",
+              "subtopics": [
+                "Corroboration"
+              ]
+            },
+            {
+              "title": "Propaganda",
+              "subtopics": [
+                "Propaganda"
+              ]
+            }
+          ],
+          "objectives": [
+            "Identify bias in a source",
+            "Use the 5 Ws to evaluate reliability"
+          ],
+          "masteryCriteria": [
+            "Identifies bias and purpose",
+            "Uses corroboration",
+            "Evaluates reliability"
+          ],
+          "revision": {
+            "intervalsDays": [
+              1,
+              3,
+              7,
+              21,
+              45
+            ],
+            "notes": "Retrieval first, then review notes; interleave with other units; apply in a new example."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s7.reliability.bias-check",
+              "title": "Checking for Bias",
+              "skillId": "sk.historical-thinking.s7.reliability.bias-check",
+              "minutes": 20,
+              "objectives": [
+                "Identify bias in a source",
+                "Use the 5 Ws to evaluate reliability"
+              ],
+              "prerequisites": [
+                "Compares perspectives"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Bias is a one-sided view that may leave out or twist information. Every source has some perspective; biased sources aren't useless, but we must read them carefully.",
+                "Ask: Who made it? When? Why (purpose)? For whom (audience)? What does it leave out? A king's inscription may exaggerate his victories to impress his subjects.",
+                "Corroboration means checking a claim against other independent sources. Propaganda is deliberately misleading information spread to influence people."
+              ],
+              "context": [
+                {
+                  "kind": "interpretation",
+                  "text": "Royal inscriptions in many cultures, such as prashastis (praise poems) in Indian history, praised rulers; historians read them as valuable but partial evidence."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "bias",
+                  "meaning": "a one-sided view"
+                },
+                {
+                  "term": "purpose",
+                  "meaning": "why a source was made"
+                },
+                {
+                  "term": "corroboration",
+                  "meaning": "checking with other sources"
+                },
+                {
+                  "term": "propaganda",
+                  "meaning": "misleading information spread to influence people"
+                }
+              ],
+              "examples": [
+                "A victory inscription by a king, checked against coins and other records.",
+                "Wartime posters exaggerating the enemy's cruelty."
+              ],
+              "story": {
+                "title": "The Boastful Inscription",
+                "text": "An ancient inscription claimed a king had conquered \"the whole world\". Historians compared it with coins found only in a small region and records from neighbouring kingdoms. \"He was powerful,\" they concluded, \"but the whole world? That's the poet praising his patron.\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s7.reliability.bias-check.a1",
+                  "prompt": "Questions to check a source",
+                  "kind": "order",
+                  "items": [
+                    "Who made it?",
+                    "When?",
+                    "Why?",
+                    "For whom?",
+                    "What is left out?"
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s7.reliability.bias-check.a2",
+                  "prompt": "Checking a claim against other sources is…",
+                  "kind": "choice",
+                  "options": [
+                    "corroboration",
+                    "bias",
+                    "propaganda"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s7.reliability.bias-check.a3",
+                  "prompt": "A biased source can still be useful evidence.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s7.reliability.bias-check.a4",
+                  "prompt": "A praise poem written for a king may…",
+                  "kind": "choice",
+                  "options": [
+                    "exaggerate his achievements",
+                    "always be completely accurate",
+                    "have no author"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "How can a biased source still teach us something true?",
+                "Where do you see propaganda today?"
+              ],
+              "speaking": [
+                "Analyse an advertisement or old poster with someone, identifying its purpose and bias."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Source Reliability Report",
+                "materials": [
+                  "two sources on the same historical event (e.g. a textbook and a contemporary account)"
+                ],
+                "steps": [
+                  "Apply the five questions to each source",
+                  "Identify possible bias",
+                  "Corroborate one claim with a third source",
+                  "Write a short reliability report"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s7.reliability.bias-check.q1",
+                  "prompt": "Misleading information spread to influence people is…",
+                  "kind": "choice",
+                  "options": [
+                    "propaganda",
+                    "corroboration",
+                    "archaeology"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s7.reliability.bias-check.q2",
+                  "prompt": "Every source has a perspective.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s7.reliability.bias-check.q3",
+                  "prompt": "Why a source was made is its…",
+                  "kind": "choice",
+                  "options": [
+                    "purpose",
+                    "date",
+                    "material"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Identifies bias and purpose",
+                "Uses corroboration",
+                "Evaluates reliability"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s9",
+      "overview": "Causation, change and continuity, and significance.",
+      "goals": [
+        "Analyse causes and consequences",
+        "Distinguish change and continuity",
+        "Judge historical significance"
+      ],
+      "units": [
+        {
+          "id": "historical-thinking.s9.causes",
+          "title": "Cause and Consequence",
+          "summary": "Why things happened and what followed.",
+          "topics": [
+            {
+              "title": "Long-term and short-term causes",
+              "subtopics": [
+                "Long-term and short-term causes"
+              ]
+            },
+            {
+              "title": "Triggers",
+              "subtopics": [
+                "Triggers"
+              ]
+            },
+            {
+              "title": "Intended and unintended consequences",
+              "subtopics": [
+                "Intended and unintended consequences"
+              ]
+            }
+          ],
+          "objectives": [
+            "Distinguish long-term causes, short-term causes and triggers",
+            "Analyse intended and unintended consequences"
+          ],
+          "masteryCriteria": [
+            "Categorises causes",
+            "Analyses consequences",
+            "Weighs causes with evidence"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s9.causes.why-it-happened",
+              "title": "Why Did It Happen?",
+              "skillId": "sk.historical-thinking.s9.causes.why-it-happened",
+              "minutes": 30,
+              "objectives": [
+                "Distinguish long-term causes, short-term causes and triggers",
+                "Analyse intended and unintended consequences"
+              ],
+              "prerequisites": [
+                "Evaluates sources"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Historical events usually have many causes. Long-term causes build up over years (economic hardship, resentment); short-term causes appear close to the event; a trigger is the spark that sets it off.",
+                "The 1857 uprising had long-term causes (annexation of states, economic grievances, disrespect for traditions), and a trigger (rumours that new rifle cartridges were greased with animal fat offensive to Hindu and Muslim soldiers).",
+                "Consequences can be intended or unintended, short- or long-term. After 1857, the British Crown took direct control of India from the East India Company in 1858 — a major long-term consequence."
+              ],
+              "context": [
+                {
+                  "kind": "interpretation",
+                  "text": "Historians debate how to name 1857 — mutiny, revolt, uprising, or First War of Independence — and how to weigh its causes."
+                },
+                {
+                  "kind": "evidence",
+                  "text": "The Government of India Act 1858 transferred rule from the East India Company to the British Crown."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "cause",
+                  "meaning": "a reason something happened"
+                },
+                {
+                  "term": "consequence",
+                  "meaning": "a result"
+                },
+                {
+                  "term": "trigger",
+                  "meaning": "the immediate spark of an event"
+                },
+                {
+                  "term": "unintended",
+                  "meaning": "not planned"
+                }
+              ],
+              "examples": [
+                "Long-term: drought. Short-term: rising grain prices. Trigger: a new tax. Event: a protest.",
+                "Unintended consequence: a new road changing trade routes."
+              ],
+              "story": {
+                "title": "The Cartridge Rumour",
+                "text": "In 1857, sepoys heard that the cartridges for their new Enfield rifles, which had to be bitten open, were greased with cow and pig fat. Whether or not every rumour was true, it combined with years of grievances. In Meerut, soldiers rose up — and the revolt spread across northern India."
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s9.causes.why-it-happened.a1",
+                  "prompt": "Match the type of cause",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "years of economic hardship",
+                      "long-term cause"
+                    ],
+                    [
+                      "rising prices that month",
+                      "short-term cause"
+                    ],
+                    [
+                      "a sudden new tax",
+                      "trigger"
+                    ]
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s9.causes.why-it-happened.a2",
+                  "prompt": "After 1857, India came under the direct rule of…",
+                  "kind": "choice",
+                  "options": [
+                    "the British Crown",
+                    "the Mughals",
+                    "Portugal"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s9.causes.why-it-happened.a3",
+                  "prompt": "Historical events usually have several causes.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s9.causes.why-it-happened.a4",
+                  "prompt": "A result that was not planned is an…",
+                  "kind": "choice",
+                  "options": [
+                    "unintended consequence",
+                    "trigger",
+                    "primary source"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Is one cause ever the \"most important\"? How would you decide?",
+                "Why do historians argue about what to call 1857?"
+              ],
+              "speaking": [
+                "Explain the causes of an event (historical or personal) using long-term, short-term and trigger."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Causation Diagram",
+                "materials": [
+                  "large paper",
+                  "research sources"
+                ],
+                "steps": [
+                  "Choose a historical event",
+                  "Map long-term causes, short-term causes and the trigger",
+                  "Add consequences (intended and unintended)",
+                  "Write a paragraph judging the most significant cause"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s9.causes.why-it-happened.q1",
+                  "prompt": "The immediate spark of an event is the…",
+                  "kind": "choice",
+                  "options": [
+                    "trigger",
+                    "long-term cause",
+                    "consequence"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s9.causes.why-it-happened.q2",
+                  "prompt": "Historians debate names for the events of 1857.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s9.causes.why-it-happened.q3",
+                  "prompt": "A consequence is a…",
+                  "kind": "choice",
+                  "options": [
+                    "result",
+                    "cause",
+                    "source"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Categorises causes",
+                "Analyses consequences",
+                "Weighs causes with evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "historical-thinking.s9.change-continuity",
+          "title": "Change, Continuity and Significance",
+          "summary": "What changed, what stayed, and what mattered.",
+          "topics": [
+            {
+              "title": "Change and continuity over time",
+              "subtopics": [
+                "Change and continuity over time"
+              ]
+            },
+            {
+              "title": "Turning points",
+              "subtopics": [
+                "Turning points"
+              ]
+            },
+            {
+              "title": "Criteria for significance",
+              "subtopics": [
+                "Criteria for significance"
+              ]
+            }
+          ],
+          "objectives": [
+            "Identify change and continuity across a period",
+            "Apply criteria to judge historical significance"
+          ],
+          "masteryCriteria": [
+            "Identifies change and continuity",
+            "Applies significance criteria",
+            "Defends judgements with evidence"
+          ],
+          "revision": {
+            "intervalsDays": [
+              2,
+              7,
+              21,
+              60
+            ],
+            "notes": "Self-test, explain the reasoning aloud, connect to other subjects, and attempt a transfer problem."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s9.change-continuity.significance",
+              "title": "What Makes Something Significant?",
+              "skillId": "sk.historical-thinking.s9.change-continuity.significance",
+              "minutes": 30,
+              "objectives": [
+                "Identify change and continuity across a period",
+                "Apply criteria to judge historical significance"
+              ],
+              "prerequisites": [
+                "Analyses causation"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "History isn't only change. Continuity means things that stayed the same. Village life, family structures or festivals may continue for centuries while governments change.",
+                "A turning point is a moment when the direction of change shifted significantly — like independence in 1947.",
+                "Historians judge significance using criteria: How many people did it affect? How deeply? For how long? Does it help explain the present? Different criteria can lead to different judgements."
+              ],
+              "context": [
+                {
+                  "kind": "interpretation",
+                  "text": "Judgements of significance are reasoned interpretations; historians may rank events differently using different criteria."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "continuity",
+                  "meaning": "things staying the same over time"
+                },
+                {
+                  "term": "change",
+                  "meaning": "things becoming different"
+                },
+                {
+                  "term": "turning point",
+                  "meaning": "a moment of major change"
+                },
+                {
+                  "term": "significance",
+                  "meaning": "how important something is"
+                }
+              ],
+              "examples": [
+                "Railways in the 19th century: major change in travel.",
+                "Monsoon farming: strong continuity over centuries."
+              ],
+              "story": {
+                "title": "The Printing Press Debate",
+                "text": "A class debated: which was more significant — the printing press or the internet? One group argued the press spread knowledge to millions over centuries; another argued the internet connected billions in decades. The teacher smiled: \"You're both using criteria — scale, depth, duration. That's how historians think.\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s9.change-continuity.significance.a1",
+                  "prompt": "Change or continuity?",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "railways replacing bullock carts for long journeys",
+                      "change"
+                    ],
+                    [
+                      "families celebrating the same festival for centuries",
+                      "continuity"
+                    ],
+                    [
+                      "independence in 1947",
+                      "turning point"
+                    ]
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s9.change-continuity.significance.a2",
+                  "prompt": "A criterion for significance:",
+                  "kind": "choice",
+                  "options": [
+                    "how many people it affected",
+                    "its colour",
+                    "its spelling"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s9.change-continuity.significance.a3",
+                  "prompt": "Historians may disagree about significance.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s9.change-continuity.significance.a4",
+                  "prompt": "Things staying the same over time is…",
+                  "kind": "choice",
+                  "options": [
+                    "continuity",
+                    "revolution",
+                    "trigger"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "What is the most significant event of the last 100 years? Justify with criteria.",
+                "Why is continuity often overlooked?"
+              ],
+              "speaking": [
+                "Present a significance ranking of three events, explaining your criteria."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Significance Ranking Debate",
+                "materials": [
+                  "event cards",
+                  "criteria list",
+                  "a group"
+                ],
+                "steps": [
+                  "Choose 5 events from Indian or world history",
+                  "Score each on scale, depth, duration and relevance today",
+                  "Rank them",
+                  "Debate rankings with others"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s9.change-continuity.significance.q1",
+                  "prompt": "A moment of major change is a…",
+                  "kind": "choice",
+                  "options": [
+                    "turning point",
+                    "continuity",
+                    "source"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s9.change-continuity.significance.q2",
+                  "prompt": "Continuity is part of history too.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s9.change-continuity.significance.q3",
+                  "prompt": "Judging significance uses…",
+                  "kind": "choice",
+                  "options": [
+                    "criteria",
+                    "guesswork only",
+                    "coin tosses"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Identifies change and continuity",
+                "Applies significance criteria",
+                "Defends judgements with evidence"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "s12",
+      "overview": "Historiography and the uses of history.",
+      "goals": [
+        "Compare historians' interpretations",
+        "Analyse how history is used and misused",
+        "Conduct independent historical research"
+      ],
+      "units": [
+        {
+          "id": "historical-thinking.s12.historiography",
+          "title": "Historiography",
+          "summary": "The history of history-writing.",
+          "topics": [
+            {
+              "title": "Schools of interpretation",
+              "subtopics": [
+                "colonial",
+                "nationalist",
+                "Marxist",
+                "subaltern"
+              ]
+            },
+            {
+              "title": "Why interpretations change",
+              "subtopics": [
+                "Why interpretations change"
+              ]
+            }
+          ],
+          "objectives": [
+            "Describe major schools of Indian historiography",
+            "Explain why interpretations change over time"
+          ],
+          "masteryCriteria": [
+            "Describes historiographical schools",
+            "Compares interpretations critically",
+            "Explains why history is rewritten"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s12.historiography.schools",
+              "title": "Schools of Historical Interpretation",
+              "skillId": "sk.historical-thinking.s12.historiography.schools",
+              "minutes": 40,
+              "objectives": [
+                "Describe major schools of Indian historiography",
+                "Explain why interpretations change over time"
+              ],
+              "prerequisites": [
+                "Judges significance and causation"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "Historiography is the study of how history has been written. Interpretations change as new evidence appears and as historians ask new questions.",
+                "Colonial historians (like James Mill, 1817) often portrayed India's past in ways that justified British rule. Nationalist historians emphasised India's achievements and resistance. Marxist historians focused on economic structures and class.",
+                "The Subaltern Studies group (from the 1980s) focused on ordinary people — peasants, workers, tribal communities — often absent from elite records. Today, historians also write gender, environmental and global histories. No school has the final word."
+              ],
+              "context": [
+                {
+                  "kind": "interpretation",
+                  "text": "Each school offers insights and has been criticised; this lesson presents them for comparison, not endorsement."
+                },
+                {
+                  "kind": "evidence",
+                  "text": "James Mill's \"The History of British India\" (1817) divided Indian history into \"Hindu\", \"Muslim\" and \"British\" periods, a framework later historians have widely criticised."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "historiography",
+                  "meaning": "the study of how history is written"
+                },
+                {
+                  "term": "interpretation",
+                  "meaning": "an explanation of the past based on evidence"
+                },
+                {
+                  "term": "subaltern",
+                  "meaning": "a person or group outside the ruling elite"
+                },
+                {
+                  "term": "framework",
+                  "meaning": "a structure for organising ideas"
+                }
+              ],
+              "examples": [
+                "Mill's religious periodisation versus \"ancient, medieval, modern\".",
+                "Environmental histories of forests and famines."
+              ],
+              "story": {
+                "title": "The Changing Textbook",
+                "text": "A student compared history textbooks from the 1950s, 1980s and today about the same period. The emphasis, the heroes and even the names of events shifted. \"Did the past change?\" she asked. Her teacher replied, \"No — but our questions, evidence and perspectives did.\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s12.historiography.schools.a1",
+                  "prompt": "Match the school to its focus",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "colonial",
+                      "often justified British rule"
+                    ],
+                    [
+                      "nationalist",
+                      "India's achievements and resistance"
+                    ],
+                    [
+                      "Marxist",
+                      "economic structures and class"
+                    ],
+                    [
+                      "subaltern",
+                      "ordinary people outside the elite"
+                    ]
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s12.historiography.schools.a2",
+                  "prompt": "Historiography is…",
+                  "kind": "choice",
+                  "options": [
+                    "the study of how history is written",
+                    "the study of rocks",
+                    "a type of map"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s12.historiography.schools.a3",
+                  "prompt": "Interpretations of history change over time.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s12.historiography.schools.a4",
+                  "prompt": "James Mill's periodisation has been…",
+                  "kind": "choice",
+                  "options": [
+                    "widely criticised by later historians",
+                    "universally accepted",
+                    "never discussed"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Can history ever be completely objective?",
+                "How should we decide between competing interpretations?"
+              ],
+              "speaking": [
+                "Present two interpretations of the same event and evaluate them."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Historiographical Essay",
+                "materials": [
+                  "secondary sources from different periods or schools"
+                ],
+                "steps": [
+                  "Choose a historical topic",
+                  "Find two or three interpretations from different schools",
+                  "Compare their evidence, questions and conclusions",
+                  "Write a 1500-word historiographical essay"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s12.historiography.schools.q1",
+                  "prompt": "Subaltern Studies focused on…",
+                  "kind": "choice",
+                  "options": [
+                    "ordinary people outside the elite",
+                    "kings only",
+                    "space travel"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s12.historiography.schools.q2",
+                  "prompt": "New evidence can change interpretations.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s12.historiography.schools.q3",
+                  "prompt": "An explanation of the past based on evidence is an…",
+                  "kind": "choice",
+                  "options": [
+                    "interpretation",
+                    "artefact",
+                    "inscription"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Describes historiographical schools",
+                "Compares interpretations critically",
+                "Explains why history is rewritten"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "historical-thinking.s12.uses-of-history",
+          "title": "Uses and Misuses of History",
+          "summary": "History in public life.",
+          "topics": [
+            {
+              "title": "Memory and monuments",
+              "subtopics": [
+                "Memory and monuments"
+              ]
+            },
+            {
+              "title": "Myth vs history in politics",
+              "subtopics": [
+                "Myth vs history in politics"
+              ]
+            },
+            {
+              "title": "Misinformation about the past",
+              "subtopics": [
+                "Misinformation about the past"
+              ]
+            },
+            {
+              "title": "Ethical research",
+              "subtopics": [
+                "Ethical research"
+              ]
+            }
+          ],
+          "objectives": [
+            "Analyse how history is used in public life",
+            "Detect and respond to historical misinformation"
+          ],
+          "masteryCriteria": [
+            "Analyses uses of history",
+            "Fact-checks historical claims",
+            "Conducts independent research ethically"
+          ],
+          "revision": {
+            "intervalsDays": [
+              3,
+              10,
+              30,
+              90
+            ],
+            "notes": "Spaced retrieval with written explanations, peer-teaching, and an extension question each cycle."
+          },
+          "lessons": [
+            {
+              "id": "historical-thinking.s12.uses-of-history.history-today",
+              "title": "History in Public Life",
+              "skillId": "sk.historical-thinking.s12.uses-of-history.history-today",
+              "minutes": 40,
+              "objectives": [
+                "Analyse how history is used in public life",
+                "Detect and respond to historical misinformation"
+              ],
+              "prerequisites": [
+                "Understands historiography"
+              ],
+              "prerequisiteIds": [],
+              "explanation": [
+                "History shapes identity: monuments, museums, festivals and textbooks tell stories about who we are. Choices about what to remember — and forget — matter.",
+                "History can be misused: selectively quoted, mixed with myth presented as fact, or used to spread hatred between groups. Viral posts often claim \"hidden history\" without evidence.",
+                "Responsible citizens check claims: Is there a primary source? What do professional historians say? Is a traditional story being presented as documented fact? Respecting both evidence and people's traditions requires care and honesty."
+              ],
+              "context": [
+                {
+                  "kind": "interpretation",
+                  "text": "Debates about monuments, names and textbooks involve values as well as evidence; reasonable people can disagree about commemoration while agreeing on facts."
+                },
+                {
+                  "kind": "tradition",
+                  "text": "Traditional narratives are valuable cultural heritage; problems arise when they are presented as documented history without evidence or used to demean others."
+                }
+              ],
+              "vocabulary": [
+                {
+                  "term": "commemoration",
+                  "meaning": "honouring the memory of events or people"
+                },
+                {
+                  "term": "misinformation",
+                  "meaning": "false or misleading information"
+                },
+                {
+                  "term": "myth (in this sense)",
+                  "meaning": "a widely believed but unsupported story"
+                },
+                {
+                  "term": "collective memory",
+                  "meaning": "how a group remembers its past"
+                }
+              ],
+              "examples": [
+                "A viral claim about an ancient invention with no source.",
+                "Debates over renaming streets and cities."
+              ],
+              "story": {
+                "title": "The Viral Message",
+                "text": "Ivaan's uncle forwarded a message claiming an ancient king had invented aeroplanes, with a dramatic picture. Ivaan checked: the picture was a modern digital artwork, and historians found no evidence of the claim. He replied kindly with links to museum sources. His uncle wrote back, \"Thank you — I'll check before forwarding next time.\""
+              },
+              "activities": [
+                {
+                  "id": "historical-thinking.s12.uses-of-history.history-today.a1",
+                  "prompt": "A responsible response to a viral history claim:",
+                  "kind": "choice",
+                  "options": [
+                    "check primary sources and historians' views",
+                    "forward it immediately",
+                    "believe it because it's exciting"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s12.uses-of-history.history-today.a2",
+                  "prompt": "Match",
+                  "kind": "match",
+                  "pairs": [
+                    [
+                      "commemoration",
+                      "honouring memory"
+                    ],
+                    [
+                      "misinformation",
+                      "false or misleading information"
+                    ],
+                    [
+                      "collective memory",
+                      "how a group remembers"
+                    ]
+                  ]
+                },
+                {
+                  "id": "historical-thinking.s12.uses-of-history.history-today.a3",
+                  "prompt": "Traditional stories should be distinguished from documented history.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s12.uses-of-history.history-today.a4",
+                  "prompt": "History can be misused to…",
+                  "kind": "choice",
+                  "options": [
+                    "spread hatred between groups",
+                    "teach evidence-based thinking",
+                    "preserve archives"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "thinking": [
+                "Who should decide what a country remembers?",
+                "How can we respect traditions while insisting on evidence?"
+              ],
+              "speaking": [
+                "Fact-check a historical claim with someone and explain your process respectfully."
+              ],
+              "project": {
+                "kind": "project",
+                "title": "Independent Research Project",
+                "materials": [
+                  "archives",
+                  "libraries",
+                  "interviews (with consent)"
+                ],
+                "steps": [
+                  "Choose a local historical question",
+                  "Gather primary and secondary sources",
+                  "Evaluate reliability and interpretations",
+                  "Present findings in a 2000-word report or exhibition with full citations"
+                ]
+              },
+              "assessment": [
+                {
+                  "id": "historical-thinking.s12.uses-of-history.history-today.q1",
+                  "prompt": "Honouring the memory of events or people is…",
+                  "kind": "choice",
+                  "options": [
+                    "commemoration",
+                    "propaganda",
+                    "stratigraphy"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "historical-thinking.s12.uses-of-history.history-today.q2",
+                  "prompt": "Claims about the past should be checked against evidence.",
+                  "kind": "truefalse",
+                  "answer": true
+                },
+                {
+                  "id": "historical-thinking.s12.uses-of-history.history-today.q3",
+                  "prompt": "A \"hidden history\" post with no sources is likely…",
+                  "kind": "choice",
+                  "options": [
+                    "unreliable",
+                    "automatically true",
+                    "a primary source"
+                  ],
+                  "answer": 0
+                }
+              ],
+              "mastery": [
+                "Analyses uses of history",
+                "Fact-checks historical claims",
+                "Conducts independent research ethically"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
