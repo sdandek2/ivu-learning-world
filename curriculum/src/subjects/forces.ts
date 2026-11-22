@@ -89,7 +89,7 @@ export default subject({
           ],
           t: ['Why don\'t we see shadows on a cloudy day?', 'Can you make a shadow with a glass of water? Why or why not?'],
           k: ['Make hand shadow animals and explain how they are made.'],
-          m: ['🧪 Shadow Puppet Theatre', 'card, scissors, sticks, a torch, a white sheet or wall', 'Cut animal shapes from card and tape them to sticks | Shine a torch at the wall in a dark room | Hold puppets between the torch and wall | Make shadows grow and shrink and tell a story'],
+          m: ['🧪 Shadow Puppet Theatre', 'card, scissors, sticks, a torch, a white sheet or wall', 'Cut animal shapes from card and tape them to sticks | Shine a torch at the wall in a dark room | Hold puppets between the torch and wall | Make shadows grow and shrink and tell a story', "Use child-safe scissors with adult supervision. Keep the torch pointed at the wall, never into anyone's eyes, and keep the floor clear in a dim room."],
           q: [
             ch('Light travels in…', '*straight lines|circles|zigzags'),
             ch('The Moon shines because it…', 'makes its own light|*reflects sunlight|is on fire'),
@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Why do you think a huge ship floats but a tiny pebble sinks?', 'Do things float more easily in salty water? How could you find out?'],
           k: ['Predict whether five objects will float or sink, test them, and explain any surprises.'],
-          m: ['🧪 Float or Sink Investigation', 'a bowl of water, 10 objects, clay or foil, a results table', 'Predict float or sink for each object | Test and record | Shape foil or clay into a boat | Count how many coins your boat can carry before sinking'],
+          m: ['🧪 Float or Sink Investigation', 'a bowl of water, 10 objects, clay or foil, a results table', 'Predict float or sink for each object | Test and record | Shape foil or clay into a boat | Count how many coins your boat can carry before sinking', "Use a shallow bowl and supervise children around water. Do not use small objects that could be swallowed; empty the bowl immediately after the activity."],
           q: [
             ch('Which sinks?', 'cork|leaf|*coin'),
             tf('Gravity pulls a floating object down too.', true),
@@ -243,7 +243,7 @@ export default subject({
           ],
           t: ['Why do you only see a rainbow when the Sun is behind you?', 'Why does writing look backwards in a mirror?'],
           k: ['Explain to someone why a pencil looks bent in a glass of water.'],
-          m: ['🧪 Make a Rainbow and a Periscope', 'a glass of water, a sunny window, white paper; a long box, two small mirrors, tape', 'Place the glass on a sunny windowsill with paper below and find the spectrum | Build a periscope with two mirrors angled at 45° in a box | Use it to see over a table | Explain the light path with a diagram'],
+          m: ['🧪 Make a Rainbow and a Periscope', 'a glass of water, a sunny window, white paper; a long box, two small mirrors, tape', 'Place the glass on a sunny windowsill with paper below and find the spectrum | Build a periscope with two mirrors angled at 45° in a box | Use it to see over a table | Explain the light path with a diagram', "An adult should handle the glass and mirrors. Keep glass on a stable surface, never look directly at the Sun, and use the mirror only to view reflected light away from eyes."],
           q: [
             ch('Bending of light is called…', 'reflection|*refraction|absorption'),
             ch('A prism splits white light into a…', '*spectrum|shadow|reflection'),
