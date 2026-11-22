@@ -1,63 +1,188 @@
 {
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T08:59:15.562Z",
+ "generatedAt": "2026-11-22T09:15:08.299Z",
  "totals": {
-  "units": 13,
-  "lessons": 13,
-  "items": 92,
-  "subjectsComplete": 1,
+  "units": 73,
+  "lessons": 73,
+  "items": 512,
+  "subjectsComplete": 6,
   "subjectsInvalid": 0,
-  "subjectsRemaining": 59
+  "subjectsRemaining": 54
  },
  "subjects": [
   {
    "subject": "phonics",
    "world": "word-woods",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "writing",
    "world": "word-woods",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "vocabulary",
    "world": "word-woods",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "stories",
    "world": "word-woods",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {
    "subject": "speaking",
    "world": "word-woods",
-   "status": "not-started",
-   "stages": {},
-   "units": 0,
-   "lessons": 0,
-   "items": 0,
+   "status": "complete",
+   "stages": {
+    "s4": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s5": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s6": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s7": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s9": {
+     "units": 2,
+     "lessons": 2
+    },
+    "s12": {
+     "units": 2,
+     "lessons": 2
+    }
+   },
+   "units": 12,
+   "lessons": 12,
+   "items": 84,
    "problems": []
   },
   {

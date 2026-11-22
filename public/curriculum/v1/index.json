@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "contentVersion": "1.0.0",
- "generatedAt": "2026-11-22T08:59:15.562Z",
+ "generatedAt": "2026-11-22T09:15:08.299Z",
  "stages": [
   {
    "id": "s4",
@@ -66,45 +66,45 @@
      "title": "Phonics & Reading",
      "icon": "🔤",
      "tagline": "Sounds become words",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/phonics.json"
     },
     {
      "id": "writing",
      "title": "Writing & Handwriting",
      "icon": "✏️",
      "tagline": "Make your marks",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/writing.json"
     },
     {
      "id": "vocabulary",
      "title": "Vocabulary & Grammar",
      "icon": "📚",
      "tagline": "Words and how they fit",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/vocabulary.json"
     },
     {
      "id": "stories",
      "title": "Stories & Literature",
      "icon": "📖",
      "tagline": "Enter other worlds",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/stories.json"
     },
     {
      "id": "speaking",
      "title": "Speaking & Listening",
      "icon": "🗣️",
      "tagline": "Say it, hear it, share it",
-     "units": 0,
-     "lessons": 0,
-     "file": ""
+     "units": 12,
+     "lessons": 12,
+     "file": "subjects/speaking.json"
     }
    ]
   },
