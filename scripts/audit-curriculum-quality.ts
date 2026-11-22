@@ -16,7 +16,7 @@ import type { RawItem, RawSubject, RawLesson } from '../curriculum/src/dsl.ts';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sourceDir = join(root, 'curriculum/src/subjects');
 const stageOrder = ['s4', 's5', 's6', 's7', 's9', 's12'] as const;
-const SAFETY_RISK = /\b(coin battery|button cell|batter(?:y|ies)|wall socket|mains power|plug|live wire|hot water|boiling|flame|fire|knife|needle|scissors?|cut in half|carve|pinholes?|sharp tool|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|marbles?|pebbles?)\b/i;
+const SAFETY_RISK = /\b(coin battery|button cell|batter(?:y|ies)|wall socket|mains power|plug|live wire|hot water|boiling|flame|fire|knife|needle|scissors?|cut in half|cut out|carve|split pin|pins?|pinholes?|sharp tool|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|marbles?|pebbles?)\b/i;
 const PRIVACY_RISK = /\b(full address|family photos|family tree|recording device|interview|survey|personal details|travel log|electricity bill)\b/i;
 
 type Finding = {
