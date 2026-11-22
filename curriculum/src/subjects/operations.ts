@@ -244,7 +244,7 @@ export default subject({
           k: ['Teach someone column subtraction for 72 − 38, explaining the exchange step.'],
           m: ['Base-Ten Bank', 'paper strips (hundreds), sticks (tens), dots or beans (ones)', 'Make paper "base ten" pieces | Model 342 − 167 with the pieces, exchanging physically | Write the column method alongside | Check with addition'],
           q: [
-            ct('91 − 46 = ?', 45, 'Exchange one ten: 91 − 46 = 45.'),
+            tf('91 − 46 = 45.', true, 'Exchange one ten: 91 − 46 = 45.'),
             tf('45 + 75 = 120 is a correct check for 120 − 75 = 45.', true, 'Addition reverses subtraction: 45 + 75 = 120.'),
             ch('346 − 129 = ?', '227|*217|223'),
           ],
