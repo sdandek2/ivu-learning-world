@@ -118,7 +118,7 @@ async function main() {
         subject: meta.id,
         lessons: subjectLessons,
         reviewFindings: findings.length - before,
-        feedbackCoverage: subjectItems ? `${Math.round(subjectItemsWithWhy / subjectItems * 100)}% of interactive items` : 'no items',
+        itemSpecificFeedbackCoverage: subjectItems ? `${Math.round(subjectItemsWithWhy / subjectItems * 100)}% of interactive items` : 'no items',
       });
     }
   }
@@ -130,10 +130,11 @@ async function main() {
     averageStoryWords: average(metric.storyWords),
     minStoryWords: metric.storyWords.length ? Math.min(...metric.storyWords) : 0,
     interactiveItems: metric.items,
-    itemsWithExplanatoryFeedback: metric.itemsWithWhy,
-    feedbackCoveragePercent: metric.items ? Math.round(metric.itemsWithWhy / metric.items * 100) : 0,
-    lessonsWithAnyExplanatoryFeedback: metric.lessonsWithWhy,
-    lessonsWithNoExplanatoryFeedback: metric.lessonsWithoutWhy,
+    itemsWithItemSpecificRationale: metric.itemsWithWhy,
+    itemSpecificFeedbackCoveragePercent: metric.items ? Math.round(metric.itemsWithWhy / metric.items * 100) : 0,
+    lessonsWithItemSpecificRationale: metric.lessonsWithWhy,
+    lessonsWithoutItemSpecificRationale: metric.lessonsWithoutWhy,
+    lessonContextFallbackCoveragePercent: metric.lessons ? 100 : 0,
   });
 
   const countsByCode = Object.fromEntries([...new Set(findings.map((finding) => finding.code))].sort().map((code) => [code, findings.filter((finding) => finding.code === code).length]));
@@ -168,18 +169,19 @@ async function main() {
     '| Category | Count |', '|---|---:|',
     ...Object.entries(countsByCode).map(([code, count]) => `| ${code} | ${count} |`), '',
     '## Curriculum-wide metrics', '',
-    `- Explanatory feedback is present on ${report.totals.feedbackCoveragePercent}% of interactive items.`,
-    `- ${total.lessonsWithoutWhy} lessons have no item-level explanatory feedback.`,
+    `- Item-specific authored rationales are present on ${report.totals.itemSpecificFeedbackCoveragePercent}% of interactive items.`,
+    `- All ${total.lessons} lessons provide authored explanation text, which the lesson player uses as contextual feedback when an item has no specific rationale.`,
+    `- ${total.lessonsWithoutWhy} lessons have no item-specific rationale; this is distinct from the contextual fallback described above.`, 
     `- Average explanation length: ${report.overall.averageExplanationWords} words; average story length: ${report.overall.averageStoryWords} words.`, '',
     '## Developmental-stage metrics', '',
     '| Stage | Lessons | Avg explanation words | Avg story words | Feedback coverage |', '|---|---:|---:|---:|---:|',
     ...stageOrder.map((stage) => {
       const m = report.stages[stage];
-      return `| ${stage} | ${m.lessons} | ${m.averageExplanationWords} | ${m.averageStoryWords} | ${m.feedbackCoveragePercent}% |`;
+      return `| ${stage} | ${m.lessons} | ${m.averageExplanationWords} | ${m.averageStoryWords} | ${m.itemSpecificFeedbackCoveragePercent}% | ${m.lessonContextFallbackCoveragePercent}% |`;
     }), '',
     '## Subject metrics', '',
     '| Subject | Lessons | Review findings | Feedback coverage |', '|---|---:|---:|---:|',
-    ...subjectStats.map((row) => `| ${row.subject} | ${row.lessons} | ${row.reviewFindings} | ${row.feedbackCoverage} |`), '',
+    ...subjectStats.map((row) => `| ${row.subject} | ${row.lessons} | ${row.reviewFindings} | ${row.itemSpecificFeedbackCoverage} |`), '',
     '## Findings', '',
     ...(findings.length
       ? findings.map((finding) => `- **[${finding.code}] ${finding.subject} / ${finding.stage} — ${finding.lessonTitle}** (${finding.lessonId}): ${finding.detail}`)
