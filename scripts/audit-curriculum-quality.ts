@@ -16,7 +16,8 @@ import type { RawItem, RawSubject, RawLesson } from '../curriculum/src/dsl.ts';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sourceDir = join(root, 'curriculum/src/subjects');
 const stageOrder = ['s4', 's5', 's6', 's7', 's9', 's12'] as const;
-const SAFETY_RISK = /\b(coin battery|button cell|batter(?:y|ies)|electric(?:ity)?|wall socket|plug|hot water|hot|boil|flame|fire|knife|needle|scissors?|cut|glass|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|mirror|marbles?|pebbles?)\b/i;
+const SAFETY_RISK = /\b(coin battery|button cell|batter(?:y|ies)|wall socket|mains power|plug|live wire|hot water|boiling|flame|fire|knife|needle|scissors?|cut in half|carve|pinholes?|sharp tool|vinegar|baking soda|blender|grater|syringe|tweezers|iron nail|first aid|real candle|diya|torch|marbles?|pebbles?)\b/i;
+const PRIVACY_RISK = /\b(full address|family photos|family tree|recording device|interview|survey|personal details|travel log|electricity bill)\b/i;
 
 type Finding = {
   subject: string;
@@ -94,8 +95,12 @@ async function main() {
             if (assessments.length >= 3 && kindCount(assessments) === 1) {
               add('assessment-variety', `All ${assessments.length} assessment items use the same interaction type (${assessments[0].kind}). Consider another way to demonstrate understanding.`);
             }
-            if (SAFETY_RISK.test(projectText) && !projectSafety) {
-              add('project-safety', 'Project materials or steps mention a potential hazard but have no explicit safety guidance. Add age-appropriate adult-supervision and handling instructions.');
+            const safetyMatch = projectText.match(SAFETY_RISK);
+            if (safetyMatch && !projectSafety) {
+              add('project-safety', \`Project mentions “\${safetyMatch[0]}” but has no explicit safety guidance. Add age-appropriate adult-supervision and handling instructions.\`);
+            }
+            if (PRIVACY_RISK.test(projectText) && !projectSafety) {
+              add('project-privacy', 'Project uses personal, family, interview or survey information but has no explicit consent and privacy guidance.');
             }
             const steps = projectSteps.split('|').map((step) => step.trim()).filter(Boolean);
             if (steps.length < 3) {
