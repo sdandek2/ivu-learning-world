@@ -118,7 +118,7 @@ export default subject({
           ],
           t: ['Why do you think the hour hand moves so slowly?', 'What would happen if clocks had no numbers?'],
           k: ['Show times on a toy clock and tell someone what you usually do at each time.'],
-          m: ['Paper Plate Clock', 'paper plate, card, split pin, pen', 'Write 1–12 around the plate | Cut a short and long hand and fix them with a split pin | Show the times of your meals and bedtime | Quiz a family member'],
+          m: ['Paper Plate Clock', 'paper plate, card, split pin, pen', 'Write 1–12 around the plate | Cut a short and long hand and fix them with a split pin | Show the times of your meals and bedtime | Quiz a family member', "An adult should attach the split pin and check that no sharp point is exposed. Use child-safe scissors with supervision."],
           q: [
             ch('Long hand on 12, short hand on 10. Time?', '*10 o\'clock|12 o\'clock|half past 10'),
             ch('Half past 1: the long hand points to…', '12|*6|1'),
