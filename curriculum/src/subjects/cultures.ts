@@ -186,7 +186,7 @@ export default subject({
           ],
           t: ['Why might simple shapes be powerful in art?', 'What would a home designed for your city\'s climate look like?'],
           k: ['Show someone a Warli or Madhubani-style drawing you made and explain the style.'],
-          m: ['Warli Art Painting', 'brown or red paper, white paint or chalk, a thin brush or cotton bud', 'Practise drawing people with two triangles and a circle | Plan a scene from daily life (dancing, farming, a festival) | Paint it in white | Explain the tradition behind it'],
+          m: ['Warli Art Painting', 'brown or red paper, white paint or chalk, a thin brush or cotton bud', 'Practise drawing people with two triangles and a circle | Plan a scene from daily life (dancing, farming, a festival) | Paint it in white | Explain the tradition behind it', "Use non-toxic, washable paint and protect clothing and surfaces. Do not taste paint; wash hands after the activity."],
           q: [
             ch('Madhubani art is from…', '*Bihar|Kerala|Punjab'),
             tf('Folk art traditions are passed down through communities.', true),
@@ -284,7 +284,7 @@ export default subject({
           ],
           t: ['What parts of your culture would a visitor not notice at first?', 'How do your identities change in different places?'],
           k: ['Describe your own "identity layers" to someone.'],
-          m: ['My Culture Iceberg', 'paper, pens', 'Draw an iceberg with a waterline | Above: things others can see about your culture | Below: values and beliefs | Interview a friend from a different background and compare icebergs respectfully'],
+          m: ['My Culture Iceberg', 'paper, pens', 'Draw an iceberg with a waterline | Above: things others can see about your culture | Below: values and beliefs | Interview a friend from a different background and compare icebergs respectfully', "Share only what you feel comfortable sharing. Ask permission before discussing another person's background and do not record or publish private details."],
           q: [
             ch('Which is below the surface of the iceberg?', '*values|clothing|food'),
             tf('Identity can be layered.', true),
