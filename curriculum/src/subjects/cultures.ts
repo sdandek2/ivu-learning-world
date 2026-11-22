@@ -92,7 +92,7 @@ export default subject({
           ],
           t: ['Why might the same festival have different stories?', 'What values do many festivals share?'],
           k: ['Retell the story behind a festival your family celebrates.'],
-          m: ['Festival Story Book', 'paper, crayons, stapler', 'Choose four festivals from different traditions | Ask family or friends about their meaning | Draw one page for each with its story | Read your book to someone'],
+          m: ['Festival Story Book', 'paper, crayons, stapler', 'Choose four festivals from different traditions | Ask family or friends about their meaning | Draw one page for each with its story | Read your book to someone', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from children."],
           q: [
             ch('Bandi Chhor Divas is celebrated by…', '*Sikhs|Christians|Buddhists'),
             tf('Charity is an important part of Eid.', true),
