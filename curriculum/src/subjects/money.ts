@@ -90,7 +90,7 @@ export default subject({
           ],
           t: ['Can something be a need for one person and a want for another?', 'How does it feel to wait for a want?'],
           k: ['Sort ten things in your home into needs and wants with a grown-up.'],
-          m: ['Needs and Wants Collage', 'old magazines or drawings, paper, glue', 'Divide paper into "Needs" and "Wants" | Cut out or draw items | Stick them on the correct side | Talk about any tricky ones'],
+          m: ['Needs and Wants Collage', 'old magazines or drawings, paper, glue', 'Divide paper into "Needs" and "Wants" | Cut out or draw items | Stick them on the correct side | Talk about any tricky ones', "Use child-safe scissors with adult supervision and non-toxic glue. Keep small cut-outs away from younger children."],
           q: [
             ch('Which is a need?', '*clean water|candy|a balloon'),
             tf('Families buy needs before wants when money is limited.', true),
