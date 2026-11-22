@@ -180,7 +180,7 @@ export default subject({
           ],
           t: ['Why might English use a silent e instead of a new letter for long sounds?', 'Can you find a word where the "magic e" rule does not work? (Hint: "have", "give")'],
           k: ['Explain the split digraph to a younger child or a toy using cap and cape.'],
-          m: ['Flip Book of Magic e', 'paper strips, stapler, pens', 'Write short words like cap, pin, hop, cub on strips | Add a flap with e that folds over the end | Read each word with and without the flap | Draw a picture for both words'],
+          m: ['Flip Book of Magic e', 'paper strips, stapler, pens', 'Write short words like cap, pin, hop, cub on strips | Add a flap with e that folds over the end | Read each word with and without the flap | Draw a picture for both words', "An adult should operate the stapler and check that staples are fully closed. Keep the stapler and loose staples away from young children."],
           q: [
             ch('Read: r-o-b-e', 'rob|*robe|rib'),
             ch('Which is a long "i" word?', 'bit|*bite|bat'),
