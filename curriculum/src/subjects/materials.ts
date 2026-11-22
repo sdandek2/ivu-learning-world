@@ -181,7 +181,7 @@ export default subject({
           ],
           t: ['How could you get the salt back from salty water?', 'Is dissolving a reversible change?'],
           k: ['Show someone how to dissolve sugar quickly and explain the three tricks.'],
-          m: ['🧪 Dissolving Race', 'three clear cups, warm and cold water, sugar cubes and granulated sugar, spoons, timer', 'Put a sugar cube in cold water, one in warm water and granulated sugar in warm water | Stir each the same way | Time how long until it disappears | Change only one thing at a time and explain the fair test'],
+          m: ['🧪 Dissolving Race', 'three clear cups, warm and cold water, sugar cubes and granulated sugar, spoons, timer', 'Put a sugar cube in cold water, one in warm water and granulated sugar in warm water | Stir each the same way | Time how long until it disappears | Change only one thing at a time and explain the fair test', "Use warm, not hot, water. An adult should pour and handle the water; do not taste the materials and wipe up spills promptly."],
           q: [
             ch('Which is insoluble in water?', 'salt|sugar|*sand'),
             ch('Stirring makes dissolving…', '*faster|slower|stop'),
@@ -214,7 +214,7 @@ export default subject({
           ],
           t: ['Why can\'t you get sugar out of tea using a strainer?', 'How do water treatment plants make river water safe?'],
           k: ['Explain to someone the order you would use to separate a mixture of sand, salt and paper clips.'],
-          m: ['🧪 Separation Station', 'sand, salt, paper clips, water, a magnet, a funnel with coffee filter or cloth, a shallow dish, sunlight', 'Mix sand, salt and paper clips | Remove clips with a magnet | Add water, stir, and filter out sand | Leave the salty water in sunlight to evaporate | Show your three separated substances'],
+          m: ['🧪 Separation Station', 'sand, salt, paper clips, water, a magnet, a funnel with coffee filter or cloth, a shallow dish, sunlight', 'Mix sand, salt and paper clips | Remove clips with a magnet | Add water, stir, and filter out sand | Leave the salty water in sunlight to evaporate | Show your three separated substances', "Use a classroom-safe magnet and blunt tools. Do not taste the materials; wash hands afterwards and have an adult supervise the water and evaporation steps."],
           q: [
             ch('Best method for separating peas from water:', '*sieving|evaporating|magnet'),
             ch('Filtering works because…', '*insoluble solid particles are too big to pass through|salt is magnetic|water is solid'),
@@ -243,7 +243,7 @@ export default subject({
           ],
           t: ['Is melting a candle the same change as burning it?', 'Why do we paint iron gates?'],
           k: ['Show someone one reversible and one irreversible change in the kitchen and explain the difference.'],
-          m: ['🧪 Fizz and Rust Observations', 'baking soda, vinegar, a cup, three iron nails, water, oil, three jars', 'Mix baking soda and vinegar and observe the bubbles | Put nails in dry air, water, and water with oil on top | Observe the nails daily for a week | Record which rusted and explain why'],
+          m: ['🧪 Fizz and Rust Observations', 'baking soda, vinegar, a cup, three iron nails, water, oil, three jars', 'Mix baking soda and vinegar and observe the bubbles | Put nails in dry air, water, and water with oil on top | Observe the nails daily for a week | Record which rusted and explain why', "An adult should handle the iron nails and supervise the experiment. Do not taste or touch the mixtures, keep them away from eyes, and wash hands after use."],
           q: [
             ch('Which is reversible?', 'frying an egg|*freezing juice|burning paper'),
             ch('A new substance being made means the change is…', '*chemical|physical|reversible'),
@@ -276,7 +276,7 @@ export default subject({
           ],
           t: ['Why does diffusion happen faster in hot water than cold water?', 'Can we ever see particles? How do scientists know they exist?'],
           k: ['Act out solid, liquid and gas particles with your family and explain each.'],
-          m: ['🧪 Ink Diffusion Race', 'two clear glasses, hot and cold water, food colouring, timer', 'Fill one glass with hot water and one with cold | Add one drop of colouring to each at the same time | Observe without stirring | Record how long colour takes to spread and explain using particles'],
+          m: ['🧪 Ink Diffusion Race', 'two clear glasses, hot and cold water, food colouring, timer', 'Fill one glass with hot water and one with cold | Add one drop of colouring to each at the same time | Observe without stirring | Record how long colour takes to spread and explain using particles', "Use warm, not hot, water and non-toxic food colouring. An adult should pour the water; do not drink the experiment and clean spills promptly."],
           q: [
             ch('In a solid, particles…', 'move freely|*vibrate in fixed positions|are far apart'),
             ch('Melting happens because particles…', '*gain energy and break free from fixed positions|lose all energy|disappear'),
@@ -340,7 +340,7 @@ export default subject({
           ],
           t: ['Why does a burning candle seem to lose mass if mass is conserved?', 'Why must we never change subscripts to balance an equation?'],
           k: ['Teach someone to balance CH₄ + O₂ → CO₂ + H₂O step by step.'],
-          m: ['🧪 Conservation of Mass Test', 'a plastic bottle, balloon, vinegar, baking soda, kitchen scale', 'Put vinegar in the bottle and baking soda in the balloon | Fit the balloon on the bottle and weigh the whole set-up | Tip the soda in and let it react | Weigh again and explain the result; repeat without a balloon and compare'],
+          m: ['🧪 Conservation of Mass Test', 'a plastic bottle, balloon, vinegar, baking soda, kitchen scale', 'Put vinegar in the bottle and baking soda in the balloon | Fit the balloon on the bottle and weigh the whole set-up | Tip the soda in and let it react | Weigh again and explain the result; repeat without a balloon and compare', "Use small quantities of vinegar and baking soda in an open, unsealed setup. Wear eye protection, do not taste or touch the mixture, and have an adult supervise. Never cap or seal the reacting bottle."],
           q: [
             ch('Balance: N₂ + H₂ → NH₃', '*N₂ + 3H₂ → 2NH₃|N₂ + H₂ → 2NH₃|2N₂ + H₂ → NH₃'),
             ch('Starting substances are called…', '*reactants|products|catalysts'),
@@ -369,7 +369,7 @@ export default subject({
           ],
           t: ['Why do antacid tablets help with indigestion?', 'Why do flour mills have strict rules against sparks?'],
           k: ['Explain collision theory to someone using a crowded playground as an analogy.'],
-          m: ['🧪 Red Cabbage Indicator Lab', 'red cabbage, hot water (adult), strainer, clear cups, kitchen liquids (lemon, vinegar, baking soda solution, soap)', 'Make cabbage indicator with an adult | Test household liquids and record colours | Arrange them in pH order | Neutralise vinegar with baking soda solution and observe the colour change'],
+          m: ['🧪 Red Cabbage Indicator Lab', 'red cabbage, hot water (adult), strainer, clear cups, kitchen liquids (lemon, vinegar, baking soda solution, soap)', 'Make cabbage indicator with an adult | Test household liquids and record colours | Arrange them in pH order | Neutralise vinegar with baking soda solution and observe the colour change', "An adult must prepare the hot-water indicator. Use only labelled household samples in small amounts, never taste them, wear eye protection, and never mix household cleaners or bleach."],
           q: [
             ch('pH 7 is…', 'acidic|*neutral|alkaline'),
             ch('Grinding a solid into powder makes it react…', '*faster|slower|not at all'),
