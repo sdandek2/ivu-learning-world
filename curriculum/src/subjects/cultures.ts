@@ -58,7 +58,7 @@ export default subject({
           ],
           t: ['What food from another region would you like to try?', 'Why do you think foods are different in different places?'],
           k: ['Describe your family\'s favourite festival food to a grown-up.'],
-          m: ['India Food Map', 'an outline map of India, food pictures or drawings, glue', 'Draw or cut out pictures of foods from different states | Stick them on the map in the right regions | Taste one new regional food with your family | Add a smiley if you liked it'],
+          m: ['India Food Map', 'an outline map of India, food pictures or drawings, glue', 'Draw or cut out pictures of foods from different states | Stick them on the map in the right regions | Taste one new regional food with your family | Add a smiley if you liked it', "Check food allergies, dietary needs and family preferences with a grown-up before tasting anything. Never pressure anyone to try a food."],
           q: [
             ch('Which is a garment?', '*kurta|dosa|tabla'),
             tf('All regions of India eat exactly the same food.', false),
