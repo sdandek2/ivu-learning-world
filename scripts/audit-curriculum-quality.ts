@@ -45,7 +45,7 @@ const dominantRatio = (counts: Record<string, number>, total: number) =>
 
 async function main() {
   if (!existsSync(sourceDir)) throw new Error(`Curriculum source directory not found: ${sourceDir}`);
-  const available = new Set(readdirSync(sourceDir).filter((file) => file.endsWith('.ts').map((file) => file.replace(/\.ts$/, ''))));
+  const available = new Set(readdirSync(sourceDir).filter((file) => file.endsWith('.ts')).map((file) => file.replace(/\.ts$/, '')));
   const findings: Finding[] = [];
   const subjectStats: { subject: string; lessons: number; review: number; suggestions: number }[] = [];
   const stageStats = Object.fromEntries(stageOrder.map((stage) => [stage, { lessons: 0, findings: 0 }])) as Record<string, { lessons: number; findings: number }>;
