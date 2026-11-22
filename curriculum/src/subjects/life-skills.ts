@@ -337,7 +337,7 @@ export default subject({
           ],
           t: ['What would you do if you couldn\'t fail?', 'How might technology change jobs by the time you start working?'],
           k: ['Conduct and present an informational interview with someone in a career that interests you.'],
-          m: ['Career Exploration Portfolio', 'notebook, interviews, research', 'Complete an interests–strengths–values reflection | Research three careers (tasks, education, pay range, future demand) | Interview one professional | Write a plan for the next two years'],
+          m: ['Career Exploration Portfolio', 'notebook, interviews, research', 'Complete an interests–strengths–values reflection | Research three careers (tasks, education, pay range, future demand) | Interview one professional | Write a plan for the next two years', "Ask permission before interviewing a professional. Do not share contact details or private salary information; use public sources for pay ranges and share the portfolio only with permission."],
           q: [
             ch('Temporary work experience is an…', '*internship|interest|interview only'),
             tf('Self-knowledge helps with career choices.', true),
