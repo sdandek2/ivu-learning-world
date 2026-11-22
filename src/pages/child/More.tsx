@@ -16,6 +16,44 @@ import { speak } from '../../lib/speech.ts';
 import { worldOfSubject } from './Explore.tsx';
 import { sounds } from '../../lib/sound.ts';
 
+// ---------------- Play hub ----------------
+
+/** A calm launch point for playful practice and open-ended creativity. */
+export function PlayHub() {
+  return (
+    <div className="play-hub">
+      <TopBar title="🎮 Play and create" back="/" color="#536B70" />
+      <header className="play-hub__hero">
+        <Buddy size={92} color="#536B70" accent="#F2D28B" mood="wow" />
+        <div>
+          <p className="play-hub__eyebrow">Your play space</p>
+          <h1>What would you like to make today?</h1>
+          <p>Try a friendly challenge, or let your imagination lead the way.</p>
+        </div>
+      </header>
+      <main className="play-hub__choices">
+        <section className="play-choice play-choice--challenge">
+          <span className="play-choice__art" aria-hidden="true">🌈 🧩 ⭐</span>
+          <p className="play-choice__eyebrow">Play and practise</p>
+          <h2>Challenge Arena</h2>
+          <p>Enjoy a short mix of questions from things you have already explored. Every try helps your brain grow.</p>
+          <button className="btn btn--primary btn--big" onClick={() => navigate('/arena')}>Choose a challenge <span aria-hidden="true">→</span></button>
+        </section>
+        <section className="play-choice play-choice--create">
+          <span className="play-choice__art" aria-hidden="true">🎨 📚 ✨</span>
+          <p className="play-choice__eyebrow">Imagine and create</p>
+          <h2>Creative Studio</h2>
+          <p>Draw a picture, invent a story and keep your favourite creations in your own gallery.</p>
+          <div className="play-choice__actions">
+            <button className="btn btn--primary btn--big" onClick={() => navigate('/studio/draw')}>Start creating <span aria-hidden="true">→</span></button>
+            <button className="play-choice__link" onClick={() => navigate('/studio/gallery')}>My gallery</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
 // ---------------- Challenge Arena ----------------
 
 type ArenaItem = Item & { lessonId: string };
