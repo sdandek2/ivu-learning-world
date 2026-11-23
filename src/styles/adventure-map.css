@@ -1,0 +1,88 @@
+/* Buddy's Adventure Map (src/ui/AdventureMap.tsx). */
+
+.am { --night: #1B1D4F; background: var(--night); color: #fff; min-height: 100%; }
+.am-header { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; padding: 22px clamp(16px, 3vw, 36px) 18px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.am-header__kicker { font-family: var(--font-display); font-weight: 700; letter-spacing: .16em; font-size: .72rem; color: #FFD66B; }
+.am-header h1 { margin: 4px 0 4px; font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.05; letter-spacing: -.02em; color: #fff; }
+.am-header p { margin: 0; color: #CFCBF5; max-width: 46ch; }
+.am-header__side { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.am-chip { display: inline-flex; align-items: baseline; gap: 6px; padding: 9px 14px; border-radius: 999px; background: rgba(255, 255, 255, .12); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2); font-family: var(--font-display); font-weight: 700; color: #FFE7A0; white-space: nowrap; }
+.am-chip__sub { font-weight: 600; color: #E7E3FF; font-size: .85rem; }
+.am-header .speak { --sky: #FFD66B; --ink: #2B2560; --world: #FFD66B; }
+
+.am-map { position: relative; width: 100%; max-width: 1280px; margin: 0 auto; isolation: isolate; }
+.am--wide .am-map { margin-bottom: 26px; }
+.am--wide .am-scene { border-radius: 0 0 28px 28px; box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .5); }
+.am-scene { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+.am-dests { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+.am-dest-slot { --boost: 1; position: absolute; width: calc(var(--node) * var(--boost)); aspect-ratio: 1; transform: translate(-50%, -50%); z-index: 1; }
+.am-dest-slot:focus-within, .am-dest-slot:hover { z-index: 3; }
+
+.am-dest { position: relative; display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: pointer; color: inherit; font: inherit; -webkit-tap-highlight-color: transparent; }
+.am-dest__medal { position: absolute; inset: 0; border-radius: 50%; background: var(--w-sky, #EEF); box-shadow: 0 0 0 clamp(3px, .45vw, 6px) #fff, 0 14px 22px -8px rgba(20, 22, 60, .55); transition: transform .2s ease, box-shadow .2s ease; }
+.am-dest__art { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; }
+.am-dest__art svg { position: absolute; left: 50%; top: 50%; width: 150%; height: auto; transform: translate(-50%, -50%); }
+.am-dest:hover .am-dest__medal, .am-dest:focus-visible .am-dest__medal { transform: translateY(-6%) scale(1.06); box-shadow: 0 0 0 clamp(3px, .45vw, 6px) #fff, 0 22px 28px -10px rgba(20, 22, 60, .6); }
+.am-dest:active .am-dest__medal { transform: scale(.97); }
+.am-dest:focus-visible { outline: none; }
+.am-dest:focus-visible .am-dest__medal { box-shadow: 0 0 0 clamp(3px, .45vw, 6px) #fff, 0 0 0 clamp(7px, .9vw, 11px) #FFB703; }
+
+.am-ring { position: absolute; inset: -13%; width: 126%; height: 126%; pointer-events: none; overflow: visible; }
+.am-ring__track { fill: none; stroke: rgba(255, 255, 255, .55); stroke-width: 5; }
+.am-ring__fill { fill: none; stroke: #FFB703; stroke-width: 6; stroke-linecap: round; }
+.am-ring__fill.is-done { stroke: #FFD84D; }
+
+.am-dest__num { position: absolute; left: -6%; top: -6%; width: 30%; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; background: var(--w-land, #5145B8); color: #fff; font-family: var(--font-display); font-weight: 700; font-size: clamp(.62rem, 1vw, .95rem); box-shadow: 0 0 0 2px #fff; }
+.am--tall .am-dest__num { font-size: .8rem; }
+.am-dest__lock, .am-dest__crown { position: absolute; right: -8%; top: -10%; font-size: clamp(1rem, 2vw, 1.7rem); filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .3)); }
+
+.am-dest__flag { position: absolute; left: 50%; top: 100%; transform: translate(-50%, 16%); display: flex; flex-direction: column; align-items: center; gap: 1px; padding: .28em .8em .3em; border-radius: 12px; background: var(--w-land, #5145B8); color: #fff; white-space: nowrap; box-shadow: 0 6px 12px -6px rgba(0, 0, 0, .55), inset 0 -3px 0 rgba(0, 0, 0, .15); font-size: clamp(.74rem, 1.05vw, 1rem); line-height: 1.15; }
+.am--tall .am-dest__flag { font-size: .82rem; }
+.am-dest__flag strong { font-family: var(--font-display); font-weight: 700; letter-spacing: .01em; }
+.am-dest__stars { display: flex; gap: 2px; font-size: .85em; line-height: 1; }
+.am-star { color: rgba(255, 255, 255, .38); }
+.am-star.is-on { color: #FFD84D; text-shadow: 0 0 6px rgba(255, 216, 77, .8); }
+
+/* states */
+.am-dest.is-soon .am-dest__medal { filter: grayscale(.9) brightness(.9); }
+.am-dest.is-soon .am-dest__flag { background: #7A7F95; }
+.am-dest.is-complete .am-dest__medal { box-shadow: 0 0 0 clamp(3px, .45vw, 6px) #FFD84D, 0 0 24px 4px rgba(255, 216, 77, .55), 0 14px 22px -8px rgba(20, 22, 60, .55); }
+.am-dest.is-next .am-dest__medal::after { content: ''; position: absolute; inset: -22%; border-radius: 50%; border: 3px solid rgba(255, 214, 107, .95); pointer-events: none; }
+
+/* Buddy, waiting at the next world */
+.am-buddy { position: absolute; z-index: 4; width: max(52px, calc(var(--node) * .62)); transform: translate(-150%, -120%); padding: 0; border: 0; background: none; cursor: pointer; }
+.am--tall .am-buddy { transform: translate(-30%, -175%); }
+.am-buddy__owl { width: 100%; height: auto; display: block; filter: drop-shadow(0 8px 8px rgba(0, 0, 0, .3)); }
+.am-buddy__bubble { position: absolute; left: 70%; top: -18%; padding: 3px 10px; border-radius: 12px 12px 12px 3px; background: #fff; color: #3B3290; font-family: var(--font-display); font-weight: 700; font-size: clamp(.7rem, 1vw, .95rem); white-space: nowrap; box-shadow: 0 4px 10px rgba(0, 0, 0, .2); }
+.am-buddy:focus-visible { outline: 4px solid #FFB703; outline-offset: 4px; border-radius: 16px; }
+
+/* motion (all of it is decoration; off for reduced motion) */
+@keyframes am-drift { from { transform: translateX(-14px); } to { transform: translateX(14px); } }
+@keyframes am-twinkle { 50% { opacity: .55; } }
+@keyframes am-march { to { stroke-dashoffset: -40; } }
+@keyframes am-pulse { 0% { transform: scale(.85); opacity: 1; } 100% { transform: scale(1.12); opacity: 0; } }
+@keyframes am-bob { 50% { transform: translateY(-6%); } }
+html:not(.reduce-motion) .am-clouds { animation: am-drift 9s ease-in-out infinite alternate; }
+html:not(.reduce-motion) .am-twinkle { animation: am-twinkle 3.2s ease-in-out infinite; }
+html:not(.reduce-motion) .am-travelled { animation: am-march 1.6s linear infinite; }
+html:not(.reduce-motion) .am-dest.is-next .am-dest__medal::after { animation: am-pulse 1.8s ease-out infinite; }
+html:not(.reduce-motion) .am-buddy__owl { animation: am-bob 2.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .am-clouds, .am-twinkle, .am-travelled, .am-dest.is-next .am-dest__medal::after, .am-buddy__owl { animation: none !important; }
+  .am-dest__medal { transition: none; }
+}
+
+/* Smaller wide screens (tablets): bigger destinations so they stay easy to read and tap. */
+@media (max-width: 1100px) { .am--wide .am-dest-slot { --boost: 1.22; } }
+@media (max-width: 900px) { .am--wide .am-dest-slot { --boost: 1.38; } .am--wide .am-dest__num { font-size: .72rem; } }
+
+@media (max-width: 719px) {
+  .am-header { flex-direction: column; align-items: flex-start; padding: 18px 18px 14px; }
+  .am-header p { font-size: .95rem; }
+}
+
+/* The page around the map continues the night sky instead of the old pastel page. */
+.explore-page--map { min-height: 100vh; background: #1B1D4F; padding-bottom: 28px; }
+.explore-page--map .topbar { background: #1B1D4F; }
+.child:has(.explore-page--map) { background: #1B1D4F; }

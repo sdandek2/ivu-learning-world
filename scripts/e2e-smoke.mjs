@@ -78,8 +78,8 @@ try {
     await page.goto(BASE);
     await page.locator('.owl-hero').waitFor();
     await page.getByRole('button', { name: /Explore learning worlds/ }).click();
-    await page.locator('.atlas-island').first().waitFor();
-    const n = await page.locator('.atlas-island').count();
+    await page.locator('.am-dest').first().waitFor();
+    const n = await page.locator('.am-dest').count();
     if (n !== 12) throw new Error(`expected 12 worlds, got ${n}`);
     await shot('01-universe');
   });
@@ -90,7 +90,7 @@ try {
   const lesson = subject.stages[0].units[0].lessons[0];
 
   await step('world page shows 5 subjects', async () => {
-    await page.locator('.atlas-island', { hasText: firstSubject.world.title }).click();
+    await page.locator('.am-dest', { hasText: firstSubject.world.title }).click();
     await page.locator('.subjectcard').first().waitFor();
     const n = await page.locator('.subjectcard').count();
     if (n !== 5) throw new Error(`expected 5 subjects, got ${n}`);
@@ -206,7 +206,7 @@ try {
     await context.setOffline(true);
     await page.reload();
     await page.getByRole('button', { name: /Explore learning worlds/ }).click();
-    await page.locator('.atlas-island').first().waitFor({ timeout: 8000 });
+    await page.locator('.am-dest').first().waitFor({ timeout: 8000 });
     await page.goto(BASE + '#/subject/' + firstSubject.id);
     await page.locator('.unit').first().waitFor({ timeout: 8000 });
     // IVU Reads and its recordings are precached too
@@ -251,7 +251,7 @@ try {
     m.setDefaultTimeout(12000);
     await m.locator('.owl-hero').waitFor();
     await m.getByRole('button', { name: /Explore learning worlds/ }).click();
-    await m.locator('.atlas-island').first().waitFor();
+    await m.locator('.am-dest').first().waitFor();
     if (shotDir) await m.screenshot({ path: `${shotDir}/12-mobile.png` });
     await m.close();
   });
