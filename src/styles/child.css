@@ -664,8 +664,9 @@ html:not(.reduce-motion) .owl-hero__buddy:active > svg { transform:scale(.95); }
 .owl-adventure__cta { margin-top:6px;display:inline-flex;gap:12px;align-items:center;padding:10px 18px;border-radius:999px;background:var(--adventure-world);color:#fff;font-family:var(--font-display);font-weight:700; }
 .owl-adventure--empty { min-height:150px;background:linear-gradient(110deg,#F1EDFF,#FFF5DD); }
 .owl-adventure--empty .owl-adventure__content { grid-column:1/-1; }
-.owl-world-strip { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px; }
-.owl-world-chip { position:relative;overflow:hidden;display:flex;flex-direction:column;text-align:left;padding:0;border:0;border-radius:22px;background:#fff;box-shadow:0 8px 22px -16px rgba(42,35,64,.4);transition:transform .18s; }
+.owl-world-strip { position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;isolation:isolate; }
+.owl-world-strip::before { content:"";position:absolute;z-index:-1;left:7%;right:7%;top:38%;height:5px;border-top:4px dashed rgba(129,116,194,.42);transform:rotate(-2deg); }
+.owl-world-chip { position:relative;z-index:1;overflow:hidden;display:flex;flex-direction:column;text-align:left;padding:0;border:0;border-radius:22px;background:#fff;box-shadow:0 8px 22px -16px rgba(42,35,64,.4);transition:transform .18s; }
 .owl-world-chip:hover { transform:translateY(-4px); }
 .owl-world-chip__art { display:block;width:100%;aspect-ratio:1.55;background:var(--chip-sky); }
 .owl-world-chip__art svg { width:100%;height:100%;display:block; }
